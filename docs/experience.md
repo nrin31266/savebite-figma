@@ -213,6 +213,10 @@ Fixture phụ fixture-croissant-02 chỉ nằm ở SB-015: bánh sừng bò, 30.
 
 Chuỗi đang review: `SB-015 → SB-034 → SB-051 → SB-053 → SB-056 → SB-015`. Đây là click-through đặt trước mô phỏng; F-01 đầy đủ chưa hoàn thành. Các CTA/back nằm trong bảng contract phía trên; search/filter/category/favourite/tabs và offer phụ đang tĩnh.
 
-Back từ SB-056 về SB-053 là đường review prototype, không chứng minh đơn thật có thể chỉnh sau xác nhận. Đường back khác có read-back cấu trúc, chưa bấm hết. Mapping node/component phải đọc registry + evidence trước khi sửa canvas.
+Back từ SB-056 về SB-053 là đường review prototype, không chứng minh đơn thật có thể chỉnh sau xác nhận. Cả 9 hotspots tiến/lùi đã bấm trong prototype v0.4 và kiểm URL sau mỗi chuyển màn. Mapping node/component phải đọc registry + evidence trước khi sửa canvas.
 
 Khi mở rộng, định nghĩa auth, stock/error và post-confirm navigation trước khi tạo màn; không suy diễn hành vi production từ đường back của pilot. Controls ngoài subset được ghi rõ trong tài liệu review, không claim đã hoạt động. Copy safety, giá và slot phải khớp product.md/fixture; thay hành vi nghiệp vụ cần decision.
+
+### Quy tắc mở rộng từ pilot
+
+Mỗi màn mới phải có contract trước khi vẽ: mục tiêu, entry, fixture, CTA/back, states và cách kiểm. Reuse component bằng properties/variants; không đổi nghĩa của SB-ID hoặc nhân bản màn để đủ số lượng. Một batch 5–8 màn chỉ bắt đầu sau khi owner chấp nhận baseline pilot. Dữ liệu của cùng offer/đơn phải khớp ở discovery → detail → summary → pickup.

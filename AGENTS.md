@@ -3,7 +3,7 @@
 ## Đọc và xác định phạm vi
 - Repo chỉ làm Figma: UI/UX, tokens/components, prototype, docs và evidence. Không triển khai app/backend hoặc tự tạo deliverables code.
 - Bắt đầu bằng `docs/README.md`, `tracking/progress.md`, rồi tài liệu domain và registry bị ảnh hưởng.
-- Không cần tài liệu handoff bên ngoài repo để tiếp tục công việc.
+- Không cần tài liệu handoff bên ngoài repo để tiếp tục công việc. Dùng `docs/acceptance.md` để đối chiếu yêu cầu học phần; không nhầm pilot với bài nộp hoàn chỉnh.
 - `docs/product.md` sở hữu nghiệp vụ; `docs/experience.md` sở hữu flow/màn.
 - `docs/design-system.md` sở hữu tokens/components; `docs/workflow.md` sở hữu thực thi và QA.
 - Registry giữ hiện trạng, không tự thay requirements. Figma live chứng minh node đang tồn tại.

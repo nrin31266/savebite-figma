@@ -2,33 +2,15 @@
 
 Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
-## NGUỒN GỐC, YÊU CẦU MÔN HỌC VÀ TÍNH TRUNG THỰC
+## Phạm vi và đầu ra
 
-### Nguồn và phạm vi hiện hành
+`CONFIRMED` Repo chỉ thiết kế Figma: consumer mobile tiếng Việt, Rescue Market là core, Smart Pantry là bổ trợ. Yêu cầu thiết kế đã tổng hợp trong docs này; tài liệu học phần và nguồn tham khảo gốc lưu riêng, không cần chúng để tiếp tục.
 
-`CONFIRMED` Theo DEC-006, repo chỉ thực hiện thiết kế Figma, prototype và docs/evidence liên quan. Các yêu cầu code, portfolio, slide/video nhóm của học phần là bối cảnh ngoài phạm vi thực thi repo; không tự khởi tạo app hoặc coi code là gate của thiết kế.
-
-[Provenance nguồn](references/README.md) giữ tên/hash và giới hạn sử dụng. Bản chép nguồn đầy đủ được lưu private ngoài repo; tiếp tục công việc bằng docs domain hiện hành.
-
-| Source | Dùng để quyết định | Giới hạn |
-|---|---|---|
-| `GROUP ASSIGNMENT-UXUI.pdf` | Deliverables, rubric, 100 hi-fi Figma screens, low-fi, prototype, videos, mobile demo, code | Có chỗ không nhất quán giữa mục bàn giao và rubric số màn code |
-| `Nội dung slide chính.docx` | Tuyên ngôn sản phẩm, Rescue Market + Smart Pantry, luồng và pain points giả thuyết, hướng case study | Đoạn nghiên cứu, quote, impact, usability findings vẫn có chỗ là *đề xuất/chỗ điền* |
-| `Case study slide deck - Zia's Pizza.pdf` | Cách trình bày research, wireframes, before/after, reflection | Không chép tính năng hoặc số liệu từ sản phẩm khác |
-| Hội thoại chốt SaveBite | Hệ màu trầm, trình bày bằng tiếng Việt, assets thật, tránh tạo mặt người giả, ưu tiên agent tự quản lý và reusable components | Các bản slide AI tạo trước đây là **visual references**, không phải màn app đã hoàn thiện |
-| Figma đích trong docs/workflow.md | Nơi lưu thiết kế | Quyền hiện hành trong tracking/progress.md; không tự tạo file thay thế |
-
-### Đầu ra thiết kế và bối cảnh học phần
-
-- `CONFIRMED` Ít nhất **100 hi-fi Figma frames** thực chất, có ít nhất **1 end-to-end prototype flow**.
-- `CONFIRMED` Low-fi wireframes và prototype riêng về giai đoạn thiết kế (không tính nhầm low-fi vào 100 hi-fi).
-- `CONFIRMED` Video low-fi khoảng 1–3 phút; video high-fi khoảng 2–5 phút; demo trên Figma Mobile.
-- `CONFIRMED — ngoài phạm vi repo` Portfolio PDF/website case study, presentation và video nhóm là yêu cầu học phần; không tự sản xuất trong task Figma.
-- `CONFIRMED` Phân tích ít nhất **20 ứng dụng thật**, với nguồn và ngày truy cập; không sử dụng logo đối thủ AI tự tưởng tượng.
-- `CONFIRMED — ngoài phạm vi repo` Đề bài nhắc **50 màn code** ở Deliverables và **30** ở rubric/Notes. Giữ bất nhất B-COURSE-01 cho nhóm hỏi giảng viên; đây không phải backlog hoặc gate Figma.
-- `CONFIRMED` Sketch ban đầu; accessibility và reflection có bằng chứng cụ thể.
-
-**Phân biệt:** `100 Figma frames` ≠ `50 routed code screens` ≠ `23 slide thuyết trình`. Ba nhóm này có registry/tiêu chí đếm khác nhau. Mục tiêu thực tế là ít nhất 100 hi-fi frames, nhưng **đừng “đánh bóng số lượng”**.
+- Mục tiêu: 100 hi-fi frames có nhiệm vụ/trạng thái khác nhau, low-fi và ít nhất một prototype end-to-end. Low-fi/components/overlays nhỏ không cộng vào 100.
+- Hiện tại: 5 màn pilot; chỉnh theo task owner rồi review trước khi mở rộng. Chưa có baseline được chấp nhận.
+- Code app/backend, merchant/admin, payment online, portfolio và presentation nằm ngoài scope repo. Không dùng các yêu cầu đó để chặn QA thiết kế.
+- Research/persona/quotes/impact chỉ là giả thuyết nếu chưa có dữ liệu thật. Không chuyển nội dung slide hoặc case study khác thành kết quả nghiên cứu SaveBite.
+- Video low-fi 1–3 phút, hi-fi 2–5 phút và demo mobile là đầu ra thiết kế cần ghi bằng chứng khi thực hiện; hiện chưa được xác minh.
 
 ### Đội thực hiện
 
@@ -107,7 +89,7 @@ Không định vị là dịch vụ giao đồ ăn; không hứa mọi mặt hà
 | D-019 | Reviews chỉ từ đơn đã nhận được xác nhận | Trust | Moderation/report ở future |
 | D-020 | Mỗi luồng phải có loading/empty/error/success/expired/permission fallback phù hợp, **không phải cứ thêm state là được tính là một màn riêng** | 100 màn chất lượng, không độn số | Mỗi frame đếm được phải có nhiệm vụ hoặc trạng thái toàn màn có ý nghĩa |
 
-**Đã giải quyết mâu thuẫn chính:** `Nội dung slide chính.docx` đôi lúc mô tả checkout/pay trong app. Đối với **MVP của đồ án**, `Checkout` được hiểu là **Reservation Summary → Place Reservation → Confirmation**, không khẳng định có cổng thanh toán hoạt động. Luồng thanh toán online nằm ở FUTURE, và mọi mockup cũ ghi “Payment Success” phải đổi thành trạng thái giữ chỗ/đến nhận chính xác nếu không có payment gateway.
+**Quy tắc thanh toán hiện hành:** Đối với **MVP của đồ án**, `Checkout` được hiểu là **Reservation Summary → Place Reservation → Confirmation**, không khẳng định có cổng thanh toán hoạt động. Luồng thanh toán online nằm ở FUTURE, và mọi mockup cũ ghi “Payment Success” phải đổi thành trạng thái giữ chỗ/đến nhận chính xác nếu không có payment gateway.
 
 ---
 
@@ -232,7 +214,7 @@ Mỗi asset: `assetId`, `kind`, `filePath`, `sourceUrl`, `license`, `attribution
 
 ### Competitor evidence
 
-Danh sách 20 ứng dụng gợi ý đã có trong `Nội dung slide chính.docx`: Too Good To Go, Karma, ResQ Club, Flashfood, Phenix, Foodsi, Munch, Yindii, Goodie Bag, Gander, LastBite, FoodHero, Cheaf, Bene Bono, treatsure, Surplus Indonesia, FoodObox, OLIO, HopHopFood, Food Rescue Hero. Agent phải xác minh **sự tồn tại, nguồn hiện hành và screenshots** trước khi cho vào matrix/charts; nếu app ngừng hoạt động hoặc không có nguồn đáng tin, ghi sự thật và đề xuất thay thế có căn cứ.
+Danh sách 20 ứng dụng gợi ý để bắt đầu nghiên cứu, chưa phải kết quả audit: Too Good To Go, Karma, ResQ Club, Flashfood, Phenix, Foodsi, Munch, Yindii, Goodie Bag, Gander, LastBite, FoodHero, Cheaf, Bene Bono, treatsure, Surplus Indonesia, FoodObox, OLIO, HopHopFood, Food Rescue Hero. Agent phải xác minh **sự tồn tại, nguồn hiện hành và screenshots** trước khi cho vào matrix/charts; nếu app ngừng hoạt động hoặc không có nguồn đáng tin, ghi sự thật và đề xuất thay thế có căn cứ.
 
 Bảng đối thủ bắt buộc có `App / Model / Current availability / Official source / Access date / Screens observed / Strengths / Weaknesses / Learning for SaveBite`. Không cần code clone 20 app và không dùng app icons trong product UI SaveBite.
 
@@ -260,7 +242,6 @@ Việc **không thiết kế merchant trong 100 frame bản consumer MVP** là q
 - Pantry manual local-first; barcode/AI FUTURE.
 - UI mobile sans-serif, slide design là reference không là design system nguyên bản.
 - 100 frames distinct, error/state chỉ đếm nếu là frame thật và có ý nghĩa.
-- Code UI ngoài phạm vi repo; bất nhất 50/30 của học phần giữ trong B-COURSE-01.
 - Brand color trầm, ảnh thật, tiếng Việt, không fake people/test/impact.
 
 ### Blockers không được tự bịa cách vượt
@@ -268,7 +249,6 @@ Việc **không thiết kế merchant trong 100 frame bản consumer MVP** là q
 | ID | Tình trạng | Cách giải quyết | Ảnh hưởng |
 |---|---|---|---|
 | `B-FIGMA-01` | RESOLVED trong phiên 19/10/2026: RIN student/Full/admin, native sandbox write/read pass | Reverify mỗi phiên; bằng chứng hiện hành trong tracking/progress.md | Không còn chặn pilot |
-| `B-COURSE-01` | PDF ghi 50 màn code ở Deliverables nhưng 30 ở rubric | Nhóm xác nhận giảng viên khi làm phần học phần ngoài repo | Không chặn thiết kế |
 | `B-RESEARCH-01` | Chưa có dữ liệu khảo sát/merchant interviews được xác minh trong tài liệu | Lập research plan; không tạo số liệu/quote giả | Chặn claim nghiên cứu, không chặn wireframes giả thuyết |
 | `B-ASSETS-01` | RESOLVED cho pilot: hai ảnh Pexels có source/license/hash; các màn mới chưa được bao phủ | Dùng manifest; tìm nguồn hợp lệ khi có nhu cầu asset mới | Không chặn pilot; không giả đối tác |
 | `B-LEGAL-01` | Chính sách food safety, xử lý đơn và thanh toán thật chưa được tư vấn/duyệt | Prototype mô phỏng bảo thủ, legal review trước launch | Chặn production launch, không chặn prototype |

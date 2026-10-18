@@ -4,11 +4,11 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ### Thứ tự ưu tiên và quản lý tài liệu lệch nhau
 
-- **Yêu cầu môn học:** `GROUP ASSIGNMENT-UXUI.pdf` và sửa đổi có chứng cứ từ giảng viên. Khi tài liệu gốc mâu thuẫn nội bộ (ví dụ 30/50 màn code), ghi B-COURSE-01 là bối cảnh học phần ngoài scope repo theo DEC-006, chưa được giảng viên xác nhận.
+- **Yêu cầu hiện hành:** docs domain và quyết định mới nhất đã ghi log. Tài liệu nguồn lưu riêng chỉ dùng tra cứu khi thật sự có conflict, không phải prerequisite mỗi phiên.
 - **Quyết định sản phẩm:** xác nhận mới nhất của người dùng/nhóm có thể kiểm chứng và ghi trong `docs/decisions.md` → trạng thái hiện hành phải được phản ánh trong `docs/product.md`/`docs/experience.md`. Nếu Decision Log và tài liệu hiện hành chưa khớp, **không tự chọn tài liệu thuận tiện**.
 - **Nguồn chuẩn theo lĩnh vực:** `docs/product.md` sở hữu business scope/policy; `docs/experience.md` sở hữu flow, màn và UX state; `docs/design-system.md` sở hữu token/components; `docs/workflow.md` sở hữu Figma/agent/QA. `tracking/screens.csv` và `tracking/components.csv` giữ tình trạng thực tế và ID, không tự biến thành nguồn thay đổi requirement.
 - **Figma live:** nguồn chuẩn về **những gì thực sự đang tồn tại trên canvas**; không mặc nhiên là nguồn chuẩn của yêu cầu. Nếu canvas khác docs, kiểm tra lịch sử/manual edits và đề xuất đồng bộ, **không ghi đè**. Đọc lại node thực trước khi sửa.
-- **Tài liệu slide, Zia's Pizza, mockup AI và nguồn ngoài:** tài liệu tham khảo, không phải nguồn quyền lực cho nghiệp vụ.
+- **Slide, case study, mockup AI và nguồn ngoài:** tài liệu tham khảo, không phải nguồn quyền lực cho nghiệp vụ.
 
 **Giao thức khi phát hiện drift/conflict (bắt buộc):**
 
@@ -132,22 +132,9 @@ Ngoại lệ: `BLOCKED`, `NEEDS_REWORK`, `ARCHIVED`.
 
 Shared components phải có stable key; khi đổi Figma node ID phải update mapping và affected screens. Mọi screen khai báo `component_ids` phải resolve được (ngoại trừ local nonshared layout đã giải thích).
 
-### `progress.md` format sau mỗi phiên
+### Progress sau mỗi batch
 
-```markdown
-# Progress — YYYY-MM-DD
-- Current docs baseline: <git commit/version>, Figma file <verified key/team>
-- Last successful batch: B-XXX
-- Last successfully updated Figma node(s): ...
-- Screens now: DONE x/100, QA pending y, blocked z
-- Components: SHARED x, STABLE y, breaking changes pending z
-- Evidence: ./tracking/evidence/...
-- Active blockers / Open conflicts: ...
-- User decisions required: ...
-- Next executable batch: ...
-- Risks / rollback instructions: ...
-- Git commit: <hash if committed>
-```
+Giữ ngắn: gate/batch hiện tại, lease owner/scope, screens/components, links evidence, blockers và bước tiếp. Không kể lại toàn bộ môi trường/cài tool hoặc transcript. Lịch sử nằm trong Git/decisions; progress chỉ đủ để người sau tiếp tục.
 
 **Atomicity rule:** Agent không lưu `DONE` trước khi MCP ghi và kiểm tra thành công; khi lỗi giữa chừng, log `partial mutation` và node IDs có thật, không chạy lại tạo duplicate. Khi resume, reconcile live Figma theo `SB-ID` trước khi create.
 
@@ -220,7 +207,7 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 - Duy trì tài liệu domain qua router, kiểm tra provenance/100 IDs, không dựng custom skill, checklist trùng hoặc scripts dư thừa.
 - Bàn giao: readable Bootstrap Report, all setup steps + exact unresolved blockers.
 
-**Gate P0:** `docs migrated and routed`, `docs self-contained`, `screen registry valid`, `Figma editor verified or clearly BLOCKED`, `no secrets in repo`.
+**Gate P0:** `docs routed`, `docs self-contained`, `screen registry valid`, `Figma editor verified or clearly BLOCKED`, `no secrets in repo`.
 
 ### Phase 1 — Discovery & low-fi
 
@@ -300,6 +287,8 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 
 ### Design acceptance (phạm vi Figma)
 
+Đối chiếu yêu cầu và hiện trạng ở [acceptance.md](acceptance.md); không dùng QA của 5 màn để claim đã hoàn thành học phần.
+
 | Area | Pass condition | Evidence cần có |
 |---|---|---|
 | 100 hi-fi screens | >=100 distinct QA-passed native Figma frames from registry; no screen-count padding | Frame inventory + screenshots + Figma links |
@@ -316,13 +305,13 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 ---
 
 
-## Quy tắc hiện hành của phiên bootstrap
+## Phạm vi hiện hành
 
-DEC-001 là override được duyệt của các gate pilot cũ: được tạo 5 frames subset và foundations trực tiếp phục vụ chúng sau migration/access pass. Không cần một approval mới để thực thi phạm vi này. Gate production vẫn đóng cho tới owner review. Quyền student không tự chứng minh từng tính năng: phải thử native write/read và interactions thực.
+DEC-009 cho phép tinh chỉnh đúng 5 màn pilot và components liên quan theo yêu cầu owner; không cần hỏi lại để thực hiện scope này. Sau QA dừng AWAITING_OWNER_REVIEW. Gate mở rộng 95 màn còn lại chỉ mở sau owner acceptance. Quyền student không tự chứng minh mọi tính năng: phải kiểm native write/read và interactions thực.
 
 Git: branch docs/bootstrap-figma-pilot cho bootstrap; về sau design/<module>-<scope>, docs/<scope>, fix/<scope>. Lease chỉ ghi progress: owner, scope, bắt đầu và release checkpoint. Không dựng lock server. CLAUDE.md symlink tương đối tới AGENTS.md trên Linux. Không tạo adapter cho client chưa dùng.
 
-Source requirements được kiểm tra bằng tài liệu gốc ngoài repo; provenance/hash giữ trong tracking/evidence/migration.json. Không yêu cầu đọc source attachment để tiếp tục tác vụ. Không lưu secrets hoặc cấu hình tài khoản toàn cục. Không cài tool trùng nếu official plugin đã có.
+Yêu cầu thiết kế đã tổng hợp trong docs domain. Tài liệu nguồn và logs migration được giữ private; không yêu cầu đọc attachment để tiếp tục. Không lưu secrets hoặc cấu hình tài khoản toàn cục. Không cài tool trùng nếu official plugin đã có.
 
 Rollback: revert commit docs khi cần; Figma chỉ sửa/xóa exact IDs do phiên này tạo sau khi đọc live, không dùng rollback Git để giả định canvas đã rollback.
 

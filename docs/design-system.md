@@ -2,7 +2,7 @@
 
 Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
-Hướng hiện hành là pilot v0.3 theo DEC-005: nền trắng, chữ charcoal, CTA xanh, cream ở nhóm phụ, Be Vietnam Pro. Bảng DEFAULT dưới đây chỉ là tham chiếu; không áp lại palette/layout cũ lên pilot. Baseline vẫn chưa được owner duyệt. Khi sửa tokens phải đọc live và reconcile với registry, không coi số đếm evidence là trạng thái live hiện tại.
+Hướng hiện hành là pilot v0.4 theo DEC-005: nền trắng, chữ charcoal, CTA xanh, cream ở nhóm phụ, Be Vietnam Pro. Bảng DEFAULT dưới đây chỉ là tham chiếu; không áp lại palette/layout cũ lên pilot. Baseline vẫn chưa được owner duyệt. Khi sửa tokens phải đọc live và reconcile với registry, không coi số đếm evidence là trạng thái live hiện tại.
 
 ## DESIGN DIRECTION — NGÔN NGỮ THỊ GIÁC CỦA APP
 
@@ -104,20 +104,32 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 
 ### Không “over-engineer” hệ thống
 
-Chỉ dựng tokens/components cần cho batch; bảng trên là danh mục gợi ý, không bắt tạo toàn bộ trước pilot. Reuse 15 main components hiện có trước khi bổ sung. Review và consolidate theo flow; Code Connect nằm ngoài phạm vi repo.
+Chỉ dựng tokens/components cần cho batch; bảng trên là danh mục gợi ý, không bắt tạo toàn bộ trước pilot. Reuse 20 main components hiện có trước khi bổ sung. Review và consolidate theo flow; Code Connect nằm ngoài phạm vi repo.
 
 ---
 
 
-## Pilot v0.3 thay toàn bộ mock bị từ chối
+## Pilot v0.4 — base hiện hành cho team
 
-Theo DEC-005, toàn bộ 5 frames cũ và page Components cũ đã xóa. Bộ mới dùng nền trắng, body charcoal #223028, green CTA #143E32, cream ở nhóm phụ, ảnh có nguồn. Discovery có 2 offers để so sánh; card ảnh 144px với metadata/giá/pickup ngắn gọn và một compact row. Các bước đặt trước theo information hierarchy, không mô phỏng merchant/online payment. Thành công chứa QR vector payload demo và mã dự phòng, nhãn minh họa rõ ràng. Chưa có baseline owner-approved.
+Giữ nguyên 5 root frames và hướng nền trắng, charcoal #223028, CTA xanh #143E32, cream cho thông tin phụ, Be Vietnam Pro. Ảnh detail cao 212px; search co theo chiều rộng để filter không bị cắt ở 360px. Categories và nav có vùng 48px; CTA cao 52px. Mọi thay đổi palette/flow chung phải cập nhật decision và màn bị ảnh hưởng.
 
+Có **38 variables, 8 text styles, 20 main components, 3 variant sets**, 32 instances trên pilot. [Registry](../tracking/components.csv) sở hữu mapping; [board component](https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/SaveBite?node-id=29-2) có sample đủ 20 mains và nhãn. SHARED chưa có nghĩa STABLE; baseline chưa được owner chấp nhận.
 
-### Inventory pilot hiện hành
+| Thành phần | Cách team dùng |
+|---|---|
+| Button | Primary/Secondary ở Default; Primary thêm Disabled/Loading. Label đổi qua property. Đây là state mẫu, chưa có request backend/animation. |
+| OfferCard / OfferListRow / OfferSummary | Đổi nội dung bằng properties đã expose; ảnh/giá/tồn/giờ phải cùng fixture. Không detach để sửa copy. |
+| MerchantRow / PickupInfo | Properties Merchant/Address và Label/Time. Dùng thông tin hư cấu có nhãn demo khi chưa có merchant thật. |
+| PickupSlot | Available/Selected dùng Time; hint theo state. Expired sample 15:00–16:00, Selected 17:00–18:00. Không chia sẻ default hint giữa các state trái nghĩa. |
+| ReservationProgress | Stage Time ở SB-051, Review ở SB-053; chỉ báo tiến độ, không phải nút điều hướng. |
+| AllergenNotice | Dùng chung ở detail/summary trước confirm; Title/Body editable, giữ nghĩa UNKNOWN. |
 
-Figma có 38 variables và 8 text styles. Bộ component mới gồm 12 families / 15 main components: BreadPhoto, CroissantPhoto, Button (Primary/Secondary), AppBar, PickupInfo, MerchantRow, OfferSummary, PickupSlot (Available/Selected/Expired), OfferCard, OfferListRow, BottomNav, DemoQR. Mapping từng main node nằm tại [components.csv](../tracking/components.csv); 28 instances đang dùng trên 5 màn. Chưa publish library hoặc đánh dấu STABLE.
+Fixture chính: fixture-bakery-01, Tiệm Bánh A (demo), Bánh mì men tự nhiên, 1 phần 25.000đ, còn 3 phần; giờ mẫu 16:00 ngày 19/10/2026, nhận 17:00–18:00. Fixture phụ: bánh sừng bò 30.000đ, còn 2 phần. Không có giá gốc/discount đã xác minh. Demo QR giữ payload SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER và mã DEMO-A125; không dùng giao dịch thật.
 
-Chỉ 9 hotspots thuộc click-through pilot có liên kết. Search, category, favourite, filter, các tab ngoài Khám phá và offer phụ là preview tĩnh; chưa có thao tác dữ liệu hay backend. Không dùng chúng như bằng chứng đã hoàn thành các màn còn lại.
+## Checklist khi team tạo màn hoặc đổi component
 
-Fixture chính: `fixture-bakery-01`, Tiệm Bánh A (demo), Bánh mì men tự nhiên, 1 phần 25.000đ, còn 3 phần; ngày 19/10/2026, giờ mẫu 16:00, nhận 17:00–18:00. Fixture phụ `fixture-croissant-02`: bánh sừng bò 30.000đ, còn 2 phần, cùng giờ nhận. Không có giá gốc/discount đã xác minh. Dị ứng/thành phần UNKNOWN; nhắc hỏi cửa hàng trước khi xác nhận. Ảnh minh họa có manifest. Demo QR mang payload `SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER`, mã dự phòng `DEMO-A125`; không tạo đơn hoặc giữ tồn kho.
+- Từ registry tìm node/instance phù hợp; đọc live trước sửa. Thay text qua properties, đổi state qua variants.
+- Dùng tokens/styles hiện hữu. Component mới chỉ thêm khi component hiện tại không biểu diễn được nhiệm vụ; ghi mục đích và mapping.
+- Kiểm 360/390/430, nội dung tiếng Việt và vùng chạm. Kiểm toàn bộ node bounds, vì kiểm text riêng sẽ bỏ sót icon/filter bị cắt.
+- Với layout hay copy mới dài hơn mẫu: thử chuỗi dài, giá dài và state thiếu dữ liệu trước khi gọi SHARED. Các trường hợp chưa thử phải ghi NOT CHECKED.
+- Sau đổi main component, xem mọi màn dùng nó; không chỉ nhìn specimen. Cập nhật registry/evidence rồi trình review.

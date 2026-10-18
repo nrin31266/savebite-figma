@@ -1,5 +1,6 @@
 {
   "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
+  "revision": "pilot-v0.4",
   "page": {
     "id": "2:2",
     "name": "Pilot · Rescue Market"
@@ -26,7 +27,7 @@
     {
       "screenId": "SB-015",
       "id": "28:2",
-      "name": "SB-015 · Khám phá · Pilot v0.3",
+      "name": "SB-015 · Khám phá · Pilot v0.4",
       "type": "FRAME",
       "width": 390,
       "height": 844,
@@ -78,8 +79,8 @@
       ],
       "viewport": {
         "id": "28:13",
-        "height": 664,
-        "contentHeight": 652,
+        "height": 660,
+        "contentHeight": 660,
         "overflow": "VERTICAL"
       },
       "rasterFills": 2,
@@ -89,7 +90,7 @@
     {
       "screenId": "SB-034",
       "id": "28:80",
-      "name": "SB-034 · Chi tiết ưu đãi · Pilot v0.3",
+      "name": "SB-034 · Chi tiết ưu đãi · Pilot v0.4",
       "type": "FRAME",
       "width": 390,
       "height": 844,
@@ -122,9 +123,14 @@
           "name": "Component/MerchantRow"
         },
         {
+          "instanceId": "41:126",
+          "componentId": "40:172",
+          "name": "Component/AllergenNotice"
+        },
+        {
           "instanceId": "28:92",
           "componentId": "27:91",
-          "name": "Style=Primary"
+          "name": "Component/Button"
         }
       ],
       "reactions": [
@@ -152,7 +158,7 @@
       "viewport": {
         "id": "28:89",
         "height": 648,
-        "contentHeight": 562,
+        "contentHeight": 578,
         "overflow": "VERTICAL"
       },
       "rasterFills": 1,
@@ -162,7 +168,7 @@
     {
       "screenId": "SB-051",
       "id": "28:118",
-      "name": "SB-051 · Chọn giờ nhận · Pilot v0.3",
+      "name": "SB-051 · Chọn giờ nhận · Pilot v0.4",
       "type": "FRAME",
       "width": 390,
       "height": 844,
@@ -180,6 +186,11 @@
           "name": "Component/AppBar"
         },
         {
+          "instanceId": "41:129",
+          "componentId": "40:157",
+          "name": "Component/ReservationProgress"
+        },
+        {
           "instanceId": "28:136",
           "componentId": "27:115",
           "name": "Component/OfferSummary"
@@ -192,12 +203,12 @@
         {
           "instanceId": "28:144",
           "componentId": "27:128",
-          "name": "State=Selected"
+          "name": "Component/PickupSlot"
         },
         {
           "instanceId": "28:151",
           "componentId": "27:135",
-          "name": "State=Expired"
+          "name": "Component/PickupSlot"
         },
         {
           "instanceId": "28:159",
@@ -207,7 +218,7 @@
         {
           "instanceId": "28:130",
           "componentId": "27:91",
-          "name": "Style=Primary"
+          "name": "Component/Button"
         }
       ],
       "reactions": [
@@ -235,7 +246,7 @@
       "viewport": {
         "id": "28:127",
         "height": 648,
-        "contentHeight": 563,
+        "contentHeight": 551,
         "overflow": "VERTICAL"
       },
       "rasterFills": 1,
@@ -245,13 +256,13 @@
     {
       "screenId": "SB-053",
       "id": "28:167",
-      "name": "SB-053 · Tóm tắt đặt trước · Pilot v0.3",
+      "name": "SB-053 · Tóm tắt đặt trước · Pilot v0.4",
       "type": "FRAME",
       "width": 390,
       "height": 844,
       "locked": false,
       "layout": "VERTICAL",
-      "textCount": 20,
+      "textCount": 23,
       "allFontsBeVietnamPro": true,
       "editableVerified": true,
       "allTextStyleBound": true,
@@ -261,6 +272,11 @@
           "instanceId": "28:171",
           "componentId": "27:96",
           "name": "Component/AppBar"
+        },
+        {
+          "instanceId": "41:140",
+          "componentId": "40:164",
+          "name": "Component/ReservationProgress"
         },
         {
           "instanceId": "28:182",
@@ -283,9 +299,14 @@
           "name": "Component/PickupInfo"
         },
         {
+          "instanceId": "41:149",
+          "componentId": "40:172",
+          "name": "Component/AllergenNotice"
+        },
+        {
           "instanceId": "28:179",
           "componentId": "27:91",
-          "name": "Style=Primary"
+          "name": "Component/Button"
         }
       ],
       "reactions": [
@@ -313,7 +334,7 @@
       "viewport": {
         "id": "28:176",
         "height": 648,
-        "contentHeight": 585,
+        "contentHeight": 621,
         "overflow": "VERTICAL"
       },
       "rasterFills": 1,
@@ -323,7 +344,7 @@
     {
       "screenId": "SB-056",
       "id": "28:215",
-      "name": "SB-056 · Đặt trước thành công · Pilot v0.3",
+      "name": "SB-056 · Đặt trước thành công · Pilot v0.4",
       "type": "FRAME",
       "width": 390,
       "height": 844,
@@ -358,7 +379,7 @@
         {
           "instanceId": "28:227",
           "componentId": "27:91",
-          "name": "Style=Primary"
+          "name": "Component/Button"
         }
       ],
       "reactions": [
@@ -386,7 +407,7 @@
       "viewport": {
         "id": "28:224",
         "height": 648,
-        "contentHeight": 631,
+        "contentHeight": 623,
         "overflow": "VERTICAL"
       },
       "rasterFills": 0,
@@ -394,6 +415,22 @@
       "unknownAllergensDisclosed": false
     }
   ],
+  "textStyleCount": 8,
+  "flowStartingPoints": [
+    {
+      "nodeId": "28:2",
+      "name": "Pilot | v0.4 | Reservation demo"
+    }
+  ],
+  "checks": {
+    "screenCount": 5,
+    "uniqueScreenIds": 5,
+    "all390x844": true,
+    "nativeImageOnlyFrames": 0,
+    "componentInstances": 32,
+    "interactionCount": 9
+  },
+  "errors": [],
   "components": [
     {
       "id": "27:89",
@@ -404,7 +441,8 @@
       "parentType": "PAGE",
       "boundFields": [],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [],
+      "description": "SaveBite pilot v0.3 · Component/BreadPhoto. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:90",
@@ -415,11 +453,12 @@
       "parentType": "PAGE",
       "boundFields": [],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [],
+      "description": "SaveBite pilot v0.3 · Component/CroissantPhoto. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:91",
-      "name": "Style=Primary",
+      "name": "Style=Primary, State=Default",
       "width": 350,
       "height": 52,
       "parentId": "27:95",
@@ -438,12 +477,14 @@
       "allTextStyleBound": true,
       "propertyKeys": [
         "Label#27:2",
-        "Style"
-      ]
+        "Style",
+        "State"
+      ],
+      "description": "SaveBite pilot v0.3 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:93",
-      "name": "Style=Secondary",
+      "name": "Style=Secondary, State=Default",
       "width": 350,
       "height": 52,
       "parentId": "27:95",
@@ -462,8 +503,62 @@
       "allTextStyleBound": true,
       "propertyKeys": [
         "Label#27:2",
-        "Style"
-      ]
+        "Style",
+        "State"
+      ],
+      "description": "SaveBite pilot v0.3 · Style=Secondary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+    },
+    {
+      "id": "40:153",
+      "name": "Style=Primary, State=Disabled",
+      "width": 350,
+      "height": 52,
+      "parentId": "27:95",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Label#27:2",
+        "Style",
+        "State"
+      ],
+      "description": "SaveBite pilot v0.3 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+    },
+    {
+      "id": "40:155",
+      "name": "Style=Primary, State=Loading",
+      "width": 350,
+      "height": 52,
+      "parentId": "27:95",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Label#27:2",
+        "Style",
+        "State"
+      ],
+      "description": "SaveBite pilot v0.3 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:96",
@@ -479,7 +574,8 @@
       "allTextStyleBound": true,
       "propertyKeys": [
         "Title#27:3"
-      ]
+      ],
+      "description": "SaveBite pilot v0.3 · Component/AppBar. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:101",
@@ -501,7 +597,11 @@
         "fills"
       ],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [
+        "Label#40:0",
+        "Time#40:1"
+      ],
+      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
     },
     {
       "id": "27:108",
@@ -514,7 +614,11 @@
         "itemSpacing"
       ],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [
+        "Merchant#40:2",
+        "Address#40:3"
+      ],
+      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
     },
     {
       "id": "27:115",
@@ -527,7 +631,12 @@
         "itemSpacing"
       ],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [
+        "Title#40:4",
+        "Merchant#40:5",
+        "Quantity and price#40:6"
+      ],
+      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
     },
     {
       "id": "27:121",
@@ -551,8 +660,10 @@
       ],
       "allTextStyleBound": true,
       "propertyKeys": [
+        "Time#40:11",
         "State"
-      ]
+      ],
+      "description": "SaveBite pilot v0.3 · State=Available. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:128",
@@ -576,8 +687,10 @@
       ],
       "allTextStyleBound": true,
       "propertyKeys": [
+        "Time#40:11",
         "State"
-      ]
+      ],
+      "description": "SaveBite pilot v0.3 · State=Selected. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:135",
@@ -601,8 +714,10 @@
       ],
       "allTextStyleBound": true,
       "propertyKeys": [
+        "Time#40:11",
         "State"
-      ]
+      ],
+      "description": "SaveBite pilot v0.3 · State=Expired. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
     },
     {
       "id": "27:143",
@@ -622,7 +737,8 @@
       "propertyKeys": [
         "Merchant#27:4",
         "Title#27:5"
-      ]
+      ],
+      "description": "OfferCard: actual demo image, merchant, title, rescue price, quantity available and pickup window. Reference price/discount absent unless evidenced. Open primary offer in pilot; search/tabs outside subset remain static."
     },
     {
       "id": "27:157",
@@ -635,20 +751,27 @@
         "itemSpacing"
       ],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [
+        "Merchant#40:7",
+        "Title#40:8",
+        "Price#40:9",
+        "Pickup and availability#40:10"
+      ],
+      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
     },
     {
       "id": "27:164",
       "name": "Component/BottomNav",
       "width": 390,
-      "height": 80,
+      "height": 84,
       "parentId": "27:87",
       "parentType": "PAGE",
       "boundFields": [
         "fills"
       ],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [],
+      "description": "Four tabs: Khám phá / Đơn của tôi / Tủ thực phẩm / Tài khoản. 48px minimum item area. Only Khám phá context exists in pilot; other tabs are static previews."
     },
     {
       "id": "27:183",
@@ -659,399 +782,684 @@
       "parentType": "PAGE",
       "boundFields": [],
       "allTextStyleBound": true,
-      "propertyKeys": []
+      "propertyKeys": [],
+      "description": "SaveBite pilot v0.3 · Component/DemoQR. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+    },
+    {
+      "id": "40:157",
+      "name": "Stage=Time",
+      "width": 350,
+      "height": 32,
+      "parentId": "40:171",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Stage"
+      ],
+      "description": ""
+    },
+    {
+      "id": "40:164",
+      "name": "Stage=Review",
+      "width": 350,
+      "height": 32,
+      "parentId": "40:171",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Stage"
+      ],
+      "description": ""
+    },
+    {
+      "id": "40:172",
+      "name": "Component/AllergenNotice",
+      "width": 350,
+      "height": 88,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Title#40:21",
+        "Body#40:22"
+      ],
+      "description": "Unknown ingredients/allergens notice, shown before reservation confirmation on SB-034 and SB-053. Do not infer safety from food photography. Title and Body editable, safety semantics follow product.md."
+    }
+  ],
+  "componentSets": [
+    {
+      "id": "27:95",
+      "name": "Component/Button",
+      "properties": {
+        "Label#27:2": {
+          "type": "TEXT",
+          "defaultValue": "Tiếp tục"
+        },
+        "Style": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Disabled",
+            "Loading"
+          ]
+        }
+      }
+    },
+    {
+      "id": "27:142",
+      "name": "Component/PickupSlot",
+      "properties": {
+        "Time#40:11": {
+          "type": "TEXT",
+          "defaultValue": "17:00–18:00"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Available",
+          "variantOptions": [
+            "Available",
+            "Selected",
+            "Expired"
+          ]
+        }
+      }
+    },
+    {
+      "id": "40:171",
+      "name": "Component/ReservationProgress",
+      "properties": {
+        "Stage": {
+          "type": "VARIANT",
+          "defaultValue": "Time",
+          "variantOptions": [
+            "Time",
+            "Review"
+          ]
+        }
+      }
     }
   ],
   "variables": [
     {
       "id": "VariableID:4:3",
       "name": "primitive/143E32",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.0784313753247261,
+          "g": 0.24313725531101227,
+          "b": 0.19607843458652496,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:4",
       "name": "color/brand/900",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:3"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:5",
       "name": "primitive/33745A",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.20000000298023224,
+          "g": 0.45490196347236633,
+          "b": 0.3529411852359772,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:6",
       "name": "color/brand/700",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:5"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:7",
       "name": "primitive/E8EFE6",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.9098039269447327,
+          "g": 0.9372549057006836,
+          "b": 0.9019607901573181,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:8",
       "name": "color/brand/100",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:7"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:9",
       "name": "primitive/F8F6F0",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.9725490212440491,
+          "g": 0.9647058844566345,
+          "b": 0.9411764740943909,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:10",
       "name": "color/surface/canvas",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:9"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:11",
       "name": "primitive/FFFFFF",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:12",
       "name": "color/surface/card",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:11"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:13",
       "name": "primitive/D7834B",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.843137264251709,
+          "g": 0.5137255191802979,
+          "b": 0.29411765933036804,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:14",
       "name": "color/accent/orange",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:13"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:15",
       "name": "primitive/894E2E",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.5372549295425415,
+          "g": 0.30588236451148987,
+          "b": 0.18039216101169586,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:16",
       "name": "color/accent/orangeText",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:15"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:17",
       "name": "color/text/primary",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:27:88"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:18",
       "name": "primitive/526C60",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.32156863808631897,
+          "g": 0.42352941632270813,
+          "b": 0.3764705955982208,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:19",
       "name": "color/text/secondary",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:18"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:20",
       "name": "primitive/D9E2D9",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.8509804010391235,
+          "g": 0.886274516582489,
+          "b": 0.8509804010391235,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:21",
       "name": "color/border/default",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "STROKE_COLOR"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:20"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:22",
       "name": "primitive/B42318",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.7058823704719543,
+          "g": 0.13725490868091583,
+          "b": 0.0941176488995552,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:23",
       "name": "color/semantic/error",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:22"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:24",
       "name": "primitive/9A5400",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.6039215922355652,
+          "g": 0.3294117748737335,
+          "b": 0,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:25",
       "name": "color/semantic/warning",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:24"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:26",
       "name": "primitive/25603C",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.14509804546833038,
+          "g": 0.3764705955982208,
+          "b": 0.23529411852359772,
+          "a": 1
+        }
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:27",
       "name": "color/semantic/success",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [
         "FRAME_FILL",
         "SHAPE_FILL",
         "TEXT_FILL"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4:26"
+        }
+      },
       "aliased": true
     },
     {
       "id": "VariableID:4:28",
       "name": "spacing/4",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 4
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:29",
       "name": "spacing/8",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 8
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:30",
       "name": "spacing/12",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 12
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:31",
       "name": "spacing/16",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 16
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:32",
       "name": "spacing/20",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 20
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:33",
       "name": "spacing/24",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 24
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:34",
       "name": "spacing/32",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 32
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:35",
       "name": "spacing/48",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "GAP"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 48
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:36",
       "name": "radius/tight",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "CORNER_RADIUS"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 8
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:37",
       "name": "radius/control",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "CORNER_RADIUS"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 12
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:38",
       "name": "radius/card",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "CORNER_RADIUS"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 16
+      },
       "aliased": false
     },
     {
       "id": "VariableID:4:39",
       "name": "radius/sheet",
-      "type": "FLOAT",
+      "resolvedType": "FLOAT",
       "scopes": [
         "CORNER_RADIUS"
       ],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": 24
+      },
       "aliased": false
     },
     {
       "id": "VariableID:27:88",
       "name": "primitive/223028",
-      "type": "COLOR",
+      "resolvedType": "COLOR",
       "scopes": [],
-      "codeSyntaxSet": true,
+      "values": {
+        "4:0": {
+          "r": 0.13333334028720856,
+          "g": 0.1882352977991104,
+          "b": 0.1568627506494522,
+          "a": 1
+        }
+      },
       "aliased": false
     }
-  ],
-  "textStyleCount": 8,
-  "flowStartingPoints": [
-    {
-      "nodeId": "28:2",
-      "name": "Pilot | Fresh build v0.3 | Demo"
-    }
-  ],
-  "checks": {
-    "screenCount": 5,
-    "uniqueScreenIds": 5,
-    "all390x844": true,
-    "nativeImageOnlyFrames": 0,
-    "componentInstances": 28,
-    "interactionCount": 9
-  },
-  "errors": []
+  ]
 }

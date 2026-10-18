@@ -56,3 +56,10 @@
 - Nguồn: owner yêu cầu “cài các skills trước” và tinh chỉnh luật/giao diện ban đầu vừa đủ để AI và người đọc hiểu, không mơ hồ.
 - Cài local bộ ba Figma và design-critique; giữ hai skill hiện có. Ưu tiên plugin khi có; không nạp trùng. Bộ ba Figma không redistrib lên Git public khi chưa có license rõ.
 - Làm rõ preconditions, tương tác tĩnh, đường back và lifecycle trong docs; không coi đây là duyệt baseline hoặc cho phép tự mở rộng pilot.
+
+## DEC-009 · 19/10/2026 · Rà context team và tinh chỉnh pilot v0.4
+- Nguồn: owner yêu cầu tiếp tục task, dùng skill mới mock lại 5 màn và làm base đồng bộ, đẹp, đủ chặt cho học phần.
+- Duyệt chỉnh đúng SB-015/034/051/053/056 và components phụ thuộc; giữ root IDs, fixture, 4 tabs, payment/pickup/safety semantics và gate owner review. Không rollout thêm 95 màn.
+- Hướng chỉnh: nhóm thông tin theo nhiệm vụ, progress hai bước đồng bộ, callout dị ứng dùng component chung, heading success đúng kết quả, tăng hit targets và expose nội dung component cho teammate sửa bằng properties.
+- Cho phép mở rộng variants Button phục vụ disabled/loading và documentation component; đây chưa là duyệt baseline hoặc chứng minh giao dịch/backend.
+- Dọn context nguồn vắng mặt/logs setup sang backup private; giữ registry + evidence thiết kế và chỉ dẫn teammate khôi phục skills.

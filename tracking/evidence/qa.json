@@ -1,6 +1,6 @@
 {
   "date": "2026-10-19",
-  "revision": "pilot-v0.3",
+  "revision": "pilot-v0.4",
   "gate": "AWAITING_OWNER_REVIEW",
   "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
   "readback_checks": {
@@ -8,12 +8,13 @@
     "uniqueScreenIds": 5,
     "all390x844": true,
     "nativeImageOnlyFrames": 0,
-    "componentInstances": 28,
+    "componentInstances": 32,
     "interactionCount": 9
   },
   "readback_errors": [],
   "width_stress": [
     {
+      "width": 360,
       "mutatedNodeIds": [
         "28:2",
         "28:80",
@@ -21,36 +22,36 @@
         "28:167",
         "28:215"
       ],
-      "width": 360,
       "screens": [
         {
           "id": "28:2",
           "overflows": [],
-          "contentHeight": 652
+          "contentHeight": 660
         },
         {
           "id": "28:80",
           "overflows": [],
-          "contentHeight": 562
+          "contentHeight": 578
         },
         {
           "id": "28:118",
           "overflows": [],
-          "contentHeight": 563
+          "contentHeight": 551
         },
         {
           "id": "28:167",
           "overflows": [],
-          "contentHeight": 585
+          "contentHeight": 621
         },
         {
           "id": "28:215",
           "overflows": [],
-          "contentHeight": 631
+          "contentHeight": 623
         }
       ]
     },
     {
+      "width": 430,
       "mutatedNodeIds": [
         "28:2",
         "28:80",
@@ -58,46 +59,46 @@
         "28:167",
         "28:215"
       ],
-      "width": 430,
       "screens": [
         {
           "id": "28:2",
           "overflows": [],
-          "contentHeight": 652
+          "contentHeight": 660
         },
         {
           "id": "28:80",
           "overflows": [],
-          "contentHeight": 562
+          "contentHeight": 558
         },
         {
           "id": "28:118",
           "overflows": [],
-          "contentHeight": 563
+          "contentHeight": 551
         },
         {
           "id": "28:167",
           "overflows": [],
-          "contentHeight": 585
+          "contentHeight": 601
         },
         {
           "id": "28:215",
           "overflows": [],
-          "contentHeight": 631
+          "contentHeight": 623
         }
       ]
     }
   ],
   "restored_width": 390,
+  "bounds_scope": "Every visible child against its parent, excluding intentional scrolling content; not text-only.",
   "font_stress": {
     "screenId": "SB-034",
     "multiplier": 1.25,
-    "all_14_text_nodes_scaled": true,
+    "textNodesScaled": 14,
     "price_bounds": {
       "width": 146,
       "height": 43
     },
-    "content_height": 640,
+    "content_height": 631,
     "viewport_height": 648,
     "screenshot": "tracking/evidence/SB-034-font125.png",
     "manual_visual_review": "PASS",
@@ -153,12 +154,6 @@
   ],
   "contrast": [
     {
-      "foreground": "#FFFFFF",
-      "background": "#143E32",
-      "ratio": 11.9,
-      "normal_text_AA": true
-    },
-    {
       "foreground": "#223028",
       "background": "#FFFFFF",
       "ratio": 13.8,
@@ -177,9 +172,21 @@
       "normal_text_AA": true
     },
     {
-      "foreground": "#526C60",
-      "background": "#E8EFE6",
-      "ratio": 4.88,
+      "foreground": "#FFFFFF",
+      "background": "#143E32",
+      "ratio": 11.9,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#223028",
+      "background": "#F8F6F0",
+      "ratio": 12.77,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#143E32",
+      "background": "#FFFFFF",
+      "ratio": 11.9,
       "normal_text_AA": true
     },
     {
@@ -189,9 +196,9 @@
       "normal_text_AA": true
     },
     {
-      "foreground": "#33745A",
-      "background": "#F8F6F0",
-      "ratio": 5.13,
+      "foreground": "#526C60",
+      "background": "#E8EFE6",
+      "ratio": 4.88,
       "normal_text_AA": true
     },
     {
@@ -202,19 +209,37 @@
     },
     {
       "foreground": "#894E2E",
-      "background": "#FFFFFF",
-      "ratio": 6.58,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#894E2E",
       "background": "#F8F6F0",
       "ratio": 6.09,
       "normal_text_AA": true
+    },
+    {
+      "foreground": "#33745A",
+      "background": "#F8F6F0",
+      "ratio": 5.13,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#223028",
+      "background": "#E8EFE6",
+      "ratio": 11.78,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#143E32",
+      "background": "#F8F6F0",
+      "ratio": 11.01,
+      "normal_text_AA": true
     }
   ],
+  "fixture_invariants": {
+    "selectedWindow": true,
+    "expiredWindow": true,
+    "unknownBeforeConfirm": true,
+    "allFiveAt390": true
+  },
   "prototype_browser": {
-    "method": "Actual canvas clicks in Codex in-app browser; URL and rendered screen checked after each transition",
+    "method": "actual canvas clicks using live node geometry and DOM canvas bounds; URL verified after every action",
     "forward_path": [
       "28:2",
       "28:80",
@@ -225,40 +250,96 @@
     ],
     "back_checked": [
       "28:215",
-      "28:167"
+      "28:167",
+      "28:118",
+      "28:80"
     ],
     "result": "PASS",
-    "other_back_links": "Read-back only; all 9 destinations verified structurally"
+    "transitions": [
+      {
+        "kind": "offer",
+        "nodeId": "28:80"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:118"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:167"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:215"
+      },
+      {
+        "kind": "back",
+        "nodeId": "28:167"
+      },
+      {
+        "kind": "back",
+        "nodeId": "28:118"
+      },
+      {
+        "kind": "back",
+        "nodeId": "28:80"
+      },
+      {
+        "kind": "back",
+        "nodeId": "28:2"
+      },
+      {
+        "kind": "offer",
+        "nodeId": "28:80"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:118"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:167"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:215"
+      },
+      {
+        "kind": "primary",
+        "nodeId": "28:2"
+      }
+    ],
+    "all_nine_hotspots_clicked": true
   },
-  "visual_review": "All five final screens, overview, component specimens and Foundations inspected. Native editable UI; food photos are raster assets only.",
+  "visual_review": "Five final native screens and labelled component specimen inspected after fixes; 360/430 width boards and 125% text stress inspected. Foundations unchanged from prior checkpoint.",
   "screenshots": [
     {
       "path": "tracking/evidence/SB-015.png",
-      "sha256": "797ffa687f6f8cea84498e55242d6d67ce4c16892e6878f4333a793bfa279ecb"
+      "sha256": "f7d87642f444cbc67b1908c7b71ebc78659694faba4ad66df8d8978a05dc680b"
     },
     {
       "path": "tracking/evidence/SB-034.png",
-      "sha256": "ea3665513c36ee0835845b21f4396b0fedb13bf1546832703080ff4f473ba4cf"
+      "sha256": "4c895e8a7bd05df926ceb70b194424cf51992741215a43295cc94aaa96ce782c"
     },
     {
       "path": "tracking/evidence/SB-051.png",
-      "sha256": "fa428a427da44c8029f2785fac55e4a33613940dfb419651787f715e5ed3c8f2"
+      "sha256": "b6f03b752c2ede64ac96f82ce161bbee7b7e9fb1e24d0ca69a5ef02f3e9cf2c3"
     },
     {
       "path": "tracking/evidence/SB-053.png",
-      "sha256": "292e169af7b347061accc30290103ad44715739f7111dcb8bef273dbe5280255"
+      "sha256": "775b287c137b4e8ceebfe34927cb4f108473ec858edd61cce49729eedcda8586"
     },
     {
       "path": "tracking/evidence/SB-056.png",
-      "sha256": "8b4fa5b1cc604b5f058ef7fa4058ffdbe8370060bfb6d2d25cb303d1e9bb6136"
+      "sha256": "9bdb23f4ab13465a54f0548eb5cc29fcf9fc6c52b8ee030e365bae94f375253b"
     },
     {
       "path": "tracking/evidence/pilot-overview.png",
-      "sha256": "704fe2d1181ceaec72a054d9077432134934a8d9790dba115a98073c3ee6328d"
+      "sha256": "aab60c656fa20fd3bdec2037d2c961eda95a057b940755644e808e3aa0809aef"
     },
     {
       "path": "tracking/evidence/components.png",
-      "sha256": "f518d49ad3e8fe5822e74557ecef552bf3d2ed60c7013949ff025ce638c76913"
+      "sha256": "5e70a6e6ba58522c1f9a5b3582ab6ba09087bf3022bcb5450af1ea7b3c226713"
     },
     {
       "path": "tracking/evidence/foundations.png",
@@ -266,7 +347,15 @@
     },
     {
       "path": "tracking/evidence/SB-034-font125.png",
-      "sha256": "6023123ac3fa5ee7a5daf0af8624e1c7b0c67263d7fcd19e5e702a18ce152728"
+      "sha256": "737874276a192d7435f9a82509853082d7144aa064f414182dfe23be58a8c01b"
+    },
+    {
+      "path": "tracking/evidence/pilot-360.png",
+      "sha256": "324d9a89cc744006c885469330a761c93b277df005c483169090769e1e503295"
+    },
+    {
+      "path": "tracking/evidence/pilot-430.png",
+      "sha256": "c183f0145fd2d19139f5b70ae1380b8a47784d32e367660c3425fc2b42603c3a"
     }
   ],
   "not_checked": [
@@ -274,16 +363,19 @@
     "Real participants / usability outcomes",
     "Figma Mobile and physical-device testing",
     "VoiceOver / TalkBack / keyboard navigation",
-    "Backend, stock atomics, auth, actual pickup verification",
     "Full search/filter/tab/category interactions",
-    "Long-content, missing-photo and all error-state matrix outside pilot subset"
+    "Long-content, missing-photo and error-state matrix beyond the pilot subset",
+    "Actual backend/auth/stock/payment/pickup, outside this Figma repo"
   ],
-  "removed_rejected_root_ids": [
-    "5:204",
-    "5:205",
-    "5:206",
-    "5:207",
-    "5:208"
+  "fixed_during_QA": [
+    "Shared PickupSlot text defaults initially propagated the expired label; isolated fixed state hints and verified selected 17:00–18:00 versus expired 15:00–16:00.",
+    "Search field used fixed width and clipped the filter at 360px; changed to FILL and checked all visible UI bounds.",
+    "Removed duplicate specimen labels and restored mobile sample widths."
   ],
-  "removed_rejected_components_page": "5:2"
+  "removed_local_node_ids": [
+    "28:115",
+    "28:132",
+    "28:214"
+  ],
+  "root_screen_ids_preserved": true
 }

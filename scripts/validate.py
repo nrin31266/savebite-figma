@@ -43,19 +43,27 @@ def check_screens(rows, components, evidence):
 
 def main():
     rows = list(csv.DictReader((ROOT / 'tracking/screens.csv').open()))
-    components = {r['component_key']: r for r in csv.DictReader((ROOT / 'tracking/components.csv').open())}
+    component_rows = list(csv.DictReader((ROOT / 'tracking/components.csv').open()))
+    components = {r['component_key']: r for r in component_rows}
+    assert len(components) == len(component_rows), 'Duplicate component key'
+    assert len({r['figma_component_id'] for r in component_rows}) == len(component_rows), 'Duplicate main component node'
     path = ROOT / 'tracking/evidence/figma-readback.json'
     evidence = json.loads(path.read_text()) if path.exists() else {}
     node_count = check_screens(rows, components, evidence)
     live_components = {c['id'] for c in evidence.get('components', [])}
-    assert len(components) == 15 and {c['figma_component_id'] for c in components.values()} == live_components, 'Component read-back drift'
+    assert len(components) == len(evidence['components']) and {c['figma_component_id'] for c in components.values()} == live_components, 'Component read-back drift'
     qa = json.loads((ROOT / 'tracking/evidence/qa.json').read_text())
     assert not evidence['errors'] and qa['readback_checks'] == evidence['checks']
+    assert qa['revision'] == evidence['revision'], 'QA revision drift'
+    assert all(qa['fixture_invariants'].values()), 'Fixture or slot-state mismatch'
+    assert all(s['allTextStyleBound'] and not s['horizontalOrVerticalTextOverflow'] for s in evidence['screens']), 'Unbound style or layout overflow'
+    node_ids = {s['id'] for s in evidence['screens']}
+    assert all(dst in node_ids for s in evidence['screens'] for r in s['reactions'] for dst in r['destinations']), 'Broken prototype destination'
     assert {w['width'] for w in qa['width_stress']} == {360, 430}
     assert all(not s['overflows'] for w in qa['width_stress'] for s in w['screens'])
     assert all(s['width'] == 390 for s in evidence['screens']), 'Stress width not restored'
     assert all(c['ratio'] >= 4.5 for c in qa['contrast'])
-    assert len(qa['connected_hit_targets']) == 9 and all(t['width'] >= 48 and t['height'] >= 48 for t in qa['connected_hit_targets'])
+    assert len(qa['connected_hit_targets']) == evidence['checks']['interactionCount'] and all(t['width'] >= 48 and t['height'] >= 48 for t in qa['connected_hit_targets'])
     for artifact in [*qa['screenshots'], *json.loads((ROOT / 'assets/manifest.json').read_text())]:
         path = artifact.get('path') or artifact['filePath']
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == artifact['sha256'], 'Asset drift: ' + path
@@ -93,7 +101,7 @@ def main():
     else:
         raise AssertionError('Validator self-check failed')
     assert all(f'F-0{i}' in experience for i in range(1, 7))
-    print(f'PASS: 100 unique IDs; 20 defaults; 6 flows; docs links; canonical symlink; {node_count} Figma mappings; 15 components; QA/asset hashes; {checked_skills} skill hashes ({optional_skills} optional local installs absent); 360/430 widths; contrast; 9 targets; DONE={sum(r["status"] == "DONE" for r in rows)}; duplicate-ID self-check')
+    print(f'PASS: 100 unique IDs; 20 defaults; 6 flows; docs links; canonical symlink; {node_count} Figma mappings; {len(components)} components; QA/asset hashes; {checked_skills} skill hashes ({optional_skills} optional local installs absent); 360/430 widths; contrast; {len(qa["connected_hit_targets"])} targets; DONE={sum(r["status"] == "DONE" for r in rows)}; duplicate-ID self-check')
 
 
 if __name__ == '__main__':

@@ -11,3 +11,6 @@ tracking/evidence/*.png
 .agents/skills/figma-use/
 .agents/skills/figma-generate-library/
 .agents/skills/figma-generate-design/
+
+# Local browser diagnostics, not project handoff evidence.
+.playwright-mcp/
