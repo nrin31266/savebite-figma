@@ -36,7 +36,8 @@
 - Không commit secrets, tokens, .env thật, user config riêng tư hoặc asset không có quyền.
 - `AGENTS.md` là canonical; `CLAUDE.md` symlink tương đối tới đây, không copy rules.
 - Không tạo adapter client khác khi chưa dùng; không tạo custom SaveBite SKILL.md.
-- Skills/MCP đã có thì reuse; chỉ cài phần thiếu có nguồn xác minh và nhu cầu thật.
+- Skills/MCP đã có thì reuse; skill mới cài project-local trong `.agents/skills/`, không global.
+- Trước task UI đọc `.agents/skills/frontend-design/SKILL.md` và `ui-ux-pro-max/SKILL.md` khi phù hợp; source manifest đi kèm.
 - Context7 dùng khi cần API/SDK phiên bản hoặc code, không bắt buộc cho canvas.
 - Agent docs/code có thể làm worktree riêng; Figma không cô lập theo Git branch.
 - Mọi lease phải có owner/scope và được giải phóng tại checkpoint.

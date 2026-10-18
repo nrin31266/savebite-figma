@@ -5,6 +5,7 @@ import csv
 import json
 import os
 import re
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {f'SB-{n:03d}' for n in range(1, 101)}
@@ -46,11 +47,27 @@ def main():
     path = ROOT / 'tracking/evidence/figma-readback.json'
     evidence = json.loads(path.read_text()) if path.exists() else {}
     node_count = check_screens(rows, components, evidence)
+    live_components = {c['id'] for c in evidence.get('components', [])}
+    assert len(components) == 15 and {c['figma_component_id'] for c in components.values()} == live_components, 'Component read-back drift'
+    qa = json.loads((ROOT / 'tracking/evidence/qa.json').read_text())
+    assert not evidence['errors'] and qa['readback_checks'] == evidence['checks']
+    assert {w['width'] for w in qa['width_stress']} == {360, 430}
+    assert all(not s['overflows'] for w in qa['width_stress'] for s in w['screens'])
+    assert all(s['width'] == 390 for s in evidence['screens']), 'Stress width not restored'
+    assert all(c['ratio'] >= 4.5 for c in qa['contrast'])
+    assert len(qa['connected_hit_targets']) == 9 and all(t['width'] >= 48 and t['height'] >= 48 for t in qa['connected_hit_targets'])
+    for artifact in [*qa['screenshots'], *json.loads((ROOT / 'assets/manifest.json').read_text())]:
+        path = artifact.get('path') or artifact['filePath']
+        assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == artifact['sha256'], 'Asset drift: ' + path
+    skills = json.loads((ROOT / '.agents/skills/manifest.json').read_text())
+    for skill in skills['skills']:
+        assert skill['scope'] == 'project' and skill['path'].startswith('.agents/skills/')
+        assert hashlib.sha256((ROOT / skill['path'] / 'SKILL.md').read_bytes()).hexdigest() == skill['skill_sha256'], 'Skill hash drift'
     product = (ROOT / 'docs/product.md').read_text()
     experience = (ROOT / 'docs/experience.md').read_text()
     assert set(re.findall(r'\| (D-\d{3}) \|', product)) == {f'D-{n:03d}' for n in range(1, 21)}
     assert set(re.findall(r'\| `(SB-\d{3})` \|', experience)) == EXPECTED
-    for p in [ROOT / 'README.md', ROOT / 'AGENTS.md', *sorted((ROOT / 'docs').glob('*.md'))]:
+    for p in [ROOT / 'README.md', ROOT / 'AGENTS.md', *sorted((ROOT / 'docs').rglob('*.md'))]:
         text = p.read_text()
         assert 'MASTER_SPEC.md' not in text and 'Master Spec' not in text, 'Retired handoff dependency'
         for target in re.findall(r'\]\(([^)]+)\)', text):
@@ -68,8 +85,8 @@ def main():
         pass
     else:
         raise AssertionError('Validator self-check failed')
-    print(f'PASS: 100 unique IDs; 20 defaults; 6 flows; docs links; canonical symlink; {node_count} Figma mappings; DONE={sum(r["status"] == "DONE" for r in rows)}; duplicate-ID self-check')
     assert all(f'F-0{i}' in experience for i in range(1, 7))
+    print(f'PASS: 100 unique IDs; 20 defaults; 6 flows; docs links; canonical symlink; {node_count} Figma mappings; 15 components; QA/asset/skill hashes; 360/430 widths; contrast; 9 targets; DONE={sum(r["status"] == "DONE" for r in rows)}; duplicate-ID self-check')
 
 
 if __name__ == '__main__':

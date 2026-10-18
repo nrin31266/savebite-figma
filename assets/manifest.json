@@ -1,0 +1,36 @@
+[
+  {
+    "assetId": "food-sourdough-1079020",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/bread-sourdough-1079020.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/photography-of-sliced-bread-1079020/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Marcel Fiedler / Pexels",
+    "downloadDate": "2026-10-19",
+    "usageScope": "SaveBite fictional sourdough offer; illustrative, no endorsement or real merchant claim",
+    "merchantId": "merchant-demo-a",
+    "offerId": "fixture-bakery-01",
+    "altText": "Bánh mì men tự nhiên cắt lát trên bàn gỗ; ảnh minh họa demo",
+    "approved": true,
+    "sha256": "f5c1262a6e62a7d6f3256f378397274c6658eb612e5554c6ed68d2f44c3d5034",
+    "figmaImageHash": "cb02b63d25bb61566569851eff3af1d9d3d1db58"
+  },
+  {
+    "assetId": "food-croissants-15350655",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/croissants-15350655.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/croissants-on-a-plate-15350655/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Valeriya Kobzar / Pexels",
+    "downloadDate": "2026-10-19",
+    "usageScope": "fictional demo offer only, no endorsement or real merchant claim",
+    "merchantId": "merchant-demo-a",
+    "offerId": "fixture-croissant-02",
+    "altText": "Bánh sừng bò trên đĩa, ảnh minh họa demo",
+    "approved": true,
+    "sha256": "2613eab5e20d8c51ec42f753d3358af5f61519be953db3f9f8e339f3633c1eb4",
+    "figmaImageHash": "2580208af8e3d9b37ac8269656654753cb7e101d"
+  }
+]

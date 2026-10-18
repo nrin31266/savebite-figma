@@ -1,0 +1,25 @@
+{
+  "installed_at": "2026-10-19",
+  "installation": "Official Codex installer, moved unchanged into project at owner request; no global copies retained",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "scope": "project",
+      "path": ".agents/skills/frontend-design",
+      "source": "https://github.com/anthropics/skills",
+      "revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "source_skill_path": "skills/frontend-design",
+      "skill_sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "scope": "project",
+      "path": ".agents/skills/ui-ux-pro-max",
+      "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "revision": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "source_skill_path": ".claude/skills/ui-ux-pro-max",
+      "skill_sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+    }
+  ],
+  "verified_upstream_content": true
+}

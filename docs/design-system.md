@@ -14,14 +14,14 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 
 | Token | Hex | Purpose | Lưu ý |
 |---|---|---|---|
-| `color.brand.900` | `#143E32` | Primary, CTA, headline, app chrome | White-on-dark contrast tốt |
+| `color.brand.900` | `#143E32` | Primary, CTA, brand chrome | White-on-dark contrast tốt |
 | `color.brand.700` | `#33745A` | Secondary action/brand text | Đủ tương phản với background nhạt cho chữ bình thường |
 | `color.brand.100` | `#E8EFE6` | Pale backgrounds, chip selected, callouts | Không dùng chữ pale trên pale |
 | `color.surface.canvas` | `#F8F6F0` | Brand canvas / marketing | Màn form có thể dùng neutral white surfaces |
 | `color.surface.card` | `#FFFFFF` | White cards and sheets | Giúp app thoáng hơn slide |
 | `color.accent.orange` | `#D7834B` | Graphic accent, icon highlight, badges | **KHÔNG dùng làm chữ nhỏ trên kem/trắng** vì contrast thấp |
 | `color.accent.orangeText` | `#894E2E` | Accessible orange/brown text | Dùng cho text trên cream |
-| `color.text.primary` | `#143E32` | Headline/body high contrast | |
+| `color.text.primary` | `#223028` | Headline/body high contrast | |
 | `color.text.secondary` | `#526C60` | Secondary info | Đo contrast với mỗi surface khi triển khai |
 | `color.border.default` | `#D9E2D9` | Dividers, controls | Không dùng divider làm tín hiệu trạng thái duy nhất |
 | `color.semantic.error` | `#B42318` | Error text/icons | Đi kèm icon/label rõ |
@@ -33,7 +33,7 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 ### Typography, kích thước, hệ spacing
 
 - `App UI font`: **Be Vietnam Pro** (ưu tiên nếu có đầy đủ và hiển thị đúng) hoặc Inter đồng bộ toàn app; font fallback hệ thống hỗ trợ tiếng Việt.
-- Type scale mobile gợi ý: Display `32/40`, H1 `28/36`, H2 `24/32`, H3 `20/28`, Body `16/24`, Secondary `14/20`, Caption `12/16`. Không ép số này nếu màn dài/đa kích thước, nhưng không để body chính dưới 14.
+- Type scale mobile gợi ý: Display `32/40`, H1 `26/34`, H2 `22/30`, H3 `18/26`, Body `16/24`, Secondary `14/20`, Caption `12/16`. Không ép số này nếu màn dài/đa kích thước, nhưng không để body chính dưới 14.
 - Giá/rescue price có type treatment dễ quét mắt, thường `20–24sp` tùy card/detail; giá gốc gạch ngang, giá thực trả quan trọng hơn phần trăm giảm.
 - Touch target tối thiểu khoảng `44×44pt` iOS / `48×48dp` Android (hoặc quy tắc platform tương đương); khoảng cách chạm hợp lý.
 - Base grid 4pt, bố cục 8pt; spacing `4, 8, 12, 16, 24, 32, 40, 48`; mobile content horizontal padding `16–20`.
@@ -106,3 +106,16 @@ Không thiết kế toàn bộ 100 component trước khi nhìn thấy màn. D�
 
 ---
 
+
+## Pilot v0.3 thay toàn bộ mock bị từ chối
+
+Theo DEC-005, toàn bộ 5 frames cũ và page Components cũ đã xóa. Bộ mới dùng nền trắng, body charcoal #223028, green CTA #143E32, cream ở nhóm phụ, ảnh có nguồn. Discovery có 2 offers để so sánh; card ảnh 144px với metadata/giá/pickup ngắn gọn và một compact row. Các bước đặt trước theo information hierarchy, không mô phỏng merchant/online payment. Thành công chứa QR vector payload demo và mã dự phòng, nhãn minh họa rõ ràng. Chưa có baseline owner-approved.
+
+
+### Inventory pilot hiện hành
+
+Figma có 38 variables và 8 text styles. Bộ component mới gồm 12 families / 15 main components: BreadPhoto, CroissantPhoto, Button (Primary/Secondary), AppBar, PickupInfo, MerchantRow, OfferSummary, PickupSlot (Available/Selected/Expired), OfferCard, OfferListRow, BottomNav, DemoQR. Mapping từng main node nằm tại [components.csv](../tracking/components.csv); 28 instances đang dùng trên 5 màn. Chưa publish library hoặc đánh dấu STABLE.
+
+Chỉ 9 hotspots thuộc click-through pilot có liên kết. Search, category, favourite, filter, các tab ngoài Khám phá và offer phụ là preview tĩnh; chưa có thao tác dữ liệu hay backend. Không dùng chúng như bằng chứng đã hoàn thành các màn còn lại.
+
+Fixture chính: `fixture-bakery-01`, Tiệm Bánh A (demo), Bánh mì men tự nhiên, 1 phần 25.000đ, còn 3 phần; ngày 19/10/2026, giờ mẫu 16:00, nhận 17:00–18:00. Fixture phụ `fixture-croissant-02`: bánh sừng bò 30.000đ, còn 2 phần, cùng giờ nhận. Không có giá gốc/discount đã xác minh. Dị ứng/thành phần UNKNOWN; nhắc hỏi cửa hàng trước khi xác nhận. Ảnh minh họa có manifest. Demo QR mang payload `SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER`, mã dự phòng `DEMO-A125`; không tạo đơn hoặc giữ tồn kho.

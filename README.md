@@ -13,4 +13,4 @@ git status --short --branch
 
 Chưa có app/backend để chạy. Mục tiêu dài hạn là 100 hi-fi frames và 50 màn code; trạng thái thực nằm trong registry. Prototype dùng fixture mô phỏng, không tạo giao dịch thật.
 
-Agent/client đọc [AGENTS.md](AGENTS.md); `CLAUDE.md` là symlink cùng nguồn. Không push hoặc công khai nội dung trong phiên bootstrap.
+Agent/client đọc [AGENTS.md](AGENTS.md); `CLAUDE.md` là symlink cùng nguồn. GitHub private được owner cho phép theo DEC-004 sau khi QA; không công khai Figma hoặc mời thành viên. Skills của dự án nằm tại `.agents/skills/`.

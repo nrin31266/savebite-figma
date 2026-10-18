@@ -1,0 +1,1057 @@
+{
+  "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
+  "page": {
+    "id": "2:2",
+    "name": "Pilot · Rescue Market"
+  },
+  "pages": [
+    {
+      "id": "0:1",
+      "name": "Page 1"
+    },
+    {
+      "id": "2:2",
+      "name": "Pilot · Rescue Market"
+    },
+    {
+      "id": "4:48",
+      "name": "Foundations"
+    },
+    {
+      "id": "27:87",
+      "name": "Components"
+    }
+  ],
+  "screens": [
+    {
+      "screenId": "SB-015",
+      "id": "28:2",
+      "name": "SB-015 · Khám phá · Pilot v0.3",
+      "type": "FRAME",
+      "width": 390,
+      "height": 844,
+      "locked": false,
+      "layout": "VERTICAL",
+      "textCount": 27,
+      "allFontsBeVietnamPro": true,
+      "editableVerified": true,
+      "allTextStyleBound": true,
+      "horizontalOrVerticalTextOverflow": [],
+      "instances": [
+        {
+          "instanceId": "28:58",
+          "componentId": "27:143",
+          "name": "Component/OfferCard"
+        },
+        {
+          "instanceId": "I28:58;27:144",
+          "componentId": "27:89",
+          "name": "Component/BreadPhoto"
+        },
+        {
+          "instanceId": "28:72",
+          "componentId": "27:157",
+          "name": "Component/OfferListRow"
+        },
+        {
+          "instanceId": "I28:72;27:158",
+          "componentId": "27:90",
+          "name": "Component/CroissantPhoto"
+        },
+        {
+          "instanceId": "28:15",
+          "componentId": "27:164",
+          "name": "Component/BottomNav"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "28:58",
+          "name": "Component/OfferCard",
+          "width": 350,
+          "height": 268,
+          "destinations": [
+            "28:80"
+          ],
+          "trigger": "ON_CLICK"
+        }
+      ],
+      "viewport": {
+        "id": "28:13",
+        "height": 664,
+        "contentHeight": 652,
+        "overflow": "VERTICAL"
+      },
+      "rasterFills": 2,
+      "demoLabelPresent": true,
+      "unknownAllergensDisclosed": false
+    },
+    {
+      "screenId": "SB-034",
+      "id": "28:80",
+      "name": "SB-034 · Chi tiết ưu đãi · Pilot v0.3",
+      "type": "FRAME",
+      "width": 390,
+      "height": 844,
+      "locked": false,
+      "layout": "VERTICAL",
+      "textCount": 14,
+      "allFontsBeVietnamPro": true,
+      "editableVerified": true,
+      "allTextStyleBound": true,
+      "horizontalOrVerticalTextOverflow": [],
+      "instances": [
+        {
+          "instanceId": "28:84",
+          "componentId": "27:96",
+          "name": "Component/AppBar"
+        },
+        {
+          "instanceId": "28:94",
+          "componentId": "27:89",
+          "name": "Component/BreadPhoto"
+        },
+        {
+          "instanceId": "28:101",
+          "componentId": "27:101",
+          "name": "Component/PickupInfo"
+        },
+        {
+          "instanceId": "28:108",
+          "componentId": "27:108",
+          "name": "Component/MerchantRow"
+        },
+        {
+          "instanceId": "28:92",
+          "componentId": "27:91",
+          "name": "Style=Primary"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "I28:84;27:97",
+          "name": "BackAction",
+          "width": 48,
+          "height": 48,
+          "destinations": [
+            "28:2"
+          ],
+          "trigger": "ON_CLICK"
+        },
+        {
+          "id": "28:92",
+          "name": "Component/Button",
+          "width": 350,
+          "height": 52,
+          "destinations": [
+            "28:118"
+          ],
+          "trigger": "ON_CLICK"
+        }
+      ],
+      "viewport": {
+        "id": "28:89",
+        "height": 648,
+        "contentHeight": 562,
+        "overflow": "VERTICAL"
+      },
+      "rasterFills": 1,
+      "demoLabelPresent": true,
+      "unknownAllergensDisclosed": true
+    },
+    {
+      "screenId": "SB-051",
+      "id": "28:118",
+      "name": "SB-051 · Chọn giờ nhận · Pilot v0.3",
+      "type": "FRAME",
+      "width": 390,
+      "height": 844,
+      "locked": false,
+      "layout": "VERTICAL",
+      "textCount": 18,
+      "allFontsBeVietnamPro": true,
+      "editableVerified": true,
+      "allTextStyleBound": true,
+      "horizontalOrVerticalTextOverflow": [],
+      "instances": [
+        {
+          "instanceId": "28:122",
+          "componentId": "27:96",
+          "name": "Component/AppBar"
+        },
+        {
+          "instanceId": "28:136",
+          "componentId": "27:115",
+          "name": "Component/OfferSummary"
+        },
+        {
+          "instanceId": "I28:136;27:116",
+          "componentId": "27:89",
+          "name": "Component/BreadPhoto"
+        },
+        {
+          "instanceId": "28:144",
+          "componentId": "27:128",
+          "name": "State=Selected"
+        },
+        {
+          "instanceId": "28:151",
+          "componentId": "27:135",
+          "name": "State=Expired"
+        },
+        {
+          "instanceId": "28:159",
+          "componentId": "27:108",
+          "name": "Component/MerchantRow"
+        },
+        {
+          "instanceId": "28:130",
+          "componentId": "27:91",
+          "name": "Style=Primary"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "I28:122;27:97",
+          "name": "BackAction",
+          "width": 48,
+          "height": 48,
+          "destinations": [
+            "28:80"
+          ],
+          "trigger": "ON_CLICK"
+        },
+        {
+          "id": "28:130",
+          "name": "Component/Button",
+          "width": 350,
+          "height": 52,
+          "destinations": [
+            "28:167"
+          ],
+          "trigger": "ON_CLICK"
+        }
+      ],
+      "viewport": {
+        "id": "28:127",
+        "height": 648,
+        "contentHeight": 563,
+        "overflow": "VERTICAL"
+      },
+      "rasterFills": 1,
+      "demoLabelPresent": true,
+      "unknownAllergensDisclosed": false
+    },
+    {
+      "screenId": "SB-053",
+      "id": "28:167",
+      "name": "SB-053 · Tóm tắt đặt trước · Pilot v0.3",
+      "type": "FRAME",
+      "width": 390,
+      "height": 844,
+      "locked": false,
+      "layout": "VERTICAL",
+      "textCount": 20,
+      "allFontsBeVietnamPro": true,
+      "editableVerified": true,
+      "allTextStyleBound": true,
+      "horizontalOrVerticalTextOverflow": [],
+      "instances": [
+        {
+          "instanceId": "28:171",
+          "componentId": "27:96",
+          "name": "Component/AppBar"
+        },
+        {
+          "instanceId": "28:182",
+          "componentId": "27:115",
+          "name": "Component/OfferSummary"
+        },
+        {
+          "instanceId": "I28:182;27:116",
+          "componentId": "27:89",
+          "name": "Component/BreadPhoto"
+        },
+        {
+          "instanceId": "28:189",
+          "componentId": "27:108",
+          "name": "Component/MerchantRow"
+        },
+        {
+          "instanceId": "28:196",
+          "componentId": "27:101",
+          "name": "Component/PickupInfo"
+        },
+        {
+          "instanceId": "28:179",
+          "componentId": "27:91",
+          "name": "Style=Primary"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "I28:171;27:97",
+          "name": "BackAction",
+          "width": 48,
+          "height": 48,
+          "destinations": [
+            "28:118"
+          ],
+          "trigger": "ON_CLICK"
+        },
+        {
+          "id": "28:179",
+          "name": "Component/Button",
+          "width": 350,
+          "height": 52,
+          "destinations": [
+            "28:215"
+          ],
+          "trigger": "ON_CLICK"
+        }
+      ],
+      "viewport": {
+        "id": "28:176",
+        "height": 648,
+        "contentHeight": 585,
+        "overflow": "VERTICAL"
+      },
+      "rasterFills": 1,
+      "demoLabelPresent": true,
+      "unknownAllergensDisclosed": true
+    },
+    {
+      "screenId": "SB-056",
+      "id": "28:215",
+      "name": "SB-056 · Đặt trước thành công · Pilot v0.3",
+      "type": "FRAME",
+      "width": 390,
+      "height": 844,
+      "locked": false,
+      "layout": "VERTICAL",
+      "textCount": 14,
+      "allFontsBeVietnamPro": true,
+      "editableVerified": true,
+      "allTextStyleBound": true,
+      "horizontalOrVerticalTextOverflow": [],
+      "instances": [
+        {
+          "instanceId": "28:219",
+          "componentId": "27:96",
+          "name": "Component/AppBar"
+        },
+        {
+          "instanceId": "28:237",
+          "componentId": "27:183",
+          "name": "Component/DemoQR"
+        },
+        {
+          "instanceId": "28:245",
+          "componentId": "27:101",
+          "name": "Component/PickupInfo"
+        },
+        {
+          "instanceId": "28:252",
+          "componentId": "27:108",
+          "name": "Component/MerchantRow"
+        },
+        {
+          "instanceId": "28:227",
+          "componentId": "27:91",
+          "name": "Style=Primary"
+        }
+      ],
+      "reactions": [
+        {
+          "id": "I28:219;27:97",
+          "name": "BackAction",
+          "width": 48,
+          "height": 48,
+          "destinations": [
+            "28:167"
+          ],
+          "trigger": "ON_CLICK"
+        },
+        {
+          "id": "28:227",
+          "name": "Component/Button",
+          "width": 350,
+          "height": 52,
+          "destinations": [
+            "28:2"
+          ],
+          "trigger": "ON_CLICK"
+        }
+      ],
+      "viewport": {
+        "id": "28:224",
+        "height": 648,
+        "contentHeight": 631,
+        "overflow": "VERTICAL"
+      },
+      "rasterFills": 0,
+      "demoLabelPresent": true,
+      "unknownAllergensDisclosed": false
+    }
+  ],
+  "components": [
+    {
+      "id": "27:89",
+      "name": "Component/BreadPhoto",
+      "width": 350,
+      "height": 144,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:90",
+      "name": "Component/CroissantPhoto",
+      "width": 350,
+      "height": 144,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:91",
+      "name": "Style=Primary",
+      "width": 350,
+      "height": 52,
+      "parentId": "27:95",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Label#27:2",
+        "Style"
+      ]
+    },
+    {
+      "id": "27:93",
+      "name": "Style=Secondary",
+      "width": 350,
+      "height": 52,
+      "parentId": "27:95",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Label#27:2",
+        "Style"
+      ]
+    },
+    {
+      "id": "27:96",
+      "name": "Component/AppBar",
+      "width": 390,
+      "height": 56,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Title#27:3"
+      ]
+    },
+    {
+      "id": "27:101",
+      "name": "Component/PickupInfo",
+      "width": 350,
+      "height": 70,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:108",
+      "name": "Component/MerchantRow",
+      "width": 350,
+      "height": 40,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:115",
+      "name": "Component/OfferSummary",
+      "width": 350,
+      "height": 64,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:121",
+      "name": "State=Available",
+      "width": 350,
+      "height": 84,
+      "parentId": "27:142",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills",
+        "strokes"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "State"
+      ]
+    },
+    {
+      "id": "27:128",
+      "name": "State=Selected",
+      "width": 350,
+      "height": 84,
+      "parentId": "27:142",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills",
+        "strokes"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "State"
+      ]
+    },
+    {
+      "id": "27:135",
+      "name": "State=Expired",
+      "width": 350,
+      "height": 84,
+      "parentId": "27:142",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills",
+        "strokes"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "State"
+      ]
+    },
+    {
+      "id": "27:143",
+      "name": "Component/OfferCard",
+      "width": 350,
+      "height": 268,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Merchant#27:4",
+        "Title#27:5"
+      ]
+    },
+    {
+      "id": "27:157",
+      "name": "Component/OfferListRow",
+      "width": 350,
+      "height": 96,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:164",
+      "name": "Component/BottomNav",
+      "width": 390,
+      "height": 80,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    },
+    {
+      "id": "27:183",
+      "name": "Component/DemoQR",
+      "width": 132,
+      "height": 132,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [],
+      "allTextStyleBound": true,
+      "propertyKeys": []
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:4:3",
+      "name": "primitive/143E32",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:4",
+      "name": "color/brand/900",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:5",
+      "name": "primitive/33745A",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:6",
+      "name": "color/brand/700",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:7",
+      "name": "primitive/E8EFE6",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:8",
+      "name": "color/brand/100",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:9",
+      "name": "primitive/F8F6F0",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:10",
+      "name": "color/surface/canvas",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:11",
+      "name": "primitive/FFFFFF",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:12",
+      "name": "color/surface/card",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:13",
+      "name": "primitive/D7834B",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:14",
+      "name": "color/accent/orange",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:15",
+      "name": "primitive/894E2E",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:16",
+      "name": "color/accent/orangeText",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:17",
+      "name": "color/text/primary",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:18",
+      "name": "primitive/526C60",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:19",
+      "name": "color/text/secondary",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:20",
+      "name": "primitive/D9E2D9",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:21",
+      "name": "color/border/default",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:22",
+      "name": "primitive/B42318",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:23",
+      "name": "color/semantic/error",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:24",
+      "name": "primitive/9A5400",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:25",
+      "name": "color/semantic/warning",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:26",
+      "name": "primitive/25603C",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:27",
+      "name": "color/semantic/success",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": true
+    },
+    {
+      "id": "VariableID:4:28",
+      "name": "spacing/4",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:29",
+      "name": "spacing/8",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:30",
+      "name": "spacing/12",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:31",
+      "name": "spacing/16",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:32",
+      "name": "spacing/20",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:33",
+      "name": "spacing/24",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:34",
+      "name": "spacing/32",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:35",
+      "name": "spacing/48",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:36",
+      "name": "radius/tight",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:37",
+      "name": "radius/control",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:38",
+      "name": "radius/card",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:4:39",
+      "name": "radius/sheet",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntaxSet": true,
+      "aliased": false
+    },
+    {
+      "id": "VariableID:27:88",
+      "name": "primitive/223028",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntaxSet": true,
+      "aliased": false
+    }
+  ],
+  "textStyleCount": 8,
+  "flowStartingPoints": [
+    {
+      "nodeId": "28:2",
+      "name": "Pilot | Fresh build v0.3 | Demo"
+    }
+  ],
+  "checks": {
+    "screenCount": 5,
+    "uniqueScreenIds": 5,
+    "all390x844": true,
+    "nativeImageOnlyFrames": 0,
+    "componentInstances": 28,
+    "interactionCount": 9
+  },
+  "errors": []
+}

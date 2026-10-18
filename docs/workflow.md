@@ -30,8 +30,6 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 - Không buộc GPS/push; không thêm chatbot, delivery, thanh toán online hoặc merchant console vào MVP khi chưa duyệt.
 - Không kết thúc batch mà bỏ cập nhật registry/checkpoint; không coi render đẹp là `DONE`.
 
-### Bootstrap order
-
 ## FIGMA FILE ARCHITECTURE VÀ THIẾT KẾ EDITABLE
 
 ### File và project
@@ -54,7 +52,7 @@ Page Figma **đề xuất tối giản**, không tạo nhiều page chỉ vì đ
 Prototype nối **trên frame gốc**, không tạo bản sao ở page khác rồi đếm hai lần. Nếu một page trở nên quá lớn hoặc có nhiều nhóm đồng chỉnh, tách theo luồng thực tế và cập nhật `docs/workflow.md` + registry. `Rescue Market` không buộc giữ một page nếu quá nặng; bảng này là gợi ý ban đầu, không phải Figma layout cố định.
 ### Naming conventions
 
-- High-fi frame name: `SB-034 · Offer Detail · Available` hoặc `SB-043 · Offer Detail · Sold Out`.
+- High-fi frame name: `SB-034 · Offer Detail · Available` hoặc `SB-046 · Offer Detail · Sold Out`.
 - Core component: `Component/OfferCard`, variant `Status=Available, Layout=Vertical`.
 - Design token: `color/brand/900`, `spacing/16`, `radius/card`, `type/body/regular`, `effect/sheet`.
 - Image asset: `food_offer_bakery_01.webp` với manifest; tránh asset names kiểu `image_123 final2`.
@@ -341,3 +339,9 @@ Git: branch docs/bootstrap-figma-pilot cho bootstrap; về sau design/<module>-<
 Source requirements được kiểm tra bằng tài liệu gốc ngoài repo; provenance/hash giữ trong tracking/evidence/migration.json. Không yêu cầu đọc source attachment để tiếp tục tác vụ. Không lưu secrets hoặc cấu hình tài khoản toàn cục. Không cài tool trùng nếu official plugin đã có.
 
 Rollback: revert commit docs khi cần; Figma chỉ sửa/xóa exact IDs do phiên này tạo sau khi đọc live, không dùng rollback Git để giả định canvas đã rollback.
+
+## Skills cài trong repo
+
+Theo yêu cầu mới nhất, frontend-design (Anthropic) và ui-ux-pro-max (NextLevelBuilder) được cài trong `.agents/skills/`, không giữ bản global. Manifest giữ source/revision/hash. Dùng find-skills để tìm, kiểm metadata/content/license rồi cài với destination project-local. Đây là upstream skills, không phải custom SaveBite skills. Các official Figma skills do plugin cung cấp được reuse. Không tự generate thêm Master design document từ skill khi docs/design-system.md đã canonical.
+
+Search design-system tự động của UI/UX Pro Max trả pattern thiên về web marketing không khớp consumer pickup; không áp dụng purple/testimonials/delivery. Product-domain fallback Restaurant/Food Service chỉ hỗ trợ lựa chọn ảnh thực phẩm và hierarchy; policies SaveBite vẫn theo product.md.

@@ -6,6 +6,8 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ### Nguồn bắt buộc
 
+Bản Markdown đầy đủ: [đề bài](references/course-assignment.md), [nội dung slide](references/savebite-slide-content.md), [case study tham khảo](references/zia-pizza-case-study.md). Các bản nguồn giữ nội dung lịch sử; policy hiện hành được giải quyết tại tài liệu domain này và decisions.md.
+
 | Source | Dùng để quyết định | Giới hạn |
 |---|---|---|
 | `GROUP ASSIGNMENT-UXUI.pdf` | Deliverables, rubric, 100 hi-fi Figma screens, low-fi, prototype, videos, mobile demo, code | Có chỗ không nhất quán giữa mục bàn giao và rubric số màn code |

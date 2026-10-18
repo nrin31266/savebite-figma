@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-10-19",
+  "provider": "official Figma MCP/plugin",
+  "account_selection": "RIN explicitly selected by owner",
+  "identity": {
+    "name": "Nguyen Van Rin",
+    "team": "Nguyễn Văn Rin's team",
+    "tier": "student",
+    "seat": "Full",
+    "role": "admin"
+  },
+  "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
+  "FigmaWrite": "VERIFIED",
+  "trial": {
+    "pageId": "2:2",
+    "frameId": "2:3",
+    "textId": "2:4",
+    "native_editable_readback": true,
+    "agent_owned_trial_removed": true
+  },
+  "preflight": {
+    "repository": "empty before task; git initialized locally",
+    "original_page": "0:1",
+    "original_page_empty": true,
+    "original_page_preserved": true,
+    "local_component_count": 0,
+    "local_variable_count": 0,
+    "text_style_count": 0,
+    "subscribed_libraries": 0,
+    "code_connect_or_app_source": false
+  },
+  "skill_discovery_commands": [
+    "npx --yes skills find frontend-design",
+    "npx --yes skills find 'mobile app design'",
+    "npx --yes skills find accessibility"
+  ],
+  "project_skills": [
+    "frontend-design",
+    "ui-ux-pro-max"
+  ],
+  "global_copies_retained": false,
+  "new_MCP_installed": false,
+  "Context7_needed": false,
+  "credentials_committed": false
+}

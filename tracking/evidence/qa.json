@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-19",
+  "revision": "pilot-v0.3",
+  "gate": "AWAITING_OWNER_REVIEW",
+  "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
+  "readback_checks": {
+    "screenCount": 5,
+    "uniqueScreenIds": 5,
+    "all390x844": true,
+    "nativeImageOnlyFrames": 0,
+    "componentInstances": 28,
+    "interactionCount": 9
+  },
+  "readback_errors": [],
+  "width_stress": [
+    {
+      "mutatedNodeIds": [
+        "28:2",
+        "28:80",
+        "28:118",
+        "28:167",
+        "28:215"
+      ],
+      "width": 360,
+      "screens": [
+        {
+          "id": "28:2",
+          "overflows": [],
+          "contentHeight": 652
+        },
+        {
+          "id": "28:80",
+          "overflows": [],
+          "contentHeight": 562
+        },
+        {
+          "id": "28:118",
+          "overflows": [],
+          "contentHeight": 563
+        },
+        {
+          "id": "28:167",
+          "overflows": [],
+          "contentHeight": 585
+        },
+        {
+          "id": "28:215",
+          "overflows": [],
+          "contentHeight": 631
+        }
+      ]
+    },
+    {
+      "mutatedNodeIds": [
+        "28:2",
+        "28:80",
+        "28:118",
+        "28:167",
+        "28:215"
+      ],
+      "width": 430,
+      "screens": [
+        {
+          "id": "28:2",
+          "overflows": [],
+          "contentHeight": 652
+        },
+        {
+          "id": "28:80",
+          "overflows": [],
+          "contentHeight": 562
+        },
+        {
+          "id": "28:118",
+          "overflows": [],
+          "contentHeight": 563
+        },
+        {
+          "id": "28:167",
+          "overflows": [],
+          "contentHeight": 585
+        },
+        {
+          "id": "28:215",
+          "overflows": [],
+          "contentHeight": 631
+        }
+      ]
+    }
+  ],
+  "restored_width": 390,
+  "font_stress": {
+    "screenId": "SB-034",
+    "multiplier": 1.25,
+    "all_14_text_nodes_scaled": true,
+    "price_bounds": {
+      "width": 146,
+      "height": 43
+    },
+    "content_height": 640,
+    "viewport_height": 648,
+    "screenshot": "tracking/evidence/SB-034-font125.png",
+    "manual_visual_review": "PASS",
+    "styles_restored": true,
+    "not_device_dynamic_type": true
+  },
+  "connected_hit_targets": [
+    {
+      "id": "28:58",
+      "width": 350,
+      "height": 268
+    },
+    {
+      "id": "I28:84;27:97",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "id": "28:92",
+      "width": 350,
+      "height": 52
+    },
+    {
+      "id": "I28:122;27:97",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "id": "28:130",
+      "width": 350,
+      "height": 52
+    },
+    {
+      "id": "I28:171;27:97",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "id": "28:179",
+      "width": 350,
+      "height": 52
+    },
+    {
+      "id": "I28:219;27:97",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "id": "28:227",
+      "width": 350,
+      "height": 52
+    }
+  ],
+  "contrast": [
+    {
+      "foreground": "#FFFFFF",
+      "background": "#143E32",
+      "ratio": 11.9,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#223028",
+      "background": "#FFFFFF",
+      "ratio": 13.8,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#526C60",
+      "background": "#FFFFFF",
+      "ratio": 5.72,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#526C60",
+      "background": "#F8F6F0",
+      "ratio": 5.29,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#526C60",
+      "background": "#E8EFE6",
+      "ratio": 4.88,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#33745A",
+      "background": "#FFFFFF",
+      "ratio": 5.55,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#33745A",
+      "background": "#F8F6F0",
+      "ratio": 5.13,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#143E32",
+      "background": "#E8EFE6",
+      "ratio": 10.15,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#894E2E",
+      "background": "#FFFFFF",
+      "ratio": 6.58,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#894E2E",
+      "background": "#F8F6F0",
+      "ratio": 6.09,
+      "normal_text_AA": true
+    }
+  ],
+  "prototype_browser": {
+    "method": "Actual canvas clicks in Codex in-app browser; URL and rendered screen checked after each transition",
+    "forward_path": [
+      "28:2",
+      "28:80",
+      "28:118",
+      "28:167",
+      "28:215",
+      "28:2"
+    ],
+    "back_checked": [
+      "28:215",
+      "28:167"
+    ],
+    "result": "PASS",
+    "other_back_links": "Read-back only; all 9 destinations verified structurally"
+  },
+  "visual_review": "All five final screens, overview, component specimens and Foundations inspected. Native editable UI; food photos are raster assets only.",
+  "screenshots": [
+    {
+      "path": "tracking/evidence/SB-015.png",
+      "sha256": "797ffa687f6f8cea84498e55242d6d67ce4c16892e6878f4333a793bfa279ecb"
+    },
+    {
+      "path": "tracking/evidence/SB-034.png",
+      "sha256": "ea3665513c36ee0835845b21f4396b0fedb13bf1546832703080ff4f473ba4cf"
+    },
+    {
+      "path": "tracking/evidence/SB-051.png",
+      "sha256": "fa428a427da44c8029f2785fac55e4a33613940dfb419651787f715e5ed3c8f2"
+    },
+    {
+      "path": "tracking/evidence/SB-053.png",
+      "sha256": "292e169af7b347061accc30290103ad44715739f7111dcb8bef273dbe5280255"
+    },
+    {
+      "path": "tracking/evidence/SB-056.png",
+      "sha256": "8b4fa5b1cc604b5f058ef7fa4058ffdbe8370060bfb6d2d25cb303d1e9bb6136"
+    },
+    {
+      "path": "tracking/evidence/pilot-overview.png",
+      "sha256": "704fe2d1181ceaec72a054d9077432134934a8d9790dba115a98073c3ee6328d"
+    },
+    {
+      "path": "tracking/evidence/components.png",
+      "sha256": "f518d49ad3e8fe5822e74557ecef552bf3d2ed60c7013949ff025ce638c76913"
+    },
+    {
+      "path": "tracking/evidence/foundations.png",
+      "sha256": "12524c18dc9925e0f7438bead76f6ec2b5a431aaf7689238016bcf4d0e83591f"
+    },
+    {
+      "path": "tracking/evidence/SB-034-font125.png",
+      "sha256": "6023123ac3fa5ee7a5daf0af8624e1c7b0c67263d7fcd19e5e702a18ce152728"
+    }
+  ],
+  "not_checked": [
+    "Owner aesthetic acceptance",
+    "Real participants / usability outcomes",
+    "Figma Mobile and physical-device testing",
+    "VoiceOver / TalkBack / keyboard navigation",
+    "Backend, stock atomics, auth, actual pickup verification",
+    "Full search/filter/tab/category interactions",
+    "Long-content, missing-photo and all error-state matrix outside pilot subset"
+  ],
+  "removed_rejected_root_ids": [
+    "5:204",
+    "5:205",
+    "5:206",
+    "5:207",
+    "5:208"
+  ],
+  "removed_rejected_components_page": "5:2"
+}
