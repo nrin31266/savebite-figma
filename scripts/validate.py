@@ -60,12 +60,16 @@ def main():
         path = artifact.get('path') or artifact['filePath']
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == artifact['sha256'], 'Asset drift: ' + path
     skills = json.loads((ROOT / '.agents/skills/manifest.json').read_text())
+    checked_skills = 0
+    optional_skills = 0
     for skill in skills['skills']:
         assert skill['scope'] == 'project' and skill['path'].startswith('.agents/skills/')
         source = ROOT / skill['path'] / 'SKILL.md'
         if not source.exists() and skill.get('committed') is False:
+            optional_skills += 1
             continue  # Optional local install; not redistributed in public clones.
         assert hashlib.sha256(source.read_bytes()).hexdigest() == skill['skill_sha256'], 'Skill hash drift'
+        checked_skills += 1
     product = (ROOT / 'docs/product.md').read_text()
     experience = (ROOT / 'docs/experience.md').read_text()
     assert set(re.findall(r'\| (D-\d{3}) \|', product)) == {f'D-{n:03d}' for n in range(1, 21)}
@@ -89,7 +93,7 @@ def main():
     else:
         raise AssertionError('Validator self-check failed')
     assert all(f'F-0{i}' in experience for i in range(1, 7))
-    print(f'PASS: 100 unique IDs; 20 defaults; 6 flows; docs links; canonical symlink; {node_count} Figma mappings; 15 components; QA/asset/skill hashes; 360/430 widths; contrast; 9 targets; DONE={sum(r["status"] == "DONE" for r in rows)}; duplicate-ID self-check')
+    print(f'PASS: 100 unique IDs; 20 defaults; 6 flows; docs links; canonical symlink; {node_count} Figma mappings; 15 components; QA/asset hashes; {checked_skills} skill hashes ({optional_skills} optional local installs absent); 360/430 widths; contrast; 9 targets; DONE={sum(r["status"] == "DONE" for r in rows)}; duplicate-ID self-check')
 
 
 if __name__ == '__main__':

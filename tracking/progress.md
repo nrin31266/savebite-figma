@@ -62,6 +62,6 @@ Asset pending đã được giải quyết bằng hai ảnh Pexels có manifest.
 
 - Task branch: docs/figma-scope-cleanup. DEC-007 cho phép backup private, lọc lịch sử, force-push và đổi chính repo [savebite-figma](https://github.com/nrin31266/savebite-figma) thành public. Không thay Figma sharing.
 - Backup private đã tạo ngoài repo, gồm workspace archive và Git bundle; bundle verify PASS. Không đưa backup hoặc đường dẫn máy cá nhân vào Git public. SHA cũ sẽ đổi sau rewrite; dùng git log để đọc checkpoint hiện tại.
-- Public release: PREPARING — chỉ đổi visibility sau khi kiểm tra lịch sử đã lọc và refs remote.
-- Audit QA: validator PASS (100 IDs, 20 defaults, 6 flows, 5 node mappings, 15 components, evidence/assets/skills hashes); canvas/mobile/usability NOT CHECKED trong phiên này. Kiểm tra links gồm progress và docs; không gọi QA này là revalidation thiết kế.
+- Public release: VERIFIED — GitHub trả PUBLIC, default main; anonymous API + clone PASS. Đã force-push bằng explicit force-with-lease sau scan 4 commits/141 unique blobs: không thấy credential patterns, raw reference paths hoặc source paths máy cá nhân. Main, bootstrap và cleanup đã chứa docs audit; không có PR/tags giữ các nguồn cũ.
+- Audit QA: validator PASS (100 IDs, 20 defaults, 6 flows, 5 node mappings, 15 components, evidence/assets/skills hashes); canvas/mobile/usability NOT CHECKED trong phiên này. Kiểm tra links gồm progress và docs; clone public không có 3 skill local-only vẫn validate được. Validator báo riêng số skill đã kiểm hash và số optional chưa cài. Không gọi QA này là revalidation thiết kế.
 - Next design batch: owner review pilot; sau acceptance mới khóa baseline và lên batch tiếp theo. Không triển khai app hoặc tự tạo tiếp 100 màn.
