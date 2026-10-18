@@ -1,0 +1,101 @@
+id,group,title,flow,screen_type,priority,status,figma_file_key,figma_page_id,figma_node_id,design_baseline_version,component_ids,data_fixture_ids,linked_from,linked_to,prototype_verified,editable_verified,a11y_checked,qa_screenshot,qa_result,reviewed_by,updated_at,notes
+SB-001,Entry & Auth,Splash / warm start,Launch,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Thương hiệu, khởi động có trạng thái offline/retry"
+SB-002,Entry & Auth,Onboarding 1 — Giá trị cứu thực phẩm,Intro,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Nêu giá trị và lợi ích thực tế, có Skip"
+SB-003,Entry & Auth,Onboarding 2 — Tìm món gần bạn,Intro,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Minh họa explore, giá/địa điểm"
+SB-004,Entry & Auth,Onboarding 3 — Pantry giảm lãng phí,Intro,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Pantry là phần bổ trợ, CTA tiếp tục"
+SB-005,Entry & Auth,Cổng đăng nhập hoặc khám phá,Auth,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Browse as guest hợp lệ
+SB-006,Entry & Auth,Đăng ký tài khoản,Auth,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Email/mật khẩu, điều khoản, validation"
+SB-007,Entry & Auth,Chờ xác minh email,Auth,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Gửi lại email, đổi email"
+SB-008,Entry & Auth,Đăng nhập,Auth,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Email/mật khẩu, lỗi đăng nhập"
+SB-009,Entry & Auth,Quên mật khẩu,Auth,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Nhập email khôi phục
+SB-010,Entry & Auth,Đã gửi liên kết khôi phục,Auth,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Gửi lại, quay về login"
+SB-011,Entry & Auth,Giải thích quyền vị trí,Permission,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Từ chối có chọn khu vực thủ công
+SB-012,Entry & Auth,Giải thích quyền thông báo,Permission,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Không ép bật; có thể bật sau
+SB-013,Discovery,Home — khách chưa đăng nhập,Explore,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Cơ chế xem món mà không cần login
+SB-014,Discovery,Home — người dùng đăng nhập,Explore,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Nội dung gần bạn, ưu đãi theo vị trí"
+SB-015,Discovery,Khám phá — danh sách ưu đãi,Explore,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,List với phân cấp giá/địa điểm/pickup
+SB-016,Discovery,Khám phá — bản đồ,Explore,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Pins + đồng bộ list, không ghi vị trí giả"
+SB-017,Discovery,Xem nhanh điểm trên bản đồ,Explore,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Bottom sheet card cho pin được chọn
+SB-018,Discovery,Chọn khu vực / campus,Location,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Khu vực thủ công và GPS tùy chọn
+SB-019,Discovery,Tìm kiếm — nhập từ khóa,Search,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Bàn phím, recent queries"
+SB-020,Discovery,Tìm kiếm — gợi ý,Search,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Từ khóa thực phẩm/cửa hàng
+SB-021,Discovery,Tìm kiếm — kết quả,Search,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Sort/filter hiện trạng
+SB-022,Discovery,Tìm kiếm — không kết quả,Search,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Reset filter, mở rộng bán kính"
+SB-023,Discovery,Bộ lọc tổng hợp,Filter,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Các group rõ: ngân sách, thời gian, loại món"
+SB-024,Discovery,Lọc ngân sách,Filter,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Dưới 30K, dưới 50K, tùy chỉnh"
+SB-025,Discovery,Lọc thời gian nhận,Filter,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Giờ/khung trong ngày, phù hợp giờ học"
+SB-026,Discovery,Lọc nhu cầu ăn uống,Filter,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Dị ứng luôn xác minh trên detail
+SB-027,Discovery,Sắp xếp kết quả,Filter,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Gần nhất, giá thấp, nhận sớm"
+SB-028,Discovery,Danh mục — bữa ăn,Category,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Listing meal category, sort"
+SB-029,Discovery,Danh mục — bánh / tiệm bánh,Category,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Listing bakery category
+SB-030,Discovery,Danh mục — thực phẩm cửa hàng,Category,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Listing groceries
+SB-031,Discovery,Ưu đãi — đang nhận sớm,Explore,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Pickup window đóng sớm
+SB-032,Discovery,Ưu đãi — quanh trường,Explore,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Campus radius + pickup distance
+SB-033,Discovery,Đã lưu — danh sách yêu thích,Favorites,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Offers/merchants đã lưu
+SB-034,Offer & Reservation,Chi tiết offer — món cụ thể,Offer,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Ảnh thực, giá, khung giờ, cửa hàng, tình trạng"
+SB-035,Offer & Reservation,Thư viện ảnh món,Offer,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Ảnh có chú thích, phóng to"
+SB-036,Offer & Reservation,Thành phần & cảnh báo dị ứng,Offer,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Nguồn do merchant cung cấp, unknown thì ghi rõ"
+SB-037,Offer & Reservation,"Chất lượng, hạn & hướng dẫn sử dụng",Offer,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Không bán thực phẩm quá hạn dùng
+SB-038,Offer & Reservation,Chi tiết cửa hàng,Merchant,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Địa chỉ, giờ nhận, uy tín có căn cứ"
+SB-039,Offer & Reservation,Bản đồ & đường tới cửa hàng,Merchant,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Cho phép mở app bản đồ ngoài
+SB-040,Offer & Reservation,Quy định nhận món tại cửa hàng,Merchant,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Code nhận hàng, tới đúng pickup slot"
+SB-041,Offer & Reservation,Các offer khác của cửa hàng,Merchant,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Merchant-linked listing
+SB-042,Offer & Reservation,Đánh giá cửa hàng,Merchant,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Review đã xác thực, không dữ liệu giả"
+SB-043,Offer & Reservation,Chi tiết đánh giá,Merchant,Core,P2,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Nội dung đánh giá thực và report
+SB-044,Offer & Reservation,Chi tiết combo / túi bất ngờ,Offer,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Chỉ kỳ vọng category, allergen 'không bảo đảm' rõ"
+SB-045,Offer & Reservation,Giải thích túi bất ngờ,Offer,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Minh bạch điều chưa biết và rủi ro dị ứng
+SB-046,Offer & Reservation,Offer — hết hàng,Offer,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Không cho đặt; gợi ý tương tự
+SB-047,Offer & Reservation,Offer — ngoài giờ nhận,Offer,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Khóa CTA, thông tin giờ nhận"
+SB-048,Offer & Reservation,Offer — gần đóng cửa,Offer,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Cảnh báo còn ít thời gian
+SB-049,Offer & Reservation,Offer — có xung đột dị ứng,Offer,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Không claim an toàn, CTA cảnh báo rõ"
+SB-050,Offer & Reservation,Chọn số lượng,Reserve,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Tồn kho và giới hạn theo offer
+SB-051,Offer & Reservation,Chọn khung giờ nhận,Reserve,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Hiển thị ngày, giờ, thời gian còn lại"
+SB-052,Offer & Reservation,Đọc lại hướng dẫn nhận,Reserve,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Nơi nhận, giấy tờ/code, liên hệ"
+SB-053,Offer & Reservation,Tóm tắt đặt trước,Reserve,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Giá, số lượng, khung giờ, thanh toán tại quầy"
+SB-054,Offer & Reservation,Xác nhận đặt giữ chỗ,Reserve,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Rõ không thu tiền online trong MVP
+SB-055,Offer & Reservation,Đang xử lý giữ chỗ,Reserve,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Không double submit
+SB-056,Offer & Reservation,Đặt trước thành công,Reserve,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Order ID/code và hướng dẫn nhận
+SB-057,Offer & Reservation,Giữ chỗ thất bại,Reserve,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Lỗi mạng/máy chủ, retry có kiểm soát"
+SB-058,Offer & Reservation,Tồn kho thay đổi khi xác nhận,Reserve,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Giải thích, chọn lại số lượng/offer"
+SB-059,Offer & Reservation,Cần đăng nhập để giữ chỗ,Reserve,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Return to offer sau auth
+SB-060,Orders & Pickup,Đơn của tôi — tổng quan,Orders,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Đang chờ, sắp nhận, hoàn tất"
+SB-061,Orders & Pickup,Đơn đang chờ nhận,Orders,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Danh sách sắp đến hạn
+SB-062,Orders & Pickup,Chi tiết đơn đang chờ nhận,Orders,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Cửa hàng, số lượng, slot, trạng thái"
+SB-063,Orders & Pickup,Mã nhận món / QR,Pickup,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Backup code nếu QR không dùng được
+SB-064,Orders & Pickup,Hướng dẫn đưa mã cho cửa hàng,Pickup,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Merchant xác minh, không tự nhận thành công"
+SB-065,Orders & Pickup,Dẫn đường tới điểm nhận,Pickup,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Liên kết maps an toàn
+SB-066,Orders & Pickup,Đơn đã sẵn sàng,Pickup,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Không hứa merchant luôn xác nhận ready
+SB-067,Orders & Pickup,Sắp hết giờ nhận,Pickup,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Thông báo khẩn nhưng không gây hoảng
+SB-068,Orders & Pickup,Quá giờ nhận,Pickup,State,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Hết hạn theo policy, support path"
+SB-069,Orders & Pickup,Báo cáo vấn đề khi nhận,Support,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Loại sự cố, bằng chứng, liên hệ"
+SB-070,Orders & Pickup,Xác nhận hủy đơn,Orders,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Hiển thị policy và hậu quả
+SB-071,Orders & Pickup,Hủy đơn thành công,Orders,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Xác nhận, tiếp tục khám phá"
+SB-072,Orders & Pickup,Chi tiết đơn hoàn tất,Orders,Core,P0,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Giá thực trả, đã nhận, đánh giá"
+SB-073,Orders & Pickup,Lịch sử đơn trống,Orders,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Onboarding và explore CTA
+SB-074,Smart Pantry,Giới thiệu Pantry,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Giải thích local-first, không tự đồng bộ"
+SB-075,Smart Pantry,Tủ thực phẩm của tôi,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Sort theo expiry, quantity, category"
+SB-076,Smart Pantry,Tủ trống,Pantry,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"CTA thêm thủ công, ví dụ rõ"
+SB-077,Smart Pantry,Thêm thực phẩm thủ công,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Tên, số lượng, đơn vị, ngày hạn"
+SB-078,Smart Pantry,Chọn loại thực phẩm,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Danh mục có icon giản lược
+SB-079,Smart Pantry,Chọn ngày hạn sử dụng,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Ngày 'use by' vs 'best before'
+SB-080,Smart Pantry,Xác nhận thêm thực phẩm,Pantry,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Review thông tin và edit
+SB-081,Smart Pantry,Chi tiết thực phẩm,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Ngày hạn, đơn vị, trạng thái, ghi chú"
+SB-082,Smart Pantry,Sửa thực phẩm,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Chỉnh hạn và lượng không mất lịch sử
+SB-083,Smart Pantry,Sắp hết hạn,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Danh sách priority theo hạn
+SB-084,Smart Pantry,Đã quá hạn dùng,Pantry,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Cảnh báo, không đề xuất ăn"
+SB-085,Smart Pantry,Thiết lập nhắc hạn,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Nhắc theo ngày, permission, timezone"
+SB-086,Smart Pantry,Đánh dấu đã sử dụng,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Có partial usage và quantity
+SB-087,Smart Pantry,Đánh dấu đã bỏ,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Lý do tự chọn, không phán xét"
+SB-088,Smart Pantry,Gợi ý dùng thực phẩm hiện có,Pantry,Core,P2,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Gợi ý tĩnh/quy tắc, không claim AI"
+SB-089,Smart Pantry,Lịch sử sử dụng & bỏ thực phẩm,Pantry,Core,P2,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Minh bạch dữ liệu từ thao tác
+SB-090,Smart Pantry,Tùy chọn Pantry và dữ liệu cục bộ,Pantry,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Export/delete và giới thiệu backup tương lai
+SB-091,Account & Shared,Tài khoản — tổng quan,Account,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Profile, lịch sử, hỗ trợ, cài đặt"
+SB-092,Account & Shared,Chỉnh sửa hồ sơ,Account,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Tên hiển thị, email, xác nhận cập nhật"
+SB-093,Account & Shared,Quản lý khu vực thường dùng,Account,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Campus/home locations, không chia sẻ công khai"
+SB-094,Account & Shared,Lưu khu vực mới,Account,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Map selector, manual entry"
+SB-095,Account & Shared,Trung tâm thông báo,Notifications,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Reservation, reminders, safety alerts"
+SB-096,Account & Shared,Trung tâm thông báo trống,Notifications,State,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Giải thích hệ thống thông báo
+SB-097,Account & Shared,Tùy chọn thông báo,Settings,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,Push riêng cho pickup và pantry
+SB-098,Account & Shared,Quyền riêng tư & dữ liệu,Settings,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Xóa dữ liệu, consent, thiết bị"
+SB-099,Account & Shared,Trợ giúp & câu hỏi thường gặp,Support,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Hủy, dị ứng, pickup, vấn đề merchant"
+SB-100,Account & Shared,Tác động cá nhân,Impact,Core,P1,BACKLOG,,,,,,,,,,,,,,,2026-10-19,"Lần đã nhận, tiền tiết kiệm từ đơn hoàn tất"
