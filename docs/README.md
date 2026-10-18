@@ -29,3 +29,6 @@ Không cần mở PDF/DOCX để đọc nội dung. Chỉ đọc các bản ngu�
 - [Skill manifest](../.agents/skills/manifest.json): frontend-design và ui-ux-pro-max được cài local trong repo; third-party upstream, không custom SaveBite skill.
 - [Asset manifest](../assets/manifest.json): nguồn, giấy phép và phạm vi ảnh minh họa/nguồn tham khảo.
 - [Figma read-back](../tracking/evidence/figma-readback.json): mapping thật của 5 pilot, components và interactions.
+
+- [QA evidence](../tracking/evidence/qa.json): widths, font stress, contrast, hit targets, prototype clicks và các giới hạn chưa kiểm.
+- [Access/tools evidence](../tracking/evidence/access-and-tools.json): student/Full account, write trial và skill discovery.

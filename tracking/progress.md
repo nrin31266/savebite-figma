@@ -61,6 +61,7 @@ Asset pending đã được giải quyết bằng hai ảnh Pexels có manifest.
 ## Git checkpoint và bước tiếp theo
 
 - Branch task: docs/bootstrap-figma-pilot. Bootstrap checkpoint: `4aaa46c` (docs migration và registry trung thực).
-- GitHub private `savebite-figma` được owner cho phép tạo/push theo DEC-004; báo cáo xuất bản và checkpoint mới được ghi sau kiểm tra cuối.
+- Design + QA checkpoint: `82815e3588106535f2b72bd7f5a5f8a70e87d16d`. Đã tạo và push [nrin31266/savebite-figma](https://github.com/nrin31266/savebite-figma), **private**, default branch `main`, remote `origin`. `git ls-remote` đã xác nhận `main` và `docs/bootstrap-figma-pilot` cùng SHA checkpoint này. Không có PR.
+- Báo cáo xuất bản được commit tiếp sau design checkpoint; lấy SHA báo cáo mới nhất bằng `git log -1 --oneline`. Trước commit báo cáo, worktree clean và upstream đồng bộ. Báo cáo chỉ cập nhật README/router/progress; không đổi canvas hoặc bằng chứng thiết kế.
 - Không sửa Git account toàn cục, không force push, không tạo PR, không đổi Figma sharing. `.gitignore` có secrets/env/cache; chỉ force-add những PNG evidence cuối được liệt kê trong QA.
 - Next executable batch: chỉ owner review pilot. Sau acceptance mới khóa baseline và lên batch tiếp theo; chưa tạo 100 màn hoặc app code.
