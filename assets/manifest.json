@@ -8,7 +8,7 @@
     "licenseUrl": "https://www.pexels.com/license/",
     "attribution": "Marcel Fiedler / Pexels",
     "downloadDate": "2026-10-19",
-    "usageScope": "SaveBite fictional sourdough offer; illustrative, no endorsement or real merchant claim",
+    "usageScope": "Retired pilot-v0.4 illustration source; retained with provenance, replaced by generated sourdough image in v0.5.",
     "merchantId": "merchant-demo-a",
     "offerId": "fixture-bakery-01",
     "altText": "Bánh mì men tự nhiên cắt lát trên bàn gỗ; ảnh minh họa demo",
@@ -32,5 +32,25 @@
     "approved": true,
     "sha256": "2613eab5e20d8c51ec42f753d3358af5f61519be953db3f9f8e339f3633c1eb4",
     "figmaImageHash": "2580208af8e3d9b37ac8269656654753cb7e101d"
+  },
+  {
+    "assetId": "food-sourdough-generated-v05",
+    "kind": "FOOD_ILLUSTRATION",
+    "sourceType": "GENERATED_CONCEPT",
+    "filePath": "assets/food/sourdough-warm-demo-v05.png",
+    "sourceUrl": null,
+    "license": "AI-generated concept; no third-party stock license asserted",
+    "attribution": "Generated with OpenAI image_gen for SaveBite",
+    "downloadDate": "2026-10-19",
+    "usageScope": "Fictional SaveBite fixture illustration only; not a real merchant photo, ingredient declaration or safety evidence",
+    "merchantId": "merchant-demo-a",
+    "offerId": "fixture-bakery-01",
+    "altText": "Bánh mì men tự nhiên vàng giòn, vài lát bánh trên bàn gỗ sáng với vải kem và lá xanh; ảnh AI minh họa",
+    "approved": true,
+    "sha256": "b126a3c4174d961479a79d236dcb17a90e08dbbd352c63bc5cd13cc28bb42592",
+    "figmaImageHash": "b1fe3cc0decc2be63eeff51df6b4670067c907e2",
+    "generationBrief": "4:3 warm, bright artisan sourdough food photograph concept on pale wood and cream linen, green herb accents, loaf and slices; no people, logo, text or UI.",
+    "prompt": "Generate a standalone food photography illustration asset for the SaveBite food-rescue mobile prototype, NOT a UI mockup. One inviting artisan sourdough loaf with a golden scored crust, three thick slices showing airy crumb, on a pale natural wooden board with cream linen, a small softly blurred sprig of fresh green herbs in the background. Warm bright morning window light, appetizing rich but natural colors, premium editorial food photography, clean styled scene, realistic texture, gentle shadows, cream/forest-green visual mood. Camera three-quarter close view, loaf centered, generous subject filling the middle 75 percent, landscape 4:3 composition that also crops well to a square or wide card. No lettering, no labels, no logos, no phone, no packaging, no people, no dark backdrop, no infographics. This is explicitly an AI-generated illustrative image for a fictional demo offer, not documentation of an actual merchant or actual food safety.",
+    "generationMode": "built-in image_gen"
   }
 ]

@@ -67,6 +67,14 @@ def main():
     for artifact in [*qa['screenshots'], *json.loads((ROOT / 'assets/manifest.json').read_text())]:
         path = artifact.get('path') or artifact['filePath']
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == artifact['sha256'], 'Asset drift: ' + path
+        # A renderer can briefly return the previous width after native resize.
+        match = re.fullmatch(r'SB-\d{3}(?:-(360|430|font125))?\.png', Path(path).name)
+        if match:
+            png = (ROOT / path).read_bytes()
+            assert png[:8] == b'\x89PNG\r\n\x1a\n', 'Invalid PNG: ' + path
+            size = (int.from_bytes(png[16:20], 'big'), int.from_bytes(png[20:24], 'big'))
+            width = int(match[1]) if match[1] in ('360', '430') else 390
+            assert size == (width, 844), 'Screenshot dimensions drift: ' + path
     skills = json.loads((ROOT / '.agents/skills/manifest.json').read_text())
     checked_skills = 0
     optional_skills = 0

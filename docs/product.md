@@ -242,7 +242,7 @@ Việc **không thiết kế merchant trong 100 frame bản consumer MVP** là q
 - Pantry manual local-first; barcode/AI FUTURE.
 - UI mobile sans-serif, slide design là reference không là design system nguyên bản.
 - 100 frames distinct, error/state chỉ đếm nếu là frame thật và có ý nghĩa.
-- Brand color trầm, ảnh thật, tiếng Việt, không fake people/test/impact.
+- Brand color trầm, ảnh món ăn có provenance, tiếng Việt, không fake people/test/impact. Ảnh AI chỉ được dùng cho concept/fixture hư cấu có nhãn minh họa.
 
 ### Blockers không được tự bịa cách vượt
 
@@ -250,7 +250,7 @@ Việc **không thiết kế merchant trong 100 frame bản consumer MVP** là q
 |---|---|---|---|
 | `B-FIGMA-01` | RESOLVED trong phiên 19/10/2026: RIN student/Full/admin, native sandbox write/read pass | Reverify mỗi phiên; bằng chứng hiện hành trong tracking/progress.md | Không còn chặn pilot |
 | `B-RESEARCH-01` | Chưa có dữ liệu khảo sát/merchant interviews được xác minh trong tài liệu | Lập research plan; không tạo số liệu/quote giả | Chặn claim nghiên cứu, không chặn wireframes giả thuyết |
-| `B-ASSETS-01` | RESOLVED cho pilot: hai ảnh Pexels có source/license/hash; các màn mới chưa được bao phủ | Dùng manifest; tìm nguồn hợp lệ khi có nhu cầu asset mới | Không chặn pilot; không giả đối tác |
+| `B-ASSETS-01` | RESOLVED cho pilot: ảnh croissant Pexels và ảnh bánh mì AI minh họa có source/hash; ảnh AI có generation brief; các màn mới chưa được bao phủ | Dùng manifest; tìm nguồn hợp lệ khi có nhu cầu asset mới | Không chặn pilot; không giả đối tác |
 | `B-LEGAL-01` | Chính sách food safety, xử lý đơn và thanh toán thật chưa được tư vấn/duyệt | Prototype mô phỏng bảo thủ, legal review trước launch | Chặn production launch, không chặn prototype |
 
 ### Khi nào agent phải xin duyệt chủ dự án

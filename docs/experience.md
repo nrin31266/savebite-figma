@@ -195,7 +195,7 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ## Contracts của pilot được duyệt
 
-Dữ liệu chung: `fixture-bakery-01`, merchant `merchant-demo-a`, offer EXACT_ITEM “Bánh mì men tự nhiên”, giá 25.000đ, 1 phần; giá gốc không có evidence nên không hiển thị. Stock 3 phần là fixture. Khu học xá và điểm nhận A hư cấu, không đại diện đối tác thật. Đồng hồ fixture cố định 16:00 ngày 19/10/2026, Asia/Ho_Chi_Minh; slot 17:00–18:00, còn 1 giờ đến lúc bắt đầu. Không suy diễn dị ứng: ingredients/allergens UNKNOWN. Licensed illustration asset `food-sourdough-1079020`. Subset bắt đầu sau khi giả định người dùng đã đăng nhập; chưa tạo auth và không dùng pilot để chứng minh guest-to-login. Số lượng cố định 1 phần, khung 17:00–18:00 được chọn sẵn; chưa kiểm khả năng đổi số lượng/khung giờ.
+Dữ liệu chung: `fixture-bakery-01`, merchant `merchant-demo-a`, offer EXACT_ITEM “Bánh mì men tự nhiên”, giá 25.000đ, 1 phần; giá gốc không có evidence nên không hiển thị. Stock 3 phần là fixture. Khu học xá và điểm nhận A hư cấu, không đại diện đối tác thật. Đồng hồ fixture cố định 16:00 ngày 19/10/2026, Asia/Ho_Chi_Minh; slot 17:00–18:00, còn 1 giờ đến lúc bắt đầu. Không suy diễn dị ứng: ingredients/allergens UNKNOWN. Ảnh AI minh họa `food-sourdough-generated-v05` có provenance trong manifest; không đại diện ảnh merchant thật. Subset bắt đầu sau khi giả định người dùng đã đăng nhập; chưa tạo auth và không dùng pilot để chứng minh guest-to-login. Số lượng cố định 1 phần, khung 17:00–18:00 được chọn sẵn; chưa kiểm khả năng đổi số lượng/khung giờ.
 
 | ID | Mục tiêu và entry | Nội dung / CTA / back | States và edge cases ngoài subset | Mapping / measurement |
 |---|---|---|---|---|
@@ -211,9 +211,9 @@ Fixture phụ fixture-croissant-02 chỉ nằm ở SB-015: bánh sừng bò, 30.
 
 ### Ranh giới tương tác của pilot
 
-Chuỗi đang review: `SB-015 → SB-034 → SB-051 → SB-053 → SB-056 → SB-015`. Đây là click-through đặt trước mô phỏng; F-01 đầy đủ chưa hoàn thành. Các CTA/back nằm trong bảng contract phía trên; search/filter/category/favourite/tabs và offer phụ đang tĩnh.
+Chuỗi đang review: `SB-015 → SB-034 → SB-051 → SB-053 → SB-056 → SB-015`. Đây là click-through đặt trước mô phỏng; F-01 đầy đủ chưa hoàn thành. Các CTA/back nằm trong bảng contract phía trên; search/filter/category/favourite/notification/tabs và offer phụ đang tĩnh.
 
-Back từ SB-056 về SB-053 là đường review prototype, không chứng minh đơn thật có thể chỉnh sau xác nhận. Cả 9 hotspots tiến/lùi đã bấm trong prototype v0.4 và kiểm URL sau mỗi chuyển màn. Mapping node/component phải đọc registry + evidence trước khi sửa canvas.
+Back từ SB-056 về SB-053 là đường review prototype, không chứng minh đơn thật có thể chỉnh sau xác nhận. Cả 9 hotspots tiến/lùi đã bấm trong prototype v0.5 và kiểm URL sau mỗi chuyển màn. Mapping node/component phải đọc registry + evidence trước khi sửa canvas.
 
 Khi mở rộng, định nghĩa auth, stock/error và post-confirm navigation trước khi tạo màn; không suy diễn hành vi production từ đường back của pilot. Controls ngoài subset được ghi rõ trong tài liệu review, không claim đã hoạt động. Copy safety, giá và slot phải khớp product.md/fixture; thay hành vi nghiệp vụ cần decision.
 

@@ -19,7 +19,7 @@ Không cần file nguồn ngoài repo hoặc chat history để hiểu yêu cầ
 - [Prototype pilot](https://www.figma.com/proto/NLTv70kDZ2i3HpOnOKQCDY/SaveBite?page-id=2%3A2&node-id=28-2&starting-point-node-id=28%3A2&scaling=scale-down) chỉ là subset 5 màn, chưa phải F-01 đầy đủ.
 - [Skills và setup cho teammate](references/agent-skills.md): bộ skill cần dùng và cách khôi phục local. Cài skill không thay thế kết nối/quyền Figma.
 - [Assets](../assets/manifest.json): nguồn/license/hash hai ảnh món demo.
-- [Read-back](../tracking/evidence/figma-readback.json) và [QA](../tracking/evidence/qa.json) là checkpoint v0.4 đã read-back; vẫn cần đọc live trước lần sửa canvas tiếp theo.
+- [Read-back](../tracking/evidence/figma-readback.json) và [QA](../tracking/evidence/qa.json) là checkpoint v0.5 đã read-back; vẫn cần đọc live trước lần sửa canvas tiếp theo.
 
 ```sh
 python3 scripts/validate.py

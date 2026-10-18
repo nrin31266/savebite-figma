@@ -1,6 +1,6 @@
 {
   "date": "2026-10-19",
-  "revision": "pilot-v0.4",
+  "revision": "pilot-v0.5",
   "gate": "AWAITING_OWNER_REVIEW",
   "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
   "readback_checks": {
@@ -8,227 +8,281 @@
     "uniqueScreenIds": 5,
     "all390x844": true,
     "nativeImageOnlyFrames": 0,
-    "componentInstances": 32,
+    "componentInstances": 31,
     "interactionCount": 9
   },
   "readback_errors": [],
   "width_stress": [
     {
       "width": 360,
-      "mutatedNodeIds": [
-        "28:2",
-        "28:80",
-        "28:118",
-        "28:167",
-        "28:215"
-      ],
       "screens": [
         {
           "id": "28:2",
           "overflows": [],
-          "contentHeight": 660
+          "contentHeight": 672
         },
         {
           "id": "28:80",
           "overflows": [],
-          "contentHeight": 578
+          "contentHeight": 718
         },
         {
           "id": "28:118",
           "overflows": [],
-          "contentHeight": 551
+          "contentHeight": 646
         },
         {
           "id": "28:167",
           "overflows": [],
-          "contentHeight": 621
+          "contentHeight": 675
         },
         {
           "id": "28:215",
           "overflows": [],
-          "contentHeight": 623
+          "contentHeight": 636
         }
       ]
     },
     {
       "width": 430,
-      "mutatedNodeIds": [
-        "28:2",
-        "28:80",
-        "28:118",
-        "28:167",
-        "28:215"
-      ],
       "screens": [
         {
           "id": "28:2",
           "overflows": [],
-          "contentHeight": 660
+          "contentHeight": 652
         },
         {
           "id": "28:80",
           "overflows": [],
-          "contentHeight": 558
+          "contentHeight": 698
         },
         {
           "id": "28:118",
           "overflows": [],
-          "contentHeight": 551
+          "contentHeight": 646
         },
         {
           "id": "28:167",
           "overflows": [],
-          "contentHeight": 601
+          "contentHeight": 649
         },
         {
           "id": "28:215",
           "overflows": [],
-          "contentHeight": 623
+          "contentHeight": 636
         }
       ]
     }
   ],
   "restored_width": 390,
-  "bounds_scope": "Every visible child against its parent, excluding intentional scrolling content; not text-only.",
+  "bounds_scope": "All visible child bounds; intentional vertical scrolling of Content inside Scroll viewport excluded. Floating photo controls included.",
   "font_stress": {
     "screenId": "SB-034",
     "multiplier": 1.25,
-    "textNodesScaled": 14,
-    "price_bounds": {
-      "width": 146,
-      "height": 43
-    },
-    "content_height": 631,
-    "viewport_height": 648,
+    "textNodesScaled": 13,
+    "overflows": [],
+    "content_height": 780,
     "screenshot": "tracking/evidence/SB-034-font125.png",
-    "manual_visual_review": "PASS",
+    "manual_visual_review": "PASS; content scrolls at larger text size",
     "styles_restored": true,
     "not_device_dynamic_type": true
   },
   "connected_hit_targets": [
     {
-      "id": "28:58",
-      "width": 350,
-      "height": 268
+      "id": "55:217",
+      "name": "Component/OfferCard",
+      "width": 169,
+      "height": 244,
+      "x": 20,
+      "y": 478,
+      "destinations": [
+        "28:80"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-015"
     },
     {
-      "id": "I28:84;27:97",
+      "id": "55:270",
+      "name": "BackAction",
       "width": 48,
-      "height": 48
+      "height": 48,
+      "x": 16,
+      "y": 60,
+      "destinations": [
+        "28:2"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-034"
     },
     {
-      "id": "28:92",
+      "id": "55:310",
+      "name": "Component/Button",
       "width": 350,
-      "height": 52
+      "height": 52,
+      "x": 20,
+      "y": 768,
+      "destinations": [
+        "28:118"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-034"
     },
     {
-      "id": "I28:122;27:97",
+      "id": "I55:318;54:252",
+      "name": "BackAction",
       "width": 48,
-      "height": 48
+      "height": 48,
+      "x": 16,
+      "y": 50,
+      "destinations": [
+        "28:80"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-051"
     },
     {
-      "id": "28:130",
+      "id": "55:371",
+      "name": "Component/Button",
       "width": 350,
-      "height": 52
+      "height": 52,
+      "x": 20,
+      "y": 768,
+      "destinations": [
+        "28:167"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-051"
     },
     {
-      "id": "I28:171;27:97",
+      "id": "I55:379;54:252",
+      "name": "BackAction",
       "width": 48,
-      "height": 48
+      "height": 48,
+      "x": 16,
+      "y": 50,
+      "destinations": [
+        "28:118"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-053"
     },
     {
-      "id": "28:179",
+      "id": "55:433",
+      "name": "Component/Button",
       "width": 350,
-      "height": 52
+      "height": 52,
+      "x": 20,
+      "y": 768,
+      "destinations": [
+        "28:215"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-053"
     },
     {
-      "id": "I28:219;27:97",
+      "id": "I55:441;54:252",
+      "name": "BackAction",
       "width": 48,
-      "height": 48
+      "height": 48,
+      "x": 16,
+      "y": 50,
+      "destinations": [
+        "28:167"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-056"
     },
     {
-      "id": "28:227",
+      "id": "55:479",
+      "name": "Component/Button",
       "width": 350,
-      "height": 52
+      "height": 52,
+      "x": 20,
+      "y": 768,
+      "destinations": [
+        "28:2"
+      ],
+      "trigger": "ON_CLICK",
+      "screenId": "SB-056"
     }
   ],
   "contrast": [
     {
-      "foreground": "#223028",
-      "background": "#FFFFFF",
-      "ratio": 13.8,
+      "foreground": "#092F29",
+      "background": "#FFFCF6",
+      "ratio": 14.14,
       "normal_text_AA": true
     },
     {
-      "foreground": "#526C60",
+      "foreground": "#004337",
+      "background": "#FFFCF6",
+      "ratio": 11.04,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#606E66",
+      "background": "#FFFCF6",
+      "ratio": 5.23,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#606E66",
+      "background": "#FFFFFF",
+      "ratio": 5.36,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#004337",
+      "ratio": 11.3,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#004337",
+      "background": "#EDF3E7",
+      "ratio": 10.0,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#092F29",
+      "background": "#FFFFFF",
+      "ratio": 14.48,
+      "normal_text_AA": true
+    },
+    {
+      "foreground": "#B34021",
       "background": "#FFFFFF",
       "ratio": 5.72,
       "normal_text_AA": true
     },
     {
-      "foreground": "#526C60",
-      "background": "#F8F6F0",
-      "ratio": 5.29,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#FFFFFF",
-      "background": "#143E32",
-      "ratio": 11.9,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#223028",
-      "background": "#F8F6F0",
-      "ratio": 12.77,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#143E32",
+      "foreground": "#2D7055",
       "background": "#FFFFFF",
-      "ratio": 11.9,
+      "ratio": 5.9,
       "normal_text_AA": true
     },
     {
-      "foreground": "#33745A",
+      "foreground": "#004337",
       "background": "#FFFFFF",
-      "ratio": 5.55,
+      "ratio": 11.3,
       "normal_text_AA": true
     },
     {
-      "foreground": "#526C60",
-      "background": "#E8EFE6",
-      "ratio": 4.88,
+      "foreground": "#B34021",
+      "background": "#FFFCF6",
+      "ratio": 5.58,
       "normal_text_AA": true
     },
     {
-      "foreground": "#143E32",
-      "background": "#E8EFE6",
-      "ratio": 10.15,
+      "foreground": "#606E66",
+      "background": "#EDF3E7",
+      "ratio": 4.74,
       "normal_text_AA": true
     },
     {
-      "foreground": "#894E2E",
-      "background": "#F8F6F0",
-      "ratio": 6.09,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#33745A",
-      "background": "#F8F6F0",
-      "ratio": 5.13,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#223028",
-      "background": "#E8EFE6",
-      "ratio": 11.78,
-      "normal_text_AA": true
-    },
-    {
-      "foreground": "#143E32",
-      "background": "#F8F6F0",
-      "ratio": 11.01,
+      "foreground": "#2D7055",
+      "background": "#EDF3E7",
+      "ratio": 5.22,
       "normal_text_AA": true
     }
   ],
@@ -236,126 +290,142 @@
     "selectedWindow": true,
     "expiredWindow": true,
     "unknownBeforeConfirm": true,
+    "unknownVisibleAt390": true,
     "allFiveAt390": true
   },
   "prototype_browser": {
-    "method": "actual canvas clicks using live node geometry and DOM canvas bounds; URL verified after every action",
-    "forward_path": [
-      "28:2",
-      "28:80",
-      "28:118",
-      "28:167",
-      "28:215",
-      "28:2"
-    ],
-    "back_checked": [
-      "28:215",
-      "28:167",
-      "28:118",
-      "28:80"
-    ],
     "result": "PASS",
+    "method": "native node geometry + DOM canvas bounds; actual clicks; URL verified after each click",
     "transitions": [
       {
-        "kind": "offer",
-        "nodeId": "28:80"
+        "source": "55:217",
+        "destination": "28-80"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:118"
+        "source": "55:310",
+        "destination": "28-118"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:167"
+        "source": "55:371",
+        "destination": "28-167"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:215"
+        "source": "55:433",
+        "destination": "28-215"
       },
       {
-        "kind": "back",
-        "nodeId": "28:167"
+        "source": "I55:441;54:252",
+        "destination": "28-167"
       },
       {
-        "kind": "back",
-        "nodeId": "28:118"
+        "source": "I55:379;54:252",
+        "destination": "28-118"
       },
       {
-        "kind": "back",
-        "nodeId": "28:80"
+        "source": "I55:318;54:252",
+        "destination": "28-80"
       },
       {
-        "kind": "back",
-        "nodeId": "28:2"
+        "source": "55:270",
+        "destination": "28-2"
       },
       {
-        "kind": "offer",
-        "nodeId": "28:80"
+        "source": "55:217",
+        "destination": "28-80"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:118"
+        "source": "55:310",
+        "destination": "28-118"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:167"
+        "source": "55:371",
+        "destination": "28-167"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:215"
+        "source": "55:433",
+        "destination": "28-215"
       },
       {
-        "kind": "primary",
-        "nodeId": "28:2"
+        "source": "55:479",
+        "destination": "28-2"
       }
     ],
     "all_nine_hotspots_clicked": true
   },
-  "visual_review": "Five final native screens and labelled component specimen inspected after fixes; 360/430 width boards and 125% text stress inspected. Foundations unchanged from prior checkpoint.",
+  "visual_review": {
+    "result": "PASS_WITH_LIMITS",
+    "direction": "DEC-010: cream/forest, warm food imagery, branded wordmark, photo-led detail, paper receipt and pickup ticket",
+    "reviewer": "Codex visual inspection; owner acceptance not yet received",
+    "references": "Five user-provided UI references; not copied as screen bitmaps; not used as business or research evidence"
+  },
   "screenshots": [
     {
+      "path": "tracking/evidence/SB-015-360.png",
+      "sha256": "eaf9f7684e23a995d211a26f2b1204da64390eaf21d05dddb27f9a68cdb0e2f3"
+    },
+    {
       "path": "tracking/evidence/SB-015.png",
-      "sha256": "f7d87642f444cbc67b1908c7b71ebc78659694faba4ad66df8d8978a05dc680b"
+      "sha256": "3c41cdd51eaa32d1911a8cd9035f3ea904892aef2d4a4d2c8ce8a82fb5cba8e7"
     },
     {
-      "path": "tracking/evidence/SB-034.png",
-      "sha256": "4c895e8a7bd05df926ceb70b194424cf51992741215a43295cc94aaa96ce782c"
-    },
-    {
-      "path": "tracking/evidence/SB-051.png",
-      "sha256": "b6f03b752c2ede64ac96f82ce161bbee7b7e9fb1e24d0ca69a5ef02f3e9cf2c3"
-    },
-    {
-      "path": "tracking/evidence/SB-053.png",
-      "sha256": "775b287c137b4e8ceebfe34927cb4f108473ec858edd61cce49729eedcda8586"
-    },
-    {
-      "path": "tracking/evidence/SB-056.png",
-      "sha256": "9bdb23f4ab13465a54f0548eb5cc29fcf9fc6c52b8ee030e365bae94f375253b"
-    },
-    {
-      "path": "tracking/evidence/pilot-overview.png",
-      "sha256": "aab60c656fa20fd3bdec2037d2c961eda95a057b940755644e808e3aa0809aef"
-    },
-    {
-      "path": "tracking/evidence/components.png",
-      "sha256": "5e70a6e6ba58522c1f9a5b3582ab6ba09087bf3022bcb5450af1ea7b3c226713"
-    },
-    {
-      "path": "tracking/evidence/foundations.png",
-      "sha256": "12524c18dc9925e0f7438bead76f6ec2b5a431aaf7689238016bcf4d0e83591f"
+      "path": "tracking/evidence/SB-034-360.png",
+      "sha256": "8912f686f95b29a0cd8e9226972e450d83ff054ad66c0f872499d305937dbb0a"
     },
     {
       "path": "tracking/evidence/SB-034-font125.png",
-      "sha256": "737874276a192d7435f9a82509853082d7144aa064f414182dfe23be58a8c01b"
+      "sha256": "91e82aa0626c318160766d7389dd0110acb5e2bb0d2b32653b7997cfbedd46c2"
+    },
+    {
+      "path": "tracking/evidence/SB-034.png",
+      "sha256": "c68c3745d92b2a1301899fae31610659c096de23c6a79e6951de9634c79764c5"
+    },
+    {
+      "path": "tracking/evidence/SB-051-360.png",
+      "sha256": "e558ca995fb5f4cf63961c6aa14ee72a0e16d5fe92a6182768a55583049eaf67"
+    },
+    {
+      "path": "tracking/evidence/SB-051.png",
+      "sha256": "53a1d839ab67e8b04742f6be1a73f55050c473e23a5d332b82ce6d760db8d816"
+    },
+    {
+      "path": "tracking/evidence/SB-053-360.png",
+      "sha256": "4820de3515952d238aa5fb02f60048d03b1732ed0bb881c4e8eb488ef4d27ee2"
+    },
+    {
+      "path": "tracking/evidence/SB-053-430.png",
+      "sha256": "4aa4bf5624fc51a591b07923257ec616083dcab4b475b739ddd851ad3fdd8ee9"
+    },
+    {
+      "path": "tracking/evidence/SB-053.png",
+      "sha256": "26ddc02d336f0ba416497dfdfc510c671ca257a21e5e3dea65ef596095216af1"
+    },
+    {
+      "path": "tracking/evidence/SB-056-360.png",
+      "sha256": "8ba5d677fe91b924297146e8987aed22f6626ffbeb1c3d06be6b936684787a7c"
+    },
+    {
+      "path": "tracking/evidence/SB-056.png",
+      "sha256": "7e0e2dc36f5f2fdae6832aea7028f3398c7fc0f192d5aff656f1a9a2c6648c46"
+    },
+    {
+      "path": "tracking/evidence/components.png",
+      "sha256": "43b7efe34ed5bc2f3ee82600464d5971431770d77910a84494aea2157459246d"
+    },
+    {
+      "path": "tracking/evidence/foundations.png",
+      "sha256": "d598708fafdd4bce37ba0a4a7f257839d043910e27ebae1f87406dadbe9073cc"
     },
     {
       "path": "tracking/evidence/pilot-360.png",
-      "sha256": "324d9a89cc744006c885469330a761c93b277df005c483169090769e1e503295"
+      "sha256": "f14dc1b8c925d065e938bb48e403ff4f48e74023f6f9b9c3e40259195e7d681e"
     },
     {
       "path": "tracking/evidence/pilot-430.png",
-      "sha256": "c183f0145fd2d19139f5b70ae1380b8a47784d32e367660c3425fc2b42603c3a"
+      "sha256": "768df1a8c1323691491bf0969988833c43c11959434d930c2c28f9650d14684c"
+    },
+    {
+      "path": "tracking/evidence/pilot-overview.png",
+      "sha256": "be04e8944c64272e96ae553e10cf7a6b163c59c813c515ce0d1a6955d102904c"
     }
   ],
   "not_checked": [
@@ -363,19 +433,76 @@
     "Real participants / usability outcomes",
     "Figma Mobile and physical-device testing",
     "VoiceOver / TalkBack / keyboard navigation",
-    "Full search/filter/tab/category interactions",
-    "Long-content, missing-photo and error-state matrix beyond the pilot subset",
-    "Actual backend/auth/stock/payment/pickup, outside this Figma repo"
+    "Full search/filter/tab/category/favourite/notification interactions",
+    "Long-content, missing-photo and full error-state matrix",
+    "Actual backend/auth/stock/payment/pickup outside this Figma repo"
   ],
   "fixed_during_QA": [
-    "Shared PickupSlot text defaults initially propagated the expired label; isolated fixed state hints and verified selected 17:00–18:00 versus expired 15:00–16:00.",
-    "Search field used fixed width and clipped the filter at 360px; changed to FILL and checked all visible UI bounds.",
-    "Removed duplicate specimen labels and restored mobile sample widths."
+    "Horizontal content rows now hug their text/icon heights",
+    "Floating photo controls and illustration label now anchor at 360/430 widths",
+    "Category tiles share available width equally; no last-tile squeeze",
+    "Review screen compressed to show unknown-allergen copy and cancellation terms before the CTA at 390",
+    "Selected/expired slot hints remain separate; loading button has a static loading label/indicator",
+    "Shared BreadPhoto instance drives detail image as well as list/summary images",
+    "Baseline PNG dimensions checked against 390x844; refreshed home capture after renderer caught up with width restoration"
   ],
   "removed_local_node_ids": [
-    "28:115",
-    "28:132",
-    "28:214"
+    "28:3",
+    "28:6",
+    "28:13",
+    "28:15",
+    "28:81",
+    "28:84",
+    "28:89",
+    "28:91",
+    "28:119",
+    "28:122",
+    "28:127",
+    "28:129",
+    "28:168",
+    "28:171",
+    "28:176",
+    "28:178",
+    "28:216",
+    "28:219",
+    "28:224",
+    "28:226",
+    "27:92",
+    "27:94",
+    "40:154",
+    "40:156",
+    "27:97",
+    "27:100",
+    "27:109",
+    "27:112",
+    "27:102",
+    "27:105",
+    "27:116",
+    "27:117",
+    "27:122",
+    "27:125",
+    "27:129",
+    "27:132",
+    "27:136",
+    "27:139",
+    "27:144",
+    "27:145",
+    "27:165",
+    "27:169",
+    "27:173",
+    "27:178",
+    "40:173",
+    "40:174",
+    "40:158",
+    "40:161",
+    "40:165",
+    "40:168"
   ],
-  "root_screen_ids_preserved": true
+  "root_screen_ids_preserved": [
+    "28:2",
+    "28:80",
+    "28:118",
+    "28:167",
+    "28:215"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "fileKey": "NLTv70kDZ2i3HpOnOKQCDY",
-  "revision": "pilot-v0.4",
+  "revision": "pilot-v0.5",
   "page": {
     "id": "2:2",
     "name": "Pilot · Rescue Market"
@@ -27,7 +27,7 @@
     {
       "screenId": "SB-015",
       "id": "28:2",
-      "name": "SB-015 · Khám phá · Pilot v0.4",
+      "name": "SB-015 · Khám phá · v0.5",
       "type": "FRAME",
       "width": 390,
       "height": 844,
@@ -40,37 +40,49 @@
       "horizontalOrVerticalTextOverflow": [],
       "instances": [
         {
-          "instanceId": "28:58",
-          "componentId": "27:143",
-          "name": "Component/OfferCard"
+          "instanceId": "55:160",
+          "componentId": "54:443",
+          "name": "Component/BrandHeader"
         },
         {
-          "instanceId": "I28:58;27:144",
+          "instanceId": "55:212",
           "componentId": "27:89",
           "name": "Component/BreadPhoto"
         },
         {
-          "instanceId": "28:72",
-          "componentId": "27:157",
-          "name": "Component/OfferListRow"
+          "instanceId": "55:217",
+          "componentId": "27:143",
+          "name": "Component/OfferCard"
         },
         {
-          "instanceId": "I28:72;27:158",
+          "instanceId": "I55:217;54:292",
+          "componentId": "27:89",
+          "name": "Component/BreadPhoto"
+        },
+        {
+          "instanceId": "55:230",
+          "componentId": "27:143",
+          "name": "Component/OfferCard"
+        },
+        {
+          "instanceId": "I55:230;54:292",
           "componentId": "27:90",
           "name": "Component/CroissantPhoto"
         },
         {
-          "instanceId": "28:15",
+          "instanceId": "55:243",
           "componentId": "27:164",
           "name": "Component/BottomNav"
         }
       ],
       "reactions": [
         {
-          "id": "28:58",
+          "id": "55:217",
           "name": "Component/OfferCard",
-          "width": 350,
-          "height": 268,
+          "width": 169,
+          "height": 244,
+          "x": 20,
+          "y": 478,
           "destinations": [
             "28:80"
           ],
@@ -78,77 +90,105 @@
         }
       ],
       "viewport": {
-        "id": "28:13",
-        "height": 660,
-        "contentHeight": 660,
+        "id": "55:171",
+        "height": 640,
+        "contentHeight": 652,
         "overflow": "VERTICAL"
       },
-      "rasterFills": 2,
+      "rasterFills": 3,
       "demoLabelPresent": true,
-      "unknownAllergensDisclosed": false
+      "unknownAllergensDisclosed": false,
+      "texts": [
+        "16:00",
+        "SaveBite",
+        "Đà Nẵng · Khu học xá",
+        "Tìm món ăn, cửa hàng…",
+        "Tất cả",
+        "Bánh mì",
+        "Đồ ăn sẵn",
+        "Rau củ",
+        "Món ngon,\ngiá nhẹ hơn.",
+        "Cùng giảm lãng phí\ntừ bữa ăn hôm nay.",
+        "Ưu đãi hôm nay",
+        "2 món mẫu",
+        "Bánh mì men tự nhiên",
+        "Tiệm Bánh A (demo)",
+        "25.000đ",
+        "17:00–18:00",
+        "Còn 3 phần",
+        "Bánh sừng bò",
+        "Tiệm Bánh A (demo)",
+        "30.000đ",
+        "17:00–18:00",
+        "Còn 2 phần",
+        "Dữ liệu và hình ảnh minh họa cho prototype.",
+        "Khám phá",
+        "Đơn của tôi",
+        "Tủ thực phẩm",
+        "Tài khoản"
+      ]
     },
     {
       "screenId": "SB-034",
       "id": "28:80",
-      "name": "SB-034 · Chi tiết ưu đãi · Pilot v0.4",
+      "name": "SB-034 · Chi tiết món · v0.5",
       "type": "FRAME",
       "width": 390,
       "height": 844,
       "locked": false,
       "layout": "VERTICAL",
-      "textCount": 14,
+      "textCount": 13,
       "allFontsBeVietnamPro": true,
       "editableVerified": true,
       "allTextStyleBound": true,
       "horizontalOrVerticalTextOverflow": [],
       "instances": [
         {
-          "instanceId": "28:84",
-          "componentId": "27:96",
-          "name": "Component/AppBar"
-        },
-        {
-          "instanceId": "28:94",
-          "componentId": "27:89",
-          "name": "Component/BreadPhoto"
-        },
-        {
-          "instanceId": "28:101",
-          "componentId": "27:101",
-          "name": "Component/PickupInfo"
-        },
-        {
-          "instanceId": "28:108",
+          "instanceId": "55:286",
           "componentId": "27:108",
           "name": "Component/MerchantRow"
         },
         {
-          "instanceId": "41:126",
+          "instanceId": "55:294",
+          "componentId": "27:101",
+          "name": "Component/PickupInfo"
+        },
+        {
+          "instanceId": "55:302",
           "componentId": "40:172",
           "name": "Component/AllergenNotice"
         },
         {
-          "instanceId": "28:92",
+          "instanceId": "55:310",
           "componentId": "27:91",
           "name": "Component/Button"
+        },
+        {
+          "instanceId": "64:147",
+          "componentId": "27:89",
+          "name": "Hero photo / BreadPhoto"
         }
       ],
       "reactions": [
         {
-          "id": "I28:84;27:97",
+          "id": "55:270",
           "name": "BackAction",
           "width": 48,
           "height": 48,
+          "x": 16,
+          "y": 60,
           "destinations": [
             "28:2"
           ],
           "trigger": "ON_CLICK"
         },
         {
-          "id": "28:92",
+          "id": "55:310",
           "name": "Component/Button",
           "width": 350,
           "height": 52,
+          "x": 20,
+          "y": 768,
           "destinations": [
             "28:118"
           ],
@@ -156,87 +196,106 @@
         }
       ],
       "viewport": {
-        "id": "28:89",
-        "height": 648,
-        "contentHeight": 578,
+        "id": "55:266",
+        "height": 712,
+        "contentHeight": 698,
         "overflow": "VERTICAL"
       },
       "rasterFills": 1,
       "demoLabelPresent": true,
-      "unknownAllergensDisclosed": true
+      "unknownAllergensDisclosed": true,
+      "texts": [
+        "16:00",
+        "Ảnh minh họa",
+        "Bánh mì\nmen tự nhiên",
+        "25.000đ",
+        "Còn 3 phần",
+        "Tiệm Bánh A (demo)",
+        "Điểm A, khu học xá mô phỏng",
+        "Nhận hôm nay tại cửa hàng",
+        "17:00–18:00",
+        "Một phần bánh cuối ngày từ tiệm bánh demo. Đến cửa hàng trong khung giờ đã chọn để nhận món.",
+        "Thành phần & dị ứng",
+        "Chưa có thông tin. Hãy hỏi cửa hàng trước khi đặt nếu bạn có dị ứng.",
+        "Chọn giờ nhận"
+      ]
     },
     {
       "screenId": "SB-051",
       "id": "28:118",
-      "name": "SB-051 · Chọn giờ nhận · Pilot v0.4",
+      "name": "SB-051 · Chọn giờ nhận · v0.5",
       "type": "FRAME",
       "width": 390,
       "height": 844,
       "locked": false,
       "layout": "VERTICAL",
-      "textCount": 18,
+      "textCount": 19,
       "allFontsBeVietnamPro": true,
       "editableVerified": true,
       "allTextStyleBound": true,
       "horizontalOrVerticalTextOverflow": [],
       "instances": [
         {
-          "instanceId": "28:122",
+          "instanceId": "55:318",
           "componentId": "27:96",
           "name": "Component/AppBar"
         },
         {
-          "instanceId": "41:129",
+          "instanceId": "55:327",
           "componentId": "40:157",
           "name": "Component/ReservationProgress"
         },
         {
-          "instanceId": "28:136",
+          "instanceId": "55:333",
           "componentId": "27:115",
           "name": "Component/OfferSummary"
         },
         {
-          "instanceId": "I28:136;27:116",
+          "instanceId": "I55:333;54:269",
           "componentId": "27:89",
           "name": "Component/BreadPhoto"
         },
         {
-          "instanceId": "28:144",
+          "instanceId": "55:347",
           "componentId": "27:128",
           "name": "Component/PickupSlot"
         },
         {
-          "instanceId": "28:151",
+          "instanceId": "55:354",
           "componentId": "27:135",
           "name": "Component/PickupSlot"
         },
         {
-          "instanceId": "28:159",
+          "instanceId": "55:361",
           "componentId": "27:108",
           "name": "Component/MerchantRow"
         },
         {
-          "instanceId": "28:130",
+          "instanceId": "55:371",
           "componentId": "27:91",
           "name": "Component/Button"
         }
       ],
       "reactions": [
         {
-          "id": "I28:122;27:97",
+          "id": "I55:318;54:252",
           "name": "BackAction",
           "width": 48,
           "height": 48,
+          "x": 16,
+          "y": 50,
           "destinations": [
             "28:80"
           ],
           "trigger": "ON_CLICK"
         },
         {
-          "id": "28:130",
+          "id": "55:371",
           "name": "Component/Button",
           "width": 350,
           "height": 52,
+          "x": 20,
+          "y": 768,
           "destinations": [
             "28:167"
           ],
@@ -244,87 +303,102 @@
         }
       ],
       "viewport": {
-        "id": "28:127",
-        "height": 648,
-        "contentHeight": 551,
+        "id": "55:324",
+        "height": 652,
+        "contentHeight": 646,
         "overflow": "VERTICAL"
       },
       "rasterFills": 1,
       "demoLabelPresent": true,
-      "unknownAllergensDisclosed": false
+      "unknownAllergensDisclosed": false,
+      "texts": [
+        "16:00",
+        "Đặt trước",
+        "Bạn đến nhận\nlúc mấy giờ?",
+        "1  Giờ nhận",
+        "2  Xác nhận",
+        "Bánh mì men tự nhiên",
+        "Tiệm Bánh A (demo)",
+        "1 phần · 25.000đ",
+        "HÔM NAY",
+        "Thứ Hai, 19/10",
+        "Chọn một khung giờ nhận tại cửa hàng.",
+        "17:00–18:00",
+        "Đã chọn",
+        "15:00–16:00",
+        "Đã hết giờ nhận",
+        "Tiệm Bánh A (demo)",
+        "Điểm A, khu học xá mô phỏng",
+        "Giữ 1 phần · Thanh toán 25.000đ khi nhận.\nCó thể hủy trước 17:00.",
+        "Tiếp tục"
+      ]
     },
     {
       "screenId": "SB-053",
       "id": "28:167",
-      "name": "SB-053 · Tóm tắt đặt trước · Pilot v0.4",
+      "name": "SB-053 · Kiểm tra đặt trước · v0.5",
       "type": "FRAME",
       "width": 390,
       "height": 844,
       "locked": false,
       "layout": "VERTICAL",
-      "textCount": 23,
+      "textCount": 21,
       "allFontsBeVietnamPro": true,
       "editableVerified": true,
       "allTextStyleBound": true,
       "horizontalOrVerticalTextOverflow": [],
       "instances": [
         {
-          "instanceId": "28:171",
+          "instanceId": "55:379",
           "componentId": "27:96",
           "name": "Component/AppBar"
         },
         {
-          "instanceId": "41:140",
+          "instanceId": "55:388",
           "componentId": "40:164",
           "name": "Component/ReservationProgress"
         },
         {
-          "instanceId": "28:182",
+          "instanceId": "55:394",
           "componentId": "27:115",
           "name": "Component/OfferSummary"
         },
         {
-          "instanceId": "I28:182;27:116",
+          "instanceId": "I55:394;54:269",
           "componentId": "27:89",
           "name": "Component/BreadPhoto"
         },
         {
-          "instanceId": "28:189",
-          "componentId": "27:108",
-          "name": "Component/MerchantRow"
-        },
-        {
-          "instanceId": "28:196",
-          "componentId": "27:101",
-          "name": "Component/PickupInfo"
-        },
-        {
-          "instanceId": "41:149",
+          "instanceId": "55:424",
           "componentId": "40:172",
           "name": "Component/AllergenNotice"
         },
         {
-          "instanceId": "28:179",
+          "instanceId": "55:433",
           "componentId": "27:91",
           "name": "Component/Button"
         }
       ],
       "reactions": [
         {
-          "id": "I28:171;27:97",
+          "id": "I55:379;54:252",
           "name": "BackAction",
           "width": 48,
           "height": 48,
+          "x": 16,
+          "y": 50,
           "destinations": [
             "28:118"
           ],
           "trigger": "ON_CLICK"
         },
         {
-          "id": "28:179",
+          "id": "55:433",
           "name": "Component/Button",
           "width": 350,
           "height": 52,
+          "x": 20,
+          "y": 768,
           "destinations": [
             "28:215"
           ],
@@ -332,72 +406,99 @@
         }
       ],
       "viewport": {
-        "id": "28:176",
-        "height": 648,
-        "contentHeight": 621,
+        "id": "55:385",
+        "height": 652,
+        "contentHeight": 649,
         "overflow": "VERTICAL"
       },
       "rasterFills": 1,
       "demoLabelPresent": true,
-      "unknownAllergensDisclosed": true
+      "unknownAllergensDisclosed": true,
+      "texts": [
+        "16:00",
+        "Xác nhận",
+        "Kiểm tra đặt trước",
+        "1  Giờ nhận",
+        "2  Xác nhận",
+        "Bánh mì men tự nhiên",
+        "Tiệm Bánh A (demo)",
+        "1 phần · 25.000đ",
+        "Hôm nay · 17:00–18:00",
+        "Điểm A · Khu học xá mô phỏng",
+        "1 phần",
+        "25.000đ",
+        "Phí đặt trước",
+        "0đ",
+        "Tổng thanh toán",
+        "25.000đ",
+        "Thanh toán tại cửa hàng khi nhận.\nChưa thu tiền ở bước đặt trước.",
+        "Thành phần & dị ứng",
+        "Chưa có thông tin. Hãy hỏi cửa hàng trước khi đặt nếu bạn có dị ứng.",
+        "Có thể hủy trước 17:00. Đây là đơn mô phỏng.",
+        "Đặt trước (demo)"
+      ]
     },
     {
       "screenId": "SB-056",
       "id": "28:215",
-      "name": "SB-056 · Đặt trước thành công · Pilot v0.4",
+      "name": "SB-056 · Đặt trước thành công · v0.5",
       "type": "FRAME",
       "width": 390,
       "height": 844,
       "locked": false,
       "layout": "VERTICAL",
-      "textCount": 14,
+      "textCount": 15,
       "allFontsBeVietnamPro": true,
       "editableVerified": true,
       "allTextStyleBound": true,
       "horizontalOrVerticalTextOverflow": [],
       "instances": [
         {
-          "instanceId": "28:219",
+          "instanceId": "55:441",
           "componentId": "27:96",
           "name": "Component/AppBar"
         },
         {
-          "instanceId": "28:237",
+          "instanceId": "55:457",
+          "componentId": "27:115",
+          "name": "Component/OfferSummary"
+        },
+        {
+          "instanceId": "I55:457;54:269",
+          "componentId": "27:89",
+          "name": "Component/BreadPhoto"
+        },
+        {
+          "instanceId": "55:465",
           "componentId": "27:183",
           "name": "Component/DemoQR"
         },
         {
-          "instanceId": "28:245",
-          "componentId": "27:101",
-          "name": "Component/PickupInfo"
-        },
-        {
-          "instanceId": "28:252",
-          "componentId": "27:108",
-          "name": "Component/MerchantRow"
-        },
-        {
-          "instanceId": "28:227",
+          "instanceId": "55:479",
           "componentId": "27:91",
           "name": "Component/Button"
         }
       ],
       "reactions": [
         {
-          "id": "I28:219;27:97",
+          "id": "I55:441;54:252",
           "name": "BackAction",
           "width": 48,
           "height": 48,
+          "x": 16,
+          "y": 50,
           "destinations": [
             "28:167"
           ],
           "trigger": "ON_CLICK"
         },
         {
-          "id": "28:227",
+          "id": "55:479",
           "name": "Component/Button",
           "width": 350,
           "height": 52,
+          "x": 20,
+          "y": 768,
           "destinations": [
             "28:2"
           ],
@@ -405,21 +506,38 @@
         }
       ],
       "viewport": {
-        "id": "28:224",
-        "height": 648,
-        "contentHeight": 623,
+        "id": "55:447",
+        "height": 652,
+        "contentHeight": 636,
         "overflow": "VERTICAL"
       },
-      "rasterFills": 0,
+      "rasterFills": 1,
       "demoLabelPresent": true,
-      "unknownAllergensDisclosed": false
+      "unknownAllergensDisclosed": false,
+      "texts": [
+        "16:00",
+        "SaveBite",
+        "Đã đặt trước!",
+        "Món ngon đang chờ bạn đến nhận.",
+        "Bánh mì men tự nhiên",
+        "Tiệm Bánh A (demo)",
+        "1 phần · 25.000đ",
+        "DEMO-A125",
+        "Đơn DEMO-001 · QR mô phỏng",
+        "Hôm nay · 17:00–18:00",
+        "Điểm A · Khu học xá mô phỏng",
+        "Thanh toán khi nhận",
+        "25.000đ",
+        "Đưa mã cho nhân viên tại điểm nhận.\nĐơn mẫu chưa gửi tới cửa hàng thật.",
+        "Khám phá tiếp"
+      ]
     }
   ],
-  "textStyleCount": 8,
+  "textStyleCount": 11,
   "flowStartingPoints": [
     {
       "nodeId": "28:2",
-      "name": "Pilot | v0.4 | Reservation demo"
+      "name": "SaveBite · Pilot v0.5 · Đặt trước demo"
     }
   ],
   "checks": {
@@ -427,7 +545,7 @@
     "uniqueScreenIds": 5,
     "all390x844": true,
     "nativeImageOnlyFrames": 0,
-    "componentInstances": 32,
+    "componentInstances": 31,
     "interactionCount": 9
   },
   "errors": [],
@@ -442,7 +560,8 @@
       "boundFields": [],
       "allTextStyleBound": true,
       "propertyKeys": [],
-      "description": "SaveBite pilot v0.3 · Component/BreadPhoto. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "AI-generated warm sourdough illustration for demo fixture-bakery-01, not a real merchant photograph. Source/prompt/hash in assets manifest. Keep asset only, never flatten screen UI.",
+      "variantProperties": null
     },
     {
       "id": "27:90",
@@ -454,7 +573,8 @@
       "boundFields": [],
       "allTextStyleBound": true,
       "propertyKeys": [],
-      "description": "SaveBite pilot v0.3 · Component/CroissantPhoto. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Component/CroissantPhoto. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": null
     },
     {
       "id": "27:91",
@@ -464,6 +584,7 @@
       "parentId": "27:95",
       "parentType": "COMPONENT_SET",
       "boundFields": [
+        "itemSpacing",
         "paddingLeft",
         "paddingTop",
         "paddingRight",
@@ -480,7 +601,11 @@
         "Style",
         "State"
       ],
-      "description": "SaveBite pilot v0.3 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "Style": "Primary",
+        "State": "Default"
+      }
     },
     {
       "id": "27:93",
@@ -490,6 +615,7 @@
       "parentId": "27:95",
       "parentType": "COMPONENT_SET",
       "boundFields": [
+        "itemSpacing",
         "paddingLeft",
         "paddingTop",
         "paddingRight",
@@ -506,7 +632,11 @@
         "Style",
         "State"
       ],
-      "description": "SaveBite pilot v0.3 · Style=Secondary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Style=Secondary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "Style": "Secondary",
+        "State": "Default"
+      }
     },
     {
       "id": "40:153",
@@ -516,6 +646,7 @@
       "parentId": "27:95",
       "parentType": "COMPONENT_SET",
       "boundFields": [
+        "itemSpacing",
         "paddingLeft",
         "paddingTop",
         "paddingRight",
@@ -532,7 +663,11 @@
         "Style",
         "State"
       ],
-      "description": "SaveBite pilot v0.3 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "Style": "Primary",
+        "State": "Disabled"
+      }
     },
     {
       "id": "40:155",
@@ -542,6 +677,7 @@
       "parentId": "27:95",
       "parentType": "COMPONENT_SET",
       "boundFields": [
+        "itemSpacing",
         "paddingLeft",
         "paddingTop",
         "paddingRight",
@@ -558,24 +694,32 @@
         "Style",
         "State"
       ],
-      "description": "SaveBite pilot v0.3 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Style=Primary. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "Style": "Primary",
+        "State": "Loading"
+      }
     },
     {
       "id": "27:96",
       "name": "Component/AppBar",
       "width": 390,
-      "height": 56,
+      "height": 60,
       "parentId": "27:87",
       "parentType": "PAGE",
       "boundFields": [
         "itemSpacing",
-        "fills"
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom"
       ],
       "allTextStyleBound": true,
       "propertyKeys": [
         "Title#27:3"
       ],
-      "description": "SaveBite pilot v0.3 · Component/AppBar. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Component/AppBar. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": null
     },
     {
       "id": "27:101",
@@ -601,13 +745,14 @@
         "Label#40:0",
         "Time#40:1"
       ],
-      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
+      "description": "Pilot v0.5. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach.",
+      "variantProperties": null
     },
     {
       "id": "27:108",
       "name": "Component/MerchantRow",
       "width": 350,
-      "height": 40,
+      "height": 52,
       "parentId": "27:87",
       "parentType": "PAGE",
       "boundFields": [
@@ -618,13 +763,14 @@
         "Merchant#40:2",
         "Address#40:3"
       ],
-      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
+      "description": "Pilot v0.5. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach.",
+      "variantProperties": null
     },
     {
       "id": "27:115",
       "name": "Component/OfferSummary",
       "width": 350,
-      "height": 64,
+      "height": 80,
       "parentId": "27:87",
       "parentType": "PAGE",
       "boundFields": [
@@ -636,13 +782,14 @@
         "Merchant#40:5",
         "Quantity and price#40:6"
       ],
-      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
+      "description": "Pilot v0.5. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach.",
+      "variantProperties": null
     },
     {
       "id": "27:121",
       "name": "State=Available",
       "width": 350,
-      "height": 84,
+      "height": 80,
       "parentId": "27:142",
       "parentType": "COMPONENT_SET",
       "boundFields": [
@@ -663,13 +810,16 @@
         "Time#40:11",
         "State"
       ],
-      "description": "SaveBite pilot v0.3 · State=Available. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · State=Available. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "State": "Available"
+      }
     },
     {
       "id": "27:128",
       "name": "State=Selected",
       "width": 350,
-      "height": 84,
+      "height": 80,
       "parentId": "27:142",
       "parentType": "COMPONENT_SET",
       "boundFields": [
@@ -678,55 +828,6 @@
         "paddingTop",
         "paddingRight",
         "paddingBottom",
-        "topLeftRadius",
-        "topRightRadius",
-        "bottomLeftRadius",
-        "bottomRightRadius",
-        "fills",
-        "strokes"
-      ],
-      "allTextStyleBound": true,
-      "propertyKeys": [
-        "Time#40:11",
-        "State"
-      ],
-      "description": "SaveBite pilot v0.3 · State=Selected. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
-    },
-    {
-      "id": "27:135",
-      "name": "State=Expired",
-      "width": 350,
-      "height": 84,
-      "parentId": "27:142",
-      "parentType": "COMPONENT_SET",
-      "boundFields": [
-        "itemSpacing",
-        "paddingLeft",
-        "paddingTop",
-        "paddingRight",
-        "paddingBottom",
-        "topLeftRadius",
-        "topRightRadius",
-        "bottomLeftRadius",
-        "bottomRightRadius",
-        "fills",
-        "strokes"
-      ],
-      "allTextStyleBound": true,
-      "propertyKeys": [
-        "Time#40:11",
-        "State"
-      ],
-      "description": "SaveBite pilot v0.3 · State=Expired. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
-    },
-    {
-      "id": "27:143",
-      "name": "Component/OfferCard",
-      "width": 350,
-      "height": 268,
-      "parentId": "27:87",
-      "parentType": "PAGE",
-      "boundFields": [
         "topLeftRadius",
         "topRightRadius",
         "bottomLeftRadius",
@@ -735,10 +836,70 @@
       ],
       "allTextStyleBound": true,
       "propertyKeys": [
-        "Merchant#27:4",
-        "Title#27:5"
+        "Time#40:11",
+        "State"
       ],
-      "description": "OfferCard: actual demo image, merchant, title, rescue price, quantity available and pickup window. Reference price/discount absent unless evidenced. Open primary offer in pilot; search/tabs outside subset remain static."
+      "description": "SaveBite pilot v0.5 · State=Selected. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "State": "Selected"
+      }
+    },
+    {
+      "id": "27:135",
+      "name": "State=Expired",
+      "width": 350,
+      "height": 80,
+      "parentId": "27:142",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills",
+        "strokes"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Time#40:11",
+        "State"
+      ],
+      "description": "SaveBite pilot v0.5 · State=Expired. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": {
+        "State": "Expired"
+      }
+    },
+    {
+      "id": "27:143",
+      "name": "Component/OfferCard",
+      "width": 167,
+      "height": 264,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills",
+        "strokes"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Merchant#27:4",
+        "Title#27:5",
+        "Photo#54:0",
+        "Price#54:1",
+        "Pickup#54:2",
+        "Availability#54:3"
+      ],
+      "description": "v0.5 food-first grid card. Text properties: Title/Merchant/Price/Pickup/Availability; Photo is INSTANCE_SWAP. No fabricated discount or rating. Native photo and copy remain separate.",
+      "variantProperties": null
     },
     {
       "id": "27:157",
@@ -757,7 +918,8 @@
         "Price#40:9",
         "Pickup and availability#40:10"
       ],
-      "description": "Pilot v0.4. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach."
+      "description": "Pilot v0.5. Edit demo content through text properties; preserve photo/price/pickup consistency. Use the linked registry and approved fixtures; do not detach.",
+      "variantProperties": null
     },
     {
       "id": "27:164",
@@ -767,11 +929,13 @@
       "parentId": "27:87",
       "parentType": "PAGE",
       "boundFields": [
-        "fills"
+        "fills",
+        "strokes"
       ],
       "allTextStyleBound": true,
       "propertyKeys": [],
-      "description": "Four tabs: Khám phá / Đơn của tôi / Tủ thực phẩm / Tài khoản. 48px minimum item area. Only Khám phá context exists in pilot; other tabs are static previews."
+      "description": "v0.5 shared 4-tab navigation; 48px item targets. Active discovery; remaining tabs static in pilot.",
+      "variantProperties": null
     },
     {
       "id": "27:183",
@@ -783,47 +947,16 @@
       "boundFields": [],
       "allTextStyleBound": true,
       "propertyKeys": [],
-      "description": "SaveBite pilot v0.3 · Component/DemoQR. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library."
+      "description": "SaveBite pilot v0.5 · Component/DemoQR. Consumer pickup UI; reuse native instances, preserve bound colors/spacing/type styles. States and text properties are exposed where supported. Photos: assets/manifest.json; content and QR are demo only. Maintain Vietnamese wrapping and 48px connected action targets. Revision 2026-10-19; owner review pending; not a production library.",
+      "variantProperties": null
     },
     {
       "id": "40:157",
       "name": "Stage=Time",
       "width": 350,
-      "height": 32,
+      "height": 40,
       "parentId": "40:171",
       "parentType": "COMPONENT_SET",
-      "boundFields": [
-        "itemSpacing"
-      ],
-      "allTextStyleBound": true,
-      "propertyKeys": [
-        "Stage"
-      ],
-      "description": ""
-    },
-    {
-      "id": "40:164",
-      "name": "Stage=Review",
-      "width": 350,
-      "height": 32,
-      "parentId": "40:171",
-      "parentType": "COMPONENT_SET",
-      "boundFields": [
-        "itemSpacing"
-      ],
-      "allTextStyleBound": true,
-      "propertyKeys": [
-        "Stage"
-      ],
-      "description": ""
-    },
-    {
-      "id": "40:172",
-      "name": "Component/AllergenNotice",
-      "width": 350,
-      "height": 88,
-      "parentId": "27:87",
-      "parentType": "PAGE",
       "boundFields": [
         "itemSpacing",
         "paddingLeft",
@@ -838,16 +971,96 @@
       ],
       "allTextStyleBound": true,
       "propertyKeys": [
+        "Stage"
+      ],
+      "description": "Pilot v0.5 · Step indicator; Stage Time/Review. Read-only, not navigation. Native token-bound instances. Owner acceptance pending.",
+      "variantProperties": {
+        "Stage": "Time"
+      }
+    },
+    {
+      "id": "40:164",
+      "name": "Stage=Review",
+      "width": 350,
+      "height": 40,
+      "parentId": "40:171",
+      "parentType": "COMPONENT_SET",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
+        "Stage"
+      ],
+      "description": "Pilot v0.5 · Step indicator; Stage Time/Review. Read-only, not navigation. Native token-bound instances. Owner acceptance pending.",
+      "variantProperties": {
+        "Stage": "Review"
+      }
+    },
+    {
+      "id": "40:172",
+      "name": "Component/AllergenNotice",
+      "width": 350,
+      "height": 92,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "paddingLeft",
+        "paddingTop",
+        "paddingRight",
+        "paddingBottom",
+        "topLeftRadius",
+        "topRightRadius",
+        "bottomLeftRadius",
+        "bottomRightRadius",
+        "fills",
+        "strokes"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [
         "Title#40:21",
         "Body#40:22"
       ],
-      "description": "Unknown ingredients/allergens notice, shown before reservation confirmation on SB-034 and SB-053. Do not infer safety from food photography. Title and Body editable, safety semantics follow product.md."
+      "description": "Unknown ingredients/allergens notice, shown before reservation confirmation on SB-034 and SB-053. Do not infer safety from food photography. Title and Body editable, safety semantics follow product.md.",
+      "variantProperties": null
+    },
+    {
+      "id": "54:443",
+      "name": "Component/BrandHeader",
+      "width": 390,
+      "height": 76,
+      "parentId": "27:87",
+      "parentType": "PAGE",
+      "boundFields": [
+        "itemSpacing",
+        "paddingLeft",
+        "paddingRight"
+      ],
+      "allTextStyleBound": true,
+      "propertyKeys": [],
+      "description": "SaveBite wordmark/leaf and manual demo area. Notification is preview-only; no fabricated unread count.",
+      "variantProperties": null
     }
   ],
   "componentSets": [
     {
       "id": "27:95",
       "name": "Component/Button",
+      "variants": [
+        "27:91",
+        "27:93",
+        "40:153",
+        "40:155"
+      ],
       "properties": {
         "Label#27:2": {
           "type": "TEXT",
@@ -875,6 +1088,11 @@
     {
       "id": "27:142",
       "name": "Component/PickupSlot",
+      "variants": [
+        "27:121",
+        "27:128",
+        "27:135"
+      ],
       "properties": {
         "Time#40:11": {
           "type": "TEXT",
@@ -894,6 +1112,10 @@
     {
       "id": "40:171",
       "name": "Component/ReservationProgress",
+      "variants": [
+        "40:157",
+        "40:164"
+      ],
       "properties": {
         "Stage": {
           "type": "VARIANT",
@@ -909,14 +1131,14 @@
   "variables": [
     {
       "id": "VariableID:4:3",
-      "name": "primitive/143E32",
+      "name": "primitive/004337",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.0784313753247261,
-          "g": 0.24313725531101227,
-          "b": 0.19607843458652496,
+          "r": 0,
+          "g": 0.26274511218070984,
+          "b": 0.21568627655506134,
           "a": 1
         }
       },
@@ -941,14 +1163,14 @@
     },
     {
       "id": "VariableID:4:5",
-      "name": "primitive/33745A",
+      "name": "primitive/2D7055",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.20000000298023224,
-          "g": 0.45490196347236633,
-          "b": 0.3529411852359772,
+          "r": 0.1764705926179886,
+          "g": 0.43921568989753723,
+          "b": 0.3333333432674408,
           "a": 1
         }
       },
@@ -973,14 +1195,14 @@
     },
     {
       "id": "VariableID:4:7",
-      "name": "primitive/E8EFE6",
+      "name": "primitive/EDF3E7",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.9098039269447327,
-          "g": 0.9372549057006836,
-          "b": 0.9019607901573181,
+          "r": 0.929411768913269,
+          "g": 0.9529411792755127,
+          "b": 0.9058823585510254,
           "a": 1
         }
       },
@@ -1005,14 +1227,14 @@
     },
     {
       "id": "VariableID:4:9",
-      "name": "primitive/F8F6F0",
+      "name": "primitive/FFFCF6",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.9725490212440491,
-          "g": 0.9647058844566345,
-          "b": 0.9411764740943909,
+          "r": 1,
+          "g": 0.9882352948188782,
+          "b": 0.9647058844566345,
           "a": 1
         }
       },
@@ -1101,14 +1323,14 @@
     },
     {
       "id": "VariableID:4:15",
-      "name": "primitive/894E2E",
+      "name": "primitive/B34021",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.5372549295425415,
-          "g": 0.30588236451148987,
-          "b": 0.18039216101169586,
+          "r": 0.7019608020782471,
+          "g": 0.250980406999588,
+          "b": 0.12941177189350128,
           "a": 1
         }
       },
@@ -1148,14 +1370,14 @@
     },
     {
       "id": "VariableID:4:18",
-      "name": "primitive/526C60",
+      "name": "primitive/606E66",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.32156863808631897,
-          "g": 0.42352941632270813,
-          "b": 0.3764705955982208,
+          "r": 0.3764705955982208,
+          "g": 0.4313725531101227,
+          "b": 0.4000000059604645,
           "a": 1
         }
       },
@@ -1178,14 +1400,14 @@
     },
     {
       "id": "VariableID:4:20",
-      "name": "primitive/D9E2D9",
+      "name": "primitive/E8E2D8",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.8509804010391235,
+          "r": 0.9098039269447327,
           "g": 0.886274516582489,
-          "b": 0.8509804010391235,
+          "b": 0.8470588326454163,
           "a": 1
         }
       },
@@ -1418,7 +1640,7 @@
         "CORNER_RADIUS"
       ],
       "values": {
-        "4:0": 12
+        "4:0": 24
       },
       "aliased": false
     },
@@ -1430,7 +1652,7 @@
         "CORNER_RADIUS"
       ],
       "values": {
-        "4:0": 16
+        "4:0": 24
       },
       "aliased": false
     },
@@ -1442,24 +1664,255 @@
         "CORNER_RADIUS"
       ],
       "values": {
-        "4:0": 24
+        "4:0": 28
       },
       "aliased": false
     },
     {
       "id": "VariableID:27:88",
-      "name": "primitive/223028",
+      "name": "primitive/092F29",
       "resolvedType": "COLOR",
       "scopes": [],
       "values": {
         "4:0": {
-          "r": 0.13333334028720856,
-          "g": 0.1882352977991104,
-          "b": 0.1568627506494522,
+          "r": 0.03529411926865578,
+          "g": 0.18431372940540314,
+          "b": 0.16078431904315948,
           "a": 1
         }
       },
       "aliased": false
+    },
+    {
+      "id": "VariableID:54:239",
+      "name": "color/illustration/leaf",
+      "resolvedType": "COLOR",
+      "scopes": [
+        "SHAPE_FILL"
+      ],
+      "values": {
+        "4:0": {
+          "r": 0.501960813999176,
+          "g": 0.6666666865348816,
+          "b": 0.3137255012989044,
+          "a": 1
+        }
+      },
+      "aliased": false
+    },
+    {
+      "id": "VariableID:54:240",
+      "name": "color/illustration/wheat",
+      "resolvedType": "COLOR",
+      "scopes": [
+        "SHAPE_FILL"
+      ],
+      "values": {
+        "4:0": {
+          "r": 0.9647058844566345,
+          "g": 0.8352941274642944,
+          "b": 0.5803921818733215,
+          "a": 1
+        }
+      },
+      "aliased": false
+    }
+  ],
+  "textStyles": [
+    {
+      "id": "S:86fc49f1591b40c01059cd9a2a57eae049d778ec,",
+      "name": "type/display",
+      "size": 32,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 40
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Bold"
+      }
+    },
+    {
+      "id": "S:128f6c1f7dcf98ea63b99eeb50a296ea0c63d7d7,",
+      "name": "type/h1",
+      "size": 26,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 34
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Bold"
+      }
+    },
+    {
+      "id": "S:a49d9db69838a71da28d6265b8ffa4b7cff638fa,",
+      "name": "type/h2",
+      "size": 22,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 30
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:5e9bcd75ba975562b922dd468005d746b32310ba,",
+      "name": "type/h3",
+      "size": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:0cfae36a3fe32dd75473c85d34cc273b2e31f3de,",
+      "name": "type/body",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:0d316e1aeb3da047b409cd736a28872c752ce2e2,",
+      "name": "type/secondary",
+      "size": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:43822ae4032a7f696e1cead1e5bdc0ee4207c3af,",
+      "name": "type/label",
+      "size": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:f4bb12988a5361a1bec68221153ec2a91cb50607,",
+      "name": "type/caption",
+      "size": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 16
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Medium"
+      }
+    },
+    {
+      "id": "S:613a758b5feafb09bc241380e213d710acb6e550,",
+      "name": "type/hero",
+      "size": 22,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Bold"
+      }
+    },
+    {
+      "id": "S:959dd23df76b819033afede1ad4e9c40b61543fa,",
+      "name": "type/price",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Bold"
+      }
+    },
+    {
+      "id": "S:6d64d95fc444cd6d7c7dbac64729de2b417df402,",
+      "name": "type/wordmark",
+      "size": 30,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 38
+      },
+      "font": {
+        "family": "Be Vietnam Pro",
+        "style": "Bold"
+      }
+    }
+  ],
+  "effectStyles": [
+    {
+      "id": "S:68d6f81fa38e71d60ff5e1390035b119750a564f,",
+      "name": "effect/card",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0.15000000596046448,
+            "b": 0.10000000149011612,
+            "a": 0.03500000014901161
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    {
+      "id": "S:0f875b752fbc3ae4876ef28fd10ad12be9d15081,",
+      "name": "effect/floating",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 12,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0.15000000596046448,
+            "b": 0.10000000149011612,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
     }
   ]
 }

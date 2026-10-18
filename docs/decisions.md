@@ -63,3 +63,12 @@
 - Hướng chỉnh: nhóm thông tin theo nhiệm vụ, progress hai bước đồng bộ, callout dị ứng dùng component chung, heading success đúng kết quả, tăng hit targets và expose nội dung component cho teammate sửa bằng properties.
 - Cho phép mở rộng variants Button phục vụ disabled/loading và documentation component; đây chưa là duyệt baseline hoặc chứng minh giao dịch/backend.
 - Dọn context nguồn vắng mặt/logs setup sang backup private; giữ registry + evidence thiết kế và chỉ dẫn teammate khôi phục skills.
+
+## DEC-010 · 19/10/2026 · Owner từ chối visual v0.4, chốt hướng theo ảnh tham khảo
+- Nguồn: owner cung cấp 5 ảnh SaveBite và yêu cầu mock theo gu đó; đánh giá bản trước thiếu cá tính. v0.4 không được chấp nhận làm baseline.
+- Hướng được phép triển khai: warm cream, forest green, typography mạnh, food photography sáng, hero/card giàu hình ảnh, icon vector có cá tính, bo tròn mềm. Giữ native editable UI và chính 5 pilot roots.
+- Ảnh tham khảo không tự thay nghiệp vụ: vẫn 4 tabs, reserve/pay at pickup, dị ứng UNKNOWN và dữ liệu minh họa rõ. Không bịa ratings, giảm giá, merchant hoặc claims food-safety từ ảnh.
+- Token/component changes được đồng bộ trong batch này cùng docs/registry/QA. Không rollout thêm màn ngoài pilot.
+
+- Thực thi B-PILOT-005: giữ 5 root IDs; làm lại 5 bố cục native, 21 mains/31 instances; 40 variables, 11 text styles, 2 effect styles. BreadPhoto dùng ảnh AI minh họa sáng/ấm, lưu generation brief/hash trong manifest; ảnh không làm evidence về merchant/food safety. Reference screenshots không đưa vào public repo.
+- QA: 360/390/430 bounds, detail font125, 13 cặp contrast ≥4.5 và cả 9 hotspot tiến/lùi PASS. Dừng ở AWAITING_OWNER_REVIEW, không tự nhận owner acceptance hoặc mở 95 màn còn lại.
