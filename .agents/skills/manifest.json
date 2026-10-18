@@ -1,6 +1,6 @@
 {
   "installed_at": "2026-10-19",
-  "installation": "Official Codex installer, moved unchanged into project at owner request; no global copies retained",
+  "installation": "Project-local; existing skills retained; new skills installed with official Codex installer --dest; Figma skills local-only pending redistribution license.",
   "skills": [
     {
       "name": "frontend-design",
@@ -19,6 +19,50 @@
       "revision": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
       "source_skill_path": ".claude/skills/ui-ux-pro-max",
       "skill_sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+    },
+    {
+      "name": "figma-use",
+      "scope": "project",
+      "path": ".agents/skills/figma-use",
+      "source": "https://github.com/figma/mcp-server-guide",
+      "revision": "f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5",
+      "source_skill_path": "skills/figma-use",
+      "skill_sha256": "d6ea4d37b2cde6aed0f0ff908cf0b47696f36aa0104413c25291940cf50ef822",
+      "committed": false,
+      "license": "No repository license declared; local installation only"
+    },
+    {
+      "name": "figma-generate-library",
+      "scope": "project",
+      "path": ".agents/skills/figma-generate-library",
+      "source": "https://github.com/figma/mcp-server-guide",
+      "revision": "f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5",
+      "source_skill_path": "skills/figma-generate-library",
+      "skill_sha256": "65ee2aa9fd565b47bf627b773986f3c121616825d01c9ded78ea314532f5d10c",
+      "committed": false,
+      "license": "No repository license declared; local installation only"
+    },
+    {
+      "name": "figma-generate-design",
+      "scope": "project",
+      "path": ".agents/skills/figma-generate-design",
+      "source": "https://github.com/figma/mcp-server-guide",
+      "revision": "f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5",
+      "source_skill_path": "skills/figma-generate-design",
+      "skill_sha256": "5abb19ad5950d315d08c3d27f9c8b3d307ade6c18baf208a03fad65a307b6516",
+      "committed": false,
+      "license": "No repository license declared; local installation only"
+    },
+    {
+      "name": "design-critique",
+      "scope": "project",
+      "path": ".agents/skills/design-critique",
+      "source": "https://github.com/anthropics/knowledge-work-plugins",
+      "revision": "33eeda1e8fd856455b05479d13a0f85b5f803744",
+      "source_skill_path": "design/skills/design-critique",
+      "skill_sha256": "3a4f260eb9f60b431782bf6d90f22afb480c0c67860267a032df58a3e1bd19cd",
+      "committed": true,
+      "license": "Apache-2.0"
     }
   ],
   "verified_upstream_content": true

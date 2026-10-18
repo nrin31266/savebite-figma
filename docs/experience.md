@@ -11,7 +11,7 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 **Deep links:** offer, store, reservation, pickup code, pantry item (local links) và help.  
 **Overlays:** filter, location selector, confirmation, warning, actions, add-to-favorites; không phải tất cả overlays đều là screen được đếm.
 
-### Flows cần prototype ít nhất
+### Flows mục tiêu khi mở rộng sau pilot
 
 **F-01 — Guest → rescue (PRIMARY, bắt buộc chạy end-to-end)**  
 `Splash → Browse as Guest → Khám phá → Lọc dưới 50k → Detail (thông tin/dị ứng/slot) → Login (nếu cần) → Trở về cùng offer → Chọn số lượng → Chọn giờ nhận → Summary → Xác nhận giữ chỗ → Thành công → Đơn đang nhận → Mã nhận → Merchant verification simulated → Hoàn tất → Impact`.
@@ -169,7 +169,7 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 | `SB-099` | Trợ giúp & câu hỏi thường gặp | Support | Core | P1 | Hủy, dị ứng, pickup, vấn đề merchant |
 | `SB-100` | Tác động cá nhân | Impact | Core | P1 | Lần đã nhận, tiền tiết kiệm từ đơn hoàn tất |
 
-### Quy tắc implement màn từ Registry
+### Quy tắc thiết kế màn từ Registry
 
 **Với mỗi `SB-ID`, agent phải xác định contract vận hành trước khi vẽ:** mục tiêu, entry/preconditions, content, CTA/back, states/data, edge cases, reusable components, transitions và dữ liệu cần đo khi hợp lý. Bảng trên là **screen index**, không thay thế design contract. **Mặc định ghi contract ngay trong `docs/experience.md` hoặc mục/nhóm feature tương ứng**, chỉ tách thành `docs/screens/<feature>.md` khi nội dung thật sự dài hoặc có nhu cầu chỉnh độc lập thường xuyên. Không tự tạo 100 file `SB-XXX.md`; ID màn ổn định nằm trong registry/Figma, không là tên file docs.
 
@@ -180,7 +180,7 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 3. Không tràn text tiếng Việt, không thông tin demo gây hiểu nhầm, không tên/giá/địa điểm vô căn cứ được gắn là merchant thật.
 4. Màn có ít nhất một đường vào/ra hoặc là state đối ứng có thể chứng minh; `orphan=true` bị chặn, trừ trang demo đặc biệt có lý do.
 5. Chứng cứ QA: screenshot mới nhất + node ID + checks thực hiện + kết quả; nguồn thiết kế được ghi registry.
-6. `QA-PASS` mới được đếm `DONE`. `READY`, `DESIGNED` hoặc `REVIEW` chưa được đếm.
+6. Lifecycle dùng đúng `QA_PASS`, `DESIGN_REVIEW`, `DONE` như workflow/registry. Chỉ DONE sau QA đủ phạm vi và owner acceptance; pilot PASS_WITH_LIMITS vẫn là DESIGN_REVIEW.
 
 **Đề xuất delivery batches** (không nhất thiết liên tiếp ID vì ưu tiên flow):
 
@@ -195,16 +195,24 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ## Contracts của pilot được duyệt
 
-Dữ liệu chung: `fixture-bakery-01`, merchant `merchant-demo-a`, offer EXACT_ITEM “Bánh mì men tự nhiên”, giá 25.000đ, 1 phần; giá gốc không có evidence nên không hiển thị. Stock 3 phần là fixture. Khu học xá và điểm nhận A hư cấu, không đại diện đối tác thật. Đồng hồ fixture cố định 16:00 ngày 19/10/2026, Asia/Ho_Chi_Minh; slot 17:00–18:00, còn 1 giờ đến lúc bắt đầu. Không suy diễn dị ứng: ingredients/allergens UNKNOWN. Licensed illustration asset `food-sourdough-1079020`. Guest/login/quantity chọn sẵn là precondition của subset, chưa tạo auth.
+Dữ liệu chung: `fixture-bakery-01`, merchant `merchant-demo-a`, offer EXACT_ITEM “Bánh mì men tự nhiên”, giá 25.000đ, 1 phần; giá gốc không có evidence nên không hiển thị. Stock 3 phần là fixture. Khu học xá và điểm nhận A hư cấu, không đại diện đối tác thật. Đồng hồ fixture cố định 16:00 ngày 19/10/2026, Asia/Ho_Chi_Minh; slot 17:00–18:00, còn 1 giờ đến lúc bắt đầu. Không suy diễn dị ứng: ingredients/allergens UNKNOWN. Licensed illustration asset `food-sourdough-1079020`. Subset bắt đầu sau khi giả định người dùng đã đăng nhập; chưa tạo auth và không dùng pilot để chứng minh guest-to-login. Số lượng cố định 1 phần, khung 17:00–18:00 được chọn sẵn; chưa kiểm khả năng đổi số lượng/khung giờ.
 
-| ID | Mục tiêu và entry | Nội dung / CTA / back | States và edge cases ngoài subset | Reuse / measurement dự kiến |
+| ID | Mục tiêu và entry | Nội dung / CTA / back | States và edge cases ngoài subset | Mapping / measurement |
 |---|---|---|---|---|
-| SB-015 | Chọn offer từ danh sách; entry pilot start, khu vực chọn tay | Giá, còn phần, merchant, giờ nhận; card → 034; 4 tabs đúng labels | Loading/empty/error/GPS fallback phải có khi mở rộng; không xin GPS trong pilot | OfferCard, PriceBlock, PickupInfo, BottomTabBar, SearchField, FilterChip; impression/detail rate chưa thu |
-| SB-034 | Hiểu EXACT_ITEM trước đặt; từ 015, trạng thái available demo | Mô tả món, ảnh minh họa licensed, giá, tồn, pickup, điểm nhận, unknown allergens; Đặt trước → 051; back → 015 | Sold out/expired/offline/allergy warning; không khẳng định an toàn hoặc merchant verified | PriceBlock, PickupInfo, Banner, Button; detail-to-reserve chưa thu |
-| SB-051 | Chọn slot; từ 034, giả định đã đăng nhập và quantity=1 | Ngày, slot 17–18 selected, thời điểm bắt đầu còn 1 giờ, địa điểm, hạn hủy; Tiếp tục → 053; back → 034 | Slot hết hạn/không còn chỗ phải khóa; chỉ một slot hợp lệ ở fixture | PickupSlot available/selected/unavailable, Button; selection chưa thu |
-| SB-053 | Kiểm tra giá/slot/terms trước confirm; từ 051 | 1×25.000đ, tổng 25.000đ, tại quầy, pickup, allergy unknown và hủy trước 17:00; Đặt trước (demo) → 056; back → 051 | Stock/price changed, retry idempotency và double submit ngoài backend subset; không charge online | PriceBlock, PickupInfo, Banner, Button; completion chưa thu |
-| SB-056 | Xem hướng dẫn và mã nhận demo; từ 053 bằng mô phỏng | Mã DEMO-A125, ID DEMO-001, nhận 17–18, 25.000đ tại quầy; Khám phá tiếp → 015; back → 053 | Mã không dùng giao dịch thật; merchant/server verification, expired và offline cache ngoài subset | PickupInfo, PickupCodeCard, Button, Banner; không ghi pickup/impact thật |
+| SB-015 | Chọn offer từ danh sách; entry pilot start, khu vực chọn tay | Giá, còn phần, merchant, giờ nhận; card → 034; 4 tabs đúng labels | Loading/empty/error/GPS fallback phải có khi mở rộng; không xin GPS trong pilot | Mapping thực: screens.csv → components.csv; impression/detail rate chưa thu |
+| SB-034 | Hiểu EXACT_ITEM trước đặt; từ 015, trạng thái available demo | Mô tả món, ảnh minh họa licensed, giá, tồn, pickup, điểm nhận, unknown allergens; Đặt trước → 051; back → 015 | Sold out/expired/offline/allergy warning; không khẳng định an toàn hoặc merchant verified | Mapping thực: screens.csv → components.csv; detail-to-reserve chưa thu |
+| SB-051 | Chọn slot; từ 034, giả định đã đăng nhập và quantity=1 | Ngày, slot 17–18 selected, thời điểm bắt đầu còn 1 giờ, địa điểm, hạn hủy; Tiếp tục → 053; back → 034 | Slot hết hạn/không còn chỗ phải khóa; chỉ một slot hợp lệ ở fixture | Mapping thực: screens.csv → components.csv; selection chưa thu |
+| SB-053 | Kiểm tra giá/slot/terms trước confirm; từ 051 | 1×25.000đ, tổng 25.000đ, tại quầy, pickup, allergy unknown và hủy trước 17:00; Đặt trước (demo) → 056; back → 051 | Stock/price changed, retry idempotency và double submit ngoài backend subset; không charge online | Mapping thực: screens.csv → components.csv; completion chưa thu |
+| SB-056 | Xem hướng dẫn và mã nhận demo; từ 053 bằng mô phỏng | Mã DEMO-A125, ID DEMO-001, nhận 17–18, 25.000đ tại quầy; Khám phá tiếp → 015; back → 053 | Mã không dùng giao dịch thật; merchant/server verification, expired và offline cache ngoài subset | Mapping thực: screens.csv → components.csv; không ghi pickup/impact thật |
 
-QR vector ở pilot chỉ mã hóa SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER, có nhãn minh họa và mã DEMO-A125; không dùng nhận món thật. QR xác thực thực tế thuộc SB-063 và backend trong batch sau. Prototype subset bỏ qua SB-050/052/054/055 để kiểm tra liên kết công cụ, không thay flow F-01 đầy đủ. Các controls ngoài đường pilot chưa mô phỏng đầy đủ và phải được nói rõ trong báo cáo QA.
+QR vector ở pilot chỉ mã hóa SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER, có nhãn minh họa và mã DEMO-A125; không dùng nhận món thật. Thiết kế mã nhận cho flow đầy đủ thuộc SB-063 ở batch sau; triển khai xác thực backend nằm ngoài repo. Prototype subset bỏ qua SB-050/052/054/055 để kiểm tra liên kết công cụ, không thay flow F-01 đầy đủ. Các controls ngoài đường pilot chưa mô phỏng đầy đủ và phải được nói rõ trong báo cáo QA.
 
 Fixture phụ fixture-croissant-02 chỉ nằm ở SB-015: bánh sừng bò, 30.000đ, còn 2 phần, nhận 17:00–18:00, cùng merchant giả lập. Không liên kết sang detail của offer khác; ngoài đường click-through pilot.
+
+### Ranh giới tương tác của pilot
+
+Chuỗi đang review: `SB-015 → SB-034 → SB-051 → SB-053 → SB-056 → SB-015`. Đây là click-through đặt trước mô phỏng; F-01 đầy đủ chưa hoàn thành. Các CTA/back nằm trong bảng contract phía trên; search/filter/category/favourite/tabs và offer phụ đang tĩnh.
+
+Back từ SB-056 về SB-053 là đường review prototype, không chứng minh đơn thật có thể chỉnh sau xác nhận. Đường back khác có read-back cấu trúc, chưa bấm hết. Mapping node/component phải đọc registry + evidence trước khi sửa canvas.
+
+Khi mở rộng, định nghĩa auth, stock/error và post-confirm navigation trước khi tạo màn; không suy diễn hành vi production từ đường back của pilot. Controls ngoài subset được ghi rõ trong tài liệu review, không claim đã hoạt động. Copy safety, giá và slot phải khớp product.md/fixture; thay hành vi nghiệp vụ cần decision.

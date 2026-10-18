@@ -1,26 +1,26 @@
 # Progress · 19/10/2026
 
-Gate: **AWAITING_OWNER_REVIEW**. Bootstrap PASS; FigmaWrite VERIFIED; pilot v0.3 technical checks PASS_WITH_LIMITS. DESIGN_REVIEW 5/100, BACKLOG 95/100, DONE 0/100. Baseline và owner acceptance để trống.
+Gate thiết kế: **AWAITING_OWNER_REVIEW**. Evidence bootstrap ghi FigmaWrite VERIFIED; pilot v0.3 technical checks PASS_WITH_LIMITS. Đây là bằng chứng lịch sử; phiên audit docs chưa reverify Figma live. DESIGN_REVIEW 5/100, BACKLOG 95/100, DONE 0/100. Baseline và owner acceptance để trống.
 
 ## Kết quả và ownership
 
 - Đã đọc toàn bộ hai attachment và chuyển yêu cầu thành docs theo domain. 100 unique SB-IDs, 20 D-defaults, 6 flows; repo tự đọc được qua AGENTS → docs router → progress, không phụ thuộc handoff bên ngoài.
-- Sources chuyển đầy đủ sang [Markdown](../docs/README.md#nguồn-đã-chuyển-thành-markdown): assignment 9 trang; Zia 25 trang + 10 hình tham khảo + persona/journey text; DOCX 803 đoạn không trống + 4 bảng. Có hash, links gốc và provenance; file nguồn ngoài repo không bị sửa/xóa. Không coi case study/dự thảo slide là nghiên cứu thật của SaveBite.
+- Đã loại bản chép 3 nguồn và 10 ảnh Zia khỏi repo public; giữ tên/hash/provenance trong docs/references/README.md và source-conversion.json. Bản đầy đủ nằm ở backup private ngoài repo; docs domain đủ để tiếp tục.
 - CLAUDE.md symlink tương đối tới AGENTS.md; không copy rules. Drift protocol, writer lease và checkpoints nằm ở workflow.
 - Last successful batch: B-PILOT-003, fresh rebuild theo DEC-005. v0.1/v0.2 REJECTED; đã xóa đúng 5 roots cũ 5:204..5:208 và page Components cũ 5:2 do agent tạo. Page 1 được giữ nguyên.
 - Lease RELEASED: Codex lead/writer; scope docs, pilot, shared tokens/components, registry; chỉ một writer, không subagent.
 
-## Environment, MCP và skills
+## Audit docs, skills và phạm vi hiện hành
 
-- Fedora 44 KDE / Linux 6.19.10; Codex desktop, CLI available 0.150.1; Git 2.55.0, Python 3.14.7, Node 24.19.0; gh 2.97 authenticated nrin31266.
-- Official Figma MCP/plugin đã có; dùng whoami, get_metadata, get_libraries, search_design_system, use_figma, screenshots/image assets. Preflight không có subscribed libraries hoặc local components/tokens; không có Code Connect/code app để reuse. Không cài trùng MCP; không đổi user config/OAuth.
-- Account RIN do owner chọn: Nguyen Van Rin, team Nguyễn Văn Rin's team, tier **student**, seat **Full**, role **admin**. Access đúng file NLTv70kDZ2i3HpOnOKQCDY và native write/read đã chứng minh bằng sandbox frame 2:3/text 2:4, sau đó dọn đúng trial nodes.
-- Đã dùng find-skills: `npx --yes skills find frontend-design`, `find 'mobile app design'`, `find accessibility`; đọc nguồn/metadata/content/license trước khi chọn hai skill cần dùng.
-- Skills mới **project-local**: frontend-design (anthropics/skills) và ui-ux-pro-max (nextlevelbuilder). Source revision/hash ở [manifest](../.agents/skills/manifest.json). Ban đầu cài qua official installer rồi chuyển nguyên vẹn vào repo theo yêu cầu local; không giữ hai bản global. Không tạo custom SaveBite skill.
-- Official skills reuse: figma-use, figma-generate-library, figma-generate-design. Brainstorming/Ponytail áp dụng scope đã duyệt; PDF/Documents dùng đọc nguồn. UI/UX Pro Max output thiên web marketing không khớp sản phẩm đã bị bỏ; quyết định visual theo docs/design-system.md.
-- Context7 không cần cho canvas hiện tại. Browser có sẵn dùng để bấm prototype thật; không thêm framework hoặc tool chưa cần.
+- DEC-006: repo chỉ làm Figma, design system, prototype và docs/evidence. Đã bỏ stack/app implementation/API mẫu và code acceptance gates; 50/30 màn code chỉ là bối cảnh học phần.
+- Làm rõ pilot đăng nhập giả định, quantity=1/slot cố định, các controls tĩnh và back từ success để review. Sửa lifecycle wording về DESIGN_REVIEW/QA_PASS/DONE; bảng components mở rộng không còn là việc bắt buộc trước pilot.
+- Sửa B-ASSETS-01: pilot đã có 2 ảnh Pexels; nguồn mới cho màn sau vẫn cần manifest. Không thay business/safety/payment/navigation trên canvas.
+- Skills: giữ frontend-design/ui-ux-pro-max; đã cài project-local figma-use, figma-generate-library, figma-generate-design, design-critique bằng official installer --dest. 6 SKILL.md có source/revision/hash trong manifest; không cài global. Figma trio local-only vì upstream chưa khai báo license phân phối; không commit bản nguồn này lên public.
+- [Shortlist + web sources](../docs/references/agent-skills.md): đã dùng find-skills, đọc upstream, kiểm GitHub metadata và official Figma/OpenAI Docs. Chưa cài thêm MCP hoặc đổi config. Cài skills không cấp quyền Figma.
+- Phiên audit này không có Figma tools trong danh sách callable; không sửa canvas, không kiểm lại screenshots/prototype/mobile. Evidence bên dưới là checkpoint pilot trước, không xác minh lại live trong đợt docs.
+- Lease docs: Codex / docs, source cleanup, skills manifest / RELEASED tại checkpoint audit; không có Figma writer lease.
 
-## Figma pilot v0.3
+## Figma pilot v0.3 · evidence checkpoint trước
 
 File duy nhất: [SaveBite](https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/SaveBite?node-id=2-2). Page Pilot · Rescue Market `2:2`; Foundations `4:48`; Components mới `27:87`.
 
@@ -51,7 +51,7 @@ UI native editable, Auto Layout; ảnh raster chỉ là hai ảnh món có licen
 ## Open conflicts và review tiếp theo
 
 1. Owner review thẩm mỹ/khả dụng của **v0.3**, quyết định nhận baseline hoặc nêu chỉnh sửa cụ thể; chưa rollout thêm màn.
-2. B-COURSE-01: source Deliverables=50 coded screens, rubric/Notes=30. Giữ mục tiêu 50; cần xác nhận giảng viên trước nộp.
+2. B-COURSE-01: source Deliverables=50 coded screens, rubric/Notes=30. Ngoài scope repo; nhóm xác nhận giảng viên khi bàn giao phần code.
 3. B-RESEARCH-01: chưa có dữ liệu người dùng/merchant thật; cần research/usability evidence trước claim kết quả.
 4. B-DEVICE-01: cần demo trên điện thoại và kiểm accessibility thực; prototype desktop subset chưa thay cho mobile demo.
 5. B-LEGAL-01: production policy/food safety và thông tin merchant chưa review. Không chặn pilot demo; không claim food safety.
@@ -60,8 +60,8 @@ Asset pending đã được giải quyết bằng hai ảnh Pexels có manifest.
 
 ## Git checkpoint và bước tiếp theo
 
-- Branch task: docs/bootstrap-figma-pilot. Bootstrap checkpoint: `4aaa46c` (docs migration và registry trung thực).
-- Design + QA checkpoint: `82815e3588106535f2b72bd7f5a5f8a70e87d16d`. Đã tạo và push [nrin31266/savebite-figma](https://github.com/nrin31266/savebite-figma), **private**, default branch `main`, remote `origin`. `git ls-remote` đã xác nhận `main` và `docs/bootstrap-figma-pilot` cùng SHA checkpoint này. Không có PR.
-- Báo cáo xuất bản được commit tiếp sau design checkpoint; lấy SHA báo cáo mới nhất bằng `git log -1 --oneline`. Trước commit báo cáo, worktree clean và upstream đồng bộ. Báo cáo chỉ cập nhật README/router/progress; không đổi canvas hoặc bằng chứng thiết kế.
-- Không sửa Git account toàn cục, không force push, không tạo PR, không đổi Figma sharing. `.gitignore` có secrets/env/cache; chỉ force-add những PNG evidence cuối được liệt kê trong QA.
-- Next executable batch: chỉ owner review pilot. Sau acceptance mới khóa baseline và lên batch tiếp theo; chưa tạo 100 màn hoặc app code.
+- Task branch: docs/figma-scope-cleanup. DEC-007 cho phép backup private, lọc lịch sử, force-push và đổi chính repo [savebite-figma](https://github.com/nrin31266/savebite-figma) thành public. Không thay Figma sharing.
+- Backup private đã tạo ngoài repo, gồm workspace archive và Git bundle; bundle verify PASS. Không đưa backup hoặc đường dẫn máy cá nhân vào Git public. SHA cũ sẽ đổi sau rewrite; dùng git log để đọc checkpoint hiện tại.
+- Public release: PREPARING — chỉ đổi visibility sau khi kiểm tra lịch sử đã lọc và refs remote.
+- Audit QA: validator PASS (100 IDs, 20 defaults, 6 flows, 5 node mappings, 15 components, evidence/assets/skills hashes); canvas/mobile/usability NOT CHECKED trong phiên này. Kiểm tra links gồm progress và docs; không gọi QA này là revalidation thiết kế.
+- Next design batch: owner review pilot; sau acceptance mới khóa baseline và lên batch tiếp theo. Không triển khai app hoặc tự tạo tiếp 100 màn.

@@ -1,6 +1,7 @@
 # SaveBite agent rules
 
 ## Đọc và xác định phạm vi
+- Repo chỉ làm Figma: UI/UX, tokens/components, prototype, docs và evidence. Không triển khai app/backend hoặc tự tạo deliverables code.
 - Bắt đầu bằng `docs/README.md`, `tracking/progress.md`, rồi tài liệu domain và registry bị ảnh hưởng.
 - Không cần tài liệu handoff bên ngoài repo để tiếp tục công việc.
 - `docs/product.md` sở hữu nghiệp vụ; `docs/experience.md` sở hữu flow/màn.
@@ -10,7 +11,7 @@
 - Không bịa research, metrics, merchant, reviews, license, node IDs hoặc DONE.
 
 ## Trước khi sửa
-- Đọc Git status, những caller/docs/fixtures liên quan và Figma live trước khi mutation.
+- Đọc Git status và docs/fixtures liên quan trước khi sửa repo. Trước khi sửa canvas phải đọc Figma live; task chỉ sửa docs không cần thao tác canvas.
 - Tôn trọng chỉnh sửa thủ công; không reset canvas, overwrite file hoặc xóa dữ liệu có sẵn.
 - Dùng conflict protocol trong `docs/workflow.md`; ghi Open conflicts ở progress.
 - Nghiệp vụ/safety/payment/navigation hoặc breaking design change cần quyết định được ghi log.
@@ -39,7 +40,7 @@
 - Skills/MCP đã có thì reuse; skill mới cài project-local trong `.agents/skills/`, không global.
 - Trước task UI đọc `.agents/skills/frontend-design/SKILL.md` và `ui-ux-pro-max/SKILL.md` khi phù hợp; source manifest đi kèm.
 - Context7 dùng khi cần API/SDK phiên bản hoặc code, không bắt buộc cho canvas.
-- Agent docs/code có thể làm worktree riêng; Figma không cô lập theo Git branch.
+- Agent docs có thể làm worktree riêng; Figma không cô lập theo Git branch. Không tự mở nhiều agent nếu chưa được yêu cầu.
 - Mọi lease phải có owner/scope và được giải phóng tại checkpoint.
 
 ## Checkpoint

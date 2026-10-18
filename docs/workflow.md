@@ -4,7 +4,7 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ### Thứ tự ưu tiên và quản lý tài liệu lệch nhau
 
-- **Yêu cầu môn học:** `GROUP ASSIGNMENT-UXUI.pdf` và sửa đổi có chứng cứ từ giảng viên. Khi tài liệu gốc mâu thuẫn nội bộ (ví dụ 30/50 màn code), giữ phương án bảo thủ 50 trong `docs/product.md`, ghi rõ chưa được giảng viên xác nhận.
+- **Yêu cầu môn học:** `GROUP ASSIGNMENT-UXUI.pdf` và sửa đổi có chứng cứ từ giảng viên. Khi tài liệu gốc mâu thuẫn nội bộ (ví dụ 30/50 màn code), ghi B-COURSE-01 là bối cảnh học phần ngoài scope repo theo DEC-006, chưa được giảng viên xác nhận.
 - **Quyết định sản phẩm:** xác nhận mới nhất của người dùng/nhóm có thể kiểm chứng và ghi trong `docs/decisions.md` → trạng thái hiện hành phải được phản ánh trong `docs/product.md`/`docs/experience.md`. Nếu Decision Log và tài liệu hiện hành chưa khớp, **không tự chọn tài liệu thuận tiện**.
 - **Nguồn chuẩn theo lĩnh vực:** `docs/product.md` sở hữu business scope/policy; `docs/experience.md` sở hữu flow, màn và UX state; `docs/design-system.md` sở hữu token/components; `docs/workflow.md` sở hữu Figma/agent/QA. `tracking/screens.csv` và `tracking/components.csv` giữ tình trạng thực tế và ID, không tự biến thành nguồn thay đổi requirement.
 - **Figma live:** nguồn chuẩn về **những gì thực sự đang tồn tại trên canvas**; không mặc nhiên là nguồn chuẩn của yêu cầu. Nếu canvas khác docs, kiểm tra lịch sử/manual edits và đề xuất đồng bộ, **không ghi đè**. Đọc lại node thực trước khi sửa.
@@ -14,7 +14,7 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 1. Xác định đối tượng: `REQUIREMENT`, `DECISION`, `DESIGN`, `IMPLEMENTATION`, `TRACKING`, `EXTERNAL_DOC` và ghi ngắn vào `tracking/progress.md` mục `Open conflicts` (chỉ tạo file issues riêng nếu thực sự nhiều).
 2. So sánh bằng chứng nguồn, ngày duyệt, docs theo đúng chủ đề, Figma node và registry; ghi các phương án tác động tới screen IDs/components/flows.
-3. **Không âm thầm sửa nhiều tài liệu cho "khớp" mà thiếu cơ sở.** Nếu khác biệt là lỗi hiển nhiên không thay đổi chính sách, có thể sửa tài liệu cùng code/registry và ghi checkpoint. Nếu ảnh hưởng phạm vi, UX flow, pricing/payment, safety, thành phần chung hoặc yêu cầu bài học: xin quyết định, ghi `docs/decisions.md`, cập nhật *tất cả tài liệu phụ thuộc trong cùng một thay đổi*, rồi QA lại màn liên quan.
+3. **Không âm thầm sửa nhiều tài liệu cho "khớp" mà thiếu cơ sở.** Nếu khác biệt là lỗi hiển nhiên không thay đổi chính sách, có thể sửa tài liệu cùng registry và ghi checkpoint. Nếu ảnh hưởng phạm vi, UX flow, pricing/payment, safety, thành phần chung hoặc yêu cầu bài học: xin quyết định, ghi `docs/decisions.md`, cập nhật *tất cả tài liệu phụ thuộc trong cùng một thay đổi*, rồi QA lại màn liên quan.
 4. Các việc không phụ thuộc xung đột được phép tiếp tục. Block chỉ hạng mục bị ảnh hưởng; không làm cả dự án đình trệ không cần thiết.
 5. Sau quyết định, `docs/README.md` vẫn là router duy nhất; không lưu cùng một bản mô tả ở 3 nơi hoặc dùng chat history làm registry.
 
@@ -93,7 +93,7 @@ Mọi kết quả cần `participantId`, `consent`, `scenario`, `task`, `observe
 - Giá gốc bị gạch ngang không giảm khả năng đọc giá hiện tại; giảm giá không chỉ hiện `%`.
 - Đối với dị ứng và safety warnings, ngôn ngữ không mơ hồ; unknown được thông báo trước reserve.
 - Font scaling/reflow/bàn phím/safe area/scrolling test thực tế.
-- Không có auto-animation liên tục quan trọng; hỗ trợ reduced motion nếu code.
+- Không có auto-animation liên tục quan trọng; tránh motion bắt buộc và ghi rõ phương án reduced motion khi có animation.
 
 ### User experience quality gates
 
@@ -153,6 +153,8 @@ Shared components phải có stable key; khi đổi Figma node ID phải update 
 
 ### Quản lý nhiều agents
 
+Mặc định dùng một agent. Chỉ chia việc cho subagent khi người dùng yêu cầu; các quy tắc dưới đây áp dụng khi đã được phép chia việc.
+
 - Một **Lead Agent** quản lý docs router, batch plan, registry và quyết định; **Figma Writer Agent** duy nhất có quyền mutation trong mỗi cửa sổ tác vụ để tránh 2 agent overwrite lẫn nhau.
 - Subagents có thể song song làm research, kiểm tra competitor, kiểm tra assets/license, viết screen contracts, đọc QA screenshot. Không song song sửa cùng page/component hoặc cùng registry mà không có cơ chế hợp nhất.
 - Với repo, làm qua Git commits/branches theo batch; merge sau lint/spec validation. Lệnh destructive Git (`reset --hard`, xóa folder, overwrite file gốc) cần yêu cầu rõ và backup.
@@ -192,8 +194,6 @@ npx skills find accessibility
 | Tạo foundation, variants, reusable components | `figma-generate-library` + `figma-use` |
 | Ráp màn hi-fi editable bằng design system | `figma-generate-design` + `figma-use` |
 | Lập sơ đồ FigJam thật sự cần thiết | `figma-generate-diagram` |
-| Đọc Figma để implement thành code | `figma-design-to-code` |
-| Đồng bộ components giữa Figma và code khi đã có codebase | `figma-code-connect`, optional |
 
 **Không custom skill**, không cài skill chỉ để có thật nhiều mục trong danh sách. Trước mỗi thao tác Figma, xem hướng dẫn MCP/skill thực tế trong phiên và tuân thủ prerequisites của tool.
 
@@ -201,8 +201,8 @@ npx skills find accessibility
 
 1. **Figma MCP — bắt buộc**: xác minh danh tính, đúng file/team Education, quyền Editor thật và khả năng native editable write; nếu fail đánh `FigmaWrite=BLOCKED`. Không tự tạo file thay thế và không báo đã nối thành công chỉ từ OAuth.
 2. **Local files/Git — bắt buộc trong môi trường agent**: đọc/ghi repo, Git checkpoints, tránh secrets.
-3. **Browser/Playwright — tùy nhu cầu**: khi cần code UI E2E, screenshot/visual regression hoặc tài liệu web; không dùng để bypass access Figma.
-4. **Context7 MCP — không bắt buộc cho giai đoạn Figma canvas**. Chỉ bật/cài khi đang làm phần **code hoặc gặp nghi vấn về SDK/API theo phiên bản** (React Native/Expo/TypeScript, plugin API, testing dependencies). Ưu tiên documentation chính thức và package version đang cài; dùng Context7 để truy xuất nhanh tài liệu version-specific, không dùng nó để quyết định nghiệp vụ SaveBite hoặc thay thế skills Figma. Nếu server đã có, tái sử dụng, không thêm bản thứ hai. [Context7 docs](https://github.com/upstash/context7) cung cấp remote `https://mcp.context7.com/mcp` và setup theo client; agent kiểm tra lệnh cấu hình phù hợp, không tự nhét API key vào repo.
+3. **Browser/Playwright — tùy nhu cầu**: khi cần bấm prototype, xem screenshots hoặc tra tài liệu web; không dùng để bypass access Figma.
+4. **Context7 — chỉ khi cần tra Plugin API theo phiên bản**; không cài stack/app SDK cho task canvas. Dùng docs chính thức khi đủ; không tự thay user config hoặc thêm MCP trùng.
 
 ### Kiểm tra quyền Figma đích
 
@@ -260,21 +260,9 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 - Record usability evidence from real participants (nếu tổ chức), ưu tiên test lại sau feedback.
 - Thực hiện before → finding → after dựa dữ liệu. Nếu chưa test thật, phần slide ghi là giả thuyết thiết kế, không “đã xác nhận cải thiện”.
 
-### Phase 6 — Code UI implementation
+### Phase 6 — Bàn giao thiết kế
 
-- Ưu tiên **React Native + Expo + TypeScript** vì là stack hợp lý cho mobile UI, có đường lên app thật. Đây là `DEFAULT` định hướng, không phải yêu cầu cố định của giảng viên (Flutter hoặc HTML/CSS cũng được phép theo PDF).
-- Cấu trúc `app/src/{features,components,tokens,navigation,data,services,fixtures,utils}`. `features` tách `auth`, `discover`, `offers`, `reservations`, `orders`, `pantry`, `account`.
-- Shared components reflect Figma but không copy HTML mô phỏng thành production React Native. Implement loading/empty/error states và navigation theo screen IDs.
-- Tách `MockRepository` và API service interfaces; chưa có backend thì phải có deterministic fixtures + mocked transitions, **không báo giao dịch thật**.
-- Goal: tối thiểu 50 coded screens (ngưỡng an toàn), có kiểm tra screen-to-code mapping.
-
-**Initial code target:** 40 màn `P0` từ registry + 10 màn cốt lõi `P1` để Pantry và Impact có code: `SB-074`, `SB-075`, `SB-076`, `SB-077`, `SB-079`, `SB-080`, `SB-084`, `SB-086`, `SB-088`, `SB-100`. Đây là lựa chọn kỹ thuật, không thay requirement; có thể thay một-một nếu đã qua ADR. Nếu một state không là route độc lập trong code, cần chứng minh bằng UI state riêng và thống nhất với cách đếm của giảng viên — **không tự khẳng định đạt 50 chỉ bằng 40 route + 10 variant**.
-
-**Gate P6:** code chạy được, luồng chính hoạt động với mocked backend rõ ràng, không hardcode chỉ screenshot; compare design↔code trên 360/390/430, không có blocking navigation error.
-
-### Phase 7 — Submission/portfolio
-
-- Evidence map rubric ↔ files/URLs/recordings: Figma hi-fi, lo-fi, prototype link, two demo videos, sketch, coded UI counts, code repo, 20 competitor sources, case-study portfolio, group video.
+- Evidence map rubric ↔ files/URLs/recordings: Figma hi-fi, lo-fi, prototype link, video prototype khi có yêu cầu, sketch, 20 competitor sources đã kiểm chứng. Portfolio/code/video nhóm là bối cảnh học phần ngoài repo.
 - Presentation slide SaveBite đã tạo trước chỉ được xem là bộ minh họa ban đầu; thay phần research/test/screenshots bằng **kết quả thật** trước khi nộp.
 - Không đóng dấu “100% complete” cho deliverable có review chưa chạy/permission chưa giải quyết.
 
@@ -310,7 +298,7 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 - Test flow transitions trong batch; không report success khi UI chỉ là static.
 - Quyết định quan trọng ghi ADR. Blockers có owner và next action; batch report rõ `passed/failed/deferred`.
 
-### Product acceptance (cuối đồ án)
+### Design acceptance (phạm vi Figma)
 
 | Area | Pass condition | Evidence cần có |
 |---|---|---|
@@ -322,10 +310,8 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 | 20 competitors | 20 real apps, source and observed patterns | Competitor matrix + screenshots sourced |
 | Usability | Không bịa participants/metrics; nếu test thì findings traceable | Raw anonymized notes + before/after |
 | Mobile demo | Figma prototype vận hành trên mobile được chứng minh | Video/photo thật, không AI mockup |
-| Coded UI | Mục tiêu 50, thực sự có route/state UI chạy được | Repo, build logs, demo video, mapping |
-| Portfolio & presentation | Câu chuyện xuyên suốt và phù hợp chứng cứ | PDF/website, slides, nhóm 5 người |
 
-**STOP release nếu:** file Figma thiếu quyền, 100 ảnh raster bị tính là màn, số liệu research/test giả, prototype hỏng luồng chính, lỗi nghiêm trọng an toàn thực phẩm, duplicate/stock inconsistency trong UI, hoặc code demo không chạy được.
+**STOP release nếu:** file Figma thiếu quyền, 100 ảnh raster bị tính là màn, số liệu research/test giả, prototype hỏng luồng chính, lỗi nghiêm trọng an toàn thực phẩm, duplicate/stock inconsistency trong UI.
 
 ---
 
@@ -342,6 +328,12 @@ Rollback: revert commit docs khi cần; Figma chỉ sửa/xóa exact IDs do phi�
 
 ## Skills cài trong repo
 
-Theo yêu cầu mới nhất, frontend-design (Anthropic) và ui-ux-pro-max (NextLevelBuilder) được cài trong `.agents/skills/`, không giữ bản global. Manifest giữ source/revision/hash. Dùng find-skills để tìm, kiểm metadata/content/license rồi cài với destination project-local. Đây là upstream skills, không phải custom SaveBite skills. Các official Figma skills do plugin cung cấp được reuse. Không tự generate thêm Master design document từ skill khi docs/design-system.md đã canonical.
+Manifest tại `.agents/skills/manifest.json` pin nguồn/revision/hash của 6 skill local: frontend-design, ui-ux-pro-max, figma-use, figma-generate-library, figma-generate-design và design-critique. Bộ ba Figma được cài theo yêu cầu owner để dùng trong project khi phiên thiếu skill discovery; ưu tiên plugin chính thức nếu phiên đã cung cấp, không nạp hai bản cùng lúc. Chúng không commit vào repo public vì upstream chưa khai báo license phân phối.
 
-Search design-system tự động của UI/UX Pro Max trả pattern thiên về web marketing không khớp consumer pickup; không áp dụng purple/testimonials/delivery. Product-domain fallback Restaurant/Food Service chỉ hỗ trợ lựa chọn ảnh thực phẩm và hierarchy; policies SaveBite vẫn theo product.md.
+Skills hỗ trợ hướng dẫn; cài skill không tự bật MCP, cấp quyền Figma hoặc chứng minh write thành công. Giữ design-system.md canonical; bỏ qua output web marketing không khớp mobile.
+
+## Làm việc với agent theo task nhỏ
+
+Mỗi task nêu mục tiêu, SB-IDs/node IDs, phần được sửa, dữ liệu mẫu và cách kiểm tra. Đọc router → progress → domain bị ảnh hưởng; không nạp lại toàn bộ nguồn hoặc mọi skill mỗi phiên. Lưu trạng thái vào registry/progress, trả screenshots và kiểm tra thực đã chạy. Docs-only QA không chứng minh Figma live còn đúng.
+
+Skill shortlist và nguồn hướng dẫn đã kiểm tra: [agent-skills.md](references/agent-skills.md).

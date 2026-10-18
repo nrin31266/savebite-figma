@@ -4,9 +4,11 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ## NGUỒN GỐC, YÊU CẦU MÔN HỌC VÀ TÍNH TRUNG THỰC
 
-### Nguồn bắt buộc
+### Nguồn và phạm vi hiện hành
 
-Bản Markdown đầy đủ: [đề bài](references/course-assignment.md), [nội dung slide](references/savebite-slide-content.md), [case study tham khảo](references/zia-pizza-case-study.md). Các bản nguồn giữ nội dung lịch sử; policy hiện hành được giải quyết tại tài liệu domain này và decisions.md.
+`CONFIRMED` Theo DEC-006, repo chỉ thực hiện thiết kế Figma, prototype và docs/evidence liên quan. Các yêu cầu code, portfolio, slide/video nhóm của học phần là bối cảnh ngoài phạm vi thực thi repo; không tự khởi tạo app hoặc coi code là gate của thiết kế.
+
+[Provenance nguồn](references/README.md) giữ tên/hash và giới hạn sử dụng. Bản chép nguồn đầy đủ được lưu private ngoài repo; tiếp tục công việc bằng docs domain hiện hành.
 
 | Source | Dùng để quyết định | Giới hạn |
 |---|---|---|
@@ -16,14 +18,14 @@ Bản Markdown đầy đủ: [đề bài](references/course-assignment.md), [n�
 | Hội thoại chốt SaveBite | Hệ màu trầm, trình bày bằng tiếng Việt, assets thật, tránh tạo mặt người giả, ưu tiên agent tự quản lý và reusable components | Các bản slide AI tạo trước đây là **visual references**, không phải màn app đã hoàn thiện |
 | Figma đích trong docs/workflow.md | Nơi lưu thiết kế | Quyền hiện hành trong tracking/progress.md; không tự tạo file thay thế |
 
-### Các đầu ra cần bàn giao
+### Đầu ra thiết kế và bối cảnh học phần
 
 - `CONFIRMED` Ít nhất **100 hi-fi Figma frames** thực chất, có ít nhất **1 end-to-end prototype flow**.
 - `CONFIRMED` Low-fi wireframes và prototype riêng về giai đoạn thiết kế (không tính nhầm low-fi vào 100 hi-fi).
 - `CONFIRMED` Video low-fi khoảng 1–3 phút; video high-fi khoảng 2–5 phút; demo trên Figma Mobile.
-- `CONFIRMED` Portfolio PDF hoặc website case study, thể hiện từ research đến iteration; presentation + video nhóm 5 thành viên.
+- `CONFIRMED — ngoài phạm vi repo` Portfolio PDF/website case study, presentation và video nhóm là yêu cầu học phần; không tự sản xuất trong task Figma.
 - `CONFIRMED` Phân tích ít nhất **20 ứng dụng thật**, với nguồn và ngày truy cập; không sử dụng logo đối thủ AI tự tưởng tượng.
-- `DEFAULT (chọn ngưỡng an toàn)` **50 màn giao diện được triển khai bằng code**, vì mục Deliverables của PDF yêu cầu 50 trong khi rubric/Notes có nhắc 30. Agent phải ghi bất nhất này và khuyến nghị hỏi giảng viên; tuyệt đối không âm thầm hạ chỉ tiêu xuống 30.
+- `CONFIRMED — ngoài phạm vi repo` Đề bài nhắc **50 màn code** ở Deliverables và **30** ở rubric/Notes. Giữ bất nhất B-COURSE-01 cho nhóm hỏi giảng viên; đây không phải backlog hoặc gate Figma.
 - `CONFIRMED` Sketch ban đầu; accessibility và reflection có bằng chứng cụ thể.
 
 **Phân biệt:** `100 Figma frames` ≠ `50 routed code screens` ≠ `23 slide thuyết trình`. Ba nhóm này có registry/tiêu chí đếm khác nhau. Mục tiêu thực tế là ít nhất 100 hi-fi frames, nhưng **đừng “đánh bóng số lượng”**.
@@ -58,7 +60,7 @@ Cần lưu cho từng phát biểu trong portfolio: `statement`, `source_type`, 
 
 - `CONFIRMED` **Rescue Market là core** (ưu tiên 70–80% UX/navigation effort): người dùng khám phá và giữ chỗ ở cửa hàng; không biến thành ứng dụng giao thức ăn thông thường.
 - `CONFIRMED` **Smart Pantry là complementary**: quản lý hạn thực phẩm cá nhân trong cùng app, không tách app thứ hai.
-- `DEFAULT` 100 hi-fi frames trong đồ án là **consumer-facing mobile app**, bao gồm những trạng thái nghiệp vụ cần thiết. **Merchant dashboard là FUTURE, không cộng giả vào 100 hi-fi frames**. Tuy nhiên, hệ thống dữ liệu phải sẵn sàng phục vụ merchant sau này và agent cần mô phỏng data merchant hợp lệ.
+- `DEFAULT` 100 hi-fi frames trong đồ án là **consumer-facing mobile app**, bao gồm những trạng thái nghiệp vụ cần thiết. **Merchant dashboard là FUTURE, không cộng giả vào 100 hi-fi frames**. Fixture phải biểu diễn merchant rõ ràng, không yêu cầu xây hệ thống dữ liệu hoặc merchant module.
 - `FUTURE` merchant portal/app: tạo offer, quản lý tồn kho, hạn, khung nhận, xác nhận pickup, báo cáo, kiểm duyệt.
 - `FUTURE` nghiệp vụ giao hàng, payment gateway, barcode scan Pantry, phê duyệt merchant qua giấy tờ, chương trình loyalty lớn, recommender AI.
 
@@ -193,7 +195,7 @@ Không định vị là dịch vụ giao đồ ăn; không hứa mọi mặt hà
 
 `PantryItem`: `localId`, `name`, `category`, `quantity`, `unit`, `dateAdded`, `expiryDate?`, `dateType` (`USE_BY`/`BEST_BEFORE`/`UNKNOWN`), `storageLocation?`, `reminderOffsetDays`, `notes?`, `status` (`AVAILABLE`/`PARTLY_USED`/`CONSUMED`/`DISPOSED`), `lastUpdatedAt`.
 
-- MVP: offline/local-first (ví dụ SQLite), không cần ảnh camera/scan barcode.
+- Thiết kế MVP: offline/local-first, nhập thủ công; không cần ảnh camera/scan barcode.
 - Khi `expiryDate` thiếu, không suy đoán, hiển thị “Chưa có ngày hạn”.
 - Khi `USE_BY` đã qua ngày, chỉ hướng dẫn xử lý an toàn và kiểm tra nhãn nhà sản xuất; **không khuyến nghị sử dụng thực phẩm đã quá hạn dùng**.
 - Khi `BEST_BEFORE` đã qua, UI cần dùng ngôn ngữ thận trọng và không quyết định thay người dùng về an toàn.
@@ -236,55 +238,6 @@ Bảng đối thủ bắt buộc có `App / Model / Current availability / Offic
 
 ---
 
-## IMPLEMENTATION-READY DOMAIN & API CONTRACTS (ROADMAP TỪ FIGMA → APP)
-
-> Phần này giúp thiết kế UI không đi vào ngõ cụt khi xây app thật; **không yêu cầu làm server/payment production trong giai đoạn dựng 100 Figma frames**.
-
-### Entities tối thiểu
-
-`User`, `UserPreferences`, `Merchant`, `MerchantLocation`, `Offer`, `OfferImage`, `PickupWindow`, `Reservation`, `ReservationEvent`, `PickupVerification`, `Notification`, `Favorite`, `PantryItem`, `PantryActivity`, `Review`, `Report`, `AuditEvent`.
-
-`Merchant` có trạng thái verification, location, pickup rules, contact channel và giờ bán; không publish marketplace offer từ merchant chưa đáp ứng điều kiện kiểm duyệt của sản phẩm thật. `Offer` state và số lượng do backend chịu trách nhiệm. Pantry local data không nằm trong merchant scope.
-
-### Service interfaces mẫu (không phụ thuộc backend cụ thể)
-
-```typescript
-interface OffersService {
-  listOffers(query: OfferQuery): Promise<Paged<OfferSummary>>;
-  getOffer(id: string): Promise<OfferDetail>;
-  listMerchantOffers(merchantId: string): Promise<OfferSummary[]>;
-}
-
-interface ReservationService {
-  preview(input: ReservationDraft): Promise<ReservationPreview>;
-  confirm(input: ReservationDraft, idempotencyKey: string): Promise<Reservation>;
-  cancel(id: string, reason?: string): Promise<Reservation>;
-  getById(id: string): Promise<Reservation>;
-  getPickupCredential(id: string): Promise<PickupCredential>;
-}
-
-interface PantryRepository {
-  list(): Promise<PantryItem[]>;
-  upsert(input: PantryItemInput): Promise<PantryItem>;
-  markUsed(id: string, quantity: number): Promise<void>;
-  markDisposed(id: string, reason?: string): Promise<void>;
-  export(): Promise<string>;
-}
-```
-
-Agent khi xây UI code phải dùng service interfaces (mock implementation deterministic) để dễ thay bằng backend thật. Không trực tiếp tạo đơn thật hoặc payment trong Figma/các tool khi user chỉ yêu cầu thiết kế.
-
-### Future production checkpoints
-
-- Merchant portal/app để tạo offer, quản lý stock và xác minh pickup; flow merchant phải có audit, phân quyền và anti-abuse.
-- Payment: xem xét thật khi đã có chính sách refund/no-show, pháp lý và yêu cầu UX; payment status không được gộp với reservation state.
-- Backend: transaction/locking hoặc optimistic concurrency + idempotency, rate limit, notification dedup, fraud reporting.
-- Pantry optional cloud sync cần conflict strategy, privacy, data ownership; không tự đồng bộ local data bằng tài khoản người khác.
-- Metrics impact cần method đã được chứng thực, không tự đặt CO₂ factor tùy tiện.
-- Merchant quality policy + review moderation + incident response khi có food safety complaint.
-
----
-
 ## PHẠM VI HƯỚNG PHÁT TRIỂN — KHÔNG TỰ TRỘN VÀO 100 MÀN
 
 `FUTURE-MERCHANT`: Merchant onboarding → Store verification → Dashboard → Create/Update Offer → Upload true images/ingredients/allergens → Configure stock/pickup slots → Orders → Scan/Enter Pickup Code → Confirm Handover → Incident Report → Analytics.  
@@ -307,7 +260,7 @@ Việc **không thiết kế merchant trong 100 frame bản consumer MVP** là q
 - Pantry manual local-first; barcode/AI FUTURE.
 - UI mobile sans-serif, slide design là reference không là design system nguyên bản.
 - 100 frames distinct, error/state chỉ đếm nếu là frame thật và có ý nghĩa.
-- Coded UI target 50 (an toàn khi tài liệu có mâu thuẫn).
+- Code UI ngoài phạm vi repo; bất nhất 50/30 của học phần giữ trong B-COURSE-01.
 - Brand color trầm, ảnh thật, tiếng Việt, không fake people/test/impact.
 
 ### Blockers không được tự bịa cách vượt
@@ -315,9 +268,9 @@ Việc **không thiết kế merchant trong 100 frame bản consumer MVP** là q
 | ID | Tình trạng | Cách giải quyết | Ảnh hưởng |
 |---|---|---|---|
 | `B-FIGMA-01` | RESOLVED trong phiên 19/10/2026: RIN student/Full/admin, native sandbox write/read pass | Reverify mỗi phiên; bằng chứng hiện hành trong tracking/progress.md | Không còn chặn pilot |
-| `B-COURSE-01` | PDF ghi 50 màn code ở Deliverables nhưng 30 ở rubric | Lấy target 50, hỏi giảng viên nếu cần | Không chặn thiết kế |
+| `B-COURSE-01` | PDF ghi 50 màn code ở Deliverables nhưng 30 ở rubric | Nhóm xác nhận giảng viên khi làm phần học phần ngoài repo | Không chặn thiết kế |
 | `B-RESEARCH-01` | Chưa có dữ liệu khảo sát/merchant interviews được xác minh trong tài liệu | Lập research plan; không tạo số liệu/quote giả | Chặn claim nghiên cứu, không chặn wireframes giả thuyết |
-| `B-ASSETS-01` | Không có kho ảnh món/merchant thật được cấp phép chính thức | Tạo manifest, tìm licensed photos; mock có nguồn, không giả đối tác | Chặn final realism ở một số màn |
+| `B-ASSETS-01` | RESOLVED cho pilot: hai ảnh Pexels có source/license/hash; các màn mới chưa được bao phủ | Dùng manifest; tìm nguồn hợp lệ khi có nhu cầu asset mới | Không chặn pilot; không giả đối tác |
 | `B-LEGAL-01` | Chính sách food safety, xử lý đơn và thanh toán thật chưa được tư vấn/duyệt | Prototype mô phỏng bảo thủ, legal review trước launch | Chặn production launch, không chặn prototype |
 
 ### Khi nào agent phải xin duyệt chủ dự án

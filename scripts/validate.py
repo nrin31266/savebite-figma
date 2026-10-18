@@ -62,12 +62,15 @@ def main():
     skills = json.loads((ROOT / '.agents/skills/manifest.json').read_text())
     for skill in skills['skills']:
         assert skill['scope'] == 'project' and skill['path'].startswith('.agents/skills/')
-        assert hashlib.sha256((ROOT / skill['path'] / 'SKILL.md').read_bytes()).hexdigest() == skill['skill_sha256'], 'Skill hash drift'
+        source = ROOT / skill['path'] / 'SKILL.md'
+        if not source.exists() and skill.get('committed') is False:
+            continue  # Optional local install; not redistributed in public clones.
+        assert hashlib.sha256(source.read_bytes()).hexdigest() == skill['skill_sha256'], 'Skill hash drift'
     product = (ROOT / 'docs/product.md').read_text()
     experience = (ROOT / 'docs/experience.md').read_text()
     assert set(re.findall(r'\| (D-\d{3}) \|', product)) == {f'D-{n:03d}' for n in range(1, 21)}
     assert set(re.findall(r'\| `(SB-\d{3})` \|', experience)) == EXPECTED
-    for p in [ROOT / 'README.md', ROOT / 'AGENTS.md', *sorted((ROOT / 'docs').rglob('*.md'))]:
+    for p in [ROOT / 'README.md', ROOT / 'AGENTS.md', ROOT / 'tracking/progress.md', *sorted((ROOT / 'docs').rglob('*.md'))]:
         text = p.read_text()
         assert 'MASTER_SPEC.md' not in text and 'Master Spec' not in text, 'Retired handoff dependency'
         for target in re.findall(r'\]\(([^)]+)\)', text):

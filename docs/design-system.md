@@ -2,6 +2,8 @@
 
 Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
+Hướng hiện hành là pilot v0.3 theo DEC-005: nền trắng, chữ charcoal, CTA xanh, cream ở nhóm phụ, Be Vietnam Pro. Bảng DEFAULT dưới đây chỉ là tham chiếu; không áp lại palette/layout cũ lên pilot. Baseline vẫn chưa được owner duyệt. Khi sửa tokens phải đọc live và reconcile với registry, không coi số đếm evidence là trạng thái live hiện tại.
+
 ## DESIGN DIRECTION — NGÔN NGỮ THỊ GIÁC CỦA APP
 
 ### Phong cách được chốt
@@ -10,7 +12,7 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 
 **Cực kỳ quan trọng:** phong cách *presentation* có tiêu đề serif lớn, nhưng **UI mobile không mang nguyên font serif khổng lồ từ slide sang**. App ưu tiên sans-serif có dấu tiếng Việt tốt, phân cấp rõ và đọc nhanh. Serif có thể dùng rất hạn chế trong campaign/header mang tính thương hiệu, không trên navigation, form, info và giá.
 
-### Tokens nền tảng (DEFAULT — cần kiểm tra tương phản trên Figma sau khi áp dụng)
+### Tokens tham chiếu (DEFAULT; không phải bản export live)
 
 | Token | Hex | Purpose | Lưu ý |
 |---|---|---|---|
@@ -56,7 +58,7 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 - Tiếng Việt tự nhiên, gọn: “Đặt trước”, “Đến nhận”, “Còn 3 phần”, “Nhận 17:00–18:00”, “Thành phần chưa được cửa hàng cung cấp”.
 - Không dịch máy cứng kiểu “cứu vớt món ăn”; không quảng cáo gây áp lực “hãy cứu Trái Đất ngay”.
 - Đúng VND: `25.000đ`; thông tin giá gốc chỉ hiển thị khi nguồn đáng tin. Cách tính savings không được thổi phồng.
-- Giờ theo `Asia/Ho_Chi_Minh`, 24h; ngày `dd/MM/yyyy`; dùng format locale chuẩn trong code.
+- Giờ theo `Asia/Ho_Chi_Minh`, 24h; ngày `dd/MM/yyyy`; giữ cùng cách viết trên mọi màn.
 - Nhãn `Mô phỏng/Demo` đặt trong tài liệu review và cấu hình data fixture. Ở UI trình diễn có thể dùng merchant/offer hư cấu dễ nhận biết, không in nhãn “debug”, nhưng phải **không khiến người xem hiểu có đơn hàng thật**.
 
 ---
@@ -75,7 +77,7 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 
 **Reuse-first:** trước khi tạo component, tìm trong `components.csv`, hiện trạng Figma, thư viện đang được publish/subscribed; ưu tiên chỉnh variant/properties phù hợp thay vì copy rồi detach. **Không làm base component 5 lần ở 5 màn.**
 
-### Các component nền tảng nên xuất hiện trước pilot
+### Danh mục component tham khảo khi mở rộng
 
 | Nhóm | Components | Minimum variants/properties |
 |---|---|---|
@@ -102,7 +104,7 @@ Sạch, thật, hiện đại, gần gũi, có độ ấm, ít trang trí, tin c
 
 ### Không “over-engineer” hệ thống
 
-Không thiết kế toàn bộ 100 component trước khi nhìn thấy màn. Dựng Foundations + khoảng 15–25 component nền tảng, sau đó mở rộng component theo flow; review và consolidate sau mỗi 10–15 màn. Về sau có thể code-connect, nhưng **Code Connect không bắt buộc trước pilot**, và không phải lúc nào Figma Education cũng có cùng capability như các gói khác.
+Chỉ dựng tokens/components cần cho batch; bảng trên là danh mục gợi ý, không bắt tạo toàn bộ trước pilot. Reuse 15 main components hiện có trước khi bổ sung. Review và consolidate theo flow; Code Connect nằm ngoài phạm vi repo.
 
 ---
 

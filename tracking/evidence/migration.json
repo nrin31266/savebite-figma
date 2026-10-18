@@ -138,5 +138,6 @@
       "pilot mapping DEC-001",
       "B-FIGMA-01 resolved from session evidence"
     ]
-  }
+  },
+  "note": "Historical migration provenance; source-line/hash coverage records the original import, not the subsequently edited domain documents."
 }

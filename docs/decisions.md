@@ -38,3 +38,21 @@
 - Chọn bố cục mobile marketplace gọn: nền trắng, body charcoal, green CTA, ảnh thật, danh sách hero card + compact offer để so sánh; detail dùng ảnh lớn và pickup information dày vừa đủ. Summary tập trung terms/total, success có QR demo + mã dự phòng được ghi rõ minh họa.
 - Foundations/tokens được reuse và điều chỉnh type scale/dark body cho hướng mới; không giữ canvas mock cũ như một baseline. v0.1/v0.2 đều REJECTED, DONE=0.
 - Skills local frontend-design và ui-ux-pro-max đã đọc trước rebuild; official Figma skills thực thi native UI.
+
+## DEC-006 · 19/10/2026 · Repo chỉ thực hiện Figma
+- Nguồn: owner yêu cầu rà/dọn docs, bỏ nội dung không liên quan vì dự án này chỉ làm Figma.
+- Scope thực thi: UX/UI, tokens/components, native editable frames, prototype và docs/QA evidence liên quan. Giữ 100 SB-IDs và gate pilot AWAITING_OWNER_REVIEW.
+- Bỏ hướng dẫn triển khai app, stack, API/service code, code acceptance gates. 50/30 màn code vẫn là provenance môn học ngoài repo, không phải task agent.
+- Giữ product states, fixture/safety/payment semantics cần cho thiết kế; không thay flow, canvas, IDs hoặc owner acceptance.
+- Ảnh hưởng: README, AGENTS, router, product, workflow và progress.
+
+## DEC-007 · 19/10/2026 · Công khai repo sau làm sạch lịch sử
+- Nguồn: owner “rồi mở source public ra”; sau khi được báo về tài liệu private, owner chọn “Cho phép sao lưu, làm sạch lịch sử rồi mở public”.
+- Cho phép sao lưu private ngoài repo, loại raw reference text/10 ảnh Zia và local source paths khỏi lịch sử, force-push các nhánh đã lọc rồi chuyển chính nrin31266/savebite-figma sang public.
+- Ghi đè lựa chọn GitHub private trong DEC-004. Không thay quyền Figma, không public bản sao lưu hoặc tự cấp license cho nội dung của bên khác.
+- Giữ nguyên các checkpoint thiết kế/QA ở dạng evidence lịch sử; SHA Git cũ được thay sau lọc. Kết quả thực thi ở progress.
+
+## DEC-008 · 19/10/2026 · Cài skills trước và làm rõ docs pilot
+- Nguồn: owner yêu cầu “cài các skills trước” và tinh chỉnh luật/giao diện ban đầu vừa đủ để AI và người đọc hiểu, không mơ hồ.
+- Cài local bộ ba Figma và design-critique; giữ hai skill hiện có. Ưu tiên plugin khi có; không nạp trùng. Bộ ba Figma không redistrib lên Git public khi chưa có license rõ.
+- Làm rõ preconditions, tương tác tĩnh, đường back và lifecycle trong docs; không coi đây là duyệt baseline hoặc cho phép tự mở rộng pilot.
