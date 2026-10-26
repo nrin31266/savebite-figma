@@ -32,8 +32,10 @@
 
 Mỗi tiêu chí báo **passed / failed / not checked**, kèm link evidence hoặc việc còn thiếu. Kiểm trên desktop không được thay cho thiết bị thật hoặc VoiceOver/TalkBack. QA thiết kế trong repo không chứng minh đã đạt toàn bộ điểm học phần.
 
-## Bằng chứng hiện hành
+## Bằng chứng và tài liệu chuẩn hiện hành
 
+- [Visual Direction & Critique v0.5](visual-direction.md) · [Chuẩn iPhone & iOS HIG](ios-guidelines.md)
+- [Chiến lược Asset & Bản quyền](asset-strategy.md) · [Ma trận 100 màn & 10 Archetypes](screen-art-direction.md)
 - [Progress và blockers](../tracking/progress.md)
 - [Screen registry](../tracking/screens.csv) · [Component registry](../tracking/components.csv)
 - [Native read-back](../tracking/evidence/figma-readback.json) · [QA](../tracking/evidence/qa.json)

@@ -1,6 +1,6 @@
 # Trải nghiệm, luồng và 100 màn
 
-Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
+Nguồn chuẩn theo domain cho Kiến trúc Thông tin (IA), Luồng người dùng (`F-01..F-06`) và Danh mục 100 `SB-ID`. Đọc cùng [router](README.md), [ma trận định hướng thị giác 100 màn](screen-art-direction.md), [chuẩn iOS HIG](ios-guidelines.md), [visual direction](visual-direction.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
 ## IA, NAVIGATION VÀ MAIN FLOWS
 
@@ -169,18 +169,23 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 | `SB-099` | Trợ giúp & câu hỏi thường gặp | Support | Core | P1 | Hủy, dị ứng, pickup, vấn đề merchant |
 | `SB-100` | Tác động cá nhân | Impact | Core | P1 | Lần đã nhận, tiền tiết kiệm từ đơn hoàn tất |
 
-### Quy tắc thiết kế màn từ Registry
+### Quy tắc thiết kế màn từ Registry & Kết nối với 10 Screen Archetypes
 
-**Với mỗi `SB-ID`, agent phải xác định contract vận hành trước khi vẽ:** mục tiêu, entry/preconditions, content, CTA/back, states/data, edge cases, reusable components, transitions và dữ liệu cần đo khi hợp lý. Bảng trên là **screen index**, không thay thế design contract. **Mặc định ghi contract ngay trong `docs/experience.md` hoặc mục/nhóm feature tương ứng**, chỉ tách thành `docs/screens/<feature>.md` khi nội dung thật sự dài hoặc có nhu cầu chỉnh độc lập thường xuyên. Không tự tạo 100 file `SB-XXX.md`; ID màn ổn định nằm trong registry/Figma, không là tên file docs.
+**Với mỗi `SB-ID`, agent bắt buộc đối chiếu đồng thời 2 nguồn trước khi vẽ:**
+1. **Contract vận hành (trong tài liệu này):** mục tiêu, entry/preconditions, content, CTA/back, states/data, edge cases, reusable components, transitions và dữ liệu cần đo khi hợp lý.
+2. **Định hướng thị giác & Archetype (`A1`–`A10`) trong [screen-art-direction.md](screen-art-direction.md):** tâm điểm thị giác (1st Read), cấu trúc bố cục chống rập khuôn, loại thanh điều hướng iOS ([ios-guidelines.md](ios-guidelines.md)) và tài nguyên ảnh/icon chuẩn ([asset-strategy.md](asset-strategy.md)).
 
-**Checklist một `SB-ID` được đếm:**
+Bảng trên là **screen index nghiệp vụ**, còn [screen-art-direction.md](screen-art-direction.md) là **bản thiết kế kiến trúc thị giác cho từng màn trong 100 màn**. Mặc định ghi contract chi tiết ngay trong `docs/experience.md` theo từng đợt batch, không tự tạo 100 file `SB-XXX.md` rời rạc.
 
-1. Một node `FRAME` ở trang high-fi trong file Figma đúng, có khung mobile chuẩn và tên chứa ID.
-2. Thành phần quan trọng editable, component reusable và được bind vào tokens, không flatten ảnh UI.
-3. Không tràn text tiếng Việt, không thông tin demo gây hiểu nhầm, không tên/giá/địa điểm vô căn cứ được gắn là merchant thật.
-4. Màn có ít nhất một đường vào/ra hoặc là state đối ứng có thể chứng minh; `orphan=true` bị chặn, trừ trang demo đặc biệt có lý do.
-5. Chứng cứ QA: screenshot mới nhất + node ID + checks thực hiện + kết quả; nguồn thiết kế được ghi registry.
-6. Lifecycle dùng đúng `QA_PASS`, `DESIGN_REVIEW`, `DONE` như workflow/registry. Chỉ DONE sau QA đủ phạm vi và owner acceptance; pilot PASS_WITH_LIMITS vẫn là DESIGN_REVIEW.
+**Checklist một `SB-ID` được đếm (Technical + Aesthetic):**
+
+1. Một node `FRAME` ở trang high-fi trong file Figma đúng, có khung iPhone chuẩn (có `iOSStatusBar` ở đỉnh và `iOSHomeIndicator 34pt` ở đáy theo [ios-guidelines.md](ios-guidelines.md)) và tên chứa ID.
+2. Đúng **Screen Archetype (`A1`–`A10`)** đã quy định trong [screen-art-direction.md](screen-art-direction.md); không vi phạm 10 quy tắc chống Boxitis trong [visual-direction.md](visual-direction.md) (không lồng card trong card, không lặp tiêu đề kép, không dùng trùng 1 ảnh ở 2 nơi trên cùng màn hình).
+3. Thành phần quan trọng editable, component reusable và được bind vào tokens, không flatten ảnh UI.
+4. Không tràn text tiếng Việt, không thông tin demo gây hiểu nhầm, không tên/giá/địa điểm vô căn cứ được gắn là merchant thật.
+5. Màn có ít nhất một đường vào/ra hoặc là state đối ứng có thể chứng minh; `orphan=true` bị chặn, trừ trang demo đặc biệt có lý do.
+6. Chứng cứ QA: screenshot mới nhất + node ID + **Technical QA PASS** + **Aesthetic Rubric PASS** (xem [workflow.md](workflow.md)); nguồn thiết kế được ghi registry.
+7. Lifecycle dùng đúng `QA_PASS`, `DESIGN_REVIEW`, `DONE` như workflow/registry. Chỉ DONE sau khi đạt cả Technical QA, Aesthetic QA và owner acceptance; pilot PASS_WITH_LIMITS vẫn là DESIGN_REVIEW.
 
 **Đề xuất delivery batches** (không nhất thiết liên tiếp ID vì ưu tiên flow):
 

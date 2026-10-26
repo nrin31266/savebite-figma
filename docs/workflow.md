@@ -1,6 +1,6 @@
 # Quy trình Figma, cộng tác và QA
 
-Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
+Nguồn chuẩn theo domain cho thực thi Figma, quản lý đa tác tử, 7 cổng kiểm duyệt chất lượng (Quality Gates) và nghiệm thu. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [chuẩn iOS HIG](ios-guidelines.md), [chiến lược asset](asset-strategy.md), [ma trận 100 màn](screen-art-direction.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
 ### Thứ tự ưu tiên và quản lý tài liệu lệch nhau
 
@@ -252,6 +252,45 @@ Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Tr�
 - Evidence map rubric ↔ files/URLs/recordings: Figma hi-fi, lo-fi, prototype link, video prototype khi có yêu cầu, sketch, 20 competitor sources đã kiểm chứng. Portfolio/code/video nhóm là bối cảnh học phần ngoài repo.
 - Presentation slide SaveBite đã tạo trước chỉ được xem là bộ minh họa ban đầu; thay phần research/test/screenshots bằng **kết quả thật** trước khi nộp.
 - Không đóng dấu “100% complete” cho deliverable có review chưa chạy/permission chưa giải quyết.
+
+---
+
+## QUY TRÌNH 7 CỔNG CHẤT LƯỢNG (7-GATE PIPELINE) & AESTHETIC RUBRIC
+
+> **Nguyên tắc bất di bất dịch:** `Technical PASS` (đúng kích thước frame, không tràn chữ, đủ contrast, chạy pass `scripts/validate.py`) **KHÔNG đồng nghĩa với `Aesthetic PASS`**. Mọi màn hình hoặc batch thiết kế bắt buộc đi qua đủ **7 cổng kiểm duyệt tuần tự** dưới đây trước khi trình Owner:
+
+### Chuỗi 7 Quality Gates bắt buộc cho mỗi Batch
+
+```text
+[Gate 1: Visual Direction] ──► [Gate 2: Screen Archetype] ──► [Gate 3: Native Design]
+                                                                       │
+[Gate 7: Owner Review] ◄── [Gate 6: Aesthetic QA] ◄── [Gate 5: Consistency & Tech QA] ◄── [Gate 4: Screenshot Critique]
+```
+
+1. **Gate 1 — Visual Direction Alignment:** Xác nhận bảng màu bề mặt (4-Level Surface), quy tắc typography và tài nguyên ảnh/icon tuân thủ [visual-direction.md](visual-direction.md) và [asset-strategy.md](asset-strategy.md).
+2. **Gate 2 — Screen Archetype Lock:** Tra cứu đúng mã `SB-ID` trong [screen-art-direction.md](screen-art-direction.md) để khóa Archetype (`A1`–`A10`), tâm điểm thị giác (1st Read), kiểu thanh điều hướng iOS và danh sách component tái sử dụng trước khi chạm vào Figma canvas.
+3. **Gate 3 — Native Figma Design:** Dựng frame bằng Auto Layout, gắn biến màu/spacing, text styles, component instances và lắp đúng `iOSStatusBar` + `iOSHomeIndicator` theo [ios-guidelines.md](ios-guidelines.md).
+4. **Gate 4 — Screenshot Visual Critique (Xem ảnh thật 100%):** Xuất ảnh PNG thực tế từ Figma (`get_screenshot`) và tự phản biện theo framework `/design-critique` — tuyệt đối không đánh giá giao diện chỉ bằng cách đọc JSON node tree.
+5. **Gate 5 — Consistency & Technical QA:** Kiểm tra đồng bộ dữ liệu fixture (`25.000đ`, `17:00–18:00`, `Tiệm Bánh A`, dị ứng `UNKNOWN`), kiểm tra co giãn `360/375` và `430`, độ tương phản `≥ 4.5:1`, vùng chạm `≥ 48×48pt` và chạy `python3 scripts/validate.py`.
+6. **Gate 6 — Aesthetic QA Rubric (Chấm điểm thẩm mỹ chống Generic):** Chấm từng màn qua **8 tiêu chí Rubric Thẩm mỹ** bên dưới. Bất kỳ màn nào dính 1 lỗi `FAIL (Red Flag)` phải sửa lại ở Gate 3 trước khi báo cáo hoàn thành.
+7. **Gate 7 — Owner Review (`AWAITING_OWNER_REVIEW` → `DONE`):** Chỉ khi Owner duyệt trực tiếp về cảm nhận thẩm mỹ và trải nghiệm thì mới được điền `reviewed_by`, khóa `design_baseline_version` và chuyển trạng thái sang `DONE`.
+
+---
+
+### Rubric Thẩm mỹ Thực chiến (Aesthetic QA Rubric — 8 Tiêu chí Phát hiện Màn Generic)
+
+Dùng bảng này để kiểm tra ảnh chụp màn hình của từng `SB-ID` tại **Gate 6**:
+
+| # | Hạng mục kiểm tra | Tiêu chuẩn ĐẠT (`AESTHETIC PASS`) | Dấu hiệu RỚT (`RED FLAG / REJECT IMMEDIATELY`) |
+|---|---|---|---|
+| **1** | **Focal Point (Tâm điểm 2 giây đầu)** | Nhìn vào màn hình trong 2 giây biết ngay 1 phần tử chính (Ảnh món ăn, Vé QR, Bản đồ, hoặc Thanh độ tươi Pantry); mắt di chuyển mượt từ 1st Read → 2nd Read → CTA. | Mọi khối trên màn hình có kích thước, độ đậm chữ và viền hộp ngang bằng nhau; không biết mắt phải nhìn vào đâu trước. |
+| **2** | **Chống "Boxitis" (Mật độ thẻ & viền)** | Tối đa 1 lớp thẻ (`Zero Nested Cards`); ít nhất 35% diện tích lộ nền Canvas `#FFFCF6` hoặc mặt phẳng mở; dùng đường kẻ mảnh `1pt #E8E2D8` để chia dòng thông tin. | Thẻ trắng lồng bên trong thẻ trắng (`card-in-card`); xếp chồng 4–6 hộp chữ nhật full-width cùng `radius-24` từ trên xuống dưới như form tự sinh. |
+| **3** | **Chuẩn iPhone Bản địa (iOS Native Realism)** | Có `iOSStatusBar` chuẩn Apple (font `SF Pro`, đúng Light/Dark contrast, có Dynamic Island/notch) và `iOSHomeIndicator` (`134×5pt` trong vùng `34pt` đáy); ảnh chi tiết tràn full-bleed lên `y=0`. | Vẽ giờ `16:00` bằng font giao diện; cột sóng/pin tự vẽ thô; quên Home Indicator ở đáy; chặn dải nền kem cứng phía trên ảnh full-bleed; đặt nút `<` trên màn hình đã hoàn tất đơn. |
+| **4** | **Không lặp tiêu đề & Nhịp điệu chữ** | Thanh điều hướng trên cùng và nội dung bên dưới bổ trợ nhau; số tiền, giờ nhận, số phần bật `tabular-nums`; mã nhận hàng dùng font Monospace (`DEMO-A125`). | **Double-Header:** Tiêu đề trên `AppBar` và dòng `H1` ngay bên dưới lặp lại cùng một ý ("Đặt trước" + "Bạn đến nhận lúc mấy giờ?"); chữ tiếng Việt bị rớt 1 từ lẻ loi xuống dòng (`orphan word`). |
+| **5** | **Chất lượng & Tính duy nhất của Ảnh** | Ảnh thực phẩm sắc nét, ánh sáng tự nhiên ấm áp (`5000K–5800K`), đúng tên món, chủ thể chiếm 65–80% khung, có nguồn/hash trong `assets/manifest.json`. | Dùng trùng 1 bức ảnh ở 2 vị trí trên cùng một màn hình (ví dụ Banner Hero trùng ảnh với Card 1); hai ảnh cạnh nhau lệch hẳn tông sáng/tối hoặc dính vật thể rác ở hậu cảnh. |
+| **6** | **Tính đồng nhất của Iconography** | Toàn bộ icon thuộc cùng một gia đình vector chuẩn (**Phosphor Icons** / **Lucide**), thống nhất độ dày nét (`1.75–2pt`), dùng `Duotone/Fill` có chủ đích cho trạng thái active. | Dùng emoji (`🥖`, `⏰`), tự vẽ path vector méo mó kiểu clip-art, hoặc trộn lẫn icon nét mảnh với icon nét đậm tùy tiện trên cùng một thanh. |
+| **7** | **Bản sắc theo Archetype (`A1`–`A10`)** | Màn hình thể hiện rõ cá tính của Archetype: `SB-053` là biên lai đứt nét, `SB-056/063` là vé đục lỗ có QR căn giữa, `SB-044` là túi giấy bất ngờ, `SB-075` là kệ bếp kèm thanh hạn dùng. | Màn hình nào trong 100 màn cũng chỉ là một danh sách thẻ trắng đổi chữ tiêu đề; mã QR bị lệch một bên trong khung chứa; Pantry nhìn giống hệt trang mua hàng. |
+| **8** | **Chiều sâu của Màn Trạng thái (`State`)** | Màn hình rỗng/lỗi/hết hàng có huy hiệu vector ngữ nghĩa (`64–80pt`), giải thích rõ nguyên nhân và cung cấp hành động cứu vãn ngay tại chỗ (gợi ý món tương tự, nút mở rộng bán kính). | Màn hình trống trơn chỉ có 1 câu chữ ngắn ngủi giữa nền trắng mà không cho người dùng lối đi tiếp hợp lý. |
 
 ---
 
