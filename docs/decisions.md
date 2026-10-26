@@ -72,3 +72,12 @@
 
 - Thực thi B-PILOT-005: giữ 5 root IDs; làm lại 5 bố cục native, 21 mains/31 instances; 40 variables, 11 text styles, 2 effect styles. BreadPhoto dùng ảnh AI minh họa sáng/ấm, lưu generation brief/hash trong manifest; ảnh không làm evidence về merchant/food safety. Reference screenshots không đưa vào public repo.
 - QA: 360/390/430 bounds, detail font125, 13 cặp contrast ≥4.5 và cả 9 hotspot tiến/lùi PASS. Dừng ở AWAITING_OWNER_REVIEW, không tự nhận owner acceptance hoặc mở 95 màn còn lại.
+
+## DEC-011 · 26/10/2026 · Nghỉ hưu Pilot v0.5, chuyển sang SaveBite-V2 (7suZz9C8oL5zV2NMxlsIVI), chốt chuẩn iPhone 15 và Phase 1 gồm 10 màn đại diện
+- Nguồn: yêu cầu trực tiếp của Nguyễn Văn Rin ngày 26/10/2026 kèm liên kết file Figma mới `https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1`.
+- Owner xác nhận đã xóa toàn bộ 5 màn pilot v0.5 cũ và thay thế file đích:
+  1. **File Figma đích duy nhất mới:** `7suZz9C8oL5zV2NMxlsIVI` (`SaveBite-V2`). Ngừng sử dụng `NLTv70kDZ2i3HpOnOKQCDY`; toàn bộ node IDs, readback và screenshots của pilot v0.5 được đánh dấu `STALE/RETIRED` và dọn khỏi bộ bằng chứng hiện hành.
+  2. **Chuẩn thiết bị iPhone (`CONFIRMED`):** Nâng cấp chính thức lên **iPhone 15 Standard (`393×852pt`, Dynamic Island `59pt` top safe area, Home Indicator `34pt` bottom safe area)** tuân thủ Apple Official iOS UI Kit và Apple HIG.
+  3. **Phạm vi Phase 1 (10 màn North-Star đại diện đa Archetype):** Thiết kế mới hoàn toàn 10 màn chuẩn mực: `SB-002` (Onboarding), `SB-015` (Discovery), `SB-016` (Map), `SB-019` (Search + iOS Keyboard), `SB-034` (Offer Detail), `SB-051` (Reservation Slot), `SB-053` (Order Summary Receipt), `SB-056` (Success & Perforated QR Pass), `SB-075` (Smart Pantry), `SB-091` (Profile).
+  4. **Chính sách Asset-First (`CONFIRMED`):** Loại bỏ ảnh AI tạo sinh cũ; tuyển chọn và xác minh mã băm SHA-256 cho bộ 6 ảnh thực phẩm/cửa hàng thật từ Pexels (`Pexels License`) trong `assets/manifest.json`, kết hợp hệ icon **Phosphor Icons** và font **Be Vietnam Pro / JetBrains Mono / SF Pro**.
+  5. **Kế hoạch 2 Agent độc lập (50/50 Split sau khi duyệt 10 màn):** Khóa kiến trúc phân tách vùng ghi Figma theo Page (`Agent 1`: 50 màn `SB-001..049, 059` trên `01 · Entry & Discovery` và `02 · Offer & Merchant`; `Agent 2`: 50 màn `SB-050..058, 060..100` trên `03 · Reserve & Orders` và `04 · Pantry & Account`). Chưa triển khai 90 màn còn lại khi chưa có Owner Review cho 10 màn Phase 1.

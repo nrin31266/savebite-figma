@@ -193,7 +193,41 @@ npx skills find accessibility
 
 ### Kiểm tra quyền Figma đích
 
-Figma đích: https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled. Trạng thái thực và bằng chứng quyền nằm trong tracking/progress.md; mỗi phiên phải xác minh lại đúng tài khoản, team và thực quyền ghi trước mutation.
+Figma đích hiện hành (`DEC-011`): https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1. Trạng thái thực nằm trong `tracking/progress.md`; mỗi phiên phải xác minh lại đúng tài khoản, team và thực quyền ghi trước mutation.
+
+---
+
+## KẾ HOẠCH PHÂN CÔNG 2 AGENT ĐỘC LẬP (50/50 PAGE-ISOLATED SPLIT SAU PHASE 1)
+
+Sau khi 10 màn hình đại diện Phase 1 (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) được Owner duyệt làm chuẩn thẩm mỹ (North-Star Baseline), 90 màn hình còn lại được chia cho **2 Agent độc lập** chạy song song theo kiến trúc cô lập vùng ghi:
+
+### 1. Kiến trúc Cô lập 6 Pages trên File Figma `7suZz9C8oL5zV2NMxlsIVI`
+
+| Tên Page trên Figma | Quyền Ghi (Writer Lease) | Dải màn hình (`SB-ID`) | Tổng số màn Hi-Fi |
+|---|---|---|---:|
+| `Foundations` & `Components` | Khóa ở Phase 1 (Shared Tokens, Styles & 24 Core Components) | Không đếm vào 100 | 0 |
+| **`01 · Entry & Discovery`** | **Agent 1** (Độc quyền ghi) | `SB-001` .. `SB-033` | **33** |
+| **`02 · Offer & Merchant`** | **Agent 1** (Độc quyền ghi) | `SB-034` .. `SB-049` và `SB-059` | **17** |
+| **`03 · Reserve & Orders`** | **Agent 2** (Độc quyền ghi) | `SB-050` .. `SB-058` và `SB-060` .. `SB-073` | **23** |
+| **`04 · Pantry & Account`** | **Agent 2** (Độc quyền ghi) | `SB-074` .. `SB-100` | **27** |
+| **TỔNG CỘNG** | **Agent 1: 50 màn · Agent 2: 50 màn** | **`SB-001` .. `SB-100`** | **100** |
+
+### 2. Phân bổ Batch theo Cụm Archetype (Không nhân bản rập khuôn)
+- **Agent 1 (50 màn — Discovery, Search, Map, Offer & Auth):**
+  - *Batch A1-1 (Offer & Trust — 10 màn):* `SB-034..037`, `SB-044..049`
+  - *Batch A1-2 (Market Discovery & Categories — 9 màn):* `SB-013..015`, `SB-028..033`
+  - *Batch A1-3 (Search & Filter Sheets — 9 màn):* `SB-019..027`
+  - *Batch A1-4 (Spatial Map & Merchant — 9 màn):* `SB-016..018`, `SB-038..043`
+  - *Batch A1-5 (Entry, Onboarding, Auth & Permissions — 13 màn):* `SB-001..012`, `SB-059`
+- **Agent 2 (50 màn — Reservation, Orders, Smart Pantry & Account):**
+  - *Batch A2-1 (Reservation & Receipt Flow — 9 màn):* `SB-050..058`
+  - *Batch A2-2 (Orders, QR Pickup Pass & Recovery — 14 màn):* `SB-060..073`
+  - *Batch A2-3 (Smart Pantry Core & Input — 9 màn):* `SB-074..082`
+  - *Batch A2-4 (Smart Pantry Expiry, Actions & Local Data — 8 màn):* `SB-083..090`
+  - *Batch A2-5 (Account, Notifications, Settings & Impact — 10 màn):* `SB-091..100`
+- **Quy tắc chống xung đột:**
+  - Mỗi agent chỉ gọi `await figma.setCurrentPageAsync(targetPage)` vào 2 Page được giao và chỉ sửa các dòng tương ứng của mình trong `tracking/screens.csv`.
+  - Chưa triển khai 90 màn còn lại khi chưa có Owner Review cho 10 màn Phase 1.
 
 ---
 

@@ -34,9 +34,8 @@ Mỗi tiêu chí báo **passed / failed / not checked**, kèm link evidence ho�
 
 ## Bằng chứng và tài liệu chuẩn hiện hành
 
-- [Visual Direction & Critique v0.5](visual-direction.md) · [Chuẩn iPhone & iOS HIG](ios-guidelines.md)
+- [Visual Direction & Critique v1.0](visual-direction.md) · [Chuẩn iPhone 15 & iOS HIG](ios-guidelines.md)
 - [Chiến lược Asset & Bản quyền](asset-strategy.md) · [Ma trận 100 màn & 10 Archetypes](screen-art-direction.md)
-- [Progress và blockers](../tracking/progress.md)
+- [Progress và trạng thái Phase 1](../tracking/progress.md)
 - [Screen registry](../tracking/screens.csv) · [Component registry](../tracking/components.csv)
-- [Native read-back](../tracking/evidence/figma-readback.json) · [QA](../tracking/evidence/qa.json)
-- [5 màn hiện hành](../tracking/evidence/pilot-overview.png) · [Component samples](../tracking/evidence/components.png)
+- [Manifest 6 ảnh Pexels chuẩn](../assets/manifest.json) · [File Figma SaveBite-V2](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1)

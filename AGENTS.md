@@ -18,7 +18,7 @@
 - Tiếp tục phần độc lập khi một nhánh bị chặn.
 
 ## Figma
-- File đích duy nhất: `NLTv70kDZ2i3HpOnOKQCDY`; không tự chuyển file/team.
+- File đích duy nhất: `7suZz9C8oL5zV2NMxlsIVI` (`SaveBite-V2`); không tự chuyển file/team hoặc dùng lại file `NLTv70kDZ2i3HpOnOKQCDY` đã nghỉ hưu.
 - Xác minh identity/team và read/write thật; nếu permission fail thì BLOCKED.
 - Load figma-use trước use_figma; thêm generate-library/design cho components/screens.
 - Tìm registry, canvas, variables/styles và libraries trước khi tạo; reuse trước.

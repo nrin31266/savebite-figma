@@ -4,25 +4,23 @@ Tài liệu quy định tiêu chuẩn khung thiết bị iPhone, thành phần h
 
 ---
 
-## 1. Thiết bị Đích (Target Device) & Kế hoạch Chuyển đổi
+## 1. Thiết bị Đích (Target Device) Đã Khóa Theo `DEC-011`
 
-### 1.1. So sánh Baseline hiện hành (`390×844pt`) và Đề xuất Chuẩn mới (`393×852pt`)
+### 1.1. Chuẩn Khung Thiết bị Hiện hành (`393×852pt` — iPhone 15 Standard) vs. Pilot Cũ Đã Nghỉ Hưu
 
-| Tiêu chí | Hiện trạng Pilot v0.5 (`CONFIRMED` trên canvas) | Chuẩn đề xuất v1.0 (`PROPOSED` — Chờ Owner duyệt) |
+| Tiêu chí | Pilot v0.5 Cũ (`RETIRED` theo `DEC-011`) | Chuẩn Chính thức v1.0 (`CONFIRMED` theo `DEC-011`) |
 |---|---|---|
-| **Mẫu iPhone tham chiếu** | iPhone 13 / iPhone 14 (`390×844pt` @3x) | **iPhone 15 / iPhone 16 Standard (`393×852pt` @3x)** |
-| **Đặc điểm phần cứng đầu màn** | Notch truyền thống (`47pt` top safe area) — nhưng v0.5 đang vẽ giả chỉ `40–44pt`, thiếu notch/Dynamic Island. | **Dynamic Island (`59pt` top safe area)** — khớp 100% với **Apple Official iOS 17 / iOS 18 Figma UI Kit**. |
-| **Bottom Safe Area** | Đang thiếu biểu tượng Home Indicator; khoảng trống đáy `24pt` tự đặt. | **`34pt` chuẩn iOS** chứa thanh **Home Indicator (`134×5pt`)** cách đáy `8pt`. |
-| **Kiểm tra co giãn (Responsive Stress)** | Kiểm ở `360×844` (nhỏ) và `430×844` (lớn). | Kiểm ở **`375×812pt`** (iPhone SE/mini), **`393×852pt`** (chuẩn) và **`430×932pt`** (iPhone 15/16 Pro Max). |
-| **Ràng buộc trong `scripts/validate.py`** | Dòng 64 & 76–77 đang khóa cứng `width == 390` và PNG `(width, 844)`. | Cần cập nhật hằng số trong `scripts/validate.py` và chụp lại 5 màn pilot ngay khi Owner duyệt chuyển sang `393×852pt`. |
+| **Mẫu iPhone tham chiếu** | iPhone 13 / iPhone 14 (`390×844pt` @3x) — đã xóa/nghỉ hưu. | **iPhone 15 / iPhone 16 Standard (`393×852pt` @3x)** |
+| **Đặc điểm phần cứng đầu màn** | Vẽ giả `40–44pt`, thiếu notch/Dynamic Island. | **Dynamic Island (`59pt` top safe area)** — khớp 100% với **Apple Official iOS 17 / iOS 18 Figma UI Kit**. |
+| **Bottom Safe Area** | Thiếu biểu tượng Home Indicator; khoảng trống đáy `24pt` tự đặt. | **`34pt` chuẩn iOS** chứa thanh **Home Indicator (`134×5pt`)** cách đáy `8pt`. |
+| **Kiểm tra co giãn (Responsive Stress)** | Kiểm ở `360×844` và `430×844`. | Kiểm ở **`375×812pt`** (iPhone SE/mini), **`393×852pt`** (chuẩn) và **`430×932pt`** (iPhone 15/16 Pro Max). |
+| **Ràng buộc trong `scripts/validate.py`** | Đã nghỉ hưu cùng file cũ `NLTv70kDZ2i3HpOnOKQCDY`. | Khóa chuẩn `TARGET = '7suZz9C8oL5zV2NMxlsIVI'`, kích thước chuẩn `(393, 852)` và tập 10 màn đại diện Phase 1. |
 
-### 1.2. Quy trình chuyển đổi an toàn (Không âm thầm phá vỡ Validator)
-1. **Khi Owner chưa duyệt đổi kích thước frame:** Giữ nguyên kích thước frame `390×844pt` trên 5 màn pilot để `python3 scripts/validate.py` luôn PASS, nhưng khi nâng cấp giao diện vẫn bắt buộc gắn đúng thành phần **iOS Status Bar** và **Home Indicator** chuẩn Apple.
-2. **Khi Owner duyệt đề xuất nâng lên `iPhone 15 (393×852pt, Dynamic Island)`:**
-   - Bước 1: Ghi quyết định vào [decisions.md](decisions.md).
-   - Bước 2: Lấy component `Status Bar - iPhone (Dynamic Island)` (`393×59pt`) và `Home Indicator` (`393×34pt`) từ **Apple iOS 17/18 UI Kit** đưa vào page `Components` của file Figma đích.
-   - Bước 3: Cập nhật đồng bộ 5 màn pilot (`SB-015`, `SB-034`, `SB-051`, `SB-053`, `SB-056`) sang `393×852pt`, cập nhật `scripts/validate.py`, xuất lại bộ ảnh `tracking/evidence/*.png` và `qa.json` trong cùng một commit.
-   - Bước 4: Áp dụng khung `393×852pt` đồng nhất cho toàn bộ 95 màn hình còn lại.
+### 1.2. Quy trình Thực thi Chuẩn iPhone 15 trên File Mới `7suZz9C8oL5zV2NMxlsIVI`
+1. **Quyết định `DEC-011` đã khóa chuẩn `iPhone 15 (393×852pt, Dynamic Island)`:**
+   - Mọi frame màn hình thuộc 10 màn Phase 1 (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) và 90 màn tiếp theo bắt buộc khởi tạo ở kích thước **`393×852pt`**.
+   - Đặt `iOSStatusBar (Dynamic Island, 393×59pt)` ở đỉnh và `iOSHomeIndicator (393×34pt)` ở đáy mọi màn hình.
+   - Sau khi ghi lên Figma bằng `use_figma`, xuất bộ ảnh `tracking/evidence/*.png` và cập nhật `tracking/evidence/figma-readback.json` + `tracking/evidence/qa.json` khớp với `scripts/validate.py`.
 
 ---
 

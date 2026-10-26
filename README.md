@@ -1,20 +1,19 @@
 # SaveBite
 
-Đồ án UX/UI ứng dụng mobile tiếng Việt: Rescue Market là core, Smart Pantry là phần bổ trợ.
+Đồ án UX/UI ứng dụng iPhone tiếng Việt: **Rescue Market** là core, **Smart Pantry** là phần bổ trợ.
 
-Bắt đầu tại [bản đồ tài liệu](docs/README.md), xem [tiến độ và bằng chứng](tracking/progress.md). Figma đích duy nhất: [SaveBite](https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/Untitled).
+Bắt đầu tại [bản đồ tài liệu](docs/README.md), xem [tiến độ và bằng chứng](tracking/progress.md). File Figma đích duy nhất hiện hành (`DEC-011`): [SaveBite-V2](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1).
 
 Kiểm tra repo bằng Python 3, không cần cài dependency:
 
 ```sh
 python3 scripts/validate.py
-git status --short --branch
 ```
 
-Phạm vi repo: thiết kế Figma, design system, prototype và bằng chứng QA. Mục tiêu thiết kế là 100 hi-fi frames; hiện chỉ có pilot 5 màn chờ duyệt. Không triển khai app/backend trong repo này; trạng thái thực nằm trong registry. Prototype dùng fixture mô phỏng, không tạo giao dịch thật.
+Phạm vi repo: thiết kế Figma chuẩn **iPhone 15 (`393×852pt`, Dynamic Island)**, design system, prototype và bằng chứng QA. Mục tiêu toàn đồ án là 100 hi-fi frames; giai đoạn **Phase 1 (`B-PHASE1-010`)** tập trung thiết kế mới hoàn toàn **10 màn hình North-Star đại diện** (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) trước khi mở khóa 90 màn còn lại cho 2 Agent chạy song song (50/50 split).
 
-Repo GitHub: [savebite-figma](https://github.com/nrin31266/savebite-figma). [Mở prototype 5 màn](https://www.figma.com/proto/NLTv70kDZ2i3HpOnOKQCDY/SaveBite?page-id=2%3A2&node-id=28-2&starting-point-node-id=28%3A2&scaling=scale-down); pilot v0.5 đang chờ owner review.
+Repo GitHub: [savebite-figma](https://github.com/nrin31266/savebite-figma). Các màn pilot v0.5 trên file cũ đã được xóa và đánh dấu `STALE/RETIRED` theo `DEC-011`.
 
-Agent/client đọc [AGENTS.md](AGENTS.md); `CLAUDE.md` là symlink cùng nguồn. Công khai repo được owner cho phép theo DEC-007 sau khi lọc tài liệu riêng tư; không công khai Figma hoặc mời thành viên. Skills của dự án nằm tại `.agents/skills/`.
+Agent/client đọc [AGENTS.md](AGENTS.md); `CLAUDE.md` là symlink cùng nguồn. Skills của dự án nằm tại `.agents/skills/` và bộ 6 ảnh thực phẩm Pexels đã xác minh mã băm nằm tại [assets/manifest.json](assets/manifest.json).
 
 Cho thành viên mới: [đọc context theo thứ tự](docs/README.md#cho-người-mới), rồi xem [tiêu chí nghiệm thu](docs/acceptance.md). Không cần tài liệu nguồn ngoài repo để tiếp tục thiết kế.

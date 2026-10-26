@@ -198,30 +198,19 @@ Bảng trên là **screen index nghiệp vụ**, còn [screen-art-direction.md](
 ---
 
 
-## Contracts của pilot được duyệt
+## Contracts của 10 màn đại diện Phase 1 (`DEC-011` · `7suZz9C8oL5zV2NMxlsIVI`)
 
-Dữ liệu chung: `fixture-bakery-01`, merchant `merchant-demo-a`, offer EXACT_ITEM “Bánh mì men tự nhiên”, giá 25.000đ, 1 phần; giá gốc không có evidence nên không hiển thị. Stock 3 phần là fixture. Khu học xá và điểm nhận A hư cấu, không đại diện đối tác thật. Đồng hồ fixture cố định 16:00 ngày 19/10/2026, Asia/Ho_Chi_Minh; slot 17:00–18:00, còn 1 giờ đến lúc bắt đầu. Không suy diễn dị ứng: ingredients/allergens UNKNOWN. Ảnh AI minh họa `food-sourdough-generated-v05` có provenance trong manifest; không đại diện ảnh merchant thật. Subset bắt đầu sau khi giả định người dùng đã đăng nhập; chưa tạo auth và không dùng pilot để chứng minh guest-to-login. Số lượng cố định 1 phần, khung 17:00–18:00 được chọn sẵn; chưa kiểm khả năng đổi số lượng/khung giờ.
+Dữ liệu chung: bộ 6 ảnh Pexels thật đã xác minh trong `assets/manifest.json` (`fixture-bakery-01`, `fixture-croissant-02`, `fixture-meal-03`, `fixture-veggie-04`, `fixture-surprise-05`, `fixture-store-01`). Đồng hồ fixture cố định `16:00` ngày `19/10/2026`, `Asia/Ho_Chi_Minh`; khung giờ nhận chính `17:00–18:00` (còn 1 giờ đến lúc mở nhận). Khung thiết bị chuẩn **iPhone 15 (`393×852pt`, Dynamic Island `59pt`, Home Indicator `34pt`)**. Không suy diễn dị ứng (`UNKNOWN` khi cửa hàng chưa khai báo).
 
-| ID | Mục tiêu và entry | Nội dung / CTA / back | States và edge cases ngoài subset | Mapping / measurement |
-|---|---|---|---|---|
-| SB-015 | Chọn offer từ danh sách; entry pilot start, khu vực chọn tay | Giá, còn phần, merchant, giờ nhận; card → 034; 4 tabs đúng labels | Loading/empty/error/GPS fallback phải có khi mở rộng; không xin GPS trong pilot | Mapping thực: screens.csv → components.csv; impression/detail rate chưa thu |
-| SB-034 | Hiểu EXACT_ITEM trước đặt; từ 015, trạng thái available demo | Mô tả món, ảnh minh họa licensed, giá, tồn, pickup, điểm nhận, unknown allergens; Đặt trước → 051; back → 015 | Sold out/expired/offline/allergy warning; không khẳng định an toàn hoặc merchant verified | Mapping thực: screens.csv → components.csv; detail-to-reserve chưa thu |
-| SB-051 | Chọn slot; từ 034, giả định đã đăng nhập và quantity=1 | Ngày, slot 17–18 selected, thời điểm bắt đầu còn 1 giờ, địa điểm, hạn hủy; Tiếp tục → 053; back → 034 | Slot hết hạn/không còn chỗ phải khóa; chỉ một slot hợp lệ ở fixture | Mapping thực: screens.csv → components.csv; selection chưa thu |
-| SB-053 | Kiểm tra giá/slot/terms trước confirm; từ 051 | 1×25.000đ, tổng 25.000đ, tại quầy, pickup, allergy unknown và hủy trước 17:00; Đặt trước (demo) → 056; back → 051 | Stock/price changed, retry idempotency và double submit ngoài backend subset; không charge online | Mapping thực: screens.csv → components.csv; completion chưa thu |
-| SB-056 | Xem hướng dẫn và mã nhận demo; từ 053 bằng mô phỏng | Mã DEMO-A125, ID DEMO-001, nhận 17–18, 25.000đ tại quầy; Khám phá tiếp → 015; back → 053 | Mã không dùng giao dịch thật; merchant/server verification, expired và offline cache ngoài subset | Mapping thực: screens.csv → components.csv; không ghi pickup/impact thật |
-
-QR vector ở pilot chỉ mã hóa SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER, có nhãn minh họa và mã DEMO-A125; không dùng nhận món thật. Thiết kế mã nhận cho flow đầy đủ thuộc SB-063 ở batch sau; triển khai xác thực backend nằm ngoài repo. Prototype subset bỏ qua SB-050/052/054/055 để kiểm tra liên kết công cụ, không thay flow F-01 đầy đủ. Các controls ngoài đường pilot chưa mô phỏng đầy đủ và phải được nói rõ trong báo cáo QA.
-
-Fixture phụ fixture-croissant-02 chỉ nằm ở SB-015: bánh sừng bò, 30.000đ, còn 2 phần, nhận 17:00–18:00, cùng merchant giả lập. Không liên kết sang detail của offer khác; ngoài đường click-through pilot.
-
-### Ranh giới tương tác của pilot
-
-Chuỗi đang review: `SB-015 → SB-034 → SB-051 → SB-053 → SB-056 → SB-015`. Đây là click-through đặt trước mô phỏng; F-01 đầy đủ chưa hoàn thành. Các CTA/back nằm trong bảng contract phía trên; search/filter/category/favourite/notification/tabs và offer phụ đang tĩnh.
-
-Back từ SB-056 về SB-053 là đường review prototype, không chứng minh đơn thật có thể chỉnh sau xác nhận. Cả 9 hotspots tiến/lùi đã bấm trong prototype v0.5 và kiểm URL sau mỗi chuyển màn. Mapping node/component phải đọc registry + evidence trước khi sửa canvas.
-
-Khi mở rộng, định nghĩa auth, stock/error và post-confirm navigation trước khi tạo màn; không suy diễn hành vi production từ đường back của pilot. Controls ngoài subset được ghi rõ trong tài liệu review, không claim đã hoạt động. Copy safety, giá và slot phải khớp product.md/fixture; thay hành vi nghiệp vụ cần decision.
-
-### Quy tắc mở rộng từ pilot
-
-Mỗi màn mới phải có contract trước khi vẽ: mục tiêu, entry, fixture, CTA/back, states và cách kiểm. Reuse component bằng properties/variants; không đổi nghĩa của SB-ID hoặc nhân bản màn để đủ số lượng. Một batch 5–8 màn chỉ bắt đầu sau khi owner chấp nhận baseline pilot. Dữ liệu của cùng offer/đơn phải khớp ở discovery → detail → summary → pickup.
+| ID | Archetype | Mục tiêu & Entry | Nội dung, Components & CTA/Back |
+|---|---|---|---|
+| `SB-002` | `A1` | Onboarding 1 — Truyền tải giá trị cứu thực phẩm giàu cảm xúc | Micro-UI Card Collage (`fixture-bakery-01` `25.000đ` + badge `Cứu món ngon cuối ngày`), Display `30/36 Bold`, `PageDots (1/3)`, nút `Tiếp tục` (`Button/Primary`) và `Bỏ qua` (`Button/Secondary`). |
+| `SB-015` | `A3` | Khám phá — Trang chợ ưu đãi đa nhịp điệu | `BrandHeader` (`Đà Nẵng · Khu học xá`), `SearchField`, 4 `CategoryTile` (Phosphor Duotone), Hero Banner (`fixture-veggie-04` không trùng ảnh Card 1), lưới 2 cột `OfferCard` (`fixture-bakery-01` `25.000đ` & `fixture-croissant-02` `30.000đ`), 1 `OfferListRow` (`fixture-meal-03` `35.000đ`), `BottomNav`. |
+| `SB-016` | `A4` | Bản đồ — Khám phá không gian trực quan quanh trường | `MapCanvas` vector ấm toàn màn hình, `MapPricePin` (`25.000đ` Selected `#B34021`, `30.000đ`, `35.000đ` Default `#004337`), thanh `SearchField` nổi kính mờ, thẻ xem nhanh `OfferListRow` ở đáy + `BottomNav`. |
+| `SB-019` | `A5` | Tìm kiếm — Trải nghiệm iPhone-native với bàn phím thật | `SearchField` (Focused), chip từ khóa gần đây (`bánh mì men tự nhiên`, `cơm chiều dưới 35k`), lối tắt theo ca học (`Dưới 30.000đ`, `Nhận 17:00–18:00`), `iOSKeyboard` (`393×291pt`) + `iOSHomeIndicator`. |
+| `SB-034` | `A6` | Chi tiết offer — Món cụ thể ấn tượng, mặt phẳng mở | Ảnh `food-sourdough-461060` full-bleed `393×300pt` (`y=0`) + `MediaOverlayBar`, tấm nội dung `#FFFCF6` bo góc `28pt`, giá `25.000đ` + `Còn 3 phần`, `MerchantRow` & `PickupInfo` ngăn cách bằng đường kẻ `1pt`, `AllergenNotice (UNKNOWN)`, đáy là Split Sticky Dock (`25.000đ · Trả tại quầy` + `Button/Primary` `Chọn giờ nhận`). |
+| `SB-051` | `A7` | Chọn khung giờ nhận — Tương tác tinh tế, không lặp tiêu đề | `AppBar` (`Chọn giờ nhận`) + `ReservationProgress (Bước 1/2)`, dải `OfferSummary` gọn, `PickupSlot` (`17:00–18:00` Selected `#004337` vs `15:00–16:00` Expired), `MerchantRow` phẳng, điều khoản hủy trước `17:00` + `Button/Primary` (`Tiếp tục`). |
+| `SB-053` | `A7` | Tóm tắt đặt trước — Biên lai giấy đứt nét đáng tin cậy | `AppBar` (`Kiểm tra đặt trước`) + `ReservationProgress (Bước 2/2)`, `UnifiedReceiptCard` (tích hợp `OfferSummary` + đường đứt nét + bảng tính tiền `1 phần × 25.000đ`, `Phí đặt giữ chỗ: 0đ`, `Cần thanh toán tại quầy: 25.000đ` — không card-in-card), `AllergenNotice (UNKNOWN)` + `Button/Primary` (`Đặt giữ chỗ (demo)`). |
+| `SB-056` | `A7` | Đặt trước thành công — Vé nhận món đục lỗ & QR căn giữa | `AppBar` (nút đóng `×`), Celebration Header (`Đã giữ 1 phần cho bạn!`), `PerforatedPickupPass` có khuyết bán nguyệt `16pt` hai bên hông, `DemoQR` căn giữa tuyệt đối trên nền trắng, mã `DEMO-A125` Monospace `22pt Bold`, `Button/Secondary` (`Xem chỉ đường`) + `Button/Primary` (`Về trang Khám phá`). |
+| `SB-075` | `A8` | Smart Pantry — Thẩm mỹ gian bếp ngăn nắp, khác biệt chợ | `LargeTitleBar` (`Tủ thực phẩm`), `FreshnessSummaryBanner` (`2 cần dùng sớm · 4 còn hạn tốt · 1 quá hạn`), chip lọc ngăn lưu trữ, 4 hàng `PantryItemRow` có `Expiry Progress Bar` (phân biệt `Hạn sử dụng` vs `Nên dùng trước`) và nút `Đã dùng`, `BottomNav`. |
+| `SB-091` | `A9` | Tài khoản — Quản lý hồ sơ & tác động thực chứng | `LargeTitleBar` (`Tài khoản`), `ProfileHeaderCard` (`Minh Anh · Khu học xá ĐH Đà Nẵng`), `ImpactHeroCard` (`3 phần đã nhận thành công · 4 món Pantry dùng kịp hạn` theo `D-016`), bảng cài đặt iOS Inset Grouped List trên nền `#F4EFE6`, `BottomNav`. |

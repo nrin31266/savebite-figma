@@ -5,8 +5,7 @@ node_modules/
 __pycache__/
 *.pyc
 .DS_Store
-tracking/evidence/*.png
-
+tracking/evidence/
 
 # Local browser diagnostics, not project handoff evidence.
 .playwright-mcp/

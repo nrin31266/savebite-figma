@@ -2,7 +2,7 @@
 
 Nguồn chuẩn cho Design Tokens, Typography, Iconography và Kiến trúc Component trên Figma. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [iOS guidelines](ios-guidelines.md), [chiến lược asset](asset-strategy.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
-Hiện trạng trên Figma là checkpoint **Pilot v0.5 theo DEC-010** (`AWAITING_OWNER_REVIEW`). Tài liệu này lưu trữ đầy đủ thông số v0.5 đang chạy trên canvas đồng thời quy định **Chuẩn Kiến trúc Hệ thống v1.0 (`PROPOSED`)** để loại bỏ hội chứng lạm dụng thẻ viền (*Boxitis*), bổ sung thành phần iOS System Chrome chính thức và chuẩn bị cho 100 màn hình.
+Theo `DEC-011`, bản pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. Tài liệu này quy định **Chuẩn Kiến trúc Hệ thống v1.0 (`CONFIRMED`)** trên file Figma mới [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1): loại bỏ hoàn toàn hội chứng lạm dụng thẻ viền (*Boxitis*), áp dụng chuẩn **iPhone 15 (`393×852pt`, Dynamic Island)** và phục vụ 10 màn hình đại diện Phase 1 trước khi mở rộng ra toàn bộ 100 màn hình.
 
 ---
 
@@ -51,9 +51,8 @@ Hiện trạng trên Figma là checkpoint **Pilot v0.5 theo DEC-010** (`AWAITING
   - `radius.md = 20pt` (hoặc `24pt` trên pilot v0.5): Thẻ món ăn (`OfferCard`), Vé nhận món (`RescueTicket`), Banner Hero.
   - `radius.lg = 28pt`: Đỉnh tấm trượt (`Bottom Sheet`) và mặt phẳng nội dung đè lên ảnh Hero (`SB-034`).
   - `radius.pill = 999pt`: Nút bấm chính (`Button`), chip lọc (`FilterChip`), thanh tiến độ.
-- **Khung thiết bị & Vùng an toàn iOS (Device & Safe Areas):**
-  - Baseline v0.5 hiện hành: **`390×844pt`** (kiểm tra co giãn ở `360` và `430`).
-  - Đề xuất chuẩn hóa v1.0 (chờ Owner duyệt): **iPhone 15 / 16 — `393×852pt`** với **Dynamic Island (`59pt` top safe area)** và **Home Indicator (`34pt` bottom safe area)**. Xem quy định chi tiết tại [ios-guidelines.md](ios-guidelines.md).
+- **Khung thiết bị & Vùng an toàn iOS (Device & Safe Areas — `CONFIRMED` theo `DEC-011`):**
+  - Chuẩn khung thiết bị bắt buộc: **iPhone 15 / 16 Standard — `393×852pt`** với **Dynamic Island (`59pt` top safe area)** và **Home Indicator (`34pt` bottom safe area)** (kiểm tra co giãn ở `375×812pt` và `430×932pt`). Xem quy định chi tiết tại [ios-guidelines.md](ios-guidelines.md).
   - Vùng chạm (Touch Target): Tối thiểu `44×44pt` theo Apple HIG và đạt **`48×48pt`** cho mọi hotspot kết nối trong prototype.
 
 ### 1.4. Hệ thống Ảnh, Icon & Copywriting
@@ -87,25 +86,28 @@ Hiện trạng trên Figma là checkpoint **Pilot v0.5 theo DEC-010** (`AWAITING
 
 ---
 
-## 3. HIỆN TRẠNG PILOT v0.5 TRÊN FIGMA CANVAS
+## 3. KIẾN TRÚC COMPONENT PHASE 1 TRÊN FILE FIGMA MỚI (`7suZz9C8oL5zV2NMxlsIVI`)
 
-Dữ liệu dưới đây phản ánh chính xác trạng thái đã read-back của **Pilot v0.5** tại file `NLTv70kDZ2i3HpOnOKQCDY`:
-- **Quy mô hiện có:** `40 variables`, `11 text styles`, `2 effect styles`, **`21 main components` / `3 variant sets` / `31 screen instances`** trên 5 màn hình (`SB-015`, `SB-034`, `SB-051`, `SB-053`, `SB-056`).
-- **Mapping chi tiết:** Lưu tại [components.csv](../tracking/components.csv) và [board component trên Figma](https://www.figma.com/design/NLTv70kDZ2i3HpOnOKQCDY/SaveBite?node-id=29-2).
-- **Trạng thái:** `SHARED` (chưa lên `STABLE` vì đang ở cổng `AWAITING_OWNER_REVIEW`).
+Theo `DEC-011`, toàn bộ node ID cũ trên file `NLTv70kDZ2i3HpOnOKQCDY` đã được nghỉ hưu. Trên file mới [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1), hệ thống Component Phase 1 tập trung vào đúng **24 Core Components** phục vụ trực tiếp 10 màn hình đại diện (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) và tái sử dụng cho 90 màn còn lại:
+- **Mapping chi tiết:** Lưu tại [components.csv](../tracking/components.csv).
+- **Trạng thái hiện tại:** `CANDIDATE` (`qa_status=BLOCKED_FIGMA_MCP` chờ phiên có kết nối Figma MCP thực thi ghi trực tiếp lên `7suZz9C8oL5zV2NMxlsIVI` và điền `figma_component_id` thực tế).
 
-### Bảng hướng dẫn sử dụng các Component Pilot hiện có
+### Bảng hướng dẫn sử dụng các Core Components Phase 1 v1.0
 
-| Thành phần | Cách sử dụng đúng & Điểm cần tinh chỉnh khi lên v1.0 |
+| Thành phần | Quy cách v1.0 trên `SaveBite-V2` (`393×852pt`) |
 |---|---|
-| `BrandHeader` | Chứa Wordmark/leaf, khu vực `Đà Nẵng · Khu học xá` và nút chuông thông báo. Chỉ dùng ở trang gốc Khám phá (`SB-013..015`). |
-| `Button` | Có `Primary` (`Default`, `Disabled`, `Loading`) và `Secondary` (`Default`). Đổi nhãn qua property `Label#27:2`. |
-| `OfferCard` / `OfferListRow` / `OfferSummary` | Đổi nội dung qua properties đã expose (`Title`, `Merchant`, `Price`, `Pickup`, `Availability`, `Photo`). **Không detach instance để sửa chữ.** Khi lên v1.0, `OfferSummary` trên `SB-053` sẽ tích hợp thẳng vào `UnifiedReceiptCard` để bỏ viền lồng viền. |
-| `MerchantRow` / `PickupInfo` | Hiển thị tên cửa hàng/địa chỉ và khung giờ nhận. Trên `SB-034` và `SB-051` bản v1.0, ưu tiên trình bày dạng hàng phẳng có đường kẻ phân cách `1pt` thay vì đóng hộp rời rạc. |
-| `PickupSlot` | 3 variants: `Available`, `Selected` (`17:00–18:00`), `Expired` (`15:00–16:00`). Giữ nguyên logic tách bạch text gợi ý theo từng state. |
-| `ReservationProgress` | `Stage=Time` ở `SB-051`, `Stage=Review` ở `SB-053`. Khi lên v1.0, tích hợp gọn ngay dưới thanh điều hướng để loại bỏ tiêu đề kép. |
-| `AllergenNotice` | Dùng chung ở `SB-034` và `SB-053` trước khi xác nhận đặt giữ chỗ; giữ rõ thông điệp `UNKNOWN` khi cửa hàng chưa khai báo. |
-| `DemoQR` | Vector QR mẫu (`SAVEBITE-DEMO:DEMO-001:NOT-A-REAL-ORDER`). Khi lên v1.0 trên `SB-056` và `SB-063`, **bắt buộc căn giữa tuyệt đối** trong khung `PerforatedPickupPass` kèm mã `DEMO-A125` bằng font Monospace. |
+| `iOSStatusBar` / `iOSHomeIndicator` / `iOSKeyboard` | Thành phần hệ thống chuẩn iPhone 15 (`393×59pt` Dynamic Island, `393×34pt` Home Indicator `134×5pt`, `393×291pt` QWERTY Keyboard trên `SB-019`). |
+| `BrandHeader` / `AppBar` / `LargeTitleBar` / `MediaOverlayBar` | 4 mẫu điều hướng đầu trang chuẩn HIG: `BrandHeader` ở `SB-015`, `MediaOverlayBar` ở `SB-034`, `AppBar` (Push Nav) ở `SB-051, 053`, `LargeTitleBar` ở `SB-075, 091`. |
+| `BottomNav` | Thanh 4 tab chuẩn `D-002` (`Khám phá`, `Đơn của tôi`, `Tủ thực phẩm`, `Tài khoản`) cao `83pt` (`49pt` tab bar + `34pt` Home Indicator), dùng Phosphor Icons (`Duotone/Fill` khi active, `Regular` khi inactive). |
+| `Button` / `StickySplitDock` | `Button` có `Primary`, `Secondary`, `PrimaryDisabled`, `PrimaryLoading` (`radius: 999pt`). `StickySplitDock` ở đáy `SB-034` tách rõ giá `25.000đ · Trả tại quầy` (trái) và nút `Chọn giờ nhận →` (phải). |
+| `CategoryTile` / `OfferCard` / `OfferListRow` | Phục vụ `SB-015`: `CategoryTile` dùng icon Phosphor `32×32pt Duotone`; `OfferCard` lưới 2 cột bo góc `20pt` có badge giờ nhận & số phần đè góc ảnh; `OfferListRow` hàng ngang so sánh nhanh. |
+| `MapCanvas` / `MapPricePin` | Phục vụ `SB-016`: nền bản đồ vector ấm `#F3EFE6` quanh Khu học xá Đà Nẵng kèm ghim giá `25.000đ` (`Active #B34021`) và `30.000đ`, `35.000đ` (`Default #004337`). |
+| `SearchField` | Phục vụ `SB-019`: ô tìm kiếm cao `48pt`, `radius-14`, có trạng thái `Default` và `Focused` (viền `#004337 2pt`). |
+| `MerchantRow` / `PickupInfo` / `AllergenNotice` | Phục vụ `SB-034, 051, 053`: `MerchantRow` và `PickupInfo` trình bày dạng hàng phẳng ngăn cách bằng đường kẻ `1pt #E8E2D8`; `AllergenNotice` dùng hộp nền ấm `#FEF6EE` hiển thị rõ trạng thái `UNKNOWN`. |
+| `ReservationProgress` / `OfferSummary` / `PickupSlot` | Phục vụ `SB-051, 053`: thanh tiến độ 2 bước tích hợp ngay dưới `AppBar`; `OfferSummary` thu gọn thành strip ngang; `PickupSlot` có 3 variants (`Available`, `Selected #004337`, `Expired`). |
+| `UnifiedReceiptCard` / `PerforatedPickupPass` / `DemoQR` | Phục vụ `SB-053, 056`: biên lai giấy đứt nét (`UnifiedReceiptCard`) không lồng thẻ; vé nhận món đục lỗ (`PerforatedPickupPass`) có 2 khuyết bán nguyệt `16pt`, `DemoQR` căn giữa tuyệt đối trên nền trắng và mã `DEMO-A125` font Monospace. |
+| `FreshnessSummaryBanner` / `PantryItemRow` | Phục vụ `SB-075`: thanh tổng quan độ tươi 3 trạng thái và hàng thực phẩm gia đình có `Expiry Progress Bar` + nút chạm nhanh `Đã dùng`. |
+| `ProfileHeaderCard` / `ImpactHeroCard` | Phục vụ `SB-091`: thẻ hồ sơ sinh viên `Minh Anh` và thẻ thành tựu cứu thực phẩm thực chứng (`3 phần đã nhận` · `4 món Pantry dùng kịp hạn`). |
 
 ---
 

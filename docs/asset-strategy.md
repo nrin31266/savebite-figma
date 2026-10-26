@@ -34,30 +34,18 @@ Bảng dưới đây phân định rõ URL chính thức, giấy phép, phạm v
 
 ---
 
-## 3. Phân loại Tài nguyên Đã có trong Repo vs. Bộ Fixture Đề xuất cho 100 Màn
+## 3. Bộ 6 Tài nguyên Ảnh Thực phẩm & Cửa hàng Chuẩn Đã Xác minh (`CONFIRMED` trong `assets/manifest.json`)
 
-### 3.1. Tài nguyên Đã có sẵn và Đã xác minh (`CONFIRMED` trong `assets/manifest.json`)
+Theo `DEC-011`, toàn bộ ảnh AI tạo sinh và ảnh tối của bản pilot cũ đã được loại bỏ. Kho lưu trữ hiện có **6 file ảnh chụp thật từ Pexels (`Pexels License`)** đã được kiểm duyệt thị giác (ánh sáng tự nhiên ấm `5000K–5800K`, chủ thể rõ, không dính logo thương hiệu hay mặt người) và kiểm tra mã băm SHA-256 tự động qua `scripts/validate.py`:
 
-Hiện tại kho lưu trữ đã có **3 file ảnh** được kiểm tra mã băm SHA-256 tự động qua `scripts/validate.py`:
-
-| `assetId` | File trong repo | Nguồn & Giấy phép | Gắn với Fixture | Đánh giá thẩm mỹ & Hướng xử lý tiếp theo |
+| Mã Fixture | `assetId` & File trong repo | Nguồn & Giấy phép | Tên món & Cửa hàng hư cấu | Màn hình sử dụng tiêu biểu |
 |---|---|---|---|---|
-| `food-sourdough-1079020` | [bread-sourdough-1079020.jpg](../assets/food/bread-sourdough-1079020.jpg) | Marcel Fiedler / Pexels (`Pexels License`) | `fixture-bakery-01` (Bản v0.4 cũ) | **Giữ nguyên file trên đĩa** để đảm bảo toàn vẹn lịch sử và pass `scripts/validate.py`. Có thể tái sử dụng làm ảnh phụ trong thư viện ảnh món (`SB-035`). |
-| `food-sourdough-generated-v05` | [sourdough-warm-demo-v05.png](../assets/food/sourdough-warm-demo-v05.png) | AI Concept có prompt/hash rõ ràng trong manifest | `fixture-bakery-01` (`Bánh mì men tự nhiên` · `25.000đ`) | Ảnh rất đẹp, ánh sáng nắng sớm ấm áp, độ tương phản tốt với màu xanh rừng `#004337`. **Giữ làm ảnh đại diện chính cho `fixture-bakery-01`** tại thẻ đầu tiên của `SB-015`, màn chi tiết `SB-034`, và ảnh thu nhỏ ở `SB-051..056`. |
-| `food-croissants-15350655` | [croissants-15350655.jpg](../assets/food/croissants-15350655.jpg) | Valeriya Kobzar / Pexels (`Pexels License`) | `fixture-croissant-02` (`Bánh sừng bò` · `30.000đ`) | Ảnh hợp lệ về bản quyền nhưng **ánh sáng hơi tối và vướng mảng ghế đen ở góc phải trên**. Khi Owner duyệt nâng cấp v1.0, đề xuất crop cận vào đĩa bánh hoặc bổ sung 1 ảnh croissant Pexels sáng ấm hơn (vẫn giữ file cũ trong manifest để không gãy lịch sử). |
-
-### 3.2. Bộ 6 Fixture Ảnh Chuẩn Đề xuất để Phủ Toàn bộ 100 Màn hình (`PROPOSED`)
-
-Để không lặp lại bức ảnh bánh mì sourdough ở mọi vị trí (như lỗi Banner Hero trùng ảnh với Card 1 trên `SB-015`), chỉ cần tuyển chọn thêm **4–5 ảnh thực phẩm từ Pexels** theo bảng quy hoạch dưới đây:
-
-| Mã Fixture | Tên món & Cửa hàng hư cấu | Giá / Giờ nhận mẫu | Màn hình sử dụng | Yêu cầu chọn ảnh Pexels / Unsplash |
-|---|---|---|---|---|
-| **`fixture-bakery-01`** *(Đã có)* | **Bánh mì men tự nhiên** · *Tiệm Bánh A (demo)* | `25.000đ` (Còn 3 phần) · Nhận `17:00–18:00` | `SB-015` (Card 1), `SB-034..037`, `SB-050..059`, `SB-061..068`, `SB-072`. | Đã có `sourdough-warm-demo-v05.png` và `bread-sourdough-1079020.jpg`. |
-| **`fixture-croissant-02`** *(Đã có)* | **Bánh sừng bò bơ Pháp** · *Tiệm Bánh A (demo)* | `30.000đ` (Còn 2 phần) · Nhận `17:00–18:00` | `SB-015` (Card 2), `SB-029` (Danh mục Bánh), `SB-041` (Offer khác của tiệm). | Đã có `croissants-15350655.jpg` (ưu tiên crop cận bỏ nền tối phía sau). |
-| **`fixture-meal-03`** *(Đề xuất thêm từ Pexels)* | **Cơm gà áp chảo & rau củ** · *Bếp Xanh Campus (demo)* | `35.000đ` (Giá gốc có căn cứ `60.000đ` · Còn 4 phần) · Nhận `17:30–19:00` | `SB-013`, `SB-014`, `SB-021` (Kết quả tìm kiếm), `SB-028` (Danh mục Bữa ăn), `SB-031` (Đang nhận sớm), `SB-032` (Quanh trường). | Ảnh chụp góc 45° hộp cơm/grain bowl sạch sẽ, màu sắc tươi (cơm trắng/gạo lứt, ức gà vàng, bông cải xanh), ánh sáng tự nhiên trên bàn gỗ sáng. |
-| **`fixture-veggie-04`** *(Đề xuất thêm từ Pexels)* | **Combo rau củ tươi trong ngày** · *Quầy Rau C (demo)* | `30.000đ` (Còn 5 phần) · Nhận `16:00–17:30` | **Banner Hero của `SB-015`** (thay cho ảnh bánh mì bị trùng!), `SB-030` (Danh mục Thực phẩm/Rau củ), `SB-033` (Yêu thích). | Ảnh rổ rau củ tươi (cà chua chín, xà lách, cà rốt, thảo mộc) dưới ánh sáng ban ngày, nền sáng hoặc túi vải canvas thân thiện môi trường. |
-| **`fixture-surprise-05`** *(Đề xuất thêm từ Pexels / Vector)* | **Túi bánh bất ngờ cuối ngày** (`SURPRISE_BAG`) · *Tiệm Bánh A (demo)* | `29.000đ` (Còn 2 túi) · Nhận `18:00–19:00` | `SB-044` (Chi tiết túi bất ngờ), `SB-045` (Giải thích túi bất ngờ), `SB-046` (Hết hàng). | Ảnh túi giấy Kraft tiệm bánh đặt trên quầy gỗ ấm, kết hợp huy hiệu vector `"Túi Bất Ngờ · Món thay đổi theo ngày"` đè lên góc ảnh. |
-| **`fixture-store-01`** *(Đề xuất thêm từ Pexels)* | **Không gian quầy Tiệm Bánh A** · *Điểm A, Khu học xá (demo)* | Giờ mở nhận: `16:00–19:00` | `SB-038` (Chi tiết cửa hàng), `SB-040` (Quy định nhận món), `SB-042` (Đánh giá cửa hàng). | Ảnh kệ bánh gỗ sáng sủa, sạch sẽ, không có mặt người, không dính biển hiệu thương hiệu có thật. |
+| **`fixture-bakery-01`** | `food-sourdough-461060` · [bread-sourdough-pexels-461060.jpg](../assets/food/bread-sourdough-pexels-461060.jpg) | Pixabay / Pexels (`Pexels License`) | **Bánh mì men tự nhiên** · *Tiệm Bánh A (demo)* · `25.000đ` (Còn 3 phần) · Nhận `17:00–18:00` | `SB-002` (Onboarding Hero Card), `SB-015` (Card 1), `SB-016` (Pin `25K`), `SB-034` (Full-bleed Hero), `SB-051`, `SB-053`, `SB-056`. |
+| **`fixture-croissant-02`** | `food-croissant-3892469` · [croissant-warm-pexels-3892469.jpg](../assets/food/croissant-warm-pexels-3892469.jpg) | Elkhamisi / Pexels (`Pexels License`) | **Bánh sừng bò bơ Pháp** · *Tiệm Bánh A (demo)* · `30.000đ` (Còn 2 phần) · Nhận `17:00–18:00` | `SB-015` (Card 2 — ánh sáng gỗ ấm đồng bộ với Card 1), `SB-016` (Pin `30K`), `SB-029`, `SB-041`, `SB-046` (Gợi ý thay thế). |
+| **`fixture-meal-03`** | `food-meal-1640777` · [rice-veggie-bowl-pexels-1640777.jpg](../assets/food/rice-veggie-bowl-pexels-1640777.jpg) | Ella Olsson / Pexels (`Pexels License`) | **Cơm gà áp chảo & rau củ** · *Bếp Xanh Campus (demo)* · `35.000đ` (Còn 4 phần) · Nhận `17:30–19:00` | `SB-013`, `SB-014`, `SB-015` (`OfferListRow`), `SB-016` (Pin `35K`), `SB-019..021`, `SB-028`, `SB-031`, `SB-032`. |
+| **`fixture-veggie-04`** | `food-veggie-2255935` · [fresh-produce-pexels-2255935.jpg](../assets/food/fresh-produce-pexels-2255935.jpg) | Wendy Wei / Pexels (`Pexels License`) | **Combo rau củ tươi trong ngày** · *Quầy Rau C (demo)* · `30.000đ` (Còn 5 phần) · Nhận `16:00–17:30` | **Banner Hero của `SB-015`** (chống trùng ảnh với Card 1!), `SB-030` (Danh mục Rau củ), `SB-033` (Yêu thích). |
+| **`fixture-surprise-05`** | `food-sourdough-sliced-1775043` · [bread-sliced-pexels-1775043.jpg](../assets/food/bread-sliced-pexels-1775043.jpg) | Marianna OLE / Pexels (`Pexels License`) | **Túi bánh bất ngờ cuối ngày** (`SURPRISE_BAG`) · *Tiệm Bánh A (demo)* · `29.000đ` (Còn 2 túi) · Nhận `18:00–19:00` | `SB-035` (Ảnh thứ 2 trong thư viện món bánh), `SB-044` (Chi tiết túi bất ngờ), `SB-045` (Giải thích túi bất ngờ). |
+| **`fixture-store-01`** | `store-bakery-205961` · [bakery-counter-pexels-205961.jpg](../assets/food/bakery-counter-pexels-205961.jpg) | Igor Ovsyannykov / Pexels (`Pexels License`) | **Không gian quầy Tiệm Bánh A** · *Điểm A, Khu học xá (demo)* · Mở nhận `16:00–19:00` | `SB-038` (Chi tiết cửa hàng), `SB-040` (Quy định nhận món), `SB-042` (Đánh giá cửa hàng). |
 
 ---
 
