@@ -7,10 +7,6 @@ __pycache__/
 .DS_Store
 tracking/evidence/*.png
 
-# Official Figma skills installed locally; upstream has no declared redistribution license.
-.agents/skills/figma-use/
-.agents/skills/figma-generate-library/
-.agents/skills/figma-generate-design/
 
 # Local browser diagnostics, not project handoff evidence.
 .playwright-mcp/
