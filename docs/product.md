@@ -238,6 +238,8 @@ Dữ liệu mẫu phục vụ bố cục và prototype; không phải hạn bả
 
 Phân bố:4 ngăn mát,2 kệ khô,1 ngăn đông. Thanh màu trên hàng thể hiện nhóm ngày hạn; không diễn giải là điểm an toàn hoặc phần trăm tuổi thọ thực phẩm. Màn thêm món là prototype dữ liệu mẫu; chưa chứng minh nhập văn bản, lưu trên thiết bị hoặc gửi thông báo thật. Category/date/storage selection có biến prototype; snapshot tồn kho sau lưu còn cần QA nhất quán toàn luồng.
 
+Fixture thêm món trong prototype F-05 (`DEFAULT`, correction31/10): **WIP / chưa xác minh; Present QA có lỗi drift dữ liệu, xem [checkpoint](../tracking/f05-wip-checkpoint.md).** `pantry-demo-added-milk` · “Sữa tươi mới mua”,1 hộp, ngăn mát; ngày ban đầu21/10/2026 do dữ liệu mẫu, có thể đổi hoặc để chưa rõ theo nhãn. Bản mẫu có một slot thêm món để trình diễn danh sách/chi tiết/sửa/nhắc/dùng/bỏ xuyên màn; không giả định hỗ trợ nhập văn bản tùy ý hay số bản ghi không giới hạn. Đây là bản ghi khác sữa tươi đã có trong snapshot7 món. First-run074 khởi tạo tủ trống một lần; các lượt quay lại không được xóa dữ liệu đã thêm.
+
 ### Manifest ảnh
 
 Mỗi asset: `assetId`, `kind`, `filePath`, `sourceUrl`, `license`, `attribution`, `downloadDate`, `usageScope`, `merchantId?`, `offerId?`, `altText`, `approved`. AI assets nếu dùng cho concept minh họa cần ghi `sourceType=GENERATED_CONCEPT`, không được dựng “chân dung người tham gia khảo sát” như người có thật.

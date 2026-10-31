@@ -1,6 +1,8 @@
 # Bắt đầu làm SaveBite
 
-**Continuation31/10 · ACTIVE:** [Pantry state, asset reuse và QA còn lại](../tracking/continuation-checkpoint.md). Đã có editor082, dữ liệu riêng7 fixture và4 pose Mầm áp vào màn; chưa hoàn tất F-01..F-06 hoặc polish100 màn. Checkpoint bên dưới giữ lịch sử trước continuation.
+**Phiên này dừng theo owner · F-05 WIP:** [checkpoint tiếp quản và lỗi còn mở](../tracking/f05-wip-checkpoint.md). Lease đã RELEASED; chưa nghiệm thu.
+
+**Continuation31/10 · lịch sử batch trước:** [Pantry state, asset reuse và QA còn lại](../tracking/continuation-checkpoint.md). Đã có editor082, dữ liệu riêng7 fixture và4 pose Mầm áp vào màn; chưa hoàn tất F-01..F-06 hoặc polish100 màn. Checkpoint bên dưới giữ lịch sử trước continuation.
 
 SaveBite là thiết kế ứng dụng iPhone tiếng Việt: khám phá thực phẩm giá giảm cuối ngày → đặt giữ chỗ trước → đến cửa hàng nhận và thanh toán tại quầy; **Smart Pantry** hỗ trợ quản lý hạn dùng thực phẩm cá nhân tại nhà. Repo chỉ thực hiện Figma và tài liệu/bằng chứng thiết kế.
 

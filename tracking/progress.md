@@ -2,7 +2,13 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
-## Checkpoint continuation · Pantry + asset reuse · ACTIVE
+## Phiên dừng theo owner · F-05 WIP
+
+- Owner yêu cầu dừng thiết kế, commit và merge main để tiếp tục ở chat cũ. Goal phiên PAUSED, lease `codex/direct-polish` RELEASED. [Checkpoint tiếp quản](f05-wip-checkpoint.md):246 Pantry variables,100 root IDs giữ nguyên; lỗi drift date type/name/category/unit chưa sửa; add/reminder chưa chạy QA thành công. Không DONE hoặc owner acceptance.
+
+## Checkpoint continuation · Pantry + asset reuse · lịch sử batch trước
+
+- **Lease RELEASED · F-05 completion (owner stop)** owner `codex/direct-polish`: App `11:3`, Pantry variables và docs/registry/evidence phụ thuộc. Scope batch: thêm fixture mẫu từ form vào tủ, reminder theo món và nhánh empty; không agent khác, không sửa source masters nếu không cần. Không coi các checks của batch trước là PASS cho phần mới.
 
 - [Thay đổi, evidence và việc tiếp theo](continuation-checkpoint.md). Live100 root IDs giữ nguyên; registry146 entries gồm1 remote Check dependency có thật vừa reconcile; DONE0. Không coi số frame/component là nghiệm thu chất lượng.
 - Editor082, saved/draft của7 fixture, counters/filter, partial/full usage và7 events phiên đã nối;4 pose Mầm có sẵn được áp vào022/057/073/096. Không sinh thêm master/ảnh để lấp số lượng. Native source field/button/card vẫn được reuse.
