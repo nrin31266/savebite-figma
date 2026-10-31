@@ -1,5 +1,9 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Offer UI · 01/11/2026
+
+[Batch034–038/040](../tracking/offer-ui-checkpoint.md) không thêm main: viewport034393×486/clip dọc/two top corners radius-lg, bodyHUG gap12/padding20; gallery hai view dùng Boolean mode cũ và5 photo aliases, SDS Neutral48pt/radius-sm.036 sheet520pt + scrim/native context, CTA52pt.0385 SKU groups dùng11 OfferListRow instances; actions48pt và Back44pt.0403 numbered rows82pt có infoFILL313 và textHEIGHT, Mầm Carry96pt reuse main231:252. Registry148, ảnh30 giữ nguyên.
+
 ## Entry/Discovery · 01/11/2026
 
 [Batch002–005/013–015](../tracking/entry-discovery-ui-checkpoint.md) không thêm main:013/015 OfferCard instances169×246/HUG body, category82×64, promo353×112 dùng forest/radius-md và ảnh nguồn kraft bag.014 có scroll viewport/body Auto Layout, Search Apple và CaretRight reuse; active-order strip353×86. Ba filter48×48; header source icons40pt có native hit frames44pt riêng, giữ main BrandHeader.002/003 Next220ms/Ease Out khi bấm; chưa có Reduce Motion/video QA.

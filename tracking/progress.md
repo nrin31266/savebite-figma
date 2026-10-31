@@ -2,6 +2,12 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
+## Offer UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-offer-ui`; [034–038/040](offer-ui-checkpoint.md). Sửa5 màn034/035/036/038/040, review037: detail bounded scroll trên dock, gallery theo SKU, UNKNOWN sheet có context/BACK, merchant-specific listings và3 bước nhận món hết tràn chữ/Mầm Carry. Không main/ảnh mới;100 roots/148 components/30 images.
+- Scoped Present meal/produce gallery–allergy–merchant–rules và quality link đã chạy;044→036→BACK→044 giữ túi29K/18–19. PASS validator, mappings, scroll/dock/action bounds,15 PNG decode, links và whitespace. Chưa full5 SKU/11 rows/6 flows/mobile/a11y/owner acceptance; prototype_verified=false,DONE0.
+- **OPEN UI/capture035:** FILL đổi đúng ảnh/selected state nhưng screenshot runtime có lượt thiếu chrome/caption; chưa coi toàn rendering PASS hoặc khẳng định nguyên nhân. Native/FIT và Present040 đã có capture đầy đủ. Maps.to.design/PlotSet và F05 drift vẫn OPEN. Goal100 màn ACTIVE; không push/merge.
+
 ## Entry & Discovery UI · 01/11 · checkpoint
 
 - Lease **RELEASED tại checkpoint** owner `codex/direct-discovery-ui`; [002–005/013–015](entry-discovery-ui-checkpoint.md). Promo013/015112pt,4 cards169×246 có giá/slot trước nav;014 Auto Layout, nhắc đơn và source header;003 giờ từng pin;005 note12pt. Không thêm main,100 roots/148 components/30 images.

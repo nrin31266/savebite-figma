@@ -1,5 +1,7 @@
 # Mẫu tuyển chọn cho SaveBite · 31/10/2026
 
+Áp dụng tiếp01/11 [Offer UI](../../tracking/offer-ui-checkpoint.md): giữ ảnh món lớn, metadata có thứ bậc theo hướng Airbnb; listing038 reuse source OfferListRow với dữ liệu đúng merchant. Gallery FIT/FILL chỉ dùng ảnh đang có và caption minh bạch, không nhập ảnh đối thủ hoặc gọi hai crop là hai asset. Carry pose040 là original concept trong manifest brand, chưa owner acceptance.
+
 Áp dụng01/11 [Entry/Discovery](../../tracking/entry-discovery-ui-checkpoint.md): tham khảo nhịp ảnh → tên → giá/điều kiện của Airbnb và density danh sách Groc cho013/014/015. Dùng pool ảnh/source components đã có, không tải thêm kit hoặc ảnh đối thủ. Promo kraft bag353×112 tạo điểm nhấn riêng, giữ4 card prices/slots đọc được trên màn đầu.
 
 Account/Impact01/11: [shadcn bar charts](https://ui.shadcn.com/charts/bar) là nguồn tham khảo chart; không nhập app code. [PlotSet chính thức](https://plotset.net/integrations/figma) đã Save trong Figma, launch lỗi môi trường; chưa export/import chart. [Checkpoint](../../tracking/impact-ui-checkpoint.md) phân biệt native comparison bars tự ráp với plugin chưa chạy được.

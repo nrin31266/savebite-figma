@@ -2,6 +2,12 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-020 · 01/11/2026 · Offer context và nội dung nhận món có căn cứ
+
+- Nguồn: owner yêu cầu sửa alignment/chữ tràn, tăng chiều sâu nội dung, listing đúng và asset có chủ ý; thực thi DEC-014/016/019, không đổi safety/payment policy.
+- DEFAULT thực thi:034 có scroll viewport riêng để mô tả dài không đè dock;035 hiển thị đúng ảnh theo SKU, FIT/FILL là hai chế độ của cùng ảnh.036 chỉ ghi UNKNOWN, bỏ suy đoán chất dị ứng; BACK về caller thay vì luôn tới034.038 listing chỉ hiện các fixture cùng merchant.040 giữ thứ tự đến đúng khung → mã đối chiếu → kiểm tra/trả tại quầy, bỏ claim tự hủy/quét mã chưa có căn cứ.
+- Dùng pool/source mains sẵn có và Mầm Carry; không phát sinh merchant, reviews, ảnh hoặc outcome giả. [Checkpoint](../tracking/offer-ui-checkpoint.md) ghi scoped QA và hạn chế capture, chưa owner acceptance/full-flow.
+
 ## DEC-019 · 01/11/2026 · Entry và Discovery ưu tiên giờ nhận, giá và đường bấm
 
 - Nguồn: owner yêu cầu tự sửa các màn sơ sài, assets/layout có ý đồ, kiểm card/nút/spacing và trải nghiệm vừa vào app; thực thi DEC-014/015, không đổi nghiệp vụ.

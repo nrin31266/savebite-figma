@@ -1,5 +1,7 @@
 # Bắt đầu làm SaveBite
 
+**Offer UI01/11:** [checkpoint034–038/040](../tracking/offer-ui-checkpoint.md) — detail cuộn riêng trên dock, gallery theo món, sheet dị ứng không suy đoán, listing theo cửa hàng và3 bước nhận món hết tràn chữ. Đã bấm nhánh meal/produce; toàn100 màn vẫn chưa nghiệm thu.
+
 **Entry/Discovery01/11:** [checkpoint002–005/013–015](../tracking/entry-discovery-ui-checkpoint.md) — banner túi bánh gọn, giá/giờ nhận trên màn đầu, returning feed Auto Layout và sửa header/tab thiếu đường bấm. Present kiểm một số nhánh; toàn100 màn vẫn chưa nghiệm thu.
 
 **Account/Impact01/11:** [checkpoint091/100](../tracking/impact-ui-checkpoint.md) — sửa gap6 settings rows, chart native3 đơn/90K đã trả, ảnh và pose Mầm. PlotSet đã lưu vào Figma nhưng chạy lỗi môi trường; chưa import chart từ plugin. Goal toàn100 màn vẫn ACTIVE.

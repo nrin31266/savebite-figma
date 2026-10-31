@@ -106,7 +106,7 @@ Map UI01/11 (`DEC-017`):016→017 dùng cùng offer context;017 đổi pin cập
 | `SB-032` | Ưu đãi — quanh trường | Explore | Core | P1 | Campus radius + pickup distance |
 | `SB-033` | Đã lưu — danh sách yêu thích | Favorites | Core | P1 | Offers/merchants đã lưu |
 | `SB-034` | Chi tiết offer — món cụ thể | Offer | Core | P0 | Ảnh thực, giá, khung giờ, cửa hàng, tình trạng |
-| `SB-035` | Thư viện ảnh món | Offer | Core | P1 | Ảnh có chú thích, phóng to |
+| `SB-035` | Thư viện ảnh món | Offer | Core | P1 | Ảnh theo SKU, chú thích minh bạch; DEFAULT DEC-020 dùng FIT/FILL của cùng ảnh, chưa zoom/pan tự do hoặc nhiều ảnh đã xác minh |
 | `SB-036` | Thành phần & cảnh báo dị ứng | Offer | Core | P0 | Nguồn do merchant cung cấp, unknown thì ghi rõ |
 | `SB-037` | Chất lượng, hạn & hướng dẫn sử dụng | Offer | Core | P0 | Không bán thực phẩm quá hạn dùng |
 | `SB-038` | Chi tiết cửa hàng | Merchant | Core | P0 | Địa chỉ, giờ nhận, uy tín có căn cứ |
