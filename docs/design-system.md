@@ -1,5 +1,15 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Brand/source polish · DEC-015
+
+Registry hiện145 entries (gồm legacy, candidate và source dependencies), không phải145 component đã nghiệm thu. [Checkpoint](../tracking/brand-polish-checkpoint.md) mới hơn số90 ở checkpoint lịch sử phía dưới.
+
+- Brand Suite “Mầm” R1:31 native mains, board `231:554`;8 poses,3 BagMark tones,2 wordmarks,4 patterns,6 stickers,8 activity states. Candidate chưa owner acceptance; giữ source masters cũ. Thêm `color/brand/wheat=#D6B486`, `color/brand/wheatLight=#F1D8AF`; giữ palette nền chính.
+- Apple native keyboard Email `235:788`/Text `235:972` dùng SB-009/019. API library import Apple vẫn bị giới hạn; native clipboard hoạt động.
+- SDS Card `261:5376` dùng SB-081 với native slot/text/image. Checkbox `179:286/287` dùng control atom trong006, label native hai dòng và touch row64pt; không ép resize full template để chữa wrap.
+- Adapted CTA dùng `radius/sm=14`, height52. Pantry hiển thị trạng thái **ngày hạn**, không chứng nhận độ tươi/an toàn hoặc dùng progress suy đoán.
+- Thêm7 Phosphor Duotone nguồn, dùng vào Fruit/MeatFish/Spices category mains và SB-081. Source/license/hash ở manifest riêng.
+
 Nguồn chuẩn cho Design Tokens, Typography, Iconography và Kiến trúc Component trên Figma. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [iOS guidelines](ios-guidelines.md), [chiến lược asset](asset-strategy.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
 ## Checkpoint nguồn component trực tiếp · DEC-014
@@ -58,7 +68,7 @@ Theo `DEC-011`, bản pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. 
   - `radius.sm = 14pt`: Ô nhập liệu (`TextField`), ô chọn khung giờ (`PickupSlot`), hộp cảnh báo (`AllergenNotice`), nhóm cài đặt chìm.
   - `radius.md = 20pt` (hoặc `24pt` trên pilot v0.5): Thẻ món ăn (`OfferCard`), Vé nhận món (`RescueTicket`), Banner Hero.
   - `radius.lg = 28pt`: Đỉnh tấm trượt (`Bottom Sheet`) và mặt phẳng nội dung đè lên ảnh Hero (`SB-034`).
-  - `radius.pill = 999pt`: Nút bấm chính (`Button`), chip lọc (`FilterChip`), thanh tiến độ.
+  - `radius.pill = 999pt`: Chip lọc (`FilterChip`), pill nhãn. CTA nguồn SDS dùng `radius/sm=14pt` theo DEC-014, không bắt buộc mọi nút thành pill.
 - **Khung thiết bị & Vùng an toàn iOS (Device & Safe Areas — `CONFIRMED` theo `DEC-011`):**
   - Chuẩn khung thiết bị bắt buộc: **iPhone 15 / 16 Standard — `393×852pt`** với **Dynamic Island (`59pt` top safe area)** và **Home Indicator (`34pt` bottom safe area)** (kiểm tra co giãn ở `375×812pt` và `430×932pt`). Xem quy định chi tiết tại [ios-guidelines.md](ios-guidelines.md).
   - Vùng chạm (Touch Target): Tối thiểu `44×44pt` theo Apple HIG và đạt **`48×48pt`** cho mọi hotspot kết nối trong prototype.

@@ -1,5 +1,7 @@
 # Định hướng Nghệ thuật & Ngôn ngữ Thị giác (Visual DNA)
 
+DEC-014/015: tham khảo [shadcn Luma, Crouton, Things và kit nguồn](references/curated-layouts.md) theo chức năng; giữ xanh–kem và font tiếng Việt. Candidate Mầm R1 thêm chất giấy kraft/mầm lá ở Entry và trạng thái phù hợp; không buộc mọi màn có linh vật. Pantry ưu tiên ngày hạn, lượng và nơi bảo quản, không gắn nhãn “an toàn” hoặc suy đoán độ tươi từ thời gian còn lại.
+
 Nguồn chuẩn cho Art Direction, Visual Hierarchy, Composition và quy tắc chống rập khuôn (anti-generic) trên toàn bộ 100 màn hình SaveBite. Đọc cùng [router](README.md), [design system](design-system.md), [iOS guidelines](ios-guidelines.md), [chiến lược asset](asset-strategy.md) và [ma trận 100 màn](screen-art-direction.md).
 
 > **Trạng thái phê duyệt (`DEC-011`):** Toàn bộ 5 màn pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. Định hướng **Art Direction v1.0 (`CONFIRMED` theo `DEC-011`)** trong tài liệu này là chuẩn bắt buộc để thiết kế mới hoàn toàn **10 màn hình đại diện Phase 1** (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) trên file Figma mới [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1).
@@ -40,7 +42,7 @@ Dựa trên đánh giá 5 màn hình pilot v0.5 lịch sử (`SB-015`, `SB-034`,
 3. **Open Canvas over Boxitis (Mặt phẳng thoáng thay vì hộp chồng hộp):** Nền kem ấm `#FFFCF6` là không gian sống chính. Các nhóm thông tin đọc hiểu (cửa hàng, khung giờ, mô tả, chính sách hủy) được đặt trực tiếp trên nền canvas, phân tách bằng **khoảng trắng có nhịp điệu (24pt–32pt)** và **đường kẻ mảnh 1pt (`#E8E2D8`)** thay vì đóng khung từng dòng vào một chiếc thẻ riêng.
 4. **Dual-Mode Sub-Brand Harmony (Hai sắc thái trong cùng một hệ thống):**
    - **Rescue Market (`SB-013..073`):** Sôi động, giàu hình ảnh món ăn, tương phản mạnh giữa xanh rừng `#004337`, cam đất `#B34021` và ảnh thực phẩm ấm.
-   - **Smart Pantry (`SB-074..090`):** Tĩnh lặng, ngăn nắp như một gian bếp sạch (`Calm Kitchen Inventory`) — giảm mật độ ảnh chụp, tăng sử dụng thanh tiến độ hạn dùng (`Freshness Meter`), nhãn phân loại thực phẩm tinh gọn và gam màu ngữ nghĩa theo độ tươi (`Herb Green` → `Amber Ochre` → `Terracotta Alert`).
+   - **Smart Pantry (`SB-074..090`):** Ngăn nắp như gian bếp sạch (`Calm Kitchen Inventory`): ngày hạn rõ, nhãn phân loại gọn, ảnh/icon hỗ trợ nhận diện. Màu biểu thị trạng thái ngày hạn; không dùng freshness meter suy đoán hoặc ngụ ý thực phẩm còn an toàn.
 
 ---
 
@@ -116,7 +118,7 @@ Mọi thiết kế viên và agent khi sửa hoặc tạo mới bất kỳ màn 
 8. **Luật "Túi bất ngờ khác biệt tức thì với Món cụ thể":**
    - *Món cụ thể (`SB-034`):* Ảnh chụp cận cảnh món ăn thật chiếm 35% chiều cao màn hình.
    - *Túi bất ngờ (`SB-044`, `SB-045`):* Sử dụng thiết kế **Mystery Kraft Bag Hero** (hình ảnh túi giấy/hộp quà thực phẩm kèm con dấu `"Túi bất ngờ · Giá trị ước tính"` và dải tag các nhóm món có thể xuất hiện như `Bánh ngọt`, `Bánh mặn`, `Bánh mì nguyên cám`) để người dùng không bao giờ nhầm lẫn rằng họ đang đặt một món cố định.
-9. **Luật "Smart Pantry mang thẩm mỹ Gian bếp ngăn nắp":** Các màn Pantry (`SB-074..090`) không dùng lại `OfferCard` của chợ ưu đãi. Pantry sử dụng **Thẻ Hạn Dùng Ngang (Freshness Row)** với thanh chỉ báo thời gian còn lại (`Expiry Progress Bar`), nhãn phân biệt rõ `Hạn sử dụng (Use by)` và `Nên dùng trước (Best before)`, cùng thao tác trượt/chạm nhanh để đánh dấu `Đã dùng` mà không mang cảm giác mua bán.
+9. **Luật "Smart Pantry mang thẩm mỹ Gian bếp ngăn nắp":** Pantry (`SB-074..090`) không dùng lại thẻ mua món của chợ ưu đãi. Dùng dòng ngày hạn/lượng/nơi bảo quản, phân biệt `Hạn sử dụng (Use by)` và `Nên dùng trước (Best before)`, có thao tác `Đã dùng`. Chỉ dùng progress khi có mốc đầu/cuối hợp lệ; không diễn giải progress thành độ tươi hoặc an toàn.
 10. **Luật "Trạng thái rỗng và lỗi là điểm hướng dẫn, không phải trang cụt":** Không màn hình `State` nào được phép chỉ có một icon nhỏ + 1 câu thông báo giữa màn hình trắng. Mọi màn lỗi/hết hàng/trống (`SB-022`, `SB-046..049`, `SB-057..058`, `SB-067..068`, `SB-073`, `SB-076`, `SB-096`) phải có: (1) Minh họa ngữ nghĩa rõ ràng, (2) Giải thích nguyên nhân cụ thể không đổ lỗi cho người dùng, và (3) Khối hành động cứu vãn trực tiếp trên màn hình (ví dụ: danh sách 2 ưu đãi tương tự còn hàng ngay bên dưới thông báo hết hàng của `SB-046`).
 
 ---

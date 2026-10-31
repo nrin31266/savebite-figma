@@ -1,0 +1,3586 @@
+{
+  "roots": [
+    {
+      "sb": "SB-001",
+      "id": "76:652",
+      "name": "SB-001 · Splash · Warm Start",
+      "edges": [
+        {
+          "from": "76:652",
+          "to": "17:2",
+          "trigger": "AFTER_TIMEOUT"
+        },
+        {
+          "from": "243:4275",
+          "to": "231:526",
+          "trigger": "AFTER_TIMEOUT"
+        }
+      ]
+    },
+    {
+      "sb": "SB-002",
+      "id": "17:2",
+      "name": "SB-002 · Onboarding 1 · Rescue Value",
+      "edges": [
+        {
+          "from": "17:45",
+          "to": "100:1692",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "17:20",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-003",
+      "id": "100:1692",
+      "name": "SB-003 · Onboarding 2 · Tìm món quanh trường",
+      "edges": [
+        {
+          "from": "100:1726",
+          "to": "100:1728",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "120:3294",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "255:4652",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-004",
+      "id": "100:1728",
+      "name": "SB-004 · Onboarding 3 · Tủ thực phẩm thông minh",
+      "edges": [
+        {
+          "from": "100:1764",
+          "to": "100:1986",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "120:3296",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "255:4659",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-005",
+      "id": "78:695",
+      "name": "SB-005 · Welcome Gate · Guest or Login",
+      "edges": [
+        {
+          "from": "78:716",
+          "to": "78:729",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:722",
+          "to": "76:678",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:724",
+          "to": "100:1766",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-006",
+      "id": "100:1766",
+      "name": "SB-006 · Đăng ký · Email & Password",
+      "edges": [
+        {
+          "from": "100:1807",
+          "to": "100:1810",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "100:1809",
+          "to": "76:678",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "244:4625",
+          "to": "133:3637",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "244:4628",
+          "to": "133:3609",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "244:4641",
+          "to": "76:678",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "244:4643",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-007",
+      "id": "100:1810",
+      "name": "SB-007 · Chờ xác minh email",
+      "edges": [
+        {
+          "from": "243:4336",
+          "to": "101:1924",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4345",
+          "to": "100:1766",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4354",
+          "to": "100:1766",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-008",
+      "id": "76:678",
+      "name": "SB-008 · Đăng nhập · Email & Password",
+      "edges": [
+        {
+          "from": "76:711",
+          "to": "100:1855",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "76:712",
+          "to": "101:1924",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4496",
+          "to": "100:1855",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4498",
+          "to": "100:1766",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4502",
+          "to": "78:729",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4509",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-009",
+      "id": "100:1855",
+      "name": "SB-009 · Quên mật khẩu · Email & Keyboard",
+      "edges": [
+        {
+          "from": "100:1883",
+          "to": "100:1955",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I100:1885;128:47627",
+          "to": "100:1955",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4511",
+          "to": "76:678",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-010",
+      "id": "100:1955",
+      "name": "SB-010 · Đã gửi liên kết khôi phục",
+      "edges": [
+        {
+          "from": "243:4383",
+          "to": "76:678",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4390",
+          "to": "100:1855",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "243:4397",
+          "to": "100:1855",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-011",
+      "id": "100:1986",
+      "name": "SB-011 · Quyền vị trí · Bán kính quanh trường",
+      "edges": [
+        {
+          "from": "100:2009",
+          "to": "100:2013",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "100:2011",
+          "to": "101:2075",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-012",
+      "id": "100:2013",
+      "name": "SB-012 · Quyền thông báo · Nhắc khung giờ",
+      "edges": [
+        {
+          "from": "100:2040",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "100:2042",
+          "to": "78:695",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-013",
+      "id": "78:729",
+      "name": "SB-013 · Home Guest · Rescue Market",
+      "edges": [
+        {
+          "from": "I78:769;15:135",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I78:769;15:142",
+          "to": "20:109",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:732",
+          "to": "17:282",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "201:4408",
+          "to": "103:2173",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:735",
+          "to": "104:2329",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:742",
+          "to": "104:2253",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:749",
+          "to": "104:2404",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:756",
+          "to": "104:2475",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:764",
+          "to": "17:187",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:766",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "78:772",
+          "to": "76:678",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-014",
+      "id": "101:1924",
+      "name": "SB-014 · Home đã đăng nhập · Feed & Active Order",
+      "edges": [
+        {
+          "from": "101:1959",
+          "to": "84:1290",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "101:1963",
+          "to": "17:282",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "101:1977",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "101:1985",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-015",
+      "id": "17:49",
+      "name": "SB-015 · Discovery · Rescue Market",
+      "edges": [
+        {
+          "from": "I17:159;15:129",
+          "to": "84:1217",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I17:159;15:135",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I17:159;15:142",
+          "to": "20:109",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "17:81",
+          "to": "17:282",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "201:4419",
+          "to": "103:2173",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "51:314",
+          "to": "104:2329",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "51:321",
+          "to": "104:2253",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "51:328",
+          "to": "104:2404",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "17:123",
+          "to": "104:2475",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "17:131",
+          "to": "17:187",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "17:133",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-016",
+      "id": "17:187",
+      "name": "SB-016 · Map · Campus Explorer",
+      "edges": [
+        {
+          "from": "17:233",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "17:247",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-017",
+      "id": "101:2028",
+      "name": "SB-017 · Xem nhanh pin trên map · Peek Sheet",
+      "edges": [
+        {
+          "from": "101:2071",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-018",
+      "id": "101:2075",
+      "name": "SB-018 · Chọn khu vực & campus",
+      "edges": [
+        {
+          "from": "101:2113",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-019",
+      "id": "17:282",
+      "name": "SB-019 · Search · Active Input & iOS Keyboard",
+      "edges": [
+        {
+          "from": "17:340",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I17:345;128:47807",
+          "to": "101:2161",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-020",
+      "id": "101:2117",
+      "name": "SB-020 · Gợi ý tìm kiếm · Suggestions",
+      "edges": [
+        {
+          "from": "101:2148",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-021",
+      "id": "101:2161",
+      "name": "SB-021 · Kết quả tìm kiếm · Active Filter Strip",
+      "edges": [
+        {
+          "from": "101:2198",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-022",
+      "id": "80:809",
+      "name": "SB-022 · Search No Results · Empty State",
+      "edges": [
+        {
+          "from": "80:838",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "80:842",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "80:850",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-023",
+      "id": "103:2173",
+      "name": "SB-023 · Bộ lọc tổng hợp · Multi-criteria Sheet",
+      "edges": [
+        {
+          "from": "103:2213",
+          "to": "101:2161",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-024",
+      "id": "103:2215",
+      "name": "SB-024 · Lọc ngân sách · Price Histogram",
+      "edges": [
+        {
+          "from": "103:2254",
+          "to": "103:2173",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-025",
+      "id": "103:2256",
+      "name": "SB-025 · Lọc thời gian nhận · Pickup Slots",
+      "edges": [
+        {
+          "from": "103:2295",
+          "to": "103:2173",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-026",
+      "id": "103:2297",
+      "name": "SB-026 · Nhu cầu ăn uống & An toàn · Dietary",
+      "edges": [
+        {
+          "from": "103:2332",
+          "to": "103:2173",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-027",
+      "id": "103:2334",
+      "name": "SB-027 · Sắp xếp kết quả · Sort Options",
+      "edges": [
+        {
+          "from": "103:2366",
+          "to": "101:2161",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-028",
+      "id": "104:2253",
+      "name": "SB-028 · Danh mục Bữa ăn · Cooked Meals",
+      "edges": [
+        {
+          "from": "190:4413",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-029",
+      "id": "104:2329",
+      "name": "SB-029 · Danh mục Bánh mì & Pastry · Bakery",
+      "edges": [
+        {
+          "from": "190:4447",
+          "to": "109:2890",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "190:4456",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-030",
+      "id": "104:2404",
+      "name": "SB-030 · Danh mục Thực phẩm & Rau củ · Fresh Produce",
+      "edges": [
+        {
+          "from": "190:4480",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "190:4487",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-031",
+      "id": "104:2475",
+      "name": "SB-031 · Đang nhận sớm · Urgent Rescues",
+      "edges": []
+    },
+    {
+      "sb": "SB-032",
+      "id": "104:2551",
+      "name": "SB-032 · Quanh trường · Walking Distance",
+      "edges": []
+    },
+    {
+      "sb": "SB-033",
+      "id": "104:2627",
+      "name": "SB-033 · Yêu thích & Đã lưu · Saved Items",
+      "edges": []
+    },
+    {
+      "sb": "SB-034",
+      "id": "18:2",
+      "name": "SB-034 · Offer Detail · Exact Item",
+      "edges": [
+        {
+          "from": "18:24",
+          "to": "106:2630",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "18:71",
+          "to": "82:926",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-035",
+      "id": "106:2630",
+      "name": "SB-035 · Thư viện ảnh món ăn · Photo Gallery",
+      "edges": [
+        {
+          "from": "193:4226",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-036",
+      "id": "106:2655",
+      "name": "SB-036 · Thành phần & Cảnh báo Dị ứng · Allergen Sheet",
+      "edges": [
+        {
+          "from": "106:2688",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-037",
+      "id": "106:2690",
+      "name": "SB-037 · Chất lượng, hạn & Hướng dẫn · Shelf Life",
+      "edges": [
+        {
+          "from": "106:2723",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-038",
+      "id": "106:2725",
+      "name": "SB-038 · Chi tiết cửa hàng · Merchant Profile",
+      "edges": [
+        {
+          "from": "106:2754",
+          "to": "106:2775",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "106:2756",
+          "to": "106:2817",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-039",
+      "id": "106:2775",
+      "name": "SB-039 · Đường tới cửa hàng · Walking Map",
+      "edges": [
+        {
+          "from": "106:2815",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-040",
+      "id": "106:2817",
+      "name": "SB-040 · Quy định nhận món tại quầy · Handover Rules",
+      "edges": [
+        {
+          "from": "106:2860",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-041",
+      "id": "109:2765",
+      "name": "SB-041 · Offer khác của tiệm · More Offers",
+      "edges": []
+    },
+    {
+      "sb": "SB-042",
+      "id": "109:2816",
+      "name": "SB-042 · Đánh giá cửa hàng · Merchant Reviews",
+      "edges": [
+        {
+          "from": "191:4223",
+          "to": "109:2853",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "191:4233",
+          "to": "106:2725",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "191:4242",
+          "to": "106:2725",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-043",
+      "id": "109:2853",
+      "name": "SB-043 · Chi tiết đánh giá & Báo cáo",
+      "edges": [
+        {
+          "from": "191:4259",
+          "to": "109:2816",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "191:4266",
+          "to": "109:2816",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-044",
+      "id": "109:2890",
+      "name": "SB-044 · Túi bất ngờ · Surprise Bag",
+      "edges": [
+        {
+          "from": "109:2923",
+          "to": "109:2926",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "109:2925",
+          "to": "109:2926",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-045",
+      "id": "109:2926",
+      "name": "SB-045 · Giải thích túi bất ngờ · Explainer Sheet",
+      "edges": [
+        {
+          "from": "109:2955",
+          "to": "109:2890",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-046",
+      "id": "81:844",
+      "name": "SB-046 · Offer Detail · Sold Out",
+      "edges": [
+        {
+          "from": "81:922",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "81:889",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-047",
+      "id": "81:930",
+      "name": "SB-047 · Offer Detail · Pickup Window Closed",
+      "edges": [
+        {
+          "from": "81:1010",
+          "to": "178:375",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "81:975",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-048",
+      "id": "109:2959",
+      "name": "SB-048 · Gần đóng cửa · Closing Soon Urgency",
+      "edges": [
+        {
+          "from": "109:2998",
+          "to": "82:926",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "257:4653",
+          "to": "106:2655",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-049",
+      "id": "81:1012",
+      "name": "SB-049 · Offer Detail · Allergen Conflict",
+      "edges": [
+        {
+          "from": "81:1057",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-050",
+      "id": "83:970",
+      "name": "SB-050 · Quantity Sheet · Stock Limit",
+      "edges": [
+        {
+          "from": "83:1015",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "83:1068",
+          "to": "19:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-051",
+      "id": "19:2",
+      "name": "SB-051 · Reservation · Pickup Slot",
+      "edges": [
+        {
+          "from": "93:1643",
+          "to": "90:1408",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "19:65",
+          "to": "19:69",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-052",
+      "id": "90:1408",
+      "name": "SB-052 · Pickup Checklist · Readback",
+      "edges": [
+        {
+          "from": "90:1422",
+          "to": "19:69",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-053",
+      "id": "19:69",
+      "name": "SB-053 · Order Summary · Unified Receipt",
+      "edges": [
+        {
+          "from": "19:136",
+          "to": "83:1072",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-054",
+      "id": "83:1072",
+      "name": "SB-054 · Confirm Reservation Sheet",
+      "edges": [
+        {
+          "from": "83:1079",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "83:1156",
+          "to": "83:1162",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-055",
+      "id": "83:1162",
+      "name": "SB-055 · Processing · Idempotency Guard",
+      "edges": [
+        {
+          "from": "83:1162",
+          "to": "19:140",
+          "trigger": "AFTER_TIMEOUT"
+        },
+        {
+          "from": "83:1169",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "86:1416",
+          "to": "84:1122",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "86:1418",
+          "to": "84:1167",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-056",
+      "id": "19:140",
+      "name": "SB-056 · Success · Perforated Pickup Pass",
+      "edges": [
+        {
+          "from": "19:167",
+          "to": "84:1290",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "19:235",
+          "to": "91:1531",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "19:237",
+          "to": "84:1290",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "112:3375",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "193:4253",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-057",
+      "id": "84:1122",
+      "name": "SB-057 · Reservation Failed · Network",
+      "edges": [
+        {
+          "from": "84:1163",
+          "to": "83:1162",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1165",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-058",
+      "id": "84:1167",
+      "name": "SB-058 · Stock Changed · Recovery",
+      "edges": [
+        {
+          "from": "84:1204",
+          "to": "19:69",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1207",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1215",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-059",
+      "id": "82:926",
+      "name": "SB-059 · Login Required Sheet · Return To Offer",
+      "edges": [
+        {
+          "from": "82:971",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "82:1022",
+          "to": "83:970",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-060",
+      "id": "84:1217",
+      "name": "SB-060 · My Orders · Overview",
+      "edges": [
+        {
+          "from": "84:1241",
+          "to": "84:1290",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1248",
+          "to": "85:1266",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1251",
+          "to": "85:1385",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I84:1263;15:124",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I84:1263;15:135",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I84:1263;15:142",
+          "to": "20:109",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-061",
+      "id": "90:1491",
+      "name": "SB-061 · Pending Orders · Timeline",
+      "edges": [
+        {
+          "from": "90:1505",
+          "to": "85:1266",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I90:1519;15:124",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I90:1519;15:135",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I90:1519;15:142",
+          "to": "20:109",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "90:1574",
+          "to": "85:1266",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "90:1576",
+          "to": "91:1531",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-062",
+      "id": "84:1290",
+      "name": "SB-062 · Order Detail · Awaiting Pickup",
+      "edges": [
+        {
+          "from": "I84:1326;16:95",
+          "to": "112:3206",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1350",
+          "to": "85:1266",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1352",
+          "to": "91:1531",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "84:1355",
+          "to": "92:1642",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-063",
+      "id": "85:1266",
+      "name": "SB-063 · Pickup Code · Wallet Pass",
+      "edges": [
+        {
+          "from": "85:1326",
+          "to": "91:1487",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "85:1339",
+          "to": "85:1385",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-064",
+      "id": "91:1487",
+      "name": "SB-064 · Handover Steps · Backup Code",
+      "edges": []
+    },
+    {
+      "sb": "SB-065",
+      "id": "91:1531",
+      "name": "SB-065 · Directions · Active Order",
+      "edges": [
+        {
+          "from": "91:1648",
+          "to": "85:1266",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-066",
+      "id": "91:1652",
+      "name": "SB-066 · Order Ready · READY state",
+      "edges": [
+        {
+          "from": "91:1669",
+          "to": "85:1266",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "91:1670",
+          "to": "178:375",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-067",
+      "id": "85:1342",
+      "name": "SB-067 · Pickup Closing Soon · Urgent",
+      "edges": [
+        {
+          "from": "85:1342",
+          "to": "92:1593",
+          "trigger": "AFTER_TIMEOUT"
+        },
+        {
+          "from": "85:1381",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "85:1383",
+          "to": "91:1531",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-068",
+      "id": "92:1593",
+      "name": "SB-068 · Pickup Expired · No-Show Policy",
+      "edges": [
+        {
+          "from": "92:1607",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "92:1608",
+          "to": "92:1642",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-069",
+      "id": "92:1642",
+      "name": "SB-069 · Incident Report · Pickup Issue",
+      "edges": []
+    },
+    {
+      "sb": "SB-070",
+      "id": "112:3206",
+      "name": "SB-070 · Xác nhận hủy đơn · Policy & Reason",
+      "edges": [
+        {
+          "from": "112:3237",
+          "to": "112:3243",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-071",
+      "id": "112:3243",
+      "name": "SB-071 · Hủy đơn thành công · Empty State",
+      "edges": [
+        {
+          "from": "112:3274",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "112:3276",
+          "to": "84:1217",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-072",
+      "id": "85:1385",
+      "name": "SB-072 · Order Completed · Verified Receipt",
+      "edges": [
+        {
+          "from": "85:1442",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        },
+        {
+          "from": "85:1444",
+          "to": "85:1445",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-073",
+      "id": "112:3280",
+      "name": "SB-073 · Lịch sử đơn trống · Tab Root",
+      "edges": [
+        {
+          "from": "I112:3308;98:116",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "112:3317",
+          "to": "18:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-074",
+      "id": "117:3032",
+      "name": "SB-074 · Giới thiệu Pantry · Onboarding",
+      "edges": [
+        {
+          "from": "190:4390",
+          "to": "117:3058",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-075",
+      "id": "20:2",
+      "name": "SB-075 · Smart Pantry · Kitchen Inventory",
+      "edges": [
+        {
+          "from": "I20:18;15:114",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:81;15:124",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:81;15:129",
+          "to": "84:1217",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:23;16:162",
+          "to": "133:3283",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:23;16:168",
+          "to": "133:3314",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:45",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:45;16:176",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:54",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:54;16:176",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:63",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:63;16:176",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:72",
+          "to": "133:3314",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:72;16:176",
+          "to": "133:3376",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "148:3779",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I148:3779;16:176",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "148:3788",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I148:3788;16:176",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "148:3797",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I148:3797;16:176",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "148:3827",
+          "to": "133:3435",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "148:3830",
+          "to": "133:3463",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-076",
+      "id": "117:3058",
+      "name": "SB-076 · Tủ trống · Quick Add",
+      "edges": [
+        {
+          "from": "195:4235",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "195:4246",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "195:4254",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-077",
+      "id": "117:3124",
+      "name": "SB-077 · Thêm thủ công · Form",
+      "edges": [
+        {
+          "from": "205:4243",
+          "to": "117:3166",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "205:4282",
+          "to": "117:3213",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "205:4291",
+          "to": "117:3254",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "205:4300",
+          "to": "117:3058",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-078",
+      "id": "117:3166",
+      "name": "SB-078 · Chọn loại thực phẩm · Sheet",
+      "edges": [
+        {
+          "from": "217:4256",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:3957",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:3967",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:3980",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:3990",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:4001",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:4011",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:4022",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "152:4032",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-079",
+      "id": "117:3213",
+      "name": "SB-079 · Chọn ngày hạn · Use-By vs Best-Before",
+      "edges": [
+        {
+          "from": "218:4291",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "117:3250",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-080",
+      "id": "117:3254",
+      "name": "SB-080 · Xác nhận thêm · Review",
+      "edges": [
+        {
+          "from": "205:4325",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "205:4332",
+          "to": "117:3124",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-081",
+      "id": "117:3286",
+      "name": "SB-081 · Chi tiết thực phẩm · Ngày hạn & bảo quản",
+      "edges": [
+        {
+          "from": "263:4718",
+          "to": "117:3320",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "263:4727",
+          "to": "117:3320",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "263:4742",
+          "to": "117:3320",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "263:4749",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "263:4752",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "263:4761",
+          "to": "133:3376",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-082",
+      "id": "117:3320",
+      "name": "SB-082 · Sửa thực phẩm · Edit Item",
+      "edges": [
+        {
+          "from": "117:3346",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "205:4345",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-083",
+      "id": "133:3283",
+      "name": "SB-083 · Cần dùng sớm",
+      "edges": [
+        {
+          "from": "133:3678",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3687",
+          "to": "133:3345",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3690",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3309",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3312",
+          "to": "133:3407",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-084",
+      "id": "133:3314",
+      "name": "SB-084 · Đã quá hạn dùng",
+      "edges": [
+        {
+          "from": "133:3340",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3343",
+          "to": "133:3376",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-085",
+      "id": "117:3350",
+      "name": "SB-085 · Thiết lập nhắc hạn · Reminder Settings",
+      "edges": [
+        {
+          "from": "117:3374",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "205:4347",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-086",
+      "id": "133:3345",
+      "name": "SB-086 · Cập nhật lượng dùng",
+      "edges": [
+        {
+          "from": "133:3371",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3374",
+          "to": "133:3435",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-087",
+      "id": "133:3376",
+      "name": "SB-087 · Đánh dấu đã bỏ",
+      "edges": [
+        {
+          "from": "133:3402",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3405",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-088",
+      "id": "133:3407",
+      "name": "SB-088 · Gợi ý từ tủ của bạn",
+      "edges": [
+        {
+          "from": "133:3758",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3767",
+          "to": "117:3286",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3433",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-089",
+      "id": "133:3435",
+      "name": "SB-089 · Lịch sử tủ thực phẩm",
+      "edges": [
+        {
+          "from": "133:3461",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-090",
+      "id": "133:3463",
+      "name": "SB-090 · Dữ liệu trên máy",
+      "edges": [
+        {
+          "from": "133:3822",
+          "to": "117:3058",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3489",
+          "to": "20:2",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-091",
+      "id": "20:109",
+      "name": "SB-091 · Profile · Account & Impact Hub",
+      "edges": [
+        {
+          "from": "I20:167;15:124",
+          "to": "17:49",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "I20:167;15:129",
+          "to": "84:1217",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:130",
+          "to": "94:1641",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:136",
+          "to": "85:1445",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:147",
+          "to": "94:1684",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:150",
+          "to": "133:3581",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:153",
+          "to": "104:2627",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:158",
+          "to": "133:3609",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:161",
+          "to": "133:3637",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "20:164",
+          "to": "133:3637",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-092",
+      "id": "94:1641",
+      "name": "SB-092 · Edit Profile · Monogram",
+      "edges": [
+        {
+          "from": "94:1680",
+          "to": "178:372",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-093",
+      "id": "94:1684",
+      "name": "SB-093 · Saved Locations · Privacy Note",
+      "edges": [
+        {
+          "from": "94:1728",
+          "to": "178:375",
+          "trigger": "ON_HOVER"
+        }
+      ]
+    },
+    {
+      "sb": "SB-094",
+      "id": "133:3491",
+      "name": "SB-094 · Lưu khu vực",
+      "edges": [
+        {
+          "from": "133:3517",
+          "to": "94:1684",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3520",
+          "to": "94:1684",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-095",
+      "id": "133:3522",
+      "name": "SB-095 · Thông báo",
+      "edges": [
+        {
+          "from": "133:3872",
+          "to": "91:1652",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3879",
+          "to": "85:1342",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3887",
+          "to": "133:3283",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3896",
+          "to": "133:3581",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3548",
+          "to": "20:109",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-096",
+      "id": "133:3550",
+      "name": "SB-096 · Thông báo",
+      "edges": [
+        {
+          "from": "133:3576",
+          "to": "78:729",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3579",
+          "to": "133:3581",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-097",
+      "id": "133:3581",
+      "name": "SB-097 · Tùy chọn thông báo",
+      "edges": [
+        {
+          "from": "133:3911",
+          "to": "158:201",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3918",
+          "to": "158:201",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3926",
+          "to": "158:201",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3933",
+          "to": "158:201",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3940",
+          "to": "158:198",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3607",
+          "to": "20:109",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-098",
+      "id": "133:3609",
+      "name": "SB-098 · Quyền riêng tư",
+      "edges": [
+        {
+          "from": "133:3949",
+          "to": "100:1986",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3956",
+          "to": "133:3463",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3965",
+          "to": "133:3581",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-099",
+      "id": "133:3637",
+      "name": "SB-099 · Trợ giúp",
+      "edges": [
+        {
+          "from": "133:3979",
+          "to": "91:1487",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3988",
+          "to": "112:3206",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3995",
+          "to": "117:3213",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:4004",
+          "to": "133:3463",
+          "trigger": "ON_CLICK"
+        },
+        {
+          "from": "133:3666",
+          "to": "92:1642",
+          "trigger": "ON_CLICK"
+        }
+      ]
+    },
+    {
+      "sb": "SB-100",
+      "id": "85:1445",
+      "name": "SB-100 · Personal Impact · Verified Rescue",
+      "edges": []
+    }
+  ],
+  "usage": [
+    {
+      "id": "125:30",
+      "name": "Icon/Phosphor/bread",
+      "key": "647b4dd15036c8d9c2fdda52b85e9aca45d87a95",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-013",
+        "SB-029",
+        "SB-042",
+        "SB-043",
+        "SB-078",
+        "SB-083",
+        "SB-088",
+        "SB-089",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "125:34",
+      "name": "Icon/Phosphor/bowl-food",
+      "key": "c28672293de41fa76f5718b57370af52b2f36d2d",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-013",
+        "SB-028",
+        "SB-078"
+      ]
+    },
+    {
+      "id": "125:38",
+      "name": "Icon/Phosphor/carrot",
+      "key": "3ac0122b0f040acecc6d21669b8774df6ab6c51b",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-013",
+        "SB-030",
+        "SB-076",
+        "SB-078",
+        "SB-084",
+        "SB-089"
+      ]
+    },
+    {
+      "id": "125:42",
+      "name": "Icon/Phosphor/plant",
+      "key": "0bed6851939009dae1d59edee0ff96d59f60388f",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-083",
+        "SB-086",
+        "SB-088",
+        "SB-090",
+        "SB-095",
+        "SB-098",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "144:108",
+      "name": "Icon/SaveBite/MilkCarton",
+      "key": "2a3172f41099da52f26dd8cea0f32991112daebf",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-076",
+        "SB-078"
+      ]
+    },
+    {
+      "id": "144:117",
+      "name": "Icon/SaveBite/Pantry",
+      "key": "ae5c6efd5ef1dac857ca808a95ab30b15be2ba0c",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-076"
+      ]
+    },
+    {
+      "id": "150:197",
+      "name": "Category=Bakery",
+      "key": "77a328449e94ede847c1639583313ddbd7267f30",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:203",
+      "name": "Category=MilkEggs",
+      "key": "073278d4241c04e192d673e7e8d17504b43c8bd2",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-076",
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:210",
+      "name": "Category=Produce",
+      "key": "e5976433bdb2afb32cf90727b626d7815e735164",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-076",
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:216",
+      "name": "Category=Fruit",
+      "key": "8411ab6095db048c5b69a1cb9790874bed23e1cc",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:222",
+      "name": "Category=Prepared",
+      "key": "7c86a20f7ed8258fba9e82d04b5dfde950874fd0",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:228",
+      "name": "Category=MeatFish",
+      "key": "616b9cdfa1cf482350c4a888552661cf6ed69eb9",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:234",
+      "name": "Category=Spices",
+      "key": "61a808c4ab4ce1db5af67b06496881e8b97c4207",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "150:240",
+      "name": "Category=Other",
+      "key": "e4b3af170d161cb41664e0c0ee41b19eedfe688d",
+      "remote": false,
+      "set": {
+        "id": "150:246",
+        "name": "Pantry/CategoryTile",
+        "key": "b93726d686390886d0d0363c0e1693e827dd4261"
+      },
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "158:198",
+      "name": "Active=true",
+      "key": "1ab3129f2df84953a3c24d9cce4482e570cb4318",
+      "remote": false,
+      "set": {
+        "id": "158:197",
+        "name": "AppleKit/Toggle · source copy",
+        "key": "93ec3eed4dbab216aca4ac1f0650001d70447555"
+      },
+      "screens": [
+        "SB-097"
+      ]
+    },
+    {
+      "id": "158:201",
+      "name": "Active=false",
+      "key": "ba711b091fa0d079d4bb591f385be1b26dc227dc",
+      "remote": false,
+      "set": {
+        "id": "158:197",
+        "name": "AppleKit/Toggle · source copy",
+        "key": "93ec3eed4dbab216aca4ac1f0650001d70447555"
+      },
+      "screens": [
+        "SB-097"
+      ]
+    },
+    {
+      "id": "158:211",
+      "name": "Variant=Default",
+      "key": "4edf15a51f34309be5cc80bd33ece723b8aed872",
+      "remote": false,
+      "set": {
+        "id": "158:210",
+        "name": "AppleKit/Search Input · source copy",
+        "key": "07a7512c65c97857e2e53862ed36f8f2964eab2f"
+      },
+      "screens": [
+        "SB-015",
+        "SB-016",
+        "SB-019",
+        "SB-013",
+        "SB-014",
+        "SB-020",
+        "SB-021"
+      ]
+    },
+    {
+      "id": "15:105",
+      "name": "AppBar",
+      "key": "0b05a3bfdb3999d065d950c9c1b7ac8c8a90b494",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-008",
+        "SB-022",
+        "SB-006",
+        "SB-007",
+        "SB-009",
+        "SB-010",
+        "SB-018",
+        "SB-028",
+        "SB-029",
+        "SB-030",
+        "SB-031",
+        "SB-032",
+        "SB-033",
+        "SB-038",
+        "SB-039",
+        "SB-040",
+        "SB-041",
+        "SB-042",
+        "SB-043",
+        "SB-044",
+        "SB-051",
+        "SB-053",
+        "SB-056",
+        "SB-054",
+        "SB-055",
+        "SB-057",
+        "SB-058",
+        "SB-062",
+        "SB-067",
+        "SB-072",
+        "SB-052",
+        "SB-064",
+        "SB-066",
+        "SB-068",
+        "SB-069",
+        "SB-071",
+        "SB-100",
+        "SB-092",
+        "SB-093",
+        "SB-077",
+        "SB-080",
+        "SB-081",
+        "SB-082",
+        "SB-083",
+        "SB-084",
+        "SB-086",
+        "SB-087",
+        "SB-088",
+        "SB-089",
+        "SB-090",
+        "SB-094",
+        "SB-095",
+        "SB-096",
+        "SB-097",
+        "SB-098",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "15:111",
+      "name": "LargeTitleBar",
+      "key": "ce2fa0325e0d3fbadab9977f1704d2e42b065a75",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-060",
+        "SB-061",
+        "SB-073",
+        "SB-075",
+        "SB-091",
+        "SB-076"
+      ]
+    },
+    {
+      "id": "15:115",
+      "name": "MediaOverlayBar",
+      "key": "85ea70851d67ae64efb2493f2b155f0d6dd47fa5",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-034",
+        "SB-046",
+        "SB-047",
+        "SB-049",
+        "SB-059",
+        "SB-048",
+        "SB-050"
+      ]
+    },
+    {
+      "id": "15:122",
+      "name": "BottomNav",
+      "key": "778b8239bec823882301365799fbc493e94b4294",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-016",
+        "SB-013",
+        "SB-014",
+        "SB-021",
+        "SB-028",
+        "SB-029",
+        "SB-030",
+        "SB-031",
+        "SB-032",
+        "SB-033",
+        "SB-060",
+        "SB-061",
+        "SB-073",
+        "SB-075",
+        "SB-091",
+        "SB-076"
+      ]
+    },
+    {
+      "id": "15:153",
+      "name": "CategoryTile",
+      "key": "f473c094d36980a76a69b13f6d4835a58c828eed",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-013"
+      ]
+    },
+    {
+      "id": "15:160",
+      "name": "OfferCard",
+      "key": "2ef3d08fb996bc4ba099df69d51c035cd6261708",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-002",
+        "SB-015",
+        "SB-013",
+        "SB-029"
+      ]
+    },
+    {
+      "id": "15:169",
+      "name": "OfferListRow",
+      "key": "177a1dd23dfc4de610ea3967a38ba27577df3bcb",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-016",
+        "SB-013",
+        "SB-022",
+        "SB-014",
+        "SB-017",
+        "SB-021",
+        "SB-028",
+        "SB-030",
+        "SB-031",
+        "SB-032",
+        "SB-033",
+        "SB-046",
+        "SB-038",
+        "SB-041",
+        "SB-058",
+        "SB-065",
+        "SB-073"
+      ]
+    },
+    {
+      "id": "15:17",
+      "name": "iOSHomeIndicator",
+      "key": "0702735ece5b2d24c6634cc65a64f4d9bf204b0f",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-002",
+        "SB-015",
+        "SB-016",
+        "SB-001",
+        "SB-008",
+        "SB-005",
+        "SB-013",
+        "SB-022",
+        "SB-003",
+        "SB-004",
+        "SB-006",
+        "SB-007",
+        "SB-010",
+        "SB-011",
+        "SB-012",
+        "SB-014",
+        "SB-017",
+        "SB-018",
+        "SB-020",
+        "SB-021",
+        "SB-023",
+        "SB-024",
+        "SB-025",
+        "SB-026",
+        "SB-027",
+        "SB-028",
+        "SB-029",
+        "SB-030",
+        "SB-031",
+        "SB-032",
+        "SB-033",
+        "SB-034",
+        "SB-046",
+        "SB-047",
+        "SB-049",
+        "SB-059",
+        "SB-035",
+        "SB-036",
+        "SB-037",
+        "SB-038",
+        "SB-039",
+        "SB-040",
+        "SB-041",
+        "SB-042",
+        "SB-043",
+        "SB-044",
+        "SB-045",
+        "SB-048",
+        "SB-051",
+        "SB-053",
+        "SB-056",
+        "SB-050",
+        "SB-054",
+        "SB-055",
+        "SB-057",
+        "SB-058",
+        "SB-060",
+        "SB-062",
+        "SB-063",
+        "SB-067",
+        "SB-072",
+        "SB-052",
+        "SB-061",
+        "SB-064",
+        "SB-065",
+        "SB-066",
+        "SB-068",
+        "SB-069",
+        "SB-070",
+        "SB-071",
+        "SB-073",
+        "SB-075",
+        "SB-091",
+        "SB-100",
+        "SB-092",
+        "SB-093",
+        "SB-074",
+        "SB-076",
+        "SB-077",
+        "SB-078",
+        "SB-079",
+        "SB-080",
+        "SB-081",
+        "SB-082",
+        "SB-085",
+        "SB-083",
+        "SB-084",
+        "SB-086",
+        "SB-087",
+        "SB-088",
+        "SB-089",
+        "SB-090",
+        "SB-094",
+        "SB-095",
+        "SB-096",
+        "SB-097",
+        "SB-098",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "15:2",
+      "name": "iOSStatusBar",
+      "key": "00bde7260f3676f6b146c2674de9906e4bcb64ab",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-002",
+        "SB-015",
+        "SB-016",
+        "SB-019",
+        "SB-001",
+        "SB-008",
+        "SB-005",
+        "SB-013",
+        "SB-022",
+        "SB-003",
+        "SB-004",
+        "SB-006",
+        "SB-007",
+        "SB-009",
+        "SB-010",
+        "SB-011",
+        "SB-012",
+        "SB-014",
+        "SB-017",
+        "SB-018",
+        "SB-020",
+        "SB-021",
+        "SB-023",
+        "SB-024",
+        "SB-025",
+        "SB-026",
+        "SB-027",
+        "SB-028",
+        "SB-029",
+        "SB-030",
+        "SB-031",
+        "SB-032",
+        "SB-033",
+        "SB-034",
+        "SB-046",
+        "SB-047",
+        "SB-049",
+        "SB-059",
+        "SB-035",
+        "SB-036",
+        "SB-037",
+        "SB-038",
+        "SB-039",
+        "SB-040",
+        "SB-041",
+        "SB-042",
+        "SB-043",
+        "SB-044",
+        "SB-045",
+        "SB-048",
+        "SB-051",
+        "SB-053",
+        "SB-056",
+        "SB-050",
+        "SB-054",
+        "SB-055",
+        "SB-057",
+        "SB-058",
+        "SB-060",
+        "SB-062",
+        "SB-063",
+        "SB-067",
+        "SB-072",
+        "SB-052",
+        "SB-061",
+        "SB-064",
+        "SB-065",
+        "SB-066",
+        "SB-068",
+        "SB-069",
+        "SB-070",
+        "SB-071",
+        "SB-073",
+        "SB-075",
+        "SB-091",
+        "SB-100",
+        "SB-092",
+        "SB-093",
+        "SB-074",
+        "SB-076",
+        "SB-077",
+        "SB-078",
+        "SB-079",
+        "SB-080",
+        "SB-081",
+        "SB-082",
+        "SB-085",
+        "SB-083",
+        "SB-084",
+        "SB-086",
+        "SB-087",
+        "SB-088",
+        "SB-089",
+        "SB-090",
+        "SB-094",
+        "SB-095",
+        "SB-096",
+        "SB-097",
+        "SB-098",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "15:89",
+      "name": "BrandHeader",
+      "key": "2d883d86c7bb9f7c4b4a5525e47e89605f2ad8f3",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-015",
+        "SB-013",
+        "SB-014"
+      ]
+    },
+    {
+      "id": "16:100",
+      "name": "DemoQR",
+      "key": "1ef4f9fdf30d0e0782867ff7a3c44d4b7371d073",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-056",
+        "SB-063"
+      ]
+    },
+    {
+      "id": "16:124",
+      "name": "PerforatedPickupPass",
+      "key": "5953f276bcdae3b5ce44711f7d10ae08b6f436b4",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-056",
+        "SB-063"
+      ]
+    },
+    {
+      "id": "16:16",
+      "name": "MapPricePin",
+      "key": "a86eb7530f7f4a63676af4aa04d7129ad40a546a",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-016",
+        "SB-017",
+        "SB-065"
+      ]
+    },
+    {
+      "id": "16:161",
+      "name": "FreshnessSummaryBanner",
+      "key": "6a1f897a9aeaa0fe33824e0c83b345758d4d1ffc",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-075"
+      ]
+    },
+    {
+      "id": "16:171",
+      "name": "PantryItemRow",
+      "key": "1e16012252906bf06420f13128eb9a22c1365f16",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-075"
+      ]
+    },
+    {
+      "id": "16:180",
+      "name": "ProfileHeaderCard",
+      "key": "9b25a0a4bf45d053d1eaed52414ebd7429208c22",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091"
+      ]
+    },
+    {
+      "id": "16:186",
+      "name": "ImpactHeroCard",
+      "key": "b5d099c6ea2e9287ee3b4fea4f0243320c24679d",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091"
+      ]
+    },
+    {
+      "id": "16:3",
+      "name": "MapCanvas",
+      "key": "5601cd388d46b1c174ae237835d5403fcf673711",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-016",
+        "SB-003",
+        "SB-011",
+        "SB-017",
+        "SB-039",
+        "SB-065",
+        "SB-094"
+      ]
+    },
+    {
+      "id": "16:31",
+      "name": "MerchantRow",
+      "key": "3d9f0b15cad3387889f29665974c82bdc6c1ab19",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-051",
+        "SB-052"
+      ]
+    },
+    {
+      "id": "16:40",
+      "name": "PickupInfo",
+      "key": "79ecc0fe5982dadea6984c0c05c5d30b6a464a0a",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-034",
+        "SB-049",
+        "SB-059",
+        "SB-048",
+        "SB-050"
+      ]
+    },
+    {
+      "id": "16:49",
+      "name": "AllergenNotice",
+      "key": "3b6a5cf997e18d0d7a58fd42f4da5df6eddbd1a5",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-048",
+        "SB-053",
+        "SB-054",
+        "SB-055"
+      ]
+    },
+    {
+      "id": "16:57",
+      "name": "ReservationProgress",
+      "key": "5071cd1c74e1318a7479bd66c4ba4be23b0475e2",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-051",
+        "SB-053",
+        "SB-054",
+        "SB-055"
+      ]
+    },
+    {
+      "id": "16:63",
+      "name": "OfferSummary",
+      "key": "5bb86804939aa959d9832233e75aa75636e432da",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-059",
+        "SB-051",
+        "SB-050",
+        "SB-057",
+        "SB-067",
+        "SB-052",
+        "SB-068"
+      ]
+    },
+    {
+      "id": "16:69",
+      "name": "PickupSlot",
+      "key": "df399910db56c1da074270432cd08f3c1bc841ba",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-051"
+      ]
+    },
+    {
+      "id": "16:76",
+      "name": "UnifiedReceiptCard",
+      "key": "9a60205615892ae381c16e6ae9e30f6364459e49",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-053",
+        "SB-054",
+        "SB-055",
+        "SB-062",
+        "SB-072",
+        "SB-066"
+      ]
+    },
+    {
+      "id": "178:371",
+      "name": "Variant=Primary, State=Default, Size=Medium",
+      "key": "c8d51d520980822780402227046ea3e450bbc6cd",
+      "remote": true,
+      "set": {
+        "id": "178:370",
+        "name": "Button",
+        "key": "cc8b558dc7d9684011b6b99ce8e6509399bc836b"
+      },
+      "screens": [
+        "SB-002",
+        "SB-008",
+        "SB-005",
+        "SB-022",
+        "SB-003",
+        "SB-004",
+        "SB-006",
+        "SB-007",
+        "SB-009",
+        "SB-010",
+        "SB-011",
+        "SB-012",
+        "SB-017",
+        "SB-018",
+        "SB-023",
+        "SB-024",
+        "SB-025",
+        "SB-026",
+        "SB-027",
+        "SB-034",
+        "SB-046",
+        "SB-047",
+        "SB-049",
+        "SB-059",
+        "SB-036",
+        "SB-037",
+        "SB-039",
+        "SB-040",
+        "SB-042",
+        "SB-043",
+        "SB-044",
+        "SB-045",
+        "SB-048",
+        "SB-051",
+        "SB-053",
+        "SB-056",
+        "SB-050",
+        "SB-054",
+        "SB-055",
+        "SB-057",
+        "SB-058",
+        "SB-060",
+        "SB-062",
+        "SB-067",
+        "SB-072",
+        "SB-052",
+        "SB-061",
+        "SB-065",
+        "SB-066",
+        "SB-068",
+        "SB-069",
+        "SB-070",
+        "SB-071",
+        "SB-092",
+        "SB-074",
+        "SB-076",
+        "SB-077",
+        "SB-079",
+        "SB-080",
+        "SB-081",
+        "SB-082",
+        "SB-085",
+        "SB-083",
+        "SB-084",
+        "SB-086",
+        "SB-087",
+        "SB-094",
+        "SB-096",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "178:373",
+      "name": "Variant=Primary, State=Disabled, Size=Medium",
+      "key": "cb373a96e914129c04b7143c4b5ac140dd725d1d",
+      "remote": true,
+      "set": {
+        "id": "178:370",
+        "name": "Button",
+        "key": "cc8b558dc7d9684011b6b99ce8e6509399bc836b"
+      },
+      "screens": [
+        "SB-006"
+      ]
+    },
+    {
+      "id": "178:374",
+      "name": "Variant=Neutral, State=Default, Size=Medium",
+      "key": "af4db6779364afa444f7cf2df078c98861cc1c82",
+      "remote": true,
+      "set": {
+        "id": "178:370",
+        "name": "Button",
+        "key": "cc8b558dc7d9684011b6b99ce8e6509399bc836b"
+      },
+      "screens": [
+        "SB-008",
+        "SB-005",
+        "SB-007",
+        "SB-010",
+        "SB-011",
+        "SB-012",
+        "SB-029",
+        "SB-030",
+        "SB-047",
+        "SB-059",
+        "SB-035",
+        "SB-042",
+        "SB-056",
+        "SB-054",
+        "SB-057",
+        "SB-058",
+        "SB-062",
+        "SB-067",
+        "SB-061",
+        "SB-066",
+        "SB-068",
+        "SB-070",
+        "SB-071",
+        "SB-075",
+        "SB-093",
+        "SB-077",
+        "SB-079",
+        "SB-080",
+        "SB-081",
+        "SB-083",
+        "SB-086",
+        "SB-087",
+        "SB-090",
+        "SB-094",
+        "SB-095"
+      ]
+    },
+    {
+      "id": "178:377",
+      "name": "Variant=Subtle, State=Default, Size=Medium",
+      "key": "8c1581bb8d843e0119e85bc8d55bb5cc545a2dde",
+      "remote": true,
+      "set": {
+        "id": "178:370",
+        "name": "Button",
+        "key": "cc8b558dc7d9684011b6b99ce8e6509399bc836b"
+      },
+      "screens": [
+        "SB-002",
+        "SB-003",
+        "SB-004",
+        "SB-081"
+      ]
+    },
+    {
+      "id": "179:234",
+      "name": "State=Default, Value Type=Default",
+      "key": "67d02a629e38a4c2d63cc777c45232fda3a84ac3",
+      "remote": true,
+      "set": {
+        "id": "179:232",
+        "name": "Input Field",
+        "key": "c28150b04d333d34ed9d2b77abd9f2f54e1a878a"
+      },
+      "screens": [
+        "SB-008",
+        "SB-006",
+        "SB-009",
+        "SB-059",
+        "SB-092",
+        "SB-077",
+        "SB-094",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "179:286",
+      "name": "State=Default, Value Type=Checked",
+      "key": "05c7d48cca80dc3b8baa0d38bb00e6bdaf6517e9",
+      "remote": true,
+      "set": {
+        "id": "179:285",
+        "name": "Checkbox Field",
+        "key": "e396597bb4eade21b593d15dc3b3a3f79a0048bf"
+      },
+      "screens": [
+        "SB-006"
+      ]
+    },
+    {
+      "id": "179:287",
+      "name": "State=Default, Value Type=Unchecked",
+      "key": "8858cdfaa41eb95d919f655753a67cefaf5eeb7f",
+      "remote": true,
+      "set": {
+        "id": "179:285",
+        "name": "Checkbox Field",
+        "key": "e396597bb4eade21b593d15dc3b3a3f79a0048bf"
+      },
+      "screens": [
+        "SB-006"
+      ]
+    },
+    {
+      "id": "231:269",
+      "name": "Pose=Kitchen",
+      "key": "c4c4cee593ae5bb9463a17cf5c32797eeb64d336",
+      "remote": false,
+      "set": {
+        "id": "231:456",
+        "name": "Brand/Mầm",
+        "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+      },
+      "screens": [
+        "SB-004"
+      ]
+    },
+    {
+      "id": "231:330",
+      "name": "Pose=Mail",
+      "key": "5caed79dd6fd923ce94c0fa5848c7dd4f7409a02",
+      "remote": false,
+      "set": {
+        "id": "231:456",
+        "name": "Brand/Mầm",
+        "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+      },
+      "screens": [
+        "SB-007",
+        "SB-010"
+      ]
+    },
+    {
+      "id": "231:364",
+      "name": "Tone=Forest",
+      "key": "8119ecf0b1ad07aeb1d709e2bfc3c0659de89c0f",
+      "remote": false,
+      "set": {
+        "id": "231:457",
+        "name": "Brand/BagMark",
+        "key": "bd574f32533ebfe7f89869c426417ce5f9fdd674"
+      },
+      "screens": [
+        "SB-002",
+        "SB-015",
+        "SB-013",
+        "SB-003",
+        "SB-004",
+        "SB-012",
+        "SB-014"
+      ]
+    },
+    {
+      "id": "231:371",
+      "name": "Tone=Cream",
+      "key": "f996abd66c7fd6da41e45194f325705af245c564",
+      "remote": false,
+      "set": {
+        "id": "231:457",
+        "name": "Brand/BagMark",
+        "key": "bd574f32533ebfe7f89869c426417ce5f9fdd674"
+      },
+      "screens": [
+        "SB-001",
+        "SB-005",
+        "SB-011"
+      ]
+    },
+    {
+      "id": "231:459",
+      "name": "Tone=Forest",
+      "key": "15a351803ce832d50012e63086cc475d6fe8eaff",
+      "remote": false,
+      "set": {
+        "id": "231:477",
+        "name": "Brand/Wordmark R1",
+        "key": "40b3e1baf8d02b1659bf3195d786206e58fb38af"
+      },
+      "screens": [
+        "SB-002",
+        "SB-003",
+        "SB-004"
+      ]
+    },
+    {
+      "id": "231:468",
+      "name": "Tone=Cream",
+      "key": "7b34e1c9bcbc196248e3e064950c0ea83913b596",
+      "remote": false,
+      "set": {
+        "id": "231:477",
+        "name": "Brand/Wordmark R1",
+        "key": "40b3e1baf8d02b1659bf3195d786206e58fb38af"
+      },
+      "screens": [
+        "SB-005"
+      ]
+    },
+    {
+      "id": "231:519",
+      "name": "Phase=1, Theme=Cream",
+      "key": "a62408c1f9ae2320310c48c5554d51f2f87150a6",
+      "remote": false,
+      "set": {
+        "id": "231:547",
+        "name": "Brand/SeedActivity",
+        "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+      },
+      "screens": [
+        "SB-001"
+      ]
+    },
+    {
+      "id": "235:473",
+      "name": "Variant=Empty",
+      "key": "831ed714c7bb70fc0293a9c0382dbf809c24f870",
+      "remote": true,
+      "set": {
+        "id": "235:461",
+        "name": "🧩 Keyboards › Top",
+        "key": "41c64f28c754ac93e0ee7c776816b9a8f72f5bd8"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:519",
+      "name": "Device=📱 15 Pro, Variant=Dot - Mini",
+      "key": "cfb18899f47c7d7f888d623231e116e329966748",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:522",
+      "name": "Device=📱 15 Pro, Variant=@",
+      "key": "a7413f316d0a1973b3a97080e3edc51c700e5481",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:534",
+      "name": "Device=📱 15 Pro, Variant=Return",
+      "key": "d54b1b621fe8f564dc4befb57d2fa8191c236bef",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:537",
+      "name": "Device=📱 15 Pro, Variant=123",
+      "key": "1445623f95348cc27d5a1803540eee53a67534de",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:540",
+      "name": "Device=📱 15 Pro, Variant=Delete",
+      "key": "a715efc6c8814ae95fbed89a8b641d9755adb1cc",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:546",
+      "name": "Device=📱 15 Pro, Variant=Up",
+      "key": "488c2d77477d2adb4e5c83770e7a44ca54c944fb",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:549",
+      "name": "Device=📱 15 Pro, Variant=Space - Mini",
+      "key": "ef1143af6f5e84abd3106e8031ed6faf14d7316b",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:555",
+      "name": "Device=📱 15 Pro, Variant=Letter Lowercase",
+      "key": "884f47b622cb54c091104bf86c261c082aa276fa",
+      "remote": true,
+      "set": {
+        "id": "235:488",
+        "name": "🧩 Keyboards › Key",
+        "key": "2eb6536db7537e6c0008a03d9e36d206b3c98c59"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:646",
+      "name": "Theme=🦎 Adaptative, Color=Full",
+      "key": "f998f0f6398189b796fae36fa61e60f1506be747",
+      "remote": true,
+      "set": {
+        "id": "235:630",
+        "name": "🧰 Home Bar",
+        "key": "c368c902a2e2b0349cd9242da3be0658a6a2af20"
+      },
+      "screens": [
+        "SB-019",
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:788",
+      "name": "Device=📱 15 Pro, Variant=Email",
+      "key": "78619a3d54fe4388e2cf9d9b409ded24cdd52209",
+      "remote": true,
+      "set": {
+        "id": "235:651",
+        "name": "🧰 Keyboards",
+        "key": "1bffd9c0cfd73aaec06a4749ed516f092507068c"
+      },
+      "screens": [
+        "SB-009"
+      ]
+    },
+    {
+      "id": "235:972",
+      "name": "Device=📱 15 Pro, Variant=Text Lowercase",
+      "key": "c27dfdacd4b94971a046086e135a208abf4b55e6",
+      "remote": true,
+      "set": {
+        "id": "235:651",
+        "name": "🧰 Keyboards",
+        "key": "1bffd9c0cfd73aaec06a4749ed516f092507068c"
+      },
+      "screens": [
+        "SB-019"
+      ]
+    },
+    {
+      "id": "261:5376",
+      "name": "Asset Type=Image, Variant=Default, Direction=Horizontal",
+      "key": "a1a7864d35af77e756cf53e064f0e3c8cf0ce7a6",
+      "remote": true,
+      "set": {
+        "id": "261:5371",
+        "name": "Card",
+        "key": "a5bde480886231526d7dd890df3779dc15b52423"
+      },
+      "screens": [
+        "SB-081"
+      ]
+    },
+    {
+      "id": "262:821",
+      "name": "Icon/Phosphor/orange-slice",
+      "key": "95713554ab670a59a96f48ccd4751244b269076c",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "262:825",
+      "name": "Icon/Phosphor/fish",
+      "key": "abdc7863b17f3b380a42f9aeebee3d7934f26ba7",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "262:837",
+      "name": "Icon/Phosphor/jar",
+      "key": "b7bbe05146c2090c12d75c5c82c6f525151f2ad3",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "262:841",
+      "name": "Icon/Phosphor/snowflake",
+      "key": "774d650860dcdf81a5c7611758bffc86984d4883",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-081"
+      ]
+    },
+    {
+      "id": "98:109",
+      "name": "EmptyState",
+      "key": "884a37354bd20c06897204f4ec2ab2805406936d",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-071",
+        "SB-073"
+      ]
+    },
+    {
+      "id": "98:118",
+      "name": "Active=Tab1",
+      "key": "67caf15b60eb91ef941edb9f5c84e3b91948abf7",
+      "remote": false,
+      "set": {
+        "id": "98:139",
+        "name": "SegmentedControl",
+        "key": "67ba0fc21cc1b2f1d9ce38ba94fcded0199354c4"
+      },
+      "screens": [
+        "SB-060",
+        "SB-073"
+      ]
+    },
+    {
+      "id": "98:140",
+      "name": "Selected=false",
+      "key": "5d6cd225a8e8f203aafbcb80c9abbce293b24e89",
+      "remote": false,
+      "set": {
+        "id": "98:144",
+        "name": "FilterChip",
+        "key": "b98b77ab3ce1b606fc932883ed2e304bb490a1a8"
+      },
+      "screens": [
+        "SB-021",
+        "SB-070"
+      ]
+    },
+    {
+      "id": "98:142",
+      "name": "Selected=true",
+      "key": "800219e1b13744dde741b1522ceb6d7b9721dd19",
+      "remote": false,
+      "set": {
+        "id": "98:144",
+        "name": "FilterChip",
+        "key": "b98b77ab3ce1b606fc932883ed2e304bb490a1a8"
+      },
+      "screens": [
+        "SB-021",
+        "SB-070"
+      ]
+    },
+    {
+      "id": "98:29",
+      "name": "Icon/Bag",
+      "key": "a079ec7d58c4a85849189c090882608f33200236",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-078"
+      ]
+    },
+    {
+      "id": "98:32",
+      "name": "Icon/Bell",
+      "key": "12c7fc9c93d1a42861f8e247a2bf3599e04d3837",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091",
+        "SB-095",
+        "SB-096",
+        "SB-098"
+      ]
+    },
+    {
+      "id": "98:35",
+      "name": "Icon/Calendar",
+      "key": "4a96f4aac80906529782f351301a221f3b6b6d7d",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-081"
+      ]
+    },
+    {
+      "id": "98:50",
+      "name": "Icon/Clock",
+      "key": "289712918c8af009ec9b9faa59b6faf6d1ced533",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-048"
+      ]
+    },
+    {
+      "id": "98:56",
+      "name": "Icon/Heart",
+      "key": "5956f1ad5f414149b557e62df64700675b54e1fd",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091"
+      ]
+    },
+    {
+      "id": "98:59",
+      "name": "Icon/Info",
+      "key": "2654231c4fb579490a81b8522ca20af0d2dbecba",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091",
+        "SB-081"
+      ]
+    },
+    {
+      "id": "98:65",
+      "name": "Icon/MapPin",
+      "key": "7cbf32d4171ba4bef931ca35675d6212cc45018a",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091",
+        "SB-094",
+        "SB-098"
+      ]
+    },
+    {
+      "id": "98:95",
+      "name": "Icon/Warning",
+      "key": "2f0c0eb6027e8ddec328719509f8549150aa4509",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-091",
+        "SB-095",
+        "SB-099"
+      ]
+    },
+    {
+      "id": "98:98",
+      "name": "Icon/X",
+      "key": "d7b97e245f9429fe46f253761860c6aeeb797c85",
+      "remote": false,
+      "set": null,
+      "screens": [
+        "SB-056",
+        "SB-070",
+        "SB-078",
+        "SB-079",
+        "SB-085"
+      ]
+    }
+  ]
+}

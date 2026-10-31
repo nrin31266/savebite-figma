@@ -1,7 +1,21 @@
 # Progress · 31/10/2026
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
-Checkpoint Codex trực tiếp (`DEC-014`): **100/100 root native đã đăng ký** = DESIGN_REVIEW49 + NEEDS_REWORK51; BACKLOG0; DONE0. Đây là inventory, không phải100 màn hoàn chỉnh hoặc owner acceptance. Registry90 component entries; manifest26 ảnh/minh họa. Lease `codex/direct` được giải phóng tại checkpoint; lịch sử lease phía dưới giữ nguyên để truy vết.
+
+## Checkpoint brand + kit nguồn · DEC-015
+
+- [Kết quả và việc còn lại](brand-polish-checkpoint.md), [tuyển chọn mẫu](../docs/references/curated-layouts.md).100/100 overview đã chụp/xem;15 màn chụp native riêng sau sửa và078 kiểm category. Không gọi đó là100 màn đạt QA.
+- Hiện trạng registry: DESIGN_REVIEW50 + NEEDS_REWORK50, DONE0;145 component entries gồm legacy/source dependencies/candidate.31 brand SVG riêng,7 Phosphor Duotone mới; native Apple keyboards009/019 và SDS Card081 đã áp dụng.
+- Entry001–012, Search019, Urgency048 và Pantry081 có correction/visual checks. Present đã kiểm consent/Privacy Back/verification và081→082; chưa đủ6 flows/a11y/mobile. PASS: validator100 IDs/145 entries/26 image hashes;71 vector hashes/XML; checkpoint links; PNG/JPEG decode; git diff whitespace. Không suy ra license/visual/whole-flow PASS từ validator.
+- PR#2 phần trước đã MERGED. Phần polish ở branch `design/brand-and-screen-polish`, không tự coi đã lên main hoặc owner acceptance. Goal vẫn ACTIVE cho toàn phạm vi, ưu tiên tiếp safety037/045, context món/stock và Pantry edit082.
+
+## Lượt thiết kế tiếp theo · ACTIVE goal
+
+- Owner yêu cầu commit/push/merge phần có nguồn rồi tiếp tục tự audit/sửa; không giao agent. PR [#2](https://github.com/nrin31266/savebite-figma/pull/2) đã MERGED vào `main`, merge commit `bac7a8af33bc4fabdd186661380b30826000ba15`; asset commit `30c9134`, inventory/evidence commit `34bb360`. Committed-tree validator và33 vector hashes PASS. Không coi merge là owner acceptance UI.
+- Branch hiện hành: `design/brand-and-screen-polish`. Lease **RELEASED tại checkpoint** owner `codex/direct-polish`: App All Screens, Components/Foundations cho brand/mascot/loading, tokens phụ thuộc, assets và registries/docs liên quan. Không writer khác hoạt động; không spawn agent.
+- Nhóm audit: A001–012 Entry; B013–033 Discovery; C034–049+059 Offer; D050–058+060–073 Orders; E074–090 Pantry; F091–100 Account. Chụp contact sheets theo nhóm nhỏ để tìm lỗi rõ bằng hình; sửa chức năng/nội dung/spacing trước khi coi đủ đẹp.
+- Phạm vi đầy đủ giữ nguyên: logo/brand assets/linh vật concept, loading/first-run, kit reuse, màu và contrast, layout theo chức năng, spacing/radius/wrap/alignment, content/data consistency, prototype. Các tiêu chí đạt/chưa đạt ghi checkpoint sau batch; goal vẫn ACTIVE tới khi kiểm đủ, không thu nhỏ thành vài màn showcase.
+Checkpoint đã merge trước polish (`DEC-014`, lịch sử): **100/100 root native đã đăng ký** = DESIGN_REVIEW49 + NEEDS_REWORK51; BACKLOG0; DONE0. Đây là inventory, không phải100 màn hoàn chỉnh hoặc owner acceptance. Registry90 component entries; manifest26 ảnh/minh họa. Lease `codex/direct` được giải phóng tại checkpoint; lịch sử lease phía dưới giữ nguyên để truy vết.
 
 ## Checkpoint hiện hành · sourced kit & correction
 

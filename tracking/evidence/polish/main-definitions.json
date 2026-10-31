@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "137:30",
+    "name": "Tone=Forest",
+    "key": "73d23ec47e8d59f50ce1d4116b1b11b0711be0f1",
+    "remote": false,
+    "set": {
+      "id": "137:43",
+      "name": "Brand/RescueMark",
+      "key": "7e21a70c2f780b146596dc7f0276bf0efe5766d9"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "137:37",
+    "name": "Tone=Cream",
+    "key": "74c8ada429e091c592ac3007c9e71ca186646148",
+    "remote": false,
+    "set": {
+      "id": "137:43",
+      "name": "Brand/RescueMark",
+      "key": "7e21a70c2f780b146596dc7f0276bf0efe5766d9"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:238",
+    "name": "Pose=Hello",
+    "key": "992e850586ae1c53e8ee544921c48de9fa0b9376",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:252",
+    "name": "Pose=Carry",
+    "key": "e4891b34ea687440d0272f72993ff24a38ac55dc",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:269",
+    "name": "Pose=Kitchen",
+    "key": "c4c4cee593ae5bb9463a17cf5c32797eeb64d336",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:285",
+    "name": "Pose=Quiet",
+    "key": "bd5cd544676bd321fb0b43e68fd2f122aa3619b3",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:299",
+    "name": "Pose=Retry",
+    "key": "321685a407059208c5c962de5e5b4c7979f7684a",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:314",
+    "name": "Pose=Celebrate",
+    "key": "80cb397f127f9b4118565a1b1f963605cda9e561",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:330",
+    "name": "Pose=Mail",
+    "key": "5caed79dd6fd923ce94c0fa5848c7dd4f7409a02",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:346",
+    "name": "Pose=Search",
+    "key": "630cb6648542adaf935b566d89e022347ccdbc8a",
+    "remote": false,
+    "set": {
+      "id": "231:456",
+      "name": "Brand/Mầm",
+      "key": "af41ecfebc704006b24e73f4c77a640875eb5bb1"
+    },
+    "defs": {
+      "Pose": {
+        "type": "VARIANT",
+        "defaultValue": "Hello",
+        "variantOptions": [
+          "Hello",
+          "Carry",
+          "Kitchen",
+          "Quiet",
+          "Retry",
+          "Celebrate",
+          "Mail",
+          "Search"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:364",
+    "name": "Tone=Forest",
+    "key": "8119ecf0b1ad07aeb1d709e2bfc3c0659de89c0f",
+    "remote": false,
+    "set": {
+      "id": "231:457",
+      "name": "Brand/BagMark",
+      "key": "bd574f32533ebfe7f89869c426417ce5f9fdd674"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream",
+          "Wheat"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:371",
+    "name": "Tone=Cream",
+    "key": "f996abd66c7fd6da41e45194f325705af245c564",
+    "remote": false,
+    "set": {
+      "id": "231:457",
+      "name": "Brand/BagMark",
+      "key": "bd574f32533ebfe7f89869c426417ce5f9fdd674"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream",
+          "Wheat"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:378",
+    "name": "Tone=Wheat",
+    "key": "ec935c6871d514aaeb3529d62aa35d35c0660921",
+    "remote": false,
+    "set": {
+      "id": "231:457",
+      "name": "Brand/BagMark",
+      "key": "bd574f32533ebfe7f89869c426417ce5f9fdd674"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream",
+          "Wheat"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:385",
+    "name": "Pattern=Leaf",
+    "key": "35b6f3a80eb39dd7f5f0f50ca4206643939123a0",
+    "remote": false,
+    "set": {
+      "id": "231:458",
+      "name": "Brand/Pattern",
+      "key": "e078cfc91ee4a6324b4da9689de030e4853938f9"
+    },
+    "defs": {
+      "Pattern": {
+        "type": "VARIANT",
+        "defaultValue": "Leaf",
+        "variantOptions": [
+          "Leaf",
+          "Stripe",
+          "Receipt",
+          "Fold"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:418",
+    "name": "Pattern=Stripe",
+    "key": "d536db2c2fcb621be0529d7939dfd1a67ddf97ea",
+    "remote": false,
+    "set": {
+      "id": "231:458",
+      "name": "Brand/Pattern",
+      "key": "e078cfc91ee4a6324b4da9689de030e4853938f9"
+    },
+    "defs": {
+      "Pattern": {
+        "type": "VARIANT",
+        "defaultValue": "Leaf",
+        "variantOptions": [
+          "Leaf",
+          "Stripe",
+          "Receipt",
+          "Fold"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:429",
+    "name": "Pattern=Receipt",
+    "key": "2e3b9823ae070684e333518b462b88da34ce51f4",
+    "remote": false,
+    "set": {
+      "id": "231:458",
+      "name": "Brand/Pattern",
+      "key": "e078cfc91ee4a6324b4da9689de030e4853938f9"
+    },
+    "defs": {
+      "Pattern": {
+        "type": "VARIANT",
+        "defaultValue": "Leaf",
+        "variantOptions": [
+          "Leaf",
+          "Stripe",
+          "Receipt",
+          "Fold"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:450",
+    "name": "Pattern=Fold",
+    "key": "11b8974fc574d7490a3faee11736a2e8b94742b8",
+    "remote": false,
+    "set": {
+      "id": "231:458",
+      "name": "Brand/Pattern",
+      "key": "e078cfc91ee4a6324b4da9689de030e4853938f9"
+    },
+    "defs": {
+      "Pattern": {
+        "type": "VARIANT",
+        "defaultValue": "Leaf",
+        "variantOptions": [
+          "Leaf",
+          "Stripe",
+          "Receipt",
+          "Fold"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:459",
+    "name": "Tone=Forest",
+    "key": "15a351803ce832d50012e63086cc475d6fe8eaff",
+    "remote": false,
+    "set": {
+      "id": "231:477",
+      "name": "Brand/Wordmark R1",
+      "key": "40b3e1baf8d02b1659bf3195d786206e58fb38af"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:468",
+    "name": "Tone=Cream",
+    "key": "7b34e1c9bcbc196248e3e064950c0ea83913b596",
+    "remote": false,
+    "set": {
+      "id": "231:477",
+      "name": "Brand/Wordmark R1",
+      "key": "40b3e1baf8d02b1659bf3195d786206e58fb38af"
+    },
+    "defs": {
+      "Tone": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:478",
+    "name": "Style=Forest",
+    "key": "6dfb04b44205e434d3cc4538eb4ca100422aff95",
+    "remote": false,
+    "set": {
+      "id": "231:490",
+      "name": "Brand/Sticker",
+      "key": "815b91a7cf17748502ae7d4e6df71fbe22a4d1df"
+    },
+    "defs": {
+      "Label#231:6": {
+        "type": "TEXT",
+        "defaultValue": "Phần ngon còn đây"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Wheat",
+          "Sage",
+          "Paper",
+          "Terracotta",
+          "Quiet"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:480",
+    "name": "Style=Wheat",
+    "key": "f80ed11f7daf0e35cb42d48c2dddc624ff7ca7f3",
+    "remote": false,
+    "set": {
+      "id": "231:490",
+      "name": "Brand/Sticker",
+      "key": "815b91a7cf17748502ae7d4e6df71fbe22a4d1df"
+    },
+    "defs": {
+      "Label#231:6": {
+        "type": "TEXT",
+        "defaultValue": "Phần ngon còn đây"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Wheat",
+          "Sage",
+          "Paper",
+          "Terracotta",
+          "Quiet"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:482",
+    "name": "Style=Sage",
+    "key": "f3df834ac63a49f0903ffb8a4a99b3d6b71afaf9",
+    "remote": false,
+    "set": {
+      "id": "231:490",
+      "name": "Brand/Sticker",
+      "key": "815b91a7cf17748502ae7d4e6df71fbe22a4d1df"
+    },
+    "defs": {
+      "Label#231:6": {
+        "type": "TEXT",
+        "defaultValue": "Phần ngon còn đây"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Wheat",
+          "Sage",
+          "Paper",
+          "Terracotta",
+          "Quiet"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:484",
+    "name": "Style=Paper",
+    "key": "f13298034d6037d7b6ff9f7cf9ee05a260318ea2",
+    "remote": false,
+    "set": {
+      "id": "231:490",
+      "name": "Brand/Sticker",
+      "key": "815b91a7cf17748502ae7d4e6df71fbe22a4d1df"
+    },
+    "defs": {
+      "Label#231:6": {
+        "type": "TEXT",
+        "defaultValue": "Phần ngon còn đây"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Wheat",
+          "Sage",
+          "Paper",
+          "Terracotta",
+          "Quiet"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:486",
+    "name": "Style=Terracotta",
+    "key": "f90fe2c208d1f704cc6ebc1a3ced726731403bf0",
+    "remote": false,
+    "set": {
+      "id": "231:490",
+      "name": "Brand/Sticker",
+      "key": "815b91a7cf17748502ae7d4e6df71fbe22a4d1df"
+    },
+    "defs": {
+      "Label#231:6": {
+        "type": "TEXT",
+        "defaultValue": "Phần ngon còn đây"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Wheat",
+          "Sage",
+          "Paper",
+          "Terracotta",
+          "Quiet"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:488",
+    "name": "Style=Quiet",
+    "key": "468c93837ea129200df960c92f191787b241cbb0",
+    "remote": false,
+    "set": {
+      "id": "231:490",
+      "name": "Brand/Sticker",
+      "key": "815b91a7cf17748502ae7d4e6df71fbe22a4d1df"
+    },
+    "defs": {
+      "Label#231:6": {
+        "type": "TEXT",
+        "defaultValue": "Phần ngon còn đây"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Wheat",
+          "Sage",
+          "Paper",
+          "Terracotta",
+          "Quiet"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:491",
+    "name": "Phase=1, Theme=Forest",
+    "key": "39624e6a2d7b698be96659482d17dd56504c1c74",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:498",
+    "name": "Phase=2, Theme=Forest",
+    "key": "aec4b2dc000b3ac95657bb867739de561eb9f3ec",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:505",
+    "name": "Phase=3, Theme=Forest",
+    "key": "2ae339e56acc5818f2646328bee81eacd244b099",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:512",
+    "name": "Phase=Static, Theme=Forest",
+    "key": "7dd7f5355acb1c63bb42bd76a8082092bb77dd7b",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:519",
+    "name": "Phase=1, Theme=Cream",
+    "key": "a62408c1f9ae2320310c48c5554d51f2f87150a6",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:526",
+    "name": "Phase=2, Theme=Cream",
+    "key": "9518a9cab1238bdd0780765d0d84ec7404ab2c5d",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:533",
+    "name": "Phase=3, Theme=Cream",
+    "key": "6a99b8238863803f68931e17bc1884b966afbbd4",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "231:540",
+    "name": "Phase=Static, Theme=Cream",
+    "key": "016030ba0c9726be06786c537d8501cdbc65dda3",
+    "remote": false,
+    "set": {
+      "id": "231:547",
+      "name": "Brand/SeedActivity",
+      "key": "bf2ed0c7737d468a57e80bbebc26c2a0c316f94a"
+    },
+    "defs": {
+      "Phase": {
+        "type": "VARIANT",
+        "defaultValue": "1",
+        "variantOptions": [
+          "1",
+          "2",
+          "3",
+          "Static"
+        ]
+      },
+      "Theme": {
+        "type": "VARIANT",
+        "defaultValue": "Forest",
+        "variantOptions": [
+          "Forest",
+          "Cream"
+        ]
+      }
+    }
+  },
+  {
+    "id": "262:817",
+    "name": "Icon/Phosphor/egg",
+    "key": "58e1c1c4524632d40bed9a5446a131364615a569",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "262:821",
+    "name": "Icon/Phosphor/orange-slice",
+    "key": "95713554ab670a59a96f48ccd4751244b269076c",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "262:825",
+    "name": "Icon/Phosphor/fish",
+    "key": "abdc7863b17f3b380a42f9aeebee3d7934f26ba7",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "262:829",
+    "name": "Icon/Phosphor/cheese",
+    "key": "1f037ece0c11abecc8d101bf1b17c637b21e5ff8",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "262:833",
+    "name": "Icon/Phosphor/grains",
+    "key": "4f9670a1a1720e9f0977c873ccc6589f6415382e",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "262:837",
+    "name": "Icon/Phosphor/jar",
+    "key": "b7bbe05146c2090c12d75c5c82c6f525151f2ad3",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "262:841",
+    "name": "Icon/Phosphor/snowflake",
+    "key": "774d650860dcdf81a5c7611758bffc86984d4883",
+    "remote": false,
+    "set": null,
+    "defs": {}
+  },
+  {
+    "id": "178:373",
+    "name": "Variant=Primary, State=Disabled, Size=Medium",
+    "key": "cb373a96e914129c04b7143c4b5ac140dd725d1d",
+    "remote": true,
+    "set": {
+      "id": "178:370",
+      "name": "Button",
+      "key": "cc8b558dc7d9684011b6b99ce8e6509399bc836b"
+    },
+    "defs": {
+      "Label#2:0": {
+        "type": "TEXT",
+        "defaultValue": "Button"
+      },
+      "Has Icon End#4:64": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Has Icon Start#4:128": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Variant": {
+        "type": "VARIANT",
+        "defaultValue": "Primary",
+        "variantOptions": [
+          "Primary",
+          "Neutral",
+          "Subtle"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Medium",
+        "variantOptions": [
+          "Medium",
+          "Small"
+        ]
+      }
+    }
+  },
+  {
+    "id": "178:377",
+    "name": "Variant=Subtle, State=Default, Size=Medium",
+    "key": "8c1581bb8d843e0119e85bc8d55bb5cc545a2dde",
+    "remote": true,
+    "set": {
+      "id": "178:370",
+      "name": "Button",
+      "key": "cc8b558dc7d9684011b6b99ce8e6509399bc836b"
+    },
+    "defs": {
+      "Label#2:0": {
+        "type": "TEXT",
+        "defaultValue": "Button"
+      },
+      "Has Icon End#4:64": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Has Icon Start#4:128": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Variant": {
+        "type": "VARIANT",
+        "defaultValue": "Primary",
+        "variantOptions": [
+          "Primary",
+          "Neutral",
+          "Subtle"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Medium",
+        "variantOptions": [
+          "Medium",
+          "Small"
+        ]
+      }
+    }
+  },
+  {
+    "id": "179:286",
+    "name": "State=Default, Value Type=Checked",
+    "key": "05c7d48cca80dc3b8baa0d38bb00e6bdaf6517e9",
+    "remote": true,
+    "set": {
+      "id": "179:285",
+      "name": "Checkbox Field",
+      "key": "e396597bb4eade21b593d15dc3b3a3f79a0048bf"
+    },
+    "defs": {
+      "Has Description#31:31": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Description#280:81": {
+        "type": "TEXT",
+        "defaultValue": "Description"
+      },
+      "Label#373:9": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Disabled"
+        ]
+      },
+      "Value Type": {
+        "type": "VARIANT",
+        "defaultValue": "Checked",
+        "variantOptions": [
+          "Unchecked",
+          "Checked",
+          "Indeterminate"
+        ]
+      }
+    }
+  },
+  {
+    "id": "179:287",
+    "name": "State=Default, Value Type=Unchecked",
+    "key": "8858cdfaa41eb95d919f655753a67cefaf5eeb7f",
+    "remote": true,
+    "set": {
+      "id": "179:285",
+      "name": "Checkbox Field",
+      "key": "e396597bb4eade21b593d15dc3b3a3f79a0048bf"
+    },
+    "defs": {
+      "Has Description#31:31": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Description#280:81": {
+        "type": "TEXT",
+        "defaultValue": "Description"
+      },
+      "Label#373:9": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Disabled"
+        ]
+      },
+      "Value Type": {
+        "type": "VARIANT",
+        "defaultValue": "Checked",
+        "variantOptions": [
+          "Unchecked",
+          "Checked",
+          "Indeterminate"
+        ]
+      }
+    }
+  },
+  {
+    "id": "235:788",
+    "name": "Device=📱 15 Pro, Variant=Email",
+    "key": "78619a3d54fe4388e2cf9d9b409ded24cdd52209",
+    "remote": true,
+    "set": {
+      "id": "235:651",
+      "name": "🧰 Keyboards",
+      "key": "1bffd9c0cfd73aaec06a4749ed516f092507068c"
+    },
+    "defs": {
+      "Device": {
+        "type": "VARIANT",
+        "defaultValue": "📱 15 Pro Max",
+        "variantOptions": [
+          "📱 15 Pro Max",
+          "📱 15 Pro"
+        ]
+      },
+      "Variant": {
+        "type": "VARIANT",
+        "defaultValue": "Text Lowercase",
+        "variantOptions": [
+          "Text Lowercase",
+          "Text Uppercase",
+          "Email",
+          "URL",
+          "Phone"
+        ]
+      }
+    }
+  },
+  {
+    "id": "235:972",
+    "name": "Device=📱 15 Pro, Variant=Text Lowercase",
+    "key": "c27dfdacd4b94971a046086e135a208abf4b55e6",
+    "remote": true,
+    "set": {
+      "id": "235:651",
+      "name": "🧰 Keyboards",
+      "key": "1bffd9c0cfd73aaec06a4749ed516f092507068c"
+    },
+    "defs": {
+      "Device": {
+        "type": "VARIANT",
+        "defaultValue": "📱 15 Pro Max",
+        "variantOptions": [
+          "📱 15 Pro Max",
+          "📱 15 Pro"
+        ]
+      },
+      "Variant": {
+        "type": "VARIANT",
+        "defaultValue": "Text Lowercase",
+        "variantOptions": [
+          "Text Lowercase",
+          "Text Uppercase",
+          "Email",
+          "URL",
+          "Phone"
+        ]
+      }
+    }
+  },
+  {
+    "id": "261:5376",
+    "name": "Asset Type=Image, Variant=Default, Direction=Horizontal",
+    "key": "a1a7864d35af77e756cf53e064f0e3c8cf0ce7a6",
+    "remote": true,
+    "set": {
+      "id": "261:5371",
+      "name": "Card",
+      "key": "a5bde480886231526d7dd890df3779dc15b52423"
+    },
+    "defs": {
+      "Asset#113:13": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Button#113:15": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "Heading#280:0": {
+        "type": "TEXT",
+        "defaultValue": "Title"
+      },
+      "Body#280:13": {
+        "type": "TEXT",
+        "defaultValue": "Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. "
+      },
+      "Asset Type": {
+        "type": "VARIANT",
+        "defaultValue": "Icon",
+        "variantOptions": [
+          "Icon",
+          "Image"
+        ]
+      },
+      "Variant": {
+        "type": "VARIANT",
+        "defaultValue": "Stroke",
+        "variantOptions": [
+          "Default",
+          "Stroke"
+        ]
+      },
+      "Direction": {
+        "type": "VARIANT",
+        "defaultValue": "Horizontal",
+        "variantOptions": [
+          "Horizontal",
+          "Vertical"
+        ]
+      }
+    }
+  }
+]

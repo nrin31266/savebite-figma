@@ -4,6 +4,8 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ## Phạm vi và đầu ra
 
+Prototype polish31/10 (DEFAULT theo DEC-014/015): email mẫu `minhanh@example.com`, không gửi thư thật. SB-006 bắt đầu chưa xác nhận đọc hướng dẫn/quyền riêng tư; CTA disabled tới khi tick. “Điều cần biết” mở099, “Quyền riêng tư” mở098; Back giữ trạng thái form. SB-005 cho xem món/Pantry không đăng nhập, không ngầm coi thao tác xem là đồng ý điều khoản chưa có văn bản. SB-048 là nhánh demo17:40, còn1 phần bánh/20 phút tới18:00; các màn mặc định vẫn16:00 ngày19/10/2026. Context thời gian/tồn kho xuyên flow chưa hoàn thiện, xem [checkpoint](../tracking/brand-polish-checkpoint.md).
+
 `CONFIRMED` Repo chỉ thiết kế Figma: consumer mobile tiếng Việt, Rescue Market là core, Smart Pantry là bổ trợ. Yêu cầu thiết kế đã tổng hợp trong docs này; tài liệu học phần và nguồn tham khảo gốc lưu riêng, không cần chúng để tiếp tục.
 
 - Mục tiêu: 100 hi-fi frames có nhiệm vụ/trạng thái khác nhau, low-fi và ít nhất một prototype end-to-end. Low-fi/components/overlays nhỏ không cộng vào 100.
