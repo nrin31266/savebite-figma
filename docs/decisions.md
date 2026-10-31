@@ -2,6 +2,12 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-018 · 01/11/2026 · Chart chi trả và điều hướng tác động
+
+- Nguồn: owner yêu cầu UI có chiều sâu, biểu đồ/plugin và asset có chủ ý; thực thi DEC-014/016, không thêm nghiệp vụ.
+- DEFAULT thực thi: chart100 chỉ so sánh3 khoản đã trả25K/30K/35K=90K từ history demo. Zero baseline và direct values; không kết luận xu hướng, savings hoặc CO₂.091→100 và Back→091 giữ đường quay lại rõ.
+- PlotSet đã lưu nhưng plugin launch lỗi; native chart là hình học/text editable tự ráp từ fixtures, không mạo nhận import. [Checkpoint](../tracking/impact-ui-checkpoint.md), owner acceptance/full-flow chưa có.
+
 ## DEC-017 · 01/11/2026 · Map context và fallback minh họa
 
 - Nguồn: owner yêu cầu tiếp polish UI theo nhóm, dùng maps.to.design đã cài; thực thi DEC-014/016. Không phải nghiệm thu thiết kế.

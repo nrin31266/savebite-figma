@@ -6,6 +6,8 @@ Nguồn chuẩn theo domain cho Kiến trúc Thông tin (IA), Luồng người d
 
 ### Thông tin điều hướng
 
+Account/Impact01/11: card091→100 giữ; hotspot Back100→09148pt được kiểm Present.100 hiển thị3 đơn mẫu25K/30K/35K và90K **đã trả**, không suy ra savings/trend/CO₂. [UI checkpoint](../tracking/impact-ui-checkpoint.md); không phải dữ liệu người dùng thật.
+
 **Root:** initial load → onboarding (lần đầu) → optional guest/login → Home.  
 **Tabs:** Khám phá, Đơn của tôi, Tủ thực phẩm, Tài khoản.  
 **Deep links:** offer, store, reservation, pickup code, pantry item (local links) và help.  

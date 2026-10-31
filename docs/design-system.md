@@ -1,5 +1,9 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Account/Impact · 01/11/2026
+
+[Batch091/100](../tracking/impact-ui-checkpoint.md) không tạo main mới: reuse Celebrate`231:314`, CaretRight`98:44`, ImpactHeroCard`16:186` và ảnh nguồn. Settings rows321×72, MIN alignment/gap12, label257/chevron16. Comparison bars track285 và zero baseline, direct labels, font tên/giá14/ngày12; rectangles/text native, không gọi là source-imported component. Palette forest/wheat/cream giữ nguyên; registry148.
+
 ## Map UI · 01/11/2026
 
 Không thêm main: [batch5 màn](../tracking/map-ui-checkpoint.md) reuse MapCanvas/MapPricePin/OfferListRow/AppBar/Apple Search/SDS controls. MapPricePin instances tương tác có touch88×44; metadata price/slot HUG trong row FILL. Context photo/selected pin dùng aliases hiện có.094 có3 Boolean prototype vars cho selected radius, không phải design tokens; Source Primary instances override forest/radius-sm/Be Vietnam Pro. MapCanvas master giữ nguyên, map nguồn thật chưa nhập.

@@ -1,5 +1,7 @@
 # Mẫu tuyển chọn cho SaveBite · 31/10/2026
 
+Account/Impact01/11: [shadcn bar charts](https://ui.shadcn.com/charts/bar) là nguồn tham khảo chart; không nhập app code. [PlotSet chính thức](https://plotset.net/integrations/figma) đã Save trong Figma, launch lỗi môi trường; chưa export/import chart. [Checkpoint](../../tracking/impact-ui-checkpoint.md) phân biệt native comparison bars tự ráp với plugin chưa chạy được.
+
 Cập nhật01/11: [maps.to.design chính thức](https://divriots.com/blog/introducing-maps-to-design/) được tìm thấy trong Figma quick actions, nhưng launch báo lỗi môi trường cả trước/sau restart. **Chưa import map**, không gọi output image/fill của plugin là vector native. [Map checkpoint](../../tracking/map-ui-checkpoint.md) ghi UI đã sửa độc lập và phần nguồn thật còn thiếu.
 
 Chọn theo chức năng, giữ màu xanh–kem và Be Vietnam Pro. Đây là tham khảo thị giác/interaction, không phải nghiên cứu người dùng hay giấy phép sao chép sản phẩm khác. Không nhập screenshot đối thủ làm UI.

@@ -1,5 +1,7 @@
 # Bắt đầu làm SaveBite
 
+**Account/Impact01/11:** [checkpoint091/100](../tracking/impact-ui-checkpoint.md) — sửa gap6 settings rows, chart native3 đơn/90K đã trả, ảnh và pose Mầm. PlotSet đã lưu vào Figma nhưng chạy lỗi môi trường; chưa import chart từ plugin. Goal toàn100 màn vẫn ACTIVE.
+
 **Map UI01/11:** [checkpoint5 màn](../tracking/map-ui-checkpoint.md) — sửa toolbar tràn, pin/preview context, sheet chồng và selected radius. Plugin maps.to.design vẫn lỗi tải môi trường sau restart; chưa có map thật. Goal UI/chart/motion/toàn100 màn vẫn ACTIVE.
 
 **Batch UI/asset mới:** [sourced UI/Pantry checkpoint](../tracking/sourced-ui-pantry-checkpoint.md) —7 thumbnail món, ảnh chi tiết theo món, SDS Tag Toggle native; pool30 ảnh và registry148 entries. Đã bấm thử hai filter và hai ảnh detail; toàn bộ flow100 màn vẫn chưa nghiệm thu.

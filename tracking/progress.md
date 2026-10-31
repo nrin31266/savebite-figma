@@ -2,6 +2,13 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
+## Account & Impact UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-impact-ui`. [091/100](impact-ui-checkpoint.md): sửa6 rows321×72/gap12/chevrons, chart native3 đơn25K/30K/35K=90K đã trả với ảnh và Mầm Celebrate. Không thêm main, registry148; không dựng savings/CO₂/trend.
+- Scoped Present091→100 và Back100→091 đã bấm; labels/bars/data math/source mappings read back. Chưa Dynamic Type/fullmenus/6flows/mobile/owner acceptance, prototype_verified=false,DONE0.
+- PASS repository: validator100 IDs/148 components/30 hashes;5 PNG decode; chart ratio/text/gap/mapping asserts; whitespace. Không push/merge.
+- PlotSet đã Save trong Figma và được quick actions liệt kê; launch lỗi môi trường giống maps.to.design. Chưa nhập chart từ plugin, chưa đăng nhập/đưa dữ liệu sang PlotSet. Chart đang dùng là native text/rectangles từ fixtures. Goal tổng thể UI/motion100 màn vẫn ACTIVE.
+
 ## Map UI · 01/11 · checkpoint
 
 - Lease **RELEASED tại checkpoint** owner `codex/direct-map-ui`. [5 màn map](map-ui-checkpoint.md) đã sửa toolbar353pt, pin/preview theo context, sheet304pt và radius selected; không đổi MapCanvas master,100 root IDs, registry148. Một writer trực tiếp; không agent.
