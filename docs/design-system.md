@@ -1,5 +1,12 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Sourced UI/Pantry · 31/10/2026
+
+- [Checkpoint mới](../tracking/sourced-ui-pantry-checkpoint.md): registry148 entries sau khi thêm SDS Tag Toggle On/Off remote mains (`423:849/850`, set`423:848`). Check dependency dùng lại`179:274`; source key/properties ở registry. Không coi entries là component đã nghiệm thu.
+- SB-075 dùng8 source-linked Tag Toggle instances cho4 filter base/selected;44pt pill trong48pt hit area, font12, forest/subtle và radius/pill bind tokens. Không sửa remote masters. Specimen board`431:838` là4 instances.
+- `PantryItemRow` master`16:171` giữ text/action properties và state-bound instance IDs; thêm photo slot`424:838`64×64, radius/sm. Row96pt cho7 fixture mẫu, tên14/21, ngày12/18, quick action12 trong66×48; body spacing/12. Slot của món mới nhập giữ fallback thay vì gán ảnh thực phẩm sai.
+- SB-081 giữ source-native SDS Card và6 selected-photo layers có sẵn; thay icon bằng ảnh loại thực phẩm tương ứng, giữ selected visibility bindings. Pool ảnh tăng26→30; bốn ảnh mới là candidate, chưa owner acceptance. Đây không phải trạng thái lưu ảnh người dùng thật.
+
 ## Continuation · Pantry state và asset reuse · 31/10/2026
 
 - Prototype collection `Prototype · Pantry item state` (`VariableCollectionId:356:4807`) giữ dữ liệu đã lưu/bản nháp riêng cho7 fixture, trạng thái lọc/chọn, lượng dạng phân số và7 thao tác gần nhất của phiên. Đây là biến tương tác mẫu, không phải design tokens hoặc bằng chứng có database/push/local persistence thật. STRING dùng scope TEXT_CONTENT; FLOAT/BOOLEAN giữ ALL_SCOPES do API của phiên từ chối scope rỗng cho các kiểu này.

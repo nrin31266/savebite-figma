@@ -16,3 +16,17 @@ Chọn theo chức năng, giữ màu xanh–kem và Be Vietnam Pro. Đây là th
 Các nguồn [unDraw](https://undraw.co/license), [Storyset](https://storyset.com/faqs), [Shadcnblocks](https://www.shadcnblocks.com/terms) đã kiểm điều khoản, **chưa nhập asset**. Chưa chọn hình cụ thể phù hợp hơn pool hiện có; không coi tên nguồn là deliverable đã mang vào app. Brand “Mầm” là concept vector riêng, tách provenance khỏi bộ nguồn bên ngoài.
 
 Kết quả áp dụng và ảnh trước/sau: [brand/source checkpoint](../../tracking/brand-polish-checkpoint.md).
+
+## Tuyển thêm theo chức năng · sourced UI/Pantry batch
+
+| Nguồn đã kiểm | Chọn cho SaveBite | Trạng thái thực tế / giới hạn |
+|---|---|---|
+| [Groc · Kitstack](https://ui8.net/kitstack/products/groc--grocery-shopping-mobile-app-ui-kit) | Listing có thumbnail nền sạch, tên/lượng đi cùng ảnh, điều khiển số lượng gọn. Áp dụng nguyên tắc vào SB-075: ảnh64pt, row96pt, khoảng cách12pt; thông tin hạn vẫn bằng chữ. | Đã xem ảnh preview trong browser; đây là kit thương mại, **chưa mua/chưa nhập asset kit**. Layout Pantry được chỉnh native từ master đang có, không copy ảnh screenshot thành UI. Không lấy AI meal plan/delivery vào MVP. |
+| [Airbnb · Summer Release2025](https://news.airbnb.com/product-releases/airbnb-2025-summer-release) | Ảnh món/dịch vụ làm nội dung chính; metadata yên, thứ bậc ảnh → tên → giá/điều kiện. Chọn làm hướng đối chiếu tiếp cho SB-015/034/041 và nhóm Orders. | Đã mở trang chính thức và xem hình Services/detail. **Tham khảo bố cục**, không có quyền nhập ảnh món, logo hoặc UI của Airbnb làm asset SaveBite; chưa claim áp dụng cả nhóm màn. |
+| [Untitled UI · free kit](https://www.untitledui.com/free-figma-ui-kit) · [license](https://www.untitledui.com/license) | Đối chiếu spacing/label/error của form và cấu trúc settings; không chọn phong cách dashboard web cho màn iPhone. | Đã xem trang kit và đi tới luồng tải FREE; luồng tải chuyển sang checkout. **Chưa tải/nhập**, không gửi email hoặc hoàn tất checkout. Không nhầm mô tả PRO trên trang bán với nội dung bản FREE đã có. |
+| [Figma SDS · Tag Toggle](https://github.com/figma/sds) | Source-native filter Off/On; override màu xanh–kem, font Be Vietnam Pro12pt, pill44pt trong vùng48pt. | **Đã import native** set `423:848`, On `423:849`, Off `423:850`;8 instances ở SB-075,4 specimen instances trên board `431:838`. Check dependency reuse `179:274`. Present đã thử Kệ khô và Ngăn đông. |
+| [Pexels](https://www.pexels.com/license/) | Bổ sung ảnh cho đúng4 khoảng trống Pantry: rau, sữa chua, gạo, đậu; reuse sữa/bánh/trứng từ pool hiện có. | **4 file tải thật, hash và nguồn trong [manifest](../../assets/manifest.json)**; dùng ở thumbnails075 và ảnh theo món081. Tổng pool30 ảnh/minh họa. Ảnh là minh họa loại thực phẩm, không xác nhận bao bì/độ tươi/nhãn hiệu; candidate chờ owner review. |
+
+[Travel App của Osman Assem](https://osmanassem.com/travel-app/) đã đọc trang tác giả và thấy preview dark/teal; không chọn làm kit chính vì lệch màu và density của SaveBite. [unDraw](https://undraw.co/illustrations) đã mở riêng Breakfast Together để xem, không tải: nhân vật không bổ sung đúng chỗ thiếu ảnh thực phẩm. Không nhập thêm chỉ vì miễn phí.
+
+Evidence và phạm vi QA: [sourced UI/Pantry checkpoint](../../tracking/sourced-ui-pantry-checkpoint.md). Đây là tuyển nguồn và áp dụng một batch cụ thể, không phải nghiệm thu polish100 màn.

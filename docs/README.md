@@ -1,5 +1,7 @@
 # Bắt đầu làm SaveBite
 
+**Batch UI/asset mới:** [sourced UI/Pantry checkpoint](../tracking/sourced-ui-pantry-checkpoint.md) —7 thumbnail món, ảnh chi tiết theo món, SDS Tag Toggle native; pool30 ảnh và registry148 entries. Đã bấm thử hai filter và hai ảnh detail; toàn bộ flow100 màn vẫn chưa nghiệm thu.
+
 **Phiên này dừng theo owner · F-05 WIP:** [checkpoint tiếp quản và lỗi còn mở](../tracking/f05-wip-checkpoint.md). Lease đã RELEASED; chưa nghiệm thu.
 
 **Continuation31/10 · lịch sử batch trước:** [Pantry state, asset reuse và QA còn lại](../tracking/continuation-checkpoint.md). Đã có editor082, dữ liệu riêng7 fixture và4 pose Mầm áp vào màn; chưa hoàn tất F-01..F-06 hoặc polish100 màn. Checkpoint bên dưới giữ lịch sử trước continuation.

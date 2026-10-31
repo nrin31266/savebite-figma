@@ -2,6 +2,13 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
+## Sourced UI & Pantry imagery · checkpoint31/10→01/11
+
+- Lease **RELEASED tại checkpoint** · owner `codex/direct-sourced-ui`. [Batch UI/asset](sourced-ui-pantry-checkpoint.md):4 ảnh có nguồn mới,7 Pantry thumbnails,6 detail photo layers và8 SDS Tag Toggle instances.100 roots giữ nguyên; registry148 entries/pool30 ảnh, DONE0. Một writer trực tiếp; không đổi logic form/reminder WIP. MCP reauthentication đã PASS, không cần restart app.
+- PASS scoped Present: Kệ khô→Gạo và Ngăn đông→Đậu, filter/ảnh/ngày hạn/bảo quản tương ứng. Root/binding/native instance read-back và visual screenshots đã lưu; không suy diễn toànF05 hoặc100 màn PASS. Owner review vẫn chờ.
+- PASS repository: validator100 IDs/148 components/30 hashes; evidence PNG decode, live mapping/binding asserts và whitespace. Không push/merge.
+- Source research có trạng thái thật: Groc/Airbnb làm reference, SDS Toggle đã nhập native; Untitled FREE dừng trước checkout, không tải/mua. Tiếp tục polish Discovery/Offer/map theo nguồn đã chọn; lỗi F05 drift cũ còn OPEN.
+
 ## Phiên dừng theo owner · F-05 WIP
 
 - Owner yêu cầu dừng thiết kế, commit và merge main để tiếp tục ở chat cũ. Goal phiên PAUSED, lease `codex/direct-polish` RELEASED. [Checkpoint tiếp quản](f05-wip-checkpoint.md):246 Pantry variables,100 root IDs giữ nguyên; lỗi drift date type/name/category/unit chưa sửa; add/reminder chưa chạy QA thành công. Không DONE hoặc owner acceptance.
