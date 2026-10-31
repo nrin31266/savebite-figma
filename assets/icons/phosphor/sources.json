@@ -1,0 +1,250 @@
+[
+  {
+    "name": "bread",
+    "filePath": "assets/icons/phosphor/duotone/bread-duotone.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/duotone/bread-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "f4340fa328f19440443b4e727eb94a57ff1a4a57b45379814e871d07746964d6"
+  },
+  {
+    "name": "bowl-food",
+    "filePath": "assets/icons/phosphor/duotone/bowl-food-duotone.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/duotone/bowl-food-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "b22499e64afe5c7a1cf059727ee5266b06e33d2e1791281276305b43ad367a95"
+  },
+  {
+    "name": "carrot",
+    "filePath": "assets/icons/phosphor/duotone/carrot-duotone.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/duotone/carrot-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "f3dd31f87fb9c50edd3a57023640ba1ad9ed1e1f34763d518f789f52199ca64e"
+  },
+  {
+    "name": "plant",
+    "filePath": "assets/icons/phosphor/duotone/plant-duotone.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/duotone/plant-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "36d1d5f41d065676bafc964857fdfe7255c378f6700b1712ac62c8d47c0263bd"
+  },
+  {
+    "id": "98:29",
+    "name": "Bag",
+    "filePath": "assets/icons/phosphor/regular/shopping-bag.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/shopping-bag.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "cd1027fea55e6d35ac9a3f9b6c657fdd9b56775609d925ae3a903fcf369c68f0"
+  },
+  {
+    "id": "98:32",
+    "name": "Bell",
+    "filePath": "assets/icons/phosphor/regular/bell.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/bell.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "439b02c746ff59945b6175c6d327113ca3f7a729a43d5bcafb278a0f11ee34b5"
+  },
+  {
+    "id": "98:35",
+    "name": "Calendar",
+    "filePath": "assets/icons/phosphor/regular/calendar-blank.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/calendar-blank.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "6268583ae0ea04e93fd24f1e70d47a8e8d79c88fc304af397b95b318980215d6"
+  },
+  {
+    "id": "98:38",
+    "name": "CaretDown",
+    "filePath": "assets/icons/phosphor/regular/caret-down.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/caret-down.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "53f0cf2d0b144ac3cb07e353e0cd0853ffb3ed432d741460ce288edfcb0924b1"
+  },
+  {
+    "id": "98:41",
+    "name": "CaretLeft",
+    "filePath": "assets/icons/phosphor/regular/caret-left.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/caret-left.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "623bf248fe21a8170344e168aaac2e174119cea5d7c5d0fb0dc84f581009475f"
+  },
+  {
+    "id": "98:44",
+    "name": "CaretRight",
+    "filePath": "assets/icons/phosphor/regular/caret-right.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/caret-right.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "e6dec01e074807965b7f3146b976a9b5e82c31d9c2c88aeb52e77cc2ab16c1d7"
+  },
+  {
+    "id": "98:47",
+    "name": "Check",
+    "filePath": "assets/icons/phosphor/regular/check.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/check.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "cbb89a8c42f283d4f846eb935e05d88c1be04462f16480e068c0f82b9ce40b12"
+  },
+  {
+    "id": "98:50",
+    "name": "Clock",
+    "filePath": "assets/icons/phosphor/regular/clock.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/clock.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "b8c6c2899d2b9af48a55ba02ba6d7faf89b757915772dd24f5397f7b0d02aa5c"
+  },
+  {
+    "id": "98:53",
+    "name": "ForkKnife",
+    "filePath": "assets/icons/phosphor/regular/fork-knife.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/fork-knife.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "24388d27ec51856a899b2ba8a1f68b1c31b385ed1f27eb275d5685ebf951b80f"
+  },
+  {
+    "id": "98:56",
+    "name": "Heart",
+    "filePath": "assets/icons/phosphor/regular/heart.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/heart.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "312dee73d1d969631d5498012f619ccf4edbdf31e1be3e65af4f4f1b3ac1b2dd"
+  },
+  {
+    "id": "98:59",
+    "name": "Info",
+    "filePath": "assets/icons/phosphor/regular/info.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/info.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "438a1f319d53d86e840af73fb7b1d224c9224a437b9fa449a4e2cb45a82a3552"
+  },
+  {
+    "id": "98:62",
+    "name": "MagnifyingGlass",
+    "filePath": "assets/icons/phosphor/regular/magnifying-glass.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/magnifying-glass.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "f9fa2561978a9a3291e8ae0ebfcb651104f5069fade8f84871627bca68889cde"
+  },
+  {
+    "id": "98:65",
+    "name": "MapPin",
+    "filePath": "assets/icons/phosphor/regular/map-pin.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/map-pin.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "523f024fa467fc285d95c1db4ed6c32b640513c79780d14310bebf342b6f94fb"
+  },
+  {
+    "id": "98:68",
+    "name": "Minus",
+    "filePath": "assets/icons/phosphor/regular/minus.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/minus.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "5a068d1cfd707fde5ddb0ce0623958123b6a5afba98401318983aeb0fdad6382"
+  },
+  {
+    "id": "98:71",
+    "name": "Plus",
+    "filePath": "assets/icons/phosphor/regular/plus.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/plus.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "d688feb9dd2e41c1721d6906a05a2a42e18cd774762fe706d72b2bdfd91cddc4"
+  },
+  {
+    "id": "98:74",
+    "name": "QRCode",
+    "filePath": "assets/icons/phosphor/regular/qr-code.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/qr-code.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "7c6b19eb844b25e39b343576dec7c38b1da24caa661f72392fbf1318db7f5330"
+  },
+  {
+    "id": "98:77",
+    "name": "Receipt",
+    "filePath": "assets/icons/phosphor/regular/receipt.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/receipt.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "7e3473e35fc2b7b9b66032aef0b19fc22e947d10472b67da0b38fb29d84af7ea"
+  },
+  {
+    "id": "98:80",
+    "name": "ShieldCheck",
+    "filePath": "assets/icons/phosphor/regular/shield-check.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/shield-check.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "bb04d552c0baaaabd90f7eb60760cb0c7ddb7e9f47e4b76e9599ddd7dfd8eaa7"
+  },
+  {
+    "id": "98:83",
+    "name": "Sparkle",
+    "filePath": "assets/icons/phosphor/regular/sparkle.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/sparkle.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "9e2c17a26564098cb48dd95737a83c742156f755f13cedaa30f9d864d0e3eb76"
+  },
+  {
+    "id": "98:86",
+    "name": "Tag",
+    "filePath": "assets/icons/phosphor/regular/tag.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/tag.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "56633631b2e56436c33010c432f5da46533d2cfcae9773e694ee90ad43d96d69"
+  },
+  {
+    "id": "98:89",
+    "name": "Trash",
+    "filePath": "assets/icons/phosphor/regular/trash.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/trash.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "e6a830c0409f9e101e3695c981eef98427d39fd01f502b9cbd6900930b01f19c"
+  },
+  {
+    "id": "98:92",
+    "name": "User",
+    "filePath": "assets/icons/phosphor/regular/user.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/user.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "787434f7fef95f20e137d309d3c6b8b471548c55c9dfc137ae10625d70959d11"
+  },
+  {
+    "id": "98:95",
+    "name": "Warning",
+    "filePath": "assets/icons/phosphor/regular/warning-circle.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/warning-circle.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "e48a90760a68659fd3f06dd9187e471aead4877c72e915339071b2c7f7bd714c"
+  },
+  {
+    "id": "98:98",
+    "name": "X",
+    "filePath": "assets/icons/phosphor/regular/x.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/x.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "7397b15e1fa66eaf6ff9b59fe91d483cb5c3bcf75b2fe052097ab6f0593b513a"
+  }
+]
