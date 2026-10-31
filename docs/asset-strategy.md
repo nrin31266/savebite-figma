@@ -1,5 +1,9 @@
 # Chiến lược Tài nguyên Hình ảnh, Icon & Font (Asset-First Strategy)
 
+Checkpoint DEC-015: [mẫu tuyển chọn và cách dùng](references/curated-layouts.md), [bằng chứng áp dụng](../tracking/brand-polish-checkpoint.md). Pool ảnh vẫn26 records; bổ sung7 SVG Phosphor Duotone có MIT/source/hash vào `assets/icons/phosphor/sources.json`.31 SVG brand riêng ở `assets/brand/mam/sources.json` là **ORIGINAL_VECTOR_CONCEPT / CANDIDATE_AWAITING_OWNER_REVIEW**, không phải ảnh stock hay glyph Phosphor. Mầm dùng có chọn lọc cho Entry/empty/loading; không che thông tin safety/QR và chưa coi owner đã chọn mascot.
+
+Ảnh sữa ở SB-081 là ảnh minh họa có nhãn, không là ảnh vật phẩm người dùng đã chụp hoặc bằng chứng độ tươi. Các screenshot đối thủ chỉ để xem tham khảo; không đưa vào manifest hoặc tái phân phối như asset SaveBite.
+
 Tài liệu quy định chính sách tìm kiếm, tái sử dụng, kiểm duyệt bản quyền và quản lý provenance cho toàn bộ ảnh chụp, icon, minh họa, bản đồ và font chữ trên 100 màn hình SaveBite. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [iOS guidelines](ios-guidelines.md), [design system](design-system.md) và [manifest tài nguyên](../assets/manifest.json).
 
 ---

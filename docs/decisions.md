@@ -2,6 +2,22 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-016 · 31/10/2026 · Correction nội dung offer và prototype context
+
+- Nguồn: yêu cầu owner tiếp tục end-to-end, sửa nội dung sai và layout hời hợt; thực thi DEC-014/015, không thêm nghiệp vụ mới.
+- Gỡ claim giờ sản xuất, khối lượng, độ tươi/an toàn và tiết kiệm chưa có dữ liệu. UNKNOWN phải rõ; UI hướng người dùng hỏi cửa hàng/kiểm nhãn, không tự tạo hướng dẫn bảo quản theo món.
+- Prototype dùng bộ fixture canonical để giữ tên/merchant/giá/slot/tồn kho và lượng khi chuyển màn; thay đổi chỉ là mô phỏng local trong Figma, không tạo backend/đơn thật. Tồn kho nhánh urgency là state khác có mốc17:40, không trộn snapshot16:00.
+- Khi bind text/visibility/reactions, phải kiểm read-back và Present thực theo từng nhánh. Chưa kiểm được thì giữ prototype_verified=false; không suy ra tất cả100 màn đã sửa từ vài ví dụ.
+- Scope writer: App All Screens, Components/variables và registries/docs phụ thuộc; một writer trực tiếp, không agent.
+
+## DEC-015 · 31/10/2026 · Merge checkpoint và tiếp tục design polish toàn phạm vi
+
+- Nguồn: owner yêu cầu “commit push merge main phần này” rồi đặt goal tiếp tục tự soi/sửa theo nhóm, chụp nhiều màn, phát triển brand assets/logo/loading và có thể chọn linh vật; ưu tiên chất lượng môn UI/UX, không chỉ đủ màn.
+- Cho phép commit/push/merge checkpoint hiện tại. PR#2 đã merge; không suy ra acceptance hình ảnh hoặc DONE. Phần mới làm trên nhánh `design/brand-and-screen-polish`.
+- Cho phép khám phá original mascot/brand variants, thêm bớt asset có mục đích, tinh chỉnh họ màu và component kits; một writer, native editable UI, giữ nghiệp vụ và fixture. Candidate “Mầm” (túi giấy/mầm lá) là hướng do designer chọn để thử, chưa phải mascot đã được owner duyệt.
+- Audit cả100 màn theo nhóm nhỏ, screenshot/read-back và Present; sửa chỗ trống thiếu ý nghĩa, hierarchy, density, typography, alignment, touch/contrast, hình/icon/source component. Không dùng contact sheet hoặc bộ màu đẹp để thay chứng cứ full-flow/content QA.
+- Goal ACTIVE không giới hạn một batch; tiếp tục cho tới khi phạm vi yêu cầu được kiểm chứng. Cập nhật docs tại mốc quan trọng, không lặp sửa tài liệu sau mỗi chỉnh pixel.
+
 ## DEC-014 · 31/10/2026 · Một writer trực tiếp, dùng kit có nguồn và sửa lại bố cục
 
 - Nguồn: owner yêu cầu tự vẽ, không giao agent, giữ họ màu hiện tại; yêu cầu tìm mẫu từ lĩnh vực khác nếu phù hợp, dùng Apple kit đã chia sẻ và shadcn preset, tăng ảnh/icon và làm lại màn cũ. Chỉ sửa docs tại các checkpoint quan trọng.

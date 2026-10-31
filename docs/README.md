@@ -1,6 +1,12 @@
 # Bắt đầu làm SaveBite
 
+**Phiên này dừng theo owner · F-05 WIP:** [checkpoint tiếp quản và lỗi còn mở](../tracking/f05-wip-checkpoint.md). Lease đã RELEASED; chưa nghiệm thu.
+
+**Continuation31/10 · lịch sử batch trước:** [Pantry state, asset reuse và QA còn lại](../tracking/continuation-checkpoint.md). Đã có editor082, dữ liệu riêng7 fixture và4 pose Mầm áp vào màn; chưa hoàn tất F-01..F-06 hoặc polish100 màn. Checkpoint bên dưới giữ lịch sử trước continuation.
+
 SaveBite là thiết kế ứng dụng iPhone tiếng Việt: khám phá thực phẩm giá giảm cuối ngày → đặt giữ chỗ trước → đến cửa hàng nhận và thanh toán tại quầy; **Smart Pantry** hỗ trợ quản lý hạn dùng thực phẩm cá nhân tại nhà. Repo chỉ thực hiện Figma và tài liệu/bằng chứng thiết kế.
+
+**Checkpoint mới nhất · DEC-015:** [brand, kit nguồn và audit100 màn](../tracking/brand-polish-checkpoint.md), [mẫu tuyển chọn theo chức năng](references/curated-layouts.md).100 root,145 registry entries gồm dependencies/candidates; DESIGN_REVIEW50 + NEEDS_REWORK50, DONE0.31 brand SVG concept và7 Phosphor SVG mới; Apple Keyboard/SDS Card đã dùng native. Goal polish đầy đủ vẫn ACTIVE, chưa owner acceptance.
 
 ## Cho người mới
 
@@ -17,9 +23,9 @@ SaveBite là thiết kế ứng dụng iPhone tiếng Việt: khám phá thực 
 
 **Kế hoạch hiện hành (31/10/2026):** tiếp tục correction/QA toàn100 màn theo [Plan 2](plans/build-100-screens-prototype.md), [ma trận art direction](screen-art-direction.md) và [checkpoint có nguồn](../tracking/sourced-design-checkpoint.md). [Plan 1](plans/phase1-fix-sb002-sb034.md), [Plan A](plans/batch-A-entry-discovery-offer.md) và [Plan B](plans/batch-B-orders-pantry-account.md) giữ lịch sử creation; các con số thiếu màn trong plan lịch sử không override inventory100 root hiện tại. Baseline vẫn chờ owner review; một writer trực tiếp theo DEC-014.
 
-Không cần file nguồn bên ngoài repo hoặc lịch sử chat để hiểu yêu cầu hiện hành. [Decisions](decisions.md) lưu các quyết định có nguồn duyệt (`DEC-001..DEC-014`); quyền triển khai không phải nghiệm thu output.
+Không cần file nguồn bên ngoài repo hoặc lịch sử chat để hiểu yêu cầu hiện hành. [Decisions](decisions.md) lưu các quyết định có nguồn duyệt (`DEC-001..DEC-015`); quyền triển khai không phải nghiệm thu output.
 
-**Checkpoint mới nhất · DEC-014:** [kit có nguồn và correction trực tiếp](../tracking/sourced-design-checkpoint.md). Đã có100 native root,90 component entries đăng ký,26 ảnh/minh họa; đây chưa phải100 màn đạt QA. Apple Search/Toggle copy thực và Figma Simple Design System Button/Input đã dùng vào app; nhiều flow/màn cũ vẫn NEEDS_REWORK. Xem progress hiện hành trước các checkpoint lịch sử.
+**Checkpoint đã merge · DEC-014 (lịch sử trước polish):** [kit có nguồn và correction trực tiếp](../tracking/sourced-design-checkpoint.md). Đã có100 native root,90 component entries đăng ký,26 ảnh/minh họa; đây chưa phải100 màn đạt QA. Apple Search/Toggle copy thực và Figma Simple Design System Button/Input đã dùng vào app; nhiều flow/màn cũ vẫn NEEDS_REWORK. Xem progress hiện hành trước các checkpoint lịch sử.
 
 ## Mở thiết kế và kiểm tra
 

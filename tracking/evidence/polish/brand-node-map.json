@@ -1,0 +1,173 @@
+[
+  {
+    "key": "mam-hello",
+    "id": "231:238",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-carry",
+    "id": "231:252",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-kitchen",
+    "id": "231:269",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-quiet",
+    "id": "231:285",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-retry",
+    "id": "231:299",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-celebrate",
+    "id": "231:314",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-mail",
+    "id": "231:330",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mam-search",
+    "id": "231:346",
+    "kind": "MASCOT"
+  },
+  {
+    "key": "mark-bag-forest",
+    "id": "231:364",
+    "kind": "MARK"
+  },
+  {
+    "key": "mark-bag-cream",
+    "id": "231:371",
+    "kind": "MARK"
+  },
+  {
+    "key": "mark-bag-wheat",
+    "id": "231:378",
+    "kind": "MARK"
+  },
+  {
+    "key": "pattern-leaf-scatter",
+    "id": "231:385",
+    "kind": "PATTERN"
+  },
+  {
+    "key": "pattern-market-stripe",
+    "id": "231:418",
+    "kind": "PATTERN"
+  },
+  {
+    "key": "pattern-receipt-rule",
+    "id": "231:429",
+    "kind": "PATTERN"
+  },
+  {
+    "key": "pattern-paper-fold",
+    "id": "231:450",
+    "kind": "PATTERN"
+  },
+  {
+    "key": "wordmark-forest",
+    "id": "231:459",
+    "main": "231:459",
+    "kind": "WORDMARK"
+  },
+  {
+    "key": "wordmark-cream",
+    "id": "231:468",
+    "main": "231:468",
+    "kind": "WORDMARK"
+  },
+  {
+    "key": "sticker-forest",
+    "id": "231:826",
+    "main": "231:478",
+    "kind": "BRAND_STICKER"
+  },
+  {
+    "key": "sticker-wheat",
+    "id": "231:829",
+    "main": "231:480",
+    "kind": "BRAND_STICKER"
+  },
+  {
+    "key": "sticker-sage",
+    "id": "231:832",
+    "main": "231:482",
+    "kind": "BRAND_STICKER"
+  },
+  {
+    "key": "sticker-paper",
+    "id": "231:836",
+    "main": "231:484",
+    "kind": "BRAND_STICKER"
+  },
+  {
+    "key": "sticker-terracotta",
+    "id": "231:839",
+    "main": "231:486",
+    "kind": "BRAND_STICKER"
+  },
+  {
+    "key": "sticker-quiet",
+    "id": "231:842",
+    "main": "231:488",
+    "kind": "BRAND_STICKER"
+  },
+  {
+    "key": "activity-forest-1",
+    "id": "231:491",
+    "main": "231:491",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-forest-2",
+    "id": "231:498",
+    "main": "231:498",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-forest-3",
+    "id": "231:505",
+    "main": "231:505",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-forest-static",
+    "id": "231:512",
+    "main": "231:512",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-cream-1",
+    "id": "231:519",
+    "main": "231:519",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-cream-2",
+    "id": "231:526",
+    "main": "231:526",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-cream-3",
+    "id": "231:533",
+    "main": "231:533",
+    "kind": "ACTIVITY_STATE"
+  },
+  {
+    "key": "activity-cream-static",
+    "id": "231:540",
+    "main": "231:540",
+    "kind": "ACTIVITY_STATE"
+  }
+]

@@ -246,5 +246,68 @@
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
     "sha256": "7397b15e1fa66eaf6ff9b59fe91d483cb5c3bcf75b2fe052097ab6f0593b513a"
+  },
+  {
+    "name": "egg",
+    "filePath": "assets/icons/phosphor/duotone/egg-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/egg-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "9711d0ee8d2e5d90f8ea179e8e70395a79b69699b5ea0546fcb4b1b169ed38a5",
+    "id": "262:817"
+  },
+  {
+    "name": "orange-slice",
+    "filePath": "assets/icons/phosphor/duotone/orange-slice-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/orange-slice-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "ce297a926c6f6ec232cb48dfcbaa7e60430f502e87d41e7996e96d40bf6b24b7",
+    "id": "262:821"
+  },
+  {
+    "name": "fish",
+    "filePath": "assets/icons/phosphor/duotone/fish-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/fish-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "b3de2e6bcd4e1a4d29a621efdad3ffdd28bf6a2ae7aeeac66f95093b27fe9219",
+    "id": "262:825"
+  },
+  {
+    "name": "cheese",
+    "filePath": "assets/icons/phosphor/duotone/cheese-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/cheese-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "e8f498baeba1bdf36538b0a448b98b6bd157fe438120b9dba51499db3c0ebc4f",
+    "id": "262:829"
+  },
+  {
+    "name": "grains",
+    "filePath": "assets/icons/phosphor/duotone/grains-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/grains-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "8d6e8b74c085c02c6a8f74d25d4de0a56c0096d0b1c69a64b5b8137231a0dec3",
+    "id": "262:833"
+  },
+  {
+    "name": "jar",
+    "filePath": "assets/icons/phosphor/duotone/jar-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/jar-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "387842214b478e839ffcdf184ec49b89836bc2cb86f33f78399fa375595fe063",
+    "id": "262:837"
+  },
+  {
+    "name": "snowflake",
+    "filePath": "assets/icons/phosphor/duotone/snowflake-duotone.svg",
+    "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/snowflake-duotone.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "dc38b26c8a6f932a3f0bf9337e0f36678e052d8c757e051c92405d6819370985",
+    "id": "262:841"
   }
 ]

@@ -4,6 +4,8 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ## Phạm vi và đầu ra
 
+Prototype polish31/10 (DEFAULT theo DEC-014/015): email mẫu `minhanh@example.com`, không gửi thư thật. SB-006 bắt đầu chưa xác nhận đọc hướng dẫn/quyền riêng tư; CTA disabled tới khi tick. “Điều cần biết” mở099, “Quyền riêng tư” mở098; Back giữ trạng thái form. SB-005 cho xem món/Pantry không đăng nhập, không ngầm coi thao tác xem là đồng ý điều khoản chưa có văn bản. SB-048 là nhánh demo17:40, còn1 phần bánh/20 phút tới18:00; các màn mặc định vẫn16:00 ngày19/10/2026. Context thời gian/tồn kho xuyên flow chưa hoàn thiện, xem [checkpoint](../tracking/brand-polish-checkpoint.md).
+
 `CONFIRMED` Repo chỉ thiết kế Figma: consumer mobile tiếng Việt, Rescue Market là core, Smart Pantry là bổ trợ. Yêu cầu thiết kế đã tổng hợp trong docs này; tài liệu học phần và nguồn tham khảo gốc lưu riêng, không cần chúng để tiếp tục.
 
 - Mục tiêu: 100 hi-fi frames có nhiệm vụ/trạng thái khác nhau, low-fi và ít nhất một prototype end-to-end. Low-fi/components/overlays nhỏ không cộng vào 100.
@@ -235,6 +237,8 @@ Dữ liệu mẫu phục vụ bố cục và prototype; không phải hạn bả
 | pantry-demo-peas | Đậu Hà Lan /1 túi | Ngăn đông | Use by · 28/10/2026 |
 
 Phân bố:4 ngăn mát,2 kệ khô,1 ngăn đông. Thanh màu trên hàng thể hiện nhóm ngày hạn; không diễn giải là điểm an toàn hoặc phần trăm tuổi thọ thực phẩm. Màn thêm món là prototype dữ liệu mẫu; chưa chứng minh nhập văn bản, lưu trên thiết bị hoặc gửi thông báo thật. Category/date/storage selection có biến prototype; snapshot tồn kho sau lưu còn cần QA nhất quán toàn luồng.
+
+Fixture thêm món trong prototype F-05 (`DEFAULT`, correction31/10): **WIP / chưa xác minh; Present QA có lỗi drift dữ liệu, xem [checkpoint](../tracking/f05-wip-checkpoint.md).** `pantry-demo-added-milk` · “Sữa tươi mới mua”,1 hộp, ngăn mát; ngày ban đầu21/10/2026 do dữ liệu mẫu, có thể đổi hoặc để chưa rõ theo nhãn. Bản mẫu có một slot thêm món để trình diễn danh sách/chi tiết/sửa/nhắc/dùng/bỏ xuyên màn; không giả định hỗ trợ nhập văn bản tùy ý hay số bản ghi không giới hạn. Đây là bản ghi khác sữa tươi đã có trong snapshot7 món. First-run074 khởi tạo tủ trống một lần; các lượt quay lại không được xóa dữ liệu đã thêm.
 
 ### Manifest ảnh
 

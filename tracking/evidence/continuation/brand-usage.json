@@ -1,0 +1,226 @@
+{
+  "directOrVisibilityBoundUse": [
+    {
+      "assetId": "brand-mam-hello",
+      "masterId": "231:238",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-carry",
+      "masterId": "231:252",
+      "screens": [
+        "SB-073"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-kitchen",
+      "masterId": "231:269",
+      "screens": [
+        "SB-004"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-quiet",
+      "masterId": "231:285",
+      "screens": [
+        "SB-096"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-retry",
+      "masterId": "231:299",
+      "screens": [
+        "SB-057"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-celebrate",
+      "masterId": "231:314",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-mail",
+      "masterId": "231:330",
+      "screens": [
+        "SB-007",
+        "SB-010"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mam-search",
+      "masterId": "231:346",
+      "screens": [
+        "SB-022"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mark-bag-forest",
+      "masterId": "231:364",
+      "screens": [
+        "SB-002",
+        "SB-003",
+        "SB-004",
+        "SB-012",
+        "SB-013",
+        "SB-014",
+        "SB-015"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mark-bag-cream",
+      "masterId": "231:371",
+      "screens": [
+        "SB-001",
+        "SB-005",
+        "SB-011"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-mark-bag-wheat",
+      "masterId": "231:378",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-pattern-leaf-scatter",
+      "masterId": "231:385",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-pattern-market-stripe",
+      "masterId": "231:418",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-pattern-receipt-rule",
+      "masterId": "231:429",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-pattern-paper-fold",
+      "masterId": "231:450",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-wordmark-forest",
+      "masterId": "231:459",
+      "screens": [
+        "SB-002",
+        "SB-003",
+        "SB-004"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-wordmark-cream",
+      "masterId": "231:468",
+      "screens": [
+        "SB-005"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-sticker-forest",
+      "masterId": "231:478",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-sticker-wheat",
+      "masterId": "231:480",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-sticker-sage",
+      "masterId": "231:482",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-sticker-paper",
+      "masterId": "231:484",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-sticker-terracotta",
+      "masterId": "231:486",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-sticker-quiet",
+      "masterId": "231:488",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-forest-1",
+      "masterId": "231:491",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-forest-2",
+      "masterId": "231:498",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-forest-3",
+      "masterId": "231:505",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-forest-static",
+      "masterId": "231:512",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-cream-1",
+      "masterId": "231:519",
+      "screens": [
+        "SB-001"
+      ],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-cream-2",
+      "masterId": "231:526",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-cream-3",
+      "masterId": "231:533",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    },
+    {
+      "assetId": "brand-activity-cream-static",
+      "masterId": "231:540",
+      "screens": [],
+      "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+    }
+  ],
+  "usedMasters": 11,
+  "totalMasters": 31,
+  "note": "Does not count timed CHANGE_TO dependency variants as direct placements; unused concepts remain candidates."
+}
