@@ -36,20 +36,17 @@ Nguồn chuẩn theo domain cho thực thi Figma, quản lý đa tác tử, 7 c�
 
 **Dùng file được user cung cấp nếu thật sự có quyền edit**. Không tự tạo bản thay thế có tên tương tự rồi nói rằng file gốc đã được cập nhật. Nếu file thuộc sai team/Starter, agent đề xuất cách chuyển file/quyền sang Education cho người dùng duyệt.
 
-Page Figma **đề xuất tối giản**, không tạo nhiều page chỉ vì đã dự kiến 100 màn. Agent phải audit file hiện hữu, tái sử dụng page hợp lệ, và chỉ chia khi canvas thực sự khó quản lý. Không áp số thứ tự vào tên page; ID của từng màn vẫn là `SB-xxx`.
+**`DEC-013` (31/10/2026, CONFIRMED):** Figma Plugin API chặn mọi prototype `NAVIGATE` reaction có đích khác page với nguồn ("prototypes are per-page" — hạn chế gốc của Figma, không phải lỗi script). Vì toàn bộ 6 flow `F-01..F-06` đều đi xuyên nhiều nhóm màn hình, **toàn bộ 100 màn hi-fi đếm vào bài phải nằm trên MỘT page duy nhất** để prototype nối được; dùng **Section** (không phải Page) để giữ tổ chức trực quan theo nhóm. Không tạo lại nhiều page hi-fi như kiến trúc cũ.
 
 | Page | Nội dung | Có tính vào 100 hi-fi? |
 |---|---|---|
 | `Foundations` | Variables, text/color styles, grid, accessibility samples | Không |
 | `Components` | Reusable component sets + variants | Không |
 | `Low-Fi` | Wireframes và flow thô | Không |
-| `Rescue Market` | Entry/Discover/Offers/Reservation hi-fi: `SB-001..059` nếu phù hợp flow | Có |
-| `Orders & Pickup` | Tracking, pickup, completion: `SB-060..073` | Có |
-| `Smart Pantry` | Pantry: `SB-074..090` | Có |
-| `Account & Shared` | Account/Impact: `SB-091..100`, có thể chứa entry/shared nếu group khác không phù hợp | Có |
+| `App · All Screens` (`11:3`) | **Toàn bộ 100 `SB-ID` hi-fi**, tổ chức bằng 4 Section theo nhóm nghiệp vụ: `01 · Entry & Discovery` (`SB-001..033`), `02 · Offer & Merchant` (`SB-034..049, 059`), `03 · Reserve & Orders` (`SB-050..058, 060..073`), `04 · Pantry & Account` (`SB-074..100`) | Có |
 | `Archive` | Thiết kế cũ được giữ có ghi chú khi thật sự cần | Không |
 
-Prototype nối **trên frame gốc**, không tạo bản sao ở page khác rồi đếm hai lần. Nếu một page trở nên quá lớn hoặc có nhiều nhóm đồng chỉnh, tách theo luồng thực tế và cập nhật `docs/workflow.md` + registry. `Rescue Market` không buộc giữ một page nếu quá nặng; bảng này là gợi ý ban đầu, không phải Figma layout cố định.
+Prototype nối **trên frame gốc**, không tạo bản sao ở page khác rồi đếm hai lần. Section chỉ là ranh giới tổ chức/lease, không phải ranh giới prototype — di chuyển node giữa section (cùng page) không cần script riêng, chỉ `appendChild` vào section đích và dùng `x`/`y` để không chồng lấn các dải màn khác. Nếu canvas quá lớn để thao tác mượt, cân nhắc thu nhỏ zoom theo section đang làm, không tách lại thành nhiều page (sẽ phá prototype).
 ### Naming conventions
 
 - High-fi frame name: `SB-034 · Offer Detail · Available` hoặc `SB-046 · Offer Detail · Sold Out`.
@@ -197,20 +194,22 @@ Figma đích hiện hành (`DEC-011`): https://www.figma.com/design/7suZz9C8oL5z
 
 ---
 
-## KẾ HOẠCH PHÂN CÔNG 2 AGENT ĐỘC LẬP (50/50 PAGE-ISOLATED SPLIT SAU PHASE 1)
+## KẾ HOẠCH PHÂN CÔNG 2 AGENT ĐỘC LẬP (50/50 SECTION-ISOLATED SPLIT SAU PHASE 1)
 
-Sau khi 10 màn hình đại diện Phase 1 (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) được Owner duyệt làm chuẩn thẩm mỹ (North-Star Baseline), 90 màn hình còn lại được chia cho **2 Agent độc lập** chạy song song theo kiến trúc cô lập vùng ghi:
+Sau khi 10 màn hình đại diện Phase 1 (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) được Owner duyệt làm chuẩn thẩm mỹ (North-Star Baseline), 90 màn hình còn lại được chia cho **2 Agent độc lập** chạy song song theo kiến trúc cô lập vùng ghi. **Theo `DEC-013`, ranh giới cô lập là Section (không phải Page)** vì toàn bộ 100 màn hi-fi nay nằm chung 1 page `App · All Screens` (`11:3`) để prototype liên-flow hoạt động được.
 
-### 1. Kiến trúc Cô lập 6 Pages trên File Figma `7suZz9C8oL5zV2NMxlsIVI`
+### 1. Kiến trúc Cô lập 4 Section trên Page `App · All Screens` (File `7suZz9C8oL5zV2NMxlsIVI`)
 
-| Tên Page trên Figma | Quyền Ghi (Writer Lease) | Dải màn hình (`SB-ID`) | Tổng số màn Hi-Fi |
+| Tên Section trên Figma | Quyền Ghi (Writer Lease) | Dải màn hình (`SB-ID`) | Tổng số màn Hi-Fi |
 |---|---|---|---:|
-| `Foundations` & `Components` | Khóa ở Phase 1 (Shared Tokens, Styles & 24 Core Components) | Không đếm vào 100 | 0 |
+| `Foundations` & `Components` (page riêng) | Khóa ở Phase 1 (Shared Tokens, Styles & 24+ Core Components) | Không đếm vào 100 | 0 |
 | **`01 · Entry & Discovery`** | **Agent 1** (Độc quyền ghi) | `SB-001` .. `SB-033` | **33** |
 | **`02 · Offer & Merchant`** | **Agent 1** (Độc quyền ghi) | `SB-034` .. `SB-049` và `SB-059` | **17** |
 | **`03 · Reserve & Orders`** | **Agent 2** (Độc quyền ghi) | `SB-050` .. `SB-058` và `SB-060` .. `SB-073` | **23** |
 | **`04 · Pantry & Account`** | **Agent 2** (Độc quyền ghi) | `SB-074` .. `SB-100` | **27** |
 | **TỔNG CỘNG** | **Agent 1: 50 màn · Agent 2: 50 màn** | **`SB-001` .. `SB-100`** | **100** |
+
+Cả 2 agent cùng mở **một page** (`setCurrentPageAsync` luôn trỏ `11:3`); cô lập thực tế là KHÔNG sửa frame/section của agent kia, không di chuyển node ra khỏi section đã gán, và lease vẫn ghi theo `tracking/progress.md` như trước (owner/scope/section/thời điểm). Vì không còn ranh giới Page, 2 agent cần phối hợp timing kỹ hơn khi cả hai cùng ghi trong 1 lần `use_figma` call gần nhau (tránh race condition khi 2 script cùng đọc/ghi gần cùng vùng canvas); ưu tiên làm theo batch tuần tự nếu thấy rủi ro, không bắt buộc chạy song song tuyệt đối.
 
 ### 2. Phân bổ Batch theo Cụm Archetype (Không nhân bản rập khuôn)
 - **Agent 1 (50 màn — Discovery, Search, Map, Offer & Auth):**
@@ -226,7 +225,7 @@ Sau khi 10 màn hình đại diện Phase 1 (`SB-002`, `SB-015`, `SB-016`, `SB-0
   - *Batch A2-4 (Smart Pantry Expiry, Actions & Local Data — 8 màn):* `SB-083..090`
   - *Batch A2-5 (Account, Notifications, Settings & Impact — 10 màn):* `SB-091..100`
 - **Quy tắc chống xung đột:**
-  - Mỗi agent chỉ gọi `await figma.setCurrentPageAsync(targetPage)` vào 2 Page được giao và chỉ sửa các dòng tương ứng của mình trong `tracking/screens.csv`.
+  - Mỗi agent chỉ sửa frame bên trong 2 Section được giao (`appendChild` node mới vào đúng section, không tạo ở section khác) và chỉ sửa các dòng tương ứng của mình trong `tracking/screens.csv`.
   - Chưa triển khai 90 màn còn lại khi chưa có Owner Review cho 10 màn Phase 1.
 
 ---

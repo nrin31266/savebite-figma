@@ -88,22 +88,26 @@ Mỗi thay đổi component: ghi vào [components.csv](../../tracking/components
 
 Chỉ nối tới frame đã tồn tại; đích chưa có thì ghi chú để Plan 2 nối lại. Hotspot ≥48×48pt.
 
-| Từ | Phần tử | Đích | Kiểu | Animation |
-|---|---|---|---|---|
-| `SB-002` | `Tiếp tục` | `SB-015` (tạm; Plan 2 đổi thành `SB-003`) | Navigate | Move In ←, 300ms ease-out |
-| `SB-002` | `Bỏ qua` | `SB-015` (tạm; Plan 2 đổi thành `SB-005`) | Navigate | Dissolve 200ms |
-| `SB-015` | `OfferCard` Bánh mì | `SB-034` | Navigate | Smart Animate 320ms (Signature #1) |
-| `SB-015` | `SearchField` | `SB-019` | Navigate | Dissolve 150ms |
-| `SB-015` | `Bản đồ →` | `SB-016` | Navigate | Dissolve 200ms |
-| `SB-015` | Tab `Tủ thực phẩm` / `Tài khoản` | `SB-075` / `SB-091` | Navigate | Instant |
-| `SB-016` | Peek sheet / pin `25.000đ` | `SB-034` | Navigate | Move In ↑ 300ms |
-| `SB-016` | Segment `Danh sách` | `SB-015` | Navigate | Dissolve 200ms |
-| `SB-019` | `Hủy` | Back | Back | — |
-| `SB-019` | Hàng gợi ý Bánh mì | `SB-034` | Navigate | Move In ← 300ms |
-| `SB-034` | `Back` | Back | Back | — |
-| `SB-034` | `Chọn giờ nhận` | `SB-051` | Navigate | Move In ← 300ms |
+**⚠️ Phát hiện khi thực thi (31/10/2026):** `node.setReactionsAsync()` của Figma Plugin API từ chối mọi `NODE`/`NAVIGATE` reaction có đích khác page với nguồn (`"for NAVIGATE actions, destinations must be a different top-level frame on the same page"`) — đúng với mô hình prototyping gốc của Figma ("prototypes are per-page"), không phải lỗi script. `SB-034` nằm ở page `02 · Offer & Merchant` (`11:4`) khác page với `SB-002/015/016/019` (`01 · Entry & Discovery`, `11:3`), và `SB-051` ở page `03 · Reserve & Orders` (`11:5`) khác `SB-034`. Kết quả:
 
-Sau khi nối: set flow starting point tạm `F01 | Phase1 subset | v1` tại `SB-002`; bấm thử từng hotspot ở Present mode.
+| Từ | Phần tử | Đích | Kiểu | Animation | Trạng thái |
+|---|---|---|---|---|---|
+| `SB-002` | `Tiếp tục` | `SB-015` (tạm; Plan 2 đổi thành `SB-003`) | Navigate | Move In ←, 300ms ease-out | ✅ Nối (cùng page) |
+| `SB-002` | `Bỏ qua` | `SB-015` (tạm; Plan 2 đổi thành `SB-005`) | Navigate | Dissolve 200ms | ✅ Nối (cùng page) |
+| `SB-015` | `OfferCard` Bánh mì | `SB-034` | Navigate | Smart Animate 320ms (Signature #1) | ❌ Bị từ chối — khác page |
+| `SB-015` | `SearchField` | `SB-019` | Navigate | Dissolve 150ms | ✅ Nối (cùng page) |
+| `SB-015` | `Bản đồ →` | `SB-016` | Navigate | Dissolve 200ms | ✅ Nối (cùng page) |
+| `SB-015` | Tab `Tủ thực phẩm` / `Tài khoản` | `SB-075` / `SB-091` | Navigate | Instant | ❌ Bị từ chối — khác page (`SB-075/091` ở `11:6`) |
+| `SB-016` | Peek sheet / pin `25.000đ` | `SB-034` | Navigate | Move In ↑ 300ms | ❌ Bị từ chối — khác page |
+| `SB-016` | Segment `Danh sách` | `SB-015` | Navigate | Dissolve 200ms | ✅ Nối (cùng page) |
+| `SB-019` | `Hủy` | Back | Back | — | ✅ Nối |
+| `SB-019` | Hàng gợi ý Bánh mì | `SB-034` | Navigate | Move In ← 300ms | ❌ Bị từ chối — khác page |
+| `SB-034` | `Back` | Back | Back | — | ✅ Nối |
+| `SB-034` | `Chọn giờ nhận` | `SB-051` | Navigate | Move In ← 300ms | ❌ Bị từ chối — khác page |
+
+7/12 hotspot cùng page đã nối và bấm thử được ở Present mode trong page `11:3`. 5 hotspot liên trang (tất cả đích `SB-034`/`SB-051`/`SB-075`/`SB-091`) **không nối được bằng Plugin API**; để nguyên reaction cũ (không có) và ghi `notes` trong `screens.csv`. Đã set flow starting point `F01 | Phase1 subset | v1` tại `SB-002` (page `11:3`) và `F01 | Offer & Merchant | v1` tại `SB-034` (page `11:4`) làm 2 điểm bắt đầu Present riêng cho từng page.
+
+Đây là một phát hiện ảnh hưởng tới kiến trúc 4-page hiện có (ghi ở `tracking/progress.md` mục Open conflict `NAVIGATION`) vì toàn bộ 6 flow `F-01..F-06` trong `docs/experience.md` đều đi xuyên nhiều page. **Cần quyết định của owner trước khi Plan 2 nối prototype ở quy mô 90 màn** — xem mục "Gate mở khóa" trong [Plan 2](build-100-screens-prototype.md).
 
 ## 5. Audit 5 màn còn lại của Phase 1
 
