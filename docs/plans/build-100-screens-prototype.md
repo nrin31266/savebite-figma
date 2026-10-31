@@ -4,6 +4,8 @@ Kế hoạch sản xuất 90 màn còn lại trên [SaveBite-V2](https://www.fig
 
 Trạng thái: `SPECIFIED` · phụ thuộc [Plan 1](phase1-fix-sb002-sb034.md).
 
+> Cập nhật 31/10/2026: đã dựng 30/100 màn. 70 màn còn lại được tách thành [Plan A](batch-A-entry-discovery-offer.md) (36 màn, Section 01–02) và [Plan B](batch-B-orders-pantry-account.md) (34 màn, Section 03–04) để 2 người làm song song; Interaction Map ở mục 7 vẫn là nguồn chuẩn cho reaction.
+
 ---
 
 ## 1. Gate mở khóa
