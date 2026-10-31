@@ -8,11 +8,28 @@ Trạng thái: `SPECIFIED` · phụ thuộc [Plan 1](phase1-fix-sb002-sb034.md).
 
 ## 1. Gate mở khóa
 
-Không bắt đầu trước khi đủ 3 điều kiện:
+Không bắt đầu trước khi đủ 4 điều kiện:
 
-1. Plan 1 xong: 10 màn Phase 1 hết lỗi rubric và đã nối prototype subset.
+1. Plan 1 xong: 10 màn Phase 1 hết lỗi rubric và đã nối prototype subset (trong giới hạn kỹ thuật ở mục 0 dưới đây).
 2. Owner duyệt 10 màn làm baseline (`design_baseline_version = v1.0`).
 3. Ghi `DEC-012` vào [decisions](../decisions.md): owner acceptance Phase 1 + mở 90 màn còn lại. Quyết định này gỡ ràng buộc "Sau pilot: không tự sản xuất 100 màn" trong `AGENTS.md`.
+4. **Owner chọn phương án cho giới hạn prototype liên-page ở mục 0** — đây là quyết định kiến trúc navigation (`AGENTS.md`: "Nghiệp vụ/safety/payment/navigation hoặc breaking design change cần quyết định được ghi log"), ghi thành `DEC-013` trước khi batch nào của Plan 2 bắt đầu nối dây liên trang.
+
+### 0. ⚠️ Giới hạn đã xác nhận: Figma Plugin API không nối được prototype liên trang
+
+Phát hiện khi thực thi Plan 1 (31/10/2026): `node.setReactionsAsync()` từ chối mọi `NODE`/`NAVIGATE` reaction có đích nằm ở page khác với nguồn — thông báo lỗi trực tiếp từ Figma: *"for NAVIGATE actions, destinations must be a different top-level frame on the same page"*. Đã thử và bị từ chối thật: `SB-015→SB-034`, `SB-016→SB-034`, `SB-019→SB-034`, `SB-034→SB-051`, `SB-015→SB-075/091`. Đây là giới hạn gốc của mô hình prototyping Figma ("prototypes are per-page"), không phải lỗi script hay có thể retry.
+
+**Tác động:** Kiến trúc 4-page hiện tại (`workflow.md` §"Kiến trúc Cô lập 6 Pages", `01 Entry&Discovery` / `02 Offer&Merchant` / `03 Reserve&Orders` / `04 Pantry&Account`) khiến **toàn bộ 6 flow `F-01..F-06`** ở mục 6 bên dưới đi xuyên ít nhất 2 page — nghĩa là phần lớn bảng Interaction Map ở mục 7 **không thể nối bằng Plugin API** nếu giữ nguyên 4 page. Ví dụ F-01 một mình đã đi qua cả 4 page.
+
+**3 phương án cho owner chọn (không tự quyết):**
+
+| Phương án | Mô tả | Đánh đổi |
+|---|---|---|
+| **A. Gộp page theo flow** | Dồn các page có flow chính xuyên suốt vào cùng 1 page (ví dụ gộp 4 page hiện tại thành 1–2 page lớn hơn theo nhóm flow F-01/F-05, không theo nhóm nghiệp vụ như hiện tại) | Mất kiến trúc cô lập 50/50 cho 2 agent độc lập trong `workflow.md`; canvas 1 page rất lớn, khó quản lý thủ công |
+| **B. Giữ 4 page, nối liên-page thủ công trong Figma app** | Giữ nguyên kiến trúc; mỗi page có flow starting point riêng; các điểm chuyển page (ví dụ `SB-034 → SB-051`) được owner hoặc người có quyền Editor tự kéo nối bằng tay trong Figma Desktop/web (nối liên-page **có** hỗ trợ ở UI thật của Figma, chỉ Plugin API của phiên này bị chặn) | Prototype demo cần 1 bước thủ công ngoài agent; agent không tự xác minh được các link này, phải ghi rõ "pending:cross-page" và owner tự QA |
+| **C. Hybrid — gộp các cặp page có traffic cao nhất, còn lại dùng B** | Ví dụ gộp `02 Offer & Merchant` với `03 Reserve & Orders` (traffic F-01 cao nhất: offer → reservation) thành 1 page; giữ `01` và `04` riêng, nối thủ công 2 điểm còn lại (`013→034`, `056→060`) | Cân bằng, nhưng vẫn cần ít nhất 1–2 thao tác thủ công |
+
+Plan 2 mặc định đề xuất **Phương án B** (rủi ro thấp nhất, không phá kiến trúc đã duyệt) nhưng **chờ owner xác nhận** trước khi Batch B1 bắt đầu nối dây; cho tới lúc đó, 90 màn vẫn được **thiết kế và đặt đúng page** theo kiến trúc hiện tại, chỉ hoãn bước "nối reaction liên-page".
 
 ## 2. Page, phân công và lease
 
@@ -68,6 +85,8 @@ Không bắt đầu trước khi đủ 3 điều kiện:
 Checkpoint sau B3 (~40 màn): rà gộp component trùng, nhất quán CTA/back/fixture giữa flow.
 
 ## 5. Quy ước prototype
+
+> Mọi `Navigate`/`Move In`/`Smart Animate` dưới đây giả định nguồn và đích **cùng page**. Khi khác page, áp dụng phương án owner đã chọn ở mục 0 trước khi nối (mặc định Phương án B = để `notes` `pending:cross-page`, không tự tạo reaction).
 
 - **Kích thước:** mọi frame `393×852`, Device = iPhone 15, nền prototype `#1E1E1E`.
 - **Push (đi sâu):** `On tap → Navigate → Move In ←`, `Ease Out 300ms`. Back = action `Back`.
