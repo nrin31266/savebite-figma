@@ -1,0 +1,42 @@
+[
+  {
+    "name": "milk-carton",
+    "filePath": "assets/icons/savebite/milk-carton.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=144-108",
+    "status": "AWAITING_OWNER_REVIEW",
+    "sha256": "f2a73e660accf323546b4bb16d21fcb58c66f750a6869024fb9e5dbbd336c321"
+  },
+  {
+    "name": "pantry",
+    "filePath": "assets/icons/savebite/pantry.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=144-117",
+    "status": "AWAITING_OWNER_REVIEW",
+    "sha256": "05fba7ae8f65e89e032a8e95b7a020637e1f96ea2303c89170a944bc8dbe0432"
+  },
+  {
+    "name": "pickup-pass",
+    "filePath": "assets/icons/savebite/pickup-pass.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=144-113",
+    "status": "AWAITING_OWNER_REVIEW",
+    "sha256": "f89f6d3fd7a4d842607af2b255a643d60b71d2529dd44582710e86bb11aa2ddc"
+  },
+  {
+    "name": "rescue-mark-cream",
+    "filePath": "assets/icons/savebite/rescue-mark-cream.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=137-37",
+    "status": "AWAITING_OWNER_REVIEW",
+    "sha256": "42da2fa6853bdb672be5032ba2a4c3a7f9734733c11c0d87aa23ed4a1a53bffb"
+  },
+  {
+    "name": "rescue-mark-forest",
+    "filePath": "assets/icons/savebite/rescue-mark-forest.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=137-30",
+    "status": "AWAITING_OWNER_REVIEW",
+    "sha256": "b656208b82a9475baa569aeafb5d8438994e2f089a9045c5ad277b006f1304da"
+  }
+]

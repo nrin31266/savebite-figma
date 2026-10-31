@@ -2,6 +2,14 @@
 
 Nguồn chuẩn cho Design Tokens, Typography, Iconography và Kiến trúc Component trên Figma. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [iOS guidelines](ios-guidelines.md), [chiến lược asset](asset-strategy.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
+## Checkpoint nguồn component trực tiếp · DEC-014
+
+- Apple kit owner: source-native Search set `158:210` (main `158:211`) và Toggle set `158:197` (On `158:198`, Off `158:201`). Copy qua clipboard Figma đang đăng nhập thành công; source-key/library import Apple26 vẫn bị từ chối. Toggle giữ track51×31 và native Smart Animate200ms, nới component bounds64×48; Search app được chỉnh nền ấm, chữ Be Vietnam Pro, vùng48pt. Không coi toàn bộ Apple kit đã import.
+- Figma Simple Design System: Button set `178:370`, primary `178:371`, neutral `178:374`; Input set `179:232`, default `179:234`, error `179:236`. Là remote source components; các app instance override tokens forest/cream, typography và radius. Không dùng lại giả định property `Label#15:*` của button cũ: source Button có `Label#2:0`; Input có `Label#280:41`, `Value#630:14`.
+- Core icon24 được thay path từ Phosphor Regular chính thức, giữ main IDs; thêm4 Duotone. MIT/source/hash: `assets/icons/phosphor/sources.json`. Custom MilkCarton/PickupPass/Pantry và RescueMark forest/cream là native concept; SVG/source tại `assets/icons/savebite/`, chờ owner review.
+- Pantry category set `150:246`:8 variants, native Auto Layout168×112 cố định, icon32 và label căn giữa. Đã sửa lỗi HUG62pt ở main và row48pt trong picker; không dùng `.resize()` để giả định Auto Layout đã thành fixed.
+- Bảng kit sử dụng thực [Curated UI](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=198-189), [Icon Essentials](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=144-127), [Brand](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=137-44), [Photo Library](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=161-2). Registry ghi90 entries đã đăng ký, không khẳng định toàn bộ source variants đã QA.
+
 Theo `DEC-011`, bản pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. Tài liệu này quy định **Chuẩn Kiến trúc Hệ thống v1.0 (`CONFIRMED`)** trên file Figma mới [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1): loại bỏ hoàn toàn hội chứng lạm dụng thẻ viền (*Boxitis*), áp dụng chuẩn **iPhone 15 (`393×852pt`, Dynamic Island)** và phục vụ 10 màn hình đại diện Phase 1 trước khi mở rộng ra toàn bộ 100 màn hình.
 
 ---
@@ -68,7 +76,7 @@ Theo `DEC-011`, bản pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. 
 
 ### 2.1. Vòng đời Component (Component Lifecycle)
 `LOCAL → CANDIDATE → SHARED → STABLE → DEPRECATED`
-- Trước khi tạo bất kỳ component mới nào, bắt buộc tra cứu [components.csv](../tracking/components.csv) và trang `Components` (`27:87`) trên Figma.
+- Trước khi tạo bất kỳ component mới nào, bắt buộc tra cứu [components.csv](../tracking/components.csv) và trang `Components` (`11:2`) trên Figma hiện hành; ID khác từ file cũ không được dùng lại.
 - Ưu tiên truyền nội dung qua **Component Properties** (`Text`, `Boolean`, `Instance Swap`) và chuyển đổi trạng thái qua **Variants** thay vì detach instance.
 
 ### 2.2. Danh mục Component Chuẩn cho Toàn bộ 100 Màn hình
@@ -90,7 +98,11 @@ Theo `DEC-011`, bản pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. 
 
 Theo `DEC-011`, toàn bộ node ID cũ trên file `NLTv70kDZ2i3HpOnOKQCDY` đã được nghỉ hưu. Trên file mới [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1), hệ thống Component Phase 1 tập trung vào đúng **24 Core Components** phục vụ trực tiếp 10 màn hình đại diện (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) và tái sử dụng cho 90 màn còn lại:
 - **Mapping chi tiết:** Lưu tại [components.csv](../tracking/components.csv).
-- **Trạng thái hiện tại:** `CANDIDATE` (`qa_status=BLOCKED_FIGMA_MCP` chờ phiên có kết nối Figma MCP thực thi ghi trực tiếp lên `7suZz9C8oL5zV2NMxlsIVI` và điền `figma_component_id` thực tế).
+- **Trạng thái hiện tại:** tham chiếu từng dòng trong registry và read-back live, không áp dụng nhãn `BLOCKED_FIGMA_MCP` lịch sử cho mọi component. Theo `DEC-012`, batch end-to-end kiểm lại mains/variants/properties, bổ sung sheet dùng lại và sửa mapping; specification ở §2.2 không chứng minh variants đó đã tồn tại.
+
+### End-to-end reconciliation (`DEC-012`, 31/10/2026)
+
+63 mains/sets hiện được ghi registry sau read-back (39 màn hiện có). Đây là inventory, không phải thư viện đã được nghiệm thu. Phần lớn component gốc là plain COMPONENT, không có Theme/ActiveTab/State variants dù bảng specification yêu cầu; registry đã bỏ khai báo giả. 6 controls mới và24 icon mains đã tạo nhưng thiếu text/swap properties và tương tác, có lỗi crop/copy cần sửa; xem [foundation checkpoint](../tracking/foundation-checkpoint.md). Không nhân rộng trạng thái tĩnh dưới nhãn “interactive”. Các bảng dưới đây là **quy cách đích**, không chứng minh hiện thực.
 
 ### Bảng hướng dẫn sử dụng các Core Components Phase 1 v1.0
 

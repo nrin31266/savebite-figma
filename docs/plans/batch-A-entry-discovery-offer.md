@@ -2,7 +2,9 @@
 
 Một trong hai plan chia đôi 70 màn còn lại sau batch `B-PHASE1-013`. Plan song song: [Plan B · Orders, Pantry & Account](batch-B-orders-pantry-account.md). Cả hai dựa trên bảng Interaction Map ở [Plan 2](build-100-screens-prototype.md) mục 7 và ma trận thị giác ở [screen-art-direction](../screen-art-direction.md).
 
-Trạng thái: `READY` · Người thực hiện: _(điền tên)_ · Nhánh Git: `design/batch-A-entry-offer`.
+Trạng thái: `IN_PROGRESS` · Người thực hiện: Plan-A/fable · Nhánh tích hợp: `design/end-to-end-quality-assets`.
+
+**Reconcile31/10 (`DEC-012`):** Plan A có14/50 root trước batch, cần tạo36 và audit/fix14 cũ. Dùng registry/live IDs mới; không lấy ID lịch sử trong ví dụ dưới để ghi khi chưa xác minh. Components chung đã có inventory63 nhưng controls chưa tương tác; xem [foundation checkpoint](../../tracking/foundation-checkpoint.md). Lead giữ registry/progress, worker trả checkpoint riêng; không hai worker ghi cùng CSV.
 
 ---
 
@@ -113,7 +115,7 @@ Nếu Plan B cần trước khi A0 xong: B dựng sheet cục bộ theo mẫu `S
 
 **Những lỗi đã gặp — tránh lặp lại**
 
-1. Mỗi lần gọi `use_figma` là **nguyên tử**: lỗi ở đâu thì toàn bộ thay đổi của lần gọi đó bị hoàn tác → chia script vừa phải, chạy lại cả đoạn khi lỗi.
+1. **Không giả định rollback nguyên tử.** Nếu `use_figma` lỗi giữa chừng, dừng tạo mới, đọc lại node IDs/canvas và reconcile partial mutation trước retry; chỉ chạy lại phần chưa thực hiện để tránh duplicate. Chia script theo batch vừa phải có checkpoint.
 2. Không `appendChild` node mới vào bên trong instance, không sửa hình học (`vectorPaths`) hay vị trí con của instance → detach có ghi lý do, hoặc đặt node ngoài instance.
 3. Frame auto-layout bỏ qua `x/y` của con → dùng `insertChild` đúng thứ tự, hoặc `layoutPositioning = 'ABSOLUTE'` cho lớp phủ.
 4. Ảnh: dùng `imageHash` của ảnh **đã có trong Figma**; SHA-256 của file trong repo không dùng được. Ảnh mới phải upload trước (`upload_assets`), rồi ghi hash vào progress.

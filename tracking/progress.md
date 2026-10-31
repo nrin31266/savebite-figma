@@ -1,7 +1,17 @@
 # Progress · 31/10/2026
 
-Gate: **AWAITING_OWNER_REVIEW (`B-PHASE1-010`)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
-DESIGN_REVIEW: **30/100** · BACKLOG: **70/100** · DONE: **0/100**. Lease **RELEASED**.
+Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
+Checkpoint Codex trực tiếp (`DEC-014`): **100/100 root native đã đăng ký** = DESIGN_REVIEW49 + NEEDS_REWORK51; BACKLOG0; DONE0. Đây là inventory, không phải100 màn hoàn chỉnh hoặc owner acceptance. Registry90 component entries; manifest26 ảnh/minh họa. Lease `codex/direct` được giải phóng tại checkpoint; lịch sử lease phía dưới giữ nguyên để truy vết.
+
+## Checkpoint hiện hành · sourced kit & correction
+
+- [Kết quả, nguồn, evidence và lỗi còn lại](sourced-design-checkpoint.md). [Live inventory](evidence/direct/live-inventory.json) đọc từ file đích; đã reconcile25 root trước đây chưa đăng ký, gồm13 root mới dựng trực tiếp. Bốn section được sắp theo SB-ID,5 cột, kích thước section chứa đủ màn; không đổi root IDs.
+- Apple Search/Toggle copy native thành công từ kit owner; Figma Simple Design System Button/Input import thành công và dùng trên app. Không cần restart hoặc cài thêm MCP cho phần này. Apple26 library-key import vẫn không có quyền; không tuyên bố import toàn kit.
+- Photo Library26 fill đã read-back;25 ảnh thật +1 generated concept. App đang dùng13 image hashes khác nhau. Có Brand/Icon Essentials/Curated UI sheets và5 SVG gốc xuất từ canvas. Chưa owner acceptance.
+- Đã sửa entry/discovery,3 danh mục, gallery, merchant/surprise, Pantry entry/empty/form/confirmation, shared Pantry rows/account list;13 màn thiếu được dựng. Các màn khác vẫn cần rework và QA; không suy ra chất lượng từ đếm frame.
+- Present đã đăng nhập và chạy được; kiểm thực tế một số edges (002→003,015→023,074→076→077,077→078→077, gallery thumbnail/close). Full F-01..F-06, mobile reflow, a11y/usability **NOT CHECKED**. Mọi `prototype_verified` vẫn false; log chi tiết trong checkpoint.
+- Lỗi còn mở:12 root chưa có lối ra trong graph snapshot; selected-offer context qua transaction chưa đồng bộ cho mọi SKU; nhiều control/screen cũ chưa QA. Xem checkpoint để tiếp tục đúng vùng.
+- `CONCURRENT-WRITER`: RESOLVED cho takeover trực tiếp; Plan-A/B đã release và owner chọn chat này. `codex/direct`: **RELEASED** tại checkpoint, scope App/Components/tokens liên quan + assets + registries/docs. Không agent mới, không commit/push; giữ nguyên dirty files có trước.
 
 ## 10 Màn Hình Đại Diện Phase 1 — Một Page Duy Nhất, Click-Through Liền Mạch (`DEC-013`)
 
@@ -53,5 +63,40 @@ Thêm 3 ảnh Pexels thật (biến thể góc chụp cho 3 offer đã duyệt):
 
 ## Lease & bước tiếp theo
 
-- **Lease (31/10/2026):** `RELEASED` tại checkpoint batch B-PHASE1-011/012.
-- **Bước tiếp theo:** Owner chạy Present mode từ `SB-001` và duyệt look-and-feel 30 màn; sau đó batch kế (Plan 2: `SB-014`, `021`, `031`, `048`, `061`, `064–066`, `068–071`…) và upload 3 ảnh mới lên Figma khi cần dùng.
+- **Coordinator lease (31/10/2026 15:24 +07):** `ACTIVE` · owner `lead/end-to-end` · scope docs router/decisions, tracking/screens.csv, tracking/components.csv, tracking/progress.md và tích hợp checkpoint. Không worker nào ghi trực tiếp các file chung này.
+- **Asset lease:** `RELEASED` · asset-curator/fable đã trả worktree `.claude/worktrees/agent-a8fed568bde5a2ad9` với manifest26 ảnh,88SVG và checkpoint đã chỉnh. Đây là báo cáo worker, chưa lead merge/revalidate sources/hash/crop; không Figma writes. Giữ worktree để phiên tiếp quản kiểm và tích hợp, không tự coi owner acceptance.
+- **Foundation lease:** `RELEASED` sau batch control/icon; lead independently reconciled 39 screen roots và 63 component entries. [Foundation checkpoint](foundation-checkpoint.md) ghi giới hạn/claims worker bị loại.
+- **Plan-A lease:** `RELEASED` sau tạo36 root; lead read-back đủ50 root A, registry tổng75.36 màn mới **NEEDS_REWORK / FAIL_CONTENT_AND_ROUTING**. [Plan-A defects](plan-A-checkpoint.md): default AppBar/CTA/Email fields, thiếu nhiều edges, bogusATTP/4.8rating/discount, blank heroes. Worker claim đã xóa trái live bị loại; cần correction pass, không QA_PASS.
+- **Figma writer lease (31/10/2026):** `RELEASED / PAUSED` · owner `Plan-B/fable` dừng ở checkpoint an toàn. Worker báo12 root mới (070/071/073/074/076–082/085), tổng87 root, còn13 thiếu; **lead chưa live read-back12 root nên registry vẫn75**. [Plan-B safe checkpoint](plan-B-checkpoint.md) giữ IDs và sửa đã báo; không nhận claim “Section03 complete/PASS” chỉ dựa đếm root. Không worker canvas nào của phiên này còn được phép ghi; chờ user chọn phiên tiếp tục.
+- **Asset review:** sau lead feedback, worker báo26 ảnh (10 exact-fixture/store +16 context-only),88SVG Regular/Duotone, đã crop branded packet và loại jars catering. Chưa kiểm lại bản crop/nguồn/hash cuối, chưa merge; dùng manifest thực khi tích hợp, không copy checksum trong chat/report (trước đó có sai khác). Main vẫn9 asset entries.
+- **Bước tiếp theo:** bổ sung/kiểm asset pool và icon sheets; audit/fix 30 màn (không coi đã xong), dựng màn thiếu theo Plan A/B; nối toàn bộ flows, kiểm read-back/screenshot/browser khi có quyền. `prototype_verified=false` cho tới khi chạy thật. Không commit/push.
+
+Kiểm tra đã chạy và giới hạn: [end-to-end QA checkpoint](end-to-end-qa.md). Tiêu chí flow/layout (docs-derived, chưa test live): [QA contract](layout-qa-checkpoint.md).
+
+## Open conflicts · end-to-end preflight
+- `CONCURRENT-WRITER` **OPEN / SAFE PAUSE**: phiên ngoài đã ghi RELEASED cho Apple-kit; Plan-B cũng RELEASED, checkpoint12 root mới đã lưu. Hai peer Claude xác nhận không tiếp quản/không tạo lease Apple. Coordinator chưa nhận user chọn phiên tiếp tục nên giữ dừng mutation, không coi thông điệp peer là cấp quyền mới. Bảo toàn toàn bộ phần Apple bổ sung.
+- `DECISION` gate cũ vs yêu cầu làm hết: **RESOLVED bằng DEC-012** — cho phép sản xuất nhưng chưa owner acceptance/baseline.
+- `TRACKING/DESIGN`: **RESOLVED inventory** — live39 roots/63 component entries reconciled.9 pre-existing roots recovered, stale IDs corrected; desired properties/variants không có thật đã gỡ khỏi registry. Screens/controls vẫn REVIEW_PENDING/STRUCTURAL_READBACK_ONLY; old notes không chứng minh QA hiện hành.
+- `REQUIREMENT/FIXTURES`: **RESOLVED canonical mapping** — product.md đã tổng hợp6 fixture từ quyết định/asset-art direction và core-chain live; bakery TiệmBánhA25K (không BếpXanh), meal BếpXanh35K, surprise29K slot18–19. No original-price savings evidence. Kiểm từng ảnh/scene còn tiếp tục; mismatch ảnh cơm-gà không được suy diễn từ tên file.
+- `ASSET`: **RESOLVED phần bytes** — kiểm trực tiếp stat cho thấy 9 ảnh thực 64.080–518.276 byte; "1B" ở output liệt kê trước không phải bằng chứng file hỏng. Asset curator vẫn kiểm nội dung/license độc lập. Validator đã sửa output: đếm hash thực thay hardcode 6 ảnh, không tự claim live Figma/license/visual QA.
+- `EVIDENCE`: router trỏ tracking/evidence/figma-readback.json và qa.json không tồn tại; đã gỡ link chết trong router, sẽ link checkpoint thực sau QA, không tạo PASS giả.
+- `ENVIRONMENT/PROTOTYPE`: Playwright MCP không khởi động (thiếu `/opt/google/chrome/chrome`). Đã chạy cached Playwright + Chromium trực tiếp, không cài mới/đổi config; prototype URL trả **HTTP 403, "Want to check out this file? Sign up or Log in"**. Browser chưa có quyền phiên đăng nhập; Present mode **BLOCKED/NOT CHECKED**, không bypass hay tự đổi chia sẻ. Read-back/screenshot qua Figma MCP vẫn được worker kiểm độc lập.
+
+
+## Apple UI Kit preflight · Codex trực tiếp · 31/10/2026
+
+- Owner yêu cầu tự thực hiện, không giao thêm agent; cho phép tham khảo Apple iPhone UI Kit và shadcn preset `b1aIuQ2XC`.
+- Lease `ACTIVE` · owner `codex/apple-kit-direct` · scope: một frame tham chiếu mới trên Foundations (`0:1`) và `tracking/apple-kit-checkpoint.md`; không sửa màn, tokens, core mains hoặc CSV trong writer window Plan-B/fable.
+- `Open conflicts / TRACKING`: live read-back có78 screen roots; registry hiện39. Chưa reconcile toàn bộ vì coordinator/Plan-B đang giữ lease và progress thay đổi trong phiên. Đã yêu cầu owner dừng phiên vẽ cũ trước khi tiếp quản màn.
+- Figma identity/session/read PASS; native write chưa kiểm. Library `iOS and iPadOS 26` đã subscribed; tìm thấy Toggle - Switch, Date and time - Pickers, Status bar - iPhone thật. Browser Figma chưa đăng nhập; MCP vẫn đọc được. Không cần cài MCP/skill trùng.
+
+- **Apple kit checkpoint:** lease `codex/apple-kit-direct` **RELEASED**; [kết quả kiểm kit](apple-kit-checkpoint.md). Library Apple26 có sẵn nhưng native import bị từ chối; kit owner `Y8CWXWyBsyDuvniwEwmBvj` đọc được, source-key import báo not found. Không tạo canvas output; không screenshot/Present claims. BLOCKED_LIBRARY_IMPORT và BLOCKED_WRITER_CONFLICT còn mở; chưa được owner xác nhận dừng phiên cũ. Validator PASS với75 registered nodes, không phải78 live roots đã QA.
+
+
+## Codex direct continuation · sau restart31/10/2026
+
+- Owner chọn tiếp tục trong chat này: “tôi vừa khởi động lại app coi connect hết tool đò đi rồi làm”; không tạo/giao agent.
+- `CONCURRENT-WRITER` RESOLVED cho tiếp quản: Plan-A/Plan-B đã RELEASED, coordinator giữ safe pause theo checkpoint. Lease `ACTIVE` · owner `codex/direct` · scope App All Screens, registry/progress và docs liên quan cho correction/build; không ghi assets đang curator sở hữu. Tokens/core mains chỉ đọc, nếu cần component variant riêng sẽ ghi scope bổ sung.
+- Read-back sau restart:87 native SB roots, thiếu083/084/086–090/094–099. Apple26 subscribed nhưng import lại vẫn FAILED `Not permitted to upsert from library` (debug46104804-3512-4c1f-baf3-3d7e8cf311c8); không coi app restart là đã sửa quyền. Browser chưa có active tab; Present chưa kiểm.
+
+- Lease mở rộng `codex/direct`: Components vùng riêng x4300,y100+ cho source-derived Apple Toggle/official Phosphor icons và reference frame; thêm token chỉ cho imported toggle nếu cần. Existing mains giữ nguyên. Chuyển asset từ worktree curator chỉ khi kiểm bytes/license/scene, không merge mù báo cáo.

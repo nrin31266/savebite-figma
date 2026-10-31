@@ -2,19 +2,20 @@
 
 Kế hoạch sản xuất 90 màn còn lại trên [SaveBite-V2](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) và nối toàn bộ 100 màn thành prototype bấm được theo 6 flow `F-01..F-06`. Nguồn yêu cầu: [experience](../experience.md) (flow, 100 SB-ID, contract), [screen-art-direction](../screen-art-direction.md) (archetype, focal point, components từng màn), [visual-direction](../visual-direction.md), [ios-guidelines](../ios-guidelines.md), [design-system](../design-system.md), [asset-strategy](../asset-strategy.md), QA trong [workflow](../workflow.md).
 
-Trạng thái: `SPECIFIED` · phụ thuộc [Plan 1](phase1-fix-sb002-sb034.md).
+Trạng thái: `IN_PROGRESS` theo `DEC-012` · [Plan 1](phase1-fix-sb002-sb034.md) và 30 màn cũ phải được kiểm lại, không mặc nhiên hoàn tất.
 
-> Cập nhật 31/10/2026: đã dựng 30/100 màn. 70 màn còn lại được tách thành [Plan A](batch-A-entry-discovery-offer.md) (36 màn, Section 01–02) và [Plan B](batch-B-orders-pantry-account.md) (34 màn, Section 03–04) để 2 người làm song song; Interaction Map ở mục 7 vẫn là nguồn chuẩn cho reaction.
+> Cập nhật31/10/2026: live inventory39/100 root, chưa coi là đã hoàn tất QA;61 màn thiếu gồm [Plan A](batch-A-entry-discovery-offer.md)36 và [Plan B](batch-B-orders-pantry-account.md)25 (9 root đã có ngoài registry cũ). Workers cô lập Section và mutation windows theo progress; audit/fix màn cũ cùng scope. Interaction Map ở mục7 vẫn là nguồn chuẩn cho reaction, không phải bằng chứng đã nối/chạy.
 
 ---
 
 ## 1. Gate mở khóa
 
-Không bắt đầu trước khi đủ 4 điều kiện:
+**Cập nhật `DEC-012` (31/10/2026):** owner đã yêu cầu triển khai end-to-end, gồm audit/fix 30 màn đang có, tài nguyên dùng lại và toàn bộ phần còn thiếu. Không cần chờ duyệt Phase 1 để tiếp tục sản xuất. Đây không phải nghiệm thu thẩm mỹ: `design_baseline_version` để trống và không chuyển DONE cho tới khi có QA + owner acceptance thật.
 
-1. Plan 1 xong: 10 màn Phase 1 hết lỗi rubric và đã nối prototype subset (trong giới hạn kỹ thuật ở mục 0 dưới đây).
-2. Owner duyệt 10 màn làm baseline (`design_baseline_version = v1.0`).
-3. Ghi `DEC-012` vào [decisions](../decisions.md): owner acceptance Phase 1 + mở 90 màn còn lại. Quyết định này gỡ ràng buộc "Sau pilot: không tự sản xuất 100 màn" trong `AGENTS.md`.
+Điều kiện thực thi vẫn bắt buộc:
+1. Đọc live/reconcile màn và component trước tạo, audit/sửa lỗi trước nhân rộng; không coi 30 màn DESIGN_REVIEW là hoàn tất.
+2. Xác minh quyền đọc/ghi thật, lease writer rõ, chỉ thay đổi trong scope, giữ nghiệp vụ/fixture.
+3. Registry/evidence phải phản ánh kiểm tra thực; thiếu Present mode không ghi prototype_verified=true.
 4. ~~Owner chọn phương án cho giới hạn prototype liên-page~~ **✅ Đã quyết (31/10/2026):** Owner chọn **Phương án A** (gộp page) → `DEC-013` đã ghi và thực thi: 4 page hi-fi gộp thành 1 page `App · All Screens` (`11:3`, 4 Section). Mọi batch từ đây dựng trực tiếp trên page `11:3`, đúng Section theo dải `SB-ID`.
 
 ### 0. ⚠️ Giới hạn đã xác nhận: Figma Plugin API không nối được prototype liên trang
@@ -231,7 +232,7 @@ Kiểm tra đường vào: mọi SB-ID ở cột "Đích" xuất hiện ít nh�
 ## 9. QA mỗi batch
 
 1. 7 gates trong [workflow](../workflow.md) cho từng màn, rubric 8 tiêu chí không còn Red Flag.
-2. Contact sheet batch (screenshot), so baseline Phase 1.
+2. Contact sheet batch (screenshot), so art direction và frame Phase 1 đã audit; không gọi là baseline được duyệt cho tới owner acceptance (`DEC-012`).
 3. Bấm thử toàn bộ hotspot của batch trong Present mode; chỉ ghi `prototype_verified=true` cho màn đã bấm thật.
 4. Cập nhật [screens.csv](../../tracking/screens.csv): `figma_page_id`, `figma_node_id`, `component_ids`, `linked_from`, `linked_to`, `editable_verified`, `qa_result`; components mới vào [components.csv](../../tracking/components.csv).
 5. `python3 scripts/validate.py` PASS; commit nhỏ theo nhánh `design/<module>-<scope>`; cập nhật [progress](../../tracking/progress.md) và release lease.

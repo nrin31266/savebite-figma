@@ -196,7 +196,9 @@ Figma đích hiện hành (`DEC-011`): https://www.figma.com/design/7suZz9C8oL5z
 
 ## KẾ HOẠCH PHÂN CÔNG 2 AGENT ĐỘC LẬP (50/50 SECTION-ISOLATED SPLIT SAU PHASE 1)
 
-Sau khi 10 màn hình đại diện Phase 1 (`SB-002`, `SB-015`, `SB-016`, `SB-019`, `SB-034`, `SB-051`, `SB-053`, `SB-056`, `SB-075`, `SB-091`) được Owner duyệt làm chuẩn thẩm mỹ (North-Star Baseline), 90 màn hình còn lại được chia cho **2 Agent độc lập** chạy song song theo kiến trúc cô lập vùng ghi. **Theo `DEC-013`, ranh giới cô lập là Section (không phải Page)** vì toàn bộ 100 màn hi-fi nay nằm chung 1 page `App · All Screens` (`11:3`) để prototype liên-flow hoạt động được.
+**Quy định hiện hành DEC-014:** owner yêu cầu một writer trực tiếp, không giao agent. Phần phân công dưới đây là lịch sử và protocol khi được owner cho phép lại; không tự kích hoạt workers. Quyền commit/push/merge chỉ thực hiện khi owner yêu cầu rõ.
+
+Theo `DEC-012`, owner đã cho phép triển khai end-to-end đồng thời audit/sửa màn cũ; không mặc nhiên coi 10 màn Phase 1 là baseline đã duyệt. Phần thực thi màn hình được chia cho **2 Agent độc lập** chạy song song theo kiến trúc cô lập vùng ghi. **Theo `DEC-013`, ranh giới cô lập là Section (không phải Page)** vì toàn bộ 100 màn hi-fi nay nằm chung 1 page `App · All Screens` (`11:3`) để prototype liên-flow hoạt động được.
 
 ### 1. Kiến trúc Cô lập 4 Section trên Page `App · All Screens` (File `7suZz9C8oL5zV2NMxlsIVI`)
 
@@ -257,7 +259,7 @@ Cả 2 agent cùng mở **một page** (`setCurrentPageAsync` luôn trỏ `11:3`
 - Các components core mô tả trong phần **Design System và Component Strategy** (được chuyển vào `docs/design-system.md`); kiểm tra 360/390/430 widths và dài/ngắn/empty/state.
 - Ghi `figma_component_id` có thật vào registry; chụp component specimen.
 
-**Gate P2:** owner duyệt visual baseline và các component core. Không sinh 100 frame trước gate.
+**Gate P2:** owner review vẫn cần để nghiệm thu baseline/components. Riêng quyền sản xuất toàn bộ 100 màn đã được mở bởi `DEC-012`; audit/fix phải đi trước việc nhân rộng và mọi màn chưa duyệt giữ DESIGN_REVIEW.
 
 ### Phase 3 — 5-screen pilot
 

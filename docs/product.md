@@ -203,10 +203,38 @@ Không định vị là dịch vụ giao đồ ăn; không hứa mọi mặt hà
 Có thể dùng dữ liệu ví dụ cho prototype để trình diễn, **nhưng không được nhận là giá/tồn kho/cửa hàng thật**. Dữ liệu mẫu đề xuất trên màn demo:
 
 - Campus/khu vực: thành phố Đà Nẵng; chọn campus thủ công hoặc vị trí giả định, không khẳng định quan hệ đối tác.
-- Merchant demo: `Tiệm Bánh A`, `Căng tin B`, `Quầy Rau C` hoặc thương hiệu hư cấu tránh mạo danh doanh nghiệp hiện hữu.
-- Offer demo: `Túi bánh cuối ngày` giá 25.000đ, pickup 17:00–18:00; `Combo rau củ` 30.000đ, pickup 16:00–17:30. Đây là **fixture**, không phải dữ liệu khảo sát/production. Giá/khung giờ chỉ nên được dùng nhất quán xuyên suốt prototype.
+- Merchant/offer ví dụ cũ (`Căng tin B`, `Túi bánh cuối ngày` 25.000đ) không override bộ fixture hiện hành dưới đây. Đồng bộ theo DEC-003, DEC-011 và ma trận asset/art direction, đối chiếu live core chain ngày31/10; không coi canvas tự thay requirements.
+
+| Fixture ID | Nội dung demo hiện hành | Giá / tồn kho demo | Khung nhận demo | Merchant |
+|---|---|---|---|---|
+| fixture-bakery-01 | Bánh mì men tự nhiên | 25.000đ /3 phần | 17:00–18:00 | Tiệm Bánh A (demo), Điểm nhận A · ĐH Đà Nẵng |
+| fixture-croissant-02 | Bánh sừng bò bơ Pháp | 30.000đ /2 phần | 17:00–18:00 | Tiệm Bánh A (demo) |
+| fixture-meal-03 | Cơm gà áp chảo & rau củ | 35.000đ /4 phần | 17:30–19:00 | Bếp Xanh Campus (demo) |
+| fixture-veggie-04 | Combo rau củ tươi trong ngày | 30.000đ /5 phần | 16:00–17:30 | Quầy Rau C (demo) |
+| fixture-surprise-05 | Túi bánh bất ngờ cuối ngày; món cụ thể không đảm bảo | 29.000đ /2 túi | 18:00–19:00 | Tiệm Bánh A (demo) |
+| fixture-store-01 | Không gian quầy Tiệm Bánh A | Không phải offer mua | 16:00–19:00 giờ nhận minh họa | Tiệm Bánh A (demo) |
+
+- Đồng hồ demo chính cố định16:00 ngày19/10/2026, Asia/Ho_Chi_Minh; recovery/expiry có thể là snapshot thời gian khác nhưng phải ghi rõ demo/time-state, không đánh tráo ngày hiện tại. Tồn kho đổi/hết hàng phải được giải thích là state khác của cùng fixture, không tự đổi món/merchant.
+- Các giá/tồn kho/giờ là fixture, không phải dữ liệu thật. Không có giá gốc hợp lệ trong bộ core chain nên không hiển thị số tiền tiết kiệm hay giá gạch ngang suy diễn. SB-091/100 hiện có3 đơn nhận,4 món Pantry dùng kịp hạn; SB-100 liệt kê25K+30K+35K=90K **đã trả**, không phải90K tiết kiệm. Đây là history demo có nhãn, không outcome thực.
+- Ảnh asset phải khớp món: nếu ảnh không chứng minh có gà, không coi altText/tên file là bằng chứng; dùng ảnh thay phù hợp hoặc ghi mismatch BLOCKED. Không suy ra thành phần/dị ứng từ ảnh.
 - Không lẫn cùng một offer với nhiều mức giá, tên merchant hay pickup hours ở các frame liên tiếp.
 - Bộ fixture phải có danh sách IDs ổn định; mỗi frame mapping tới cùng fixture khi tương ứng cùng đối tượng.
+
+### Smart Pantry · DEFAULT demo snapshot (19/10/2026)
+
+Dữ liệu mẫu phục vụ bố cục và prototype; không phải hạn bảo quản khuyến nghị hoặc dữ liệu người dùng thật. Ba dòng cuối bổ sung để tổng quan `2 dùng sớm /4 còn hạn /1 quá hạn` có đủ bảy bản ghi tương ứng; không phải kết quả nghiên cứu.
+
+| Fixture ID | Món / lượng | Nơi cất | Loại ngày / ngày trên nhãn demo |
+|---|---|---|---|
+| pantry-demo-milk | Sữa tươi thanh trùng /1 hộp | Ngăn mát | Use by · 21/10/2026 |
+| pantry-demo-bread | Bánh mì men tự nhiên /1 ổ | Kệ khô | Best before · 20/10/2026 |
+| pantry-demo-eggs | Trứng gà ta /6 quả | Ngăn mát | Best before · 26/10/2026 |
+| pantry-demo-greens | Rau cải ngọt /1 bó | Ngăn mát | Use by · 18/10/2026 · quá hạn, không khuyến nghị ăn |
+| pantry-demo-yogurt | Sữa chua không đường /1 hộp | Ngăn mát | Use by · 25/10/2026 |
+| pantry-demo-rice | Gạo /1 túi | Kệ khô | Best before · 15/11/2026 |
+| pantry-demo-peas | Đậu Hà Lan /1 túi | Ngăn đông | Use by · 28/10/2026 |
+
+Phân bố:4 ngăn mát,2 kệ khô,1 ngăn đông. Thanh màu trên hàng thể hiện nhóm ngày hạn; không diễn giải là điểm an toàn hoặc phần trăm tuổi thọ thực phẩm. Màn thêm món là prototype dữ liệu mẫu; chưa chứng minh nhập văn bản, lưu trên thiết bị hoặc gửi thông báo thật. Category/date/storage selection có biến prototype; snapshot tồn kho sau lưu còn cần QA nhất quán toàn luồng.
 
 ### Manifest ảnh
 

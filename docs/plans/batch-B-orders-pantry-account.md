@@ -2,7 +2,9 @@
 
 Một trong hai plan chia đôi 70 màn còn lại sau batch `B-PHASE1-013`. Plan song song: [Plan A · Entry, Discovery & Offer](batch-A-entry-discovery-offer.md). Cả hai dựa trên bảng Interaction Map ở [Plan 2](build-100-screens-prototype.md) mục 7 và ma trận thị giác ở [screen-art-direction](../screen-art-direction.md).
 
-Trạng thái: `READY` · Người thực hiện: _(điền tên)_ · Nhánh Git: `design/batch-B-orders-pantry`.
+Trạng thái: `PREPARED · WAITING_WRITER_WINDOW` · Người thực hiện: Plan-B/fable · Nhánh tích hợp: `design/end-to-end-quality-assets`.
+
+**Reconcile31/10 (`DEC-012`):** live có25/50 màn thuộc Plan B.9 màn trong danh sách gốc đã tồn tại (`052,061,064,065,066,068,069,092,093`), không dựng lại. Còn25 màn thiếu (`070,071,073,074,076–090,094–099`), cùng audit/fix25 màn cũ. IDs live và giới hạn controls xem [foundation checkpoint](../../tracking/foundation-checkpoint.md); registry/workflow hiện hành override tọa độ/IDs cũ trong bảng kế hoạch.
 
 **Đọc trước khi làm:** mục 5 "Quy ước chung" trong [Plan A](batch-A-entry-discovery-offer.md#5-quy-ước-chung-áp-dụng-cho-cả-plan-a-và-b) — có bảng ID component, imageHash và 9 lỗi đã gặp khi dựng 30 màn đầu. Plan B tuân thủ y nguyên.
 
