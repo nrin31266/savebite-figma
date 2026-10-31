@@ -1,5 +1,12 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Continuation · Pantry state và asset reuse · 31/10/2026
+
+- Prototype collection `Prototype · Pantry item state` (`VariableCollectionId:356:4807`) giữ dữ liệu đã lưu/bản nháp riêng cho7 fixture, trạng thái lọc/chọn, lượng dạng phân số và7 thao tác gần nhất của phiên. Đây là biến tương tác mẫu, không phải design tokens hoặc bằng chứng có database/push/local persistence thật. STRING dùng scope TEXT_CONTENT; FLOAT/BOOLEAN giữ ALL_SCOPES do API của phiên từ chối scope rỗng cho các kiểu này.
+- Không thêm main component: editor082 reuse Input Field/Button nguồn hiện có, giữ root ID; clone per-item controls để tránh một conditional action có hơn2 nhánh bị Figma cắt. Counter là số riêng, label là STRING vì API không cho bind FLOAT trực tiếp vào characters.
+- Registry hiện146 entries sau khi đăng ký dependency remote Check `179:274` của consent006 được phát hiện khi read-back;145 ở checkpoint DEC-015 là số lịch sử, không phải số hiện hành.
+- Dùng lại4 pose Mầm đã có: Search→022, Retry→057, Carry→073, Quiet→096. Main IDs giữ `231:346/299/252/285`; không thêm linh vật vào QR hoặc cảnh báo dị ứng. Các pattern/sticker/pose chưa dùng vẫn là candidate, không ép rải lên màn.
+
 ## Brand/source polish · DEC-015
 
 Registry hiện145 entries (gồm legacy, candidate và source dependencies), không phải145 component đã nghiệm thu. [Checkpoint](../tracking/brand-polish-checkpoint.md) mới hơn số90 ở checkpoint lịch sử phía dưới.

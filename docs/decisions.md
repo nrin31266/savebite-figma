@@ -2,6 +2,14 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-016 · 31/10/2026 · Correction nội dung offer và prototype context
+
+- Nguồn: yêu cầu owner tiếp tục end-to-end, sửa nội dung sai và layout hời hợt; thực thi DEC-014/015, không thêm nghiệp vụ mới.
+- Gỡ claim giờ sản xuất, khối lượng, độ tươi/an toàn và tiết kiệm chưa có dữ liệu. UNKNOWN phải rõ; UI hướng người dùng hỏi cửa hàng/kiểm nhãn, không tự tạo hướng dẫn bảo quản theo món.
+- Prototype dùng bộ fixture canonical để giữ tên/merchant/giá/slot/tồn kho và lượng khi chuyển màn; thay đổi chỉ là mô phỏng local trong Figma, không tạo backend/đơn thật. Tồn kho nhánh urgency là state khác có mốc17:40, không trộn snapshot16:00.
+- Khi bind text/visibility/reactions, phải kiểm read-back và Present thực theo từng nhánh. Chưa kiểm được thì giữ prototype_verified=false; không suy ra tất cả100 màn đã sửa từ vài ví dụ.
+- Scope writer: App All Screens, Components/variables và registries/docs phụ thuộc; một writer trực tiếp, không agent.
+
 ## DEC-015 · 31/10/2026 · Merge checkpoint và tiếp tục design polish toàn phạm vi
 
 - Nguồn: owner yêu cầu “commit push merge main phần này” rồi đặt goal tiếp tục tự soi/sửa theo nhóm, chụp nhiều màn, phát triển brand assets/logo/loading và có thể chọn linh vật; ưu tiên chất lượng môn UI/UX, không chỉ đủ màn.

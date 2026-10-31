@@ -158,6 +158,8 @@ Nguồn chuẩn theo domain cho Kiến trúc Thông tin (IA), Luồng người d
 | `SB-088` | Gợi ý dùng thực phẩm hiện có | Pantry | Core | P2 | Gợi ý tĩnh/quy tắc, không claim AI |
 | `SB-089` | Lịch sử sử dụng & bỏ thực phẩm | Pantry | Core | P2 | Minh bạch dữ liệu từ thao tác |
 | `SB-090` | Tùy chọn Pantry và dữ liệu cục bộ | Pantry | Core | P1 | Export/delete và giới thiệu backup tương lai |
+
+Pantry correction31/10 (DEC-016): prototype giữ trạng thái riêng cho bảy fixture canonical; chọn món nạp dữ liệu đã lưu, sửa lượng/ngày hạn/nơi cất dùng bản nháp. Lưu mới ghi về danh sách/chi tiết; quay lại không ghi nháp. Dùng một phần giữ món, dùng hết/đã bỏ gỡ khỏi danh sách đang theo dõi và tắt nhắc của món; lịch sử ghi thao tác mô phỏng, không giả lưu thiết bị hoặc gửi push thật. Ngày hạn là dữ liệu trên nhãn, không phải điểm an toàn hay khuyến nghị dùng trong48h. Nhập văn bản tự do và push thật chưa được chứng minh.
 | `SB-091` | Tài khoản — tổng quan | Account | Core | P1 | Profile, lịch sử, hỗ trợ, cài đặt |
 | `SB-092` | Chỉnh sửa hồ sơ | Account | Core | P1 | Tên hiển thị, email, xác nhận cập nhật |
 | `SB-093` | Quản lý khu vực thường dùng | Account | Core | P1 | Campus/home locations, không chia sẻ công khai |

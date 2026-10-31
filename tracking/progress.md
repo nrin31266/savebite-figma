@@ -2,6 +2,27 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
+## Checkpoint continuation · Pantry + asset reuse · ACTIVE
+
+- [Thay đổi, evidence và việc tiếp theo](continuation-checkpoint.md). Live100 root IDs giữ nguyên; registry146 entries gồm1 remote Check dependency có thật vừa reconcile; DONE0. Không coi số frame/component là nghiệm thu chất lượng.
+- Editor082, saved/draft của7 fixture, counters/filter, partial/full usage và7 events phiên đã nối;4 pose Mầm có sẵn được áp vào022/057/073/096. Không sinh thêm master/ảnh để lấp số lượng. Native source field/button/card vẫn được reuse.
+- Present kiểm được hủy sửa, lưu lượng/date/storage và chọn lại món; counters đổi đúng; filter Kệ khô; partial giữ món, dùng hết gỡ món; lượng dùng lặp1→1/2→1/4 rồi preview1/8 chính xác. Phạm vi này không chứng minh toàn7 món/F-05 hoặc6 flows PASS. Prototype flags vẫn false.
+- PASS: validator100 IDs/146 entries/26 asset hashes; checkpoint links/JSON/image decode; root-to-registry và component IDs không thiếu mapping; whitespace. Reminder085, add077→080→075, disposal/unknown dates và QA cuối các nhánh còn làm tiếp; favorites/gallery/orders và polish toàn100 màn vẫn ACTIVE.
+- Lease `codex/direct-polish · pantry/context/assets` **RELEASED tại checkpoint**, không agent khác. Lượt tiếp ưu tiên khép F-05 (thêm món/reminder/empty) rồi favorites/gallery/orders; không push/merge batch mới.
+
+## Tool preflight sau restart · 31/10/2026
+
+- **Continuation ACTIVE goal; lease RELEASED tại checkpoint:** owner yêu cầu tiếp end-to-end theo attachment mới, tận dụng asset có chủ ý đã tạo. Owner `codex/direct-polish`, scope App page `11:3`, variables và registry/docs phụ thuộc; không agent khác. Batch đầu sửa Pantry edit, data consistency và dùng lại asset phù hợp; scope toàn100 màn giữ nguyên. Browser Present đã đăng nhập và SB-045 render được; blocker đăng nhập bên dưới là lịch sử trước khi owner đăng nhập lại.
+- **Batch đang làm, chưa PASS:** collection Pantry state `VariableCollectionId:356:4807`; editor `359:4904`, save dock `359:5003` tạo từ source-native fields/buttons hiện có. Root082 giữ `117:3320`; legacy form được ẩn, không xóa. Cần bind rows/counters và chạy Present trước khi claim lưu/hủy hoạt động.
+
+- **PASS:** Figma identity Nguyễn Văn Rin, team Nguyễn Văn Rin's team, Student/Full/admin; session mới tạo được. Lỗi reauthentication/Unknown tool của lượt trước không còn tái hiện.
+- **PASS live read:** file key đúng `7suZz9C8oL5zV2NMxlsIVI`; App page `11:3` có100 root/100 SB-ID duy nhất; collection `Prototype · Offer context` (`VariableCollectionId:281:44`) có55 variables. API trả tên document `Document`; không tự đổi tên file.
+- **PASS native write/read/delete:** probe ẩn1×1 `344:2` trên Foundations đã tạo, đọc lại đúng parent/type/size, xóa và xác nhận không còn. Không sửa màn/component sẵn có. Lease `codex/direct-polish · tool-preflight` **RELEASED** tại checkpoint.
+- **PASS screenshot fallback:** native `node.screenshot()` của SB-045 (`109:2926`) trả ảnh393×852; copy cuối phiên trước còn trên canvas. Lệnh riêng `get_screenshot` chưa trả kết quả khi dừng chờ; endpoint đó chưa được xác nhận PASS. Không suy ra toàn flow đã QA.
+- **PASS library discovery:** iOS and iPadOS26 đang được thêm; Simple Design System có trong danh sách khả dụng. Chưa thử lại import library-key Apple; không suy ra quyền import từ discovery.
+- **PASS local:** đủ6 skill, SHA-256 khớp manifest; `python3 scripts/validate.py` PASS (100 IDs,145 component entries,26 asset hashes,DONE0).
+- **BLOCKED riêng Present:** browser kết nối được nhưng mở prototype file đích hiện “Want to check out this file? Sign up or Log in”. Cần đăng nhập Figma trong browser của chat để chạy click-through; không chặn native design read/write. Không cài thêm tool/MCP trùng.
+
 ## Checkpoint brand + kit nguồn · DEC-015
 
 - [Kết quả và việc còn lại](brand-polish-checkpoint.md), [tuyển chọn mẫu](../docs/references/curated-layouts.md).100/100 overview đã chụp/xem;15 màn chụp native riêng sau sửa và078 kiểm category. Không gọi đó là100 màn đạt QA.
@@ -12,7 +33,7 @@ Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chư
 ## Lượt thiết kế tiếp theo · ACTIVE goal
 
 - Owner yêu cầu commit/push/merge phần có nguồn rồi tiếp tục tự audit/sửa; không giao agent. PR [#2](https://github.com/nrin31266/savebite-figma/pull/2) đã MERGED vào `main`, merge commit `bac7a8af33bc4fabdd186661380b30826000ba15`; asset commit `30c9134`, inventory/evidence commit `34bb360`. Committed-tree validator và33 vector hashes PASS. Không coi merge là owner acceptance UI.
-- Branch hiện hành: `design/brand-and-screen-polish`. Lease **RELEASED tại checkpoint** owner `codex/direct-polish`: App All Screens, Components/Foundations cho brand/mascot/loading, tokens phụ thuộc, assets và registries/docs liên quan. Không writer khác hoạt động; không spawn agent.
+- Branch hiện hành: `design/brand-and-screen-polish`. Lease **RELEASED tại tool-preflight checkpoint** owner `codex/direct-polish`: App All Screens, Components/Foundations cho brand/mascot/loading, tokens phụ thuộc, assets và registries/docs liên quan. Chưa ghi thêm thiết kế sau phiên bị ngắt; không spawn agent.
 - Nhóm audit: A001–012 Entry; B013–033 Discovery; C034–049+059 Offer; D050–058+060–073 Orders; E074–090 Pantry; F091–100 Account. Chụp contact sheets theo nhóm nhỏ để tìm lỗi rõ bằng hình; sửa chức năng/nội dung/spacing trước khi coi đủ đẹp.
 - Phạm vi đầy đủ giữ nguyên: logo/brand assets/linh vật concept, loading/first-run, kit reuse, màu và contrast, layout theo chức năng, spacing/radius/wrap/alignment, content/data consistency, prototype. Các tiêu chí đạt/chưa đạt ghi checkpoint sau batch; goal vẫn ACTIVE tới khi kiểm đủ, không thu nhỏ thành vài màn showcase.
 Checkpoint đã merge trước polish (`DEC-014`, lịch sử): **100/100 root native đã đăng ký** = DESIGN_REVIEW49 + NEEDS_REWORK51; BACKLOG0; DONE0. Đây là inventory, không phải100 màn hoàn chỉnh hoặc owner acceptance. Registry90 component entries; manifest26 ảnh/minh họa. Lease `codex/direct` được giải phóng tại checkpoint; lịch sử lease phía dưới giữ nguyên để truy vết.
