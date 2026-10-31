@@ -15,6 +15,8 @@ SaveBite là thiết kế ứng dụng iPhone tiếng Việt: khám phá thực 
 5. Đọc [design system](design-system.md) để nắm tokens, biến thể components và xem [screens](../tracking/screens.csv) cùng [components](../tracking/components.csv) để tra cứu trạng thái node ID thực tế.
 6. Xem [acceptance](acceptance.md) để đối chiếu tiêu chí học phần và theo [workflow](workflow.md) để thực hiện quy trình 7 bước kiểm duyệt chất lượng (**Technical QA + Aesthetic QA**) cùng kế hoạch phân công **2 Agent độc lập (50/50 Page-Isolated Split)**. Không tự ý sản xuất 90 màn còn lại khi 10 màn Phase 1 chưa được owner duyệt.
 
+**Kế hoạch hiện hành (31/10/2026):** [Plan 1 · Sửa 5 màn đầu Phase 1](plans/phase1-fix-sb002-sb034.md) → [Plan 2 · Dựng đủ 100 màn + prototype chuyển màn](plans/build-100-screens-prototype.md) (Plan 2 chỉ chạy sau owner duyệt Phase 1 và `DEC-012`).
+
 Không cần file nguồn bên ngoài repo hoặc lịch sử chat để hiểu yêu cầu hiện hành. [Decisions](decisions.md) lưu các quyết định đã được owner phê duyệt (`DEC-001..DEC-011`).
 
 ## Mở thiết kế và kiểm tra

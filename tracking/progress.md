@@ -21,4 +21,5 @@ DESIGN_REVIEW: **10/100** · BACKLOG: **90/100** · DONE: **0/100**. Lease **REL
 - **Foundations (`0:1`):** [11:59](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=11-59) (`34 variables`, `12 text styles`, `3 effect styles`).
 - **Components (`11:2`):** `29 shared components` khớp 1:1 với [components.csv](components.csv).
 - **Assets (`assets/manifest.json`):** 6 ảnh thực phẩm/cửa hàng thật từ Pexels đã upload lên Figma và kiểm tra SHA-256.
-- **Bước tiếp theo:** Chờ Owner duyệt 10 màn đại diện Phase 1 trước khi mở khóa 90 màn còn lại cho 2 Agent độc lập (50/50 split theo Page).
+- **Open issue (31/10/2026):** Đọc live 5 màn đầu (`SB-002`, `015`, `016`, `019`, `034`): chưa đạt rubric — emoji làm icon, card-in-card ở peek sheet `SB-016`, bản đồ dạng wireframe + chấm vị trí giả, status bar/scrim `SB-034`, từ mồ côi, chưa nối prototype. Kế hoạch sửa: [Plan 1](../docs/plans/phase1-fix-sb002-sb034.md); dựng 100 màn: [Plan 2](../docs/plans/build-100-screens-prototype.md).
+- **Bước tiếp theo:** Thực hiện Plan 1, rồi chờ Owner duyệt 10 màn đại diện Phase 1 trước khi mở khóa 90 màn còn lại cho 2 Agent độc lập (50/50 split theo Page).
