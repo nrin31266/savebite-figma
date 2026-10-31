@@ -42,7 +42,8 @@ def main():
     comp_ids = [r['figma_component_id'] for r in component_rows if r['figma_component_id']]
     assert len(comp_ids) == len(set(comp_ids)), 'Duplicate main component node'
     node_count = check_screens(rows, components)
-    for artifact in json.loads((ROOT / 'assets/manifest.json').read_text()):
+    assets = json.loads((ROOT / 'assets/manifest.json').read_text())
+    for artifact in assets:
         path = artifact.get('path') or artifact['filePath']
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == artifact['sha256'], 'Asset drift: ' + path
     skills = json.loads((ROOT / '.agents/skills/manifest.json').read_text())
@@ -66,8 +67,6 @@ def main():
         for target in re.findall(r'\]\(([^)]+)\)', text):
             if not re.match(r'\w+://', target) and not target.startswith('#'):
                 target_path = (p.parent / target.split('#')[0]).resolve()
-                if 'tracking/evidence' in str(target_path):
-                    continue
                 assert target_path.exists(), f'{p.name}: dead link {target}'
     assert (ROOT / 'CLAUDE.md').is_symlink() and os.readlink(ROOT / 'CLAUDE.md') == 'AGENTS.md'
     assert (ROOT / 'CLAUDE.md').resolve() == (ROOT / 'AGENTS.md').resolve()
@@ -81,7 +80,7 @@ def main():
     else:
         raise AssertionError('Validator self-check failed')
     assert all(f'F-0{i}' in experience for i in range(1, 7))
-    print(f'PASS: 100 unique IDs; target={TARGET}; phase1={len(PHASE1)}; {node_count} live Figma nodes; {len(components)} components; 6 Pexels assets verified; {checked_skills} skills; DONE={sum(r["status"] == "DONE" for r in rows)}')
+    print(f'PASS: 100 unique IDs; target={TARGET}; phase1={len(PHASE1)}; {node_count} registered Figma nodes (not live-verified); {len(components)} components; {len(assets)} asset hashes verified (not license/visual QA); {checked_skills} skills; DONE={sum(r["status"] == "DONE" for r in rows)}')
 
 
 if __name__ == '__main__':

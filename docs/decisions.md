@@ -2,6 +2,15 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-014 · 31/10/2026 · Một writer trực tiếp, dùng kit có nguồn và sửa lại bố cục
+
+- Nguồn: owner yêu cầu tự vẽ, không giao agent, giữ họ màu hiện tại; yêu cầu tìm mẫu từ lĩnh vực khác nếu phù hợp, dùng Apple kit đã chia sẻ và shadcn preset, tăng ảnh/icon và làm lại màn cũ. Chỉ sửa docs tại các checkpoint quan trọng.
+- Quyền triển khai thay đổi layout, spacing, component và brand/icon concept trong file SaveBite-V2; không phải owner acceptance cho hình mới. Không thêm backend/app hoặc tự mua kit.
+- Dùng source-native Apple Search/Toggle copy từ kit owner; Figma Simple Design System Button/Input import thực; Phosphor MIT; ảnh có provenance. Điều chỉnh touch bounds/type/màu cho SaveBite, giữ nguồn và components gốc. Không đồng nhất quyền edit một file với giấy phép tái phân phối kit.
+- Tham khảo Crouton/Mela cho ảnh và hierarchy, Things cho danh sách, Wallet cho vé, shadcn cho primitive; không đổi nghiệp vụ pay-at-pickup hoặc sao chép thương hiệu/screenshot làm asset sản phẩm.
+- Bỏ rating/nhận xét không có dữ liệu khỏi phần UI hiển thị; dùng trạng thái chưa có đánh giá. Dữ liệu thật vẫn REQUIRES-REAL-DATA. Logo mới là concept chờ owner review.
+- Native100 root đã tồn tại, vẫn có màn thiếu nội dung/interaction và chưa chạy đủ sáu flow. Giữ DONE0; checkpoint và giới hạn tại [sourced-design-checkpoint](../tracking/sourced-design-checkpoint.md).
+
 ## DEC-001 · 19/10/2026 · Phạm vi bootstrap pilot
 - Nguồn: yêu cầu trực tiếp của Nguyễn Văn Rin và Bootstrap Prompt đính kèm trong phiên này.
 - Duyệt tối đa 5 hi-fi frames: SB-015 → SB-034 → SB-051 → SB-053 → SB-056, foundations phục vụ riêng subset này và một click-through.
@@ -81,6 +90,16 @@
   3. **Phạm vi Phase 1 (10 màn North-Star đại diện đa Archetype):** Thiết kế mới hoàn toàn 10 màn chuẩn mực: `SB-002` (Onboarding), `SB-015` (Discovery), `SB-016` (Map), `SB-019` (Search + iOS Keyboard), `SB-034` (Offer Detail), `SB-051` (Reservation Slot), `SB-053` (Order Summary Receipt), `SB-056` (Success & Perforated QR Pass), `SB-075` (Smart Pantry), `SB-091` (Profile).
   4. **Chính sách Asset-First (`CONFIRMED`):** Loại bỏ ảnh AI tạo sinh cũ; tuyển chọn và xác minh mã băm SHA-256 cho bộ 6 ảnh thực phẩm/cửa hàng thật từ Pexels (`Pexels License`) trong `assets/manifest.json`, kết hợp hệ icon **Phosphor Icons** và font **Be Vietnam Pro / JetBrains Mono / SF Pro**.
   5. **Kế hoạch 2 Agent độc lập (50/50 Split sau khi duyệt 10 màn):** Khóa kiến trúc phân tách vùng ghi Figma theo Page (`Agent 1`: 50 màn `SB-001..049, 059` trên `01 · Entry & Discovery` và `02 · Offer & Merchant`; `Agent 2`: 50 màn `SB-050..058, 060..100` trên `03 · Reserve & Orders` và `04 · Pantry & Account`). Chưa triển khai 90 màn còn lại khi chưa có Owner Review cho 10 màn Phase 1.
+
+## DEC-012 · 31/10/2026 · Cho phép triển khai end-to-end, không đồng nghĩa nghiệm thu baseline
+- Nguồn: owner yêu cầu "coi làm hết luôn các cái còn lại", nhấn mạnh 30 màn cũ chưa đủ/chưa kiểm kỹ, chấp thuận phương án asset sheets → audit/fix → phần còn thiếu và xác nhận "làm end to end".
+- Cho phép thực thi toàn bộ 100 SB-ID theo docs/plans, sửa 30 màn đã có, bổ sung ảnh thật có giấy phép, icon SVG/spot badges và sheet dùng lại; dùng workers theo lease cô lập, fable chủ đạo, worker Sonnet 4.6 khi cần.
+- Override điều kiện phải chờ duyệt Phase 1 mới được sản xuất tiếp trong DEC-011/Plan 2. Đây là **authorization triển khai**, không phải owner acceptance; design_baseline_version vẫn trống, DONE=0 cho tới khi QA và owner duyệt thực sự.
+- Giữ file đích, native editable UI, 4 tabs, reserve/pay-at-pickup, safety/fixture và toàn bộ 100 ID. Mượn nguyên tắc bố cục có nguồn, không sao chép branding, bịa nghiên cứu/metrics hay tự thêm món/merchant mới.
+- Ảnh/minh họa có thể được gom contact sheet rồi crop để xử lý, nhưng UI/control/icon phải native vector/components; không dùng ảnh phẳng thay màn. Icon canonical vẫn Phosphor, custom chỉ mở rộng có chủ đích và ghi nguồn/license.
+- Cho phép pool ảnh đa dạng theo nhu cầu sử dụng thay cho giới hạn 6–8 ảnh; mỗi ảnh phải kiểm nội dung, source/license/hash và ánh xạ fixture đúng. Không cài tool mới nếu bộ hiện tại đủ.
+- Không tự commit/push hoặc đổi quyền chia sẻ. Kết thúc ở AWAITING_OWNER_REVIEW; test không thực hiện được ghi NOT CHECKED/BLOCKED.
+- Ảnh hưởng: docs router, Plan 2 gates, workflow, asset strategy, screens/components registries và checkpoint QA.
 
 ## DEC-013 · 31/10/2026 · Gộp 4 page hi-fi thành 1 page "App · All Screens" để prototype liên-flow hoạt động
 - Nguồn: yêu cầu trực tiếp của owner ("Cái nào cùng màn, cùng chức năng thì gộp thành 1 trang để phục vụ việc nối màn"), trả lời cho Open conflict `NAVIGATION` ghi ở `tracking/progress.md` (31/10/2026) — Figma Plugin API chặn mọi `NAVIGATE` reaction có đích khác page nguồn ("prototypes are per-page"), phát hiện khi thực thi Plan 1.
