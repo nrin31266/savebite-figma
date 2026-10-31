@@ -94,5 +94,53 @@
     "altText": "Quầy trưng bày bánh ngọt trên kệ gỗ ấm áp tại tiệm bánh mẫu",
     "approved": true,
     "sha256": "9bd44c6dbfba6875a43dd419c5439ba58528401fb191964d7d35c1a6abbe25fc"
+  },
+  {
+    "assetId": "food-bakeryrolls-2000498",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/bakery-rolls-pexels-2000498.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/2000498/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Cats Coming / Pexels (ID 2000498)",
+    "downloadDate": "2026-10-31",
+    "usageScope": "Ảnh thay thế/biến thể cho offer đã duyệt fixture-bakery-01 (tránh lặp ảnh trên cùng màn khi cần 2 điểm nhấn bánh); fictional demo offer only, no real merchant endorsement",
+    "merchantId": "merchant-demo-a",
+    "offerId": "fixture-bakery-01",
+    "altText": "Ổ bánh mì nhỏ nướng vàng xếp trong giỏ đan ấm áp, ánh sáng tự nhiên dịu",
+    "approved": true,
+    "sha256": "f6be6e9b9bfec699f671e52fc7e2d6dec67539123efa0ab6df7bfd6e8bf09d78"
+  },
+  {
+    "assetId": "food-ricebowls-5127769",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/rice-bowls-pexels-5127769.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/5127769/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Sirikul R / Pexels (ID 5127769)",
+    "downloadDate": "2026-10-31",
+    "usageScope": "Ảnh thay thế/biến thể cho offer đã duyệt fixture-meal-03 (góc chụp top-down khác, dùng khi cần tránh lặp ảnh trên cùng màn); fictional demo offer only, no real merchant endorsement",
+    "merchantId": "merchant-demo-b",
+    "offerId": "fixture-meal-03",
+    "altText": "Hai phần cơm gà kho cùng rau sống chụp từ trên xuống trên bàn gỗ ấm",
+    "approved": true,
+    "sha256": "801e187469616bda8d3744e992ff36331b2a19defb94b631d7f98defa23348ed"
+  },
+  {
+    "assetId": "food-producecrates-2679261",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/produce-crates-pexels-2679261.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/2679261/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Mark Stebnicki / Pexels (ID 2679261)",
+    "downloadDate": "2026-10-31",
+    "usageScope": "Ảnh thay thế/biến thể cho offer đã duyệt fixture-veggie-04 (quầy nông sản dạng thùng, dùng cho banner/danh mục khi cần tránh lặp ảnh); fictional demo offer only, no real merchant endorsement",
+    "merchantId": "merchant-demo-c",
+    "offerId": "fixture-veggie-04",
+    "altText": "Thùng dưa vàng và hộp cà chua bi tươi bày tại quầy nông sản ngoài trời",
+    "approved": true,
+    "sha256": "d0160750b584881bf6f439c47603861c2de06769456fabc94e7a7309c7b2df6c"
   }
 ]

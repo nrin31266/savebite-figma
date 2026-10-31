@@ -34,9 +34,9 @@ Bảng dưới đây phân định rõ URL chính thức, giấy phép, phạm v
 
 ---
 
-## 3. Bộ 6 Tài nguyên Ảnh Thực phẩm & Cửa hàng Chuẩn Đã Xác minh (`CONFIRMED` trong `assets/manifest.json`)
+## 3. Bộ 9 Tài nguyên Ảnh Thực phẩm & Cửa hàng Chuẩn Đã Xác minh (`CONFIRMED` trong `assets/manifest.json`)
 
-Theo `DEC-011`, toàn bộ ảnh AI tạo sinh và ảnh tối của bản pilot cũ đã được loại bỏ. Kho lưu trữ hiện có **6 file ảnh chụp thật từ Pexels (`Pexels License`)** đã được kiểm duyệt thị giác (ánh sáng tự nhiên ấm `5000K–5800K`, chủ thể rõ, không dính logo thương hiệu hay mặt người) và kiểm tra mã băm SHA-256 tự động qua `scripts/validate.py`:
+Theo `DEC-011`, toàn bộ ảnh AI tạo sinh và ảnh tối của bản pilot cũ đã được loại bỏ. Kho lưu trữ hiện có **9 file ảnh chụp thật từ Pexels (`Pexels License`)** — 6 ảnh gốc (pilot) + 3 ảnh thay thế/biến thể bổ sung 31/10/2026 để tránh lặp ảnh khi batch 90 màn cần nhiều điểm nhấn hơn cho cùng 1 fixture — đã được kiểm duyệt thị giác (ánh sáng tự nhiên ấm `5000K–5800K`, chủ thể rõ, không dính logo thương hiệu hay mặt người) và kiểm tra mã băm SHA-256 tự động qua `scripts/validate.py`:
 
 | Mã Fixture | `assetId` & File trong repo | Nguồn & Giấy phép | Tên món & Cửa hàng hư cấu | Màn hình sử dụng tiêu biểu |
 |---|---|---|---|---|
@@ -46,6 +46,9 @@ Theo `DEC-011`, toàn bộ ảnh AI tạo sinh và ảnh tối của bản pilot
 | **`fixture-veggie-04`** | `food-veggie-2255935` · [fresh-produce-pexels-2255935.jpg](../assets/food/fresh-produce-pexels-2255935.jpg) | Wendy Wei / Pexels (`Pexels License`) | **Combo rau củ tươi trong ngày** · *Quầy Rau C (demo)* · `30.000đ` (Còn 5 phần) · Nhận `16:00–17:30` | **Banner Hero của `SB-015`** (chống trùng ảnh với Card 1!), `SB-030` (Danh mục Rau củ), `SB-033` (Yêu thích). |
 | **`fixture-surprise-05`** | `food-sourdough-sliced-1775043` · [bread-sliced-pexels-1775043.jpg](../assets/food/bread-sliced-pexels-1775043.jpg) | Marianna OLE / Pexels (`Pexels License`) | **Túi bánh bất ngờ cuối ngày** (`SURPRISE_BAG`) · *Tiệm Bánh A (demo)* · `29.000đ` (Còn 2 túi) · Nhận `18:00–19:00` | `SB-035` (Ảnh thứ 2 trong thư viện món bánh), `SB-044` (Chi tiết túi bất ngờ), `SB-045` (Giải thích túi bất ngờ). |
 | **`fixture-store-01`** | `store-bakery-205961` · [bakery-counter-pexels-205961.jpg](../assets/food/bakery-counter-pexels-205961.jpg) | Igor Ovsyannykov / Pexels (`Pexels License`) | **Không gian quầy Tiệm Bánh A** · *Điểm A, Khu học xá (demo)* · Mở nhận `16:00–19:00` | `SB-038` (Chi tiết cửa hàng), `SB-040` (Quy định nhận món), `SB-042` (Đánh giá cửa hàng). |
+| `fixture-bakery-01` (ảnh thay thế) | `food-bakeryrolls-2000498` · [bakery-rolls-pexels-2000498.jpg](../assets/food/bakery-rolls-pexels-2000498.jpg) | Cats Coming / Pexels (`Pexels License`) | **Ổ bánh mì nhỏ trong giỏ đan** — cùng offer `Bánh mì men tự nhiên` · *Tiệm Bánh A (demo)*, góc chụp khác để tránh lặp ảnh | Dùng khi 1 màn cần 2 điểm nhấn bánh (vd. featured banner + card) |
+| `fixture-meal-03` (ảnh thay thế) | `food-ricebowls-5127769` · [rice-bowls-pexels-5127769.jpg](../assets/food/rice-bowls-pexels-5127769.jpg) | Sirikul R / Pexels (`Pexels License`) | **Hai phần cơm gà chụp từ trên xuống** — cùng offer `Cơm gà áp chảo & rau củ` · *Bếp Xanh Campus (demo)*, góc top-down khác | Dùng cho danh mục `SB-028` hoặc banner khi cần tránh lặp ảnh với `OfferListRow` |
+| `fixture-veggie-04` (ảnh thay thế) | `food-producecrates-2679261` · [produce-crates-pexels-2679261.jpg](../assets/food/produce-crates-pexels-2679261.jpg) | Mark Stebnicki / Pexels (`Pexels License`) | **Thùng dưa & cà chua bi tại quầy nông sản** — cùng offer `Combo rau củ tươi trong ngày` · *Quầy Rau C (demo)* | Dùng cho `SB-030` (Danh mục Rau củ) hoặc banner khi cần tránh lặp ảnh |
 
 ---
 
