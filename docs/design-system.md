@@ -1,5 +1,9 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Entry/Discovery · 01/11/2026
+
+[Batch002–005/013–015](../tracking/entry-discovery-ui-checkpoint.md) không thêm main:013/015 OfferCard instances169×246/HUG body, category82×64, promo353×112 dùng forest/radius-md và ảnh nguồn kraft bag.014 có scroll viewport/body Auto Layout, Search Apple và CaretRight reuse; active-order strip353×86. Ba filter48×48; header source icons40pt có native hit frames44pt riêng, giữ main BrandHeader.002/003 Next220ms/Ease Out khi bấm; chưa có Reduce Motion/video QA.
+
 ## Account/Impact · 01/11/2026
 
 [Batch091/100](../tracking/impact-ui-checkpoint.md) không tạo main mới: reuse Celebrate`231:314`, CaretRight`98:44`, ImpactHeroCard`16:186` và ảnh nguồn. Settings rows321×72, MIN alignment/gap12, label257/chevron16. Comparison bars track285 và zero baseline, direct labels, font tên/giá14/ngày12; rectangles/text native, không gọi là source-imported component. Palette forest/wheat/cream giữ nguyên; registry148.

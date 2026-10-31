@@ -2,6 +2,12 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
+## Entry & Discovery UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-discovery-ui`; [002–005/013–015](entry-discovery-ui-checkpoint.md). Promo013/015112pt,4 cards169×246 có giá/slot trước nav;014 Auto Layout, nhắc đơn và source header;003 giờ từng pin;005 note12pt. Không thêm main,100 roots/148 components/30 images.
+- Sửa ba tab014 thiếu reactions, header khu vực/tim/chuông013–015;6 hit frames44pt giữ source icons40pt. Scoped Present005→013→044,002→003→004,014→033/095/060 đã bấm; chưa full-flow/mobile/a11y/owner acceptance, prototype_verified=false,DONE0.
+- PASS: readback/geometry/mapping, validator100 IDs/148 components/30 hashes,8 PNG decode, relative links và whitespace. Không push/merge. Goal tổng thể UI100 màn vẫn ACTIVE; maps.to.design/PlotSet chưa chạy được, F05 drift vẫn OPEN.
+
 ## Account & Impact UI · 01/11 · checkpoint
 
 - Lease **RELEASED tại checkpoint** owner `codex/direct-impact-ui`. [091/100](impact-ui-checkpoint.md): sửa6 rows321×72/gap12/chevrons, chart native3 đơn25K/30K/35K=90K đã trả với ảnh và Mầm Celebrate. Không thêm main, registry148; không dựng savings/CO₂/trend.

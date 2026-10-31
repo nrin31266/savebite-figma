@@ -1,5 +1,7 @@
 # Mẫu tuyển chọn cho SaveBite · 31/10/2026
 
+Áp dụng01/11 [Entry/Discovery](../../tracking/entry-discovery-ui-checkpoint.md): tham khảo nhịp ảnh → tên → giá/điều kiện của Airbnb và density danh sách Groc cho013/014/015. Dùng pool ảnh/source components đã có, không tải thêm kit hoặc ảnh đối thủ. Promo kraft bag353×112 tạo điểm nhấn riêng, giữ4 card prices/slots đọc được trên màn đầu.
+
 Account/Impact01/11: [shadcn bar charts](https://ui.shadcn.com/charts/bar) là nguồn tham khảo chart; không nhập app code. [PlotSet chính thức](https://plotset.net/integrations/figma) đã Save trong Figma, launch lỗi môi trường; chưa export/import chart. [Checkpoint](../../tracking/impact-ui-checkpoint.md) phân biệt native comparison bars tự ráp với plugin chưa chạy được.
 
 Cập nhật01/11: [maps.to.design chính thức](https://divriots.com/blog/introducing-maps-to-design/) được tìm thấy trong Figma quick actions, nhưng launch báo lỗi môi trường cả trước/sau restart. **Chưa import map**, không gọi output image/fill của plugin là vector native. [Map checkpoint](../../tracking/map-ui-checkpoint.md) ghi UI đã sửa độc lập và phần nguồn thật còn thiếu.

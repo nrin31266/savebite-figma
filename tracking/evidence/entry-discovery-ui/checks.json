@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-01",
+  "scopedPresentEdges": [
+    "SB-005→SB-013",
+    "SB-013→SB-044",
+    "SB-002→SB-003",
+    "SB-003→SB-004",
+    "SB-014→SB-033",
+    "SB-014→SB-095",
+    "SB-014→SB-060"
+  ],
+  "surpriseVisible": {
+    "price": "29.000đ",
+    "pickup": "18:00–19:00",
+    "ingredients": "chưa xác nhận"
+  },
+  "geometryPassed": [
+    "7 roots393×852",
+    "4 cards end677<769",
+    "3 filters48×48 atx325",
+    "6 header targets44×44"
+  ],
+  "notChecked": [
+    "all6flows",
+    "allSKU",
+    "alltabs/conditionalbranches",
+    "ReduceMotion",
+    "motionvideo",
+    "DynamicType",
+    "screenreader",
+    "realdevice"
+  ],
+  "prototype_verified": false,
+  "ownerAcceptance": false
+}

@@ -2,6 +2,12 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-019 · 01/11/2026 · Entry và Discovery ưu tiên giờ nhận, giá và đường bấm
+
+- Nguồn: owner yêu cầu tự sửa các màn sơ sài, assets/layout có ý đồ, kiểm card/nút/spacing và trải nghiệm vừa vào app; thực thi DEC-014/015, không đổi nghiệp vụ.
+- DEFAULT thực thi:013/015 dùng promo túi bánh29K/18–19→044 với đúng context, thay promo trước dẫn031.014 tách đơn đang chờ nhận khỏi browsing context; header khu vực/tim/chuông tới018/033/095 và tab reuse điều kiện hiện có. Không tự thêm auth gate.
+-002→003→004 có transition220ms khi bấm;003 nêu giờ nhận riêng cho mỗi fixture và nhãn map minh họa. [Checkpoint](../tracking/entry-discovery-ui-checkpoint.md) ghi QA từng cạnh; không phải owner acceptance hay full-flow PASS.
+
 ## DEC-018 · 01/11/2026 · Chart chi trả và điều hướng tác động
 
 - Nguồn: owner yêu cầu UI có chiều sâu, biểu đồ/plugin và asset có chủ ý; thực thi DEC-014/016, không thêm nghiệp vụ.
