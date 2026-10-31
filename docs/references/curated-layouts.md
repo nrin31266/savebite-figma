@@ -1,5 +1,7 @@
 # Mẫu tuyển chọn cho SaveBite · 31/10/2026
 
+Cập nhật01/11: [maps.to.design chính thức](https://divriots.com/blog/introducing-maps-to-design/) được tìm thấy trong Figma quick actions, nhưng launch báo lỗi môi trường cả trước/sau restart. **Chưa import map**, không gọi output image/fill của plugin là vector native. [Map checkpoint](../../tracking/map-ui-checkpoint.md) ghi UI đã sửa độc lập và phần nguồn thật còn thiếu.
+
 Chọn theo chức năng, giữ màu xanh–kem và Be Vietnam Pro. Đây là tham khảo thị giác/interaction, không phải nghiên cứu người dùng hay giấy phép sao chép sản phẩm khác. Không nhập screenshot đối thủ làm UI.
 
 | Nguồn | Đã xem / lấy được | Cách dùng trong SaveBite |

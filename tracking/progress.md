@@ -2,6 +2,13 @@
 
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
 
+## Map UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-map-ui`. [5 màn map](map-ui-checkpoint.md) đã sửa toolbar353pt, pin/preview theo context, sheet304pt và radius selected; không đổi MapCanvas master,100 root IDs, registry148. Một writer trực tiếp; không agent.
+- Scoped Present: pin30K→croissant,35K→meal; radius500m/2km đổi nút/label/vòng. Chưa fullF02/5SKU/CTA/back/mobile/a11y; prototype_verified=false,DONE0.
+- PASS repository: validator100 IDs/148 components/30 hashes,9 PNG decode, final-bounds/mapping assertions, whitespace. Không push/merge.
+- maps.to.design có trong quick actions nhưng lỗi tải môi trường trước/sau restart; Overpass trả502, không nhập map thật. Cần layer owner export hoặc môi trường plugin hoạt động. UI/chart/motion và toàn100 màn vẫn ACTIVE, tiếp phần độc lập.
+
 ## Sourced UI & Pantry imagery · checkpoint31/10→01/11
 
 - Lease **RELEASED tại checkpoint** · owner `codex/direct-sourced-ui`. [Batch UI/asset](sourced-ui-pantry-checkpoint.md):4 ảnh có nguồn mới,7 Pantry thumbnails,6 detail photo layers và8 SDS Tag Toggle instances.100 roots giữ nguyên; registry148 entries/pool30 ảnh, DONE0. Một writer trực tiếp; không đổi logic form/reminder WIP. MCP reauthentication đã PASS, không cần restart app.

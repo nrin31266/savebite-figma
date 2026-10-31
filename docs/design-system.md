@@ -1,5 +1,9 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+## Map UI · 01/11/2026
+
+Không thêm main: [batch5 màn](../tracking/map-ui-checkpoint.md) reuse MapCanvas/MapPricePin/OfferListRow/AppBar/Apple Search/SDS controls. MapPricePin instances tương tác có touch88×44; metadata price/slot HUG trong row FILL. Context photo/selected pin dùng aliases hiện có.094 có3 Boolean prototype vars cho selected radius, không phải design tokens; Source Primary instances override forest/radius-sm/Be Vietnam Pro. MapCanvas master giữ nguyên, map nguồn thật chưa nhập.
+
 ## Sourced UI/Pantry · 31/10/2026
 
 - [Checkpoint mới](../tracking/sourced-ui-pantry-checkpoint.md): registry148 entries sau khi thêm SDS Tag Toggle On/Off remote mains (`423:849/850`, set`423:848`). Check dependency dùng lại`179:274`; source key/properties ở registry. Không coi entries là component đã nghiệm thu.

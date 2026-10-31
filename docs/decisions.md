@@ -2,6 +2,13 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-017 · 01/11/2026 · Map context và fallback minh họa
+
+- Nguồn: owner yêu cầu tiếp polish UI theo nhóm, dùng maps.to.design đã cài; thực thi DEC-014/016. Không phải nghiệm thu thiết kế.
+- DEFAULT thực thi:016→017 giữ offer context;017 đổi pin bằng state và CTA ghi đúng hành động **Xem chi tiết món** tới034.039 là vị trí minh họa, không công bố ETA/tầng/cổng chưa xác nhận.065 chỉ giữ điểm nhận của đơn và CTA mã nhận.
+- Plugin mở lỗi môi trường; chưa có map thật được nhập. Route/radius minh họa phải có nhãn; external directions và tọa độ merchant tiếp tục REQUIRES-REAL-DATA. Không giả lập địa chỉ thật để hoàn tất demo.
+- [Checkpoint và QA giới hạn](../tracking/map-ui-checkpoint.md); toàn goal vẫn ACTIVE, prototype_verified chưa đổi thànhtrue.
+
 ## DEC-016 · 31/10/2026 · Correction nội dung offer và prototype context
 
 - Nguồn: yêu cầu owner tiếp tục end-to-end, sửa nội dung sai và layout hời hợt; thực thi DEC-014/015, không thêm nghiệp vụ mới.

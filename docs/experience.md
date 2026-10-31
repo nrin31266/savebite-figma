@@ -19,6 +19,8 @@ Nguồn chuẩn theo domain cho Kiến trúc Thông tin (IA), Luồng người d
 **F-02 — Explore map/list**  
 `Khám phá → Map → Tap pin → Quick preview → Offer Detail → Directions/Reserve`.
 
+Map UI01/11 (`DEC-017`):016→017 dùng cùng offer context;017 đổi pin cập nhật ảnh/merchant/giá/slot, CTA “Xem chi tiết món” tới034.039/065 hiện là sơ đồ minh họa, không chứng minh dẫn đường GPS/ETA;094 có state bán kính trực quan. [Batch và giới hạn QA](../tracking/map-ui-checkpoint.md); chưa F-02 end-to-end PASS.
+
 **F-03 — Error and recovery**  
 `Offer available → Confirm → Stock changed → Explain → Adjust quantity or choose alternatives → Confirm safely`.
 
