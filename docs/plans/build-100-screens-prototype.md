@@ -13,7 +13,7 @@ Không bắt đầu trước khi đủ 4 điều kiện:
 1. Plan 1 xong: 10 màn Phase 1 hết lỗi rubric và đã nối prototype subset (trong giới hạn kỹ thuật ở mục 0 dưới đây).
 2. Owner duyệt 10 màn làm baseline (`design_baseline_version = v1.0`).
 3. Ghi `DEC-012` vào [decisions](../decisions.md): owner acceptance Phase 1 + mở 90 màn còn lại. Quyết định này gỡ ràng buộc "Sau pilot: không tự sản xuất 100 màn" trong `AGENTS.md`.
-4. **Owner chọn phương án cho giới hạn prototype liên-page ở mục 0** — đây là quyết định kiến trúc navigation (`AGENTS.md`: "Nghiệp vụ/safety/payment/navigation hoặc breaking design change cần quyết định được ghi log"), ghi thành `DEC-013` trước khi batch nào của Plan 2 bắt đầu nối dây liên trang.
+4. ~~Owner chọn phương án cho giới hạn prototype liên-page~~ **✅ Đã quyết (31/10/2026):** Owner chọn **Phương án A** (gộp page) → `DEC-013` đã ghi và thực thi: 4 page hi-fi gộp thành 1 page `App · All Screens` (`11:3`, 4 Section). Mọi batch từ đây dựng trực tiếp trên page `11:3`, đúng Section theo dải `SB-ID`.
 
 ### 0. ⚠️ Giới hạn đã xác nhận: Figma Plugin API không nối được prototype liên trang
 
@@ -33,18 +33,18 @@ Plan 2 mặc định đề xuất **Phương án B** (rủi ro thấp nhất, kh
 
 ## 2. Page, phân công và lease
 
-- Giữ 4 page hiện có, không tạo thêm page màn hình:
+- **(`DEC-013`)** Một page duy nhất `App · All Screens` (`11:3`) chứa toàn bộ 100 màn hi-fi, tổ chức bằng 4 **Section**:
 
-| Page | Node | Màn |
-|---|---|---|
-| `01 · Entry & Discovery` | `11:3` | `SB-001..033` |
-| `02 · Offer & Merchant` | `11:4` | `SB-034..049`, `SB-059` |
-| `03 · Reserve & Orders` | `11:5` | `SB-050..058`, `SB-060..073` |
-| `04 · Pantry & Account` | `11:6` | `SB-074..100` |
+| Section | Dải màn |
+|---|---|
+| `01 · Entry & Discovery` | `SB-001..033` |
+| `02 · Offer & Merchant` | `SB-034..049`, `SB-059` |
+| `03 · Reserve & Orders` | `SB-050..058`, `SB-060..073` |
+| `04 · Pantry & Account` | `SB-074..100` |
 
-- Trong mỗi page, xếp frame theo hàng ngang theo flow (cách nhau 80pt), mỗi batch nằm trong một Section có tên batch.
-- Mặc định **1 agent ghi Figma**. Chỉ chia 2 agent (50/50 theo page như [workflow](../workflow.md)) khi owner yêu cầu; prototype liên page do agent nối dây cuối cùng thực hiện để tránh 2 writer cùng sửa reactions.
-- Lease ghi ở [progress](../../tracking/progress.md) mỗi batch: owner, page, SB-ID, giờ bắt đầu, giờ release.
+- Trong mỗi section, xếp frame theo hàng ngang theo flow (cách nhau 80pt), các dải `y` khác nhau giữa 4 section để không chồng lấn (xem toạ độ hiện có trong Figma live trước khi thêm frame mới).
+- Mặc định **1 agent ghi Figma**. Chỉ chia 2 agent (50/50 theo Section như [workflow](../workflow.md)) khi owner yêu cầu; vì chỉ còn 1 page, 2 agent cần tránh ghi gần như đồng thời vào vùng canvas sát nhau (rủi ro race condition), không còn ranh giới Page để cô lập tự nhiên.
+- Lease ghi ở [progress](../../tracking/progress.md) mỗi batch: owner, section, SB-ID, giờ bắt đầu, giờ release.
 
 ## 3. Component cần có trước Batch 1
 
@@ -223,7 +223,7 @@ Kiểm tra đường vào: mọi SB-ID ở cột "Đích" xuất hiện ít nh�
 - Load skill `figma-use` trước mọi `use_figma`.
 - Hotspot là layer đã có (button/row instance); không vẽ hình chữ nhật trong suốt trừ 3 hotspot ẩn ở mục 5.
 - Mỗi batch: một script đọc bảng mục 7 của batch đó (map SB-ID → node ID từ [screens.csv](../../tracking/screens.csv)), gọi `setReactionsAsync` cho từng hotspot, rồi read-back `reactions` để đối chiếu.
-- Link sang page khác vẫn hợp lệ trong cùng file; nối dây liên page chỉ làm khi cả hai frame đã tồn tại. Đích chưa có thì ghi `pending:<SB-ID>` vào cột `notes` và nối lại ở batch sau.
+- Toàn bộ 100 màn nay chung 1 page (`DEC-013`) nên `NAVIGATE` reaction luôn hợp lệ miễn đích đã tồn tại; nối dây chỉ chờ frame đích được dựng, không còn giới hạn liên-page. Đích chưa có thì ghi `pending:<SB-ID>` vào cột `notes` và nối lại ở batch sau.
 - Set flow starting points (mục 6) sau B1 cho F-01, sau B2 cho F-03/F-04, sau B3 cho F-02/F-06, sau B8 cho F-05.
 
 ## 9. QA mỗi batch
