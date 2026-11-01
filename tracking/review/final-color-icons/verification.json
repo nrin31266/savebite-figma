@@ -29,7 +29,8 @@
       "015 filter→023",
       "023 native close→015"
     ],
-    "limit": "Scoped route/visual checks only. Existing variable-change/static-layer capture limitation remains OPEN;some status layers absent after transitions."
+    "limit": "Scoped route/visual checks only. Existing variable-change/static-layer capture limitation remains OPEN;some status layers absent after transitions.",
+    "previewReset": "PASS:original Splash76:652 automatically advanced to00217:2 with complete visible onboarding"
   },
   "not_checked": [
     "full6-flow logic",
@@ -41,6 +42,10 @@
   ],
   "git": {
     "authorization": "DEC-037",
-    "state": "Prepared for design milestone,main merge and push;integration result recorded after remote verification"
+    "state": "PASS:design committed,merged main,pushed and remote SHA independently matched",
+    "designCommit": "ed277f9774b0aae1491956434a53fb4d15fdeb3f",
+    "mergeCommit": "c477180daecbf309e2cf70f0b504e9d401625d52",
+    "remoteVerifiedMain": "c477180daecbf309e2cf70f0b504e9d401625d52",
+    "workingTree": "clean after integration;checkpoint-only record follows"
   }
 }

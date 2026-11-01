@@ -1,13 +1,13 @@
 # Progress · 31/10/2026
 
-## Final100-screen color/icon scan and main integration ·01/11 ·AWAITING_OWNER_REVIEW / Git integration
+## Final100-screen color/icon scan and main integration ·01/11 ·AWAITING_OWNER_REVIEW / MAIN_PUSHED
 - Owner requests fresh100 captures/multi-screen critique focused on difficult colors/readability and useful new icons,then commit/merge main/push. Explicit Git integration authorization; UI scope only,no repeated full logic test.
 - Lease RELEASED codex/final-color-icons:App11:3,related Components/tokens/icons,docs/registry/evidence and task Git integration. One writer,no agents. Review existing dirty authorized design work;exclude private/local tool config and assets without publication rights.
 - Continuation codex/final-color-icons:owner corrections DEC-039 include transparent neutral glass,forest active/gray inactive,actual native symbol/text buttons. Interrupted replacement left22 bars without actions/all Explore selected;restored callbacks/states from live Pantry entry and canonical routes. Final100 screenshots captured;visual review and registry/publication checks in progress.
 - Open conflicts:prior writer interrupted,lease transferred within same authorized scope;no other writer detected. Native get_screenshot timed out twice;use_figma individual native screenshots succeed. No canvas permission blocker.
 
 - Final UI checkpoint:[color/icons/native27](final-color-icons-checkpoint.md),DEC-037–039.100 fresh root captures/ten sheets,9 affected header/filter captures refreshed;201 actual component records. Neutral native glass;active forest/inactive gray;fresh50pt/19ptSF Pro heart/bell/filter;native back/photo heart/close controls. Scoped Present tab/header/back routes PASS;global render limitation remains OPEN.
-- PASS validator100 IDs/201 components/33 bitmap hashes/7 skill hashes/DONE0;whitespace;115 public images,seven design JSONs,173 local links/current mappings,38 Phosphor+original fridge hashes. Public review copies mask8 unverified map rectangles;native originals local-only. Full logic/mobile/a11y/usability/owner acceptance NOT CHECKED. Git integration explicitly authorized;remote result follows after verification.
+- PASS validator100 IDs/201 components/33 bitmap hashes/7 skill hashes/DONE0;whitespace;115 public images,seven design JSONs,173 local links/current mappings,38 Phosphor+original fridge hashes. Public review copies mask8 unverified map rectangles;native originals local-only. Full logic/mobile/a11y/usability/owner acceptance NOT CHECKED. Git PASS:design ed277f9 merged main c477180 and pushed;remote SHA independently matches. Working tree clean;checkpoint-only record follows. Owner acceptance remains pending.
 
 ## Native27 fresh keyboards /100 device frames /cleanup ·01/11 ·AWAITING_OWNER_REVIEW
 - [Final checkpoint](native27-device-checkpoint.md),DEC-035/036. Full owner UI scope delivered. Earlier box-only comparison missed glyph rendering;replaced all three swapped keyboards with fresh exact subscribed27 imports,not a positioning patch.009/019/020 fresh IDs791:8389/8498/8597,393×307/y545;returns/020 visibility retained. Glyphs reviewed at200–300% and actual Present020.

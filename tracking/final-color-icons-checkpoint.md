@@ -39,3 +39,7 @@ Published screenshots redact only the8 map rectangles because provider/license/p
 - Known Present variable-change/static-layer capture issue remains OPEN:Pantry/Profile transitions can omit status layers. Native per-root captures are complete;do not call this a global renderer fix.
 - Full6-flow logic,persistence,export/deletion,actual-device,screen-reader/usability tests NOT CHECKED. Owner acceptance pending;prototype_verified=false,DONE0. This checkpoint does not establish completion of the whole coursework rubric.
 - Final validator/link/hash/image/Git results are recorded in [verification.json](review/final-color-icons/verification.json). Lease released at final checkpoint in progress.
+
+## Main integration
+
+PASS:design milestone `ed277f9` merged into main as `c477180`;pushed to origin/main. Independent `git ls-remote` matched local merge SHA. Post-merge validator PASS100 IDs/201 components/33 assets/7 skills/DONE0;working tree clean. This final checkpoint-only commit records the verified integration. No private configs,agent worktrees,raw map bitmap or local-only raw evidence included.
