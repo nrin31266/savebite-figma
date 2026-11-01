@@ -1,0 +1,1525 @@
+{
+  "tokens": [
+    {
+      "id": "VariableID:11:10",
+      "name": "color/brand/900",
+      "values": {
+        "11:0": {
+          "r": 0,
+          "g": 0.26274511218070984,
+          "b": 0.21568627655506134,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:11",
+      "name": "color/brand/700",
+      "values": {
+        "11:0": {
+          "r": 0.1764705926179886,
+          "g": 0.43921568989753723,
+          "b": 0.3333333432674408,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:12",
+      "name": "color/brand/100",
+      "values": {
+        "11:0": {
+          "r": 0.929411768913269,
+          "g": 0.9529411792755127,
+          "b": 0.9058823585510254,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:13",
+      "name": "color/surface/canvas",
+      "values": {
+        "11:0": {
+          "r": 1,
+          "g": 0.9882352948188782,
+          "b": 0.9647058844566345,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:14",
+      "name": "color/surface/subtle",
+      "values": {
+        "11:0": {
+          "r": 0.95686274766922,
+          "g": 0.9372549057006836,
+          "b": 0.9019607901573181,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:15",
+      "name": "color/surface/card",
+      "values": {
+        "11:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:18",
+      "name": "color/text/primary",
+      "values": {
+        "11:0": {
+          "r": 0.03529411926865578,
+          "g": 0.18431372940540314,
+          "b": 0.16078431904315948,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:19",
+      "name": "color/text/secondary",
+      "values": {
+        "11:0": {
+          "r": 0.3764705955982208,
+          "g": 0.4313725531101227,
+          "b": 0.4000000059604645,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:11:20",
+      "name": "color/text/inverse",
+      "values": {
+        "11:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:817:988",
+      "name": "primitive/color/controlBorder",
+      "values": {
+        "11:2": {
+          "r": 0.48235294222831726,
+          "g": 0.5411764979362488,
+          "b": 0.501960813999176,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:817:989",
+      "name": "color/border/control",
+      "values": {
+        "11:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:817:988"
+        }
+      }
+    }
+  ],
+  "maps": [
+    {
+      "sb": "SB-016",
+      "id": "17:188",
+      "x": 0,
+      "y": 0,
+      "w": 393,
+      "h": 769
+    },
+    {
+      "sb": "SB-003",
+      "id": "120:3277",
+      "x": 20,
+      "y": 115,
+      "w": 353,
+      "h": 340
+    },
+    {
+      "sb": "SB-011",
+      "id": "243:4400",
+      "x": 20,
+      "y": 120,
+      "w": 353,
+      "h": 320
+    },
+    {
+      "sb": "SB-017",
+      "id": "101:2044",
+      "x": 0,
+      "y": 0,
+      "w": 393,
+      "h": 769
+    },
+    {
+      "sb": "SB-032",
+      "id": "294:4791",
+      "x": 20,
+      "y": 50.5,
+      "w": 353,
+      "h": 277.1000061035156
+    },
+    {
+      "sb": "SB-039",
+      "id": "106:2793",
+      "x": 0,
+      "y": 0,
+      "w": 393,
+      "h": 540
+    },
+    {
+      "sb": "SB-065",
+      "id": "91:1532",
+      "x": 0,
+      "y": 0,
+      "w": 393,
+      "h": 769
+    },
+    {
+      "sb": "SB-094",
+      "id": "133:3827",
+      "x": 20,
+      "y": 127,
+      "w": 353,
+      "h": 270
+    }
+  ],
+  "nav": [
+    {
+      "sb": "SB-015",
+      "id": "17:159",
+      "tabs": [
+        {
+          "id": "I17:159;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I17:159;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I17:159;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I17:159;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-016",
+      "id": "17:255",
+      "tabs": [
+        {
+          "id": "I17:255;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I17:255;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I17:255;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I17:255;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-013",
+      "id": "78:769",
+      "tabs": [
+        {
+          "id": "I78:769;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I78:769;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I78:769;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I78:769;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-014",
+      "id": "101:2001",
+      "tabs": [
+        {
+          "id": "I101:2001;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I101:2001;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I101:2001;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I101:2001;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-021",
+      "id": "101:2222",
+      "tabs": [
+        {
+          "id": "I101:2222;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I101:2222;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I101:2222;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I101:2222;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-023",
+      "id": "556:5809",
+      "tabs": [
+        {
+          "id": "I556:5809;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I556:5809;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:5809;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:5809;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "sb": "SB-024",
+      "id": "556:5973",
+      "tabs": [
+        {
+          "id": "I556:5973;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I556:5973;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:5973;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:5973;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "sb": "SB-025",
+      "id": "556:6137",
+      "tabs": [
+        {
+          "id": "I556:6137;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I556:6137;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:6137;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:6137;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "sb": "SB-026",
+      "id": "556:6301",
+      "tabs": [
+        {
+          "id": "I556:6301;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I556:6301;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:6301;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I556:6301;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "sb": "SB-027",
+      "id": "531:5065",
+      "tabs": [
+        {
+          "id": "I531:5065;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I531:5065;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I531:5065;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        },
+        {
+          "id": "I531:5065;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "sb": "SB-028",
+      "id": "104:2302",
+      "tabs": [
+        {
+          "id": "I104:2302;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I104:2302;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2302;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2302;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-029",
+      "id": "104:2377",
+      "tabs": [
+        {
+          "id": "I104:2377;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I104:2377;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2377;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2377;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-030",
+      "id": "104:2448",
+      "tabs": [
+        {
+          "id": "I104:2448;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I104:2448;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2448;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2448;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-031",
+      "id": "104:2524",
+      "tabs": [
+        {
+          "id": "I104:2524;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I104:2524;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2524;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2524;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-032",
+      "id": "104:2600",
+      "tabs": [
+        {
+          "id": "I104:2600;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I104:2600;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2600;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2600;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-033",
+      "id": "104:2668",
+      "tabs": [
+        {
+          "id": "I104:2668;827:1055;10508:1285",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I104:2668;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2668;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I104:2668;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-060",
+      "id": "84:1263",
+      "tabs": [
+        {
+          "id": "I84:1263;827:1055;10508:1285",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I84:1263;827:1055;10508:1286",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I84:1263;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I84:1263;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-061",
+      "id": "90:1519",
+      "tabs": [
+        {
+          "id": "I90:1519;827:1055;10508:1285",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I90:1519;827:1055;10508:1286",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I90:1519;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I90:1519;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-073",
+      "id": "112:3325",
+      "tabs": [
+        {
+          "id": "I112:3325;827:1055;10508:1285",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I112:3325;827:1055;10508:1286",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 1
+        },
+        {
+          "id": "I112:3325;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I112:3325;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-075",
+      "id": "20:81",
+      "tabs": [
+        {
+          "id": "I20:81;827:1055;10508:1285",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I20:81;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I20:81;827:1055;10508:1287",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I20:81;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    },
+    {
+      "sb": "SB-091",
+      "id": "20:167",
+      "tabs": [
+        {
+          "id": "I20:167;827:1055;10508:1285",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I20:167;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I20:167;827:1055;10508:1287",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I20:167;827:1055;10508:1288",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        }
+      ]
+    },
+    {
+      "sb": "SB-076",
+      "id": "117:3097",
+      "tabs": [
+        {
+          "id": "I117:3097;827:1055;10508:1285",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I117:3097;827:1055;10508:1286",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        },
+        {
+          "id": "I117:3097;827:1055;10508:1287",
+          "selected": "True",
+          "fonts": [
+            "SF Pro"
+          ],
+          "tint": "VariableID:11:10",
+          "text": [
+            "VariableID:11:10",
+            "VariableID:11:10"
+          ],
+          "selection": {
+            "r": 0.929411768913269,
+            "g": 0.929411768913269,
+            "b": 0.929411768913269
+          },
+          "reactions": 0
+        },
+        {
+          "id": "I117:3097;827:1055;10508:1288",
+          "selected": "False",
+          "fonts": [
+            "SF Pro"
+          ],
+          "text": [
+            "VariableID:11:19",
+            "VariableID:11:19"
+          ],
+          "reactions": 1
+        }
+      ]
+    }
+  ],
+  "buttonCount": 122,
+  "opaqueButtons": [],
+  "rootCount": 100
+}

@@ -1,0 +1,545 @@
+{
+  "rootScreenCount": 100,
+  "rows": [
+    {
+      "id": "20:45",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4826"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "3b3d77b335e138e8f3dd7da2b5b79d0e962815ad"
+      ],
+      "text": [
+        {
+          "id": "I20:45;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4823"
+            }
+          },
+          "characters": "Sữa tươi thanh trùng\n1 hộp · Ngăn mát"
+        },
+        {
+          "id": "I20:45;16:177",
+          "w": 46,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã dùng"
+        },
+        {
+          "id": "I20:45;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4824"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Hạn sử dụng (Use by) · 21/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "20:54",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4838"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "9229b77514748e00389f6abfc707a40b608001b2"
+      ],
+      "text": [
+        {
+          "id": "I20:54;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4835"
+            }
+          },
+          "characters": "Bánh mì men tự nhiên\n1 ổ · Kệ khô"
+        },
+        {
+          "id": "I20:54;16:177",
+          "w": 46,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã dùng"
+        },
+        {
+          "id": "I20:54;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4836"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Nên dùng trước (Best before) · 20/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "20:63",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4850"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "df69681dab6a9dbbd40fc0cffce8fb65bda3d9f1"
+      ],
+      "text": [
+        {
+          "id": "I20:63;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4847"
+            }
+          },
+          "characters": "Trứng gà ta\n6 quả · Ngăn mát"
+        },
+        {
+          "id": "I20:63;16:177",
+          "w": 46,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã dùng"
+        },
+        {
+          "id": "I20:63;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4848"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Nên dùng trước (Best before) · 26/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "20:72",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4862"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "1304f8b191725b77074391644b233b4bf419cecf"
+      ],
+      "text": [
+        {
+          "id": "I20:72;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4859"
+            }
+          },
+          "characters": "Rau cải ngọt\n1 bó · Ngăn mát"
+        },
+        {
+          "id": "I20:72;16:177",
+          "w": 33,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã bỏ"
+        },
+        {
+          "id": "I20:72;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4860"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Đã qua hạn sử dụng · 18/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "148:3779",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4874"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "d6720759f1501a959e4fcf3010c84225bd40c653"
+      ],
+      "text": [
+        {
+          "id": "I148:3779;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4871"
+            }
+          },
+          "characters": "Sữa chua không đường\n1 hộp · Ngăn mát"
+        },
+        {
+          "id": "I148:3779;16:177",
+          "w": 46,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã dùng"
+        },
+        {
+          "id": "I148:3779;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4872"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Hạn sử dụng (Use by) · 25/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "148:3788",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4886"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "a8ad9fd41bd84d12586c10e01be3a8569475ffc1"
+      ],
+      "text": [
+        {
+          "id": "I148:3788;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4883"
+            }
+          },
+          "characters": "Gạo\n1 túi · Kệ khô"
+        },
+        {
+          "id": "I148:3788;16:177",
+          "w": 46,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã dùng"
+        },
+        {
+          "id": "I148:3788;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4884"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Nên dùng trước (Best before) · 15/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "148:3797",
+      "w": 353,
+      "h": 96,
+      "main": "16:171",
+      "visibility": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4898"
+      },
+      "reactionCount": 1,
+      "photo": [
+        "7db3d4f457e841abf82414cad42eccb283677144"
+      ],
+      "text": [
+        {
+          "id": "I148:3797;16:174",
+          "w": 221,
+          "h": 42,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4895"
+            }
+          },
+          "characters": "Đậu Hà Lan\n1 túi · Ngăn đông"
+        },
+        {
+          "id": "I148:3797;16:177",
+          "w": 46,
+          "h": 16,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          },
+          "bindings": {},
+          "characters": "Đã dùng"
+        },
+        {
+          "id": "I148:3797;16:175",
+          "w": 277,
+          "h": 18,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          },
+          "bindings": {
+            "characters": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:356:4896"
+            },
+            "fills": [
+              {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:11:19"
+              }
+            ]
+          },
+          "characters": "Hạn sử dụng (Use by) · 28/10/2026"
+        }
+      ]
+    }
+  ],
+  "detailPhotos": [
+    {
+      "id": "361:4994",
+      "name": "Category illustration · bread",
+      "hash": [
+        "9229b77514748e00389f6abfc707a40b608001b2"
+      ],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4837"
+      },
+      "visibleChildren": 0
+    },
+    {
+      "id": "361:4999",
+      "name": "Category illustration · eggs",
+      "hash": [
+        "df69681dab6a9dbbd40fc0cffce8fb65bda3d9f1"
+      ],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4849"
+      },
+      "visibleChildren": 0
+    },
+    {
+      "id": "361:5004",
+      "name": "Category illustration · greens",
+      "hash": [
+        "1304f8b191725b77074391644b233b4bf419cecf"
+      ],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4861"
+      },
+      "visibleChildren": 0
+    },
+    {
+      "id": "361:5009",
+      "name": "Category illustration · yogurt",
+      "hash": [
+        "d6720759f1501a959e4fcf3010c84225bd40c653"
+      ],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4873"
+      },
+      "visibleChildren": 0
+    },
+    {
+      "id": "361:5014",
+      "name": "Category illustration · rice",
+      "hash": [
+        "a8ad9fd41bd84d12586c10e01be3a8569475ffc1"
+      ],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4885"
+      },
+      "visibleChildren": 0
+    },
+    {
+      "id": "361:5019",
+      "name": "Category illustration · peas",
+      "hash": [
+        "7db3d4f457e841abf82414cad42eccb283677144"
+      ],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:356:4897"
+      },
+      "visibleChildren": 0
+    },
+    {
+      "id": "400:4959",
+      "name": "Category illustration · added",
+      "hash": [],
+      "visibleBinding": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:399:18"
+      },
+      "visibleChildren": 1
+    }
+  ],
+  "filterSkinCount": 8
+}

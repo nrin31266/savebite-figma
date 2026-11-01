@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "changed": [
+    "SB-034",
+    "SB-035",
+    "SB-036",
+    "SB-038",
+    "SB-040"
+  ],
+  "reviewedWithoutRedraw": [
+    "SB-037"
+  ],
+  "scopedPresent": [
+    "meal gallery FIT/FILL/Close",
+    "meal merchant and rules17:30–19:00",
+    "040 BACK038 BACK034",
+    "034 scroll and quality037",
+    "produce merchant row034",
+    "produce allergy BACK034",
+    "produce gallery FIT/FILL",
+    "044 allergy036 BACK044"
+  ],
+  "passed": [
+    "root count100",
+    "5 roots393x852",
+    "component mapping148 entries",
+    "viewport ends754 at dock",
+    "top radius28",
+    "action hit bounds44/48/52",
+    "040 wrapped rows",
+    "15 PNG decode",
+    "repository validator",
+    "relative links",
+    "whitespace"
+  ],
+  "open": [
+    "FILL runtime capture omits static chrome/caption; full rendering not established",
+    "all5SKU/11rows/6flows not checked",
+    "mobile/a11y/owner acceptance not checked",
+    "maps.to.design/PlotSet environment",
+    "F05 drift"
+  ],
+  "prototype_verified": false,
+  "done": 0
+}

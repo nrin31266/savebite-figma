@@ -4,6 +4,22 @@ Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tr
 
 ## Phạm vi và đầu ra
 
+Imagery/UI01/11 (DEC-032/033, DEFAULT):Minh Anh remains fictional.091/092 stock portrait is a visual stand-in, not the sitter's identity/account or product endorsement. Meal14226662 illustrates chicken/rice/vegetables, not a verified pan-searing method, recipe or actual merchant. Market37271691 is category030 context only. Named SKUs, prices, stock, dates and metrics unchanged; bread/croissant/vegetable SKU images remain literal. [Final100-screen visual review](../tracking/vn-final-ui-checkpoint.md) delivered for owner review, not full logic or safety verification.
+
+Strict UI pass01/11 (DEC-031, DEFAULT):013 header login is optional; guest discovery/Pantry remain available.031 shows existing vegetable/bread/croissant offers ordered by16:00/17:00/17:00 pickup starts; no duplicated meal or extra stock.029 related bag reuses existing canonical29K/18:00–19:00/2-bag fixture, not a new offer.047/067/072 static display-state clocks18:30/17:45/17:30 align with closed/closing/received labels; this is not real-time cross-flow clock modeling.099 FAQ is informational; user intent is required before entering cancellation/date editing. Export/deletion/search/persistence remain unvalidated implementation concerns; UI does not establish those functions.
+
+UI fixtures01/11 (DEC-030, DEFAULT):Home013/014/015 reuse existing canonical vegetable offer, five shared offers.095 synthetic events:Ready/Reserved today15:50/15:30,milk reminder today07:30,yogurt18/10 19:45,rice18/10 18:30,eggs17/10 19:10,peas17/10 18:20.089 eight seed historical events:bread used18/10 19:00,greens disposed18/10 18:20,milk date18/10 17:45,eggs added18/10 17:30,rice storage17/10 20:10,yogurt added17/10 18:05,peas added16/10 19:00,greens storage16/10 18:40. Historical UI examples only; seed visibility and session slots retained. Current7 items,3 received orders,4 historical used items and90K paid unchanged. Display SB-001/SB-A125 synthetic, QR unchanged; no scan/payment validation. Native079 covers fixture Oct/Nov2026. Product debug labels removed; provenance retained here.
+
+Pantry status01/11 (`DEC-029`, DEFAULT prototype): label-date status filters combine with storage; fixed reference19/10/2026, near19..21/10, expired earlier, unknown ordinal0 hoặc sentinel10000. “Còn hạn” does not guarantee safe food. Fixture/source/debug metadata belongs in docs; owner authorized product copy cleanup without converting fictional merchants or counts into real-world evidence. [Final UI checkpoint](../tracking/apple27-e2e-checkpoint.md).
+
+Visual refinement01/11 (`DEC-028`, DEFAULT prototype): “Chào Minh Anh” dùng persona demo hiện hữu, không chứng minh đăng nhập thật. Pantry hero đếm vật phẩm, nhãn sắp hạn/quá hạn không xác nhận an toàn/thực phẩm còn tươi; vẫn giữ Use by/Best before và cảnh báo từng món. Order “Chờ nhận” là thông tin, cả thẻ dẫn tới chi tiết; thanh toán tại quầy giữ nguyên. [Evidence/limits](../tracking/visual-refinement-checkpoint.md).
+
+Search/filter repair01/11 (`DEC-023`, DEFAULT demo):019/020 dùng từ khóa cố định “bánh” và3 fixture bakery.023 Reset chỉ loại ưu đãi;027 sort đổi UI selection và quay021. Không claim tìm kiếm tự do, reset toàn bộ filter, persistence hoặc multi-result sorting. [Phạm vi và evidence](../tracking/search-sort-repair-checkpoint.md).
+
+Map01/11 (`DEC-022`): nền khu VKU từ source owner là dữ liệu hình ảnh khu vực, không xác nhận vị trí cửa hàng. Địa chỉ470 Trần Đại Nghĩa của source không phải fixture merchant. Ghim/cự ly/radius vẫn minh họa; chưa có tuyến GPS/ETA, hai tuyến mẫu đã ẩn khi đổi sang nền thật. [Checkpoint](../tracking/map-adoption-checkpoint.md).
+
+Correction bộ lọc01/11 (`DEC-021`, DEFAULT thực thi): budget presets30K/50K/tùy chỉnh/không giới hạn là ngưỡng mỗi phần, không phải biểu đồ phân bố hoặc số món có thật. Nhu cầu ăn uống không xác nhận suitability/dị ứng; phải xác minh thành phần với cửa hàng trước khi đặt. Canvas023–026 mới sửa UI; chưa có logic chọn/lưu/reset/custom/tính kết quả. Không dùng các nhãn gộp legacy để suy luận tag cho fixtures; xem [checkpoint](../tracking/filter-ui-checkpoint.md).
+
 Prototype polish31/10 (DEFAULT theo DEC-014/015): email mẫu `minhanh@example.com`, không gửi thư thật. SB-006 bắt đầu chưa xác nhận đọc hướng dẫn/quyền riêng tư; CTA disabled tới khi tick. “Điều cần biết” mở099, “Quyền riêng tư” mở098; Back giữ trạng thái form. SB-005 cho xem món/Pantry không đăng nhập, không ngầm coi thao tác xem là đồng ý điều khoản chưa có văn bản. SB-048 là nhánh demo17:40, còn1 phần bánh/20 phút tới18:00; các màn mặc định vẫn16:00 ngày19/10/2026. Context thời gian/tồn kho xuyên flow chưa hoàn thiện, xem [checkpoint](../tracking/brand-polish-checkpoint.md).
 
 `CONFIRMED` Repo chỉ thiết kế Figma: consumer mobile tiếng Việt, Rescue Market là core, Smart Pantry là bổ trợ. Yêu cầu thiết kế đã tổng hợp trong docs này; tài liệu học phần và nguồn tham khảo gốc lưu riêng, không cần chúng để tiếp tục.
@@ -179,7 +195,7 @@ Không định vị là dịch vụ giao đồ ăn; không hứa mọi mặt hà
 
 `PantryItem`: `localId`, `name`, `category`, `quantity`, `unit`, `dateAdded`, `expiryDate?`, `dateType` (`USE_BY`/`BEST_BEFORE`/`UNKNOWN`), `storageLocation?`, `reminderOffsetDays`, `notes?`, `status` (`AVAILABLE`/`PARTLY_USED`/`CONSUMED`/`DISPOSED`), `lastUpdatedAt`.
 
-- Thiết kế MVP: offline/local-first, nhập thủ công; không cần ảnh camera/scan barcode.
+- Thiết kế MVP: offline/local-first, nhập thủ công; không cần ảnh camera/scan barcode. Owner01/11 xác nhận icon phân loại mặc định cho Pantry; glyph fixtures/configurable CategoryIcon thay ảnh món. Không bắt người dùng chụp ảnh. [Checkpoint](../tracking/selected-states-checkpoint.md).
 - Khi `expiryDate` thiếu, không suy đoán, hiển thị “Chưa có ngày hạn”.
 - Khi `USE_BY` đã qua ngày, chỉ hướng dẫn xử lý an toàn và kiểm tra nhãn nhà sản xuất; **không khuyến nghị sử dụng thực phẩm đã quá hạn dùng**.
 - Khi `BEST_BEFORE` đã qua, UI cần dùng ngôn ngữ thận trọng và không quyết định thay người dùng về an toàn.
@@ -217,7 +233,7 @@ Có thể dùng dữ liệu ví dụ cho prototype để trình diễn, **nhưng
 | fixture-store-01 | Không gian quầy Tiệm Bánh A | Không phải offer mua | 16:00–19:00 giờ nhận minh họa | Tiệm Bánh A (demo) |
 
 - Đồng hồ demo chính cố định16:00 ngày19/10/2026, Asia/Ho_Chi_Minh; recovery/expiry có thể là snapshot thời gian khác nhưng phải ghi rõ demo/time-state, không đánh tráo ngày hiện tại. Tồn kho đổi/hết hàng phải được giải thích là state khác của cùng fixture, không tự đổi món/merchant.
-- Các giá/tồn kho/giờ là fixture, không phải dữ liệu thật. Không có giá gốc hợp lệ trong bộ core chain nên không hiển thị số tiền tiết kiệm hay giá gạch ngang suy diễn. SB-091/100 hiện có3 đơn nhận,4 món Pantry dùng kịp hạn; SB-100 liệt kê25K+30K+35K=90K **đã trả**, không phải90K tiết kiệm. Đây là history demo có nhãn, không outcome thực.
+- Các giá/tồn kho/giờ là fixture, không phải dữ liệu thật. Không có giá gốc hợp lệ trong bộ core chain nên không hiển thị số tiền tiết kiệm hay giá gạch ngang suy diễn. SB-091/100 hiện có3 đơn nhận,4 món Pantry dùng kịp hạn; SB-100 liệt kê25K+30K+35K=90K **đã trả**, không phải90K tiết kiệm. Đây là history fixture khai báo trong docs; UI không bắt buộc mang nhãn debug, không phải outcome thực.
 - Ảnh asset phải khớp món: nếu ảnh không chứng minh có gà, không coi altText/tên file là bằng chứng; dùng ảnh thay phù hợp hoặc ghi mismatch BLOCKED. Không suy ra thành phần/dị ứng từ ảnh.
 - Không lẫn cùng một offer với nhiều mức giá, tên merchant hay pickup hours ở các frame liên tiếp.
 - Bộ fixture phải có danh sách IDs ổn định; mỗi frame mapping tới cùng fixture khi tương ứng cùng đối tượng.

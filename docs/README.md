@@ -1,5 +1,39 @@
 # Bắt đầu làm SaveBite
 
+**Final UI review01/11 · DEC-037–039:** [100-screen color/icons + native Apple27 controls](../tracking/final-color-icons-checkpoint.md). Neutral transparent glass;forest active/gray inactive;fresh50pt heart/bell/filter,source back/close controls. [Published review sheets](../tracking/review/final-color-icons/cluster-011.jpg) redact unverified map imagery. Owner acceptance pending;Git integration authorized.
+
+**Native27 correction01/11 · DEC-035/036:** [Fresh keyboard glyphs +100 iPhone frames +cleanup](../tracking/native27-device-checkpoint.md). Thay ba instance bàn phím bằng import mới đúng kit,kiểm glyph ở200–300%/Present;native307pt.100 root bo50 theo mẫu Screen/cùng token;63 AppBar callers dùng kính/quay lại44pt;055 native spinner. Xóa20 local main/variant và15 ô mẫu;registry195/33 assets. Chờ owner acceptance,full logic excluded.
+
+**Correction01/11 · DEC-034:** [Keyboard square surface009/019/020](../tracking/keyboard-square-checkpoint.md). Nền bàn phím vuông sát cạnh màn hình, bỏ bo ngoài27/62; giữ bo phím gốc. Supersedes outer-radius retention trong batch trước; chờ owner review.
+
+**UI refinement01/11 · AWAITING_OWNER_REVIEW · DEC-032/033:** [Final imagery/Apple27/all-screen review](../tracking/vn-final-ui-checkpoint.md). Native phone27 keyboards009/019/020, real sourced portrait091/092, two Vietnamese food/context photos,218 capsule action controls. Fresh100 native captures/ten sheets reviewed;207 components/33 asset records. Full UI scope delivered; owner acceptance/DONE0 unchanged. Full logic tests excluded; Present capture limitation remains OPEN.
+
+**Checkpoint UI mới nhất01/11 · AWAITING_OWNER_REVIEW · DEC-031:** [Strict cluster critique](../tracking/cluster-ui-checkpoint.md).100 native frame captures,30 revised screens:Guest login/header tools,category listings222pt earlier,semantic icons/copy,modal context,nav insets and unused-control cleanup.195 component entries;full logic testing excluded by owner. Validator/evidence/source checks PASS;preview trở về onboarding gốc;owner acceptance/DONE0 unchanged.
+
+**Checkpoint trước01/11 · AWAITING_OWNER_REVIEW:** [Apple27/full UI refinement](../tracking/apple27-e2e-checkpoint.md). Pantry gọn + hai bộ lọc một hàng; native Apple27 navigation/menu/switch/calendar/segments/glass buttons/rows, semantic labels/copy toàn App và Home/list/detail polish.100 roots,194 component entries; đã cuộn Pantry và đưa preview về onboarding gốc. Owner giảm full logic testing, không giảm phạm vi UI. Render limitation ghi riêng; DONE0.
+
+**Checkpoint trước01/11:** [Mầm/Home/Pantry075 và semantic labels](../tracking/visual-refinement-checkpoint.md), DEC-028. Hướng “gian bếp minh hoạ nhẹ” đã được owner chọn và triển khai; kết quả chờ review. Home có lời chào/thẻ đơn mới, nhãn nguồn native SDS; registry163. [Selected-state batch trước](../tracking/selected-states-checkpoint.md) giữ lịch sử075 bị từ chối. Present mất lớp sau đổi state vẫn OPEN; DONE0.
+
+**Paper correction01/11:** [044 dùng bản phẳng; Fold khoét trong suốt; bỏ sọc056](../tracking/paper-correction-checkpoint.md). Giữ Receipt053/Leaf074. [Apple chrome100 màn](../tracking/apple-paper-checkpoint.md) giữ nguyên; AWAITING_OWNER_REVIEW, render transition vẫn OPEN.
+
+**Correction mới nhất theo ảnh owner:** [Apple/shared Search019–020, sheets023–027 và Components cleanup](../tracking/apple-consistency-checkpoint.md). History19 bỏ clipping;19/20 cùng main SearchField, Apple status bar gốc đã áp7 màn. Present có lỗi thiếu lớp sau một số transition/state change cần kiểm tiếp; chưa nghiệm thu.
+
+**UI019/020/023/027 đã sửa lại theo owner:** [checkpoint repair](../tracking/search-sort-repair-checkpoint.md) — chip cuộn ngang, Apple keyboard liên tục, SDS Tag Toggle native, summary filter và sort list gọn. Đã kiểm một số tương tác trên IAB đã kết nối; AWAITING_OWNER_REVIEW, chưa nghiệm thu. [WIP bị từ chối](../tracking/search-sort-wip-checkpoint.md) giữ lịch sử.
+
+**Filter UI01/11:** [checkpoint023–026](../tracking/filter-ui-checkpoint.md) — context native, sheet gọn, close44pt, presets giá thay chart thiếu dữ liệu và cảnh báo hết tràn. Logic chọn/reset/custom/kết quả vẫn cần làm; chưa nghiệm thu.
+
+**Support UI01/11:** [checkpoint069/070](../tracking/support-ui-checkpoint.md) — radio đồng tâm, sheet hủy hết tràn, close44pt và CTA trên safe area. Scoped visual/readback; Present chưa kiểm.
+
+**Offer UI01/11:** [checkpoint034–038/040](../tracking/offer-ui-checkpoint.md) — detail cuộn riêng trên dock, gallery theo món, sheet dị ứng không suy đoán, listing theo cửa hàng và3 bước nhận món hết tràn chữ. Đã bấm nhánh meal/produce; toàn100 màn vẫn chưa nghiệm thu.
+
+**Entry/Discovery01/11:** [checkpoint002–005/013–015](../tracking/entry-discovery-ui-checkpoint.md) — banner túi bánh gọn, giá/giờ nhận trên màn đầu, returning feed Auto Layout và sửa header/tab thiếu đường bấm. Present kiểm một số nhánh; toàn100 màn vẫn chưa nghiệm thu.
+
+**Account/Impact01/11:** [checkpoint091/100](../tracking/impact-ui-checkpoint.md) — sửa gap6 settings rows, chart native3 đơn/90K đã trả, ảnh và pose Mầm. PlotSet đã lưu vào Figma nhưng chạy lỗi môi trường; chưa import chart từ plugin. Goal toàn100 màn vẫn ACTIVE.
+
+**Map UI01/11:** [source owner đã áp vào8 màn](../tracking/map-adoption-checkpoint.md) qua MapCanvas hiện hữu; giữ overlay native, bỏ tuyến chưa có dữ liệu và tách địa chỉ470 khỏi merchant fixtures. Provider/ghi công và Present sau thay nền chưa kiểm. [Batch UI trước](../tracking/map-ui-checkpoint.md) giữ lịch sử. Goal toàn100 màn vẫn ACTIVE.
+
+**Batch UI/asset mới:** [sourced UI/Pantry checkpoint](../tracking/sourced-ui-pantry-checkpoint.md) —7 thumbnail món, ảnh chi tiết theo món, SDS Tag Toggle native; pool30 ảnh và registry148 entries. Đã bấm thử hai filter và hai ảnh detail; toàn bộ flow100 màn vẫn chưa nghiệm thu.
+
 **Phiên này dừng theo owner · F-05 WIP:** [checkpoint tiếp quản và lỗi còn mở](../tracking/f05-wip-checkpoint.md). Lease đã RELEASED; chưa nghiệm thu.
 
 **Continuation31/10 · lịch sử batch trước:** [Pantry state, asset reuse và QA còn lại](../tracking/continuation-checkpoint.md). Đã có editor082, dữ liệu riêng7 fixture và4 pose Mầm áp vào màn; chưa hoàn tất F-01..F-06 hoặc polish100 màn. Checkpoint bên dưới giữ lịch sử trước continuation.
@@ -23,14 +57,14 @@ SaveBite là thiết kế ứng dụng iPhone tiếng Việt: khám phá thực 
 
 **Kế hoạch hiện hành (31/10/2026):** tiếp tục correction/QA toàn100 màn theo [Plan 2](plans/build-100-screens-prototype.md), [ma trận art direction](screen-art-direction.md) và [checkpoint có nguồn](../tracking/sourced-design-checkpoint.md). [Plan 1](plans/phase1-fix-sb002-sb034.md), [Plan A](plans/batch-A-entry-discovery-offer.md) và [Plan B](plans/batch-B-orders-pantry-account.md) giữ lịch sử creation; các con số thiếu màn trong plan lịch sử không override inventory100 root hiện tại. Baseline vẫn chờ owner review; một writer trực tiếp theo DEC-014.
 
-Không cần file nguồn bên ngoài repo hoặc lịch sử chat để hiểu yêu cầu hiện hành. [Decisions](decisions.md) lưu các quyết định có nguồn duyệt (`DEC-001..DEC-015`); quyền triển khai không phải nghiệm thu output.
+Không cần file nguồn bên ngoài repo hoặc lịch sử chat để hiểu yêu cầu hiện hành. [Decisions](decisions.md) lưu các quyết định có nguồn duyệt (`DEC-001..DEC-031`); quyền triển khai không phải nghiệm thu output.
 
 **Checkpoint đã merge · DEC-014 (lịch sử trước polish):** [kit có nguồn và correction trực tiếp](../tracking/sourced-design-checkpoint.md). Đã có100 native root,90 component entries đăng ký,26 ảnh/minh họa; đây chưa phải100 màn đạt QA. Apple Search/Toggle copy thực và Figma Simple Design System Button/Input đã dùng vào app; nhiều flow/màn cũ vẫn NEEDS_REWORK. Xem progress hiện hành trước các checkpoint lịch sử.
 
 ## Mở thiết kế và kiểm tra
 
 - File Figma đích duy nhất (`DEC-011`): [SaveBite-V2 trên Figma](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1). *(File cũ `NLTv70kDZ2i3HpOnOKQCDY` và 5 màn pilot v0.5 đã xóa/nghỉ hưu).*
-- [Skills và setup cho teammate](references/agent-skills.md): bộ 6 skills dùng trong dự án, lệnh kết nối Figma MCP và lệnh khôi phục local.
+- [Skills và setup cho teammate](references/agent-skills.md): bộ 7 skills dùng trong dự án, lệnh kết nối Figma MCP và lệnh khôi phục local.
 - [Assets](../assets/manifest.json): nguồn, giấy phép và mã băm SHA-256 của ảnh thực phẩm/cửa hàng; số lượng và trạng thái lấy từ manifest, không coi hash PASS là license/visual QA.
 - [Progress](../tracking/progress.md) và registries là checkpoint hiện hành; evidence chi tiết chỉ được link sau khi file thật được lưu. Các link `tracking/evidence/` cũ không còn tồn tại. Luôn đọc Figma live trước mỗi lần ghi canvas; screenshot/read-back không thay thế chạy Present mode.
 

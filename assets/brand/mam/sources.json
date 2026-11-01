@@ -30,7 +30,8 @@
     "figmaMainId": "231:269",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-269",
     "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "d99f3349e131978dd63cbe5386da584ed9d6249edd0dfea6d0b8450e60922c0f"
+    "sha256": "ce5647bc748227615d23c5f9fad7ba5da5c4ef3c7a14b03e35c8ea99178cd681",
+    "notes": "Carrot body/leaves grouped and scaled 0.72 below face, native main231:269; visual refinement01Nov, owner acceptance pending."
   },
   {
     "assetId": "brand-mam-quiet",
@@ -162,7 +163,18 @@
     "figmaMainId": "231:450",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-450",
     "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "0b3ef40b2422c8a3324a47955347632c3d3f0abf34318cda6ec490e680ad4e11"
+    "sha256": "56901c64059049cb2363ec7139cbc6d91ede55c9e92834119212cb3bee69d671"
+  },
+  {
+    "assetId": "brand-pattern-paper-plain",
+    "kind": "PATTERN",
+    "filePath": "assets/brand/mam/pattern-paper-plain.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "figmaNodeId": "577:926",
+    "figmaMainId": "577:926",
+    "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=577-926",
+    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
+    "sha256": "a986984cb1592ca6564be38fd6d1db64636ded9ba73c07cc38a257f0b5e07c54"
   },
   {
     "assetId": "brand-wordmark-forest",
@@ -191,66 +203,78 @@
     "kind": "BRAND_STICKER",
     "filePath": "assets/brand/mam/sticker-forest.svg",
     "sourceType": "ORIGINAL_VECTOR_CONCEPT",
-    "figmaNodeId": "231:826",
-    "figmaMainId": "231:478",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-826",
-    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "771c9fa4c1b4819d56c0496571ac9c0fd7c467511d8a40d41b89922823088fa3"
+    "status": "UNUSED_SOURCE_RETAINED",
+    "sha256": "771c9fa4c1b4819d56c0496571ac9c0fd7c467511d8a40d41b89922823088fa3",
+    "historicalFigmaMainId": "231:478",
+    "historicalFigmaNodeId": "231:826",
+    "sourceUrlStatus": "HISTORICAL_NODE_REMOVED_DEC036",
+    "retiredAt": "2026-11-01"
   },
   {
     "assetId": "brand-sticker-wheat",
     "kind": "BRAND_STICKER",
     "filePath": "assets/brand/mam/sticker-wheat.svg",
     "sourceType": "ORIGINAL_VECTOR_CONCEPT",
-    "figmaNodeId": "231:829",
-    "figmaMainId": "231:480",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-829",
-    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "81def3fd3c46f9762f04e1894214cb279b21b26cb994e2073d9fe2ae84534085"
+    "status": "UNUSED_SOURCE_RETAINED",
+    "sha256": "81def3fd3c46f9762f04e1894214cb279b21b26cb994e2073d9fe2ae84534085",
+    "historicalFigmaMainId": "231:480",
+    "historicalFigmaNodeId": "231:829",
+    "sourceUrlStatus": "HISTORICAL_NODE_REMOVED_DEC036",
+    "retiredAt": "2026-11-01"
   },
   {
     "assetId": "brand-sticker-sage",
     "kind": "BRAND_STICKER",
     "filePath": "assets/brand/mam/sticker-sage.svg",
     "sourceType": "ORIGINAL_VECTOR_CONCEPT",
-    "figmaNodeId": "231:832",
-    "figmaMainId": "231:482",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-832",
-    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "ad9573c4dffc993843dc47f7eae66a71cfcefe6c0aba85e10547ef5b1a541c6f"
+    "status": "UNUSED_SOURCE_RETAINED",
+    "sha256": "ad9573c4dffc993843dc47f7eae66a71cfcefe6c0aba85e10547ef5b1a541c6f",
+    "historicalFigmaMainId": "231:482",
+    "historicalFigmaNodeId": "231:832",
+    "sourceUrlStatus": "HISTORICAL_NODE_REMOVED_DEC036",
+    "retiredAt": "2026-11-01"
   },
   {
     "assetId": "brand-sticker-paper",
     "kind": "BRAND_STICKER",
     "filePath": "assets/brand/mam/sticker-paper.svg",
     "sourceType": "ORIGINAL_VECTOR_CONCEPT",
-    "figmaNodeId": "231:836",
-    "figmaMainId": "231:484",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-836",
-    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "f8d887c2ecb5dc3396b98e4438050b47fa7f3120e1ddf47beae63486ef55591c"
+    "status": "UNUSED_SOURCE_RETAINED",
+    "sha256": "f8d887c2ecb5dc3396b98e4438050b47fa7f3120e1ddf47beae63486ef55591c",
+    "historicalFigmaMainId": "231:484",
+    "historicalFigmaNodeId": "231:836",
+    "sourceUrlStatus": "HISTORICAL_NODE_REMOVED_DEC036",
+    "retiredAt": "2026-11-01"
   },
   {
     "assetId": "brand-sticker-terracotta",
     "kind": "BRAND_STICKER",
     "filePath": "assets/brand/mam/sticker-terracotta.svg",
     "sourceType": "ORIGINAL_VECTOR_CONCEPT",
-    "figmaNodeId": "231:839",
-    "figmaMainId": "231:486",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-839",
-    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "30c919c4a33c5cb247825bcc1120b0489b0c7f1e14fd0b28e33364c68f10c481"
+    "status": "UNUSED_SOURCE_RETAINED",
+    "sha256": "30c919c4a33c5cb247825bcc1120b0489b0c7f1e14fd0b28e33364c68f10c481",
+    "historicalFigmaMainId": "231:486",
+    "historicalFigmaNodeId": "231:839",
+    "sourceUrlStatus": "HISTORICAL_NODE_REMOVED_DEC036",
+    "retiredAt": "2026-11-01"
   },
   {
     "assetId": "brand-sticker-quiet",
     "kind": "BRAND_STICKER",
     "filePath": "assets/brand/mam/sticker-quiet.svg",
     "sourceType": "ORIGINAL_VECTOR_CONCEPT",
-    "figmaNodeId": "231:842",
-    "figmaMainId": "231:488",
     "sourceUrl": "https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=231-842",
-    "status": "CANDIDATE_AWAITING_OWNER_REVIEW",
-    "sha256": "6c748b169d798c65e5a7ad862060213ae824df0b82ad44b544be0b7f41eef39e"
+    "status": "UNUSED_SOURCE_RETAINED",
+    "sha256": "6c748b169d798c65e5a7ad862060213ae824df0b82ad44b544be0b7f41eef39e",
+    "historicalFigmaMainId": "231:488",
+    "historicalFigmaNodeId": "231:842",
+    "sourceUrlStatus": "HISTORICAL_NODE_REMOVED_DEC036",
+    "retiredAt": "2026-11-01"
   },
   {
     "assetId": "brand-activity-forest-1",

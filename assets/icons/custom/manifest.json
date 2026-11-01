@@ -1,0 +1,14 @@
+[
+  {
+    "name": "fridge",
+    "filePath": "assets/icons/custom/fridge.svg",
+    "sourceType": "ORIGINAL_VECTOR_CONCEPT",
+    "license": "Original SaveBite project vector",
+    "sha256": "8eedb254575f2c43cd241eb73bd2df3e042bd4f6758993923581e2c32178674e",
+    "figmaComponentId": "817:990",
+    "usageScreenIds": [
+      "SB-087"
+    ],
+    "status": "CANDIDATE_AWAITING_OWNER_REVIEW"
+  }
+]

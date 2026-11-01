@@ -1,0 +1,442 @@
+{
+  "roots": [
+    "20:109",
+    "85:1445"
+  ],
+  "rows": [
+    {
+      "id": "85:1476",
+      "w": 353,
+      "h": 72,
+      "trackW": 285,
+      "barW": 203.57142639160156,
+      "value": 25000,
+      "texts": [
+        {
+          "id": "85:1477",
+          "text": "Bánh mì men tự nhiên",
+          "w": 215,
+          "h": 20,
+          "size": 14,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          }
+        },
+        {
+          "id": "85:1478",
+          "text": "25.000đ",
+          "w": 62,
+          "h": 20,
+          "size": 14,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          }
+        },
+        {
+          "id": "461:4988",
+          "text": "19/10/2026",
+          "w": 285,
+          "h": 18,
+          "size": 12,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Regular"
+          }
+        }
+      ],
+      "photo": [
+        "9229b77514748e00389f6abfc707a40b608001b2"
+      ]
+    },
+    {
+      "id": "85:1480",
+      "w": 353,
+      "h": 72,
+      "trackW": 285,
+      "barW": 244.2857208251953,
+      "value": 30000,
+      "texts": [
+        {
+          "id": "85:1481",
+          "text": "Bánh sừng bò bơ Pháp",
+          "w": 215,
+          "h": 20,
+          "size": 14,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          }
+        },
+        {
+          "id": "85:1482",
+          "text": "30.000đ",
+          "w": 62,
+          "h": 20,
+          "size": 14,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          }
+        },
+        {
+          "id": "461:4994",
+          "text": "17/10/2026",
+          "w": 285,
+          "h": 18,
+          "size": 12,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Regular"
+          }
+        }
+      ],
+      "photo": [
+        "30db81ade08ff0f66f092d125db83365ba0452af"
+      ]
+    },
+    {
+      "id": "85:1484",
+      "w": 353,
+      "h": 72,
+      "trackW": 285,
+      "barW": 285,
+      "value": 35000,
+      "texts": [
+        {
+          "id": "85:1485",
+          "text": "Cơm gà áp chảo & rau củ",
+          "w": 215,
+          "h": 20,
+          "size": 14,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Medium"
+          }
+        },
+        {
+          "id": "85:1486",
+          "text": "35.000đ",
+          "w": 62,
+          "h": 20,
+          "size": 14,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "SemiBold"
+          }
+        },
+        {
+          "id": "461:5000",
+          "text": "14/10/2026",
+          "w": 285,
+          "h": 18,
+          "size": 12,
+          "font": {
+            "family": "Be Vietnam Pro",
+            "style": "Regular"
+          }
+        }
+      ],
+      "photo": [
+        "e68b89119238012b13cee08e3feba75c817b478a"
+      ]
+    }
+  ],
+  "accountRows": [
+    {
+      "id": "20:147",
+      "w": 321,
+      "h": 72,
+      "gap": 12,
+      "positions": [
+        {
+          "id": "148:3834",
+          "x": 0,
+          "w": 24
+        },
+        {
+          "id": "148:3838",
+          "x": 36,
+          "w": 257
+        },
+        {
+          "id": "464:4980",
+          "x": 305,
+          "w": 16
+        }
+      ]
+    },
+    {
+      "id": "20:150",
+      "w": 321,
+      "h": 72,
+      "gap": 12,
+      "positions": [
+        {
+          "id": "148:3840",
+          "x": 0,
+          "w": 24
+        },
+        {
+          "id": "148:3844",
+          "x": 36,
+          "w": 257
+        },
+        {
+          "id": "464:4984",
+          "x": 305,
+          "w": 16
+        }
+      ]
+    },
+    {
+      "id": "20:153",
+      "w": 321,
+      "h": 72,
+      "gap": 12,
+      "positions": [
+        {
+          "id": "148:3846",
+          "x": 0,
+          "w": 24
+        },
+        {
+          "id": "148:3850",
+          "x": 36,
+          "w": 257
+        },
+        {
+          "id": "464:4988",
+          "x": 305,
+          "w": 16
+        }
+      ]
+    },
+    {
+      "id": "20:158",
+      "w": 321,
+      "h": 72,
+      "gap": 12,
+      "positions": [
+        {
+          "id": "148:3852",
+          "x": 0,
+          "w": 24
+        },
+        {
+          "id": "148:3856",
+          "x": 36,
+          "w": 257
+        },
+        {
+          "id": "464:4992",
+          "x": 305,
+          "w": 16
+        }
+      ]
+    },
+    {
+      "id": "20:161",
+      "w": 321,
+      "h": 72,
+      "gap": 12,
+      "positions": [
+        {
+          "id": "148:3858",
+          "x": 0,
+          "w": 24
+        },
+        {
+          "id": "148:3862",
+          "x": 36,
+          "w": 257
+        },
+        {
+          "id": "464:4996",
+          "x": 305,
+          "w": 16
+        }
+      ]
+    },
+    {
+      "id": "20:164",
+      "w": 321,
+      "h": 72,
+      "gap": 12,
+      "positions": [
+        {
+          "id": "148:3864",
+          "x": 0,
+          "w": 24
+        },
+        {
+          "id": "148:3868",
+          "x": 36,
+          "w": 257
+        },
+        {
+          "id": "464:5000",
+          "x": 305,
+          "w": 16
+        }
+      ]
+    }
+  ],
+  "total": 90000,
+  "count": 3,
+  "pantryUsed": 4,
+  "mam": {
+    "instance": "461:4968",
+    "main": "231:314"
+  },
+  "mains": [
+    {
+      "root": "20:109",
+      "instance": "20:110",
+      "main": "15:2",
+      "name": "iOSStatusBar"
+    },
+    {
+      "root": "20:109",
+      "instance": "20:125",
+      "main": "15:111",
+      "name": "LargeTitleBar"
+    },
+    {
+      "root": "20:109",
+      "instance": "20:167",
+      "main": "15:122",
+      "name": "BottomNav"
+    },
+    {
+      "root": "20:109",
+      "instance": "I20:167;15:147",
+      "main": "15:17",
+      "name": "iOSHomeIndicator"
+    },
+    {
+      "root": "20:109",
+      "instance": "20:130",
+      "main": "16:180",
+      "name": "ProfileHeaderCard"
+    },
+    {
+      "root": "20:109",
+      "instance": "20:136",
+      "main": "16:186",
+      "name": "ImpactHeroCard"
+    },
+    {
+      "root": "20:109",
+      "instance": "I20:136;464:5644",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "20:109",
+      "instance": "148:3834",
+      "main": "98:65",
+      "name": "Icon/MapPin"
+    },
+    {
+      "root": "20:109",
+      "instance": "464:4980",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "20:109",
+      "instance": "148:3840",
+      "main": "98:32",
+      "name": "Icon/Bell"
+    },
+    {
+      "root": "20:109",
+      "instance": "464:4984",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "20:109",
+      "instance": "148:3846",
+      "main": "98:56",
+      "name": "Icon/Heart"
+    },
+    {
+      "root": "20:109",
+      "instance": "464:4988",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "20:109",
+      "instance": "148:3852",
+      "main": "98:59",
+      "name": "Icon/Info"
+    },
+    {
+      "root": "20:109",
+      "instance": "464:4992",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "20:109",
+      "instance": "148:3858",
+      "main": "98:95",
+      "name": "Icon/Warning"
+    },
+    {
+      "root": "20:109",
+      "instance": "464:4996",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "20:109",
+      "instance": "148:3864",
+      "main": "98:59",
+      "name": "Icon/Info"
+    },
+    {
+      "root": "20:109",
+      "instance": "464:5000",
+      "main": "98:44",
+      "name": "Icon/CaretRight"
+    },
+    {
+      "root": "85:1445",
+      "instance": "85:1446",
+      "main": "15:2",
+      "name": "iOSStatusBar"
+    },
+    {
+      "root": "85:1445",
+      "instance": "85:1461",
+      "main": "15:105",
+      "name": "AppBar"
+    },
+    {
+      "root": "85:1445",
+      "instance": "461:4968",
+      "main": "231:314",
+      "name": "Pose=Celebrate"
+    },
+    {
+      "root": "85:1445",
+      "instance": "85:1467",
+      "main": "15:17",
+      "name": "iOSHomeIndicator"
+    }
+  ],
+  "body": {
+    "id": "461:4966",
+    "h": 630
+  },
+  "viewport": {
+    "id": "461:4965",
+    "h": 703
+  },
+  "rootCount": 100
+}

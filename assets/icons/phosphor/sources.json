@@ -59,22 +59,28 @@
     "sha256": "6268583ae0ea04e93fd24f1e70d47a8e8d79c88fc304af397b95b318980215d6"
   },
   {
-    "id": "98:38",
     "name": "CaretDown",
     "filePath": "assets/icons/phosphor/regular/caret-down.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/caret-down.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "53f0cf2d0b144ac3cb07e353e0cd0853ffb3ed432d741460ce288edfcb0924b1"
+    "sha256": "53f0cf2d0b144ac3cb07e353e0cd0853ffb3ed432d741460ce288edfcb0924b1",
+    "historicalFigmaId": "98:38",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
-    "id": "98:41",
     "name": "CaretLeft",
     "filePath": "assets/icons/phosphor/regular/caret-left.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/caret-left.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "623bf248fe21a8170344e168aaac2e174119cea5d7c5d0fb0dc84f581009475f"
+    "sha256": "623bf248fe21a8170344e168aaac2e174119cea5d7c5d0fb0dc84f581009475f",
+    "historicalFigmaId": "98:41",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
     "id": "98:44",
@@ -149,13 +155,16 @@
     "sha256": "523f024fa467fc285d95c1db4ed6c32b640513c79780d14310bebf342b6f94fb"
   },
   {
-    "id": "98:68",
     "name": "Minus",
     "filePath": "assets/icons/phosphor/regular/minus.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/minus.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "5a068d1cfd707fde5ddb0ce0623958123b6a5afba98401318983aeb0fdad6382"
+    "sha256": "5a068d1cfd707fde5ddb0ce0623958123b6a5afba98401318983aeb0fdad6382",
+    "historicalFigmaId": "98:68",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
     "id": "98:71",
@@ -167,13 +176,16 @@
     "sha256": "d688feb9dd2e41c1721d6906a05a2a42e18cd774762fe706d72b2bdfd91cddc4"
   },
   {
-    "id": "98:74",
     "name": "QRCode",
     "filePath": "assets/icons/phosphor/regular/qr-code.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/qr-code.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "7c6b19eb844b25e39b343576dec7c38b1da24caa661f72392fbf1318db7f5330"
+    "sha256": "7c6b19eb844b25e39b343576dec7c38b1da24caa661f72392fbf1318db7f5330",
+    "historicalFigmaId": "98:74",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
     "id": "98:77",
@@ -185,22 +197,28 @@
     "sha256": "7e3473e35fc2b7b9b66032aef0b19fc22e947d10472b67da0b38fb29d84af7ea"
   },
   {
-    "id": "98:80",
     "name": "ShieldCheck",
     "filePath": "assets/icons/phosphor/regular/shield-check.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/shield-check.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "bb04d552c0baaaabd90f7eb60760cb0c7ddb7e9f47e4b76e9599ddd7dfd8eaa7"
+    "sha256": "bb04d552c0baaaabd90f7eb60760cb0c7ddb7e9f47e4b76e9599ddd7dfd8eaa7",
+    "historicalFigmaId": "98:80",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
-    "id": "98:83",
     "name": "Sparkle",
     "filePath": "assets/icons/phosphor/regular/sparkle.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/sparkle.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "9e2c17a26564098cb48dd95737a83c742156f755f13cedaa30f9d864d0e3eb76"
+    "sha256": "9e2c17a26564098cb48dd95737a83c742156f755f13cedaa30f9d864d0e3eb76",
+    "historicalFigmaId": "98:83",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
     "id": "98:86",
@@ -221,13 +239,16 @@
     "sha256": "e6a830c0409f9e101e3695c981eef98427d39fd01f502b9cbd6900930b01f19c"
   },
   {
-    "id": "98:92",
     "name": "User",
     "filePath": "assets/icons/phosphor/regular/user.svg",
     "sourceUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/user.svg",
     "license": "MIT",
     "licensePath": "assets/icons/phosphor/LICENSE",
-    "sha256": "787434f7fef95f20e137d309d3c6b8b471548c55c9dfc137ae10625d70959d11"
+    "sha256": "787434f7fef95f20e137d309d3c6b8b471548c55c9dfc137ae10625d70959d11",
+    "historicalFigmaId": "98:92",
+    "id": null,
+    "status": "UNUSED_SOURCE_RETAINED",
+    "retiredAt": "2026-11-01"
   },
   {
     "id": "98:95",
@@ -309,5 +330,35 @@
     "licensePath": "assets/icons/phosphor/LICENSE",
     "sha256": "dc38b26c8a6f932a3f0bf9337e0f36678e052d8c757e051c92405d6819370985",
     "id": "262:841"
+  },
+  {
+    "name": "chat-circle-text",
+    "filePath": "assets/icons/phosphor/regular/chat-circle-text.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/regular/chat-circle-text.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "782e66bd9b7f809fe8f955d5b41ae9ebffd4cbf59661688dbfd497bfea621f56",
+    "usage": "SB-042/SB-043 reviews and feedback",
+    "id": "731:1021"
+  },
+  {
+    "name": "basket",
+    "filePath": "assets/icons/phosphor/regular/basket.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/regular/basket.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "4f528e76cfdb32ac5fa660505ac161fef775f52c3e4832554f1d0557d67ddd4a",
+    "id": "817:994",
+    "usage": "SB-087 reason"
+  },
+  {
+    "name": "download-simple",
+    "filePath": "assets/icons/phosphor/regular/download-simple.svg",
+    "sourceUrl": "https://github.com/phosphor-icons/core/blob/main/assets/regular/download-simple.svg",
+    "license": "MIT",
+    "licensePath": "assets/icons/phosphor/LICENSE",
+    "sha256": "c48678aa09b44ba4974954690ee6cc846379c448a7214f8c802604c2a1562014",
+    "id": "817:997",
+    "usage": "SB-090 export controls"
   }
 ]

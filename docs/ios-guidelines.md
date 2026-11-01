@@ -2,6 +2,14 @@
 
 Tài liệu quy định tiêu chuẩn khung thiết bị iPhone, thành phần hệ thống (System Chrome), vùng an toàn (Safe Areas), điều hướng và mẫu tương tác iOS cho toàn bộ 100 màn hình SaveBite. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [design system](design-system.md) và [chiến lược asset](asset-strategy.md).
 
+Current DEC-035:[100 device frames/native keyboard](../tracking/native27-device-checkpoint.md). All roots393×852, four corners50 bound to radius/deviceScreen,clipping=true,smoothing0 based on actual phone example Screen775:2603 in subscribed27 kit. This is a visual adaptation,not an exact iPhone15 hardware measurement. Actual phone keyboard with suggestions hidden needs307pt,y545;do not force it into291pt. Native back surface44pt/shared63 screens and Spinner055 adopted;full device/a11y/logic acceptance remains open.
+
+Current adoption01/11 (DEC-030):[Apple27 checkpoint](../tracking/apple27-e2e-checkpoint.md) supersedes opaque traditional bottom nav:actual native floating TabBar4, transparent outside/source GLASS, content behind/end inset. Native Switch/Inline Calendar/Segments/Glass Buttons/Rows also adopted. Device remains393×852 with59pt top/34pt bottom safe areas; existing native Apple black/white status bars retained. Figma UI only, not SwiftUI implementation.
+
+DEC-034 owner correction:keyboard background is rectangular edge-to-edge on009/019/020, four outer corners0; source top27/bottom62 is overridden in App. Keep native keycap rounding; no floating rounded keyboard card. [Current screenshots](../tracking/keyboard-square-checkpoint.md).
+
+DEC-032/033:[final native27 review](../tracking/vn-final-ui-checkpoint.md) adds actual phone Email/Lower Case keyboards009/019/020 with native rounded keys,307pt surface (corrected DEC-035) and home indicator.218 large App action instances use bound pill radius; cards, selection rows and fields keep distinct roles. Inspected phone Text Field758:5 is transparent/radius0 grouped-row UI, not a pill input; alert754:31 is not reused for standalone forms.100 current393×852 roots visually reviewed; this does not establish responsive/device/accessibility acceptance.
+
 ---
 
 ## 1. Thiết bị Đích (Target Device) Đã Khóa Theo `DEC-011`
@@ -98,7 +106,7 @@ Không dùng một kiểu `AppBar` duy nhất cho cả 100 màn hình. Áp dụn
 
 ### 4.2. Xử lý Bàn phím iOS (Keyboard States)
 Các màn hình có trọng tâm là nhập liệu đang hoạt động (`SB-006` Đăng ký, `SB-008` Đăng nhập, `SB-019` Tìm kiếm đang gõ, `SB-020` Gợi ý tìm kiếm, `SB-077` Nhập món Pantry) cần tuân thủ:
-- Trên ít nhất các màn tìm kiếm trực tiếp (`SB-019`, `SB-020`), **hiển thị bàn phím tiếng Việt / QWERTY chuẩn iOS** ở đáy màn hình (`chiều cao 291pt` bao gồm cả Home Indicator + thanh gợi ý từ `44pt` nếu có).
+- Trên `SB-009`, `SB-019`, `SB-020`, dùng actual native27 phone Email/Lower Case keyboard, rộng393pt và Auto Layout cao307pt khi ẩn gợi ý,y545. Source402×332 có hàng gợi ý25pt; không ép chiều cao291pt hoặc co từng hàng phím. Home indicator riêng ở818,đủ khoảng trống với emoji/mic. Khi đổi trạng thái gợi ý phải cho component tính lại chiều cao,không giả định một chiều cao cố định cho mọi biến thể.
 - Khi bàn phím mở, **nút CTA chính hoặc danh sách gợi ý phải tự động đẩy lên nằm ngay phía trên bàn phím**, tuyệt đối không để bàn phím che khuất ô đang nhập (focused input field) hoặc thông báo lỗi validation.
 
 ### 4.3. Quy tắc Cuộn (Scroll Viewport) và Thanh Đáy Cố định (Sticky Dock)

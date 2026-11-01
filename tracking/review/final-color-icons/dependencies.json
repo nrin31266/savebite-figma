@@ -1,0 +1,374 @@
+{
+  "mains": [
+    {
+      "id": "648:1457",
+      "name": "Size=Medium, Style=Glass, Is Enabled=True, Destructive=False",
+      "type": "COMPONENT",
+      "key": "e94fb5a01204ad739c1c913dabc749fddc184ffd",
+      "remote": true,
+      "parentId": "648:1446",
+      "parentName": "Button - Liquid Glass - Text",
+      "parentType": "COMPONENT_SET",
+      "props": {
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "Style": {
+          "type": "VARIANT",
+          "defaultValue": "Glass Prominent",
+          "variantOptions": [
+            "Glass Prominent",
+            "Glass"
+          ]
+        },
+        "Is Enabled": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Destructive": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    {
+      "id": "775:2404",
+      "name": "Mode=Light, Is Enabled=True",
+      "type": "COMPONENT",
+      "key": "c79c56ed043ee555b01e6e0438c5377b38cc6055",
+      "remote": true,
+      "parentId": "775:2400",
+      "parentName": "_Label - Symbol - Default",
+      "parentType": "COMPONENT_SET",
+      "props": {
+        "Label#5429:13": {
+          "type": "TEXT",
+          "defaultValue": "􀆅"
+        },
+        "Mode": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Dark"
+          ]
+        },
+        "Is Enabled": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    {
+      "id": "817:990",
+      "name": "Icon/Fridge",
+      "type": "COMPONENT",
+      "key": "c9ade1db4ed1f2e6caa9632340cf37bce8e5b38b",
+      "remote": false,
+      "parentId": "98:26",
+      "parentName": "Icons · Phosphor Core",
+      "parentType": "SECTION",
+      "props": {}
+    },
+    {
+      "id": "817:994",
+      "name": "Icon/Basket",
+      "type": "COMPONENT",
+      "key": "312461c87a8060117faedc41d12febf4e6ddf001",
+      "remote": false,
+      "parentId": "98:26",
+      "parentName": "Icons · Phosphor Core",
+      "parentType": "SECTION",
+      "props": {}
+    },
+    {
+      "id": "817:997",
+      "name": "Icon/DownloadSimple",
+      "type": "COMPONENT",
+      "key": "180f8d8c74172daf1ecd9a64be683144753f45f8",
+      "remote": false,
+      "parentId": "98:26",
+      "parentName": "Icons · Phosphor Core",
+      "parentType": "SECTION",
+      "props": {}
+    },
+    {
+      "id": "827:1023",
+      "name": "Style=Glass, Is Enabled=True, Destructive=False",
+      "type": "COMPONENT",
+      "key": "86322f45c2e2aae1c4fcfc74098d1dfa9ac099d6",
+      "remote": true,
+      "parentId": "827:1015",
+      "parentName": "Button - Liquid Glass - Symbol",
+      "parentType": "COMPONENT_SET",
+      "props": {
+        "Style": {
+          "type": "VARIANT",
+          "defaultValue": "Glass Prominent",
+          "variantOptions": [
+            "Glass Prominent",
+            "Glass"
+          ]
+        },
+        "Is Enabled": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Destructive": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    }
+  ],
+  "signup": [
+    {
+      "id": "I100:1784;15:109",
+      "text": "Tạo tài khoản",
+      "fill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.03529411926865578,
+            "g": 0.18431372940540314,
+            "b": 0.16078431904315948
+          },
+          "boundVariables": {}
+        }
+      ],
+      "parent": "AppBar",
+      "parentFill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.9882352948188782,
+            "b": 0.9647058844566345
+          },
+          "boundVariables": {}
+        }
+      ],
+      "opacity": 1,
+      "parentOpacity": 1
+    },
+    {
+      "id": "I244:4633;4185:3789",
+      "text": "Tạo tài khoản",
+      "fill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.3764705955982208,
+            "g": 0.4313725531101227,
+            "b": 0.4000000059604645
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11:19"
+            }
+          }
+        }
+      ],
+      "parent": "Create account · disabled until consent",
+      "parentFill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.95686274766922,
+            "g": 0.9372549057006836,
+            "b": 0.9019607901573181
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11:14"
+            }
+          }
+        }
+      ],
+      "opacity": 1,
+      "parentOpacity": 1
+    }
+  ],
+  "calendar": [
+    {
+      "id": "I666:8537;5442:1481;50:63938;50:63914",
+      "text": "19",
+      "fill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.26274511218070984,
+            "b": 0.21568627655506134
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11:10"
+            }
+          }
+        }
+      ],
+      "parent": "Day",
+      "parentFill": []
+    },
+    {
+      "id": "I666:8537;5442:1481;50:63941;50:63915",
+      "text": "21",
+      "fill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:0c1a82745bdff17e14d0d78142c756a4d97a74eb/13276:47"
+            }
+          }
+        }
+      ],
+      "parent": "Day",
+      "parentFill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.26274511218070984,
+            "b": 0.21568627655506134
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11:10"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "152:4124",
+      "text": "19",
+      "fill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.26274511218070984,
+            "b": 0.21568627655506134
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11:10"
+            }
+          }
+        }
+      ],
+      "parent": "Day19",
+      "parentFill": []
+    },
+    {
+      "id": "152:4130",
+      "text": "21",
+      "fill": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.26274511218070984,
+            "b": 0.21568627655506134
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11:10"
+            }
+          }
+        }
+      ],
+      "parent": "Day21",
+      "parentFill": []
+    }
+  ],
+  "icons": [
+    {
+      "id": "585:8224",
+      "name": "Icon/Fridge",
+      "main": "817:990"
+    },
+    {
+      "id": "598:8179",
+      "name": "Icon/Fridge",
+      "main": "817:990"
+    },
+    {
+      "id": "585:8230",
+      "name": "Icon/Basket",
+      "main": "817:994"
+    },
+    {
+      "id": "598:8196",
+      "name": "Icon/Basket",
+      "main": "817:994"
+    }
+  ]
+}

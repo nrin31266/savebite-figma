@@ -9,3 +9,11 @@ tracking/evidence/
 
 # Local browser diagnostics, not project handoff evidence.
 .playwright-mcp/
+
+# Project-local skill installation; provenance is tracked in the skills manifest.
+.agents/skills/mobile-ios-design/
+
+# Private local clients and agent worktrees.
+.codex/
+.claude/worktrees/
+skills-lock.json

@@ -1,6 +1,160 @@
 # Progress · 31/10/2026
 
+## Final100-screen color/icon scan and main integration ·01/11 ·AWAITING_OWNER_REVIEW / Git integration
+- Owner requests fresh100 captures/multi-screen critique focused on difficult colors/readability and useful new icons,then commit/merge main/push. Explicit Git integration authorization; UI scope only,no repeated full logic test.
+- Lease RELEASED codex/final-color-icons:App11:3,related Components/tokens/icons,docs/registry/evidence and task Git integration. One writer,no agents. Review existing dirty authorized design work;exclude private/local tool config and assets without publication rights.
+- Continuation codex/final-color-icons:owner corrections DEC-039 include transparent neutral glass,forest active/gray inactive,actual native symbol/text buttons. Interrupted replacement left22 bars without actions/all Explore selected;restored callbacks/states from live Pantry entry and canonical routes. Final100 screenshots captured;visual review and registry/publication checks in progress.
+- Open conflicts:prior writer interrupted,lease transferred within same authorized scope;no other writer detected. Native get_screenshot timed out twice;use_figma individual native screenshots succeed. No canvas permission blocker.
+
+- Final UI checkpoint:[color/icons/native27](final-color-icons-checkpoint.md),DEC-037–039.100 fresh root captures/ten sheets,9 affected header/filter captures refreshed;201 actual component records. Neutral native glass;active forest/inactive gray;fresh50pt/19ptSF Pro heart/bell/filter;native back/photo heart/close controls. Scoped Present tab/header/back routes PASS;global render limitation remains OPEN.
+- PASS validator100 IDs/201 components/33 bitmap hashes/7 skill hashes/DONE0;whitespace;115 public images,seven design JSONs,173 local links/current mappings,38 Phosphor+original fridge hashes. Public review copies mask8 unverified map rectangles;native originals local-only. Full logic/mobile/a11y/usability/owner acceptance NOT CHECKED. Git integration explicitly authorized;remote result follows after verification.
+
+## Native27 fresh keyboards /100 device frames /cleanup ·01/11 ·AWAITING_OWNER_REVIEW
+- [Final checkpoint](native27-device-checkpoint.md),DEC-035/036. Full owner UI scope delivered. Earlier box-only comparison missed glyph rendering;replaced all three swapped keyboards with fresh exact subscribed27 imports,not a positioning patch.009/019/020 fresh IDs791:8389/8498/8597,393×307/y545;returns/020 visibility retained. Glyphs reviewed at200–300% and actual Present020.
+-100 roots audited from radius0→bound radius/deviceScreen50,clipping=true,393×852 retained;source phone example Screen50 documented as visual adaptation.100 captures/ten sheets reviewed,three keyboard roots refreshed after replacement. Native44pt shared glass back63 screens,source glass80 roots,native Spinner055;kit source/role catalogue complete.
+-Removed20 local main/set/variant nodes through10 objects plus15 obsolete specimen cells. Components136→116 local nodes;all remaining nodes reachable,none deleted still present. Registry207→195:26 unused records removed,14 actual nested/source dependencies added.100 mappings refreshed. Original33 bitmap/32 brand/36 icon source files retained;retired mappings explicit.
+-PASS final validator100 IDs/195 components/33 asset hashes/7 skills/DONE0;whitespace;122 images/eight JSONs decoded;source hashes/current bindings/maps/reachability;33 additional checkpoint links. Present020 complete;preview reset to original Splash→002,recorded in checkpoint.
+-Lease RELEASED codex/native27-device:App11:3,Components11:2,dependent source manifests/docs/registry/evidence. One writer/no agents,no app/backend code/commit/push. Full logic/actual-device/a11y/usability NOT CHECKED;owner acceptance pending,prototype_verified=false,DONE0. Known variable-change capture limitation remains OPEN;not a global renderer fix.
+
+## Keyboard outer-surface correction ·01/11 ·AWAITING_OWNER_REVIEW
+- Owner rejects rounded outer keyboard in009; requires square edge-to-edge surface. Scope009/019/020 shared phone-keyboard callers; keycap geometry/return callbacks remain.
+- Lease RELEASED codex/keyboard-square:App11:3 keyboard backgrounds, dependent docs/registry/evidence. Single writer; no agents/commit/push.
+- Live source background had top27/bottom62 bindings. All four outer corners now0 on three App Background instances; external source masters/keycaps/callbacks/020 visibility retained. DEC-034;[checkpoint](keyboard-square-checkpoint.md).
+-PASS native read-back/individual3 screenshots/key geometry comparison;validator100 IDs/207 components/33 asset hashes/7 skills/DONE0;whitespace;3 PNG/JSON decode. Full logic/actual-device tests not rerun;existing combined-capture missing-layer limitation remains OPEN.
+
+## Vietnamese imagery / native27 / final UI review ·01/11 ·AWAITING_OWNER_REVIEW
+- [Final checkpoint](vn-final-ui-checkpoint.md),DEC-032/033:full authorized UI scope delivered. Fresh100 native default-root captures/ten sheets visually reviewed; five full-size new examples.207 components/33 assets; all original roots393×852 retained.
+- Lease RELEASED codex/vn-photo-fields: App11:3,Components11:2,assets/manifests,docs/registry/evidence. Single writer/no agents/no commit/push.
+- Native phone27 keyboards009/019/020 and real sourced portrait091/092; two licensed Vietnamese meal/context originals applied.64 meal fills plus completed-order thumbnail repaired, category028/030 refreshed. Exact bakery/produce SKU images retained; no stock/price/safety/merchant claim changes.
+-218 action instances including disabled signup bind all four corners to pill11:43. Cards/choices/fields keep role-specific geometry. Actual phone field758:5 inspected, transparent grouped-row design retained as research rather than misapplied. Existing native27 glass nav/controls and36 semantic Phosphor vectors reused.
+-PASS live:100 IDs/sizes,zero old meal hashes,218/218 capsule bindings. Preview restored through original Splash76:652→002 with complete visible capture. Final validator100 IDs/207 components/33 asset hashes/7 skills/DONE0,whitespace,116 images/two design JSONs and252 local links PASS;verification record in checkpoint.
+-Full logic/backend/persistence/export/delete/actual-device/a11y/usability NOT CHECKED per scope. Present missing-static-layer capture remains OPEN. Owner acceptance pending;prototype_verified=false,DONE0.
+
+## Vietnamese imagery / Apple27 keyboard ·01/11 ·ACTIVE goal / checkpoint
+- [Intermediate checkpoint](vn-imagery-keyboard-checkpoint.md),DEC-032. Owner request remains full all-screen UI/UX/icon/food-avatar/native27/radii refinement; current batch is partial progress.
+- Lease RELEASED codex/vn-imagery-keyboard at checkpoint; App11:3,Components11:2,assets/manifests/docs/registry/evidence. No agents/commit/push.
+- Native phone27 keyboards applied009/019/020,correct Email @/period,localized returns/actions,source curvature/home indicators; old source dimensions393×291 preserved.207 registered components.
+- Real sourced Vietnamese-persona portrait applied091/092,circular face crop;Pexels33328292 license/hash/fictional persona usage recorded.31 assets. Upload timeout reconciled with committed image hash, no resubmission.
+- Remaining:Vietnamese food imagery research/application, further100-screen critique and meaningful icons, inspect useful27 field/button/control shape patterns, final cluster screenshots/cleanup/QA/preview reset. Existing Text Field754:31 is alert-style candidate only, not applied. Full logic tests excluded;DONE0.
+- PASS checkpoint:5 PNGs/JSON decoded;validator100 IDs/207 components/31 asset hashes/7 skills/DONE0;whitespace. Scoped native screenshot/readback PASS. No full-goal completion or all-screen new PASS.
+
+## Cluster UI review ·01/11 ·AWAITING_OWNER_REVIEW
+
+- Owner requested strict designer review of colors/backgrounds/overlap/layout/action placement; full UI scope retained, business-logic testing excluded.100 baseline screenshots/10 sheets;30 revised full-size exports,195 component entries.
+- Lease RELEASED owner codex/cluster-ui; App11:3, Components11:2, assets/icons/phosphor, dependent docs/registry/evidence. One writer/no agents;no commit/push.
+- [Checkpoint](cluster-ui-checkpoint.md), DEC-031:013 header login;075/076 native top menus;095/096 preferences and033 search above list;028–030 compact intros/list222pt earlier;031 unique sorted canonical offers.078 form backdrop,071 confirmation hierarchy,070 red destructive CTA,083 symmetric semantic rows,090 export layout,092 false-feedback cleanup,099 informational FAQ,semantic feedback/date/data icons.
+- EmptyState Icon swap;new MIT Phosphor vector731:1021 used042/043. Removed retired075 summary/master from Components tree and repeated footer/preview/feedback controls. Preserved referenced animation/source/runtime variants.195 registry entries/navigation mapping for100 roots reconciled from live read-back; no full logic acceptance.
+- PASS scoped browser:guest013 header login→008;075 overflow→089;029 list/end scroll under fixed nav. Source menu geometry238×104/slot222×88 and closed defaults read back. Native snapshots complete; variable-change browser capture sometimes misses static layers, still OPEN.
+- PASS final:validator100 IDs/195 components/30 photo hashes/7 skills/DONE0;whitespace;156 image/2 JSON decode before final report;36 Phosphor source hashes/licenses;3 contrast pairs≥5.36. Preview restored to original onboarding; full logic/export/delete/persistence/backend,QR/payment,mobile/a11y/usability NOT CHECKED. Owner acceptance pending.
+
+## Apple27 / Pantry / full UI refinement ·01/11 · AWAITING_OWNER_REVIEW
+
+- Owner giữ FULL UI scope; chỉ giảm exhaustive/repeated logic testing. UI pass hoàn tất:Pantry/Home/floating nav/native controls/status/copy/key clusters/list data và preview reset.
+- Lease RELEASED owner codex/apple27-e2e; scope App11:3, BottomNav15:122/callers, Pantry/core controls, tokens, docs/registry/evidence. Một writer, không agents; không commit/push.
+- [Final checkpoint](apple27-e2e-checkpoint.md), DEC-030:native Apple27 tabs/Popup/Menu, switches085/097, calendar/segments079, glass buttons016/date và Row Tall089/095.075 compact hero/two filters one row;081 compact icon/date hierarchy;070 order context behind cancellation.
+- Home013/014/015 cùng five canonical offers. Added synthetic notification/history events for scroll; current inventory/stock/metrics unchanged. Semantic labels và product-copy cleanup toàn App.
+-100 roots giữ nguyên;194 registry entries. Rà native UI của10 North-Stars và các màn liền kề; cuộn075 tới cuối với floating nav cố định. Preview đã về002 qua Splash76:652.
+- PASS final checks:validator100 IDs/194 components/30 photo hashes/7 skill hashes/DONE0; git diff --check;27 PNGs +27 JSON decode; local links/component mappings. Scoped native/readback/visible-copy/menu geometry/scroll checks retained.
+- OPEN render limitation:Present đôi lúc mất static layers sau state change; reentry/native exports khôi phục. Không claim global fix/full Present PASS. Full logic permutations/mobile/a11y/usability deferred by owner; prototype_verified=false,DONE0,owner acceptance pending.
+
+## Visual refinement · 01/11 · checkpoint
+
+- Lease RELEASED owner `codex/visual-refinement`; [checkpoint](visual-refinement-checkpoint.md), DEC-028. Owner chọn hướng075 “gian bếp minh hoạ nhẹ”; đã triển khai, AWAITING_OWNER_REVIEW. Mầm/carrot không che mặt, Home014/015 có greeting, thẻ chờ nhận native; Pantry hero/counters/icon list và semantic labels theo role. Không đổi nghiệp vụ.
+- 100 root IDs giữ nguyên, registry163 (2 local mains +4 source SDS Tag variants).19 OfferCard callers và14 flat labels migrated; expose nested Stock Label.32 brand records, updated Kitchen SVG/hash; no new raster/token.7 overflow groups repaired and read back353/353pt.
+- PASS scoped navigation: Explore→013,login→015,pending014→062,Home tab→075,Add→077. Native visual/readback và4 label contrast pairs≥4.68:1. Registry/docs/evidence cập nhật; validation kết quả ở checkpoint evidence.
+- OPEN render: sau chọn Kệ khô danh sách Bread/Rice và active segment đúng nhưng static header/hero có thể mất, reload phục hồi. Full6flows/counter mutation/category-icon sync/mobile/a11y/usability/owner acceptance chưa kiểm; prototype_verified=false,DONE0. Không commit/push.
+
+## Home/location + Pantry/selected states ·01/11 · checkpoint
+
+- Lease RELEASED owner `codex/home-pantry`; [Home/Pantry](home-pantry-checkpoint.md),[selected-state audit](selected-states-checkpoint.md),DEC-027.100 roots giữID,registry157.018 chọnkhu vực demo;login thường→015;013/015 cùngmarket;014 cópending strip.075–090 itemvisuals khôngphoto;CategoryIcon swap reused.
+-087 căntrái,chỉthẻchọnforest/cream/check;095 tabsactive vàfilteringgiữđúngnhóm.40 choicesđãaudit bindings/touch≥44/textbounds;single exclusive,Dietary multi độc lập. Snapshotnative vàPresentscopedđãlưu. Fullflow/render/mobile/a11y/usability chưađạt,prototype_verified=false,DONE0.
+-**075 REJECTED by owner**,không visualacceptance. Lượt mớiđược owner xếpsau task hiện tại:Mầm cầmcarrot,Home greeting vàpending card,075 redesign,semanticlabels/màu/padding/radius toànapp;dùngbrainstormingchốt hướng,kitAppleRin/native reuse trước.Sẽnhậnlease mới sauchốt thiết kế.
+-PASS checkpoint:validator100 IDs/157 components/30 hashes,diff whitespace,37 images decode,JSON/links;40 choices hit≥44 vàkhôngtextoverflow.
+-OPEN:renderer cólượt mấtstaticlayers saustatechange;F05 chưaend-to-endPASS;custombudget/query/report submission/dynamiccategory-icon sync chưachứngminh. Khôngcommit/push.
+
+## Paper correction ·01/11 · checkpoint
+
+- Lease RELEASED owner `codex/paper-correction`; [kết quả/evidence](paper-correction-checkpoint.md), DEC-026.044 dùng Plain577:926; Fold231:450 khoét trong suốt để lộ đúng nền cha. Giữ Receipt053/Leaf074,bỏ Stripe056; bảng mẫu5 linked instances. Registry157;32 brand concept SVG/hash,không token/photo mới.
+- PASS validator100 IDs/157 components/30 photo hashes/DONE0,diff whitespace,6 image decode,32 brand hashes và2 SVG XML. Scoped native visual/main bindings/readback và Present044 PASS; full transition/mobile/100-screen contrast/usability/owner acceptance chưa kiểm lại. Lỗi capture thiếu status053/056 vẫn ghi OPEN,không tự đổi layout. AWAITING_OWNER_REVIEW,DONE0; không commit/push.
+
+## Apple chrome + paper ·01/11 · checkpoint
+
+- Lease RELEASED owner `codex/apple-paper`; owner xác nhận chat cũ dừng và cho tiếp quản Reservation050–054/036. [Kết quả/evidence](apple-paper-checkpoint.md), DEC-025:100 roots dùng Apple Black/White có sẵn; giấy native ở044/053/056/074. Không thêm master/token/image;8 white dependencies mới registry,total156.
+- PASS live IDs/mappings/status geometry; native visual scoped và Present053/044 Black,034 White có đủ chrome. Validator100 IDs/156 components/30 hashes/DONE0, diff check,9 images decode và JSON PASS. Một số native captures thiếu status; lỗi render sau transition trước đây vẫn OPEN. Không claim full100-screen contrast/render hoặc full flow; prototype_verified=false,DONE0,AWAITING_OWNER_REVIEW. Không commit/push.
+
+
 Gate: **IN_PROGRESS · end-to-end audit/build (`DEC-012`, owner-authorized; chưa nghiệm thu baseline)** · Target Figma: [SaveBite-V2 (`7suZz9C8oL5zV2NMxlsIVI`)](https://www.figma.com/design/7suZz9C8oL5zV2NMxlsIVI/SaveBite-V2?node-id=0-1) · Chuẩn khung: **iPhone 15 (`393×852pt`, Dynamic Island)**.
+
+## Apple/shared Search019–020 + sheets023–027 ·01/11 checkpoint
+
+- Lease **RELEASED** owner `codex/direct-apple-consistency`; [checkpoint/evidence](apple-consistency-checkpoint.md). Owner làm rõ lỗi history bị che và Search hai màn khác nhau: sửa existing main16:18 thành shared native Apple Search+Cancel48pt/gap12/MIN;019/020 dùng instances560:6245/6258 cùng geometry. History bỏ scroll/clipping dư. Giữ100 root IDs.
+- Native Apple Rin StatusBar main554:1033 +8 dependencies đã clipboard qua browser/apply7 màn, Home235:646 reuse.023–026 full Discovery feed backdrop,027 result context; scrim40%, grouped rows/consistent header/footer. Xóa17 unused components/variants qua9 objects sau all-page refs audit;9 old registry rows đổi thành9 source dependency rows, registry148/image30.
+- PASS scoped native layout/readback/images; IAB019 title đầy đủ, Tìm→020, Xong đóng/Search mở keyboard. **OPEN Present render:** một số transition/state change làm thiếu lớp chữ/status/icon trong capture, reload đủ; không claim full rendering PASS hoặc đã biết nguyên nhân. Query/filter/sort logic/full-flow/mobile/a11y/owner review chưa đạt; **AWAITING_OWNER_REVIEW**, prototype_verified=false,DONE0. Không commit/push.
+
+## Search/filter/sort019/020/023/027 · 01/11 · repair checkpoint
+
+- Lease **RELEASED** owner `codex/direct-search-sort-repair`; owner cho sửa lại sau rejection. [Repair/evidence4 màn](search-sort-repair-checkpoint.md):019 chips32pt/hit44/cuộn ngang;020 flat rows72pt và Apple keyboard;023 summary64pt/SDS native Toggle;027 grouped rows52pt. Hai sheet495/415pt, đáy46pt; giữ roots/source mains/tokens và100/148/30 inventory.
+- PASS scoped live readback: không sibling overlap/text overflow/paint drift trong4 màn; sửa raw white paint ở hai nhãn023. Đã tra kit, Apple ActionSheet/Row import permission fail; reuse Apple Search/Keyboard có sẵn và SDS Tag Toggle thực, không giả import.
+- PASS **IAB đã kết nối**:019 strip scroll/Tìm→020;020 Xong đóng/Search mở keyboard;023 type selection/Reset;027 Price selected/Apply→021. Đây là UI/state demo, không query/filter/multi-result sorting engine. Full-flow/mobile/usability/a11y/owner acceptance NOT CHECKED, prototype_verified=false,DONE0; **AWAITING_OWNER_REVIEW**. Không commit/push.
+- [WIP bị từ chối](search-sort-wip-checkpoint.md) giữ lịch sử, đã supersede; giới hạn filter budget/time/dietary/custom/results vẫn OPEN. Lỗi write đã reconcile rollback trước retry, không duplicate. Root canvas positions không đổi; không lấy bounds checks làm Aesthetic PASS.
+
+## Map source adoption · 01/11 · checkpoint
+
+- Lease **RELEASED** owner `codex/direct-map-adoption`; [MapCanvas16:3 +8 dependents](map-adoption-checkpoint.md), DEC-022. Base1200×942 reuse, legacy/path ẩn, controls/pins native; source499:7922 và pin/address nguyên. Không gán địa chỉ470 cho merchant fixtures.100 roots/148 components/30 local image hashes, không thêm main/ảnh local.
+- PASS screenshots8 màn,100 roots/main/hash/component mappings, image decode và write/remove probe. Present/full-flow/mobile/a11y/provider/license/attribution/owner acceptance NOT CHECKED; prototype_verified=false,DONE0. Không commit/push. Source [provenance](../assets/maps/manifest.json) chưa approvedForPublication.
+
+## Filter UI023–026 · 01/11 · checkpoint
+
+- Lease **RELEASED** owner `codex/direct-filter-ui`; [023–026](filter-ui-checkpoint.md), DEC-021: context Discovery native/scrim, close44pt, HUG sheets, CTA52pt cách đáy46; budget presets30K/50K thay chart thiếu dữ liệu, rows64/56pt, warningHEIGHT hết tràn. Không thêm main/root/asset; registry148.
+- PASS scoped screenshots4 màn, PNG decode, bounds/text fit, gap8 và100 root/component mappings. Present/browser403, full contrast/a11y/mobile/usability/owner review NOT CHECKED; prototype_verified=false,DONE0. Không push/commit.
+- `Open conflicts / DESIGN/REQUIREMENT`: histogram/unsupported gluten-trứng copy đã sửa; **OPEN** logic chọn/lưu/reset/custom/kết quả/Back-state và nhãn gộp nhu cầu ăn uống. Chưa claim bộ lọc hoạt động;4 màn giữ NEEDS_REWORK.
+
+## Ưu tiên ảnh đính kèm · 01/11 · checkpoint
+
+- Owner yêu cầu tiếp tục, ưu tiên sửa ảnh/UI; screenshot gửi kèm là evidence tĩnh của SB-069/070, không phải Figma live. Không thực thi các yêu cầu lịch sử trong transcript như yêu cầu mới.
+- Quan sát từ ảnh:069 có vòng radio và dot tách rời ở hàng “Món khác xa mô tả”;070 icon đóng sát tiêu đề, grabber lệch trái, khoảng trống lớn giữa header/policy/actions và nút “Giữ lại đơn” sát home indicator. Cần đọc live để xác định layer/state; không coi selection outline của editor là lỗi sản phẩm.
+- Đã sửa và đọc lại: radio selected đồng tâm; header Auto Layout với title FILL/HEIGHT và close hit44pt; content HUG theo chữ; hai CTA52pt nằm trên bottom safe area34pt, reuse radius/tokens/source instances. Giữ policy hiện hành; reactions readback, chưa bấm Present/contrast/keyboard.
+- Kết nối đã khôi phục ngay trong phiên: identity Nguyễn Văn Rin/team Student Full admin, session/live read và screenshots069/070 PASS trên file đích. Browser vẫn403 nên Present chưa kiểm. Live xác nhận dot là sibling trong Auto Layout;070 sheet529pt ởy352, tràn29pt khỏi root852. Không còn BLOCKED live read; native write/QA đang làm.
+- Lease **RELEASED** owner `codex/direct-support-ui`; [checkpoint069/070](support-ui-checkpoint.md). Radio đồng tâm; sheet070431pt/y421 hết tràn, close44pt và CTA52pt cách đáy46pt; không sửa mains/tokens hoặc vùng Reservation050–054 đang WIP. Native write/read/remove probe và screenshots PASS; Present/browser403, keyboard/full-flow/a11y/owner review chưa kiểm. Support reasons/chips chưa có reactions, submit069 vẫn mock BACK; không claim form hoạt động.
+
+## Reservation UI · 01/11 · đang làm
+
+- Lease **RELEASED / OWNER TAKEOVER** owner `codex/direct-reservation-ui`; scope050–054, caller036 registry mapping và evidence phụ thuộc. Đã chụp5 màn cùng lượt:050/054 controls sát home safe area,054 payment highlight và052 policy box có chiều cao cứng,051 help link chỉ16pt; giữ layout receipt053 đã có. Một writer, không sửa main hoặc nghiệp vụ.
+
+## Offer UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-offer-ui`; [034–038/040](offer-ui-checkpoint.md). Sửa5 màn034/035/036/038/040, review037: detail bounded scroll trên dock, gallery theo SKU, UNKNOWN sheet có context/BACK, merchant-specific listings và3 bước nhận món hết tràn chữ/Mầm Carry. Không main/ảnh mới;100 roots/148 components/30 images.
+- Scoped Present meal/produce gallery–allergy–merchant–rules và quality link đã chạy;044→036→BACK→044 giữ túi29K/18–19. PASS validator, mappings, scroll/dock/action bounds,15 PNG decode, links và whitespace. Chưa full5 SKU/11 rows/6 flows/mobile/a11y/owner acceptance; prototype_verified=false,DONE0.
+- **OPEN UI/capture035:** FILL đổi đúng ảnh/selected state nhưng screenshot runtime có lượt thiếu chrome/caption; chưa coi toàn rendering PASS hoặc khẳng định nguyên nhân. Native/FIT và Present040 đã có capture đầy đủ. Maps.to.design/PlotSet và F05 drift vẫn OPEN. Goal100 màn ACTIVE; không push/merge.
+
+## Entry & Discovery UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-discovery-ui`; [002–005/013–015](entry-discovery-ui-checkpoint.md). Promo013/015112pt,4 cards169×246 có giá/slot trước nav;014 Auto Layout, nhắc đơn và source header;003 giờ từng pin;005 note12pt. Không thêm main,100 roots/148 components/30 images.
+- Sửa ba tab014 thiếu reactions, header khu vực/tim/chuông013–015;6 hit frames44pt giữ source icons40pt. Scoped Present005→013→044,002→003→004,014→033/095/060 đã bấm; chưa full-flow/mobile/a11y/owner acceptance, prototype_verified=false,DONE0.
+- PASS: readback/geometry/mapping, validator100 IDs/148 components/30 hashes,8 PNG decode, relative links và whitespace. Không push/merge. Goal tổng thể UI100 màn vẫn ACTIVE; maps.to.design/PlotSet chưa chạy được, F05 drift vẫn OPEN.
+
+## Account & Impact UI · 01/11 · checkpoint
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-impact-ui`. [091/100](impact-ui-checkpoint.md): sửa6 rows321×72/gap12/chevrons, chart native3 đơn25K/30K/35K=90K đã trả với ảnh và Mầm Celebrate. Không thêm main, registry148; không dựng savings/CO₂/trend.
+- Scoped Present091→100 và Back100→091 đã bấm; labels/bars/data math/source mappings read back. Chưa Dynamic Type/fullmenus/6flows/mobile/owner acceptance, prototype_verified=false,DONE0.
+- PASS repository: validator100 IDs/148 components/30 hashes;5 PNG decode; chart ratio/text/gap/mapping asserts; whitespace. Không push/merge.
+- PlotSet đã Save trong Figma và được quick actions liệt kê; launch lỗi môi trường giống maps.to.design. Chưa nhập chart từ plugin, chưa đăng nhập/đưa dữ liệu sang PlotSet. Chart đang dùng là native text/rectangles từ fixtures. Goal tổng thể UI/motion100 màn vẫn ACTIVE.
+
+## Map UI · 01/11 · checkpoint
+
+- **Owner map source mới, đã đọc live:** Components `11:2` có Map `499:7920`, bitmap1200×942/display600×471, vùng VKU/Trần Đại Nghĩa. Dùng được làm nền raster có crop; chưa áp lên màn/chưa sửa master hoặc layer owner. Source/license/attribution chưa xác minh; pin/tuyến vẫn chỉ minh họa. [Chi tiết cập nhật](map-ui-checkpoint.md). Lượt này read-only, không lấy lease.
+
+- Lease **RELEASED tại checkpoint** owner `codex/direct-map-ui`. [5 màn map](map-ui-checkpoint.md) đã sửa toolbar353pt, pin/preview theo context, sheet304pt và radius selected; không đổi MapCanvas master,100 root IDs, registry148. Một writer trực tiếp; không agent.
+- Scoped Present: pin30K→croissant,35K→meal; radius500m/2km đổi nút/label/vòng. Chưa fullF02/5SKU/CTA/back/mobile/a11y; prototype_verified=false,DONE0.
+- PASS repository: validator100 IDs/148 components/30 hashes,9 PNG decode, final-bounds/mapping assertions, whitespace. Không push/merge.
+- maps.to.design có trong quick actions nhưng lỗi tải môi trường trước/sau restart; Overpass trả502, không nhập map thật. Cần layer owner export hoặc môi trường plugin hoạt động. UI/chart/motion và toàn100 màn vẫn ACTIVE, tiếp phần độc lập.
+
+## Sourced UI & Pantry imagery · checkpoint31/10→01/11
+
+- Lease **RELEASED tại checkpoint** · owner `codex/direct-sourced-ui`. [Batch UI/asset](sourced-ui-pantry-checkpoint.md):4 ảnh có nguồn mới,7 Pantry thumbnails,6 detail photo layers và8 SDS Tag Toggle instances.100 roots giữ nguyên; registry148 entries/pool30 ảnh, DONE0. Một writer trực tiếp; không đổi logic form/reminder WIP. MCP reauthentication đã PASS, không cần restart app.
+- PASS scoped Present: Kệ khô→Gạo và Ngăn đông→Đậu, filter/ảnh/ngày hạn/bảo quản tương ứng. Root/binding/native instance read-back và visual screenshots đã lưu; không suy diễn toànF05 hoặc100 màn PASS. Owner review vẫn chờ.
+- PASS repository: validator100 IDs/148 components/30 hashes; evidence PNG decode, live mapping/binding asserts và whitespace. Không push/merge.
+- Source research có trạng thái thật: Groc/Airbnb làm reference, SDS Toggle đã nhập native; Untitled FREE dừng trước checkout, không tải/mua. Tiếp tục polish Discovery/Offer/map theo nguồn đã chọn; lỗi F05 drift cũ còn OPEN.
 
 ## Phiên dừng theo owner · F-05 WIP
 

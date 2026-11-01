@@ -1,12 +1,32 @@
 # Chiến lược Tài nguyên Hình ảnh, Icon & Font (Asset-First Strategy)
 
+DEC-037–039: [final color/icon/native-kit checkpoint](../tracking/final-color-icons-checkpoint.md). Add two official Phosphor MIT vectors (basket/download-simple) and original editable fridge;source/hash metadata retained. No new bitmap. Publication copies of final100 screenshots/ten sheets mask the8 map rectangles because provider/license remains unverified;local native originals and Figma are unchanged. Published images are review evidence,not raster screen implementations.
+
+DEC-035:[Assets27 integration](../tracking/native27-device-checkpoint.md) adds no bitmap;33 records retained. Actual native library controls used:shared back glass,Spinner055,correctly fitted phone keyboard. Source phone example informs radius50 token for100 roots;hardware body remains reference,not a flattened image overlay. Imported candidates are not counted as adoption or new redistribution permission.
+
+DEC-036 replaces three keyboard instances with fresh exact native27 imports. Unused Components cleanup removes20 main/set/variant nodes and15 specimens after reference audit. Six Sticker and seven icon source records retain original SVG/license/hash with historical IDs and UNUSED_SOURCE_RETAINED status;no claim that retired nodes still exist.36 Phosphor source files/32 brand source files remain an asset pool,not36/32 active components.
+
+Imagery01/11 (DEC-032/033):33 total bitmap records. Real portrait Pexels33328292 by Hồng Quang Official on091/092; Vietnamese descriptor comes from publisher, sitter is not identified as fictional Minh Anh or an endorser. Native face crop only. New meal14226662 by Connor Scott McManus supplies illustrative chicken/rice/vegetable imagery across existing meal contexts; market37271691 by Surya Travel supplies category030 context only. Originals, source/license/SHA256 in manifest; new records approved=false pending owner review. Cuisine metadata does not verify location, merchant, cooking method, ingredients or safety. Bread/croissant and exact vegetable SKU photos retained. Candidate37187931 rejected visually and not added; no generated bitmap. [Final checkpoint](../tracking/vn-final-ui-checkpoint.md).
+
+Cluster pass01/11 (DEC-031):one new sourced editable vector, Phosphor regular chat-circle-text for042/043, existing MIT license, SHA256/source/native ID recorded in assets/icons/phosphor/sources.json. No new photo/bitmap;30 photo records and32 brand SVG records retained. KitchenPal publisher image used only as a visual reference, never imported or redistributed.
+
+Apple27 UI01/11 (DEC-030):native kit tabs/menus/switch/calendar/segments/glass buttons/rows actually adopted; [source contracts/evidence](../tracking/apple27-e2e-checkpoint.md). No new bitmap/photo pool; reused30 canonical photo records,32 brand SVG records and category icons. Technical import does not establish redistribution rights; map/provider publication status unchanged.
+
 Checkpoint DEC-015: [mẫu tuyển chọn và cách dùng](references/curated-layouts.md), [bằng chứng áp dụng](../tracking/brand-polish-checkpoint.md). Pool ảnh vẫn26 records; bổ sung7 SVG Phosphor Duotone có MIT/source/hash vào `assets/icons/phosphor/sources.json`.31 SVG brand riêng ở `assets/brand/mam/sources.json` là **ORIGINAL_VECTOR_CONCEPT / CANDIDATE_AWAITING_OWNER_REVIEW**, không phải ảnh stock hay glyph Phosphor. Mầm dùng có chọn lọc cho Entry/empty/loading; không che thông tin safety/QR và chưa coi owner đã chọn mascot.
 
-Ảnh sữa ở SB-081 là ảnh minh họa có nhãn, không là ảnh vật phẩm người dùng đã chụp hoặc bằng chứng độ tươi. Các screenshot đối thủ chỉ để xem tham khảo; không đưa vào manifest hoặc tái phân phối như asset SaveBite.
+Hiện trạng01/11: SB-081 dùng icon phân loại thay ảnh sữa minh họa; ảnh nguồn vẫn giữ trong pool cho context phù hợp. Không dùng ảnh hoặc icon làm bằng chứng độ tươi. Các screenshot đối thủ chỉ để xem tham khảo; không đưa vào manifest hoặc tái phân phối như asset SaveBite.
 
 Tài liệu quy định chính sách tìm kiếm, tái sử dụng, kiểm duyệt bản quyền và quản lý provenance cho toàn bộ ảnh chụp, icon, minh họa, bản đồ và font chữ trên 100 màn hình SaveBite. Đọc cùng [router](README.md), [visual direction](visual-direction.md), [iOS guidelines](ios-guidelines.md), [design system](design-system.md) và [manifest tài nguyên](../assets/manifest.json).
 
 ---
+
+## Pantry default icons ·01/11/2026
+
+Owner yêu cầu không dùngảnh cá nhân làmđiều kiện quảnlýtủ. Reuse MilkCarton/Bread/Carrot/Grains/Egg từexisting native library,CategoryIcon swap trênPantryItemRow;081 cũng dùngglyph theo nhóm. Giữasset poolnguồn,không xóaảnh dùngởDiscovery hoặccontext074. [Usage/evidence](../tracking/selected-states-checkpoint.md). Theo [DEC-028](../tracking/visual-refinement-checkpoint.md),075 dùng Mầm Kitchen native trong hero nhẹ. Carrot main231:269 nhóm body/leaves vàscale0.72 dưới mặt; SVG/source hash cập nhật,32 brand records. Không raster mới,không dùng ảnh vật phẩm cá nhân. Hướng đã được owner chọn,kết quả chờ acceptance.
+
+## Paper reuse ·01/11/2026
+
+Các brand vector concepts đã có được áp native, không sinh bitmap mới: Plain044,Receipt053,Leaf074; bỏ Stripe056 vì vé đã có đường xé. Fold chỉ giữ trong mẫu và dùng cutout trong suốt để nền lộ ra khớp nền ngoài. [Correction](../tracking/paper-correction-checkpoint.md) thêm một native variant và sync SVG Fold/Plain cùng source manifest, không ảnh raster mới. [IDs/usage/evidence](../tracking/apple-paper-checkpoint.md). Màu kế thừa tokens; crop nhỏ hoặc đặt dưới ảnh để giữ nội dung rõ. Apple source trắng/đen reuse từ kit owner,không suy diễn quyền tái phân phối.
 
 ## 1. Nguyên tắc Cốt lõi: Asset-First, Tuyệt đối Tránh Generate AI Lãng phí
 
@@ -91,7 +111,10 @@ Theo `DEC-011`, toàn bộ ảnh AI tạo sinh và ảnh tối của bản pilot
 1. **Minh họa Trạng thái (Spot Badges thay vì Tranh AI toàn màn):**
    - Với các màn Onboarding (`SB-002..004`), Empty State (`SB-022`, `SB-073`, `SB-076`, `SB-096`) và Error/Expired (`SB-046`, `SB-057`, `SB-068`), **không chèn hình vẽ AI nhiều chi tiết lệch tông**.
    - Thay vào đó, sử dụng **Composed Vector Spot Badges** (`72×72pt` hoặc `96×96pt`): kết hợp các hình học mềm nền `#EDF3E7` / `#FEF6EE` với icon Phosphor `Duotone` cỡ lớn màu `#004337` / `#B34021` cùng các thẻ UI thu nhỏ (micro-UI illustration). Cách này vừa sang trọng kiểu iOS hiện đại (như Airbnb/Stripe/Linear), vừa 100% vector native trên Figma.
-2. **Bản đồ Vector Tùy biến (`SB-016`, `SB-017`, `SB-039`, `SB-065`, `SB-094`):**
+2. **Bản đồ khu vực · DEC-022 supersede fallback vector (`SB-003`, `SB-011`, `SB-016`, `SB-017`, `SB-032`, `SB-039`, `SB-065`, `SB-094`):**
+   - Owner đã xuất source maps.to.design vào Components. Dùng IMAGE base trong MapCanvas16:3, giữ source marker/address riêng và các overlay SaveBite native; legacy vectors bên dưới được ẩn, không xóa. [Provenance riêng](../assets/maps/manifest.json) ghi Figma hash/IDs, chưa có file bitmap local/SHA-256; không cộng vào30 local image hashes ởmanifest ảnh thực phẩm.
+   - Provider/license/attribution chưa xác minh: candidate prototype, không ghi đã được duyệt công bố. Không suy đoán provider từ style ảnh hoặc gán tọa độ địa chỉ source cho merchant mẫu. Crop phù hợp viewport, không kéo méo; pin/radius vẫn minh họa, route chưa có dữ liệu đã ẩn. [Checkpoint](../tracking/map-adoption-checkpoint.md).
+   - Hướng fallback vector lịch sử (giữ để có thể quay lại):
    - Không chụp ảnh màn hình Google Maps có dính chữ bản quyền hay giao diện rối mắt.
    - Dựng một **Component `MapCanvas` bằng Vector Native trên Figma** với bảng màu ấm đồng bộ thương hiệu: nền đất `#F3EFE6`, công viên cây xanh `#E2ECE4`, mặt nước sông Hàn/biển `#CFE2E0`, đường chính `#FFFFFF` viền `#E5DEC9`, và đặt các ghim giá `MapPin` (`25K`, `30K`) nổi bật phía trên.
 3. **Mã QR Nhận món (`DemoQR` trên `SB-056`, `SB-063`):**
