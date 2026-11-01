@@ -1,0 +1,82 @@
+[
+  {
+    "screen": "SB-003",
+    "rectangle": [
+      20,
+      115,
+      373,
+      455
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-011",
+    "rectangle": [
+      20,
+      120,
+      373,
+      440
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-016",
+    "rectangle": [
+      0,
+      0,
+      393,
+      769
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-017",
+    "rectangle": [
+      0,
+      0,
+      393,
+      769
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-032",
+    "rectangle": [
+      20,
+      50,
+      373,
+      328
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-039",
+    "rectangle": [
+      0,
+      0,
+      393,
+      540
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-065",
+    "rectangle": [
+      0,
+      0,
+      393,
+      769
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  },
+  {
+    "screen": "SB-094",
+    "rectangle": [
+      20,
+      127,
+      373,
+      397
+    ],
+    "reason": "Source publication rights unverified; documentary redaction only, Figma original unchanged"
+  }
+]

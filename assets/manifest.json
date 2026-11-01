@@ -481,5 +481,47 @@
     "altText": "Rau xanh trong giỏ đan được cầm bằng tay; ảnh minh họa, không chứng minh độ tươi hay ngày hạn.",
     "approved": false,
     "sha256": "0b042651d91e20a34b612e86709342bfec9895ef61ef5500bf7fa5830c22ceed"
+  },
+  {
+    "assetId": "persona-avatar-vn-33328292",
+    "kind": "PERSONA_PHOTO",
+    "filePath": "assets/people/avatar-vietnamese-woman-pexels-33328292.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/vietnamese-woman-in-traditional-ao-dai-outdoor-portrait-33328292/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Hồng Quang Official / Pexels33328292",
+    "downloadDate": "2026-11-01",
+    "usageScope": "Stock portrait for fictional persona only. Sitter is not identified as Minh Anh and does not endorse SaveBite. Nationality descriptor comes from publisher, not visual inference.",
+    "altText": "Ảnh chân dung phụ nữ Việt Nam mặc áo dài trắng; crop native quanh khuôn mặt",
+    "approved": false,
+    "sha256": "d17338e725c8b7699b574364dabae050820e3f4af720a84610540d31d324aea1"
+  },
+  {
+    "assetId": "meal-vn-14226662",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/meal-vietnamese-chicken-rice-pexels-14226662.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/person-holding-white-ceramic-plate-with-food-14226662/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Connor Scott McManus / Pexels14226662",
+    "downloadDate": "2026-11-01",
+    "usageScope": "Illustrative chicken/rice/vegetable meal. Publisher describes Vietnamese cuisine; do not infer actual merchant, precise cooking method, ingredients or freshness.",
+    "altText": "Đĩa cơm, gà và rau kiểu Việt trên nền gỗ",
+    "approved": false,
+    "sha256": "8082c4e2843593aa5ce584dde032983483110d77659112db07d40d321f4369d5"
+  },
+  {
+    "assetId": "context-vn-market-37271691",
+    "kind": "FOOD_PHOTO",
+    "filePath": "assets/food/produce-vietnamese-market-pexels-37271691.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/fresh-vegetables-at-a-vietnamese-market-stall-37271691/",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "attribution": "Surya Travel / Pexels37271691",
+    "downloadDate": "2026-11-01",
+    "usageScope": "Vietnamese market category context only; no actual merchant endorsement or stock/ingredient claims.",
+    "altText": "Rau củ trong rổ ở chợ Việt Nam, có bảng khoai lang",
+    "approved": false,
+    "sha256": "e2fdea64cc0b9399412084d4fa2e74ab80dc92352765a9514286036e094512ea"
   }
 ]

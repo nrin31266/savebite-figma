@@ -11,7 +11,9 @@ Rà ngày 19/10/2026 bằng `find-skills`: `npx --yes skills find figma` và `np
 | `frontend-design` | [Anthropic](https://github.com/anthropics/skills/tree/main/skills/frontend-design), đã cài local | Giữ để review visual direction; nhiều ví dụ thiên web nên phải theo brief mobile |
 | `ui-ux-pro-max` | [NextLevelBuilder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill), đã cài local | Tra patterns/UX có chọn lọc; không tự sinh landing page hay đổi design-system canonical |
 
-Bộ 6 skill hiện tại đủ cho task Figma: 3 skill canvas, 2 skill visual/UX và 1 skill critique. Chưa cần thêm code, Code Connect hoặc MCP trùng. Bộ ba Figma chỉ cài local vì upstream không khai báo license phân phối; manifest pin source/revision/hash. Design-critique giữ Apache-2.0 LICENSE, frontend-design và ui-ux-pro-max giữ license riêng.
+Cập nhật01/11: owner yêu cầu thêm skill mobile; đã cài project-local `mobile-ios-design` từ [wshobson/agents](https://skills.sh/wshobson/agents/mobile-ios-design), pin revision/hash trong manifest. Dùng HIG/safe areas/touch/state restoration cho canvas; không triển khai SwiftUI. Local-only, chưa tái phân phối code skill.
+
+Bộ 6 skill ban đầu gồm: 3 skill canvas, 2 skill visual/UX và 1 skill critique. Chưa cần thêm code, Code Connect hoặc MCP trùng. Bộ ba Figma chỉ cài local vì upstream không khai báo license phân phối; manifest pin source/revision/hash. Design-critique giữ Apache-2.0 LICENSE, frontend-design và ui-ux-pro-max giữ license riêng.
 
 ## Giao việc rõ, không lặp toàn bộ spec
 

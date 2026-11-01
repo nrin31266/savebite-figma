@@ -1,5 +1,74 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+DEC-037–039: [final color/native-control review](../tracking/final-color-icons-checkpoint.md). Shared full Apple27 Symbol Button asset86322f45… supplies push/photo back,photo heart,Home heart/bell/filter and toolbar/close utilities. Original BG/GLASS retained with no solid outer fill/stroke. Home heart/bell/filter use fresh intrinsic50pt source instances and19pt SF Pro via Label properties;other44pt close tools retain documented fit. Tab827:1055 uses source neutral Selection/material,brand900 text + `Tint (Plus D)` only for active,secondary gray for inactive;four slots have gap0 at393pt.201 registry records;owner acceptance pending.
+
+## Current device/native27 integration ·01/11 ·DEC-035
+
+[Source/live/100-screen evidence](../tracking/native27-device-checkpoint.md).100 roots remain393×852;new primitive/radius/deviceScreen50 (VariableID:780:1021) aliases into radius/deviceScreen (780:1022),CORNER_RADIUS. All four root corners50,clipping=true,smoothing0 follow actual phone example Screen775:2603. This adapts the kit's presentation style,not a measured iPhone15 hardware radius. Native editable content/card/sheet/input geometry remains separate.
+
+Shared AppBar15:106 back target and15:110 spacer44×44,padding12 token11:33;actual GlassSmallLight641:10524 instance780:1023 beneath existing centered Phosphor glyph.63 AppBar callers;source glass overall80 roots.055 actual Spinner Large777:1024 at35×35 in44pt holder,forest tint/source opacity;old ellipses removed.195 records after DEC-036 cleanup:20 unused local master/set/variant nodes and15 specimens removed;referenced/runtime families retained. No external source-master change.
+
+DEC-034 owner correction:[keyboard surface009/019/020](../tracking/keyboard-square-checkpoint.md) is square/edge-to-edge. Nested Background750:11763 instances override four source corner bindings27/27/62/62 to0. Keycap geometry/native source/callbacks unchanged. This supersedes native outer-radius retention below; no source-master or token change.
+
+## Apple27 keyboard / persona / curvature ·01/11 ·DEC-032/033
+Actual phone Keyboard750:12277:Lower Case750:12279/Email750:12282 at393×307,y545. DEC-036 replaces overridden instances with fresh exact imports009=791:8389,019=791:8498,020=791:8597. Earlier container-only comparison missed glyph rendering;fresh alphabet glyphs visually checked at200–300% and Present020. Native19pt return-label frame stays93×43 CENTER/CENTER;no alphabet glyph/font positioning patch. Return actions/home indicators retained;outer keyboard square,device root rounds corners.195 registry entries. Persona crop091/092 unchanged. [Current checkpoint](../tracking/native27-device-checkpoint.md),awaiting owner review.
+
+Large action controls:218 App instances of SDS mains178:371/373/374 (width≥100,height≥44), including disabled signup, bind all four corners to radius/pill11:43=999. Preserve source linkage, geometry/callbacks/disabled fills. This is an App-instance override, not a claim that external source masters changed. Card20/28, choice-row14, input and native keyboard radii remain role-specific; no blanket glass/radius replacement. Native phone field758:5 is402×52, transparent/radius0 grouped-row structure; alert754:31 is a different role. Both inspected, neither adopted into standalone labeled forms. [Live read-back](../tracking/evidence/vn-final-review/live-readback.json).
+
+## Cluster UI refinement ·01/11/2026 ·DEC-031
+
+[Checkpoint](../tracking/cluster-ui-checkpoint.md):195 registry entries,30 revised roots after100-frame visual audit. Guest login is a104×44 sage pill. Toolbar targets44pt; Pantry title185pt +44pt overflow +108pt Add with8pt gaps.075/076 native menus238×104,slot222×88.095/096 preferences and033 search reuse native Apple27 glass buttons with existing Phosphor glyphs. Destructive070 uses error/inverse; informational text uses secondary, not terracotta.
+
+028–030 category intros353×128:209pt text +16gap +128pt image; Fraunces24/28 and body13/19. Lists begin at body206 rather than428; meal/produce guidance84/102pt. Nav scroll content ends818 with104pt final inset.083 symmetric rows353×80,32pt category glyph/16pt chevron.
+
+EmptyState98:109 now exposes Icon#720:0 instance swap, default MagnifyingGlass98:62,071 Check98:47. New token-bound Phosphor chat-circle-text731:1021 on042/043; source MIT/hash in manifest. FreshnessSummary16:161 retired from Components tree/registry after its final hidden caller20:23 was removed. Source/animation/runtime variants retained. No new color tokens/bitmap or full accessibility/logic acceptance.
+
+## Apple27 adoption ·01/11/2026 ·DEC-029/030
+
+[Final checkpoint](../tracking/apple27-e2e-checkpoint.md):194 registry entries,100 roots retained. Actual Apple27 TabBar641:10609 in BottomNav15:122/22 callers;393×95 at y757, transparent outside/source GLASS above scroll content. Home/Pantry/Profile extend behind nav; end inset exposes final content.
+
+Pantry hero88pt/Mầm64pt,112pt icon rows distinguish semantic date badges from neutral44pt Dùng/Bỏ. Two Popup Buttons and checkmarked menus in one row.081 compact104pt icon hero and bound date-card status. Waiting amber/ready green/unavailable neutral/expired red; selected choices forest/cream.
+
+Apple27 Switch on/off in local64×48 hit area for085/097;079 native Inline Date Picker/date-type Segments/44pt glass arrows;016 Glass/Glass Prominent controls.089/095 Row Tall, Be Vietnam Pro14/20 titles and12/18 captions,32pt icon spots/native separators where grouped. Actual source contracts read back, source masters unchanged. Technical availability is not redistribution permission. AWAITING_OWNER_REVIEW; no full logic/mobile/a11y/Present claim.
+
+## Visual refinement · 01/11/2026 · DEC-028
+
+[Checkpoint](../tracking/visual-refinement-checkpoint.md): PantryOverviewHero624:1246 và ActiveOrderCard624:979 dùng Auto Layout, radius/md20 và padding16; hero128pt,order96pt. BrandHeader15:89 có HeaderTitle#624:0;014/015 greeting,013 wordmark. Pantry075 dùng native Mầm96pt, count361:4854, nhãn warning/error riêng; old summary20:23 hidden fallback. Hướng được chọn, chưa owner acceptance.
+
+Source SDS Tag627:8400 có4 registered Secondary/Default variants: Positive8411,Warning8415,Danger8407,Neutral8419. Stock→success/successBg, waiting/near date→warning/warningBg, expired→error/errorBg, provenance→secondary/subtle; no remove icon. Tag radius/xs8 và8pt horizontal inset. Active selected choices vẫn forest, không dùng cùng màu cho mọi loại nhãn. OfferCard15:160 expose nested Stock Label#9765:0; Availability legacy không là editor mới. Registry163,không token mới.7 horizontal overflows018/023/027/070 đã sửa; không tự thay toàn bộ spacing app khi chưa thấy lỗi.
+
+## Selected-state contract ·01/11/2026
+
+[Checkpoint](../tracking/selected-states-checkpoint.md):single choice chỉ một active;multi Dietary độc lập. Inactive canvas11:13+border11:21,active forest11:10+cream11:13 vàcheck ởcard lựa chọn;compact segments dùngfilled/outlined distinction. Hit≥44pt,choice-card gap8pt,radius/sm11:40=14. Navigation actions không bị coi làselected options.
+
+PantryItemRow16:171 có CategoryIcon#583:0:INSTANCE_SWAP,native64pt category spot;8 fixture rows và081 không photo. Summary16:161 của batch trước bị owner từ chối; superseded bởi DEC-028 ở trên. Không coi bản mới là baseline cho tới owner acceptance.
+
+## Apple chrome + paper ·01/11/2026
+
+[Checkpoint](../tracking/apple-paper-checkpoint.md): Black554:1033 và White554:1023 reuse trên100 root,393×54 trong safe59,giữ giờ fixture. Sau [paper correction](../tracking/paper-correction-checkpoint.md), registry157: thêm Plain577:926 vào existing Brand/Pattern231:458.044 dùng Plain;053 giữ Receipt edge12pt;056 bỏ sọc vì ticket đã có khuyết/đường xé;074 giữ Leaf dưới ảnh35%. Fold231:450 chỉ giữ trong mẫu,base khoét góc và vùng ngoài trong suốt để lộ đúng nền cha. Không phủ chữ,QR,CTA; không áp texture lên form/search/safety copy.
+
+## Shared Search + Apple system chrome ·01/11/2026
+
+[Checkpoint mới](../tracking/apple-consistency-checkpoint.md) supersede geometry/scroll trong các batch Search trước. Reuse main SearchField16:18 làm shared header353×48: native Apple Search158:211 exposed Text +Cancel48, spacing token12/primary MIN; instances019560:6245 và020560:6258, không hai local header khác nhau. Legacy internals/Query#16:1 đã thay; native Text property được expose. History19 không scroll/clip khi body296pt vừa viewport426pt.
+
+Source Apple Rin status main554:1033 và8 dependency mains được copy native,393×54 nằm trong safe59; override16:00, giữ SF Pro và black icons. Áp019/020/023–027; Home235:646 reuse. Old15:2 còn dùng ở màn khác nên giữ. Xóa17 unused variants/components qua9 objects; registry xóa9 old rows/thêm9 source rows, vẫn148 entries.023–026 full native Discovery backdrop, scrim40%; child sheet rows52/64/56pt, bottom46. Source provenance không thay license status. Native screenshot PASS scoped; Present render sau một số transition/state change vẫn OPEN.
+
+## Search/sort repair · 01/11/2026 · awaiting owner review
+
+[019/020/023/027](../tracking/search-sort-repair-checkpoint.md) đã sửa lại theo DEC-023:019 chips32pt/hit44pt trong horizontal scroll;020 rows72pt/ảnh48pt và Apple keyboard235:972;023 summary64pt +SDS Tag Toggle423:849/850 visual44pt trong slot48pt;027 grouped rows52pt. Sheets023495pt/y357 và027415pt/y437, bottom46pt. Collection530:5011 có10 Boolean flags gồm keyboard/home; source mains/token definitions giữ nguyên. Đã sửa raw paint trắng lệch binding ở hai nhãn023. Kit import Apple ActionSheet/Row bị permission fail, không tạo giả source instance. [WIP cũ](../tracking/search-sort-wip-checkpoint.md) không còn là hiện trạng; repair vẫn chờ owner acceptance.
+
+## Map source adoption · 01/11/2026 · DEC-022
+
+MapCanvas16:3 v1.1-candidate dùng IMAGE/FILL từ owner base, giữ main và ẩn legacy vectors;8 dependent instances có map base mới. Không thêm main/tokens. Viewport353×340/320/270 ở003/011/094;032 crop353×124. Price/location markers, radius states, text và controls giữ native. [Checkpoint/evidence](../tracking/map-adoption-checkpoint.md), [provenance](../assets/maps/manifest.json). Không coi map raster là vector editable; UI trên map vẫn chỉnh được. Source license/Present/owner review chưa đạt.
+
+## Filter UI · 01/11/2026
+
+[023–026](../tracking/filter-ui-checkpoint.md) reuse BrandHeader/Apple Search/category/banner và Phosphor X/Check/CaretRight mains hiện hữu; context preview native nằm sau scrim40%, tắt reactions. SheetsHUG519/530/511/541pt kết thúc852, paddingBottom46; close44pt, chips44pt, budget52pt/gap8, pickup64pt và dietary56pt. Cảnh báo026 textHEIGHT/FILL. Không tạo token/main/asset mới; registry148 entries. Các selected states là visual mẫu, chưa có filter logic.
+
+## Support UI · 01/11/2026
+
+[069/070](../tracking/support-ui-checkpoint.md) reuse existing instances/tokens, không thêm main: selected dot absolute đồng tâm radio20pt; header Auto Layout44pt với titleHEIGHT/FILL và close wrapper44pt. Cancel sheet HUG431pt/y421, top corners radius/lg28, policyHEIGHT/HUG radius/sm14, chips44pt và SDS buttons52pt; bottom padding46pt gồm safe area34+12. Các bindings/reactions hiện hữu giữ nguyên, chưa Present.
+
 ## Offer UI · 01/11/2026
 
 [Batch034–038/040](../tracking/offer-ui-checkpoint.md) không thêm main: viewport034393×486/clip dọc/two top corners radius-lg, bodyHUG gap12/padding20; gallery hai view dùng Boolean mode cũ và5 photo aliases, SDS Neutral48pt/radius-sm.036 sheet520pt + scrim/native context, CTA52pt.0385 SKU groups dùng11 OfferListRow instances; actions48pt và Back44pt.0403 numbered rows82pt có infoFILL313 và textHEIGHT, Mầm Carry96pt reuse main231:252. Registry148, ảnh30 giữ nguyên.
@@ -84,7 +153,7 @@ Theo `DEC-011`, bản pilot v0.5 trên file cũ đã được xóa/nghỉ hưu. 
 
 - **Font chữ chuẩn:**
   - Giao diện chính: **`Be Vietnam Pro`** (Regular 400, Medium 500, SemiBold 600, Bold 700) — hiển thị dấu tiếng Việt hoàn hảo.
-  - Mã nhận hàng & ID đơn (`SB-056`, `SB-063`): **`JetBrains Mono`** hoặc **`SF Mono`** (Bold, tracking `+0.08em`) để tách biệt rõ từng ký tự `DEMO-A125`.
+  - Mã nhận hàng & ID đơn (`SB-056`, `SB-063`): **`JetBrains Mono`** hoặc **`SF Mono`** (Bold, tracking `+0.08em`) để tách biệt rõ từng ký tự `SB-A125`.
   - Thành phần hệ thống iPhone (Status Bar `16:00`, iOS Keyboard, System Alert): **`SF Pro Text / Display`** chuẩn Apple.
   - Tiêu đề cảm xúc (tùy chọn ở Onboarding `SB-001..004` & Impact `SB-100`): **`Fraunces`** / **`Newsreader`** hoặc `Be Vietnam Pro Bold` tracking `-0.02em`.
 - **Thang chữ (Type Scale) & Quy tắc Số học:**
@@ -148,7 +217,7 @@ Theo `DEC-011`, toàn bộ node ID cũ trên file `NLTv70kDZ2i3HpOnOKQCDY` đã 
 
 | Thành phần | Quy cách v1.0 trên `SaveBite-V2` (`393×852pt`) |
 |---|---|
-| `iOSStatusBar` / `iOSHomeIndicator` / `iOSKeyboard` | Thành phần hệ thống chuẩn iPhone 15 (`393×59pt` Dynamic Island, `393×34pt` Home Indicator `134×5pt`, `393×291pt` QWERTY Keyboard trên `SB-019`). |
+| `iOSStatusBar` / `iOSHomeIndicator` / `iOSKeyboard` | Thành phần hệ thống chuẩn iPhone 15 (`393×59pt` Dynamic Island, `393×34pt` Home Indicator `134×5pt`, `393×307pt` QWERTY Keyboard trên `SB-019`). |
 | `BrandHeader` / `AppBar` / `LargeTitleBar` / `MediaOverlayBar` | 4 mẫu điều hướng đầu trang chuẩn HIG: `BrandHeader` ở `SB-015`, `MediaOverlayBar` ở `SB-034`, `AppBar` (Push Nav) ở `SB-051, 053`, `LargeTitleBar` ở `SB-075, 091`. |
 | `BottomNav` | Thanh 4 tab chuẩn `D-002` (`Khám phá`, `Đơn của tôi`, `Tủ thực phẩm`, `Tài khoản`) cao `83pt` (`49pt` tab bar + `34pt` Home Indicator), dùng Phosphor Icons (`Duotone/Fill` khi active, `Regular` khi inactive). |
 | `Button` / `StickySplitDock` | `Button` có `Primary`, `Secondary`, `PrimaryDisabled`, `PrimaryLoading` (`radius: 999pt`). `StickySplitDock` ở đáy `SB-034` tách rõ giá `25.000đ · Trả tại quầy` (trái) và nút `Chọn giờ nhận →` (phải). |
@@ -157,9 +226,9 @@ Theo `DEC-011`, toàn bộ node ID cũ trên file `NLTv70kDZ2i3HpOnOKQCDY` đã 
 | `SearchField` | Phục vụ `SB-019`: ô tìm kiếm cao `48pt`, `radius-14`, có trạng thái `Default` và `Focused` (viền `#004337 2pt`). |
 | `MerchantRow` / `PickupInfo` / `AllergenNotice` | Phục vụ `SB-034, 051, 053`: `MerchantRow` và `PickupInfo` trình bày dạng hàng phẳng ngăn cách bằng đường kẻ `1pt #E8E2D8`; `AllergenNotice` dùng hộp nền ấm `#FEF6EE` hiển thị rõ trạng thái `UNKNOWN`. |
 | `ReservationProgress` / `OfferSummary` / `PickupSlot` | Phục vụ `SB-051, 053`: thanh tiến độ 2 bước tích hợp ngay dưới `AppBar`; `OfferSummary` thu gọn thành strip ngang; `PickupSlot` có 3 variants (`Available`, `Selected #004337`, `Expired`). |
-| `UnifiedReceiptCard` / `PerforatedPickupPass` / `DemoQR` | Phục vụ `SB-053, 056`: biên lai giấy đứt nét (`UnifiedReceiptCard`) không lồng thẻ; vé nhận món đục lỗ (`PerforatedPickupPass`) có 2 khuyết bán nguyệt `16pt`, `DemoQR` căn giữa tuyệt đối trên nền trắng và mã `DEMO-A125` font Monospace. |
-| `FreshnessSummaryBanner` / `PantryItemRow` | Phục vụ `SB-075`: thanh tổng quan độ tươi 3 trạng thái và hàng thực phẩm gia đình có `Expiry Progress Bar` + nút chạm nhanh `Đã dùng`. |
-| `ProfileHeaderCard` / `ImpactHeroCard` | Phục vụ `SB-091`: thẻ hồ sơ sinh viên `Minh Anh` và thẻ thành tựu cứu thực phẩm thực chứng (`3 phần đã nhận` · `4 món Pantry dùng kịp hạn`). |
+| `UnifiedReceiptCard` / `PerforatedPickupPass` / `DemoQR` | Phục vụ `SB-053, 056`: biên lai giấy đứt nét (`UnifiedReceiptCard`) không lồng thẻ; vé nhận món đục lỗ (`PerforatedPickupPass`) có 2 khuyết bán nguyệt `16pt`, `DemoQR` căn giữa tuyệt đối trên nền trắng và mã `SB-A125` font Monospace. |
+| PantryOverviewHero / PantryItemRow | DEC-030 current075:88pt kitchen hero, two Popup filters in one row;112pt category-icon rows/date-status badges/neutral Dùng-Bỏ. No freshness score/progress. |
+| `ProfileHeaderCard` / `ImpactHeroCard` | Phục vụ `SB-091`: thẻ hồ sơ sinh viên `Minh Anh` và thẻ thành tựu cứu thực phẩm thực chứng (`3 đơn đã nhận` · `4 món Pantry dùng kịp hạn`). |
 
 ---
 

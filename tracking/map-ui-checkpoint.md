@@ -1,5 +1,7 @@
 # Map UI checkpoint · 01/11/2026
 
+**Superseded phần nền:** [Owner map adoption](map-adoption-checkpoint.md) đã đưa source mới vào8 màn qua MapCanvas16:3 và ẩn hai tuyến mẫu. Các ghi chú “chưa áp/chưa nhận source” bên dưới là checkpoint trước adoption; provider/attribution và Present sau đổi nền vẫn chưa kiểm.
+
 Batch thuộc goal polish100 màn, chart/motion và kit/plugin; chưa thu hẹp goal thành5 màn. Một writer trực tiếp,100 root IDs giữ nguyên, không tạo main component mới. Lease `codex/direct-map-ui` RELEASED tại checkpoint; không push/merge, DONE0.
 
 ## Đã sửa canvas
@@ -21,6 +23,8 @@ Present đã bấm:016 pin30K→017 [croissant30K/17–18](evidence/map-ui/runti
 Scoped visual: sheet không chồng/che CTA, price/slot mặc định không wrap. Chưa kiểm toàn5SKU/long text/Dynamic Type, tất cả CTA/back hoặc F-02 end-to-end; motion/reduced motion và thiết bị thật chưa kiểm. `prototype_verified=false`, chưa owner acceptance.
 
 ## Map nguồn/plugin còn thiếu
+
+**Cập nhật owner source01/11:** đã đọc live layer `Map` (`499:7920`) trên **Components `11:2`**, không phải Foundations. Rectangle600×471 có IMAGE fill `1ae19c4d59856d2929186dd411e280ecb36ef04e`, bitmap gốc1200×942. [Readback](evidence/map-ui/owner-source-readback.json). Nhìn thấy khu VKU/Trần Đại Nghĩa/Nam Kỳ Khởi Nghĩa; dùng được làm nền raster prototype. Không phải vector/map tương tác. Chưa xác minh nhà cung cấp/giấy phép/attribution, không suy đoán từ style ảnh. Fit theo rộng393 cho cao308.5; FILL MapCanvas393×540 giữ khoảng57% chiều ngang nguồn, cần chọn crop quanh khuôn viên thay vì kéo méo. Chưa áp vào5 màn, chưa sửa layer owner hoặc master; nguồn candidate này giải quyết phần “chưa nhận layer”, không chứng minh plugin chạy được trong browser của agent hoặc pin/tuyến có tọa độ thật. Không có canvas lease/mutation trong lượt kiểm này.
 
 maps.to.design có trong quick actions nhưng2 lần mở trước restart và1 lần sau đều báo **“An error occurred while loading the plugin environment”**. MCP identity/read/write hoạt động. [Hướng dẫn hãng](https://divriots.com/blog/introducing-maps-to-design/) nói export image/fill; không claim plugin xuất vector native toàn bộ. Chưa có map source mới trên Foundations; đã nhờ owner thử export ở phiên Figma riêng, chưa nhận layer. Hai lần đọc Overpass tìm khu học xá trảHTTP502; không nhập dữ liệu/map nào.
 

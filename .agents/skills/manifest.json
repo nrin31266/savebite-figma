@@ -63,6 +63,17 @@
       "skill_sha256": "3a4f260eb9f60b431782bf6d90f22afb480c0c67860267a032df58a3e1bd19cd",
       "committed": true,
       "license": "Apache-2.0"
+    },
+    {
+      "name": "mobile-ios-design",
+      "scope": "project",
+      "path": ".agents/skills/mobile-ios-design",
+      "source": "https://github.com/wshobson/agents",
+      "revision": "7e2fb559cf4b824b27f1fec49fe88f7511066d26",
+      "source_skill_path": "plugins/ui-design/skills/mobile-ios-design",
+      "skill_sha256": "2b3b2405aee645a345d137ce93bd86bac65d33da4ad40c4b6f007bf4a51b6c96",
+      "committed": false,
+      "license": "Upstream repository terms; local installation only, no redistribution in this batch"
     }
   ],
   "verified_upstream_content": true

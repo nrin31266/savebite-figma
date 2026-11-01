@@ -2,6 +2,135 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-039 ·01/11/2026 ·Neutral native glass and distinct active/inactive navigation
+- Owner supplies native kit reference:glass stays transparent/neutral;only active icon/label uses brand forest,inactive uses secondary gray. Supersedes DEC-038 outer sage fill/outline and temporary sage Selection override.
+- Native selected Tab has a separate `Tint (Plus D)` masking overlay;bind it to brand900 in addition to text. Restore Selection paints from source master. Keep four equal non-overlapping slots at393pt (`itemSpacing=0` adaptation from source -8).
+- Complete interrupted22-bar migration:restore per-screen selected tabs,original conditional Pantry entry actions and canonical destinations. Sheet backdrops023–027 retain no actions. Preserve callbacks;no new business behavior.
+- Exact Apple27 Symbol Button86322f45… now supplies shared back/photo-heart,header heart/bell,toolbar tools and close controls. Remove opaque outer paints so original BG/GLASS renders. Gallery Close uses native Medium Glass text button;native text label contrast checked visually.
+- Owner follow-up:Home heart/bell and filters use fresh exact source instances at intrinsic50pt with native19pt SF Pro glyphs via Label properties;replace prior44pt template copies and align nested014/015 targets. Enlarged200–300% check retained.
+- Final scan covers100 default roots plus ten sheets;owner acceptance/full flow/mobile tests remain separate. Authorized merge/push from DEC-037 retained.
+
+## DEC-038 ·01/11/2026 ·Whole native27 back buttons and fresh tabbar
+- During final color scan owner requests back circle more visible and toolbar/tabbar taken directly from installed27 kit. Overrides earlier exclusion of50pt Symbol Button from48pt AppBar.
+- Exact native Button Liquid Glass Symbol asset86322f45… at intrinsic50pt,native SF back glyph,brand tint and restrained outline/shadow. Shared push toolbar56pt;media toolbar same50pt button sizing. Preserve existing back handlers/visibility,including nested/overlay fallbacks.
+- Fresh exact27 iPhone4-tab asset5c6a4bde… with native typography/material/layout;transparent outer frame,native y0 (old y2 overflow removed),equal flexible tab slots. Retain each caller's selected state,SF symbols,labels and action profiles;remove hidden legacy tab frame. Repeat root visual review after shared change.
+- UI/navigation contract preserved;no new destinations/business behavior. Authorized commit/merge/push remains part of DEC-037.
+
+## DEC-037 ·01/11/2026 ·Final100-screen color/icon scan and authorized main push
+- Owner requests fresh100 screenshots,critical color/readability review and useful new icons,then commit/merge main/push. Explicit Git authorization supersedes prior no-commit/no-push checkpoints for this integration. Preserve owner manual layout changes observed live,including075 header order.
+- DEFAULT UI corrections:readable neutral disabled signup/Reset labels;forest/sage native calendar today/selection and brand700 switch-on tint;dedicated accessible control-border role for form inputs/consent checkbox,without darkening card separators. Keep disabled behavior and processing/context dimming.
+- Add24pt editable fridge (original vector),basket/download-simple (official Phosphor MIT):087 forgot/overbuy reasons and090 export leading icons. Existing labels,selected states and callbacks retained;no new business logic,inventory or safety claim.
+- Publish only licensed/original assets and review evidence with unverified map imagery explicitly redacted. Keep private/local tool configuration out of commits. Source map provider/license remains unverified;Git authorization does not establish redistribution rights.
+
+## DEC-036 ·01/11/2026 ·Fresh native27 keyboard instances and unused-component cleanup
+- Owner provides enlarged row z–m defect; DEC-035 comparison of key-instance boxes omitted rendered glyph alignment and was insufficient. Owner explicitly requests actual installed kit imports and deletion of unused components; full active UI goal remains.
+- Import exact phone asset keys bf2a52082f2a1eca4e3f9d91fe34c64a9410dd32 (Lower Case),7c10fa3da64a14e5d99f13ce9a77b931d1ba794c (Email). Replace three previously swapped/overridden keyboard instances with fresh source instances; preserve SB roots, return actions/visibility and home indicators. Verify enlarged glyphs and Present,not only container metadata.
+- Remove unused local Components only after all-page reference/prototype/dependency audit. Keep referenced source/runtime variants; imported remote library assets are not deleted from their original library. Update actual IDs/registry/evidence,owner review pending.
+
+## DEC-035 ·01/11/2026 ·Native27 keyboard fit and100 device corners
+- Owner says keys still misaligned, requests exact Assets27 source comparison,100 iPhone corner audit and useful native kit adoption. This is a full UI task, not only a keyboard background correction; full business-logic tests remain excluded.
+- Live100 roots are393×852/radius0. Native phone Keyboard750:12279/12282 is402×332; hiding suggestions yields307pt. Current291pt root clips/overflows a307pt child stack. Use native Auto Layout height307 and bottom alignment y545 at393×852; retain original native rows/keycaps rather than rescale/reconstruct keys. Keep outer keyboard background square per DEC-034; device root clips screen corners.
+- DEFAULT presentation:radius/deviceScreen50 based on actual Assets27 phone Examples/Keyboard Screen775:2603 (402×874,radius50); apply same role token to100 existing393×852 roots with clipping. This is a visual adaptation of the kit example, not a measured iPhone15 hardware-radius claim or a switch to402×874.
+- Reuse actual native27 glass surface for shared AppBar back control; increase hit/spacer geometry40→44. Adopt actual native27 Spinner on055. Inspect Alert/device/keyboard examples and document applicable/non-applicable assets; do not invent destructive data behavior merely to show an Alert component. IDs/navigation/data/payment/safety remain.
+
+## DEC-034 ·01/11/2026 ·Square outer keyboard surface
+- Owner screenshot rejects rounded outer surface on009 and explicitly requires square keyboard. Supersedes DEC-032 native outer-radius retention for this App integration.
+- Actual nested Background instances use source top27/bottom62 radius bindings. Override all four outer corners to0 on009/019/020, edge-to-edge393×291 at y561. Retain native keycap radii, layout, source linkage, return actions and020 visibility. No external source-master/token change.
+
+## DEC-033 ·01/11/2026 ·Vietnamese food imagery and action-button curvature
+- Owner authorizes autonomous UI/UX refinement, Vietnamese-looking food photos and careful27 kit shapes/radii. Reuse real licensed photo sources and preserve dish meaning, safety/stock/payment semantics.
+- DEFAULT visual: use Pexels14226662 Vietnamese-style chicken/rice/vegetable plate as illustrative meal imagery, Pexels37271691 Vietnamese market as category context only. Source metadata does not prove merchant, recipe, ingredients or precise cooking method. Bread/croissant images remain literal; reject37187931 after crop comparison because it weakens presentation.
+- Adapt large filled/secondary action controls to capsule radii consistent with27 control silhouettes; preserve dimensions, callbacks and disabled states. Keep card/input radii distinct; no indiscriminate glass layer over content. Native phone27 Text Field758:5 is transparent grouped-row geometry, not an automatic standalone rounded input replacement.
+- [Final UI review](../tracking/vn-final-ui-checkpoint.md):100 fresh root captures/ten sheets reviewed,65 existing meal image nodes plus category contexts updated,218 action controls bound to radius/pill.207 component records/33 assets. Transparent grouped-row phone fields retained as research, not applied to standalone forms. Visual work delivered for owner review; no full logic/owner acceptance claim.
+
+## DEC-032 ·01/11/2026 ·Vietnamese imagery and native27 shape refinement
+- Nguồn:owner asks broader all-screen UI/UX self-critique, semantic icons, more Vietnamese food imagery, real Vietnamese woman avatar; specifically points at Assets iOS27 kit and native corner geometry. Authorizes autonomous continuation; no full logic testing.
+- Actual phone27 keyboards adopted009/019/020, retaining return actions,393×852 screen baseline,291pt keyboard and native curvature. Tablet/foldable examples not used as phone controls.
+- Stock portrait Pexels33328292 represents a fictional persona091/092; publisher supplies Vietnamese descriptor, license/source/hash recorded, no identity/endorsement claim.
+- [Intermediate checkpoint](../tracking/vn-imagery-keyboard-checkpoint.md):207 components,31 assets, five scoped screenshots. Full food/all-screen/native-control review goal remains ACTIVE; no new food/SKU or full QA acceptance.
+
+## DEC-031 ·01/11/2026 ·Strict cluster-based UI critique
+- Nguồn:owner yêu cầu UI/UX Figma only, chụp theo cụm/tự thẩm/sửa, dùng skills/components/tham khảo và xóa phần không dùng; nhắc soi màu/nền/đè/layout, Guest Home login và actions cuối list.
+- Cho phép routine UI/UX refinement theo hướng cream/forest/Mầm đã chốt. Không thay scope thành backend/full logic tests.100 default roots captured,30 revised; [checkpoint](../tracking/cluster-ui-checkpoint.md),195 components,owner acceptance pending.
+- DEFAULT:013 login in header;075/076 history/data in native top menus;095/096 preferences and033 search in header.028–030 compact128pt intros/list-first;031 unique canonical offers by pickup time. No new inventory/stock.
+- UI navigation correction:099 informational answers no longer open cancellation/date editor;071 primary returns Orders,secondary Explore;092 Save→091 with false initial saved banner removed. These are UI routes/feedback, not persistence or full workflow validation.
+- Destructive070 confirm red; static variant clocks04718:30,06717:45,07217:30. Keep safety/pay-at-pickup semantics.
+- EmptyState semantic Icon swap; source Phosphor chat-circle-text MIT/vector for042/043. Retired FreshnessSummary removed from live Components tree and registry; runtime animation/source variants retained.
+- No commit/push; DONE0, full logic/mobile/a11y/usability not checked. Known browser/Present missing-layer capture limitation remains OPEN.
+
+## DEC-030 ·01/11/2026 ·Hoàn tất UI, giảm logic testing theo owner
+- Nguồn:owner nhắc giữ full goal UI, không test full logic/lặp cases do token; để full cases khi code thật. Thay verification scope, không thu hẹp UI.
+- Native Apple27 Switch085/097, Inline Calendar/Segments079, Glass Buttons016/date, Row089/095; source property contracts read back. Giữ root IDs/navigation/safety/pay at pickup.
+- DEFAULT prototype:thêm notification/history event fixtures và canonical vegetable offer trên Home; không tăng inventory/stock/metrics.079 chỉ fixture Oct/Nov2026.
+- Display code SB-001/SB-A125; bỏ debug copy, QR graphic vẫn prototype. Date status không xác nhận an toàn.070 dùng062 làm backdrop không tương tác.
+- [Final checkpoint](../tracking/apple27-e2e-checkpoint.md):194 entries,scoped UI/scroll/onboarding reset. Full logic/mobile/a11y/usability không kiểm; Present missing-layer OPEN. AWAITING_OWNER_REVIEW,DONE0; không commit/push.
+
+## DEC-029 · 01/11/2026 · Apple27 glass navigation, status filtering và final E2E refinement
+
+- CONFIRMED owner: ưu tiên component thật kit27, dùng kính cho bottom nav với phần ngoài trong suốt, compact075 và item status có màu; sau steering hai filter phải chung một hàng. Cho phép sửa components/foundations, thêm data/tiện ích hợp lý, bỏ debug copy; cuối cùng preview về onboarding. Toàn bộ mục tiêu giữ ACTIVE, không tự thu nhỏ thành075.
+- DEFAULT: shared BottomNav reuse actual native Apple27 Tab Bar4; selected forest tint, transparent surroundings, sourceGLASS retained.22 callers migrated, nav moved above scroll content.075 dùng2 Popup Buttons trong1 row và native Menu/Items; status intersect storage/active. Near-date grouping is prototype day19..21, expired<19, unknown≤0 hoặc sentinel10000; không xác nhận an toàn thực phẩm.
+- Existing canonical records retained. Per-item status badge khác với Dùng/Bỏ action. Approval to refine does not mean owner acceptance. Source kit imports now work; no restart needed. [Intermediate evidence and remaining scope](../tracking/apple27-e2e-checkpoint.md); registry171,DONE0.
+
+## DEC-028 · 01/11/2026 · Light kitchen Pantry, signed-in Home và semantic labels
+
+- CONFIRMED: owner chọn qua brainstorming “gian bếp minh hoạ nhẹ”, Mầm nhỏ ở đầu075, nhãn sắp hạn/quá hạn tách và icon phân loại; yêu cầu sửa carrot, Home greeting/pending order, rà nhãn và khoảng cách. Cho phép edit/add/delete/reuse kit; không đồng nghĩa acceptance.
+- DEFAULT thực thi: reuse Kitchen231:269, carrot grouped/scaled dưới mặt; HeaderTitle15:89 cho014/015,guest013 vẫn SaveBite. ActiveOrderCard624:979 và PantryOverviewHero624:1246 dùng tokens cũ. Count là số vật phẩm trong prototype, không là freshness score. Không đổi pickup/payment/safety.
+- Native SDS Tag Secondary/Default imported thật, overrides theo semantic tokens: Positive stock, Warning waiting/near expiry, Danger expired, Neutral provenance. Forest selected controls giữ riêng. OfferCard expose nested Stock Label; Availability legacy field chỉ giữ historical overrides;19 callers migrated. Không xóa main còn được sử dụng hoặc fallback trước review.
+- 100 roots giữID; registry163,32 brand assets với Kitchen SVG/hash cập nhật. [Checkpoint/evidence](../tracking/visual-refinement-checkpoint.md). Source render thiếu static layers sau đổi state vẫn OPEN; complete flow/mobile/owner acceptance chưa đạt,DONE0.
+
+## DEC-027 ·01/11/2026 · Home/Pantry và selected states
+
+- Nguồn CONFIRMED:owner yêu cầu018 frontend-design,Home guest/login cùng core,Pantry icons thay ảnh,087 căn trái/chọn mớiactive,095 tabs vàcácselector tương tự.
+- Login thường→015 thay014,pending offer→034 giữ;014 core market cópending strip. Pantry icon theo nhóm làdefault;CategoryIcon swap trênmain16:171. Selector selected forest/cream,neutral canvas/border;Dietary chọn độc lập,slotđã đóng không chọn được. Không thay chính sáchpayment/safety hoặc thêm query/backend.
+-075 bị owner từ chối;lượt tiếp theo dùngbrainstorming choMầm/carrot,Home greeting/order card,075 vàsemantic labels/spacing. Quyền edit/add/delete/import components không phảiowner acceptance;giữusage/conflict protocol.
+- [Evidence vàgiới hạn](../tracking/selected-states-checkpoint.md),prototype_verified=false,DONE0.
+
+## DEC-026 ·01/11/2026 · Phân biệt giấy phẳng/gấp và nền phía sau
+
+- Nguồn CONFIRMED: owner yêu cầu rà vật liệu theo ngữ cảnh,có component không gấp và nền sau góc gấp khớp nền ngoài.
+- Thực thi: Plain577:926 reuse family231:458 cho044; Fold khoét trong suốt thay tam giác sage. Giữ Receipt053/Leaf074,bỏ Stripe056; không thay nghiệp vụ/reactions. Bảng mẫu5 instances và source SVG/hash đồng bộ.
+- [Checkpoint/evidence](../tracking/paper-correction-checkpoint.md); awaiting owner review,không suy ra full prototype/render PASS.
+
+## DEC-025 ·01/11/2026 · Apple chrome và giấy dùng trong app
+
+- Nguồn CONFIRMED: owner yêu cầu áp status Apple trắng/đen từ kit Rin và dùng mẫu giấy trong ảnh; xác nhận chat cũ dừng,cho tiếp quản.
+- Reuse hai source mains trên100 root,giữ contrast choice/fixture times,root IDs và reactions. Áp bốn pattern có sẵn tại044/053/056/074; không tạo master/tokens/bitmap hoặc đổi nghiệp vụ.
+- [Checkpoint/evidence](../tracking/apple-paper-checkpoint.md),design-system/asset-strategy và registries cập nhật cùng batch. Owner acceptance chưa có; lỗi capture/transition vẫn OPEN.
+
+## DEC-024 ·01/11/2026 · Shared Search, Apple system bars và unused cleanup
+
+- Nguồn: owner chỉ rõ history19 bị che/cắt, Search19/20 phải component dùng chung, Hủy lệch; yêu cầu dùng Apple kit cả pin/sóng/giờ và xóa Components cũ không dùng.
+- DEFAULT thực thi: reuse existing SearchField16:18 thành shared active header (Apple158:211 +Cancel48/gap12/MIN), expose native Text property thay legacy Query#16:1;019/020 cùng main. Bỏ scroll/clipping dư trong19. Không thay query demo thành engine thật.
+- Copy native status bar từ Apple Rin128:43449, target main554:1033+8deps áp7 màn; Home source resolve existing235:646. Giữ file nguồn read-only.023–026 cùng native Discovery feed context;027 giữ result context, scrim40%. Không đổi payment/safety policy.
+- Xóa17 unused components/variants thuộc9 objects sau App/Components/Foundations usage và property/reaction audit. Giữ source/map/main còn dùng, đặc biệt15:2 và16:18. Registry148 entries sau9old→9new source rows. [Exact IDs/evidence](../tracking/apple-consistency-checkpoint.md); owner review pending và Present render OPEN.
+
+## DEC-023 · 01/11/2026 · Correction search/filter/sort019/020/023/027
+
+- **Owner cho sửa lại sau rejection:** dùng skills/kit và kiểm đúng browser. DEFAULT repair: visual chips gọn/tách hit area,020 tiếp tục keyboard focus,023 summary disclosure +native SDS Toggle,027 list grouping gọn. Không tự reset canvas/đổi brand hoặc claim filter/query đã hoàn chỉnh.
+
+- Repair thực thi:019 chip32pt/hit44pt cuộn ngang;020 keyboard Xong đóng/chạm Search mở lại;023 summary64pt/SDS native Toggle, Reset chỉ loại ưu đãi;027 grouped rows52pt. [Checkpoint mới](../tracking/search-sort-repair-checkpoint.md) supersede WIP dưới; AWAITING_OWNER_REVIEW. Không claim Reset budget/time hoặc query/sort engine đã làm xong.
+
+- **Owner review sau write: REJECTED_LAYOUT / WIP.** Owner yêu cầu dừng vì bố trí tệ hơn và kiểm bằng browser chat đã kết nối. Không ghi acceptance; canvas giữ hiện trạng để review, không tự rollback. [Checkpoint và browser status thật](../tracking/search-sort-wip-checkpoint.md).
+
+- Nguồn: owner yêu cầu “xong coi sửa màn19,20,23,27”. Scope UI và local prototype demo, không tạo query engine/backend.
+- DEFAULT:019 quick/history controls44pt, cuộn trên keyboard, bỏ claim bánh sản xuất trong ngày;020 chỉ3 fixture bánh/túi vàTiệmBánhA, dùng ảnh/actions có sẵn để context không lạc món. Keyboard019 mở020 gợi ý theo từ khóa demo “bánh” thay vì sang kết quả cơm gà không khớp.
+-023 nhóm budget/slot có disclosure rõ; Reset giữ disabled khi chưa có filter logic, không giả vờ reset được kết quả.027 context từ kết quả tìm kiếm, close44pt, native Check và lựa chọn demo; không công bố walk-distance hay metrics chưa đo. Local history/sort states là mô phỏng phiên, chưa real persistence hoặc multi-result sorting.
+- Ảnh hưởng4 roots, docs/registries/evidence; giữ source components/mains và dữ liệu fixture. Present/full filter/search/sort semantics vẫn phải kiểm riêng, không owner acceptance.
+
+## DEC-022 · 01/11/2026 · Dùng nền map owner xuất trong app
+
+- Nguồn: owner đổi map đầy đủ rồi yêu cầu “cái gì cần sài gì thì tách bỏ vô app”. Cho phép thay nền MapCanvas hiện có bằng IMAGE base từ source499:7922/499:7923, giữ source gốc/marker/address và legacy vectors; không tạo app code hoặc file Figma khác.
+- DEFAULT thực thi: MapCanvas16:3 giữ ID, dùng ảnh map thật khu VKU;8 dependents003/011/016/017/032/039/065/094 giữ UI native và roots. Pin giá là vị trí demo;094 chỉ neo khu vực được chọn, không khẳng định GPS. Không gán địa chỉ470 Trần Đại Nghĩa cho merchant; bỏ tuyến dẫn đường chưa có tọa độ/route trên nền thật.
+- Layer address dài và pin xanh trong source không đưa nguyên khối vào app. Reuse native SaveBite price pins/location marker; giữ địa chỉ/source gốc làm evidence. Nguồn data provider/license/attribution chưa xác minh, chưa coi là asset được duyệt công bố.
+- Ảnh hưởng: MapCanvas và8 screens, asset-strategy/design-system/product/experience, registries và evidence. Native UI/readback/screenshots không thay Present/owner acceptance.
+
+## DEC-021 · 01/11/2026 · Correction UI bộ lọc023–026
+
+- Nguồn: owner nhận xét “check màn23-26 còn sơ sài”, trong scope polish UI đã cho phép theo DEC-012/014.
+- DEFAULT thực thi: reuse native Discovery context sau scrim, sheet HUG trên safe area, header/close44pt, lựa chọn44–56pt và bodyHEIGHT.023 mở được các màn chi tiết024/025/026; giữ route Apply hiện có, không khẳng định đã lọc kết quả.
+- Đồng bộ024 với experience: dùng lựa chọn ngân sách30K/50K/tùy chỉnh/không giới hạn; bỏ các cột cao thấp không có dữ liệu.026 bỏ mã yêu cầuD-007 khỏi UI và thay suy diễn quầy gluten/trứng bằng nhắc xác minh thành phần trước khi đặt theo D-007/008. Không thay policy hoặc chứng nhận suitability; dietary fixture/filter/custom vẫn chưa hoàn tất.
+- Ảnh hưởng:023–026, docs product/experience/design-system, registries và evidence. Không thêm main hoặc số màn. Đây không phải owner acceptance hoặc full prototype PASS.
+
 ## DEC-020 · 01/11/2026 · Offer context và nội dung nhận món có căn cứ
 
 - Nguồn: owner yêu cầu sửa alignment/chữ tràn, tăng chiều sâu nội dung, listing đúng và asset có chủ ý; thực thi DEC-014/016/019, không đổi safety/payment policy.

@@ -1,0 +1,61 @@
+{
+  "scope": "Exact solid roles only; no dynamic-glass/global-a11y certification",
+  "pairs": [
+    {
+      "role": "Body",
+      "foreground": "color/text/primary",
+      "background": "color/surface/canvas",
+      "ratio": 14.14,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "role": "Secondary",
+      "foreground": "color/text/secondary",
+      "background": "color/surface/canvas",
+      "ratio": 5.23,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "role": "Disabled signup",
+      "foreground": "color/text/secondary",
+      "background": "color/surface/subtle",
+      "ratio": 4.68,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "role": "Calendar today",
+      "foreground": "color/brand/900",
+      "background": "color/brand/100",
+      "ratio": 10.0,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "role": "Calendar selection",
+      "foreground": "color/text/inverse",
+      "background": "color/brand/900",
+      "ratio": 11.3,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "role": "Switch on",
+      "foreground": "color/text/inverse",
+      "background": "color/brand/700",
+      "ratio": 5.9,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "role": "Input border",
+      "foreground": "color/border/control",
+      "background": "color/surface/card",
+      "ratio": 3.63,
+      "minimum": 3,
+      "pass": true
+    }
+  ]
+}

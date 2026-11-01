@@ -6,12 +6,34 @@ Nguồn chuẩn theo domain cho Kiến trúc Thông tin (IA), Luồng người d
 
 ### Thông tin điều hướng
 
+DEC-037–039:[final UI/native navigation checkpoint](../tracking/final-color-icons-checkpoint.md). Interrupted fresh-tab migration repaired22 callers,correct selected tab per group,canonical destinations and existing conditional Pantry entry from live190:4390.023–027 backdrop tabs stay noninteractive. Header50pt targets match fresh heart/bell/filter geometry;original callbacks retained. Scoped Present checks are recorded separately from full6-flow verification.
+
+DEC-035:[native27 fit/device pass](../tracking/native27-device-checkpoint.md).009 keyboard307pt/CTA477;019 keyboard307pt;020 viewport410pt/keyboard307pt. Existing Gửi→010,Tìm→020 and Xong visibility callbacks retained. Shared AppBar back hit area40→44 with native glass; no route change.100 rounded/clipped roots reviewed at393×852.055 spinner changes only loading presentation,not timing or reservation outcome.
+
+DEC-036 fresh instance replacement keeps same callbacks/020 visible-variable binding;new keyboard IDs791:8389/8498/8597. Alphabet glyphs checked enlarged and in Present020,not inferred from key-container bounds. Old keyboard instances removed;all100 current component mappings refreshed after unused-library cleanup.
+
+Imagery/Apple27 review01/11 (DEC-032/033):009/019/020 preserve existing return handlers and020 keyboard-visible flag with genuine native27 keyboards.091/092 share a sourced stock persona portrait. Meal/context photography and218 capsule action instances reconciled; no route or SKU change in this batch. [Fresh100 default-root visual review](../tracking/vn-final-ui-checkpoint.md) delivered for owner review. This is not a full keyboard/input, persistence or business-logic test.
+
+Cluster UI01/11 (DEC-031):[30 revised roots/100 captures](../tracking/cluster-ui-checkpoint.md).013 header login→008;075/076 overflow→089/090;095/096 header preferences→097;033 header search→019. Remove repeated footer controls.028–030 show actual food choices222pt earlier;031 offers ordered by pickup time.078 native077 context behind sheet.071 primary Orders060/secondary Explore015;092 Save→091.099 inline FAQ answers do not open cancellation or date editing.100 registry edges refreshed from visible/variable-bound live reactions; read-back does not establish full flow correctness. Existing owner exclusion of full logic testing remains.
+
+Apple27 final UI01/11 (DEC-029/030):22 floating-nav callers;075 two Popup filters/status+storage+active.085/097 native Switch;079 Inline Calendar/Segments/Glass arrows;016 glass controls;089/095 native rows/longer fixture lists;070 order context behind cancel sheet. Scoped Pantry scroll and Splash→002 preview reset verified. [UI evidence](../tracking/apple27-e2e-checkpoint.md). Full logic deferred by owner; Present render limitation OPEN, no full flow acceptance.
+
+Home/Pantry01/11 (`DEC-027`):005 khám phá→013;008 login thường→015,còn pending offer→034 giữ nguyên.013/015 cùng market;014 reuse cùng core layout và thêm pending strip.018 có area selection demo/header sync,GPS tùy chọn→011.077/079/080 và081/082/085/086/087 được ràUI;087 reason và095 filters cóselected states,40 choice controls sửa ở [checkpoint](../tracking/selected-states-checkpoint.md).075 trước bị từ chối; đã redesign theo hướng owner chọn tại DEC-028.014/015 có greeting nhẹ,014 pending card→062;075 hero minh hoạ/count,hai nhãn hạn riêng,storage selector vàAdd→077 giữ. [Checkpoint mới](../tracking/visual-refinement-checkpoint.md). Không full prototype PASS; Present đôi lúc thiếu static layers sau filter.
+
+Correction ảnh owner01/11 (`DEC-024`):019/020 dùng chung SearchField16:18,019 bỏ scroll/clipping dư để history title không bị cắt.023–026 cùng native Discovery backdrop,027 result backdrop, system bars Apple source áp7 màn. [Evidence/Present limitation](../tracking/apple-consistency-checkpoint.md):navigation/state demo đã bấm nhưng render có lúc thiếu lớp sau transition tới khi reload; không full Present PASS.
+
+Search repair01/11 (`DEC-023`):019 Tìm→020 với query demo “bánh”;020 Xong đóng bàn phím, chạm Search mở lại.023 đổi loại ưu đãi/Reset cục bộ;027 chọn sort/Apply→021. Các thao tác này đã bấm trong IAB đã kết nối; không coi đó là query engine, lưu đủ bộ lọc hay reorder nhiều kết quả. [Checkpoint repair](../tracking/search-sort-repair-checkpoint.md), owner review pending.
+
 Account/Impact01/11: card091→100 giữ; hotspot Back100→09148pt được kiểm Present.100 hiển thị3 đơn mẫu25K/30K/35K và90K **đã trả**, không suy ra savings/trend/CO₂. [UI checkpoint](../tracking/impact-ui-checkpoint.md); không phải dữ liệu người dùng thật.
 
 **Root:** initial load → onboarding (lần đầu) → optional guest/login → Home.  
 **Tabs:** Khám phá, Đơn của tôi, Tủ thực phẩm, Tài khoản.  
 **Deep links:** offer, store, reservation, pickup code, pantry item (local links) và help.  
 **Overlays:** filter, location selector, confirmation, warning, actions, add-to-favorites; không phải tất cả overlays đều là screen được đếm.
+
+Map adoption01/11 (`DEC-022`):003/011/016/017/032/039/065/094 giữ root và các đường bấm, thay nền qua MapCanvas16:3;039/065 không vẽ tuyến chưa xác nhận,094 giữ tâm khu vực thay vì tuyên bố GPS. [Evidence](../tracking/map-adoption-checkpoint.md); Present sau thay nền chưa chạy.
+
+Filter correction01/11 (`DEC-021`):023 có đường mở024/025/026, các Save quay023 và Apply giữ đích021; đây mới là reaction readback, chưa Present. [Checkpoint UI](../tracking/filter-ui-checkpoint.md) giữ roots và sửa hierarchy/bounds; chọn/lưu/reset/custom/tập kết quả/Back-state chưa hoàn tất.024 dùng presets30K/50K/tùy chỉnh/không giới hạn, không biểu đồ thiếu dữ liệu;026 nhắc xác minh thành phần trước khi đặt.
 
 ### Flows mục tiêu khi mở rộng sau pilot
 
@@ -146,7 +168,7 @@ Map UI01/11 (`DEC-017`):016→017 dùng cùng offer context;017 đổi pin cập
 | `SB-072` | Chi tiết đơn hoàn tất | Orders | Core | P0 | Giá thực trả, đã nhận, đánh giá |
 | `SB-073` | Lịch sử đơn trống | Orders | State | P1 | Onboarding và explore CTA |
 | `SB-074` | Giới thiệu Pantry | Pantry | Core | P1 | Giải thích local-first, không tự đồng bộ |
-| `SB-075` | Tủ thực phẩm của tôi | Pantry | Core | P1 | Sort theo expiry, quantity, category |
+| SB-075 | A8 | Smart Pantry · gian bếp nhẹ | LargeTitleBar; PantryOverviewHero88pt/Mầm64pt/count; two Apple27 Popup filters in one row; seven canonical icon rows112pt, semantic date badges and neutral Dùng/Bỏ actions; floating native BottomNav. No freshness score. DEC-030 supersedes old summary/progress. |
 | `SB-076` | Tủ trống | Pantry | State | P1 | CTA thêm thủ công, ví dụ rõ |
 | `SB-077` | Thêm thực phẩm thủ công | Pantry | Core | P1 | Tên, số lượng, đơn vị, ngày hạn |
 | `SB-078` | Chọn loại thực phẩm | Pantry | Core | P1 | Danh mục có icon giản lược |
@@ -219,6 +241,6 @@ Dữ liệu chung: bộ 6 ảnh Pexels thật đã xác minh trong `assets/manif
 | `SB-034` | `A6` | Chi tiết offer — Món cụ thể ấn tượng, mặt phẳng mở | Ảnh `food-sourdough-461060` full-bleed `393×300pt` (`y=0`) + `MediaOverlayBar`, tấm nội dung `#FFFCF6` bo góc `28pt`, giá `25.000đ` + `Còn 3 phần`, `MerchantRow` & `PickupInfo` ngăn cách bằng đường kẻ `1pt`, `AllergenNotice (UNKNOWN)`, đáy là Split Sticky Dock (`25.000đ · Trả tại quầy` + `Button/Primary` `Chọn giờ nhận`). |
 | `SB-051` | `A7` | Chọn khung giờ nhận — Tương tác tinh tế, không lặp tiêu đề | `AppBar` (`Chọn giờ nhận`) + `ReservationProgress (Bước 1/2)`, dải `OfferSummary` gọn, `PickupSlot` (`17:00–18:00` Selected `#004337` vs `15:00–16:00` Expired), `MerchantRow` phẳng, điều khoản hủy trước `17:00` + `Button/Primary` (`Tiếp tục`). |
 | `SB-053` | `A7` | Tóm tắt đặt trước — Biên lai giấy đứt nét đáng tin cậy | `AppBar` (`Kiểm tra đặt trước`) + `ReservationProgress (Bước 2/2)`, `UnifiedReceiptCard` (tích hợp `OfferSummary` + đường đứt nét + bảng tính tiền `1 phần × 25.000đ`, `Phí đặt giữ chỗ: 0đ`, `Cần thanh toán tại quầy: 25.000đ` — không card-in-card), `AllergenNotice (UNKNOWN)` + `Button/Primary` (`Đặt giữ chỗ (demo)`). |
-| `SB-056` | `A7` | Đặt trước thành công — Vé nhận món đục lỗ & QR căn giữa | `AppBar` (nút đóng `×`), Celebration Header (`Đã giữ 1 phần cho bạn!`), `PerforatedPickupPass` có khuyết bán nguyệt `16pt` hai bên hông, `DemoQR` căn giữa tuyệt đối trên nền trắng, mã `DEMO-A125` Monospace `22pt Bold`, `Button/Secondary` (`Xem chỉ đường`) + `Button/Primary` (`Về trang Khám phá`). |
+| `SB-056` | `A7` | Đặt trước thành công — Vé nhận món đục lỗ & QR căn giữa | `AppBar` (nút đóng `×`), Celebration Header (`Đã giữ 1 phần cho bạn!`), `PerforatedPickupPass` có khuyết bán nguyệt `16pt` hai bên hông, `DemoQR` căn giữa tuyệt đối trên nền trắng, mã `SB-A125` Monospace `22pt Bold`, `Button/Secondary` (`Xem chỉ đường`) + `Button/Primary` (`Về trang Khám phá`). |
 | `SB-075` | `A8` | Smart Pantry — Thẩm mỹ gian bếp ngăn nắp, khác biệt chợ | `LargeTitleBar` (`Tủ thực phẩm`), `FreshnessSummaryBanner` (`2 cần dùng sớm · 4 còn hạn tốt · 1 quá hạn`), chip lọc ngăn lưu trữ, 4 hàng `PantryItemRow` có `Expiry Progress Bar` (phân biệt `Hạn sử dụng` vs `Nên dùng trước`) và nút `Đã dùng`, `BottomNav`. |
-| `SB-091` | `A9` | Tài khoản — Quản lý hồ sơ & tác động thực chứng | `LargeTitleBar` (`Tài khoản`), `ProfileHeaderCard` (`Minh Anh · Khu học xá ĐH Đà Nẵng`), `ImpactHeroCard` (`3 phần đã nhận thành công · 4 món Pantry dùng kịp hạn` theo `D-016`), bảng cài đặt iOS Inset Grouped List trên nền `#F4EFE6`, `BottomNav`. |
+| `SB-091` | `A9` | Tài khoản — Quản lý hồ sơ & tác động thực chứng | `LargeTitleBar` (`Tài khoản`), `ProfileHeaderCard` (`Minh Anh · Khu học xá ĐH Đà Nẵng`), `ImpactHeroCard` (`3 đơn đã nhận · 4 món Pantry dùng kịp hạn` theo `D-016`), bảng cài đặt iOS Inset Grouped List trên nền `#F4EFE6`, `BottomNav`. |
