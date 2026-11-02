@@ -1,5 +1,7 @@
 # Hệ thiết kế SaveBite (Design System & Component Architecture)
 
+Low-fi DEC-040:[page-scoped wireframe foundation](../tracking/lowfi-core-checkpoint.md). Collection SaveBite · Low-fi grayscale930:3 has six neutral roles;actual variable IDs930:4–9,ink0.10/muted0.35/border0.55/surface0.95/canvas-white1.0. Existing spacing4/8/12/16/20/24/32 and Be Vietnam Pro reused. Five local masters931:3/5/7/11/14 live only on page930:2;buttons/fields/placeholder/nav native editable. Core201 hi-fi component registry stays unchanged;low-fi mappings are separate.
+
 DEC-037–039: [final color/native-control review](../tracking/final-color-icons-checkpoint.md). Shared full Apple27 Symbol Button asset86322f45… supplies push/photo back,photo heart,Home heart/bell/filter and toolbar/close utilities. Original BG/GLASS retained with no solid outer fill/stroke. Home heart/bell/filter use fresh intrinsic50pt source instances and19pt SF Pro via Label properties;other44pt close tools retain documented fit. Tab827:1055 uses source neutral Selection/material,brand900 text + `Tint (Plus D)` only for active,secondary gray for inactive;four slots have gap0 at393pt.201 registry records;owner acceptance pending.
 
 ## Current device/native27 integration ·01/11 ·DEC-035

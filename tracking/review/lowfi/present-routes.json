@@ -1,0 +1,465 @@
+{
+  "date": "2026-11-02",
+  "fileKey": "7suZz9C8oL5zV2NMxlsIVI",
+  "pageId": "930:2",
+  "method": "Real Figma Present browser clicks with awaited destination URL; screenshot grounded coordinates",
+  "scope": "Two main flows, recovery branches, four tabs and canonical frame coverage. Not all 140 actions clicked.",
+  "routes": [
+    {
+      "from": "933:5",
+      "to": "933:28",
+      "label": "Bắt đầu",
+      "pass": true
+    },
+    {
+      "from": "933:28",
+      "to": "934:28",
+      "label": "Khám phá guest",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "934:280",
+      "label": "Bánh mì25K",
+      "pass": true
+    },
+    {
+      "from": "934:280",
+      "to": "934:414",
+      "label": "Chọn số lượng",
+      "pass": true
+    },
+    {
+      "from": "934:414",
+      "to": "934:447",
+      "label": "Chọn giờ nhận",
+      "pass": true
+    },
+    {
+      "from": "934:447",
+      "to": "934:480",
+      "label": "Kiểm tra đơn",
+      "pass": true
+    },
+    {
+      "from": "934:480",
+      "to": "934:548",
+      "expected": "934:548",
+      "label": "Nhánh tồn kho thay đổi",
+      "pass": true
+    },
+    {
+      "from": "934:548",
+      "to": "934:480",
+      "expected": "934:480",
+      "label": "Phục hồi tồn kho về kiểm tra",
+      "pass": true
+    },
+    {
+      "from": "934:480",
+      "to": "934:520",
+      "expected": "934:520",
+      "label": "Xác nhận giữ chỗ",
+      "pass": true
+    },
+    {
+      "from": "934:520",
+      "to": "935:137",
+      "expected": "935:137",
+      "label": "Xem đơn của tôi",
+      "pass": true
+    },
+    {
+      "from": "935:137",
+      "to": "935:182",
+      "expected": "935:182",
+      "label": "Chi tiết đơn đang chờ",
+      "pass": true
+    },
+    {
+      "from": "935:182",
+      "to": "935:338",
+      "expected": "935:338",
+      "label": "Mở xác nhận hủy",
+      "pass": true
+    },
+    {
+      "from": "935:338",
+      "to": "935:182",
+      "expected": "935:182",
+      "label": "Giữ lại đơn",
+      "pass": true
+    },
+    {
+      "from": "935:182",
+      "to": "935:338",
+      "expected": "935:338",
+      "label": "Hủy đơn",
+      "pass": true
+    },
+    {
+      "from": "935:338",
+      "to": "935:372",
+      "expected": "935:372",
+      "label": "Xác nhận hủy",
+      "pass": true,
+      "note": "URL observed after deferred route update; first immediate read was stale"
+    },
+    {
+      "from": "935:372",
+      "to": "935:137",
+      "expected": "935:137",
+      "label": "Về đơn sau nhánh hủy",
+      "pass": true
+    },
+    {
+      "from": "935:137",
+      "to": "935:182",
+      "expected": "935:182",
+      "label": "Mở đơn để nhận",
+      "pass": true
+    },
+    {
+      "from": "935:182",
+      "to": "935:232",
+      "expected": "935:232",
+      "label": "Mã nhận món",
+      "pass": true
+    },
+    {
+      "from": "935:232",
+      "to": "935:263",
+      "label": "Phím→ · chuyển tác nhân cửa hàng",
+      "pass": true,
+      "trigger": "ARROW_RIGHT"
+    },
+    {
+      "from": "935:263",
+      "to": "935:297",
+      "expected": "935:297",
+      "label": "Mô phỏng cửa hàng đã giao",
+      "pass": true
+    },
+    {
+      "from": "935:297",
+      "to": "935:137",
+      "expected": "935:137",
+      "label": "Về đơn sau nhận",
+      "pass": true
+    },
+    {
+      "from": "935:137",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Tab Khám phá",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "934:280",
+      "expected": "934:280",
+      "label": "Mở lại món đúng context",
+      "pass": true
+    },
+    {
+      "from": "934:280",
+      "to": "934:579",
+      "expected": "934:579",
+      "label": "Đăng nhập khi đặt",
+      "pass": true
+    },
+    {
+      "from": "934:579",
+      "to": "934:280",
+      "expected": "934:280",
+      "label": "Login quay đúng món",
+      "pass": true
+    },
+    {
+      "from": "934:280",
+      "to": "934:318",
+      "expected": "934:318",
+      "label": "Mở thông tin dị ứng",
+      "pass": true
+    },
+    {
+      "from": "934:318",
+      "to": "934:280",
+      "expected": "934:280",
+      "label": "Đóng dị ứng",
+      "pass": true
+    },
+    {
+      "from": "934:280",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Back món về Khám phá",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "934:84",
+      "expected": "934:84",
+      "label": "Mở bản đồ",
+      "pass": true
+    },
+    {
+      "from": "934:84",
+      "to": "935:625",
+      "label": "Map navPantry · observed after coordinate misclick",
+      "pass": true,
+      "note": "Return-to-list button is at y566,not tab bar y611"
+    },
+    {
+      "from": "935:625",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "TabKhám phá từ Tủ",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "934:84",
+      "expected": "934:84",
+      "label": "Mở lại bản đồ",
+      "pass": true
+    },
+    {
+      "from": "934:84",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Bản đồ về danh sách đúng nút",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "934:128",
+      "expected": "934:128",
+      "label": "Mở tìm kiếm",
+      "pass": true
+    },
+    {
+      "from": "934:128",
+      "to": "934:161",
+      "expected": "934:161",
+      "label": "Tìm bánh mì",
+      "pass": true
+    },
+    {
+      "from": "934:161",
+      "to": "934:208",
+      "expected": "934:208",
+      "label": "Mở bộ lọc",
+      "pass": true
+    },
+    {
+      "from": "934:208",
+      "to": "934:161",
+      "expected": "934:161",
+      "label": "Áp dụng preset lọc",
+      "pass": true
+    },
+    {
+      "from": "934:161",
+      "to": "934:242",
+      "expected": "934:242",
+      "label": "Mở sắp xếp",
+      "pass": true
+    },
+    {
+      "from": "934:242",
+      "to": "934:161",
+      "expected": "934:161",
+      "label": "Áp dụng preset sắp xếp",
+      "pass": true
+    },
+    {
+      "from": "934:161",
+      "to": "934:128",
+      "expected": "934:128",
+      "label": "Back về tìm kiếm",
+      "pass": true
+    },
+    {
+      "from": "934:128",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Hủy tìm kiếm",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "933:114",
+      "expected": "933:114",
+      "label": "Đổi khu vực",
+      "pass": true
+    },
+    {
+      "from": "933:114",
+      "to": "933:85",
+      "expected": "933:85",
+      "label": "Back giải thích vị trí",
+      "pass": true
+    },
+    {
+      "from": "933:85",
+      "to": "933:114",
+      "expected": "933:114",
+      "label": "Từ chối GPS chọn thủ công",
+      "pass": true
+    },
+    {
+      "from": "933:114",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Khu vực thủ công về Khám phá",
+      "pass": true
+    },
+    {
+      "to": "935:397",
+      "label": "Launch flow02 · Tủ trống",
+      "pass": true,
+      "entry": true
+    },
+    {
+      "from": "935:397",
+      "to": "935:429",
+      "expected": "935:429",
+      "label": "Thêm thực phẩm đầu tiên",
+      "pass": true
+    },
+    {
+      "from": "935:429",
+      "to": "935:467",
+      "expected": "935:467",
+      "label": "Chọn ngày trên nhãn",
+      "pass": true
+    },
+    {
+      "from": "935:467",
+      "to": "935:429",
+      "expected": "935:429",
+      "label": "Xác nhận ngày về form",
+      "pass": true
+    },
+    {
+      "from": "935:429",
+      "to": "935:584",
+      "expected": "935:584",
+      "label": "Review thực phẩm",
+      "pass": true
+    },
+    {
+      "from": "935:584",
+      "to": "935:625",
+      "expected": "935:625",
+      "label": "Lưu món vào tủ",
+      "pass": true
+    },
+    {
+      "from": "935:625",
+      "to": "935:688",
+      "expected": "935:688",
+      "label": "Bộ lọc cần dùng sớm",
+      "pass": true
+    },
+    {
+      "from": "935:688",
+      "to": "935:660",
+      "expected": "935:660",
+      "label": "Xem món sắp hạn",
+      "pass": true
+    },
+    {
+      "from": "935:660",
+      "to": "935:716",
+      "expected": "935:716",
+      "label": "Ghi nhận lượng đã dùng",
+      "pass": true
+    },
+    {
+      "from": "935:716",
+      "to": "935:743",
+      "expected": "935:743",
+      "label": "Xác nhận dùng hết một hộp",
+      "pass": true
+    },
+    {
+      "from": "935:743",
+      "to": "935:778",
+      "expected": "935:778",
+      "label": "Tab Tài khoản",
+      "pass": true
+    },
+    {
+      "from": "935:778",
+      "to": "935:137",
+      "expected": "935:137",
+      "label": "Tab Đơn của tôi",
+      "pass": true
+    },
+    {
+      "from": "935:137",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Tab Khám phá",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "935:625",
+      "expected": "935:625",
+      "label": "Tab Tủ thực phẩm",
+      "pass": true
+    },
+    {
+      "from": "935:625",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Trở lại Khám phá",
+      "pass": true
+    },
+    {
+      "from": "934:28",
+      "to": "934:380",
+      "expected": "934:380",
+      "label": "Xem Túi bất ngờ",
+      "pass": true
+    },
+    {
+      "from": "934:380",
+      "to": "934:280",
+      "expected": "934:280",
+      "label": "Từ túi xem món cụ thể",
+      "pass": true
+    },
+    {
+      "from": "934:280",
+      "to": "934:343",
+      "expected": "934:343",
+      "label": "Thông tin cửa hàng",
+      "pass": true
+    },
+    {
+      "from": "934:343",
+      "to": "934:280",
+      "expected": "934:280",
+      "label": "Về món từ cửa hàng",
+      "pass": true
+    },
+    {
+      "from": "933:28",
+      "to": "933:57",
+      "expected": "933:57",
+      "label": "Đăng nhập chung từ màn chào",
+      "pass": true
+    },
+    {
+      "from": "933:57",
+      "to": "934:28",
+      "expected": "934:28",
+      "label": "Đăng nhập preset về Khám phá",
+      "pass": true
+    }
+  ]
+}

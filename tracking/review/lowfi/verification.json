@@ -1,0 +1,46 @@
+{
+  "status": "AWAITING_OWNER_REVIEW",
+  "date": "2026-11-02",
+  "fileKey": "7suZz9C8oL5zV2NMxlsIVI",
+  "pageId": "930:2",
+  "passed": {
+    "native_editable_roots": 38,
+    "product_wireframes": 37,
+    "external_actor_simulation": 1,
+    "canonical_requested_sb_references": 36,
+    "groups": 7,
+    "same_page_actions": 140,
+    "prototype_starts": 3,
+    "reachable_roots": 38,
+    "present_route_log_entries": 66,
+    "present_roots_visited": 38,
+    "main_flows": "Buyer reservation/pickup including external merchant simulation; Pantry add/date/use-up result",
+    "branches": "Location denied/manual fallback; login return to offer; stock change; cancellation/keep; search/filter/sort; four tabs; allergen/merchant/surprise bag",
+    "dimensions": "393x852 all roots",
+    "fonts": [
+      "Be Vietnam Pro"
+    ],
+    "bitmap_fills": 0,
+    "local_text_overflows": 0,
+    "screens_png": 38,
+    "overview_png": 7,
+    "pdf_pages": 7,
+    "pdf_source_links": 37,
+    "hi_fi_roots_preserved": 100,
+    "original_empty_low_fidelity_page_preserved": true
+  },
+  "scoped_validation": "Registry prototype_verified=true means its frame was reached in real Present; does not imply every one of 140 actions was clicked. Full graph destinations were structurally validated.",
+  "known_limitations": [
+    "Figma Present capture intermittently omits static layers after transitions; final native exports are visual evidence.",
+    "Forms/date/quantity/filter/sort use preset scenario values; no data persistence or full logic engine.",
+    "Merchant handoff is explicitly outside the customer app and advanced with Arrow Right at QR."
+  ],
+  "not_checked": [
+    "Real device/mobile",
+    "Screen reader and usability study",
+    "Full data/input logic",
+    "Video recording",
+    "Owner acceptance"
+  ],
+  "repo_checks": "See final progress checkpoint; no commit/push performed."
+}

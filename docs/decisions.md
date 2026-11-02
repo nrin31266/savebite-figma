@@ -2,6 +2,12 @@
 
 20 mặc định D-001..D-020 giữ nguyên ở [product.md](product.md). Log này chỉ giữ thay đổi có nguồn duyệt.
 
+## DEC-040 ·02/11/2026 ·Low-fi core flows and reference page
+- Owner implements agreed36-frame plan with editable Figma,7-page grouped PDF and clickable prototype;may add frames only when required to close logic. Requests a new page in SaveBite-V2 for comparing against actual hi-fi sources.
+- Preserve existing empty Low Fidelity page and100 App roots. New page holds native393×852 grayscale wireframes,source-ID hyperlinks,rationale and flow arrows;separate registry prevents counting low-fi toward100 hi-fi.
+- Retrospective schematization of current design,not fabricated research. Existing fixture/price/slot/payment/unknown-allergen/date-label policies preserved. Merchant pickup verification is external to the customer app;show simulated handoff outside the phone.
+- Use existing typography/spacing;page-scoped grayscale roles and minimal reusable wireframe controls. No change to hi-fi global tokens or interactions. No video recording/full data logic/usability study claimed.
+
 ## DEC-039 ·01/11/2026 ·Neutral native glass and distinct active/inactive navigation
 - Owner supplies native kit reference:glass stays transparent/neutral;only active icon/label uses brand forest,inactive uses secondary gray. Supersedes DEC-038 outer sage fill/outline and temporary sage Selection override.
 - Native selected Tab has a separate `Tint (Plus D)` masking overlay;bind it to brand900 in addition to text. Restore Selection paints from source master. Keep four equal non-overlapping slots at393pt (`itemSpacing=0` adaptation from source -8).

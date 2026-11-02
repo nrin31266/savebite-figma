@@ -1,0 +1,5952 @@
+{
+  "pageId": "930:2",
+  "groups": [
+    {
+      "id": 1,
+      "name": "01 · Bắt đầu, đăng nhập & vị trí",
+      "cols": 5,
+      "note": "Cho phép khám phá trước; vị trí thủ công luôn là phương án thay thế.",
+      "ids": [
+        "002",
+        "005",
+        "008",
+        "011",
+        "018"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "02 · Khám phá & tìm món",
+      "cols": 3,
+      "note": "Giá và giờ nhận xuất hiện trước khi mở chi tiết; bộ lọc không xác nhận an toàn dị ứng.",
+      "ids": [
+        "015",
+        "016",
+        "019",
+        "021",
+        "023",
+        "027"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "03 · Món ăn, an toàn & cửa hàng",
+      "cols": 4,
+      "note": "Tách món cụ thể và túi bất ngờ; giữ trạng thái thành phần/dị ứng chưa xác nhận.",
+      "ids": [
+        "034",
+        "036",
+        "038",
+        "044"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "04 · Đặt giữ chỗ & phục hồi",
+      "cols": 3,
+      "note": "Chọn số lượng → giờ nhận → kiểm tra; không thu tiền online, kiểm tồn kho trước kết quả.",
+      "ids": [
+        "050",
+        "051",
+        "053",
+        "056",
+        "058",
+        "059"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "05 · Đơn hàng & nhận tại quầy",
+      "cols": 4,
+      "note": "Khách đưa mã; cửa hàng mới xác nhận giao món. SIM là tác nhân ngoài app khách.",
+      "ids": [
+        "060",
+        "062",
+        "063",
+        "SIM",
+        "072",
+        "070",
+        "071"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "06 · Tủ thực phẩm & ngày hạn",
+      "cols": 5,
+      "note": "Demo một món thêm thủ công; giữ loại ngày trên nhãn, ghi nhận lượng đã dùng.",
+      "ids": [
+        "076",
+        "077",
+        "079",
+        "080",
+        "075",
+        "081",
+        "083",
+        "086",
+        "075-used"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "07 · Tài khoản & điều hướng",
+      "cols": 1,
+      "note": "Tài khoản nối lại các tác vụ chính; chức năng quản trị chi tiết nằm ngoài bộ low-fi này.",
+      "ids": [
+        "091"
+      ]
+    }
+  ],
+  "specs": [
+    {
+      "key": "002",
+      "title": "Phần ngon còn đây",
+      "back": null,
+      "elements": [
+        {
+          "type": "image",
+          "args": [
+            "Minh họa thực phẩm được giữ lại",
+            210
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Phần ngon, chờ bạn ghé lấy."
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Khám phá món gần trường, giữ chỗ trước và thanh toán khi đến nhận."
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Hai việc trong một ứng dụng",
+            "Đặt phần ăn cuối ngày và theo dõi ngày hạn thực phẩm ở nhà."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Bắt đầu",
+          "005"
+        ]
+      ],
+      "why": "Một màn giới thiệu đại diện, tránh lặp cả chuỗi onboarding."
+    },
+    {
+      "key": "005",
+      "title": "Chào bạn đến SaveBite",
+      "back": "002",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Chọn món trước, đăng nhập sau"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Bạn có thể khám phá và xem thông tin món mà chưa cần tài khoản."
+          ]
+        },
+        {
+          "type": "image",
+          "args": [
+            "Minh họa thực phẩm / cửa hàng",
+            200
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Trả tại cửa hàng",
+            "Giữ chỗ không thu tiền online. Kiểm tra món và thanh toán tại quầy."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Khám phá món gần bạn",
+          "015"
+        ],
+        [
+          "Đăng nhập",
+          "008"
+        ],
+        [
+          "Chọn khu vực",
+          "011"
+        ]
+      ],
+      "why": "Guest entry và đăng nhập có cùng điểm bắt đầu."
+    },
+    {
+      "key": "008",
+      "title": "Đăng nhập",
+      "back": "005",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Chào bạn quay lại"
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Email",
+            "minhanh@example.com"
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Mật khẩu",
+            "••••••••"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Đăng nhập",
+          "015"
+        ],
+        [
+          "Khám phá không đăng nhập",
+          "015"
+        ]
+      ],
+      "why": "Đăng nhập chung về Khám phá; đăng nhập khi đặt được tách tại059."
+    },
+    {
+      "key": "011",
+      "title": "Tìm món quanh bạn",
+      "back": "005",
+      "elements": [
+        {
+          "type": "map",
+          "args": [
+            "Minh họa khu vực tìm món",
+            190
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Bạn chủ động chọn khu vực"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Vị trí giúp tìm món gần bạn. SaveBite không công khai vị trí của bạn cho cửa hàng."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Cho phép vị trí · minh họa",
+          "018"
+        ],
+        [
+          "Không cho phép · chọn thủ công",
+          "018"
+        ]
+      ],
+      "why": "Nhánh từ chối GPS vẫn đi tới được danh sách món."
+    },
+    {
+      "key": "018",
+      "title": "Chọn khu vực",
+      "back": "011",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Bạn muốn tìm món ở đâu?"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "✓ Khu học xá ĐH Đà Nẵng",
+            "Phạm vi quanh trường"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "Ký túc xá / Nhà trọ",
+            "Quanh nơi bạn thường ở"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Khu vực mẫu: Đà Nẵng. Bạn có thể đổi lựa chọn khi tìm món."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xác nhận khu vực",
+          "015"
+        ]
+      ],
+      "why": "Một lựa chọn khu vực minh họa; không gọi quyền GPS thật."
+    },
+    {
+      "key": "015",
+      "title": "Khám phá",
+      "back": null,
+      "elements": [
+        {
+          "type": "row",
+          "args": [
+            "Đà Nẵng · Khu học xá",
+            "Đổi khu vực",
+            "018"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Tìm món hoặc cửa hàng",
+            "Bánh mì, cơm chiều, rau củ…",
+            "019"
+          ]
+        },
+        {
+          "type": "tools",
+          "args": [
+            [
+              [
+                "Bản đồ",
+                "016"
+              ],
+              [
+                "Bộ lọc",
+                "023"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Túi bánh bất ngờ",
+            "Tiệm Bánh A · 29.000đ",
+            "18:00–19:00",
+            "044"
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Món cho chiều nay"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · 25.000đ",
+            "17:00–18:00 · Còn 3 phần",
+            "034"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh sừng bò bơ Pháp",
+            "Tiệm Bánh A · 30.000đ",
+            "17:00–18:00 · Còn 2 phần",
+            null
+          ]
+        }
+      ],
+      "actions": [],
+      "tab": "discover",
+      "why": "Danh sách hiển thị giá/giờ nhận; ảnh được thay bằng khung chéo."
+    },
+    {
+      "key": "016",
+      "title": "Món quanh khu học xá",
+      "back": "015",
+      "elements": [
+        {
+          "type": "map",
+          "args": [
+            "Sơ đồ minh họa · không phải dẫn đường",
+            300
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Khoảng cách tham khảo; chọn món để xem điểm nhận và giờ đến."
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · 25.000đ",
+            "Nhận 17:00–18:00",
+            "034"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xem chi tiết món",
+          "034"
+        ],
+        [
+          "Về danh sách",
+          "015"
+        ]
+      ],
+      "tab": "discover",
+      "why": "Gộp pin và peek vào một bố cục đại diện; không dùng bitmap bản đồ chưa rõ quyền."
+    },
+    {
+      "key": "019",
+      "title": "Tìm món",
+      "back": "015",
+      "elements": [
+        {
+          "type": "field",
+          "args": [
+            "Từ khóa",
+            "bánh mì"
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Tìm gần đây"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A",
+            "034"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Túi bánh bất ngờ",
+            "Nhận cuối ngày",
+            "044"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Nhập tên món hoặc cửa hàng để xem giá và giờ nhận phù hợp."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Tìm kiếm",
+          "021"
+        ],
+        [
+          "Hủy",
+          "015"
+        ]
+      ],
+      "why": "Giữ nhãn và CTA thật; giản lược bàn phím hệ thống."
+    },
+    {
+      "key": "021",
+      "title": "Kết quả tìm kiếm",
+      "back": "019",
+      "elements": [
+        {
+          "type": "field",
+          "args": [
+            "Bạn đang tìm",
+            "bánh mì"
+          ]
+        },
+        {
+          "type": "tools",
+          "args": [
+            [
+              [
+                "Lọc",
+                "023"
+              ],
+              [
+                "Sắp xếp",
+                "027"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "2 món phù hợp quanh Khu học xá"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · 25.000đ",
+            "17:00–18:00 · Còn 3 phần",
+            "034"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh sừng bò bơ Pháp",
+            "Tiệm Bánh A · 30.000đ",
+            "17:00–18:00 · Còn 2 phần",
+            null
+          ]
+        }
+      ],
+      "actions": [],
+      "tab": "discover",
+      "why": "Kết quả minh họa gắn rõ từ khóa và điều kiện; không giả lập query engine."
+    },
+    {
+      "key": "023",
+      "title": "Bộ lọc tìm kiếm",
+      "back": "021",
+      "elements": [
+        {
+          "type": "choice",
+          "args": [
+            "✓ Ngân sách tối đa 30.000đ",
+            "Mỗi phần"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "✓ Nhận 17:00–18:00",
+            "Khung giờ mẫu"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "✓ Món cụ thể",
+            "Túi bất ngờ là lựa chọn riêng"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Dị ứng cần được xác minh",
+            "Bộ lọc không xác nhận món an toàn. Kiểm tra thành phần và hỏi cửa hàng trước khi đặt."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Áp dụng bộ lọc",
+          "021"
+        ],
+        [
+          "Đóng",
+          "021"
+        ]
+      ],
+      "close": true,
+      "why": "Gộp bộ lọc vào một sheet đại diện; các giá trị đang chọn là preset demo."
+    },
+    {
+      "key": "027",
+      "title": "Sắp xếp kết quả",
+      "back": "021",
+      "elements": [
+        {
+          "type": "choice",
+          "args": [
+            "✓ Khoảng cách gần nhất",
+            "Lựa chọn đang minh họa"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "Giờ nhận sớm nhất",
+            "Ưu tiên khung nhận gần"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "Giá thấp đến cao",
+            "Theo giá mỗi phần"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "Ít phần còn lại nhất",
+            "Theo tồn kho đã cung cấp"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Áp dụng",
+          "021"
+        ],
+        [
+          "Đóng",
+          "021"
+        ]
+      ],
+      "close": true,
+      "why": "Trình bày bốn tiêu chí rõ ràng; chỉ minh họa một cấu hình chọn."
+    },
+    {
+      "key": "034",
+      "title": "Chi tiết món",
+      "back": "015",
+      "elements": [
+        {
+          "type": "image",
+          "args": [
+            "Ảnh món · minh họa",
+            180
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Bánh mì men tự nhiên"
+          ]
+        },
+        {
+          "type": "price",
+          "args": [
+            "25.000đ",
+            "1 phần · Còn 3 phần"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Tiệm Bánh A",
+            "Điểm nhận A · ĐH Đà Nẵng · 450m",
+            "038"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Nhận hôm nay 17:00–18:00",
+            "Giữ chỗ 0đ · Trả tại quầy",
+            null
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Dị ứng & thành phần: Chưa xác nhận",
+            "Hỏi cửa hàng trước khi nhận",
+            "036"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Thành phần, ngày sản xuất và bảo quản chưa được cửa hàng cung cấp."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Chọn số lượng",
+          "050"
+        ],
+        [
+          "Đăng nhập trước khi đặt",
+          "059"
+        ]
+      ],
+      "why": "Hai CTA minh họa hai trạng thái phiên để kiểm return-to-offer; không xác nhận dị ứng."
+    },
+    {
+      "key": "036",
+      "title": "Thành phần & dị ứng",
+      "back": "034",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Thông tin chưa được xác nhận"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Bánh mì men tự nhiên · Tiệm Bánh A"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Chưa có danh sách thành phần",
+            "Cửa hàng chưa cung cấp thành phần, chất gây dị ứng hoặc nguy cơ tiếp xúc chéo."
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Nếu bạn có dị ứng nghiêm trọng",
+            "Đừng chọn món khi chưa xác minh được thành phần. Hỏi nhân viên tại quầy trước khi nhận."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Quay lại món",
+          "034"
+        ]
+      ],
+      "close": true,
+      "why": "Nội dung an toàn được giữ nguyên ý khi giản lược thị giác."
+    },
+    {
+      "key": "038",
+      "title": "Cửa hàng",
+      "back": "034",
+      "elements": [
+        {
+          "type": "image",
+          "args": [
+            "Ảnh cửa hàng · minh họa",
+            180
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Tiệm Bánh A"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Điểm nhận A · ĐH Đà Nẵng · Cách 450m. Đây là cửa hàng mẫu của prototype."
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Món tại cửa hàng"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "25.000đ",
+            "17:00–18:00",
+            "034"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Túi bánh bất ngờ",
+            "29.000đ",
+            "18:00–19:00",
+            "044"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Về món đang xem",
+          "034"
+        ]
+      ],
+      "why": "Không thêm reviews hay địa chỉ/merchant thật chưa xác minh."
+    },
+    {
+      "key": "044",
+      "title": "Túi bánh bất ngờ",
+      "back": "015",
+      "elements": [
+        {
+          "type": "image",
+          "args": [
+            "Túi thực phẩm · placeholder",
+            140
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Một túi nhỏ, bớt lãng phí"
+          ]
+        },
+        {
+          "type": "price",
+          "args": [
+            "29.000đ",
+            "Nhận 18:00–19:00 · Còn 2 túi"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Không chọn trước từng món",
+            "Món trong túi tùy phần còn lại cuối ngày. Nội dung có thể thay đổi."
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Dị ứng & thành phần chưa xác nhận",
+            "Không chọn túi nếu có dị ứng nghiêm trọng và chưa xác minh được."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xem món cụ thể của tiệm",
+          "034"
+        ],
+        [
+          "Về Khám phá",
+          "015"
+        ]
+      ],
+      "why": "Không ép fixture túi29K vào chuỗi đặt món25K; ghi rõ phạm vi nhánh minh họa."
+    },
+    {
+      "key": "050",
+      "title": "Chọn số lượng",
+      "back": "034",
+      "elements": [
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · 25.000đ/phần",
+            "Nhận 17:00–18:00",
+            null
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Bạn muốn giữ mấy phần?"
+          ]
+        },
+        {
+          "type": "quantity",
+          "args": [
+            "1 phần"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Còn 3 phần · Tối đa 2 phần/đơn."
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Tạm tính tại quầy",
+            "25.000đ"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Tiếp tục chọn giờ nhận",
+          "051"
+        ],
+        [
+          "Quay lại món",
+          "034"
+        ]
+      ],
+      "close": true,
+      "why": "Số lượng1 là preset; không giả lập toàn bộ giới hạn tồn kho."
+    },
+    {
+      "key": "051",
+      "title": "Chọn giờ nhận",
+      "back": "050",
+      "elements": [
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "1 phần · 25.000đ",
+            "Tiệm Bánh A",
+            null
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Khung giờ nhận hôm nay"
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "✓ 17:00–18:00 · 19/10",
+            "Mở nhận lúc 17:00 · Giữ chỗ 0đ"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "15:00–16:00 · Đã đóng",
+            "Đã qua giờ nhận, không thể chọn."
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Bạn có thể hủy miễn phí trước 17:00. Hãy tới đúng cửa hàng và khung giờ đã chọn."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Tiếp tục kiểm tra đơn",
+          "053"
+        ]
+      ],
+      "why": "Ngày19/10/2026 là mốc fixture của flow, không phải giờ hiện tại."
+    },
+    {
+      "key": "053",
+      "title": "Kiểm tra đặt trước",
+      "back": "051",
+      "elements": [
+        {
+          "type": "receipt",
+          "args": []
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Dị ứng chưa xác nhận",
+            "Cửa hàng chưa cung cấp thành phần. Xác minh trước khi nhận."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xác nhận giữ chỗ",
+          "056"
+        ],
+        [
+          "Xem nhánh tồn kho thay đổi",
+          "058"
+        ]
+      ],
+      "why": "Nhánh phụ thể hiện lỗi trước kết quả; xác nhận không thu tiền online."
+    },
+    {
+      "key": "056",
+      "title": "Đã giữ phần cho bạn",
+      "back": null,
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Đã giữ 1 phần bánh mì"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Chưa thanh toán",
+            "Bạn trả 25.000đ trực tiếp tại Tiệm Bánh A khi đến nhận."
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Giờ nhận",
+            "17:00–18:00"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Mã đơn mẫu",
+            "SB-001"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Mã nhận sẽ được cửa hàng đối chiếu; không tự xác nhận đã nhận món."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xem đơn của tôi",
+          "060"
+        ],
+        [
+          "Mở mã nhận món",
+          "063"
+        ]
+      ],
+      "why": "Kết quả giữ chỗ được tách khỏi thanh toán và xác nhận giao món."
+    },
+    {
+      "key": "058",
+      "title": "Số lượng vừa thay đổi",
+      "back": "053",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Hiện chỉ còn 1 phần"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Tồn kho thay đổi trong lúc xác nhận. Chưa tạo giữ chỗ mới ở bước này."
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · 25.000đ",
+            "Còn 1 phần",
+            null
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Kiểm tra lại trước khi giữ",
+            "Tồn kho còn 1 phần. Xác nhận lại thông tin hoặc trở về chọn món khác."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Kiểm tra lại 1 phần",
+          "053"
+        ],
+        [
+          "Quay lại danh sách món",
+          "015"
+        ]
+      ],
+      "why": "Lỗi có đường phục hồi; không hiển thị thành công khi chưa xác nhận."
+    },
+    {
+      "key": "059",
+      "title": "Đăng nhập để giữ chỗ",
+      "back": "034",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Bạn sẽ quay lại đúng món"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · 25.000đ",
+            "17:00–18:00",
+            null
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Email",
+            "minhanh@example.com"
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Mật khẩu",
+            "••••••••"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Nhánh đăng nhập tại đây giữ context món; bạn vẫn cần tự xác nhận đặt trước."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Đăng nhập và quay lại món",
+          "034"
+        ],
+        [
+          "Đóng",
+          "034"
+        ]
+      ],
+      "close": true,
+      "why": "Tách login theo intent với login chung008 để không làm mất món đang xem."
+    },
+    {
+      "key": "060",
+      "title": "Đơn của tôi",
+      "back": null,
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Đang chờ nhận"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "Tiệm Bánh A · Trả 25.000đ tại quầy",
+            "Hôm nay 17:00–18:00",
+            "062"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Mở mã nhận món",
+            "Đưa cho nhân viên tại quầy",
+            "063"
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Đã nhận gần đây"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Bánh sừng bò bơ Pháp",
+            "17/10 · Đã trả 30.000đ",
+            null
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Cơm gà & rau củ",
+            "14/10 · Đã trả 35.000đ",
+            null
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xem chi tiết đơn đang chờ",
+          "062"
+        ]
+      ],
+      "tab": "orders",
+      "why": "Đơn chờ và lịch sử có phân cấp; không suy ra tổng tiết kiệm."
+    },
+    {
+      "key": "062",
+      "title": "Chi tiết đơn",
+      "back": "060",
+      "elements": [
+        {
+          "type": "notice",
+          "args": [
+            "Đã giữ chỗ · Chờ đến giờ nhận",
+            "Bánh mì men tự nhiên ×1 · SB-001"
+          ]
+        },
+        {
+          "type": "steps",
+          "args": [
+            [
+              "Đã giữ chỗ",
+              "Đến nhận17:00–18:00",
+              "Cửa hàng xác nhận"
+            ]
+          ]
+        },
+        {
+          "type": "receipt",
+          "args": []
+        },
+        {
+          "type": "p",
+          "args": [
+            "Bạn đưa mã và thanh toán tại quầy. Cửa hàng là bên xác nhận giao món."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Mở mã nhận món",
+          "063"
+        ],
+        [
+          "Hủy đặt trước",
+          "070"
+        ]
+      ],
+      "why": "Trạng thái giao món không do khách tự chuyển."
+    },
+    {
+      "key": "063",
+      "title": "Mã nhận món",
+      "back": "062",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Đưa mã cho nhân viên"
+          ]
+        },
+        {
+          "type": "qr",
+          "args": []
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Mã dự phòng",
+            "SB-A125"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Trả tại quầy",
+            "25.000đ"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Nhân viên đối chiếu/quét mã, kiểm tra món và nhận thanh toán. Bạn không cần bấm “đã nhận”."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Về chi tiết đơn",
+          "062"
+        ]
+      ],
+      "why": "Phím→ của người trình diễn mở SIM-01 ngoài app; không thêm nút xác nhận giao cho khách.",
+      "keyNext": "SIM"
+    },
+    {
+      "key": "SIM",
+      "title": "MÔ PHỎNG · NGOÀI APP",
+      "back": null,
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Cửa hàng xác nhận giao món"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Đây không phải màn app khách",
+            "Frame đóng vai tác nhân cửa hàng để trình diễn ranh giới hệ thống; không mô tả backend đã triển khai."
+          ]
+        },
+        {
+          "type": "steps",
+          "args": [
+            [
+              "Đối chiếu mãSB-A125",
+              "Kiểm tra món / thành phần",
+              "Nhận25.000đ tại quầy",
+              "Xác nhận đã giao1 phần"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Sau xác nhận minh họa, khách thấy đơn đã hoàn tất."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Mô phỏng cửa hàng đã giao",
+          "072"
+        ],
+        [
+          "Quay lại mã nhận",
+          "063"
+        ]
+      ],
+      "actor": true,
+      "why": "Bổ sung để khép luồng mà không biến khách thành người tự xác nhận nhận hàng."
+    },
+    {
+      "key": "072",
+      "title": "Đơn đã hoàn tất",
+      "back": "060",
+      "elements": [
+        {
+          "type": "notice",
+          "args": [
+            "Đã nhận món · 17:24,19/10",
+            "Tiệm Bánh A đã xác nhận giao 1 phần."
+          ]
+        },
+        {
+          "type": "receipt",
+          "args": [
+            "completed"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Chỉ đơn đã nhận mới được đánh giá. Phản hồi giúp người khác chọn món."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Về đơn của tôi",
+          "060"
+        ],
+        [
+          "Mở Tủ thực phẩm",
+          "075"
+        ]
+      ],
+      "why": "Hoàn tất sau tác nhân cửa hàng; không tự cộng thực phẩm đã ăn vào Tủ."
+    },
+    {
+      "key": "070",
+      "title": "Xác nhận hủy đơn",
+      "back": "062",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Bạn muốn hủy đặt trước?"
+          ]
+        },
+        {
+          "type": "offer",
+          "args": [
+            "Bánh mì men tự nhiên",
+            "1 phần · Tiệm Bánh A",
+            "Giờ nhận17:00–18:00",
+            null
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Hủy miễn phí trước17:00",
+            "Không thu tiền online. Nếu cần hỗ trợ khi tới tiệm, hãy liên hệ cửa hàng."
+          ]
+        },
+        {
+          "type": "choice",
+          "args": [
+            "✓ Bận đột xuất",
+            "Lý do hủy không bắt buộc"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xác nhận hủy đặt trước",
+          "071"
+        ],
+        [
+          "Giữ lại đơn",
+          "062"
+        ]
+      ],
+      "close": true,
+      "why": "Hành động hủy có bước xác nhận và đường quay lại."
+    },
+    {
+      "key": "071",
+      "title": "Đã hủy đặt trước",
+      "back": null,
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Đơn đã được hủy"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Phần bánh được trả lại cho người khác. Bạn không bị trừ chi phí giữ chỗ."
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Mã đơn minh họa",
+            "SB-001"
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Khám phá món khác",
+          "015"
+        ],
+        [
+          "Về đơn của tôi",
+          "060"
+        ]
+      ],
+      "why": "Đây là nhánh minh họa riêng; không giả lập persistence của danh sách đơn."
+    },
+    {
+      "key": "076",
+      "title": "Tủ thực phẩm",
+      "back": null,
+      "elements": [
+        {
+          "type": "image",
+          "args": [
+            "Minh họa tủ thực phẩm trống",
+            190
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Tủ đang trống"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Bắt đầu với món bạn có. Nhập ngày trên nhãn và nơi bảo quản để theo dõi."
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Lưu trên thiết bị",
+            "Dữ liệu Tủ dùng cục bộ. Nhắc ngày không thay thế việc kiểm tra tình trạng thực phẩm."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Thêm thực phẩm đầu tiên",
+          "077"
+        ]
+      ],
+      "tab": "pantry",
+      "why": "Điểm bắt đầu riêng của demo thêm thủ công; không mang7 seed items vào kịch bản tủ trống."
+    },
+    {
+      "key": "077",
+      "title": "Thêm thực phẩm",
+      "back": "076",
+      "elements": [
+        {
+          "type": "field",
+          "args": [
+            "Tên thực phẩm",
+            "Sữa tươi mới mua"
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Loại",
+            "Sữa & trứng"
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Nơi bảo quản",
+            "Ngăn mát"
+          ]
+        },
+        {
+          "type": "field",
+          "args": [
+            "Số lượng / đơn vị",
+            "1 hộp"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Hạn sử dụng (Use by)",
+            "21/10/2026 · chọn ngày trên nhãn",
+            "079"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Không biết ngày thì ghi “Chưa rõ”; không tự suy ra từ ảnh hay loại thực phẩm."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Tiếp tục kiểm tra",
+          "080"
+        ]
+      ],
+      "why": "Dùng added-slot fixture hiện hữu; các giá trị điền sẵn không phải dữ liệu người dùng thật."
+    },
+    {
+      "key": "079",
+      "title": "Ngày trên nhãn",
+      "back": "077",
+      "elements": [
+        {
+          "type": "choice",
+          "args": [
+            "✓ Hạn sử dụng (Use by)",
+            "Giữ đúng loại ngày trên nhãn"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Nên dùng trước (Best before) có ý nghĩa khác với Hạn sử dụng."
+          ]
+        },
+        {
+          "type": "calendar",
+          "args": []
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Ngày đang chọn:21/10/2026",
+            "Nếu không đọc được nhãn, dùng trạng thái Chưa rõ thay vì đoán."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xác nhận ngày hạn",
+          "077"
+        ]
+      ],
+      "close": true,
+      "why": "Ngày21 là preset; không xây bộ chọn ngày đầy đủ trong low-fi."
+    },
+    {
+      "key": "080",
+      "title": "Kiểm tra thông tin",
+      "back": "077",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Mọi thứ đã đúng chưa?"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Tên thực phẩm",
+            "Sữa tươi mới mua"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Loại",
+            "Sữa & trứng"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Nơi bảo quản",
+            "Ngăn mát"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Số lượng",
+            "1 hộp"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Loại ngày",
+            "Hạn sử dụng"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Ngày trên nhãn",
+            "21/10/2026"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Phân biệt hai loại ngày",
+            "Hạn sử dụng và Nên dùng trước không giống nhau; kiểm tra nhãn và bảo quản thực tế."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Lưu vào Tủ thực phẩm",
+          "075"
+        ],
+        [
+          "Sửa lại thông tin",
+          "077"
+        ]
+      ],
+      "why": "Có bước review trước lưu; không tuyên bố thực phẩm an toàn chỉ vì chưa tới hạn."
+    },
+    {
+      "key": "075",
+      "title": "Tủ thực phẩm",
+      "back": null,
+      "elements": [
+        {
+          "type": "notice",
+          "args": [
+            "Vừa thêm vào tủ",
+            "Sữa tươi mới mua · 1 hộp"
+          ]
+        },
+        {
+          "type": "tools",
+          "args": [
+            [
+              [
+                "Thêm món",
+                "077"
+              ],
+              [
+                "Cần dùng sớm",
+                "083"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Thực phẩm của bạn"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Sữa tươi mới mua",
+            "1 hộp · Ngăn mát · Hạn sử dụng21/10/2026",
+            "081"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Ngày trên nhãn do bạn nhập. Kiểm tra tình trạng và cách bảo quản trước khi dùng."
+          ]
+        }
+      ],
+      "actions": [],
+      "tab": "pantry",
+      "why": "Một fixture thêm thủ công xuyên suốt; không thay tổng7 seed items của hi-fi."
+    },
+    {
+      "key": "081",
+      "title": "Chi tiết thực phẩm",
+      "back": "075",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Sữa tươi mới mua"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "1 hộp · Ngăn mát · Sữa & trứng"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Hạn sử dụng (Use by)",
+            "21/10/2026 · Còn2 ngày tại mốc19/10"
+          ]
+        },
+        {
+          "type": "kv",
+          "args": [
+            "Nhắc hạn",
+            "Chưa bật"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Ngày do bạn nhập. Kiểm tra nhãn và hướng dẫn bảo quản; nhắc ngày không thay thế đánh giá tình trạng thực tế."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Ghi nhận lượng đã dùng",
+          "086"
+        ],
+        [
+          "Về Tủ thực phẩm",
+          "075"
+        ]
+      ],
+      "why": "Context lấy từ added-slot; giữ phân biệt loại ngày và không suy diễn an toàn."
+    },
+    {
+      "key": "083",
+      "title": "Cần dùng sớm",
+      "back": "075",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Ưu tiên trong24–48 giờ"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Món đang gần ngày hạn theo thông tin bạn nhập."
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Sữa tươi mới mua",
+            "Hạn sử dụng21/10 · còn2 ngày",
+            "081"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Kiểm tra trước khi dùng",
+            "Xem nhãn, cách bảo quản và tình trạng thực phẩm. Không dùng sau hạn sử dụng."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xem món cần dùng",
+          "081"
+        ],
+        [
+          "Về Tủ thực phẩm",
+          "075"
+        ]
+      ],
+      "why": "Một bộ lọc đại diện, không mở rộng thành toàn bộ logic Pantry."
+    },
+    {
+      "key": "086",
+      "title": "Ghi nhận đã dùng",
+      "back": "081",
+      "elements": [
+        {
+          "type": "h",
+          "args": [
+            "Bạn đã dùng bao nhiêu?"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Sữa tươi mới mua · 1 hộp"
+          ]
+        },
+        {
+          "type": "quantity",
+          "args": [
+            "✓ Hết1 hộp"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Lượng còn lại",
+            "0 hộp sau xác nhận"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Chỉ ghi nhận lượng thực tế đã dùng. Lượng còn lại cập nhật sau khi xác nhận."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Xác nhận đã dùng hết",
+          "075-used"
+        ],
+        [
+          "Chưa ghi nhận",
+          "081"
+        ]
+      ],
+      "why": "Thêm màn kết quả riêng để không quay lại danh sách vẫn còn1 hộp."
+    },
+    {
+      "key": "075-used",
+      "title": "Tủ thực phẩm",
+      "back": null,
+      "elements": [
+        {
+          "type": "notice",
+          "args": [
+            "Đã dùng hết Sữa tươi mới mua",
+            "Lượng còn lại:0 hộp"
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Món vừa dùng đã rời danh sách"
+          ]
+        },
+        {
+          "type": "image",
+          "args": [
+            "Minh họa tủ trống sau khi dùng",
+            170
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Ghi lại món mới khi bạn muốn tiếp tục theo dõi ngày hạn."
+          ]
+        }
+      ],
+      "actions": [
+        [
+          "Thêm món khác",
+          "077"
+        ]
+      ],
+      "tab": "pantry",
+      "state": true,
+      "why": "State bổ sung cần thiết để chứng minh kết quả ghi nhận; không tính vào100 hi-fi."
+    },
+    {
+      "key": "091",
+      "title": "Tài khoản",
+      "back": null,
+      "elements": [
+        {
+          "type": "image",
+          "args": [
+            "Ảnh đại diện · placeholder",
+            100
+          ]
+        },
+        {
+          "type": "h",
+          "args": [
+            "Minh Anh"
+          ]
+        },
+        {
+          "type": "p",
+          "args": [
+            "Nhân vật mẫu của prototype"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Khám phá món gần bạn",
+            "Giữ chỗ trước, trả tại quầy",
+            "015"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Đơn của tôi",
+            "Mở đơn chờ và mã nhận",
+            "060"
+          ]
+        },
+        {
+          "type": "row",
+          "args": [
+            "Tủ thực phẩm",
+            "Theo dõi món đã thêm",
+            "075"
+          ]
+        },
+        {
+          "type": "notice",
+          "args": [
+            "Dữ liệu Tủ lưu trên thiết bị",
+            "Thông tin ngày hạn do bạn nhập; không đồng bộ tài khoản trong phạm vi hiện tại."
+          ]
+        }
+      ],
+      "actions": [],
+      "tab": "account",
+      "why": "Một màn điều hướng đại diện, không nhân bản toàn bộ settings."
+    }
+  ],
+  "sourceRoots": {
+    "100": {
+      "id": "85:1445",
+      "sb": "SB-100",
+      "name": "SB-100 · Personal Impact · Verified Rescue"
+    },
+    "002": {
+      "id": "17:2",
+      "sb": "SB-002",
+      "name": "SB-002 · Onboarding 1 · Rescue Value"
+    },
+    "015": {
+      "id": "17:49",
+      "sb": "SB-015",
+      "name": "SB-015 · Discovery · Rescue Market"
+    },
+    "016": {
+      "id": "17:187",
+      "sb": "SB-016",
+      "name": "SB-016 · Map · Campus Explorer"
+    },
+    "019": {
+      "id": "17:282",
+      "sb": "SB-019",
+      "name": "SB-019 · Search · Active Input & iOS Keyboard"
+    },
+    "001": {
+      "id": "76:652",
+      "sb": "SB-001",
+      "name": "SB-001 · Splash · Warm Start"
+    },
+    "008": {
+      "id": "76:678",
+      "sb": "SB-008",
+      "name": "SB-008 · Đăng nhập · Email & Password"
+    },
+    "005": {
+      "id": "78:695",
+      "sb": "SB-005",
+      "name": "SB-005 · Welcome Gate · Guest or Login"
+    },
+    "013": {
+      "id": "78:729",
+      "sb": "SB-013",
+      "name": "SB-013 · Home Guest · Rescue Market"
+    },
+    "022": {
+      "id": "80:809",
+      "sb": "SB-022",
+      "name": "SB-022 · Search No Results · Empty State"
+    },
+    "003": {
+      "id": "100:1692",
+      "sb": "SB-003",
+      "name": "SB-003 · Onboarding 2 · Tìm món quanh trường"
+    },
+    "004": {
+      "id": "100:1728",
+      "sb": "SB-004",
+      "name": "SB-004 · Onboarding 3 · Tủ thực phẩm thông minh"
+    },
+    "006": {
+      "id": "100:1766",
+      "sb": "SB-006",
+      "name": "SB-006 · Đăng ký · Email & Password"
+    },
+    "007": {
+      "id": "100:1810",
+      "sb": "SB-007",
+      "name": "SB-007 · Chờ xác minh email"
+    },
+    "009": {
+      "id": "100:1855",
+      "sb": "SB-009",
+      "name": "SB-009 · Quên mật khẩu · Email & Keyboard"
+    },
+    "010": {
+      "id": "100:1955",
+      "sb": "SB-010",
+      "name": "SB-010 · Đã gửi liên kết khôi phục"
+    },
+    "011": {
+      "id": "100:1986",
+      "sb": "SB-011",
+      "name": "SB-011 · Quyền vị trí · Bán kính quanh trường"
+    },
+    "012": {
+      "id": "100:2013",
+      "sb": "SB-012",
+      "name": "SB-012 · Quyền thông báo · Nhắc khung giờ"
+    },
+    "014": {
+      "id": "101:1924",
+      "sb": "SB-014",
+      "name": "SB-014 · Home đã đăng nhập · Feed & Active Order"
+    },
+    "017": {
+      "id": "101:2028",
+      "sb": "SB-017",
+      "name": "SB-017 · Xem nhanh pin trên map · Peek Sheet"
+    },
+    "018": {
+      "id": "101:2075",
+      "sb": "SB-018",
+      "name": "SB-018 · Chọn khu vực & campus"
+    },
+    "020": {
+      "id": "101:2117",
+      "sb": "SB-020",
+      "name": "SB-020 · Gợi ý tìm kiếm · Suggestions"
+    },
+    "021": {
+      "id": "101:2161",
+      "sb": "SB-021",
+      "name": "SB-021 · Kết quả tìm kiếm · Active Filter Strip"
+    },
+    "023": {
+      "id": "103:2173",
+      "sb": "SB-023",
+      "name": "SB-023 · Bộ lọc tổng hợp · Multi-criteria Sheet"
+    },
+    "024": {
+      "id": "103:2215",
+      "sb": "SB-024",
+      "name": "SB-024 · Lọc ngân sách · Price Histogram"
+    },
+    "025": {
+      "id": "103:2256",
+      "sb": "SB-025",
+      "name": "SB-025 · Lọc thời gian nhận · Pickup Slots"
+    },
+    "026": {
+      "id": "103:2297",
+      "sb": "SB-026",
+      "name": "SB-026 · Nhu cầu ăn uống & An toàn · Dietary"
+    },
+    "027": {
+      "id": "103:2334",
+      "sb": "SB-027",
+      "name": "SB-027 · Sắp xếp kết quả · Sort Options"
+    },
+    "028": {
+      "id": "104:2253",
+      "sb": "SB-028",
+      "name": "SB-028 · Danh mục Bữa ăn · Cooked Meals"
+    },
+    "029": {
+      "id": "104:2329",
+      "sb": "SB-029",
+      "name": "SB-029 · Danh mục Bánh mì & Pastry · Bakery"
+    },
+    "030": {
+      "id": "104:2404",
+      "sb": "SB-030",
+      "name": "SB-030 · Danh mục Thực phẩm & Rau củ · Fresh Produce"
+    },
+    "031": {
+      "id": "104:2475",
+      "sb": "SB-031",
+      "name": "SB-031 · Đang nhận sớm · Urgent Rescues"
+    },
+    "032": {
+      "id": "104:2551",
+      "sb": "SB-032",
+      "name": "SB-032 · Quanh trường · Walking Distance"
+    },
+    "033": {
+      "id": "104:2627",
+      "sb": "SB-033",
+      "name": "SB-033 · Yêu thích & Đã lưu · Saved Items"
+    },
+    "034": {
+      "id": "18:2",
+      "sb": "SB-034",
+      "name": "SB-034 · Offer Detail · Exact Item"
+    },
+    "046": {
+      "id": "81:844",
+      "sb": "SB-046",
+      "name": "SB-046 · Offer Detail · Sold Out"
+    },
+    "047": {
+      "id": "81:930",
+      "sb": "SB-047",
+      "name": "SB-047 · Offer Detail · Pickup Window Closed"
+    },
+    "049": {
+      "id": "81:1012",
+      "sb": "SB-049",
+      "name": "SB-049 · Offer Detail · Allergen Conflict"
+    },
+    "059": {
+      "id": "82:926",
+      "sb": "SB-059",
+      "name": "SB-059 · Login Required Sheet · Return To Offer"
+    },
+    "035": {
+      "id": "106:2630",
+      "sb": "SB-035",
+      "name": "SB-035 · Thư viện ảnh món ăn · Photo Gallery"
+    },
+    "036": {
+      "id": "106:2655",
+      "sb": "SB-036",
+      "name": "SB-036 · Thành phần & Cảnh báo Dị ứng · Allergen Sheet"
+    },
+    "037": {
+      "id": "106:2690",
+      "sb": "SB-037",
+      "name": "SB-037 · Chất lượng, hạn & Hướng dẫn · Shelf Life"
+    },
+    "038": {
+      "id": "106:2725",
+      "sb": "SB-038",
+      "name": "SB-038 · Chi tiết cửa hàng · Merchant Profile"
+    },
+    "039": {
+      "id": "106:2775",
+      "sb": "SB-039",
+      "name": "SB-039 · Đường tới cửa hàng · Walking Map"
+    },
+    "040": {
+      "id": "106:2817",
+      "sb": "SB-040",
+      "name": "SB-040 · Quy định nhận món tại quầy · Handover Rules"
+    },
+    "041": {
+      "id": "109:2765",
+      "sb": "SB-041",
+      "name": "SB-041 · Offer khác của tiệm · More Offers"
+    },
+    "042": {
+      "id": "109:2816",
+      "sb": "SB-042",
+      "name": "SB-042 · Đánh giá cửa hàng · Merchant Reviews"
+    },
+    "043": {
+      "id": "109:2853",
+      "sb": "SB-043",
+      "name": "SB-043 · Chi tiết đánh giá & Báo cáo"
+    },
+    "044": {
+      "id": "109:2890",
+      "sb": "SB-044",
+      "name": "SB-044 · Túi bất ngờ · Surprise Bag"
+    },
+    "045": {
+      "id": "109:2926",
+      "sb": "SB-045",
+      "name": "SB-045 · Giải thích túi bất ngờ · Explainer Sheet"
+    },
+    "048": {
+      "id": "109:2959",
+      "sb": "SB-048",
+      "name": "SB-048 · Gần đóng cửa · Closing Soon Urgency"
+    },
+    "051": {
+      "id": "19:2",
+      "sb": "SB-051",
+      "name": "SB-051 · Reservation · Pickup Slot"
+    },
+    "053": {
+      "id": "19:69",
+      "sb": "SB-053",
+      "name": "SB-053 · Order Summary · Unified Receipt"
+    },
+    "056": {
+      "id": "19:140",
+      "sb": "SB-056",
+      "name": "SB-056 · Success · Perforated Pickup Pass"
+    },
+    "050": {
+      "id": "83:970",
+      "sb": "SB-050",
+      "name": "SB-050 · Quantity Sheet · Stock Limit"
+    },
+    "054": {
+      "id": "83:1072",
+      "sb": "SB-054",
+      "name": "SB-054 · Confirm Reservation Sheet"
+    },
+    "055": {
+      "id": "83:1162",
+      "sb": "SB-055",
+      "name": "SB-055 · Processing · Idempotency Guard"
+    },
+    "057": {
+      "id": "84:1122",
+      "sb": "SB-057",
+      "name": "SB-057 · Reservation Failed · Network"
+    },
+    "058": {
+      "id": "84:1167",
+      "sb": "SB-058",
+      "name": "SB-058 · Stock Changed · Recovery"
+    },
+    "060": {
+      "id": "84:1217",
+      "sb": "SB-060",
+      "name": "SB-060 · My Orders · Overview"
+    },
+    "062": {
+      "id": "84:1290",
+      "sb": "SB-062",
+      "name": "SB-062 · Order Detail · Awaiting Pickup"
+    },
+    "063": {
+      "id": "85:1266",
+      "sb": "SB-063",
+      "name": "SB-063 · Pickup Code · Wallet Pass"
+    },
+    "067": {
+      "id": "85:1342",
+      "sb": "SB-067",
+      "name": "SB-067 · Pickup Closing Soon · Urgent"
+    },
+    "072": {
+      "id": "85:1385",
+      "sb": "SB-072",
+      "name": "SB-072 · Order Completed · Verified Receipt"
+    },
+    "052": {
+      "id": "90:1408",
+      "sb": "SB-052",
+      "name": "SB-052 · Pickup Checklist · Readback"
+    },
+    "061": {
+      "id": "90:1491",
+      "sb": "SB-061",
+      "name": "SB-061 · Pending Orders · Timeline"
+    },
+    "064": {
+      "id": "91:1487",
+      "sb": "SB-064",
+      "name": "SB-064 · Handover Steps · Backup Code"
+    },
+    "065": {
+      "id": "91:1531",
+      "sb": "SB-065",
+      "name": "SB-065 · Directions · Active Order"
+    },
+    "066": {
+      "id": "91:1652",
+      "sb": "SB-066",
+      "name": "SB-066 · Order Ready · READY state"
+    },
+    "068": {
+      "id": "92:1593",
+      "sb": "SB-068",
+      "name": "SB-068 · Pickup Expired · No-Show Policy"
+    },
+    "069": {
+      "id": "92:1642",
+      "sb": "SB-069",
+      "name": "SB-069 · Incident Report · Pickup Issue"
+    },
+    "070": {
+      "id": "112:3206",
+      "sb": "SB-070",
+      "name": "SB-070 · Xác nhận hủy đơn · Policy & Reason"
+    },
+    "071": {
+      "id": "112:3243",
+      "sb": "SB-071",
+      "name": "SB-071 · Hủy đơn thành công · Empty State"
+    },
+    "073": {
+      "id": "112:3280",
+      "sb": "SB-073",
+      "name": "SB-073 · Lịch sử đơn trống · Tab Root"
+    },
+    "075": {
+      "id": "20:2",
+      "sb": "SB-075",
+      "name": "SB-075 · Smart Pantry · Kitchen Inventory"
+    },
+    "091": {
+      "id": "20:109",
+      "sb": "SB-091",
+      "name": "SB-091 · Profile · Account & Impact Hub"
+    },
+    "092": {
+      "id": "94:1641",
+      "sb": "SB-092",
+      "name": "SB-092 · Edit Profile · Monogram"
+    },
+    "093": {
+      "id": "94:1684",
+      "sb": "SB-093",
+      "name": "SB-093 · Saved Locations · Privacy Note"
+    },
+    "074": {
+      "id": "117:3032",
+      "sb": "SB-074",
+      "name": "SB-074 · Giới thiệu Pantry · Onboarding"
+    },
+    "076": {
+      "id": "117:3058",
+      "sb": "SB-076",
+      "name": "SB-076 · Tủ trống · Quick Add"
+    },
+    "077": {
+      "id": "117:3124",
+      "sb": "SB-077",
+      "name": "SB-077 · Thêm thủ công · Form"
+    },
+    "078": {
+      "id": "117:3166",
+      "sb": "SB-078",
+      "name": "SB-078 · Chọn loại thực phẩm · Sheet"
+    },
+    "079": {
+      "id": "117:3213",
+      "sb": "SB-079",
+      "name": "SB-079 · Chọn ngày hạn · Use-By vs Best-Before"
+    },
+    "080": {
+      "id": "117:3254",
+      "sb": "SB-080",
+      "name": "SB-080 · Xác nhận thêm · Review"
+    },
+    "081": {
+      "id": "117:3286",
+      "sb": "SB-081",
+      "name": "SB-081 · Chi tiết thực phẩm · Ngày hạn & bảo quản"
+    },
+    "082": {
+      "id": "117:3320",
+      "sb": "SB-082",
+      "name": "SB-082 · Sửa thực phẩm · Edit Item"
+    },
+    "085": {
+      "id": "117:3350",
+      "sb": "SB-085",
+      "name": "SB-085 · Thiết lập nhắc hạn · Reminder Settings"
+    },
+    "083": {
+      "id": "133:3283",
+      "sb": "SB-083",
+      "name": "SB-083 · Cần dùng sớm"
+    },
+    "084": {
+      "id": "133:3314",
+      "sb": "SB-084",
+      "name": "SB-084 · Đã quá hạn dùng"
+    },
+    "086": {
+      "id": "133:3345",
+      "sb": "SB-086",
+      "name": "SB-086 · Cập nhật lượng dùng"
+    },
+    "087": {
+      "id": "133:3376",
+      "sb": "SB-087",
+      "name": "SB-087 · Đánh dấu đã bỏ"
+    },
+    "088": {
+      "id": "133:3407",
+      "sb": "SB-088",
+      "name": "SB-088 · Gợi ý từ tủ của bạn"
+    },
+    "089": {
+      "id": "133:3435",
+      "sb": "SB-089",
+      "name": "SB-089 · Lịch sử tủ thực phẩm"
+    },
+    "090": {
+      "id": "133:3463",
+      "sb": "SB-090",
+      "name": "SB-090 · Dữ liệu trên máy"
+    },
+    "094": {
+      "id": "133:3491",
+      "sb": "SB-094",
+      "name": "SB-094 · Lưu khu vực"
+    },
+    "095": {
+      "id": "133:3522",
+      "sb": "SB-095",
+      "name": "SB-095 · Thông báo"
+    },
+    "096": {
+      "id": "133:3550",
+      "sb": "SB-096",
+      "name": "SB-096 · Thông báo"
+    },
+    "097": {
+      "id": "133:3581",
+      "sb": "SB-097",
+      "name": "SB-097 · Tùy chọn thông báo"
+    },
+    "098": {
+      "id": "133:3609",
+      "sb": "SB-098",
+      "name": "SB-098 · Quyền riêng tư"
+    },
+    "099": {
+      "id": "133:3637",
+      "sb": "SB-099",
+      "name": "SB-099 · Trợ giúp"
+    }
+  },
+  "built": [
+    {
+      "section": {
+        "id": "933:2",
+        "name": "01 · Bắt đầu, đăng nhập & vị trí",
+        "x": 120,
+        "y": 800,
+        "w": 2565,
+        "h": 1185
+      },
+      "frames": [
+        {
+          "id": "933:5",
+          "key": "002",
+          "name": "LF-SB-002 · Phần ngon còn đây",
+          "why": "Một màn giới thiệu đại diện, tránh lặp cả chuỗi onboarding."
+        },
+        {
+          "id": "933:28",
+          "key": "005",
+          "name": "LF-SB-005 · Chào bạn đến SaveBite",
+          "why": "Guest entry và đăng nhập có cùng điểm bắt đầu."
+        },
+        {
+          "id": "933:57",
+          "key": "008",
+          "name": "LF-SB-008 · Đăng nhập",
+          "why": "Đăng nhập chung về Khám phá; đăng nhập khi đặt được tách tại059."
+        },
+        {
+          "id": "933:85",
+          "key": "011",
+          "name": "LF-SB-011 · Tìm món quanh bạn",
+          "why": "Nhánh từ chối GPS vẫn đi tới được danh sách món."
+        },
+        {
+          "id": "933:114",
+          "key": "018",
+          "name": "LF-SB-018 · Chọn khu vực",
+          "why": "Một lựa chọn khu vực minh họa; không gọi quyền GPS thật."
+        }
+      ],
+      "links": [
+        {
+          "id": "933:22",
+          "to": "005",
+          "label": "Bắt đầu"
+        },
+        {
+          "id": "933:33",
+          "to": "002",
+          "label": "‹"
+        },
+        {
+          "id": "933:47",
+          "to": "015",
+          "label": "Khám phá món gần bạn"
+        },
+        {
+          "id": "933:49",
+          "to": "008",
+          "label": "Đăng nhập"
+        },
+        {
+          "id": "933:51",
+          "to": "011",
+          "label": "Chọn khu vực"
+        },
+        {
+          "id": "933:62",
+          "to": "005",
+          "label": "‹"
+        },
+        {
+          "id": "933:77",
+          "to": "015",
+          "label": "Đăng nhập"
+        },
+        {
+          "id": "933:79",
+          "to": "015",
+          "label": "Khám phá không đăng nhập"
+        },
+        {
+          "id": "933:90",
+          "to": "005",
+          "label": "‹"
+        },
+        {
+          "id": "933:106",
+          "to": "018",
+          "label": "Cho phép vị trí · minh họa"
+        },
+        {
+          "id": "933:108",
+          "to": "018",
+          "label": "Không cho phép · chọn thủ công"
+        },
+        {
+          "id": "933:119",
+          "to": "011",
+          "label": "‹"
+        },
+        {
+          "id": "933:135",
+          "to": "015",
+          "label": "Xác nhận khu vực"
+        }
+      ],
+      "createdNodeIds": [
+        "933:2",
+        "933:3",
+        "933:4",
+        "933:5",
+        "933:6",
+        "933:7",
+        "933:8",
+        "933:9",
+        "933:10",
+        "933:11",
+        "933:12",
+        "933:13",
+        "933:16",
+        "933:17",
+        "933:18",
+        "933:19",
+        "933:20",
+        "933:21",
+        "933:22",
+        "933:24",
+        "933:25",
+        "933:26",
+        "933:27",
+        "933:28",
+        "933:29",
+        "933:30",
+        "933:31",
+        "933:32",
+        "933:33",
+        "933:35",
+        "933:36",
+        "933:37",
+        "933:38",
+        "933:39",
+        "933:40",
+        "933:43",
+        "933:44",
+        "933:45",
+        "933:46",
+        "933:47",
+        "933:49",
+        "933:51",
+        "933:53",
+        "933:54",
+        "933:55",
+        "933:56",
+        "933:57",
+        "933:58",
+        "933:59",
+        "933:60",
+        "933:61",
+        "933:62",
+        "933:64",
+        "933:65",
+        "933:66",
+        "933:67",
+        "933:68",
+        "933:72",
+        "933:76",
+        "933:77",
+        "933:79",
+        "933:81",
+        "933:82",
+        "933:83",
+        "933:84",
+        "933:85",
+        "933:86",
+        "933:87",
+        "933:88",
+        "933:89",
+        "933:90",
+        "933:92",
+        "933:93",
+        "933:94",
+        "933:95",
+        "933:96",
+        "933:97",
+        "933:98",
+        "933:99",
+        "933:100",
+        "933:101",
+        "933:102",
+        "933:103",
+        "933:104",
+        "933:105",
+        "933:106",
+        "933:108",
+        "933:110",
+        "933:111",
+        "933:112",
+        "933:113",
+        "933:114",
+        "933:115",
+        "933:116",
+        "933:117",
+        "933:118",
+        "933:119",
+        "933:121",
+        "933:122",
+        "933:123",
+        "933:124",
+        "933:125",
+        "933:126",
+        "933:127",
+        "933:128",
+        "933:129",
+        "933:130",
+        "933:131",
+        "933:132",
+        "933:133",
+        "933:134",
+        "933:135",
+        "933:137",
+        "933:138",
+        "933:139",
+        "933:140"
+      ]
+    },
+    {
+      "section": {
+        "id": "934:25",
+        "name": "02 · Khám phá & tìm món",
+        "x": 120,
+        "y": 2185,
+        "w": 1459,
+        "h": 2235
+      },
+      "frames": [
+        {
+          "id": "934:28",
+          "key": "015",
+          "name": "LF-SB-015 · Khám phá",
+          "why": "Danh sách hiển thị giá/giờ nhận; ảnh được thay bằng khung chéo.",
+          "tab": "discover"
+        },
+        {
+          "id": "934:84",
+          "key": "016",
+          "name": "LF-SB-016 · Món quanh khu học xá",
+          "why": "Gộp pin và peek vào một bố cục đại diện; không dùng bitmap bản đồ chưa rõ quyền.",
+          "tab": "discover"
+        },
+        {
+          "id": "934:128",
+          "key": "019",
+          "name": "LF-SB-019 · Tìm món",
+          "why": "Giữ nhãn và CTA thật; giản lược bàn phím hệ thống."
+        },
+        {
+          "id": "934:161",
+          "key": "021",
+          "name": "LF-SB-021 · Kết quả tìm kiếm",
+          "why": "Kết quả minh họa gắn rõ từ khóa và điều kiện; không giả lập query engine.",
+          "tab": "discover"
+        },
+        {
+          "id": "934:208",
+          "key": "023",
+          "name": "LF-SB-023 · Bộ lọc tìm kiếm",
+          "why": "Gộp bộ lọc vào một sheet đại diện; các giá trị đang chọn là preset demo."
+        },
+        {
+          "id": "934:242",
+          "key": "027",
+          "name": "LF-SB-027 · Sắp xếp kết quả",
+          "why": "Trình bày bốn tiêu chí rõ ràng; chỉ minh họa một cấu hình chọn."
+        }
+      ],
+      "links": [
+        {
+          "id": "934:36",
+          "to": "018",
+          "label": "Đà Nẵng · Khu học xá"
+        },
+        {
+          "id": "934:40",
+          "to": "019",
+          "label": "Tìm món hoặc cửa hàng"
+        },
+        {
+          "id": "934:45",
+          "to": "016",
+          "label": "Bản đồ"
+        },
+        {
+          "id": "934:47",
+          "to": "023",
+          "label": "Bộ lọc"
+        },
+        {
+          "id": "934:49",
+          "to": "044",
+          "label": "Túi bánh bất ngờ"
+        },
+        {
+          "id": "934:57",
+          "to": "034",
+          "label": "Bánh mì men tự nhiên"
+        },
+        {
+          "id": "I934:71;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I934:71;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I934:71;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I934:71;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        },
+        {
+          "id": "934:89",
+          "to": "015",
+          "label": "‹"
+        },
+        {
+          "id": "934:103",
+          "to": "034",
+          "label": "Bánh mì men tự nhiên"
+        },
+        {
+          "id": "934:111",
+          "to": "034",
+          "label": "Xem chi tiết món"
+        },
+        {
+          "id": "934:113",
+          "to": "015",
+          "label": "Về danh sách"
+        },
+        {
+          "id": "I934:115;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I934:115;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I934:115;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I934:115;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        },
+        {
+          "id": "934:133",
+          "to": "015",
+          "label": "‹"
+        },
+        {
+          "id": "934:143",
+          "to": "034",
+          "label": "Bánh mì men tự nhiên"
+        },
+        {
+          "id": "934:147",
+          "to": "044",
+          "label": "Túi bánh bất ngờ"
+        },
+        {
+          "id": "934:153",
+          "to": "021",
+          "label": "Tìm kiếm"
+        },
+        {
+          "id": "934:155",
+          "to": "015",
+          "label": "Hủy"
+        },
+        {
+          "id": "934:166",
+          "to": "019",
+          "label": "‹"
+        },
+        {
+          "id": "934:176",
+          "to": "023",
+          "label": "Lọc"
+        },
+        {
+          "id": "934:178",
+          "to": "027",
+          "label": "Sắp xếp"
+        },
+        {
+          "id": "934:181",
+          "to": "034",
+          "label": "Bánh mì men tự nhiên"
+        },
+        {
+          "id": "I934:195;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I934:195;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I934:195;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I934:195;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        },
+        {
+          "id": "934:213",
+          "to": "021",
+          "label": "×"
+        },
+        {
+          "id": "934:234",
+          "to": "021",
+          "label": "Áp dụng bộ lọc"
+        },
+        {
+          "id": "934:236",
+          "to": "021",
+          "label": "Đóng"
+        },
+        {
+          "id": "934:247",
+          "to": "021",
+          "label": "×"
+        },
+        {
+          "id": "934:269",
+          "to": "021",
+          "label": "Áp dụng"
+        },
+        {
+          "id": "934:271",
+          "to": "021",
+          "label": "Đóng"
+        }
+      ],
+      "createdNodeIds": [
+        "934:25",
+        "934:26",
+        "934:27",
+        "934:28",
+        "934:29",
+        "934:30",
+        "934:31",
+        "934:32",
+        "934:33",
+        "934:34",
+        "934:35",
+        "934:36",
+        "934:37",
+        "934:38",
+        "934:39",
+        "934:40",
+        "934:41",
+        "934:42",
+        "934:43",
+        "934:44",
+        "934:45",
+        "934:47",
+        "934:49",
+        "934:50",
+        "934:53",
+        "934:54",
+        "934:55",
+        "934:56",
+        "934:57",
+        "934:58",
+        "934:61",
+        "934:62",
+        "934:63",
+        "934:64",
+        "934:65",
+        "934:68",
+        "934:69",
+        "934:70",
+        "934:71",
+        "934:80",
+        "934:81",
+        "934:82",
+        "934:83",
+        "934:84",
+        "934:85",
+        "934:86",
+        "934:87",
+        "934:88",
+        "934:89",
+        "934:91",
+        "934:92",
+        "934:93",
+        "934:94",
+        "934:95",
+        "934:96",
+        "934:97",
+        "934:98",
+        "934:99",
+        "934:100",
+        "934:101",
+        "934:102",
+        "934:103",
+        "934:104",
+        "934:107",
+        "934:108",
+        "934:109",
+        "934:110",
+        "934:111",
+        "934:113",
+        "934:115",
+        "934:124",
+        "934:125",
+        "934:126",
+        "934:127",
+        "934:128",
+        "934:129",
+        "934:130",
+        "934:131",
+        "934:132",
+        "934:133",
+        "934:135",
+        "934:136",
+        "934:137",
+        "934:138",
+        "934:142",
+        "934:143",
+        "934:144",
+        "934:145",
+        "934:146",
+        "934:147",
+        "934:148",
+        "934:149",
+        "934:150",
+        "934:151",
+        "934:152",
+        "934:153",
+        "934:155",
+        "934:157",
+        "934:158",
+        "934:159",
+        "934:160",
+        "934:161",
+        "934:162",
+        "934:163",
+        "934:164",
+        "934:165",
+        "934:166",
+        "934:168",
+        "934:169",
+        "934:170",
+        "934:171",
+        "934:175",
+        "934:176",
+        "934:178",
+        "934:180",
+        "934:181",
+        "934:182",
+        "934:185",
+        "934:186",
+        "934:187",
+        "934:188",
+        "934:189",
+        "934:192",
+        "934:193",
+        "934:194",
+        "934:195",
+        "934:204",
+        "934:205",
+        "934:206",
+        "934:207",
+        "934:208",
+        "934:209",
+        "934:210",
+        "934:211",
+        "934:212",
+        "934:213",
+        "934:215",
+        "934:216",
+        "934:217",
+        "934:218",
+        "934:219",
+        "934:220",
+        "934:221",
+        "934:222",
+        "934:223",
+        "934:224",
+        "934:225",
+        "934:226",
+        "934:227",
+        "934:228",
+        "934:229",
+        "934:230",
+        "934:231",
+        "934:232",
+        "934:233",
+        "934:234",
+        "934:236",
+        "934:238",
+        "934:239",
+        "934:240",
+        "934:241",
+        "934:242",
+        "934:243",
+        "934:244",
+        "934:245",
+        "934:246",
+        "934:247",
+        "934:249",
+        "934:250",
+        "934:251",
+        "934:252",
+        "934:253",
+        "934:254",
+        "934:255",
+        "934:256",
+        "934:257",
+        "934:258",
+        "934:259",
+        "934:260",
+        "934:261",
+        "934:262",
+        "934:263",
+        "934:264",
+        "934:265",
+        "934:266",
+        "934:267",
+        "934:268",
+        "934:269",
+        "934:271",
+        "934:273",
+        "934:274",
+        "934:275",
+        "934:276"
+      ]
+    },
+    {
+      "section": {
+        "id": "934:277",
+        "name": "03 · Món ăn, an toàn & cửa hàng",
+        "x": 120,
+        "y": 4580,
+        "w": 1952,
+        "h": 1185
+      },
+      "frames": [
+        {
+          "id": "934:280",
+          "key": "034",
+          "name": "LF-SB-034 · Chi tiết món",
+          "why": "Hai CTA minh họa hai trạng thái phiên để kiểm return-to-offer; không xác nhận dị ứng."
+        },
+        {
+          "id": "934:318",
+          "key": "036",
+          "name": "LF-SB-036 · Thành phần & dị ứng",
+          "why": "Nội dung an toàn được giữ nguyên ý khi giản lược thị giác."
+        },
+        {
+          "id": "934:343",
+          "key": "038",
+          "name": "LF-SB-038 · Cửa hàng",
+          "why": "Không thêm reviews hay địa chỉ/merchant thật chưa xác minh."
+        },
+        {
+          "id": "934:380",
+          "key": "044",
+          "name": "LF-SB-044 · Túi bánh bất ngờ",
+          "why": "Không ép fixture túi29K vào chuỗi đặt món25K; ghi rõ phạm vi nhánh minh họa."
+        }
+      ],
+      "links": [
+        {
+          "id": "934:285",
+          "to": "015",
+          "label": "‹"
+        },
+        {
+          "id": "934:296",
+          "to": "038",
+          "label": "Tiệm Bánh A"
+        },
+        {
+          "id": "934:304",
+          "to": "036",
+          "label": "Dị ứng & thành phần: Chưa xác nhận"
+        },
+        {
+          "id": "934:310",
+          "to": "050",
+          "label": "Chọn số lượng"
+        },
+        {
+          "id": "934:312",
+          "to": "059",
+          "label": "Đăng nhập trước khi đặt"
+        },
+        {
+          "id": "934:323",
+          "to": "034",
+          "label": "×"
+        },
+        {
+          "id": "934:337",
+          "to": "034",
+          "label": "Quay lại món"
+        },
+        {
+          "id": "934:348",
+          "to": "034",
+          "label": "‹"
+        },
+        {
+          "id": "934:359",
+          "to": "034",
+          "label": "Bánh mì men tự nhiên"
+        },
+        {
+          "id": "934:366",
+          "to": "044",
+          "label": "Túi bánh bất ngờ"
+        },
+        {
+          "id": "934:374",
+          "to": "034",
+          "label": "Về món đang xem"
+        },
+        {
+          "id": "934:385",
+          "to": "015",
+          "label": "‹"
+        },
+        {
+          "id": "934:403",
+          "to": "034",
+          "label": "Xem món cụ thể của tiệm"
+        },
+        {
+          "id": "934:405",
+          "to": "015",
+          "label": "Về Khám phá"
+        }
+      ],
+      "createdNodeIds": [
+        "934:277",
+        "934:278",
+        "934:279",
+        "934:280",
+        "934:281",
+        "934:282",
+        "934:283",
+        "934:284",
+        "934:285",
+        "934:287",
+        "934:288",
+        "934:289",
+        "934:290",
+        "934:293",
+        "934:294",
+        "934:295",
+        "934:296",
+        "934:297",
+        "934:298",
+        "934:299",
+        "934:300",
+        "934:301",
+        "934:302",
+        "934:303",
+        "934:304",
+        "934:305",
+        "934:306",
+        "934:307",
+        "934:308",
+        "934:309",
+        "934:310",
+        "934:312",
+        "934:314",
+        "934:315",
+        "934:316",
+        "934:317",
+        "934:318",
+        "934:319",
+        "934:320",
+        "934:321",
+        "934:322",
+        "934:323",
+        "934:325",
+        "934:326",
+        "934:327",
+        "934:328",
+        "934:329",
+        "934:330",
+        "934:331",
+        "934:332",
+        "934:333",
+        "934:334",
+        "934:335",
+        "934:336",
+        "934:337",
+        "934:339",
+        "934:340",
+        "934:341",
+        "934:342",
+        "934:343",
+        "934:344",
+        "934:345",
+        "934:346",
+        "934:347",
+        "934:348",
+        "934:350",
+        "934:351",
+        "934:352",
+        "934:353",
+        "934:356",
+        "934:357",
+        "934:358",
+        "934:359",
+        "934:360",
+        "934:363",
+        "934:364",
+        "934:365",
+        "934:366",
+        "934:367",
+        "934:370",
+        "934:371",
+        "934:372",
+        "934:373",
+        "934:374",
+        "934:376",
+        "934:377",
+        "934:378",
+        "934:379",
+        "934:380",
+        "934:381",
+        "934:382",
+        "934:383",
+        "934:384",
+        "934:385",
+        "934:387",
+        "934:388",
+        "934:389",
+        "934:390",
+        "934:393",
+        "934:394",
+        "934:395",
+        "934:396",
+        "934:397",
+        "934:398",
+        "934:399",
+        "934:400",
+        "934:401",
+        "934:402",
+        "934:403",
+        "934:405",
+        "934:407",
+        "934:408",
+        "934:409",
+        "934:410"
+      ]
+    },
+    {
+      "section": {
+        "id": "934:411",
+        "name": "04 · Đặt giữ chỗ & phục hồi",
+        "x": 120,
+        "y": 5925,
+        "w": 1459,
+        "h": 2235
+      },
+      "frames": [
+        {
+          "id": "934:414",
+          "key": "050",
+          "name": "LF-SB-050 · Chọn số lượng",
+          "why": "Số lượng1 là preset; không giả lập toàn bộ giới hạn tồn kho."
+        },
+        {
+          "id": "934:447",
+          "key": "051",
+          "name": "LF-SB-051 · Chọn giờ nhận",
+          "why": "Ngày19/10/2026 là mốc fixture của flow, không phải giờ hiện tại."
+        },
+        {
+          "id": "934:480",
+          "key": "053",
+          "name": "LF-SB-053 · Kiểm tra đặt trước",
+          "why": "Nhánh phụ thể hiện lỗi trước kết quả; xác nhận không thu tiền online."
+        },
+        {
+          "id": "934:520",
+          "key": "056",
+          "name": "LF-SB-056 · Đã giữ phần cho bạn",
+          "why": "Kết quả giữ chỗ được tách khỏi thanh toán và xác nhận giao món."
+        },
+        {
+          "id": "934:548",
+          "key": "058",
+          "name": "LF-SB-058 · Số lượng vừa thay đổi",
+          "why": "Lỗi có đường phục hồi; không hiển thị thành công khi chưa xác nhận."
+        },
+        {
+          "id": "934:579",
+          "key": "059",
+          "name": "LF-SB-059 · Đăng nhập để giữ chỗ",
+          "why": "Tách login theo intent với login chung008 để không làm mất món đang xem."
+        }
+      ],
+      "links": [
+        {
+          "id": "934:419",
+          "to": "034",
+          "label": "×"
+        },
+        {
+          "id": "934:439",
+          "to": "051",
+          "label": "Tiếp tục chọn giờ nhận"
+        },
+        {
+          "id": "934:441",
+          "to": "034",
+          "label": "Quay lại món"
+        },
+        {
+          "id": "934:452",
+          "to": "050",
+          "label": "‹"
+        },
+        {
+          "id": "934:474",
+          "to": "053",
+          "label": "Tiếp tục kiểm tra đơn"
+        },
+        {
+          "id": "934:485",
+          "to": "051",
+          "label": "‹"
+        },
+        {
+          "id": "934:512",
+          "to": "056",
+          "label": "Xác nhận giữ chỗ"
+        },
+        {
+          "id": "934:514",
+          "to": "058",
+          "label": "Xem nhánh tồn kho thay đổi"
+        },
+        {
+          "id": "934:540",
+          "to": "060",
+          "label": "Xem đơn của tôi"
+        },
+        {
+          "id": "934:542",
+          "to": "063",
+          "label": "Mở mã nhận món"
+        },
+        {
+          "id": "934:553",
+          "to": "053",
+          "label": "‹"
+        },
+        {
+          "id": "934:571",
+          "to": "053",
+          "label": "Kiểm tra lại 1 phần"
+        },
+        {
+          "id": "934:573",
+          "to": "015",
+          "label": "Quay lại danh sách món"
+        },
+        {
+          "id": "934:584",
+          "to": "034",
+          "label": "×"
+        },
+        {
+          "id": "934:607",
+          "to": "034",
+          "label": "Đăng nhập và quay lại món"
+        },
+        {
+          "id": "934:609",
+          "to": "034",
+          "label": "Đóng"
+        }
+      ],
+      "createdNodeIds": [
+        "934:411",
+        "934:412",
+        "934:413",
+        "934:414",
+        "934:415",
+        "934:416",
+        "934:417",
+        "934:418",
+        "934:419",
+        "934:421",
+        "934:422",
+        "934:423",
+        "934:424",
+        "934:425",
+        "934:428",
+        "934:429",
+        "934:430",
+        "934:431",
+        "934:432",
+        "934:433",
+        "934:434",
+        "934:435",
+        "934:436",
+        "934:437",
+        "934:438",
+        "934:439",
+        "934:441",
+        "934:443",
+        "934:444",
+        "934:445",
+        "934:446",
+        "934:447",
+        "934:448",
+        "934:449",
+        "934:450",
+        "934:451",
+        "934:452",
+        "934:454",
+        "934:455",
+        "934:456",
+        "934:457",
+        "934:458",
+        "934:461",
+        "934:462",
+        "934:463",
+        "934:464",
+        "934:465",
+        "934:466",
+        "934:467",
+        "934:468",
+        "934:469",
+        "934:470",
+        "934:471",
+        "934:472",
+        "934:473",
+        "934:474",
+        "934:476",
+        "934:477",
+        "934:478",
+        "934:479",
+        "934:480",
+        "934:481",
+        "934:482",
+        "934:483",
+        "934:484",
+        "934:485",
+        "934:487",
+        "934:488",
+        "934:489",
+        "934:490",
+        "934:491",
+        "934:492",
+        "934:493",
+        "934:494",
+        "934:495",
+        "934:496",
+        "934:497",
+        "934:498",
+        "934:499",
+        "934:500",
+        "934:501",
+        "934:502",
+        "934:503",
+        "934:504",
+        "934:505",
+        "934:506",
+        "934:507",
+        "934:508",
+        "934:509",
+        "934:510",
+        "934:511",
+        "934:512",
+        "934:514",
+        "934:516",
+        "934:517",
+        "934:518",
+        "934:519",
+        "934:520",
+        "934:521",
+        "934:522",
+        "934:523",
+        "934:524",
+        "934:525",
+        "934:526",
+        "934:527",
+        "934:528",
+        "934:529",
+        "934:530",
+        "934:531",
+        "934:532",
+        "934:533",
+        "934:534",
+        "934:535",
+        "934:536",
+        "934:537",
+        "934:538",
+        "934:539",
+        "934:540",
+        "934:542",
+        "934:544",
+        "934:545",
+        "934:546",
+        "934:547",
+        "934:548",
+        "934:549",
+        "934:550",
+        "934:551",
+        "934:552",
+        "934:553",
+        "934:555",
+        "934:556",
+        "934:557",
+        "934:558",
+        "934:559",
+        "934:560",
+        "934:561",
+        "934:564",
+        "934:565",
+        "934:566",
+        "934:567",
+        "934:568",
+        "934:569",
+        "934:570",
+        "934:571",
+        "934:573",
+        "934:575",
+        "934:576",
+        "934:577",
+        "934:578",
+        "934:579",
+        "934:580",
+        "934:581",
+        "934:582",
+        "934:583",
+        "934:584",
+        "934:586",
+        "934:587",
+        "934:588",
+        "934:589",
+        "934:590",
+        "934:591",
+        "934:594",
+        "934:595",
+        "934:596",
+        "934:597",
+        "934:601",
+        "934:605",
+        "934:606",
+        "934:607",
+        "934:609",
+        "934:611",
+        "934:612",
+        "934:613",
+        "934:614"
+      ]
+    },
+    {
+      "section": {
+        "id": "935:134",
+        "name": "05 · Đơn hàng & nhận tại quầy",
+        "x": 120,
+        "y": 8320,
+        "w": 1952,
+        "h": 2237
+      },
+      "frames": [
+        {
+          "id": "935:137",
+          "key": "060",
+          "name": "LF-SB-060 · Đơn của tôi",
+          "why": "Đơn chờ và lịch sử có phân cấp; không suy ra tổng tiết kiệm.",
+          "tab": "orders"
+        },
+        {
+          "id": "935:182",
+          "key": "062",
+          "name": "LF-SB-062 · Chi tiết đơn",
+          "why": "Trạng thái giao món không do khách tự chuyển."
+        },
+        {
+          "id": "935:232",
+          "key": "063",
+          "name": "LF-SB-063 · Mã nhận món",
+          "why": "Phím→ của người trình diễn mở SIM-01 ngoài app; không thêm nút xác nhận giao cho khách.",
+          "keyNext": "SIM"
+        },
+        {
+          "id": "935:263",
+          "key": "SIM",
+          "name": "SIM-01 · Cửa hàng xác nhận giao",
+          "why": "Bổ sung để khép luồng mà không biến khách thành người tự xác nhận nhận hàng."
+        },
+        {
+          "id": "935:297",
+          "key": "072",
+          "name": "LF-SB-072 · Đơn đã hoàn tất",
+          "why": "Hoàn tất sau tác nhân cửa hàng; không tự cộng thực phẩm đã ăn vào Tủ."
+        },
+        {
+          "id": "935:338",
+          "key": "070",
+          "name": "LF-SB-070 · Xác nhận hủy đơn",
+          "why": "Hành động hủy có bước xác nhận và đường quay lại."
+        },
+        {
+          "id": "935:372",
+          "key": "071",
+          "name": "LF-SB-071 · Đã hủy đặt trước",
+          "why": "Đây là nhánh minh họa riêng; không giả lập persistence của danh sách đơn."
+        }
+      ],
+      "links": [
+        {
+          "id": "935:146",
+          "to": "062",
+          "label": "Bánh mì men tự nhiên"
+        },
+        {
+          "id": "935:153",
+          "to": "063",
+          "label": "Mở mã nhận món"
+        },
+        {
+          "id": "935:167",
+          "to": "062",
+          "label": "Xem chi tiết đơn đang chờ"
+        },
+        {
+          "id": "I935:169;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I935:169;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I935:169;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I935:169;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        },
+        {
+          "id": "935:187",
+          "to": "060",
+          "label": "‹"
+        },
+        {
+          "id": "935:224",
+          "to": "063",
+          "label": "Mở mã nhận món"
+        },
+        {
+          "id": "935:226",
+          "to": "070",
+          "label": "Hủy đặt trước"
+        },
+        {
+          "id": "935:237",
+          "to": "062",
+          "label": "‹"
+        },
+        {
+          "id": "935:257",
+          "to": "062",
+          "label": "Về chi tiết đơn"
+        },
+        {
+          "id": "935:289",
+          "to": "072",
+          "label": "Mô phỏng cửa hàng đã giao"
+        },
+        {
+          "id": "935:291",
+          "to": "063",
+          "label": "Quay lại mã nhận"
+        },
+        {
+          "id": "935:302",
+          "to": "060",
+          "label": "‹"
+        },
+        {
+          "id": "935:330",
+          "to": "060",
+          "label": "Về đơn của tôi"
+        },
+        {
+          "id": "935:332",
+          "to": "075",
+          "label": "Mở Tủ thực phẩm"
+        },
+        {
+          "id": "935:343",
+          "to": "062",
+          "label": "×"
+        },
+        {
+          "id": "935:364",
+          "to": "071",
+          "label": "Xác nhận hủy đặt trước"
+        },
+        {
+          "id": "935:366",
+          "to": "062",
+          "label": "Giữ lại đơn"
+        },
+        {
+          "id": "935:386",
+          "to": "015",
+          "label": "Khám phá món khác"
+        },
+        {
+          "id": "935:388",
+          "to": "060",
+          "label": "Về đơn của tôi"
+        }
+      ],
+      "createdNodeIds": [
+        "935:134",
+        "935:135",
+        "935:136",
+        "935:137",
+        "935:138",
+        "935:139",
+        "935:140",
+        "935:141",
+        "935:142",
+        "935:143",
+        "935:144",
+        "935:145",
+        "935:146",
+        "935:147",
+        "935:150",
+        "935:151",
+        "935:152",
+        "935:153",
+        "935:154",
+        "935:155",
+        "935:156",
+        "935:157",
+        "935:158",
+        "935:159",
+        "935:160",
+        "935:161",
+        "935:162",
+        "935:163",
+        "935:164",
+        "935:165",
+        "935:166",
+        "935:167",
+        "935:169",
+        "935:178",
+        "935:179",
+        "935:180",
+        "935:181",
+        "935:182",
+        "935:183",
+        "935:184",
+        "935:185",
+        "935:186",
+        "935:187",
+        "935:189",
+        "935:190",
+        "935:191",
+        "935:192",
+        "935:193",
+        "935:194",
+        "935:195",
+        "935:196",
+        "935:197",
+        "935:198",
+        "935:199",
+        "935:200",
+        "935:201",
+        "935:202",
+        "935:203",
+        "935:204",
+        "935:205",
+        "935:206",
+        "935:207",
+        "935:208",
+        "935:209",
+        "935:210",
+        "935:211",
+        "935:212",
+        "935:213",
+        "935:214",
+        "935:215",
+        "935:216",
+        "935:217",
+        "935:218",
+        "935:219",
+        "935:220",
+        "935:221",
+        "935:222",
+        "935:223",
+        "935:224",
+        "935:226",
+        "935:228",
+        "935:229",
+        "935:230",
+        "935:231",
+        "935:232",
+        "935:233",
+        "935:234",
+        "935:235",
+        "935:236",
+        "935:237",
+        "935:239",
+        "935:240",
+        "935:241",
+        "935:242",
+        "935:243",
+        "935:244",
+        "935:247",
+        "935:248",
+        "935:249",
+        "935:250",
+        "935:251",
+        "935:252",
+        "935:253",
+        "935:254",
+        "935:255",
+        "935:256",
+        "935:257",
+        "935:259",
+        "935:260",
+        "935:261",
+        "935:262",
+        "935:263",
+        "935:264",
+        "935:265",
+        "935:266",
+        "935:267",
+        "935:268",
+        "935:269",
+        "935:270",
+        "935:271",
+        "935:272",
+        "935:273",
+        "935:274",
+        "935:275",
+        "935:276",
+        "935:277",
+        "935:278",
+        "935:279",
+        "935:280",
+        "935:281",
+        "935:282",
+        "935:283",
+        "935:284",
+        "935:285",
+        "935:286",
+        "935:287",
+        "935:288",
+        "935:289",
+        "935:291",
+        "935:293",
+        "935:294",
+        "935:295",
+        "935:296",
+        "935:297",
+        "935:298",
+        "935:299",
+        "935:300",
+        "935:301",
+        "935:302",
+        "935:304",
+        "935:305",
+        "935:306",
+        "935:307",
+        "935:308",
+        "935:309",
+        "935:310",
+        "935:311",
+        "935:312",
+        "935:313",
+        "935:314",
+        "935:315",
+        "935:316",
+        "935:317",
+        "935:318",
+        "935:319",
+        "935:320",
+        "935:321",
+        "935:322",
+        "935:323",
+        "935:324",
+        "935:325",
+        "935:326",
+        "935:327",
+        "935:328",
+        "935:329",
+        "935:330",
+        "935:332",
+        "935:334",
+        "935:335",
+        "935:336",
+        "935:337",
+        "935:338",
+        "935:339",
+        "935:340",
+        "935:341",
+        "935:342",
+        "935:343",
+        "935:345",
+        "935:346",
+        "935:347",
+        "935:348",
+        "935:349",
+        "935:350",
+        "935:353",
+        "935:354",
+        "935:355",
+        "935:356",
+        "935:357",
+        "935:358",
+        "935:359",
+        "935:360",
+        "935:361",
+        "935:362",
+        "935:363",
+        "935:364",
+        "935:366",
+        "935:368",
+        "935:369",
+        "935:370",
+        "935:371",
+        "935:372",
+        "935:373",
+        "935:374",
+        "935:375",
+        "935:376",
+        "935:377",
+        "935:378",
+        "935:379",
+        "935:380",
+        "935:381",
+        "935:382",
+        "935:383",
+        "935:384",
+        "935:385",
+        "935:386",
+        "935:388",
+        "935:390",
+        "935:391",
+        "935:392",
+        "935:393"
+      ]
+    },
+    {
+      "section": {
+        "id": "935:394",
+        "name": "06 · Tủ thực phẩm & ngày hạn",
+        "x": 120,
+        "y": 10717,
+        "w": 2445,
+        "h": 2237
+      },
+      "frames": [
+        {
+          "id": "935:397",
+          "key": "076",
+          "name": "LF-SB-076 · Tủ thực phẩm",
+          "why": "Điểm bắt đầu riêng của demo thêm thủ công; không mang7 seed items vào kịch bản tủ trống.",
+          "tab": "pantry"
+        },
+        {
+          "id": "935:429",
+          "key": "077",
+          "name": "LF-SB-077 · Thêm thực phẩm",
+          "why": "Dùng added-slot fixture hiện hữu; các giá trị điền sẵn không phải dữ liệu người dùng thật."
+        },
+        {
+          "id": "935:467",
+          "key": "079",
+          "name": "LF-SB-079 · Ngày trên nhãn",
+          "why": "Ngày21 là preset; không xây bộ chọn ngày đầy đủ trong low-fi."
+        },
+        {
+          "id": "935:584",
+          "key": "080",
+          "name": "LF-SB-080 · Kiểm tra thông tin",
+          "why": "Có bước review trước lưu; không tuyên bố thực phẩm an toàn chỉ vì chưa tới hạn."
+        },
+        {
+          "id": "935:625",
+          "key": "075",
+          "name": "LF-SB-075 · Tủ thực phẩm",
+          "why": "Một fixture thêm thủ công xuyên suốt; không thay tổng7 seed items của hi-fi.",
+          "tab": "pantry"
+        },
+        {
+          "id": "935:660",
+          "key": "081",
+          "name": "LF-SB-081 · Chi tiết thực phẩm",
+          "why": "Context lấy từ added-slot; giữ phân biệt loại ngày và không suy diễn an toàn."
+        },
+        {
+          "id": "935:688",
+          "key": "083",
+          "name": "LF-SB-083 · Cần dùng sớm",
+          "why": "Một bộ lọc đại diện, không mở rộng thành toàn bộ logic Pantry."
+        },
+        {
+          "id": "935:716",
+          "key": "086",
+          "name": "LF-SB-086 · Ghi nhận đã dùng",
+          "why": "Thêm màn kết quả riêng để không quay lại danh sách vẫn còn1 hộp."
+        },
+        {
+          "id": "935:743",
+          "key": "075-used",
+          "name": "LF-SB-075-used · Tủ thực phẩm",
+          "why": "State bổ sung cần thiết để chứng minh kết quả ghi nhận; không tính vào100 hi-fi.",
+          "tab": "pantry"
+        }
+      ],
+      "links": [
+        {
+          "id": "935:414",
+          "to": "077",
+          "label": "Thêm thực phẩm đầu tiên"
+        },
+        {
+          "id": "I935:416;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I935:416;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I935:416;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I935:416;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        },
+        {
+          "id": "935:434",
+          "to": "076",
+          "label": "‹"
+        },
+        {
+          "id": "935:455",
+          "to": "079",
+          "label": "Hạn sử dụng (Use by)"
+        },
+        {
+          "id": "935:461",
+          "to": "080",
+          "label": "Tiếp tục kiểm tra"
+        },
+        {
+          "id": "935:472",
+          "to": "077",
+          "label": "×"
+        },
+        {
+          "id": "935:578",
+          "to": "077",
+          "label": "Xác nhận ngày hạn"
+        },
+        {
+          "id": "935:589",
+          "to": "077",
+          "label": "‹"
+        },
+        {
+          "id": "935:617",
+          "to": "075",
+          "label": "Lưu vào Tủ thực phẩm"
+        },
+        {
+          "id": "935:619",
+          "to": "077",
+          "label": "Sửa lại thông tin"
+        },
+        {
+          "id": "935:637",
+          "to": "077",
+          "label": "Thêm món"
+        },
+        {
+          "id": "935:639",
+          "to": "083",
+          "label": "Cần dùng sớm"
+        },
+        {
+          "id": "935:642",
+          "to": "081",
+          "label": "Sữa tươi mới mua"
+        },
+        {
+          "id": "I935:647;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I935:647;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I935:647;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I935:647;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        },
+        {
+          "id": "935:665",
+          "to": "075",
+          "label": "‹"
+        },
+        {
+          "id": "935:680",
+          "to": "086",
+          "label": "Ghi nhận lượng đã dùng"
+        },
+        {
+          "id": "935:682",
+          "to": "075",
+          "label": "Về Tủ thực phẩm"
+        },
+        {
+          "id": "935:693",
+          "to": "075",
+          "label": "‹"
+        },
+        {
+          "id": "935:700",
+          "to": "081",
+          "label": "Sữa tươi mới mua"
+        },
+        {
+          "id": "935:708",
+          "to": "081",
+          "label": "Xem món cần dùng"
+        },
+        {
+          "id": "935:710",
+          "to": "075",
+          "label": "Về Tủ thực phẩm"
+        },
+        {
+          "id": "935:721",
+          "to": "081",
+          "label": "‹"
+        },
+        {
+          "id": "935:735",
+          "to": "075-used",
+          "label": "Xác nhận đã dùng hết"
+        },
+        {
+          "id": "935:737",
+          "to": "081",
+          "label": "Chưa ghi nhận"
+        },
+        {
+          "id": "935:760",
+          "to": "077",
+          "label": "Thêm món khác"
+        },
+        {
+          "id": "I935:762;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I935:762;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I935:762;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I935:762;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        }
+      ],
+      "createdNodeIds": [
+        "935:394",
+        "935:395",
+        "935:396",
+        "935:397",
+        "935:398",
+        "935:399",
+        "935:400",
+        "935:401",
+        "935:402",
+        "935:403",
+        "935:404",
+        "935:405",
+        "935:408",
+        "935:409",
+        "935:410",
+        "935:411",
+        "935:412",
+        "935:413",
+        "935:414",
+        "935:416",
+        "935:425",
+        "935:426",
+        "935:427",
+        "935:428",
+        "935:429",
+        "935:430",
+        "935:431",
+        "935:432",
+        "935:433",
+        "935:434",
+        "935:436",
+        "935:437",
+        "935:438",
+        "935:439",
+        "935:443",
+        "935:447",
+        "935:451",
+        "935:455",
+        "935:456",
+        "935:457",
+        "935:458",
+        "935:459",
+        "935:460",
+        "935:461",
+        "935:463",
+        "935:464",
+        "935:465",
+        "935:466",
+        "935:467",
+        "935:468",
+        "935:469",
+        "935:470",
+        "935:471",
+        "935:472",
+        "935:474",
+        "935:475",
+        "935:476",
+        "935:477",
+        "935:478",
+        "935:479",
+        "935:480",
+        "935:481",
+        "935:482",
+        "935:483",
+        "935:484",
+        "935:485",
+        "935:486",
+        "935:487",
+        "935:488",
+        "935:489",
+        "935:490",
+        "935:491",
+        "935:492",
+        "935:493",
+        "935:494",
+        "935:495",
+        "935:496",
+        "935:497",
+        "935:498",
+        "935:499",
+        "935:500",
+        "935:501",
+        "935:502",
+        "935:503",
+        "935:504",
+        "935:505",
+        "935:506",
+        "935:507",
+        "935:508",
+        "935:509",
+        "935:510",
+        "935:511",
+        "935:512",
+        "935:513",
+        "935:514",
+        "935:515",
+        "935:516",
+        "935:517",
+        "935:518",
+        "935:519",
+        "935:520",
+        "935:521",
+        "935:522",
+        "935:523",
+        "935:524",
+        "935:525",
+        "935:526",
+        "935:527",
+        "935:528",
+        "935:529",
+        "935:530",
+        "935:531",
+        "935:532",
+        "935:533",
+        "935:534",
+        "935:535",
+        "935:536",
+        "935:537",
+        "935:538",
+        "935:539",
+        "935:540",
+        "935:541",
+        "935:542",
+        "935:543",
+        "935:544",
+        "935:545",
+        "935:546",
+        "935:547",
+        "935:548",
+        "935:549",
+        "935:550",
+        "935:551",
+        "935:552",
+        "935:553",
+        "935:554",
+        "935:555",
+        "935:556",
+        "935:557",
+        "935:558",
+        "935:559",
+        "935:560",
+        "935:561",
+        "935:562",
+        "935:563",
+        "935:564",
+        "935:565",
+        "935:566",
+        "935:567",
+        "935:568",
+        "935:569",
+        "935:570",
+        "935:571",
+        "935:572",
+        "935:573",
+        "935:574",
+        "935:575",
+        "935:576",
+        "935:577",
+        "935:578",
+        "935:580",
+        "935:581",
+        "935:582",
+        "935:583",
+        "935:584",
+        "935:585",
+        "935:586",
+        "935:587",
+        "935:588",
+        "935:589",
+        "935:591",
+        "935:592",
+        "935:593",
+        "935:594",
+        "935:595",
+        "935:596",
+        "935:597",
+        "935:598",
+        "935:599",
+        "935:600",
+        "935:601",
+        "935:602",
+        "935:603",
+        "935:604",
+        "935:605",
+        "935:606",
+        "935:607",
+        "935:608",
+        "935:609",
+        "935:610",
+        "935:611",
+        "935:612",
+        "935:613",
+        "935:614",
+        "935:615",
+        "935:616",
+        "935:617",
+        "935:619",
+        "935:621",
+        "935:622",
+        "935:623",
+        "935:624",
+        "935:625",
+        "935:626",
+        "935:627",
+        "935:628",
+        "935:629",
+        "935:630",
+        "935:631",
+        "935:632",
+        "935:633",
+        "935:634",
+        "935:635",
+        "935:636",
+        "935:637",
+        "935:639",
+        "935:641",
+        "935:642",
+        "935:643",
+        "935:644",
+        "935:645",
+        "935:646",
+        "935:647",
+        "935:656",
+        "935:657",
+        "935:658",
+        "935:659",
+        "935:660",
+        "935:661",
+        "935:662",
+        "935:663",
+        "935:664",
+        "935:665",
+        "935:667",
+        "935:668",
+        "935:669",
+        "935:670",
+        "935:671",
+        "935:672",
+        "935:673",
+        "935:674",
+        "935:675",
+        "935:676",
+        "935:677",
+        "935:678",
+        "935:679",
+        "935:680",
+        "935:682",
+        "935:684",
+        "935:685",
+        "935:686",
+        "935:687",
+        "935:688",
+        "935:689",
+        "935:690",
+        "935:691",
+        "935:692",
+        "935:693",
+        "935:695",
+        "935:696",
+        "935:697",
+        "935:698",
+        "935:699",
+        "935:700",
+        "935:701",
+        "935:702",
+        "935:703",
+        "935:704",
+        "935:705",
+        "935:706",
+        "935:707",
+        "935:708",
+        "935:710",
+        "935:712",
+        "935:713",
+        "935:714",
+        "935:715",
+        "935:716",
+        "935:717",
+        "935:718",
+        "935:719",
+        "935:720",
+        "935:721",
+        "935:723",
+        "935:724",
+        "935:725",
+        "935:726",
+        "935:727",
+        "935:728",
+        "935:729",
+        "935:730",
+        "935:731",
+        "935:732",
+        "935:733",
+        "935:734",
+        "935:735",
+        "935:737",
+        "935:739",
+        "935:740",
+        "935:741",
+        "935:742",
+        "935:743",
+        "935:744",
+        "935:745",
+        "935:746",
+        "935:747",
+        "935:748",
+        "935:749",
+        "935:750",
+        "935:751",
+        "935:752",
+        "935:753",
+        "935:754",
+        "935:755",
+        "935:758",
+        "935:759",
+        "935:760",
+        "935:762",
+        "935:771",
+        "935:772",
+        "935:773",
+        "935:774"
+      ]
+    },
+    {
+      "section": {
+        "id": "935:775",
+        "name": "07 · Tài khoản & điều hướng",
+        "x": 120,
+        "y": 13114,
+        "w": 473,
+        "h": 1247
+      },
+      "frames": [
+        {
+          "id": "935:778",
+          "key": "091",
+          "name": "LF-SB-091 · Tài khoản",
+          "why": "Một màn điều hướng đại diện, không nhân bản toàn bộ settings.",
+          "tab": "account"
+        }
+      ],
+      "links": [
+        {
+          "id": "935:791",
+          "to": "015",
+          "label": "Khám phá món gần bạn"
+        },
+        {
+          "id": "935:795",
+          "to": "060",
+          "label": "Đơn của tôi"
+        },
+        {
+          "id": "935:799",
+          "to": "075",
+          "label": "Tủ thực phẩm"
+        },
+        {
+          "id": "I935:806;931:15",
+          "to": "015",
+          "label": "Tab/discover"
+        },
+        {
+          "id": "I935:806;931:17",
+          "to": "060",
+          "label": "Tab/orders"
+        },
+        {
+          "id": "I935:806;931:19",
+          "to": "075",
+          "label": "Tab/pantry"
+        },
+        {
+          "id": "I935:806;931:21",
+          "to": "091",
+          "label": "Tab/account"
+        }
+      ],
+      "createdNodeIds": [
+        "935:775",
+        "935:776",
+        "935:777",
+        "935:778",
+        "935:779",
+        "935:780",
+        "935:781",
+        "935:782",
+        "935:783",
+        "935:784",
+        "935:785",
+        "935:786",
+        "935:789",
+        "935:790",
+        "935:791",
+        "935:792",
+        "935:793",
+        "935:794",
+        "935:795",
+        "935:796",
+        "935:797",
+        "935:798",
+        "935:799",
+        "935:800",
+        "935:801",
+        "935:802",
+        "935:803",
+        "935:804",
+        "935:805",
+        "935:806",
+        "935:815",
+        "935:816",
+        "935:817",
+        "935:818"
+      ]
+    }
+  ],
+  "wiring": {
+    "count": 140,
+    "actions": [
+      {
+        "id": "933:22",
+        "name": "Action · Bắt đầu → 005",
+        "from": "933:5",
+        "to": "933:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:33",
+        "name": "Action · ‹ → 002",
+        "from": "933:28",
+        "to": "933:5",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:47",
+        "name": "Action · Khám phá món gần bạn → 015",
+        "from": "933:28",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:49",
+        "name": "Action · Đăng nhập → 008",
+        "from": "933:28",
+        "to": "933:57",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:51",
+        "name": "Action · Chọn khu vực → 011",
+        "from": "933:28",
+        "to": "933:85",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:62",
+        "name": "Action · ‹ → 005",
+        "from": "933:57",
+        "to": "933:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:77",
+        "name": "Action · Đăng nhập → 015",
+        "from": "933:57",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:79",
+        "name": "Action · Khám phá không đăng nhập → 015",
+        "from": "933:57",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:90",
+        "name": "Action · ‹ → 005",
+        "from": "933:85",
+        "to": "933:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:106",
+        "name": "Action · Cho phép vị trí · minh họa → 018",
+        "from": "933:85",
+        "to": "933:114",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:108",
+        "name": "Action · Không cho phép · chọn thủ công → 018",
+        "from": "933:85",
+        "to": "933:114",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:119",
+        "name": "Action · ‹ → 011",
+        "from": "933:114",
+        "to": "933:85",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "933:135",
+        "name": "Action · Xác nhận khu vực → 015",
+        "from": "933:114",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:36",
+        "name": "Action · Đà Nẵng · Khu học xá → 018",
+        "from": "934:28",
+        "to": "933:114",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:40",
+        "name": "Action · Tìm món hoặc cửa hàng → 019",
+        "from": "934:28",
+        "to": "934:128",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:45",
+        "name": "Action · Bản đồ → 016",
+        "from": "934:28",
+        "to": "934:84",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:47",
+        "name": "Action · Bộ lọc → 023",
+        "from": "934:28",
+        "to": "934:208",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:49",
+        "name": "Action · Túi bánh bất ngờ → 044",
+        "from": "934:28",
+        "to": "934:380",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:57",
+        "name": "Action · Bánh mì men tự nhiên → 034",
+        "from": "934:28",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:71;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "934:28",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:71;931:19",
+        "name": "Action · Tab/pantry → 075",
+        "from": "934:28",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:71;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "934:28",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:89",
+        "name": "Action · ‹ → 015",
+        "from": "934:84",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:103",
+        "name": "Action · Bánh mì men tự nhiên → 034",
+        "from": "934:84",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:111",
+        "name": "Action · Xem chi tiết món → 034",
+        "from": "934:84",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:113",
+        "name": "Action · Về danh sách → 015",
+        "from": "934:84",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:115;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "934:84",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:115;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "934:84",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:115;931:19",
+        "name": "Action · Tab/pantry → 075",
+        "from": "934:84",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:115;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "934:84",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:133",
+        "name": "Action · ‹ → 015",
+        "from": "934:128",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:143",
+        "name": "Action · Bánh mì men tự nhiên → 034",
+        "from": "934:128",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:147",
+        "name": "Action · Túi bánh bất ngờ → 044",
+        "from": "934:128",
+        "to": "934:380",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:153",
+        "name": "Action · Tìm kiếm → 021",
+        "from": "934:128",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:155",
+        "name": "Action · Hủy → 015",
+        "from": "934:128",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:166",
+        "name": "Action · ‹ → 019",
+        "from": "934:161",
+        "to": "934:128",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:176",
+        "name": "Action · Lọc → 023",
+        "from": "934:161",
+        "to": "934:208",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:178",
+        "name": "Action · Sắp xếp → 027",
+        "from": "934:161",
+        "to": "934:242",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:181",
+        "name": "Action · Bánh mì men tự nhiên → 034",
+        "from": "934:161",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:195;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "934:161",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:195;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "934:161",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:195;931:19",
+        "name": "Action · Tab/pantry → 075",
+        "from": "934:161",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I934:195;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "934:161",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:213",
+        "name": "Action · × → 021",
+        "from": "934:208",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:234",
+        "name": "Action · Áp dụng bộ lọc → 021",
+        "from": "934:208",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:236",
+        "name": "Action · Đóng → 021",
+        "from": "934:208",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:247",
+        "name": "Action · × → 021",
+        "from": "934:242",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:269",
+        "name": "Action · Áp dụng → 021",
+        "from": "934:242",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:271",
+        "name": "Action · Đóng → 021",
+        "from": "934:242",
+        "to": "934:161",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:285",
+        "name": "Action · ‹ → 015",
+        "from": "934:280",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:296",
+        "name": "Action · Tiệm Bánh A → 038",
+        "from": "934:280",
+        "to": "934:343",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:304",
+        "name": "Action · Dị ứng & thành phần: Chưa xác nhận → 036",
+        "from": "934:280",
+        "to": "934:318",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:310",
+        "name": "Action · Chọn số lượng → 050",
+        "from": "934:280",
+        "to": "934:414",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:312",
+        "name": "Action · Đăng nhập trước khi đặt → 059",
+        "from": "934:280",
+        "to": "934:579",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:323",
+        "name": "Action · × → 034",
+        "from": "934:318",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:337",
+        "name": "Action · Quay lại món → 034",
+        "from": "934:318",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:348",
+        "name": "Action · ‹ → 034",
+        "from": "934:343",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:359",
+        "name": "Action · Bánh mì men tự nhiên → 034",
+        "from": "934:343",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:366",
+        "name": "Action · Túi bánh bất ngờ → 044",
+        "from": "934:343",
+        "to": "934:380",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:374",
+        "name": "Action · Về món đang xem → 034",
+        "from": "934:343",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:385",
+        "name": "Action · ‹ → 015",
+        "from": "934:380",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:403",
+        "name": "Action · Xem món cụ thể của tiệm → 034",
+        "from": "934:380",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:405",
+        "name": "Action · Về Khám phá → 015",
+        "from": "934:380",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:419",
+        "name": "Action · × → 034",
+        "from": "934:414",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:439",
+        "name": "Action · Tiếp tục chọn giờ nhận → 051",
+        "from": "934:414",
+        "to": "934:447",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:441",
+        "name": "Action · Quay lại món → 034",
+        "from": "934:414",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:452",
+        "name": "Action · ‹ → 050",
+        "from": "934:447",
+        "to": "934:414",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:474",
+        "name": "Action · Tiếp tục kiểm tra đơn → 053",
+        "from": "934:447",
+        "to": "934:480",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:485",
+        "name": "Action · ‹ → 051",
+        "from": "934:480",
+        "to": "934:447",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:512",
+        "name": "Action · Xác nhận giữ chỗ → 056",
+        "from": "934:480",
+        "to": "934:520",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:514",
+        "name": "Action · Xem nhánh tồn kho thay đổi → 058",
+        "from": "934:480",
+        "to": "934:548",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:540",
+        "name": "Action · Xem đơn của tôi → 060",
+        "from": "934:520",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:542",
+        "name": "Action · Mở mã nhận món → 063",
+        "from": "934:520",
+        "to": "935:232",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:553",
+        "name": "Action · ‹ → 053",
+        "from": "934:548",
+        "to": "934:480",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:571",
+        "name": "Action · Kiểm tra lại 1 phần → 053",
+        "from": "934:548",
+        "to": "934:480",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:573",
+        "name": "Action · Quay lại danh sách món → 015",
+        "from": "934:548",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:584",
+        "name": "Action · × → 034",
+        "from": "934:579",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:607",
+        "name": "Action · Đăng nhập và quay lại món → 034",
+        "from": "934:579",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "934:609",
+        "name": "Action · Đóng → 034",
+        "from": "934:579",
+        "to": "934:280",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:146",
+        "name": "Action · Bánh mì men tự nhiên → 062",
+        "from": "935:137",
+        "to": "935:182",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:153",
+        "name": "Action · Mở mã nhận món → 063",
+        "from": "935:137",
+        "to": "935:232",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:167",
+        "name": "Action · Xem chi tiết đơn đang chờ → 062",
+        "from": "935:137",
+        "to": "935:182",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:169;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "935:137",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:169;931:19",
+        "name": "Action · Tab/pantry → 075",
+        "from": "935:137",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:169;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "935:137",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:187",
+        "name": "Action · ‹ → 060",
+        "from": "935:182",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:224",
+        "name": "Action · Mở mã nhận món → 063",
+        "from": "935:182",
+        "to": "935:232",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:226",
+        "name": "Action · Hủy đặt trước → 070",
+        "from": "935:182",
+        "to": "935:338",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:232",
+        "name": "LF-SB-063 · Mã nhận món",
+        "from": "935:232",
+        "to": "935:263",
+        "trigger": "ON_KEY_DOWN",
+        "keyCodes": [
+          39
+        ]
+      },
+      {
+        "id": "935:237",
+        "name": "Action · ‹ → 062",
+        "from": "935:232",
+        "to": "935:182",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:257",
+        "name": "Action · Về chi tiết đơn → 062",
+        "from": "935:232",
+        "to": "935:182",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:289",
+        "name": "Action · Mô phỏng cửa hàng đã giao → 072",
+        "from": "935:263",
+        "to": "935:297",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:291",
+        "name": "Action · Quay lại mã nhận → 063",
+        "from": "935:263",
+        "to": "935:232",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:302",
+        "name": "Action · ‹ → 060",
+        "from": "935:297",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:330",
+        "name": "Action · Về đơn của tôi → 060",
+        "from": "935:297",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:332",
+        "name": "Action · Mở Tủ thực phẩm → 075",
+        "from": "935:297",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:343",
+        "name": "Action · × → 062",
+        "from": "935:338",
+        "to": "935:182",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:364",
+        "name": "Action · Xác nhận hủy đặt trước → 071",
+        "from": "935:338",
+        "to": "935:372",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:366",
+        "name": "Action · Giữ lại đơn → 062",
+        "from": "935:338",
+        "to": "935:182",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:386",
+        "name": "Action · Khám phá món khác → 015",
+        "from": "935:372",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:388",
+        "name": "Action · Về đơn của tôi → 060",
+        "from": "935:372",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:414",
+        "name": "Action · Thêm thực phẩm đầu tiên → 077",
+        "from": "935:397",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:416;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "935:397",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:416;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "935:397",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:416;931:19",
+        "name": "Action · Tab/pantry → 075",
+        "from": "935:397",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:416;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "935:397",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:434",
+        "name": "Action · ‹ → 076",
+        "from": "935:429",
+        "to": "935:397",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:455",
+        "name": "Action · Hạn sử dụng (Use by) → 079",
+        "from": "935:429",
+        "to": "935:467",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:461",
+        "name": "Action · Tiếp tục kiểm tra → 080",
+        "from": "935:429",
+        "to": "935:584",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:472",
+        "name": "Action · × → 077",
+        "from": "935:467",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:578",
+        "name": "Action · Xác nhận ngày hạn → 077",
+        "from": "935:467",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:589",
+        "name": "Action · ‹ → 077",
+        "from": "935:584",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:617",
+        "name": "Action · Lưu vào Tủ thực phẩm → 075",
+        "from": "935:584",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:619",
+        "name": "Action · Sửa lại thông tin → 077",
+        "from": "935:584",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:637",
+        "name": "Action · Thêm món → 077",
+        "from": "935:625",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:639",
+        "name": "Action · Cần dùng sớm → 083",
+        "from": "935:625",
+        "to": "935:688",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:642",
+        "name": "Action · Sữa tươi mới mua → 081",
+        "from": "935:625",
+        "to": "935:660",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:647;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "935:625",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:647;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "935:625",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:647;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "935:625",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:665",
+        "name": "Action · ‹ → 075",
+        "from": "935:660",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:680",
+        "name": "Action · Ghi nhận lượng đã dùng → 086",
+        "from": "935:660",
+        "to": "935:716",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:682",
+        "name": "Action · Về Tủ thực phẩm → 075",
+        "from": "935:660",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:693",
+        "name": "Action · ‹ → 075",
+        "from": "935:688",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:700",
+        "name": "Action · Sữa tươi mới mua → 081",
+        "from": "935:688",
+        "to": "935:660",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:708",
+        "name": "Action · Xem món cần dùng → 081",
+        "from": "935:688",
+        "to": "935:660",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:710",
+        "name": "Action · Về Tủ thực phẩm → 075",
+        "from": "935:688",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:721",
+        "name": "Action · ‹ → 081",
+        "from": "935:716",
+        "to": "935:660",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:735",
+        "name": "Action · Xác nhận đã dùng hết → 075-used",
+        "from": "935:716",
+        "to": "935:743",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:737",
+        "name": "Action · Chưa ghi nhận → 081",
+        "from": "935:716",
+        "to": "935:660",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:760",
+        "name": "Action · Thêm món khác → 077",
+        "from": "935:743",
+        "to": "935:429",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:762;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "935:743",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:762;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "935:743",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:762;931:21",
+        "name": "Action · Tab/account → 091",
+        "from": "935:743",
+        "to": "935:778",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:791",
+        "name": "Action · Khám phá món gần bạn → 015",
+        "from": "935:778",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:795",
+        "name": "Action · Đơn của tôi → 060",
+        "from": "935:778",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "935:799",
+        "name": "Action · Tủ thực phẩm → 075",
+        "from": "935:778",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:806;931:15",
+        "name": "Action · Tab/discover → 015",
+        "from": "935:778",
+        "to": "934:28",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:806;931:17",
+        "name": "Action · Tab/orders → 060",
+        "from": "935:778",
+        "to": "935:137",
+        "trigger": "ON_CLICK"
+      },
+      {
+        "id": "I935:806;931:19",
+        "name": "Action · Tab/pantry → 075",
+        "from": "935:778",
+        "to": "935:625",
+        "trigger": "ON_CLICK"
+      }
+    ],
+    "startingPoints": [
+      {
+        "nodeId": "933:5",
+        "name": "01 · Khám phá → đặt giữ chỗ → nhận tại quầy"
+      },
+      {
+        "nodeId": "935:397",
+        "name": "02 · Tủ trống → thêm món → ghi nhận dùng hết"
+      },
+      {
+        "nodeId": "934:548",
+        "name": "03 · Phục hồi khi tồn kho thay đổi"
+      }
+    ]
+  },
+  "guides": {
+    "settledFrames": [
+      "933:5",
+      "933:28",
+      "933:57",
+      "933:85",
+      "933:114",
+      "934:28",
+      "934:84",
+      "934:128",
+      "934:161",
+      "934:208",
+      "934:242",
+      "934:280",
+      "934:318",
+      "934:343",
+      "934:380",
+      "934:414",
+      "934:447",
+      "934:480",
+      "934:520",
+      "934:548",
+      "934:579",
+      "935:137",
+      "935:182",
+      "935:232",
+      "935:263",
+      "935:297",
+      "935:338",
+      "935:372",
+      "935:397",
+      "935:429",
+      "935:467",
+      "935:584",
+      "935:625",
+      "935:660",
+      "935:688",
+      "935:716",
+      "935:743",
+      "935:778"
+    ],
+    "removedWrongContextActions": [
+      "934:64",
+      "934:188"
+    ],
+    "arrows": [
+      {
+        "id": "939:234",
+        "from": "002",
+        "to": "005"
+      },
+      {
+        "id": "939:235",
+        "from": "005",
+        "to": "008"
+      },
+      {
+        "id": "939:236",
+        "from": "011",
+        "to": "018"
+      },
+      {
+        "id": "939:238",
+        "from": "015",
+        "to": "016"
+      },
+      {
+        "id": "939:239",
+        "from": "021",
+        "to": "023"
+      },
+      {
+        "id": "939:241",
+        "from": "034",
+        "to": "036"
+      },
+      {
+        "id": "939:242",
+        "from": "038",
+        "to": "044"
+      },
+      {
+        "id": "939:244",
+        "from": "050",
+        "to": "051"
+      },
+      {
+        "id": "939:245",
+        "from": "051",
+        "to": "053"
+      },
+      {
+        "id": "939:247",
+        "from": "060",
+        "to": "062"
+      },
+      {
+        "id": "939:248",
+        "from": "062",
+        "to": "063"
+      },
+      {
+        "id": "939:249",
+        "from": "070",
+        "to": "071"
+      },
+      {
+        "id": "939:251",
+        "from": "076",
+        "to": "077"
+      },
+      {
+        "id": "939:252",
+        "from": "077",
+        "to": "079"
+      },
+      {
+        "id": "939:253",
+        "from": "080",
+        "to": "075"
+      },
+      {
+        "id": "939:254",
+        "from": "086",
+        "to": "075-used"
+      }
+    ],
+    "captions": [
+      "939:237",
+      "939:240",
+      "939:243",
+      "939:246",
+      "939:250",
+      "939:255",
+      "939:256"
+    ],
+    "createdNodeIds": [
+      "939:234",
+      "939:235",
+      "939:236",
+      "939:237",
+      "939:238",
+      "939:239",
+      "939:240",
+      "939:241",
+      "939:242",
+      "939:243",
+      "939:244",
+      "939:245",
+      "939:246",
+      "939:247",
+      "939:248",
+      "939:249",
+      "939:250",
+      "939:251",
+      "939:252",
+      "939:253",
+      "939:254",
+      "939:255",
+      "939:256"
+    ]
+  },
+  "kit": {
+    "catalogId": "931:2",
+    "components": [
+      {
+        "id": "931:3",
+        "name": "LF/Button/Primary",
+        "props": {
+          "Label#931:0": {
+            "type": "TEXT",
+            "defaultValue": "Tiếp tục"
+          }
+        }
+      },
+      {
+        "id": "931:5",
+        "name": "LF/Button/Secondary",
+        "props": {
+          "Label#931:1": {
+            "type": "TEXT",
+            "defaultValue": "Tiếp tục"
+          }
+        }
+      },
+      {
+        "id": "931:7",
+        "name": "LF/Field",
+        "props": {
+          "Label#931:2": {
+            "type": "TEXT",
+            "defaultValue": "Nhãn"
+          },
+          "Value#931:3": {
+            "type": "TEXT",
+            "defaultValue": "Giá trị minh họa"
+          }
+        }
+      },
+      {
+        "id": "931:11",
+        "name": "LF/Image placeholder",
+        "props": {
+          "Caption#931:4": {
+            "type": "TEXT",
+            "defaultValue": "Ảnh minh họa"
+          },
+          "Show caption#931:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          }
+        }
+      },
+      {
+        "id": "931:14",
+        "name": "LF/Bottom navigation",
+        "props": {}
+      }
+    ],
+    "createdNodeIds": [
+      "931:2",
+      "931:3",
+      "931:4",
+      "931:5",
+      "931:6",
+      "931:7",
+      "931:8",
+      "931:9",
+      "931:10",
+      "931:11",
+      "931:12",
+      "931:13",
+      "931:14",
+      "931:15",
+      "931:16",
+      "931:17",
+      "931:18",
+      "931:19",
+      "931:20",
+      "931:21",
+      "931:22",
+      "931:23",
+      "931:24"
+    ]
+  }
+}

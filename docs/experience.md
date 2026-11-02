@@ -2,6 +2,12 @@
 
 Nguồn chuẩn theo domain cho Kiến trúc Thông tin (IA), Luồng người dùng (`F-01..F-06`) và Danh mục 100 `SB-ID`. Đọc cùng [router](README.md), [ma trận định hướng thị giác 100 màn](screen-art-direction.md), [chuẩn iOS HIG](ios-guidelines.md), [visual direction](visual-direction.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
+## Low-fidelity · DEC-040 ·02/11/2026
+
+[Checkpoint low-fi](../tracking/lowfi-core-checkpoint.md) và [registry](../tracking/wireframes.csv):page mới930:2,36 SB-IDs đại diện + state075-used + SIM-01 tác nhân cửa hàng (38 frame393×852). Prototype hai tuyến chính và nhánh recovery dùng snapshot/preset;không thay state machine hi-fi.063 nhấn phím→ của người trình diễn để mở SIM-01;khách không có nút tự xác nhận nhận hàng. SIM xác nhận minh họa→072. Pantry đi076→077↔079→080→075→081→086→075-used với added-slot Sữa tươi mới mua1hộp. Đây là kịch bản một món độc lập,không sửa7 fixture seed của hi-fi. Ngày tham chiếu19/10/2026,nhãn21/10/2026;không suy ra an toàn thực phẩm.
+
+Bản low-fi được sơ đồ hóa sau hi-fi để giải thích cấu trúc/luồng;không mạo nhận là nghiên cứu thiết kế trước đó. [PDF7 nhóm](../tracking/review/lowfi/SaveBite-LowFi-Core-Flows.pdf) và lộ trình demo trong checkpoint;video chưa quay.100 hi-fi vẫn được theo dõi riêng.
+
 ## IA, NAVIGATION VÀ MAIN FLOWS
 
 ### Thông tin điều hướng

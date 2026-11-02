@@ -1,0 +1,1743 @@
+{
+  "pageId": "930:2",
+  "roots": [
+    {
+      "id": "933:5",
+      "name": "LF-SB-002 · Phần ngon còn đây",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 478,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "933:28",
+      "name": "LF-SB-005 · Chào bạn đến SaveBite",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 499,
+      "viewportHeight": 515,
+      "footerBottom": 852
+    },
+    {
+      "id": "933:57",
+      "name": "LF-SB-008 · Đăng nhập",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:7",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 251,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "933:85",
+      "name": "LF-SB-011 · Tìm món quanh bạn",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 334,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "933:114",
+      "name": "LF-SB-018 · Chọn khu vực",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 309,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:28",
+      "name": "LF-SB-015 · Khám phá",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 643,
+      "viewportHeight": 635,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:84",
+      "name": "LF-SB-016 · Món quanh khu học xá",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 507,
+      "viewportHeight": 507,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:128",
+      "name": "LF-SB-019 · Tìm món",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:7",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 399,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:161",
+      "name": "LF-SB-021 · Kết quả tìm kiếm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:7",
+        "931:11",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 436,
+      "viewportHeight": 635,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:208",
+      "name": "LF-SB-023 · Bộ lọc tìm kiếm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 412,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:242",
+      "name": "LF-SB-027 · Sắp xếp kết quả",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 380,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:280",
+      "name": "LF-SB-034 · Chi tiết món",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 680,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:318",
+      "name": "LF-SB-036 · Thành phần & dị ứng",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 382,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:343",
+      "name": "LF-SB-038 · Cửa hàng",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 594,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:380",
+      "name": "LF-SB-044 · Túi bánh bất ngờ",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 625,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:414",
+      "name": "LF-SB-050 · Chọn số lượng",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 336,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:447",
+      "name": "LF-SB-051 · Chọn giờ nhận",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 430,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:480",
+      "name": "LF-SB-053 · Kiểm tra đặt trước",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 421,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:520",
+      "name": "LF-SB-056 · Đã giữ phần cho bạn",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:3",
+        "931:5"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 328,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:548",
+      "name": "LF-SB-058 · Số lượng vừa thay đổi",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 362,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "934:579",
+      "name": "LF-SB-059 · Đăng nhập để giữ chỗ",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:7",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 421,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:137",
+      "name": "LF-SB-060 · Đơn của tôi",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:11",
+        "931:3",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 495,
+      "viewportHeight": 563,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:182",
+      "name": "LF-SB-062 · Chi tiết đơn",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 655,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:232",
+      "name": "LF-SB-063 · Mã nhận món",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 551,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:263",
+      "name": "SIM-01 · Cửa hàng xác nhận giao",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:3",
+        "931:5"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 533,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:297",
+      "name": "LF-SB-072 · Đơn đã hoàn tất",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 460,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:338",
+      "name": "LF-SB-070 · Xác nhận hủy đơn",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:11",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 391,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:372",
+      "name": "LF-SB-071 · Đã hủy đặt trước",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:3",
+        "931:5"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 169,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:397",
+      "name": "LF-SB-076 · Tủ thực phẩm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:11",
+        "931:3",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 458,
+      "viewportHeight": 563,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:429",
+      "name": "LF-SB-077 · Thêm thực phẩm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:7",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 533,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:467",
+      "name": "LF-SB-079 · Ngày trên nhãn",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 623,
+      "viewportHeight": 627,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:584",
+      "name": "LF-SB-080 · Kiểm tra thông tin",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 420,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:625",
+      "name": "LF-SB-075 · Tủ thực phẩm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 384,
+      "viewportHeight": 635,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:660",
+      "name": "LF-SB-081 · Chi tiết thực phẩm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 329,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:688",
+      "name": "LF-SB-083 · Cần dùng sớm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 341,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:716",
+      "name": "LF-SB-086 · Ghi nhận đã dùng",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:5",
+        "931:3"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 348,
+      "viewportHeight": 571,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:743",
+      "name": "LF-SB-075-used · Tủ thực phẩm",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:11",
+        "931:3",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 448,
+      "viewportHeight": 563,
+      "footerBottom": 852
+    },
+    {
+      "id": "935:778",
+      "name": "LF-SB-091 · Tài khoản",
+      "w": 393,
+      "h": 852,
+      "clips": true,
+      "mains": [
+        "931:11",
+        "931:14"
+      ],
+      "chromeClipped": true,
+      "scrollHeight": 613,
+      "viewportHeight": 635,
+      "footerBottom": 852
+    }
+  ],
+  "fonts": [
+    "Be Vietnam Pro"
+  ],
+  "bitmapFills": 0,
+  "layoutIssues": [],
+  "actions": [
+    {
+      "from": "933:5",
+      "node": "933:22",
+      "to": "933:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:28",
+      "node": "933:33",
+      "to": "933:5",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:28",
+      "node": "933:47",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:28",
+      "node": "933:49",
+      "to": "933:57",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:28",
+      "node": "933:51",
+      "to": "933:85",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:57",
+      "node": "933:62",
+      "to": "933:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:57",
+      "node": "933:77",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:57",
+      "node": "933:79",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:85",
+      "node": "933:90",
+      "to": "933:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:85",
+      "node": "933:106",
+      "to": "933:114",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:85",
+      "node": "933:108",
+      "to": "933:114",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:114",
+      "node": "933:119",
+      "to": "933:85",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "933:114",
+      "node": "933:135",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "934:36",
+      "to": "933:114",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "934:40",
+      "to": "934:128",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "934:45",
+      "to": "934:84",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "934:47",
+      "to": "934:208",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "934:49",
+      "to": "934:380",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "934:57",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "I934:71;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "I934:71;931:19",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:28",
+      "node": "I934:71;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "934:89",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "934:103",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "934:111",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "934:113",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "I934:115;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "I934:115;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "I934:115;931:19",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:84",
+      "node": "I934:115;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:128",
+      "node": "934:133",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:128",
+      "node": "934:143",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:128",
+      "node": "934:147",
+      "to": "934:380",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:128",
+      "node": "934:153",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:128",
+      "node": "934:155",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "934:166",
+      "to": "934:128",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "934:176",
+      "to": "934:208",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "934:178",
+      "to": "934:242",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "934:181",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "I934:195;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "I934:195;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "I934:195;931:19",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:161",
+      "node": "I934:195;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:208",
+      "node": "934:213",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:208",
+      "node": "934:234",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:208",
+      "node": "934:236",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:242",
+      "node": "934:247",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:242",
+      "node": "934:269",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:242",
+      "node": "934:271",
+      "to": "934:161",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:280",
+      "node": "934:285",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:280",
+      "node": "934:296",
+      "to": "934:343",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:280",
+      "node": "934:304",
+      "to": "934:318",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:280",
+      "node": "934:310",
+      "to": "934:414",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:280",
+      "node": "934:312",
+      "to": "934:579",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:318",
+      "node": "934:323",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:318",
+      "node": "934:337",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:343",
+      "node": "934:348",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:343",
+      "node": "934:359",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:343",
+      "node": "934:366",
+      "to": "934:380",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:343",
+      "node": "934:374",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:380",
+      "node": "934:385",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:380",
+      "node": "934:403",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:380",
+      "node": "934:405",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:414",
+      "node": "934:419",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:414",
+      "node": "934:439",
+      "to": "934:447",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:414",
+      "node": "934:441",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:447",
+      "node": "934:452",
+      "to": "934:414",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:447",
+      "node": "934:474",
+      "to": "934:480",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:480",
+      "node": "934:485",
+      "to": "934:447",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:480",
+      "node": "934:512",
+      "to": "934:520",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:480",
+      "node": "934:514",
+      "to": "934:548",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:520",
+      "node": "934:540",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:520",
+      "node": "934:542",
+      "to": "935:232",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:548",
+      "node": "934:553",
+      "to": "934:480",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:548",
+      "node": "934:571",
+      "to": "934:480",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:548",
+      "node": "934:573",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:579",
+      "node": "934:584",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:579",
+      "node": "934:607",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "934:579",
+      "node": "934:609",
+      "to": "934:280",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:137",
+      "node": "935:146",
+      "to": "935:182",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:137",
+      "node": "935:153",
+      "to": "935:232",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:137",
+      "node": "935:167",
+      "to": "935:182",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:137",
+      "node": "I935:169;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:137",
+      "node": "I935:169;931:19",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:137",
+      "node": "I935:169;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:182",
+      "node": "935:187",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:182",
+      "node": "935:224",
+      "to": "935:232",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:182",
+      "node": "935:226",
+      "to": "935:338",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:232",
+      "node": "935:237",
+      "to": "935:182",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:232",
+      "node": "935:257",
+      "to": "935:182",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:232",
+      "node": "935:232",
+      "to": "935:263",
+      "trigger": {
+        "type": "ON_KEY_DOWN",
+        "device": "KEYBOARD",
+        "keyCodes": [
+          39
+        ]
+      }
+    },
+    {
+      "from": "935:263",
+      "node": "935:289",
+      "to": "935:297",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:263",
+      "node": "935:291",
+      "to": "935:232",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:297",
+      "node": "935:302",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:297",
+      "node": "935:330",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:297",
+      "node": "935:332",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:338",
+      "node": "935:343",
+      "to": "935:182",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:338",
+      "node": "935:364",
+      "to": "935:372",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:338",
+      "node": "935:366",
+      "to": "935:182",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:372",
+      "node": "935:386",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:372",
+      "node": "935:388",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:397",
+      "node": "935:414",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:397",
+      "node": "I935:416;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:397",
+      "node": "I935:416;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:397",
+      "node": "I935:416;931:19",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:397",
+      "node": "I935:416;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:429",
+      "node": "935:434",
+      "to": "935:397",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:429",
+      "node": "935:455",
+      "to": "935:467",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:429",
+      "node": "935:461",
+      "to": "935:584",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:467",
+      "node": "935:472",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:467",
+      "node": "935:578",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:584",
+      "node": "935:589",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:584",
+      "node": "935:617",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:584",
+      "node": "935:619",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:625",
+      "node": "935:637",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:625",
+      "node": "935:639",
+      "to": "935:688",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:625",
+      "node": "935:642",
+      "to": "935:660",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:625",
+      "node": "I935:647;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:625",
+      "node": "I935:647;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:625",
+      "node": "I935:647;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:660",
+      "node": "935:665",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:660",
+      "node": "935:680",
+      "to": "935:716",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:660",
+      "node": "935:682",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:688",
+      "node": "935:693",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:688",
+      "node": "935:700",
+      "to": "935:660",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:688",
+      "node": "935:708",
+      "to": "935:660",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:688",
+      "node": "935:710",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:716",
+      "node": "935:721",
+      "to": "935:660",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:716",
+      "node": "935:735",
+      "to": "935:743",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:716",
+      "node": "935:737",
+      "to": "935:660",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:743",
+      "node": "935:760",
+      "to": "935:429",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:743",
+      "node": "I935:762;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:743",
+      "node": "I935:762;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:743",
+      "node": "I935:762;931:21",
+      "to": "935:778",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:778",
+      "node": "935:791",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:778",
+      "node": "935:795",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:778",
+      "node": "935:799",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:778",
+      "node": "I935:806;931:15",
+      "to": "934:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:778",
+      "node": "I935:806;931:17",
+      "to": "935:137",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "from": "935:778",
+      "node": "I935:806;931:19",
+      "to": "935:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    }
+  ],
+  "starts": [
+    {
+      "nodeId": "933:5",
+      "name": "01 · Khám phá → đặt giữ chỗ → nhận tại quầy"
+    },
+    {
+      "nodeId": "935:397",
+      "name": "02 · Tủ trống → thêm món → ghi nhận dùng hết"
+    },
+    {
+      "nodeId": "934:548",
+      "name": "03 · Phục hồi khi tồn kho thay đổi"
+    }
+  ],
+  "checked_at": "2026-11-02"
+}

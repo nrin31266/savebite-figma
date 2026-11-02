@@ -1,5 +1,7 @@
 # Chiến lược Tài nguyên Hình ảnh, Icon & Font (Asset-First Strategy)
 
+Low-fi DEC-040:[native wireframe outputs](../tracking/lowfi-core-checkpoint.md) add no content bitmap or licensed map imagery. Crossed placeholders and schematic map are original editable vectors/frames;37 wireframes plus1 external-actor frame use no IMAGE fills. Exported PNG/PDF are evidence of native Figma layers,not imported screen implementations. Existing33 photo manifest entries remain unchanged.
+
 DEC-037–039: [final color/icon/native-kit checkpoint](../tracking/final-color-icons-checkpoint.md). Add two official Phosphor MIT vectors (basket/download-simple) and original editable fridge;source/hash metadata retained. No new bitmap. Publication copies of final100 screenshots/ten sheets mask the8 map rectangles because provider/license remains unverified;local native originals and Figma are unchanged. Published images are review evidence,not raster screen implementations.
 
 DEC-035:[Assets27 integration](../tracking/native27-device-checkpoint.md) adds no bitmap;33 records retained. Actual native library controls used:shared back glass,Spinner055,correctly fitted phone keyboard. Source phone example informs radius50 token for100 roots;hardware body remains reference,not a flattened image overlay. Imported candidates are not counted as adoption or new redistribution permission.

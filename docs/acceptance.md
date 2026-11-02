@@ -7,8 +7,8 @@
 | Nhóm tiêu chí | Yêu cầu cần chứng minh | Hiện trạng / bước kiểm tiếp |
 |---|---|---|
 | UX/UI Process · 25% | Research 10%, phân tích 20 ứng dụng thật 10%, persona/journey 5% | Chưa có research/competitor matrix đã kiểm chứng. Proto-persona hiện tại là giả thuyết; cần nguồn, ngày và findings traceable. |
-| Design Quality · 20% | Low-fi 5%, hi-fi UI 15%; tối thiểu 100 màn Figma | 100 native roots đã reconcile;49 DESIGN_REVIEW,51 NEEDS_REWORK,0 DONE. Số frame không chứng minh đủ nội dung hoặc chất lượng. Low-fi chưa xác minh; baseline và owner acceptance còn mở. |
-| Prototype & Demo · 15% | Interaction 10%, video demo 5% | Present đã đăng nhập và kiểm một số thao tác gallery, filter, Pantry date và Apple Toggle; evidence ở sourced-design checkpoint. Full6-flow test, video low-fi/hi-fi và Figma Mobile NOT CHECKED. |
+| Design Quality · 20% | Low-fi 5%, hi-fi UI 15%; tối thiểu 100 màn Figma | 100 native roots đã reconcile;49 DESIGN_REVIEW,51 NEEDS_REWORK,0 DONE. Số frame không chứng minh đủ nội dung hoặc chất lượng. Low-fi DEC-040 có37 wireframe +1 simulation frame,PDF7 trang vàprototype trênpage riêng;[checkpoint](../tracking/lowfi-core-checkpoint.md). Baseline và owner acceptance còn mở. |
+| Prototype & Demo · 15% | Interaction 10%, video demo 5% | Present đã đăng nhập và kiểm một số thao tác gallery, filter, Pantry date và Apple Toggle; evidence ở sourced-design checkpoint. Low-fi core routes được kiểm riêng ở [checkpoint](../tracking/lowfi-core-checkpoint.md);full6-flow hi-fi test,video low-fi/hi-fi và Figma Mobile NOT CHECKED. |
 | Code Implementation · 15% | Số màn, độ khớp UI và cấu trúc code | Ngoài repo Figma. Đề bài có bất nhất Deliverables 50 / rubric 30; nhóm cần xác nhận giảng viên, không bỏ quên phần này khi tính hoàn thành học phần. |
 | Presentation · 10% | Slide rõ và trình bày; cả 5 thành viên tham gia video | Ngoài phạm vi thực thi repo; dùng screenshots/evidence thật khi bàn giao. |
 | Portfolio · 10% | Cấu trúc và câu chuyện quá trình thiết kế | Ngoài phạm vi thực thi repo; không kể kết quả research/usability chưa có. |

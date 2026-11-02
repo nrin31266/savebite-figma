@@ -1,0 +1,631 @@
+{
+  "sourceRoots": [
+    {
+      "id": "17:2",
+      "name": "SB-002 · Onboarding 1 · Rescue Value",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "17:49",
+      "name": "SB-015 · Discovery · Rescue Market",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "17:187",
+      "name": "SB-016 · Map · Campus Explorer",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "17:282",
+      "name": "SB-019 · Search · Active Input & iOS Keyboard",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "76:652",
+      "name": "SB-001 · Splash · Warm Start",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "76:678",
+      "name": "SB-008 · Đăng nhập · Email & Password",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "78:695",
+      "name": "SB-005 · Welcome Gate · Guest or Login",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "78:729",
+      "name": "SB-013 · Home Guest · Rescue Market",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "80:809",
+      "name": "SB-022 · Search No Results · Empty State",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1692",
+      "name": "SB-003 · Onboarding 2 · Tìm món quanh trường",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1728",
+      "name": "SB-004 · Onboarding 3 · Tủ thực phẩm thông minh",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1766",
+      "name": "SB-006 · Đăng ký · Email & Password",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1810",
+      "name": "SB-007 · Chờ xác minh email",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1855",
+      "name": "SB-009 · Quên mật khẩu · Email & Keyboard",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1955",
+      "name": "SB-010 · Đã gửi liên kết khôi phục",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:1986",
+      "name": "SB-011 · Quyền vị trí · Bán kính quanh trường",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "100:2013",
+      "name": "SB-012 · Quyền thông báo · Nhắc khung giờ",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "101:1924",
+      "name": "SB-014 · Home đã đăng nhập · Feed & Active Order",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "101:2028",
+      "name": "SB-017 · Xem nhanh pin trên map · Peek Sheet",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "101:2075",
+      "name": "SB-018 · Chọn khu vực & campus",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "101:2117",
+      "name": "SB-020 · Gợi ý tìm kiếm · Suggestions",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "101:2161",
+      "name": "SB-021 · Kết quả tìm kiếm · Active Filter Strip",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "103:2173",
+      "name": "SB-023 · Bộ lọc tổng hợp · Multi-criteria Sheet",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "103:2215",
+      "name": "SB-024 · Lọc ngân sách · Price Histogram",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "103:2256",
+      "name": "SB-025 · Lọc thời gian nhận · Pickup Slots",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "103:2297",
+      "name": "SB-026 · Nhu cầu ăn uống & An toàn · Dietary",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "103:2334",
+      "name": "SB-027 · Sắp xếp kết quả · Sort Options",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "104:2253",
+      "name": "SB-028 · Danh mục Bữa ăn · Cooked Meals",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "104:2329",
+      "name": "SB-029 · Danh mục Bánh mì & Pastry · Bakery",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "104:2404",
+      "name": "SB-030 · Danh mục Thực phẩm & Rau củ · Fresh Produce",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "104:2475",
+      "name": "SB-031 · Đang nhận sớm · Urgent Rescues",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "104:2551",
+      "name": "SB-032 · Quanh trường · Walking Distance",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "104:2627",
+      "name": "SB-033 · Yêu thích & Đã lưu · Saved Items",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "18:2",
+      "name": "SB-034 · Offer Detail · Exact Item",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "81:844",
+      "name": "SB-046 · Offer Detail · Sold Out",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "81:930",
+      "name": "SB-047 · Offer Detail · Pickup Window Closed",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "81:1012",
+      "name": "SB-049 · Offer Detail · Allergen Conflict",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "82:926",
+      "name": "SB-059 · Login Required Sheet · Return To Offer",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "106:2630",
+      "name": "SB-035 · Thư viện ảnh món ăn · Photo Gallery",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "106:2655",
+      "name": "SB-036 · Thành phần & Cảnh báo Dị ứng · Allergen Sheet",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "106:2690",
+      "name": "SB-037 · Chất lượng, hạn & Hướng dẫn · Shelf Life",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "106:2725",
+      "name": "SB-038 · Chi tiết cửa hàng · Merchant Profile",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "106:2775",
+      "name": "SB-039 · Đường tới cửa hàng · Walking Map",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "106:2817",
+      "name": "SB-040 · Quy định nhận món tại quầy · Handover Rules",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "109:2765",
+      "name": "SB-041 · Offer khác của tiệm · More Offers",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "109:2816",
+      "name": "SB-042 · Đánh giá cửa hàng · Merchant Reviews",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "109:2853",
+      "name": "SB-043 · Chi tiết đánh giá & Báo cáo",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "109:2890",
+      "name": "SB-044 · Túi bất ngờ · Surprise Bag",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "109:2926",
+      "name": "SB-045 · Giải thích túi bất ngờ · Explainer Sheet",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "109:2959",
+      "name": "SB-048 · Gần đóng cửa · Closing Soon Urgency",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "19:2",
+      "name": "SB-051 · Reservation · Pickup Slot",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "19:69",
+      "name": "SB-053 · Order Summary · Unified Receipt",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "19:140",
+      "name": "SB-056 · Success · Perforated Pickup Pass",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "83:970",
+      "name": "SB-050 · Quantity Sheet · Stock Limit",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "83:1072",
+      "name": "SB-054 · Confirm Reservation Sheet",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "83:1162",
+      "name": "SB-055 · Processing · Idempotency Guard",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "84:1122",
+      "name": "SB-057 · Reservation Failed · Network",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "84:1167",
+      "name": "SB-058 · Stock Changed · Recovery",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "84:1217",
+      "name": "SB-060 · My Orders · Overview",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "84:1290",
+      "name": "SB-062 · Order Detail · Awaiting Pickup",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "85:1266",
+      "name": "SB-063 · Pickup Code · Wallet Pass",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "85:1342",
+      "name": "SB-067 · Pickup Closing Soon · Urgent",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "85:1385",
+      "name": "SB-072 · Order Completed · Verified Receipt",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "90:1408",
+      "name": "SB-052 · Pickup Checklist · Readback",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "90:1491",
+      "name": "SB-061 · Pending Orders · Timeline",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "91:1487",
+      "name": "SB-064 · Handover Steps · Backup Code",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "91:1531",
+      "name": "SB-065 · Directions · Active Order",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "91:1652",
+      "name": "SB-066 · Order Ready · READY state",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "92:1593",
+      "name": "SB-068 · Pickup Expired · No-Show Policy",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "92:1642",
+      "name": "SB-069 · Incident Report · Pickup Issue",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "112:3206",
+      "name": "SB-070 · Xác nhận hủy đơn · Policy & Reason",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "112:3243",
+      "name": "SB-071 · Hủy đơn thành công · Empty State",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "112:3280",
+      "name": "SB-073 · Lịch sử đơn trống · Tab Root",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "20:2",
+      "name": "SB-075 · Smart Pantry · Kitchen Inventory",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "20:109",
+      "name": "SB-091 · Profile · Account & Impact Hub",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "85:1445",
+      "name": "SB-100 · Personal Impact · Verified Rescue",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "94:1641",
+      "name": "SB-092 · Edit Profile · Monogram",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "94:1684",
+      "name": "SB-093 · Saved Locations · Privacy Note",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3032",
+      "name": "SB-074 · Giới thiệu Pantry · Onboarding",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3058",
+      "name": "SB-076 · Tủ trống · Quick Add",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3124",
+      "name": "SB-077 · Thêm thủ công · Form",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3166",
+      "name": "SB-078 · Chọn loại thực phẩm · Sheet",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3213",
+      "name": "SB-079 · Chọn ngày hạn · Use-By vs Best-Before",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3254",
+      "name": "SB-080 · Xác nhận thêm · Review",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3286",
+      "name": "SB-081 · Chi tiết thực phẩm · Ngày hạn & bảo quản",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3320",
+      "name": "SB-082 · Sửa thực phẩm · Edit Item",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "117:3350",
+      "name": "SB-085 · Thiết lập nhắc hạn · Reminder Settings",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3283",
+      "name": "SB-083 · Cần dùng sớm",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3314",
+      "name": "SB-084 · Đã quá hạn dùng",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3345",
+      "name": "SB-086 · Cập nhật lượng dùng",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3376",
+      "name": "SB-087 · Đánh dấu đã bỏ",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3407",
+      "name": "SB-088 · Gợi ý từ tủ của bạn",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3435",
+      "name": "SB-089 · Lịch sử tủ thực phẩm",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3463",
+      "name": "SB-090 · Dữ liệu trên máy",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3491",
+      "name": "SB-094 · Lưu khu vực",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3522",
+      "name": "SB-095 · Thông báo",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3550",
+      "name": "SB-096 · Thông báo",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3581",
+      "name": "SB-097 · Tùy chọn thông báo",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3609",
+      "name": "SB-098 · Quyền riêng tư",
+      "width": 393,
+      "height": 852
+    },
+    {
+      "id": "133:3637",
+      "name": "SB-099 · Trợ giúp",
+      "width": 393,
+      "height": 852
+    }
+  ],
+  "pages": [
+    {
+      "id": "913:9333",
+      "name": "Low Fidelity",
+      "children": 0
+    },
+    {
+      "id": "0:1",
+      "name": "Foundations",
+      "children": 1
+    },
+    {
+      "id": "11:2",
+      "name": "Components",
+      "children": 63
+    },
+    {
+      "id": "11:3",
+      "name": "App · All Screens",
+      "children": 4
+    },
+    {
+      "id": "930:2",
+      "name": "Low-fi · Core flows & đối chiếu",
+      "children": 10
+    }
+  ]
+}

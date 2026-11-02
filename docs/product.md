@@ -1,5 +1,7 @@
 # Sản phẩm, chính sách và nguồn
 
+Low-fi DEC-040:[core scenario](../tracking/lowfi-core-checkpoint.md) uses existing25K bread/17:00–18:00/pay-at-counter/unknown-allergen fixture and one existing added-slot Pantry item Sữa tươi mới mua1hộp/Ngăn mát/Use-by21/10/2026. The Pantry empty→add→used-up demo is a scoped one-item scenario at reference19/10,not a change to the7 canonical hi-fi seeds or real user inventory. SIM-01 is an explicitly external merchant actor,not a customer self-verification feature. No new merchant/research/outcome claims.
+
 Nguồn chuẩn theo domain; đọc [router](README.md) và [tiến độ](../tracking/progress.md) trước khi thay đổi.
 
 ## Phạm vi và đầu ra

@@ -1,5 +1,16 @@
 # Progress · 31/10/2026
 
+## Low-fi core flows ·02/11/2026 ·AWAITING_OWNER_REVIEW
+- Owner authorizes native low-fi frames,7-group PDF and clickable prototype;36 planned,extra only for required logic. Explicitly requests a new page with source comparison;existing empty Low Fidelity913:9333 and hi-fi11:3 preserved.
+- Lease RELEASED owner codex/lowfi-core:one new low-fi page,its grayscale primitives/local controls,wireframe registry/docs/evidence. Hi-fi/tokens/core components read-only. One writer,no agents.
+- Identity Nguyen Van Rin verified;source file7suZz9C8oL5zV2NMxlsIVI read PASS,100 hi-fi roots and actual source copy/fixtures inspected. Low-fi is retrospective flow schematization,not prior user research.
+- Final checkpoint:[low-fi delivery](lowfi-core-checkpoint.md).38 native frames/7 groups,37 product +1 external actor;two main routes and recovery branches passed real Present,66 log entries across38/38 roots. Four tabs/back/close scoped routes checked;all140 destinations structurally same-page. Per-row prototype_verified is scoped frame-visit evidence,not full data logic.
+- Final QA PASS:140 same-page actions/3 starts,38 reachable,393×852,Be Vietnam Pro only,zero bitmap fills/local text overflow;38 PNGs/seven overviews/PDF7 pages with37 source links. Final native screenshots reviewed;source100 IDs/names/sizes andempty913:9333 preserved. Registry/docs/evidence reconciled. Validator/whitespace/artifact checks PASS. Owner acceptance/video/real device/usability/full logic NOT CHECKED;DONE0. No commit/push.
+- Historical Batch3:38 frames across7 groups complete;prototype wiring and3 starts now authored. Two additional frames are used-up result and external merchant simulation. Structural/visual/Present/PDF QA pending.
+- Historical Batch2:15 frames across entry/discovery/offer now exist;mapping refreshed. All remain unwired pending complete graph.
+- Historical Batch1:first5 native frames933:5/28/57/85/114 built and registry started. Scoped screenshot found field clipping;shared field value height repaired once,first form rechecked. Remaining groups/wiring/PDF/QA still pending.
+- Open conflicts:NONE for this scope;native write/read PASS:new page930:2,grayscale collection930:3,five local masters931:3/5/7/11/14. Existing page913:9333 untouched. No commit/push authorization assumed for this new task.
+
 ## Final100-screen color/icon scan and main integration ·01/11 ·AWAITING_OWNER_REVIEW / MAIN_PUSHED
 - Owner requests fresh100 captures/multi-screen critique focused on difficult colors/readability and useful new icons,then commit/merge main/push. Explicit Git integration authorization; UI scope only,no repeated full logic test.
 - Lease RELEASED codex/final-color-icons:App11:3,related Components/tokens/icons,docs/registry/evidence and task Git integration. One writer,no agents. Review existing dirty authorized design work;exclude private/local tool config and assets without publication rights.

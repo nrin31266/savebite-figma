@@ -1,5 +1,7 @@
 # Bắt đầu làm SaveBite
 
+**Low-fi02/11 · DEC-040:** [Bộ luồng chính và đối chiếu](../tracking/lowfi-core-checkpoint.md). Page mới930:2;37 wireframe +1 frame tác nhân cửa hàng,7 nhóm;[PDF7 trang](../tracking/review/lowfi/SaveBite-LowFi-Core-Flows.pdf),[registry riêng](../tracking/wireframes.csv). Bản sơ đồ hóa từ hi-fi hiện tại,không cộng vào100 hi-fi và không phải research trước thiết kế. Owner acceptance pending.
+
 **Final UI review01/11 · DEC-037–039:** [100-screen color/icons + native Apple27 controls](../tracking/final-color-icons-checkpoint.md). Neutral transparent glass;forest active/gray inactive;fresh50pt heart/bell/filter,source back/close controls. [Published review sheets](../tracking/review/final-color-icons/cluster-011.jpg) redact unverified map imagery. Owner acceptance pending;Git integration authorized.
 
 **Native27 correction01/11 · DEC-035/036:** [Fresh keyboard glyphs +100 iPhone frames +cleanup](../tracking/native27-device-checkpoint.md). Thay ba instance bàn phím bằng import mới đúng kit,kiểm glyph ở200–300%/Present;native307pt.100 root bo50 theo mẫu Screen/cùng token;63 AppBar callers dùng kính/quay lại44pt;055 native spinner. Xóa20 local main/variant và15 ô mẫu;registry195/33 assets. Chờ owner acceptance,full logic excluded.
